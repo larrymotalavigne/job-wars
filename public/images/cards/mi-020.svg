@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Pilote de Chasse: fighter jet silhouette -->
+  <!-- Jet body/fuselage -->
+  <polygon points="15,75 45,68 155,62 180,70 185,75 180,80 155,88 45,82" fill="#558b2f"/>
+  <!-- Nose cone -->
+  <polygon points="185,70 195,75 185,80" fill="#33691e"/>
+  <!-- Cockpit -->
+  <ellipse cx="160" cy="72" rx="12" ry="5" fill="#f1f8e9" opacity="0.7"/>
+  <!-- Wings -->
+  <polygon points="80,68 110,68 120,30 85,45" fill="#33691e"/>
+  <polygon points="80,82 110,82 120,120 85,105" fill="#33691e"/>
+  <!-- Tail fins -->
+  <polygon points="25,68 40,68 35,42 20,52" fill="#33691e"/>
+  <polygon points="25,82 40,82 35,108 20,98" fill="#33691e"/>
+  <!-- Vertical stabilizer -->
+  <polygon points="30,68 45,65 42,48 25,55" fill="#558b2f"/>
+  <!-- Engine exhaust -->
+  <polygon points="15,72 5,70 3,75 5,80 15,78" fill="#558b2f" opacity="0.5"/>
+  <polygon points="5,72 -2,70 -4,75 -2,80 5,78" fill="#558b2f" opacity="0.3"/>
+  <!-- Wing details -->
+  <line x1="90" y1="68" x2="115" y2="38" stroke="#558b2f" stroke-width="1"/>
+  <line x1="90" y1="82" x2="115" y2="112" stroke="#558b2f" stroke-width="1"/>
+</svg>

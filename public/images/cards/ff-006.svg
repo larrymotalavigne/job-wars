@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+
+  <!-- Bomb - Demineur -->
+  <!-- Bomb body -->
+  <circle cx="95" cy="80" r="32" fill="#e65100"/>
+  <!-- Bomb highlight -->
+  <circle cx="84" cy="70" r="8" fill="#ef6c00" opacity="0.4"/>
+  <!-- Fuse neck -->
+  <rect x="88" y="46" width="14" height="12" rx="3" fill="#e65100"/>
+  <!-- Fuse wire -->
+  <path d="M95 46 Q95 36 105 32 Q115 28 110 20 Q108 16 112 12" fill="none" stroke="#ef6c00" stroke-width="3" stroke-linecap="round"/>
+  <!-- Fuse spark -->
+  <circle cx="112" cy="12" r="4" fill="#ef6c00" opacity="0.6"/>
+  <circle cx="112" cy="12" r="2" fill="#fff3e0" opacity="0.8"/>
+
+  <!-- Wire cutters -->
+  <!-- Handle right -->
+  <rect x="140" y="88" width="8" height="36" rx="3" fill="#ef6c00" transform="rotate(-15 144 106)"/>
+  <!-- Handle left -->
+  <rect x="148" y="88" width="8" height="36" rx="3" fill="#e65100" transform="rotate(15 152 106)"/>
+  <!-- Blade right -->
+  <path d="M140 90 L132 72 L138 70 L144 88 Z" fill="#ef6c00"/>
+  <!-- Blade left -->
+  <path d="M156 90 L164 72 L158 70 L152 88 Z" fill="#e65100"/>
+  <!-- Pivot point -->
+  <circle cx="148" cy="88" r="4" fill="#fff3e0" opacity="0.7"/>
+  <circle cx="148" cy="88" r="2" fill="#e65100"/>
+
+  <!-- Cut wire from bomb -->
+  <path d="M127 78 Q135 76 140 80" fill="none" stroke="#ef6c00" stroke-width="2" stroke-dasharray="3,2"/>
+  <path d="M127 84 Q135 86 140 84" fill="none" stroke="#ef6c00" stroke-width="2" stroke-dasharray="3,2"/>
+
+  <!-- Danger indicators -->
+  <circle cx="30" cy="30" r="2" fill="#e65100" opacity="0.4"/>
+  <circle cx="170" cy="30" r="2" fill="#e65100" opacity="0.4"/>
+</svg>

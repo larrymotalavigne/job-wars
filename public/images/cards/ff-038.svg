@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Exit sign background -->
+  <rect x="35" y="20" width="130" height="70" rx="6" ry="6" fill="#ef6c00"/>
+  <rect x="40" y="25" width="120" height="60" rx="4" ry="4" fill="#fff3e0"/>
+  <!-- Running figure -->
+  <!-- Head -->
+  <circle cx="95" cy="38" r="6" fill="#ef6c00"/>
+  <!-- Body -->
+  <line x1="95" y1="44" x2="95" y2="60" stroke="#ef6c00" stroke-width="4" stroke-linecap="round"/>
+  <!-- Left arm (back) -->
+  <line x1="95" y1="48" x2="84" y2="42" stroke="#ef6c00" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right arm (forward) -->
+  <line x1="95" y1="48" x2="106" y2="42" stroke="#ef6c00" stroke-width="3" stroke-linecap="round"/>
+  <!-- Left leg (back) -->
+  <line x1="95" y1="60" x2="84" y2="75" stroke="#ef6c00" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right leg (forward) -->
+  <line x1="95" y1="60" x2="108" y2="75" stroke="#ef6c00" stroke-width="3" stroke-linecap="round"/>
+  <!-- Door/exit opening -->
+  <rect x="120" y="30" width="30" height="48" rx="2" ry="2" fill="#ef6c00" opacity="0.3"/>
+  <rect x="122" y="32" width="26" height="44" rx="1" ry="1" fill="#fff3e0"/>
+  <!-- Arrow pointing to exit -->
+  <polygon points="115,55 125,48 125,52 140,52 140,58 125,58 125,62" fill="#ef6c00"/>
+  <!-- Additional evacuation arrows below sign -->
+  <polygon points="80,105 100,95 100,100 130,100 130,110 100,110 100,115" fill="#ef6c00" opacity="0.4"/>
+  <polygon points="80,125 100,115 100,120 130,120 130,130 100,130 100,135" fill="#ef6c00" opacity="0.25"/>
+</svg>

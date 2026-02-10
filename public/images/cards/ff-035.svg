@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Ground -->
+  <rect x="0" y="120" width="200" height="30" rx="0" ry="0" fill="#e65100" opacity="0.2"/>
+  <!-- Tree 1 (burning) -->
+  <rect x="25" y="60" width="8" height="60" fill="#e65100"/>
+  <polygon points="29,20 10,65 48,65" fill="#ef6c00"/>
+  <path d="M14,25 Q20,10 26,20 Q30,5 35,18 Q40,8 44,25" fill="#e65100"/>
+  <!-- Tree 2 (burning) -->
+  <rect x="60" y="50" width="9" height="70" fill="#e65100"/>
+  <polygon points="64,15 42,55 87,55" fill="#ef6c00"/>
+  <path d="M46,20 Q52,5 58,18 Q62,0 68,15 Q72,3 78,22" fill="#e65100"/>
+  <!-- Tree 3 (fully engulfed) -->
+  <rect x="100" y="55" width="8" height="65" fill="#e65100"/>
+  <polygon points="104,22 85,60 123,60" fill="#ef6c00"/>
+  <path d="M88,15 Q95,0 100,12 Q104,-5 110,10 Q115,0 120,18" fill="#e65100"/>
+  <!-- Large flame behind -->
+  <path d="M90,25 Q95,5 104,15 Q108,-8 115,12 Q120,-2 125,20" fill="#ef6c00" opacity="0.5"/>
+  <!-- Tree 4 (burning) -->
+  <rect x="140" y="58" width="7" height="62" fill="#e65100"/>
+  <polygon points="143,25 128,62 160,62" fill="#ef6c00"/>
+  <path d="M130,28 Q136,15 142,25 Q146,12 150,22 Q154,14 158,30" fill="#e65100"/>
+  <!-- Tree 5 (starting to burn) -->
+  <rect x="170" y="65" width="7" height="55" fill="#e65100" opacity="0.7"/>
+  <polygon points="173,30 160,68 188,68" fill="#ef6c00" opacity="0.7"/>
+  <path d="M165,35 Q170,25 175,33 Q178,22 182,32" fill="#e65100" opacity="0.6"/>
+  <!-- Smoke clouds -->
+  <circle cx="50" cy="12" r="10" fill="#e65100" opacity="0.15"/>
+  <circle cx="80" cy="8" r="12" fill="#e65100" opacity="0.12"/>
+  <circle cx="115" cy="5" r="14" fill="#e65100" opacity="0.1"/>
+</svg>

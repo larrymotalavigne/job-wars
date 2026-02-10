@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fce4ec"/>
+  <!-- Broken badge - left half -->
+  <path d="M45,30 L55,50 L72,53 L62,64 L65,80 L52,72 L42,78 L44,63 L32,53 L48,50Z" fill="#c62828"/>
+  <!-- Crack/break line -->
+  <path d="M58 30 L62 45 L56 55 L64 65 L58 80" fill="none" stroke="#fce4ec" stroke-width="2.5"/>
+  <!-- Broken badge - right half (offset/fallen) -->
+  <path d="M70,35 L76,52 L88,55 L80,65 L82,80 L72,74 L65,78" fill="#b71c1c"/>
+  <!-- Badge center detail -->
+  <circle cx="52" cy="56" r="5" fill="#fce4ec" opacity="0.4"/>
+  <!-- Warning sign triangle -->
+  <polygon points="150,25 185,95 115,95" fill="#c62828"/>
+  <polygon points="150,38 178,88 122,88" fill="#fce4ec"/>
+  <polygon points="150,48 172,82 128,82" fill="#c62828" opacity="0.15"/>
+  <!-- Exclamation mark in warning -->
+  <rect x="146" y="52" width="8" height="22" rx="2" fill="#c62828"/>
+  <circle cx="150" cy="80" r="4" fill="#c62828"/>
+  <!-- Warning sign border -->
+  <polygon points="150,28 182,92 118,92" fill="none" stroke="#b71c1c" stroke-width="2.5"/>
+  <!-- Crack lines emanating from badge -->
+  <line x1="35" y1="45" x2="25" y2="38" stroke="#c62828" stroke-width="1.5" opacity="0.4"/>
+  <line x1="38" y1="70" x2="28" y2="78" stroke="#c62828" stroke-width="1.5" opacity="0.4"/>
+  <line x1="80" y1="40" x2="90" y2="32" stroke="#c62828" stroke-width="1.5" opacity="0.4"/>
+  <!-- Fallen pieces -->
+  <polygon points="55,95 60,88 65,95" fill="#c62828" opacity="0.4"/>
+  <polygon points="42,90 48,85 50,92" fill="#b71c1c" opacity="0.3"/>
+  <!-- Ground line -->
+  <line x1="20" y1="105" x2="95" y2="105" stroke="#c62828" stroke-width="1" opacity="0.2"/>
+</svg>

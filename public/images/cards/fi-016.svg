@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- House -->
+  <polygon points="30,75 60,45 90,75" fill="#37474f"/>
+  <rect x="38" y="75" width="44" height="35" fill="#546e7a"/>
+  <rect x="52" y="82" width="16" height="20" fill="#37474f"/>
+  <!-- Chimney -->
+  <rect x="72" y="52" width="8" height="18" fill="#37474f"/>
+  <!-- Window -->
+  <rect x="43" y="80" width="8" height="8" fill="#eceff1"/>
+  <!-- Coins next to house -->
+  <ellipse cx="105" cy="108" rx="12" ry="4" fill="#546e7a"/>
+  <rect x="93" y="104" width="24" height="4" fill="#546e7a"/>
+  <ellipse cx="105" cy="104" rx="12" ry="4" fill="#37474f"/>
+  <ellipse cx="105" cy="100" rx="12" ry="4" fill="#546e7a"/>
+  <rect x="93" y="96" width="24" height="4" fill="#546e7a"/>
+  <ellipse cx="105" cy="96" rx="12" ry="4" fill="#37474f"/>
+  <!-- Growth chart -->
+  <line x1="130" y1="120" x2="130" y2="35" stroke="#546e7a" stroke-width="2"/>
+  <line x1="130" y1="120" x2="185" y2="120" stroke="#546e7a" stroke-width="2"/>
+  <!-- Growth line going up -->
+  <polyline points="135,110 145,100 155,95 162,80 170,60 180,40" fill="none" stroke="#37474f" stroke-width="2.5"/>
+  <!-- Arrow at end of growth -->
+  <polygon points="180,35 185,42 176,42" fill="#37474f"/>
+  <!-- Small bars under the growth line -->
+  <rect x="135" y="110" width="6" height="10" fill="#546e7a" opacity="0.5"/>
+  <rect x="148" y="100" width="6" height="20" fill="#546e7a" opacity="0.5"/>
+  <rect x="161" y="85" width="6" height="35" fill="#546e7a" opacity="0.5"/>
+  <rect x="174" y="65" width="6" height="55" fill="#546e7a" opacity="0.5"/>
+</svg>

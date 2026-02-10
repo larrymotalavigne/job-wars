@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- ATM machine body -->
+  <rect x="40" y="10" width="120" height="130" rx="8" ry="8" fill="#37474f"/>
+  <rect x="46" y="16" width="108" height="118" rx="5" ry="5" fill="#546e7a"/>
+  <!-- Screen -->
+  <rect x="55" y="22" width="90" height="45" rx="4" ry="4" fill="#eceff1"/>
+  <!-- Screen content lines -->
+  <line x1="62" y1="35" x2="100" y2="35" stroke="#546e7a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="62" y1="43" x2="130" y2="43" stroke="#546e7a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="62" y1="51" x2="115" y2="51" stroke="#546e7a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="62" y1="59" x2="90" y2="59" stroke="#37474f" stroke-width="2"/>
+  <!-- Side buttons left of screen -->
+  <rect x="48" y="28" width="6" height="5" rx="1" fill="#37474f"/>
+  <rect x="48" y="38" width="6" height="5" rx="1" fill="#37474f"/>
+  <rect x="48" y="48" width="6" height="5" rx="1" fill="#37474f"/>
+  <rect x="48" y="58" width="6" height="5" rx="1" fill="#37474f"/>
+  <!-- Side buttons right of screen -->
+  <rect x="146" y="28" width="6" height="5" rx="1" fill="#37474f"/>
+  <rect x="146" y="38" width="6" height="5" rx="1" fill="#37474f"/>
+  <rect x="146" y="48" width="6" height="5" rx="1" fill="#37474f"/>
+  <rect x="146" y="58" width="6" height="5" rx="1" fill="#37474f"/>
+  <!-- Card slot -->
+  <rect x="70" y="74" width="60" height="5" rx="2" ry="2" fill="#37474f"/>
+  <!-- Keypad -->
+  <rect x="65" y="85" width="12" height="8" rx="2" ry="2" fill="#37474f"/>
+  <rect x="82" y="85" width="12" height="8" rx="2" ry="2" fill="#37474f"/>
+  <rect x="99" y="85" width="12" height="8" rx="2" ry="2" fill="#37474f"/>
+  <rect x="65" y="97" width="12" height="8" rx="2" ry="2" fill="#37474f"/>
+  <rect x="82" y="97" width="12" height="8" rx="2" ry="2" fill="#37474f"/>
+  <rect x="99" y="97" width="12" height="8" rx="2" ry="2" fill="#37474f"/>
+  <rect x="65" y="109" width="12" height="8" rx="2" ry="2" fill="#37474f"/>
+  <rect x="82" y="109" width="12" height="8" rx="2" ry="2" fill="#37474f"/>
+  <rect x="99" y="109" width="12" height="8" rx="2" ry="2" fill="#37474f"/>
+  <!-- Cash dispenser slot -->
+  <rect x="118" y="90" width="28" height="28" rx="3" ry="3" fill="#37474f"/>
+  <rect x="120" y="100" width="24" height="4" rx="1" ry="1" fill="#eceff1" opacity="0.3"/>
+  <!-- Bills sticking out -->
+  <rect x="122" y="92" width="20" height="12" rx="1" ry="1" fill="#eceff1" opacity="0.5"/>
+  <line x1="132" y1="92" x2="132" y2="104" stroke="#546e7a" stroke-width="0.5"/>
+</svg>

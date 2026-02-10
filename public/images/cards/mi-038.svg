@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Renfort Aérien: parachutes dropping supplies -->
+  <!-- Parachute 1 (left) -->
+  <path d="M20,30 Q50,-5 80,30 Z" fill="#558b2f"/>
+  <path d="M20,30 Q35,38 50,30 Q35,10 20,30" fill="#33691e" opacity="0.3"/>
+  <path d="M50,30 Q65,38 80,30 Q65,10 50,30" fill="#33691e" opacity="0.3"/>
+  <line x1="22" y1="30" x2="42" y2="65" stroke="#33691e" stroke-width="1"/>
+  <line x1="50" y1="25" x2="48" y2="65" stroke="#33691e" stroke-width="1"/>
+  <line x1="78" y1="30" x2="55" y2="65" stroke="#33691e" stroke-width="1"/>
+  <!-- Supply crate 1 -->
+  <rect x="38" y="65" width="22" height="18" rx="2" fill="#558b2f"/>
+  <line x1="38" y1="74" x2="60" y2="74" stroke="#33691e" stroke-width="1"/>
+  <line x1="49" y1="65" x2="49" y2="83" stroke="#33691e" stroke-width="1"/>
+  <!-- Parachute 2 (center, higher) -->
+  <path d="M75,15 Q105,-15 135,15 Z" fill="#558b2f"/>
+  <path d="M75,15 Q90,22 105,15 Q90,-3 75,15" fill="#33691e" opacity="0.3"/>
+  <path d="M105,15 Q120,22 135,15 Q120,-3 105,15" fill="#33691e" opacity="0.3"/>
+  <line x1="78" y1="15" x2="98" y2="50" stroke="#33691e" stroke-width="1"/>
+  <line x1="105" y1="10" x2="104" y2="50" stroke="#33691e" stroke-width="1"/>
+  <line x1="132" y1="15" x2="110" y2="50" stroke="#33691e" stroke-width="1"/>
+  <!-- Supply crate 2 -->
+  <rect x="94" y="50" width="22" height="18" rx="2" fill="#33691e"/>
+  <line x1="94" y1="59" x2="116" y2="59" stroke="#558b2f" stroke-width="1"/>
+  <line x1="105" y1="50" x2="105" y2="68" stroke="#558b2f" stroke-width="1"/>
+  <!-- Cross mark on crate -->
+  <line x1="100" y1="53" x2="110" y2="57" stroke="#f1f8e9" stroke-width="1.5"/>
+  <line x1="110" y1="53" x2="100" y2="57" stroke="#f1f8e9" stroke-width="1.5"/>
+  <!-- Parachute 3 (right, lower) -->
+  <path d="M130,45 Q160,15 190,45 Z" fill="#558b2f"/>
+  <path d="M130,45 Q145,52 160,45 Q145,25 130,45" fill="#33691e" opacity="0.3"/>
+  <path d="M160,45 Q175,52 190,45 Q175,25 160,45" fill="#33691e" opacity="0.3"/>
+  <line x1="133" y1="45" x2="153" y2="80" stroke="#33691e" stroke-width="1"/>
+  <line x1="160" y1="40" x2="158" y2="80" stroke="#33691e" stroke-width="1"/>
+  <line x1="187" y1="45" x2="165" y2="80" stroke="#33691e" stroke-width="1"/>
+  <!-- Supply crate 3 -->
+  <rect x="148" y="80" width="22" height="18" rx="2" fill="#558b2f"/>
+  <line x1="148" y1="89" x2="170" y2="89" stroke="#33691e" stroke-width="1"/>
+  <line x1="159" y1="80" x2="159" y2="98" stroke="#33691e" stroke-width="1"/>
+  <!-- Ground -->
+  <rect x="0" y="125" width="200" height="25" fill="#558b2f" opacity="0.15"/>
+  <line x1="0" y1="125" x2="200" y2="125" stroke="#558b2f" stroke-width="1.5" opacity="0.3"/>
+  <!-- Already landed crate -->
+  <rect x="15" y="115" width="20" height="14" rx="2" fill="#33691e" opacity="0.6"/>
+  <line x1="25" y1="115" x2="25" y2="129" stroke="#558b2f" stroke-width="1" opacity="0.6"/>
+</svg>

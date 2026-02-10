@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Hose reel frame -->
+  <rect x="60" y="30" width="80" height="80" rx="4" ry="4" fill="none" stroke="#e65100" stroke-width="3"/>
+  <!-- Reel drum (center) -->
+  <circle cx="100" cy="70" r="30" fill="#ef6c00"/>
+  <circle cx="100" cy="70" r="22" fill="#e65100"/>
+  <!-- Wound hose on reel -->
+  <circle cx="100" cy="70" r="26" fill="none" stroke="#ef6c00" stroke-width="4"/>
+  <circle cx="100" cy="70" r="18" fill="none" stroke="#ef6c00" stroke-width="4"/>
+  <!-- Center hub -->
+  <circle cx="100" cy="70" r="8" fill="#fff3e0"/>
+  <circle cx="100" cy="70" r="4" fill="#e65100"/>
+  <!-- Axle handle -->
+  <line x1="100" y1="62" x2="100" y2="56" stroke="#e65100" stroke-width="3"/>
+  <line x1="94" y1="56" x2="106" y2="56" stroke="#e65100" stroke-width="3" stroke-linecap="round"/>
+  <!-- Wheels on bottom -->
+  <circle cx="70" cy="118" r="10" fill="#e65100"/>
+  <circle cx="70" cy="118" r="5" fill="#fff3e0"/>
+  <circle cx="130" cy="118" r="10" fill="#e65100"/>
+  <circle cx="130" cy="118" r="5" fill="#fff3e0"/>
+  <!-- Frame legs to wheels -->
+  <line x1="65" y1="110" x2="65" y2="118" stroke="#e65100" stroke-width="3"/>
+  <line x1="135" y1="110" x2="135" y2="118" stroke="#e65100" stroke-width="3"/>
+  <!-- Hose coming off reel -->
+  <path d="M130,70 Q145,70 150,60 Q155,50 160,50" fill="none" stroke="#ef6c00" stroke-width="5" stroke-linecap="round"/>
+  <!-- Nozzle at end -->
+  <polygon points="160,46 175,43 175,57 160,54" fill="#e65100"/>
+</svg>

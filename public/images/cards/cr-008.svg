@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Crown shape (master craftsman) -->
+  <polygon points="65,35 75,55 85,30 100,50 115,30 125,55 135,35 135,60 65,60" fill="#795548"/>
+  <!-- Crown base band -->
+  <rect x="65" y="56" width="70" height="10" rx="2" fill="#4e342e"/>
+  <!-- Crown jewel dots -->
+  <circle cx="85" cy="38" r="3" fill="#efebe9" opacity="0.6"/>
+  <circle cx="100" cy="45" r="3" fill="#efebe9" opacity="0.6"/>
+  <circle cx="115" cy="38" r="3" fill="#efebe9" opacity="0.6"/>
+  <!-- Tool set below crown -->
+  <!-- Hammer -->
+  <rect x="52" y="80" width="4" height="35" rx="1.5" fill="#795548" transform="rotate(-15 54 97)"/>
+  <rect x="44" y="74" width="20" height="10" rx="2" fill="#4e342e" transform="rotate(-15 54 79)"/>
+  <!-- Screwdriver -->
+  <rect x="90" y="78" width="4" height="38" rx="1.5" fill="#795548"/>
+  <rect x="87" y="74" width="10" height="8" rx="2" fill="#4e342e"/>
+  <polygon points="90,116 94,116 93,126 91,126" fill="#4e342e"/>
+  <!-- Wrench -->
+  <rect x="128" y="80" width="4" height="35" rx="1.5" fill="#795548" transform="rotate(15 130 97)"/>
+  <circle cx="132" cy="76" r="8" fill="#4e342e" transform="rotate(15 132 76)"/>
+  <circle cx="132" cy="76" r="4" fill="#efebe9" transform="rotate(15 132 76)"/>
+  <!-- Chisel -->
+  <rect x="70" y="82" width="3" height="30" rx="1" fill="#795548" transform="rotate(-5 71 97)"/>
+  <polygon points="68,112 75,112 73,122 70,122" fill="#4e342e" transform="rotate(-5 71 117)"/>
+  <!-- File/rasp -->
+  <rect x="112" y="82" width="3" height="30" rx="1" fill="#795548" transform="rotate(5 113 97)"/>
+  <rect x="110" y="112" width="7" height="12" rx="1" fill="#4e342e" transform="rotate(5 113 118)"/>
+  <!-- Decorative stars around crown -->
+  <polygon points="50,25 52,30 57,30 53,33 54,38 50,35 46,38 47,33 43,30 48,30" fill="#795548" opacity="0.4"/>
+  <polygon points="150,25 152,30 157,30 153,33 154,38 150,35 146,38 147,33 143,30 148,30" fill="#795548" opacity="0.4"/>
+</svg>

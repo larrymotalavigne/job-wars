@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Microscope base -->
+  <rect x="25" y="120" width="65" height="8" rx="3" ry="3" fill="#00695c"/>
+  <!-- Microscope stage -->
+  <rect x="38" y="90" width="38" height="5" rx="1" fill="#00897b"/>
+  <!-- Microscope arm -->
+  <rect x="54" y="35" width="7" height="58" fill="#00695c"/>
+  <!-- Microscope arm top curve -->
+  <path d="M61 35 Q61 22 49 22 L49 30 Q55 30 55 35" fill="#00695c"/>
+  <!-- Eyepiece -->
+  <rect x="43" y="17" width="12" height="9" rx="2" ry="2" fill="#00897b"/>
+  <rect x="46" y="12" width="6" height="8" rx="2" ry="2" fill="#00695c"/>
+  <!-- Objective lens -->
+  <rect x="52" y="83" width="10" height="9" rx="1" ry="1" fill="#00897b"/>
+  <rect x="54" y="89" width="6" height="5" rx="1" ry="1" fill="#00695c"/>
+  <!-- Focus knob -->
+  <circle cx="66" cy="60" r="5" fill="#00897b"/>
+  <circle cx="66" cy="60" r="2.5" fill="#00695c"/>
+  <!-- Discovery starburst -->
+  <polygon points="145,30 149,45 165,45 152,55 157,70 145,60 133,70 138,55 125,45 141,45" fill="#00695c"/>
+  <polygon points="145,35 148,45 160,45 150,52 154,64 145,56 136,64 140,52 130,45 142,45" fill="#00897b"/>
+  <!-- Inner star -->
+  <circle cx="145" cy="50" r="6" fill="#e0f2f1" opacity="0.4"/>
+  <!-- Radiating lines from starburst -->
+  <line x1="145" y1="18" x2="145" y2="24" stroke="#00695c" stroke-width="2" opacity="0.6"/>
+  <line x1="170" y1="32" x2="175" y2="28" stroke="#00695c" stroke-width="2" opacity="0.6"/>
+  <line x1="120" y1="32" x2="115" y2="28" stroke="#00695c" stroke-width="2" opacity="0.6"/>
+  <line x1="170" y1="60" x2="175" y2="65" stroke="#00695c" stroke-width="2" opacity="0.6"/>
+  <line x1="120" y1="60" x2="115" y2="65" stroke="#00695c" stroke-width="2" opacity="0.6"/>
+  <line x1="145" y1="76" x2="145" y2="82" stroke="#00695c" stroke-width="2" opacity="0.6"/>
+  <!-- Connection sparkle path from microscope to star -->
+  <path d="M70 40 Q90 30 120 35" stroke="#00695c" stroke-width="1.5" fill="none" stroke-dasharray="3,3" opacity="0.5"/>
+  <!-- Small sparkle dots -->
+  <circle cx="85" cy="33" r="2" fill="#00695c" opacity="0.4"/>
+  <circle cx="105" cy="32" r="1.5" fill="#00695c" opacity="0.3"/>
+  <!-- DNA-like hint below star -->
+  <path d="M135 85 Q140 95 145 85 Q150 75 155 85 Q160 95 165 85" stroke="#00695c" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M135 90 Q140 80 145 90 Q150 100 155 90 Q160 80 165 90" stroke="#00695c" stroke-width="1.5" fill="none" opacity="0.4"/>
+</svg>

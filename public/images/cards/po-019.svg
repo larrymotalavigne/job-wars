@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fce4ec"/>
+  <!-- Evidence bag -->
+  <rect x="35" y="30" width="70" height="95" rx="3" fill="#fce4ec" stroke="#c62828" stroke-width="2.5"/>
+  <!-- Bag seal -->
+  <rect x="35" y="30" width="70" height="15" fill="#c62828"/>
+  <line x1="35" y1="50" x2="105" y2="50" stroke="#c62828" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Pill inside bag -->
+  <ellipse cx="60" cy="80" rx="12" ry="8" fill="#c62828"/>
+  <line x1="60" y1="72" x2="60" y2="88" stroke="#fce4ec" stroke-width="1.5"/>
+  <!-- Another pill -->
+  <ellipse cx="80" cy="95" rx="10" ry="7" fill="#b71c1c"/>
+  <line x1="80" y1="88" x2="80" y2="102" stroke="#fce4ec" stroke-width="1.5"/>
+  <!-- Small pill -->
+  <circle cx="68" cy="105" r="5" fill="#c62828" opacity="0.7"/>
+  <!-- Badge -->
+  <polygon points="155,35 162,50 178,52 167,63 170,78 155,70 140,78 143,63 132,52 148,50" fill="#c62828"/>
+  <polygon points="155,45 159,53 168,54 162,60 163,68 155,64 147,68 148,60 142,54 151,53" fill="#b71c1c"/>
+  <circle cx="155" cy="57" r="4" fill="#fce4ec"/>
+  <!-- Badge detail -->
+  <rect x="150" y="88" width="10" height="30" rx="2" fill="#c62828"/>
+  <rect x="145" y="88" width="20" height="6" rx="2" fill="#b71c1c"/>
+</svg>

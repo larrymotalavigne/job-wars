@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Pottery wheel base -->
+  <ellipse cx="100" cy="125" rx="50" ry="10" fill="#4e342e"/>
+  <!-- Wheel disc -->
+  <ellipse cx="100" cy="110" rx="45" ry="12" fill="#795548"/>
+  <ellipse cx="100" cy="108" rx="40" ry="10" fill="#4e342e" opacity="0.3"/>
+  <!-- Clay pot being shaped -->
+  <path d="M82,108 Q80,90 78,75 Q77,65 85,55 Q90,50 100,48 Q110,50 115,55 Q123,65 122,75 Q120,90 118,108" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Pot opening -->
+  <ellipse cx="100" cy="48" rx="15" ry="5" fill="#efebe9" stroke="#4e342e" stroke-width="1"/>
+  <!-- Hands shaping -->
+  <ellipse cx="72" cy="80" rx="8" ry="14" fill="#795548" opacity="0.6" transform="rotate(15,72,80)"/>
+  <ellipse cx="128" cy="80" rx="8" ry="14" fill="#795548" opacity="0.6" transform="rotate(-15,128,80)"/>
+  <!-- Wheel rotation lines -->
+  <path d="M55,112 Q60,105 70,112" stroke="#4e342e" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M130,112 Q140,105 145,112" stroke="#4e342e" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>

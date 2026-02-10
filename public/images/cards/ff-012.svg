@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Double chevron rank insignia -->
+  <!-- Bottom chevron -->
+  <polyline points="70,105 100,75 130,105" fill="none" stroke="#ef6c00" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Top chevron -->
+  <polyline points="70,75 100,45 130,75" fill="none" stroke="#ef6c00" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Small flame on top -->
+  <path d="M100,30 Q105,20 100,10 Q110,18 112,28 Q108,22 100,30Z" fill="#e65100"/>
+</svg>

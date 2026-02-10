@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Officier de Transmissions: radio equipment with antenna -->
+  <!-- Radio body -->
+  <rect x="55" y="45" width="70" height="85" rx="6" fill="#558b2f"/>
+  <rect x="60" y="50" width="60" height="75" rx="4" fill="#33691e"/>
+  <!-- Screen/display -->
+  <rect x="65" y="55" width="50" height="25" rx="3" fill="#f1f8e9" opacity="0.8"/>
+  <!-- Signal lines on screen -->
+  <polyline points="68,72 75,65 82,72 89,60 96,70 103,63 110,68" fill="none" stroke="#558b2f" stroke-width="2"/>
+  <!-- Dials -->
+  <circle cx="78" cy="95" r="7" fill="#558b2f"/>
+  <circle cx="78" cy="95" r="4" fill="#f1f8e9"/>
+  <line x1="78" y1="95" x2="78" y2="89" stroke="#33691e" stroke-width="2"/>
+  <circle cx="102" cy="95" r="7" fill="#558b2f"/>
+  <circle cx="102" cy="95" r="4" fill="#f1f8e9"/>
+  <line x1="102" y1="95" x2="105" y2="90" stroke="#33691e" stroke-width="2"/>
+  <!-- Buttons -->
+  <circle cx="75" cy="115" r="3" fill="#f1f8e9"/>
+  <circle cx="87" cy="115" r="3" fill="#f1f8e9"/>
+  <circle cx="99" cy="115" r="3" fill="#f1f8e9"/>
+  <!-- Antenna -->
+  <line x1="135" y1="50" x2="155" y2="15" stroke="#33691e" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="155" cy="13" r="3" fill="#558b2f"/>
+  <!-- Signal waves -->
+  <path d="M158 10 Q168 5 165 15" fill="none" stroke="#558b2f" stroke-width="1.5"/>
+  <path d="M162 6 Q175 0 170 18" fill="none" stroke="#558b2f" stroke-width="1.5"/>
+  <!-- Cable -->
+  <path d="M55 80 Q40 80 35 90 Q30 100 35 110" fill="none" stroke="#33691e" stroke-width="2.5"/>
+  <circle cx="35" cy="112" r="4" fill="#33691e"/>
+</svg>

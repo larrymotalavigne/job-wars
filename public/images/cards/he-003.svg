@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+
+  <!-- Soft circle backdrop -->
+  <circle cx="100" cy="75" r="55" fill="#00897b" opacity="0.1"/>
+
+  <!-- Stethoscope tubing - Y shape -->
+  <path d="M85,55 L85,80 Q85,95 100,105" fill="none" stroke="#00897b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M115,55 L115,80 Q115,95 100,105" fill="none" stroke="#00897b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Stethoscope lower tube -->
+  <line x1="100" y1="105" x2="100" y2="118" stroke="#00897b" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Chest piece (diaphragm) -->
+  <circle cx="100" cy="125" r="10" fill="#00695c"/>
+  <circle cx="100" cy="125" r="6" fill="#00897b"/>
+  <circle cx="100" cy="125" r="3" fill="#00695c"/>
+
+  <!-- Ear pieces -->
+  <circle cx="85" cy="48" r="6" fill="#00695c"/>
+  <circle cx="85" cy="48" r="3" fill="#e0f2f1"/>
+  <circle cx="115" cy="48" r="6" fill="#00695c"/>
+  <circle cx="115" cy="48" r="3" fill="#e0f2f1"/>
+
+  <!-- Ear piece tubes curving outward at top -->
+  <path d="M85,48 Q80,35 78,28" fill="none" stroke="#00897b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M115,48 Q120,35 122,28" fill="none" stroke="#00897b" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Ear tips -->
+  <circle cx="78" cy="26" r="4" fill="#00695c"/>
+  <circle cx="122" cy="26" r="4" fill="#00695c"/>
+
+  <!-- Decorative pulse line -->
+  <polyline points="25,130 40,130 45,122 50,138 55,130 70,130" fill="none" stroke="#00897b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+  <polyline points="130,130 145,130 150,122 155,138 160,130 175,130" fill="none" stroke="#00897b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+</svg>

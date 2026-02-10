@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Légionnaire: kepi blanc (white kepi hat) -->
+  <!-- Kepi body (white) -->
+  <rect x="60" y="40" width="80" height="50" rx="4" fill="#f1f8e9" stroke="#558b2f" stroke-width="2"/>
+  <!-- Kepi top (flat) -->
+  <rect x="55" y="35" width="90" height="10" rx="3" fill="#f1f8e9" stroke="#558b2f" stroke-width="2"/>
+  <!-- Kepi flat top -->
+  <ellipse cx="100" cy="37" rx="42" ry="6" fill="#f1f8e9" stroke="#558b2f" stroke-width="1.5"/>
+  <!-- Visor/peak -->
+  <path d="M58 90 Q100 100 142 90 L148 96 Q100 108 52 96 Z" fill="#33691e"/>
+  <!-- Band -->
+  <rect x="60" y="82" width="80" height="10" fill="#558b2f"/>
+  <!-- Neck flap (couvre-nuque) -->
+  <path d="M62 90 L58 120 Q100 130 142 120 L138 90" fill="#f1f8e9" stroke="#558b2f" stroke-width="1.5"/>
+  <!-- Flap folds -->
+  <line x1="80" y1="92" x2="78" y2="122" stroke="#558b2f" stroke-width="0.8" opacity="0.5"/>
+  <line x1="100" y1="92" x2="100" y2="125" stroke="#558b2f" stroke-width="0.8" opacity="0.5"/>
+  <line x1="120" y1="92" x2="122" y2="122" stroke="#558b2f" stroke-width="0.8" opacity="0.5"/>
+  <!-- Grenade emblem on front -->
+  <circle cx="100" cy="65" r="8" fill="#558b2f" opacity="0.6"/>
+  <polygon points="100,52 96,60 104,60" fill="#558b2f" opacity="0.6"/>
+  <circle cx="100" cy="65" r="4" fill="#f1f8e9"/>
+</svg>

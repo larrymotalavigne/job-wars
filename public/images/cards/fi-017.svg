@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Trading screen 1 -->
+  <rect x="15" y="20" width="75" height="50" rx="4" ry="4" fill="#37474f"/>
+  <rect x="20" y="25" width="65" height="38" rx="2" ry="2" fill="#eceff1"/>
+  <!-- Screen 1 candlestick-like lines -->
+  <line x1="28" y1="55" x2="28" y2="35" stroke="#546e7a" stroke-width="2"/>
+  <rect x="26" y="38" width="4" height="10" fill="#546e7a"/>
+  <line x1="38" y1="58" x2="38" y2="30" stroke="#546e7a" stroke-width="2"/>
+  <rect x="36" y="33" width="4" height="15" fill="#37474f"/>
+  <line x1="48" y1="52" x2="48" y2="32" stroke="#546e7a" stroke-width="2"/>
+  <rect x="46" y="36" width="4" height="8" fill="#546e7a"/>
+  <line x1="58" y1="56" x2="58" y2="28" stroke="#546e7a" stroke-width="2"/>
+  <rect x="56" y="30" width="4" height="16" fill="#37474f"/>
+  <line x1="68" y1="50" x2="68" y2="34" stroke="#546e7a" stroke-width="2"/>
+  <rect x="66" y="37" width="4" height="8" fill="#546e7a"/>
+  <line x1="78" y1="48" x2="78" y2="30" stroke="#546e7a" stroke-width="2"/>
+  <rect x="76" y="32" width="4" height="10" fill="#37474f"/>
+  <!-- Screen stand 1 -->
+  <rect x="47" y="70" width="6" height="8" fill="#37474f"/>
+  <rect x="38" y="78" width="24" height="3" rx="1" ry="1" fill="#37474f"/>
+  <!-- Trading screen 2 -->
+  <rect x="110" y="20" width="75" height="50" rx="4" ry="4" fill="#37474f"/>
+  <rect x="115" y="25" width="65" height="38" rx="2" ry="2" fill="#eceff1"/>
+  <!-- Screen 2 line chart -->
+  <polyline points="120,55 130,50 138,52 146,42 154,38 162,45 170,35" fill="none" stroke="#546e7a" stroke-width="2"/>
+  <!-- Screen stand 2 -->
+  <rect x="142" y="70" width="6" height="8" fill="#37474f"/>
+  <rect x="133" y="78" width="24" height="3" rx="1" ry="1" fill="#37474f"/>
+  <!-- Up arrow -->
+  <polygon points="55,100 65,90 75,100" fill="#546e7a"/>
+  <rect x="62" y="100" width="6" height="18" fill="#546e7a"/>
+  <!-- Down arrow -->
+  <polygon points="125,118 135,128 145,118" fill="#37474f"/>
+  <rect x="132" y="100" width="6" height="18" fill="#37474f"/>
+  <!-- Ticker line at bottom -->
+  <rect x="15" y="135" width="170" height="4" rx="2" ry="2" fill="#546e7a" opacity="0.3"/>
+  <rect x="15" y="135" width="50" height="4" rx="2" ry="2" fill="#546e7a"/>
+</svg>

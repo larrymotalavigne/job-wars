@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Workbench top -->
+  <rect x="20" y="55" width="160" height="12" rx="3" fill="#795548"/>
+  <!-- Wood grain on top -->
+  <line x1="30" y1="60" x2="60" y2="60" stroke="#4e342e" stroke-width="0.8" opacity="0.3"/>
+  <line x1="80" y1="62" x2="120" y2="62" stroke="#4e342e" stroke-width="0.8" opacity="0.3"/>
+  <line x1="140" y1="59" x2="170" y2="59" stroke="#4e342e" stroke-width="0.8" opacity="0.3"/>
+  <!-- Front apron -->
+  <rect x="20" y="67" width="160" height="6" rx="1" fill="#4e342e"/>
+  <!-- Left legs -->
+  <rect x="28" y="73" width="10" height="50" rx="2" fill="#795548"/>
+  <rect x="42" y="73" width="10" height="50" rx="2" fill="#795548"/>
+  <!-- Right legs -->
+  <rect x="148" y="73" width="10" height="50" rx="2" fill="#795548"/>
+  <rect x="162" y="73" width="10" height="50" rx="2" fill="#795548"/>
+  <!-- Shelf/stretcher between legs -->
+  <rect x="38" y="100" width="132" height="6" rx="1" fill="#795548" opacity="0.7"/>
+  <!-- Vise on left side -->
+  <rect x="15" y="52" width="12" height="22" rx="2" fill="#4e342e"/>
+  <rect x="10" y="58" width="8" height="10" rx="1" fill="#795548"/>
+  <!-- Vise screw -->
+  <circle cx="14" cy="63" r="3" fill="#4e342e"/>
+  <!-- Tools on bench surface -->
+  <!-- Small plane -->
+  <rect x="55" y="45" width="25" height="10" rx="2" fill="#4e342e" opacity="0.8"/>
+  <rect x="63" y="40" width="4" height="7" rx="1" fill="#795548"/>
+  <!-- Chisel -->
+  <rect x="100" y="48" width="30" height="4" rx="1" fill="#795548" opacity="0.7"/>
+  <polygon points="130,48 130,52 136,50" fill="#4e342e" opacity="0.7"/>
+  <!-- Small square tool -->
+  <rect x="145" y="42" width="15" height="13" rx="1" fill="#4e342e" opacity="0.6"/>
+  <rect x="145" y="42" width="3" height="13" fill="#795548" opacity="0.6"/>
+  <!-- Tool on shelf -->
+  <rect x="80" y="93" width="20" height="7" rx="1" fill="#4e342e" opacity="0.5"/>
+  <!-- Floor line -->
+  <rect x="15" y="125" width="170" height="2" rx="1" fill="#795548" opacity="0.2"/>
+</svg>

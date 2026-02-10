@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#fce4ec"/>
+  <!-- Dog Silhouette -->
+  <g transform="translate(70,55)" fill="#c62828">
+    <!-- Body -->
+    <ellipse cx="0" cy="10" rx="28" ry="16"/>
+    <!-- Head -->
+    <circle cx="30" cy="-2" r="14"/>
+    <!-- Snout -->
+    <ellipse cx="42" cy="2" rx="9" ry="6"/>
+    <!-- Ear -->
+    <polygon points="24,-14 20,-28 32,-16" fill="#b71c1c"/>
+    <!-- Eye -->
+    <circle cx="34" cy="-4" r="2" fill="#fce4ec"/>
+    <!-- Nose -->
+    <circle cx="49" cy="0" r="2.5" fill="#b71c1c"/>
+    <!-- Front leg 1 -->
+    <rect x="14" y="22" width="6" height="22" rx="3"/>
+    <!-- Front leg 2 -->
+    <rect x="22" y="22" width="6" height="24" rx="3"/>
+    <!-- Back leg 1 -->
+    <rect x="-20" y="20" width="6" height="24" rx="3"/>
+    <!-- Back leg 2 -->
+    <rect x="-12" y="22" width="6" height="22" rx="3"/>
+    <!-- Tail -->
+    <path d="M-26,0 Q-40,-10 -34,-26" fill="none" stroke="#c62828" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- Leash -->
+  <path d="M120,53 Q140,40 150,28 Q155,22 160,24" fill="none" stroke="#b71c1c" stroke-width="3" stroke-linecap="round"/>
+  <!-- Leash handle (loop) -->
+  <ellipse cx="162" cy="22" rx="6" ry="10" fill="none" stroke="#b71c1c" stroke-width="3" transform="rotate(15,162,22)"/>
+  <!-- Collar on dog -->
+  <rect x="86" y="60" width="14" height="5" rx="2" fill="#b71c1c"/>
+</svg>

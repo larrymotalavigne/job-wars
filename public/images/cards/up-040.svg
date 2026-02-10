@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e6f4ea"/>
+  <!-- Stack of envelopes - bottom -->
+  <rect x="38" y="72" width="90" height="55" rx="3" fill="#0d652d" opacity="0.25"/>
+  <!-- Middle envelope -->
+  <rect x="33" y="62" width="90" height="55" rx="3" fill="#0d652d" opacity="0.35"/>
+  <!-- Top envelope -->
+  <rect x="28" y="52" width="90" height="55" rx="3" fill="#0d652d" opacity="0.15" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Envelope flap -->
+  <polygon points="28,52 73,80 118,52" fill="none" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Envelope seal -->
+  <circle cx="73" cy="70" r="6" fill="#0d652d" opacity="0.4"/>
+  <!-- Bid document peeking out top -->
+  <rect x="40" y="35" width="65" height="25" rx="2" fill="#e6f4ea" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="48" y1="43" x2="97" y2="43" stroke="#0d652d" stroke-width="1.5" opacity="0.3"/>
+  <line x1="48" y1="50" x2="90" y2="50" stroke="#0d652d" stroke-width="1.5" opacity="0.3"/>
+  <!-- Second document -->
+  <rect x="125" y="25" width="55" height="70" rx="3" fill="#e6f4ea" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="132" y1="38" x2="172" y2="38" stroke="#0d652d" stroke-width="2" opacity="0.3"/>
+  <line x1="132" y1="48" x2="172" y2="48" stroke="#0d652d" stroke-width="1.5" opacity="0.2"/>
+  <line x1="132" y1="56" x2="172" y2="56" stroke="#0d652d" stroke-width="1.5" opacity="0.2"/>
+  <line x1="132" y1="64" x2="165" y2="64" stroke="#0d652d" stroke-width="1.5" opacity="0.2"/>
+  <line x1="132" y1="72" x2="170" y2="72" stroke="#0d652d" stroke-width="1.5" opacity="0.2"/>
+  <line x1="132" y1="80" x2="155" y2="80" stroke="#0d652d" stroke-width="1.5" opacity="0.2"/>
+  <!-- Euro/currency symbol on document -->
+  <circle cx="155" cy="110" r="14" fill="none" stroke="#0d652d" stroke-width="2" opacity="0.3"/>
+  <path d="M 162 102 Q 148 102 148 110 Q 148 118 162 118" fill="none" stroke="#0d652d" stroke-width="2" opacity="0.3"/>
+  <line x1="144" y1="108" x2="158" y2="108" stroke="#0d652d" stroke-width="1.5" opacity="0.3"/>
+  <line x1="144" y1="113" x2="158" y2="113" stroke="#0d652d" stroke-width="1.5" opacity="0.3"/>
+</svg>

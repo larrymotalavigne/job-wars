@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+
+  <!-- Megaphone - Chef d'Agres -->
+  <!-- Megaphone body (cone) -->
+  <polygon points="60,55 140,30 140,95 60,80" fill="#ef6c00"/>
+  <!-- Megaphone bell/opening -->
+  <ellipse cx="140" cy="62" rx="8" ry="34" fill="#e65100"/>
+  <!-- Megaphone handle grip -->
+  <rect x="50" y="58" width="16" height="22" rx="4" fill="#e65100"/>
+  <!-- Megaphone inner circle (speaker detail) -->
+  <ellipse cx="140" cy="62" rx="5" ry="24" fill="#ef6c00" opacity="0.6"/>
+
+  <!-- Sound waves -->
+  <path d="M152 62 Q162 52 162 62 Q162 72 152 62" fill="none" stroke="#e65100" stroke-width="2.5" opacity="0.6"/>
+  <path d="M158 62 Q172 48 172 62 Q172 76 158 62" fill="none" stroke="#e65100" stroke-width="2.5" opacity="0.4"/>
+  <path d="M164 62 Q182 44 182 62 Q182 80 164 62" fill="none" stroke="#e65100" stroke-width="2" opacity="0.25"/>
+
+  <!-- Trigger/button -->
+  <circle cx="58" cy="90" r="4" fill="#ef6c00"/>
+  <line x1="58" y1="80" x2="58" y2="86" stroke="#e65100" stroke-width="2"/>
+
+  <!-- Command stripes -->
+  <rect x="24" y="115" width="20" height="4" rx="2" fill="#ef6c00" opacity="0.3"/>
+  <rect x="24" y="122" width="14" height="4" rx="2" fill="#ef6c00" opacity="0.3"/>
+</svg>

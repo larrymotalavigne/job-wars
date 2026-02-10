@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Puzzle piece 1 (top-left, blue) -->
+  <path d="M30,30 L70,30 L70,40 C70,40 78,40 78,48 C78,56 70,56 70,56 L70,70 L56,70 C56,70 56,78 48,78 C40,78 40,70 40,70 L30,70 Z" fill="#1a73e8" stroke="white" stroke-width="1.5"/>
+  <!-- Puzzle piece 2 (top-right, dark blue) -->
+  <path d="M78,30 L120,30 L120,70 L106,70 C106,70 106,78 98,78 C90,78 90,70 90,70 L78,70 L78,56 C78,56 86,56 86,48 C86,40 78,40 78,40 Z" fill="#174ea6" stroke="white" stroke-width="1.5"/>
+  <!-- Puzzle piece 3 (bottom-left, dark blue) -->
+  <path d="M30,78 L40,78 C40,78 40,86 48,86 C56,86 56,78 56,78 L70,78 L70,88 C70,88 78,88 78,96 C78,104 70,104 70,104 L70,120 L30,120 Z" fill="#174ea6" stroke="white" stroke-width="1.5"/>
+  <!-- Puzzle piece 4 (bottom-right, blue) -->
+  <path d="M78,78 L90,78 C90,78 90,86 98,86 C106,86 106,78 106,78 L120,78 L120,120 L78,120 L78,104 C78,104 86,104 86,96 C86,88 78,88 78,88 Z" fill="#1a73e8" stroke="white" stroke-width="1.5"/>
+  <!-- Floating connecting piece (right side) -->
+  <path d="M135,50 L170,50 L170,100 L135,100 L135,86 C135,86 143,86 143,78 C143,70 135,70 135,70 Z" fill="#1a73e8" opacity="0.6" stroke="white" stroke-width="1.5"/>
+  <!-- Arrow showing connection -->
+  <line x1="125" y1="75" x2="132" y2="75" stroke="#174ea6" stroke-width="2"/>
+  <polygon points="133,75 129,71 129,79" fill="#174ea6"/>
+</svg>

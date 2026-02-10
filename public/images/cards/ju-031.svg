@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Book cover -->
+  <rect x="45" y="18" width="110" height="115" rx="5" fill="#6a1b9a" stroke="#4a148c" stroke-width="2"/>
+  <!-- Spine -->
+  <rect x="45" y="18" width="15" height="115" rx="3" fill="#4a148c"/>
+  <!-- Spine ridges -->
+  <line x1="45" y1="35" x2="60" y2="35" stroke="#6a1b9a" stroke-width="1"/>
+  <line x1="45" y1="55" x2="60" y2="55" stroke="#6a1b9a" stroke-width="1"/>
+  <line x1="45" y1="95" x2="60" y2="95" stroke="#6a1b9a" stroke-width="1"/>
+  <line x1="45" y1="115" x2="60" y2="115" stroke="#6a1b9a" stroke-width="1"/>
+  <!-- Cover border -->
+  <rect x="68" y="28" width="78" height="95" rx="3" fill="none" stroke="#f3e5f5" stroke-width="1" opacity="0.4"/>
+  <!-- Cover center emblem -->
+  <rect x="85" y="50" width="45" height="35" rx="2" fill="#4a148c" opacity="0.4"/>
+  <line x1="92" y1="60" x2="123" y2="60" stroke="#f3e5f5" stroke-width="1" opacity="0.4"/>
+  <line x1="92" y1="68" x2="123" y2="68" stroke="#f3e5f5" stroke-width="1" opacity="0.4"/>
+  <line x1="92" y1="76" x2="115" y2="76" stroke="#f3e5f5" stroke-width="1" opacity="0.4"/>
+  <!-- Ribbon bookmark -->
+  <path d="M130,18 L130,140 L125,130 L120,140 L120,18" fill="#4a148c" opacity="0.7"/>
+  <!-- Page edges visible from bottom -->
+  <line x1="48" y1="133" x2="152" y2="133" stroke="#f3e5f5" stroke-width="1" opacity="0.5"/>
+  <line x1="49" y1="135" x2="153" y2="135" stroke="#f3e5f5" stroke-width="1" opacity="0.3"/>
+</svg>

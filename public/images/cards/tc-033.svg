@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Diploma paper -->
+  <rect x="35" y="25" width="130" height="95" rx="4" fill="#f9a825" opacity="0.25"/>
+  <rect x="38" y="28" width="124" height="89" rx="3" fill="#fef7e0"/>
+  <!-- Decorative border -->
+  <rect x="42" y="32" width="116" height="81" rx="2" fill="none" stroke="#f9a825" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Header line -->
+  <line x1="65" y1="48" x2="135" y2="48" stroke="#f9a825" stroke-width="2.5" opacity="0.5"/>
+  <!-- Body lines -->
+  <line x1="55" y1="62" x2="145" y2="62" stroke="#f9a825" stroke-width="1.5" opacity="0.3"/>
+  <line x1="60" y1="72" x2="140" y2="72" stroke="#f9a825" stroke-width="1.5" opacity="0.3"/>
+  <line x1="65" y1="82" x2="135" y2="82" stroke="#f9a825" stroke-width="1.5" opacity="0.3"/>
+  <!-- Ribbon seal circle -->
+  <circle cx="100" cy="102" r="14" fill="#f57f17"/>
+  <circle cx="100" cy="102" r="10" fill="#f9a825"/>
+  <circle cx="100" cy="102" r="6" fill="#f57f17"/>
+  <!-- Star in seal -->
+  <polygon points="100,97 101.5,100 105,100.5 102.5,103 103,106.5 100,105 97,106.5 97.5,103 95,100.5 98.5,100" fill="#fef7e0"/>
+  <!-- Ribbon tails -->
+  <polygon points="90,112 95,112 92,130 85,130" fill="#f57f17"/>
+  <polygon points="105,112 110,112 115,130 108,130" fill="#f57f17"/>
+  <!-- Ribbon V-cuts -->
+  <polygon points="85,130 88,124 92,130" fill="#fef7e0"/>
+  <polygon points="108,130 112,124 115,130" fill="#fef7e0"/>
+</svg>

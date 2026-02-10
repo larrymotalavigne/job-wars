@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e6f4ea"/>
+  <!-- Ground line -->
+  <line x1="15" y1="125" x2="185" y2="125" stroke="#0d652d" stroke-width="2"/>
+  <!-- Building 1 - short left -->
+  <rect x="22" y="85" width="22" height="40" rx="1" fill="#0d652d" opacity="0.7"/>
+  <rect x="25" y="89" width="5" height="6" rx="0.5" fill="#e6f4ea" opacity="0.7"/>
+  <rect x="33" y="89" width="5" height="6" rx="0.5" fill="#e6f4ea" opacity="0.7"/>
+  <rect x="25" y="99" width="5" height="6" rx="0.5" fill="#e6f4ea" opacity="0.7"/>
+  <rect x="33" y="99" width="5" height="6" rx="0.5" fill="#e6f4ea" opacity="0.7"/>
+  <rect x="25" y="109" width="5" height="6" rx="0.5" fill="#e6f4ea" opacity="0.7"/>
+  <rect x="33" y="109" width="5" height="6" rx="0.5" fill="#e6f4ea" opacity="0.7"/>
+  <!-- Building 2 - tall -->
+  <rect x="48" y="35" width="24" height="90" rx="1" fill="#0d652d"/>
+  <rect x="51" y="40" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="59" y="40" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="51" y="50" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="59" y="50" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="51" y="60" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="59" y="60" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="51" y="70" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="59" y="70" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="51" y="80" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="59" y="80" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="51" y="90" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="59" y="90" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="51" y="100" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="59" y="100" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="51" y="110" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="59" y="110" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <!-- Building 3 - medium with pointed top -->
+  <rect x="76" y="55" width="20" height="70" rx="1" fill="#1a8a3e"/>
+  <polygon points="76,55 86,40 96,55" fill="#1a8a3e"/>
+  <rect x="79" y="60" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="87" y="60" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="79" y="70" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="87" y="70" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="79" y="80" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="87" y="80" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="79" y="90" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="87" y="90" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="79" y="100" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="87" y="100" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="79" y="110" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="87" y="110" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <!-- Building 4 - tallest skyscraper -->
+  <rect x="100" y="20" width="26" height="105" rx="1" fill="#0d652d" opacity="0.85"/>
+  <rect x="104" y="25" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="113" y="25" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="104" y="35" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="113" y="35" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="104" y="45" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="113" y="45" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="104" y="55" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="113" y="55" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="104" y="65" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="113" y="65" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="104" y="75" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="113" y="75" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="104" y="85" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="113" y="85" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="104" y="95" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="113" y="95" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="104" y="105" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <rect x="113" y="105" width="5" height="5" rx="0.5" fill="#e6f4ea" opacity="0.5"/>
+  <!-- Antenna on tallest -->
+  <line x1="113" y1="20" x2="113" y2="10" stroke="#0d652d" stroke-width="2"/>
+  <circle cx="113" cy="8" r="2" fill="#0d652d"/>
+  <!-- Building 5 - medium right -->
+  <rect x="130" y="65" width="22" height="60" rx="1" fill="#1a8a3e" opacity="0.8"/>
+  <rect x="134" y="70" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="142" y="70" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="134" y="80" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="142" y="80" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="134" y="90" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="142" y="90" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="134" y="100" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="142" y="100" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="134" y="110" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="142" y="110" width="4" height="5" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <!-- Building 6 - short right -->
+  <rect x="156" y="95" width="20" height="30" rx="1" fill="#0d652d" opacity="0.65"/>
+  <rect x="159" y="100" width="4" height="4" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="167" y="100" width="4" height="4" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="159" y="110" width="4" height="4" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+  <rect x="167" y="110" width="4" height="4" rx="0.5" fill="#e6f4ea" opacity="0.6"/>
+</svg>

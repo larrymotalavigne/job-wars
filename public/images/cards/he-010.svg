@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+
+  <!-- Scanner gantry (donut/ring) -->
+  <ellipse cx="90" cy="75" rx="50" ry="55" fill="#00897b"/>
+  <ellipse cx="90" cy="75" rx="35" ry="40" fill="#00695c"/>
+  <ellipse cx="90" cy="75" rx="28" ry="33" fill="#e0f2f1"/>
+
+  <!-- 3D depth effect - inner ring right edge -->
+  <path d="M90,20 Q105,20 108,25 L108,125 Q105,130 90,130" fill="none" stroke="#00695c" stroke-width="2" opacity="0.3"/>
+
+  <!-- Scanner bed/table -->
+  <rect x="85" y="70" width="100" height="10" rx="3" fill="#00897b"/>
+  <!-- Table leg -->
+  <rect x="165" y="80" width="8" height="25" rx="2" fill="#00695c"/>
+  <!-- Table base -->
+  <rect x="158" y="105" width="22" height="5" rx="2" fill="#00897b"/>
+
+  <!-- Patient outline on table (simple) -->
+  <ellipse cx="130" cy="68" rx="6" ry="5" fill="#00897b" opacity="0.5"/>
+  <rect x="118" y="68" width="35" height="4" rx="2" fill="#00897b" opacity="0.4"/>
+
+  <!-- Scanner display/panel on top -->
+  <rect x="60" y="17" width="20" height="10" rx="2" fill="#00695c" opacity="0.5"/>
+  <rect x="63" y="19" width="6" height="6" rx="1" fill="#e0f2f1" opacity="0.5"/>
+  <circle cx="74" cy="22" r="2" fill="#e0f2f1" opacity="0.5"/>
+
+  <!-- Scan lines effect inside bore -->
+  <line x1="68" y1="55" x2="112" y2="55" stroke="#00897b" stroke-width="1" opacity="0.3"/>
+  <line x1="65" y1="65" x2="115" y2="65" stroke="#00897b" stroke-width="1" opacity="0.3"/>
+  <line x1="65" y1="85" x2="115" y2="85" stroke="#00897b" stroke-width="1" opacity="0.3"/>
+  <line x1="68" y1="95" x2="112" y2="95" stroke="#00897b" stroke-width="1" opacity="0.3"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="110" cy="118" rx="55" ry="5" fill="#00897b" opacity="0.1"/>
+
+  <!-- Brain scan icon (top right corner) -->
+  <circle cx="170" cy="30" r="12" fill="#00897b" opacity="0.2"/>
+  <path d="M164,30 Q167,22 170,26 Q173,22 176,30 Q178,35 174,37 Q172,40 170,38 Q168,40 166,37 Q162,35 164,30 Z" fill="#00897b" opacity="0.4"/>
+  <line x1="170" y1="24" x2="170" y2="38" stroke="#00695c" stroke-width="1" opacity="0.4"/>
+</svg>

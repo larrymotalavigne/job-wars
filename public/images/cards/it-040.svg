@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Clipboard body -->
+  <rect x="45" y="18" width="80" height="120" rx="4" ry="4" fill="white" stroke="#1a73e8" stroke-width="2"/>
+  <!-- Clipboard clip -->
+  <rect x="70" y="10" width="30" height="16" rx="3" ry="3" fill="#174ea6"/>
+  <rect x="76" y="8" width="18" height="10" rx="3" ry="3" fill="#1a73e8"/>
+  <!-- Shield on clipboard -->
+  <path d="M85,38 L102,46 L102,62 C102,72 94,78 85,82 C76,78 68,72 68,62 L68,46 Z" fill="#1a73e8" stroke="#174ea6" stroke-width="1.5"/>
+  <!-- Shield inner -->
+  <path d="M85,44 L97,50 L97,62 C97,69 91,74 85,77 C79,74 73,69 73,62 L73,50 Z" fill="#e8f0fe"/>
+  <!-- Checkmark on shield -->
+  <polyline points="78,60 83,66 93,54" fill="none" stroke="#1a73e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Checklist items below shield -->
+  <!-- Item 1 -->
+  <rect x="54" y="90" width="10" height="10" rx="2" fill="none" stroke="#1a73e8" stroke-width="1.5"/>
+  <polyline points="56,95 58,98 62,92" fill="none" stroke="#34a853" stroke-width="1.5"/>
+  <line x1="70" y1="95" x2="115" y2="95" stroke="#174ea6" stroke-width="1.5"/>
+  <!-- Item 2 -->
+  <rect x="54" y="104" width="10" height="10" rx="2" fill="none" stroke="#1a73e8" stroke-width="1.5"/>
+  <polyline points="56,109 58,112 62,106" fill="none" stroke="#34a853" stroke-width="1.5"/>
+  <line x1="70" y1="109" x2="110" y2="109" stroke="#174ea6" stroke-width="1.5"/>
+  <!-- Item 3 -->
+  <rect x="54" y="118" width="10" height="10" rx="2" fill="none" stroke="#1a73e8" stroke-width="1.5"/>
+  <polyline points="56,123 58,126 62,120" fill="none" stroke="#34a853" stroke-width="1.5"/>
+  <line x1="70" y1="123" x2="108" y2="123" stroke="#174ea6" stroke-width="1.5"/>
+  <!-- Magnifying glass (audit) on right side -->
+  <circle cx="155" cy="70" r="22" fill="none" stroke="#1a73e8" stroke-width="3"/>
+  <line x1="170" y1="86" x2="185" y2="104" stroke="#174ea6" stroke-width="5" stroke-linecap="round"/>
+  <!-- Shield icon inside magnifying glass -->
+  <path d="M155,58 L165,62 L165,70 C165,75 160,78 155,80 C150,78 145,75 145,70 L145,62 Z" fill="#1a73e8" opacity="0.3"/>
+  <!-- Lock inside magnifying glass shield -->
+  <rect x="152" y="67" width="6" height="5" rx="1" fill="#174ea6"/>
+  <path d="M153,67 L153,65 C153,62 157,62 157,65 L157,67" fill="none" stroke="#174ea6" stroke-width="1.5"/>
+</svg>

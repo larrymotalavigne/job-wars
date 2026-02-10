@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Lightbox -->
+  <rect x="35" y="15" width="130" height="110" rx="5" ry="5" fill="#00695c"/>
+  <rect x="42" y="22" width="116" height="96" rx="3" ry="3" fill="#e0f2f1"/>
+  <!-- X-ray film area -->
+  <rect x="48" y="28" width="104" height="84" rx="2" ry="2" fill="#00897b" opacity="0.2"/>
+  <!-- Ribcage - spine -->
+  <line x1="100" y1="38" x2="100" y2="105" stroke="#00695c" stroke-width="3"/>
+  <!-- Ribs left -->
+  <path d="M100 45 Q80 42 68 50" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M100 55 Q78 52 65 60" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M100 65 Q78 62 65 70" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M100 75 Q80 72 68 80" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M100 85 Q82 82 72 88" stroke="#00695c" stroke-width="2" fill="none"/>
+  <!-- Ribs right -->
+  <path d="M100 45 Q120 42 132 50" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M100 55 Q122 52 135 60" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M100 65 Q122 62 135 70" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M100 75 Q120 72 132 80" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M100 85 Q118 82 128 88" stroke="#00695c" stroke-width="2" fill="none"/>
+  <!-- Clavicles -->
+  <path d="M100 40 Q80 32 62 38" stroke="#00695c" stroke-width="2.5" fill="none"/>
+  <path d="M100 40 Q120 32 138 38" stroke="#00695c" stroke-width="2.5" fill="none"/>
+  <!-- Lightbox clips -->
+  <rect x="60" y="18" width="12" height="8" rx="1" fill="#00695c"/>
+  <rect x="128" y="18" width="12" height="8" rx="1" fill="#00695c"/>
+</svg>

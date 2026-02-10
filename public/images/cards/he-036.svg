@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Blood drop -->
+  <path d="M85 30 Q85 20 100 5 Q115 20 115 30 L115 75 Q115 100 100 105 Q85 100 85 75 Z" fill="#00897b"/>
+  <!-- Drop highlight -->
+  <ellipse cx="95" cy="50" rx="6" ry="18" fill="#e0f2f1" opacity="0.2"/>
+  <!-- Drop shine -->
+  <circle cx="93" cy="38" r="4" fill="#e0f2f1" opacity="0.3"/>
+  <!-- Heart shape at bottom of drop -->
+  <path d="M88 70 Q88 60 95 60 Q100 60 100 67 Q100 60 105 60 Q112 60 112 70 Q112 82 100 92 Q88 82 88 70Z" fill="#00695c"/>
+  <!-- Heart highlight -->
+  <circle cx="94" cy="67" r="3" fill="#e0f2f1" opacity="0.2"/>
+  <!-- Small drops falling -->
+  <ellipse cx="100" cy="115" rx="5" ry="7" fill="#00897b" opacity="0.5"/>
+  <ellipse cx="90" cy="125" rx="3" ry="4" fill="#00897b" opacity="0.3"/>
+  <ellipse cx="110" cy="128" rx="3" ry="4" fill="#00897b" opacity="0.3"/>
+  <!-- Pulse line across -->
+  <polyline points="15,85 40,85 50,70 60,100 70,75 80,85" stroke="#00695c" stroke-width="2" fill="none" opacity="0.4"/>
+  <polyline points="120,85 130,85 140,70 150,100 160,75 170,85 190,85" stroke="#00695c" stroke-width="2" fill="none" opacity="0.4"/>
+</svg>

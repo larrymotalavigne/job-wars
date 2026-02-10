@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Ankle/leg -->
+  <rect x="70" y="15" width="25" height="65" rx="10" fill="#6a1b9a" opacity="0.3"/>
+  <!-- Ankle monitor strap -->
+  <rect x="60" y="70" width="45" height="35" rx="10" fill="#6a1b9a"/>
+  <!-- Monitor device box -->
+  <rect x="72" y="72" width="30" height="28" rx="5" fill="#4a148c"/>
+  <!-- Device screen -->
+  <rect x="78" y="77" width="18" height="12" rx="2" fill="#f3e5f5" opacity="0.5"/>
+  <!-- Blinking light -->
+  <circle cx="87" cy="97" r="2.5" fill="#f3e5f5"/>
+  <!-- Signal waves -->
+  <path d="M110,65 Q118,60 120,50" stroke="#6a1b9a" stroke-width="1.5" fill="none"/>
+  <path d="M115,70 Q125,62 128,48" stroke="#6a1b9a" stroke-width="1.5" fill="none"/>
+  <path d="M120,75 Q132,65 136,46" stroke="#6a1b9a" stroke-width="1.5" fill="none"/>
+  <!-- Foot -->
+  <path d="M68,105 L68,125 L105,125 L105,118 L78,118 L78,105 Z" fill="#6a1b9a" opacity="0.3"/>
+  <!-- Strap detail -->
+  <path d="M60,87 Q58,100 65,105" stroke="#6a1b9a" stroke-width="2" fill="none"/>
+  <path d="M105,87 Q107,100 100,105" stroke="#6a1b9a" stroke-width="2" fill="none"/>
+  <!-- Screen detail dots -->
+  <circle cx="82" cy="82" r="1.5" fill="#6a1b9a"/>
+  <circle cx="87" cy="82" r="1.5" fill="#6a1b9a"/>
+  <circle cx="92" cy="82" r="1.5" fill="#6a1b9a"/>
+</svg>

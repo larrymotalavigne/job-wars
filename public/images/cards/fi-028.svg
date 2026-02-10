@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Bond certificate -->
+  <rect x="25" y="18" width="150" height="114" rx="4" ry="4" fill="white" stroke="#546e7a" stroke-width="2"/>
+  <!-- Decorative border -->
+  <rect x="31" y="24" width="138" height="102" rx="3" ry="3" fill="none" stroke="#546e7a" stroke-width="1" stroke-dasharray="6 3"/>
+  <!-- Inner border -->
+  <rect x="36" y="29" width="128" height="92" rx="2" ry="2" fill="none" stroke="#546e7a" stroke-width="0.5"/>
+  <!-- Government seal / emblem circle -->
+  <circle cx="100" cy="58" r="18" fill="none" stroke="#37474f" stroke-width="2"/>
+  <circle cx="100" cy="58" r="14" fill="none" stroke="#37474f" stroke-width="1"/>
+  <!-- Star in seal -->
+  <polygon points="100,46 103,53 110,53 104,58 106,65 100,61 94,65 96,58 90,53 97,53" fill="#37474f"/>
+  <!-- Header lines (representing title text) -->
+  <line x1="55" y1="35" x2="145" y2="35" stroke="#37474f" stroke-width="2"/>
+  <line x1="70" y1="41" x2="130" y2="41" stroke="#546e7a" stroke-width="1"/>
+  <!-- Body lines (representing value/terms) -->
+  <line x1="50" y1="85" x2="150" y2="85" stroke="#546e7a" stroke-width="1" opacity="0.5"/>
+  <line x1="55" y1="92" x2="145" y2="92" stroke="#546e7a" stroke-width="1" opacity="0.5"/>
+  <line x1="60" y1="99" x2="140" y2="99" stroke="#546e7a" stroke-width="1" opacity="0.5"/>
+  <!-- Signature line -->
+  <line x1="55" y1="115" x2="95" y2="115" stroke="#37474f" stroke-width="1.5"/>
+  <!-- Decorative rosette bottom right -->
+  <circle cx="140" cy="112" r="8" fill="none" stroke="#37474f" stroke-width="1.5"/>
+  <circle cx="140" cy="112" r="5" fill="#37474f" opacity="0.2"/>
+  <circle cx="140" cy="112" r="2" fill="#37474f"/>
+  <!-- Corner decorations -->
+  <path d="M28 21 L28 32 L39 21 Z" fill="#546e7a" opacity="0.3"/>
+  <path d="M172 21 L172 32 L161 21 Z" fill="#546e7a" opacity="0.3"/>
+  <path d="M28 129 L28 118 L39 129 Z" fill="#546e7a" opacity="0.3"/>
+  <path d="M172 129 L172 118 L161 129 Z" fill="#546e7a" opacity="0.3"/>
+</svg>

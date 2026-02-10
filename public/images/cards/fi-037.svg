@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Price tag 1 (smallest, left) -->
+  <rect x="15" y="70" width="35" height="22" rx="3" ry="3" fill="#546e7a"/>
+  <circle cx="22" cy="81" r="3" fill="#eceff1"/>
+  <line x1="28" y1="77" x2="44" y2="77" stroke="#eceff1" stroke-width="1.5" opacity="0.6"/>
+  <line x1="28" y1="84" x2="40" y2="84" stroke="#eceff1" stroke-width="1.5" opacity="0.6"/>
+  <!-- Rising arrow from tag 1 -->
+  <line x1="32" y1="68" x2="38" y2="52" stroke="#37474f" stroke-width="2"/>
+  <polygon points="38,48 42,55 34,55" fill="#37474f"/>
+  <!-- Price tag 2 (medium) -->
+  <rect x="60" y="55" width="38" height="24" rx="3" ry="3" fill="#546e7a"/>
+  <circle cx="68" cy="67" r="3" fill="#eceff1"/>
+  <line x1="74" y1="62" x2="92" y2="62" stroke="#eceff1" stroke-width="1.5" opacity="0.6"/>
+  <line x1="74" y1="70" x2="88" y2="70" stroke="#eceff1" stroke-width="1.5" opacity="0.6"/>
+  <!-- Rising arrow from tag 2 -->
+  <line x1="79" y1="53" x2="86" y2="35" stroke="#37474f" stroke-width="2"/>
+  <polygon points="86,31 90,38 82,38" fill="#37474f"/>
+  <!-- Price tag 3 (large) -->
+  <rect x="108" y="40" width="40" height="26" rx="3" ry="3" fill="#37474f"/>
+  <circle cx="116" cy="53" r="3" fill="#eceff1"/>
+  <line x1="122" y1="48" x2="142" y2="48" stroke="#eceff1" stroke-width="1.5" opacity="0.6"/>
+  <line x1="122" y1="56" x2="138" y2="56" stroke="#eceff1" stroke-width="1.5" opacity="0.6"/>
+  <!-- Rising arrow from tag 3 -->
+  <line x1="128" y1="38" x2="136" y2="18" stroke="#37474f" stroke-width="2.5"/>
+  <polygon points="136,14 141,22 131,22" fill="#37474f"/>
+  <!-- Price tag 4 (biggest, right) -->
+  <rect x="155" y="25" width="35" height="28" rx="3" ry="3" fill="#37474f"/>
+  <circle cx="163" cy="39" r="3" fill="#eceff1"/>
+  <line x1="169" y1="33" x2="184" y2="33" stroke="#eceff1" stroke-width="1.5" opacity="0.6"/>
+  <line x1="169" y1="42" x2="182" y2="42" stroke="#eceff1" stroke-width="1.5" opacity="0.6"/>
+  <!-- Overall rising trend line -->
+  <polyline points="25,110 65,95 115,78 165,55" fill="none" stroke="#37474f" stroke-width="2" stroke-dasharray="5 3"/>
+  <!-- Percentage symbols (geometric) -->
+  <circle cx="45" cy="105" r="3" fill="#546e7a"/>
+  <line x1="42" y1="112" x2="48" y2="98" stroke="#546e7a" stroke-width="1.5"/>
+  <circle cx="45" cy="112" r="3" fill="#546e7a"/>
+  <circle cx="140" cy="88" r="3" fill="#37474f"/>
+  <line x1="137" y1="95" x2="143" y2="81" stroke="#37474f" stroke-width="1.5"/>
+  <circle cx="140" cy="95" r="3" fill="#37474f"/>
+  <!-- Stacked coins at bottom showing devaluation -->
+  <ellipse cx="40" cy="135" rx="10" ry="3" fill="#546e7a" opacity="0.4"/>
+  <ellipse cx="100" cy="135" rx="10" ry="3" fill="#546e7a" opacity="0.3"/>
+  <ellipse cx="160" cy="135" rx="10" ry="3" fill="#546e7a" opacity="0.2"/>
+</svg>

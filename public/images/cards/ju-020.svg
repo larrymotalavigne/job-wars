@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Open ledger - left page -->
+  <path d="M20,30 L95,35 L95,130 L20,125 Z" fill="white" stroke="#6a1b9a" stroke-width="2"/>
+  <!-- Open ledger - right page -->
+  <path d="M105,35 L180,30 L180,125 L105,130 Z" fill="white" stroke="#6a1b9a" stroke-width="2"/>
+  <!-- Spine -->
+  <path d="M95,35 Q100,33 105,35 L105,130 Q100,132 95,130 Z" fill="#6a1b9a"/>
+  <!-- Left page lines -->
+  <line x1="30" y1="48" x2="88" y2="50" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="30" y1="58" x2="88" y2="60" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="30" y1="68" x2="88" y2="70" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="30" y1="78" x2="88" y2="80" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="30" y1="88" x2="88" y2="90" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="30" y1="98" x2="88" y2="100" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <!-- Right page lines -->
+  <line x1="112" y1="50" x2="172" y2="48" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="112" y1="60" x2="172" y2="58" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="112" y1="70" x2="172" y2="68" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="112" y1="80" x2="172" y2="78" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="112" y1="90" x2="172" y2="88" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <!-- Quill pen resting -->
+  <line x1="140" y1="95" x2="175" y2="25" stroke="#4a148c" stroke-width="2"/>
+  <path d="M175,25 L180,20 L173,23 Z" fill="#4a148c"/>
+  <path d="M170,32 Q178,28 177,22 L173,23 Q174,30 170,32 Z" fill="#4a148c" opacity="0.6"/>
+</svg>

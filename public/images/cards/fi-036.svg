@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Water waves at bottom -->
+  <path d="M0 130 Q25 125 50 130 Q75 135 100 130 Q125 125 150 130 Q175 135 200 130 L200 150 L0 150 Z" fill="#546e7a" opacity="0.2"/>
+  <path d="M0 135 Q25 130 50 135 Q75 140 100 135 Q125 130 150 135 Q175 140 200 135 L200 150 L0 150 Z" fill="#546e7a" opacity="0.3"/>
+  <!-- Big shark -->
+  <!-- Shark body -->
+  <path d="M20 70 Q50 50 90 60 Q120 65 140 70 Q155 75 160 80 Q140 90 100 88 Q60 90 30 85 Q15 80 20 70 Z" fill="#37474f"/>
+  <!-- Shark fin -->
+  <polygon points="80,60 90,30 100,60" fill="#37474f"/>
+  <!-- Shark tail -->
+  <polygon points="20,70 5,55 10,72 5,88 20,82" fill="#37474f"/>
+  <!-- Shark eye -->
+  <circle cx="140" cy="72" r="4" fill="#eceff1"/>
+  <circle cx="141" cy="72" r="2" fill="#37474f"/>
+  <!-- Shark mouth/jaw line -->
+  <path d="M148 80 Q155 82 160 80" fill="none" stroke="#eceff1" stroke-width="1.5"/>
+  <!-- Shark teeth -->
+  <polygon points="148,80 150,84 152,80" fill="#eceff1"/>
+  <polygon points="152,80 154,84 156,80" fill="#eceff1"/>
+  <polygon points="156,80 158,84 160,80" fill="#eceff1"/>
+  <!-- Shark gill lines -->
+  <line x1="130" y1="68" x2="128" y2="78" stroke="#546e7a" stroke-width="1"/>
+  <line x1="125" y1="67" x2="123" y2="77" stroke="#546e7a" stroke-width="1"/>
+  <line x1="120" y1="66" x2="118" y2="76" stroke="#546e7a" stroke-width="1"/>
+  <!-- Small fish 1 (fleeing) -->
+  <ellipse cx="175" cy="65" rx="10" ry="5" fill="#546e7a"/>
+  <polygon points="185,65 192,60 192,70" fill="#546e7a"/>
+  <circle cx="172" cy="63" r="1.5" fill="#eceff1"/>
+  <!-- Small fish 2 -->
+  <ellipse cx="180" cy="85" rx="8" ry="4" fill="#546e7a"/>
+  <polygon points="188,85 194,81 194,89" fill="#546e7a"/>
+  <circle cx="177" cy="84" r="1.2" fill="#eceff1"/>
+  <!-- Small fish 3 -->
+  <ellipse cx="172" cy="100" rx="7" ry="3.5" fill="#546e7a"/>
+  <polygon points="179,100 184,97 184,103" fill="#546e7a"/>
+  <circle cx="170" cy="99" r="1" fill="#eceff1"/>
+  <!-- Motion lines for fleeing fish -->
+  <line x1="192" y1="65" x2="198" y2="65" stroke="#546e7a" stroke-width="1" opacity="0.4"/>
+  <line x1="194" y1="85" x2="198" y2="85" stroke="#546e7a" stroke-width="1" opacity="0.4"/>
+  <!-- Bubbles -->
+  <circle cx="165" cy="55" r="2" fill="none" stroke="#546e7a" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="170" cy="45" r="3" fill="none" stroke="#546e7a" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="162" cy="110" r="2" fill="none" stroke="#546e7a" stroke-width="0.8" opacity="0.4"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Table surface -->
+  <rect x="15" y="110" width="170" height="6" rx="2" fill="#f57f17" opacity="0.4"/>
+  <!-- Beaker 1 (large) -->
+  <path d="M35 50 L30 108 L70 108 L65 50 Z" fill="#f9a825" opacity="0.3"/>
+  <path d="M35 50 L30 108 L70 108 L65 50 Z" fill="none" stroke="#f9a825" stroke-width="2"/>
+  <rect x="32" y="45" width="36" height="6" rx="2" fill="#f9a825"/>
+  <!-- Liquid in beaker 1 -->
+  <path d="M33 75 L31 108 L69 108 L67 75 Z" fill="#f9a825" opacity="0.3"/>
+  <!-- Beaker 2 (medium) -->
+  <path d="M80 65 L77 108 L107 108 L104 65 Z" fill="#f9a825" opacity="0.3"/>
+  <path d="M80 65 L77 108 L107 108 L104 65 Z" fill="none" stroke="#f9a825" stroke-width="2"/>
+  <rect x="78" y="60" width="28" height="6" rx="2" fill="#f9a825"/>
+  <!-- Liquid in beaker 2 -->
+  <path d="M79 85 L78 108 L106 108 L105 85 Z" fill="#f57f17" opacity="0.3"/>
+  <!-- Test tube 1 -->
+  <rect x="120" y="35" width="12" height="60" rx="6" fill="#f9a825" opacity="0.3"/>
+  <rect x="120" y="35" width="12" height="60" rx="6" fill="none" stroke="#f9a825" stroke-width="2"/>
+  <rect x="118" y="32" width="16" height="6" rx="2" fill="#f57f17"/>
+  <!-- Liquid in test tube 1 -->
+  <rect x="121" y="60" width="10" height="34" rx="5" fill="#f57f17" opacity="0.4"/>
+  <!-- Test tube 2 -->
+  <rect x="142" y="40" width="12" height="55" rx="6" fill="#f9a825" opacity="0.3"/>
+  <rect x="142" y="40" width="12" height="55" rx="6" fill="none" stroke="#f9a825" stroke-width="2"/>
+  <rect x="140" y="37" width="16" height="6" rx="2" fill="#f57f17"/>
+  <!-- Liquid in test tube 2 -->
+  <rect x="143" y="65" width="10" height="29" rx="5" fill="#f9a825" opacity="0.5"/>
+  <!-- Test tube 3 (tilted) -->
+  <rect x="160" y="45" width="12" height="50" rx="6" fill="#f9a825" opacity="0.3" transform="rotate(15 166 70)"/>
+  <rect x="160" y="45" width="12" height="50" rx="6" fill="none" stroke="#f9a825" stroke-width="2" transform="rotate(15 166 70)"/>
+  <rect x="158" y="42" width="16" height="6" rx="2" fill="#f57f17" transform="rotate(15 166 45)"/>
+  <!-- Bubbles -->
+  <circle cx="45" cy="70" r="3" fill="#f9a825" opacity="0.4"/>
+  <circle cx="52" cy="62" r="2" fill="#f9a825" opacity="0.3"/>
+  <circle cx="40" cy="58" r="2.5" fill="#f9a825" opacity="0.35"/>
+  <circle cx="90" cy="78" r="2.5" fill="#f57f17" opacity="0.3"/>
+  <circle cx="85" cy="72" r="2" fill="#f57f17" opacity="0.25"/>
+  <circle cx="95" cy="68" r="1.5" fill="#f57f17" opacity="0.3"/>
+  <!-- Floating bubbles above -->
+  <circle cx="50" cy="38" r="3" fill="#f9a825" opacity="0.2"/>
+  <circle cx="42" cy="30" r="2" fill="#f9a825" opacity="0.15"/>
+  <circle cx="92" cy="50" r="2.5" fill="#f57f17" opacity="0.2"/>
+  <circle cx="128" cy="25" r="2" fill="#f9a825" opacity="0.2"/>
+  <circle cx="148" cy="28" r="2.5" fill="#f9a825" opacity="0.15"/>
+</svg>

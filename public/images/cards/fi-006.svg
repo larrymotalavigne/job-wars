@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Chart background -->
+  <rect x="20" y="15" width="160" height="120" rx="6" fill="#546e7a"/>
+  <!-- Grid lines -->
+  <line x1="35" y1="35" x2="165" y2="35" stroke="#eceff1" stroke-width="0.5" opacity="0.15"/>
+  <line x1="35" y1="55" x2="165" y2="55" stroke="#eceff1" stroke-width="0.5" opacity="0.15"/>
+  <line x1="35" y1="75" x2="165" y2="75" stroke="#eceff1" stroke-width="0.5" opacity="0.15"/>
+  <line x1="35" y1="95" x2="165" y2="95" stroke="#eceff1" stroke-width="0.5" opacity="0.15"/>
+  <!-- Candlestick bars -->
+  <line x1="45" y1="50" x2="45" y2="90" stroke="#eceff1" stroke-width="1.5"/>
+  <rect x="41" y="58" width="8" height="20" fill="#eceff1" opacity="0.7"/>
+  <line x1="62" y1="40" x2="62" y2="75" stroke="#eceff1" stroke-width="1.5"/>
+  <rect x="58" y="45" width="8" height="18" fill="#eceff1" opacity="0.5"/>
+  <line x1="79" y1="55" x2="79" y2="95" stroke="#eceff1" stroke-width="1.5"/>
+  <rect x="75" y="65" width="8" height="22" fill="#37474f"/>
+  <line x1="96" y1="45" x2="96" y2="85" stroke="#eceff1" stroke-width="1.5"/>
+  <rect x="92" y="50" width="8" height="20" fill="#eceff1" opacity="0.7"/>
+  <line x1="113" y1="35" x2="113" y2="70" stroke="#eceff1" stroke-width="1.5"/>
+  <rect x="109" y="40" width="8" height="18" fill="#eceff1" opacity="0.5"/>
+  <!-- Bull silhouette (simplified geometric) -->
+  <polygon points="138,100 145,85 150,82 155,85 160,80 165,82 168,90 168,100"
+    fill="#eceff1" opacity="0.6"/>
+  <!-- Bull horns -->
+  <line x1="150" y1="82" x2="146" y2="74" stroke="#eceff1" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="160" y1="80" x2="164" y2="72" stroke="#eceff1" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Trend line going up -->
+  <polyline points="35,100 65,80 95,70 125,50 155,35"
+    fill="none" stroke="#eceff1" stroke-width="2" stroke-dasharray="4,3" opacity="0.4"/>
+</svg>

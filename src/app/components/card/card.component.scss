@@ -1,0 +1,412 @@
+$card-width: 63mm;
+$card-height: 88mm;
+
+:host { display: inline-block; }
+
+// ===== SHARED =====
+.card-frame {
+  width: $card-width;
+  height: $card-height;
+  border-radius: 3mm;
+  border: 1.5px solid #333;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: relative;
+  box-sizing: border-box;
+
+  &.selected {
+    outline: 3px solid #2196f3;
+    outline-offset: 2px;
+  }
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.domain-icon {
+  font-size: 12mm;
+  opacity: 0.6;
+}
+
+// ===== CLASSIQUE (MTG traditional) =====
+.classique {
+  background: #faf9f6;
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5mm;
+    padding: 1.5mm 2mm;
+    color: #fff;
+    min-height: 7mm;
+  }
+
+  .card-cost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.5mm;
+    height: 5.5mm;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    font-weight: 700;
+    font-size: 3.2mm;
+    flex-shrink: 0;
+  }
+
+  .card-name {
+    font-size: 2.8mm;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .card-art {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20mm;
+    overflow: hidden;
+    border-bottom: 0.5px solid #ccc;
+    border-top: 0.5px solid #ccc;
+  }
+
+  .card-type-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1mm 2mm;
+    font-size: 2.2mm;
+    font-weight: 500;
+    border-top: 0.5px solid;
+    border-bottom: 0.5px solid;
+    min-height: 5mm;
+  }
+
+  .card-type {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .rarity-gem {
+    width: 3mm;
+    height: 3mm;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 0.3px solid rgba(0,0,0,0.3);
+  }
+
+  .card-text-box {
+    flex: 1 1 auto;
+    padding: 1.5mm 2mm;
+    font-size: 2mm;
+    line-height: 1.4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1mm;
+  }
+
+  .ability-text { margin: 0; font-size: 2.1mm; }
+
+  .flavor-text {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.8mm;
+    color: #666;
+    border-top: 0.3px solid #ddd;
+    padding-top: 1mm;
+    margin-top: auto;
+  }
+
+  .card-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1mm;
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.5mm;
+    min-height: 6mm;
+    border-radius: 2mm 0 0 0;
+    padding: 1mm 3mm;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .stat-sep { opacity: 0.7; font-size: 3mm; }
+}
+
+// ===== MODERNE (minimalist, large art) =====
+.moderne {
+  background: #fff;
+  border-width: 1px;
+
+  .moderne-cost {
+    position: absolute;
+    top: 2mm;
+    left: 2mm;
+    width: 6mm;
+    height: 6mm;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.5mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .moderne-art {
+    flex: 0 0 38mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .moderne-body {
+    flex: 1;
+    padding: 2mm 2.5mm;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8mm;
+  }
+
+  .moderne-name {
+    font-size: 3mm;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .moderne-type {
+    font-size: 1.8mm;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 1mm;
+  }
+
+  .rarity-dot {
+    width: 2mm;
+    height: 2mm;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .moderne-text {
+    font-size: 2mm;
+    line-height: 1.35;
+    flex: 1;
+  }
+
+  .moderne-flavor {
+    font-size: 1.6mm;
+    font-style: italic;
+    color: #999;
+  }
+
+  .moderne-stats {
+    position: absolute;
+    bottom: 2mm;
+    right: 2.5mm;
+    font-size: 4mm;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+}
+
+// ===== RETRO (pixel/chunky, bold borders) =====
+.retro {
+  border-width: 3px;
+  border-radius: 2mm;
+  font-family: 'Courier New', monospace;
+
+  .retro-top {
+    display: flex;
+    align-items: center;
+    gap: 1.5mm;
+    padding: 1.5mm 2mm;
+    color: #fff;
+    min-height: 7mm;
+    font-weight: 700;
+  }
+
+  .retro-cost { font-size: 3mm; }
+  .retro-name { font-size: 2.6mm; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .retro-art {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 18mm;
+    border: 2px solid;
+    margin: 1.5mm;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .retro-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1mm 2mm;
+    color: #fff;
+    font-size: 2mm;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .retro-text-box {
+    padding: 1mm 2mm;
+    font-size: 2mm;
+    line-height: 1.3;
+    flex: 1;
+
+    p { margin: 0; }
+  }
+
+  .retro-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1mm 2mm;
+    color: #fff;
+    font-size: 2mm;
+    font-weight: 700;
+    min-height: 5mm;
+  }
+
+  .retro-stats { font-size: 2.5mm; }
+}
+
+// ===== ELEGANT (dark theme, premium) =====
+.elegant {
+  background: #1a1a2e;
+  border-color: #333;
+
+  .elegant-border {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 2mm;
+    margin: 1.5mm;
+    overflow: hidden;
+  }
+
+  .elegant-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5mm;
+    padding: 1.5mm 2mm;
+    min-height: 7mm;
+  }
+
+  .elegant-cost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.5mm;
+    height: 5.5mm;
+    border-radius: 50%;
+    border: 1px solid;
+    font-weight: 700;
+    font-size: 3mm;
+    flex-shrink: 0;
+  }
+
+  .elegant-name {
+    font-size: 2.8mm;
+    font-weight: 600;
+    color: #e0e0e0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .elegant-art {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20mm;
+    background: rgba(255,255,255,0.05);
+    overflow: hidden;
+  }
+
+  .elegant-divider {
+    height: 0.5px;
+    opacity: 0.6;
+  }
+
+  .elegant-type {
+    padding: 1mm 2mm;
+    font-size: 2mm;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .elegant-text {
+    flex: 1;
+    padding: 1.5mm 2mm;
+    display: flex;
+    flex-direction: column;
+    gap: 1mm;
+  }
+
+  .elegant-ability {
+    margin: 0;
+    font-size: 2mm;
+    color: #ccc;
+    line-height: 1.4;
+  }
+
+  .elegant-flavor {
+    margin: 0;
+    font-size: 1.7mm;
+    font-style: italic;
+    color: #777;
+    margin-top: auto;
+  }
+
+  .elegant-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1mm 2mm;
+    min-height: 5mm;
+  }
+
+  .elegant-rarity { font-size: 1.8mm; font-weight: 600; }
+  .elegant-stats { font-size: 3.5mm; font-weight: 800; }
+}
+
+// ===== PRINT =====
+@media print {
+  .card-frame {
+    box-shadow: none;
+    break-inside: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+
+    &.selected { outline: none; }
+  }
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Crosshair / Scope -->
+  <!-- Outer scope ring -->
+  <circle cx="100" cy="75" r="52" fill="none" stroke="#558b2f" stroke-width="4"/>
+  <!-- Inner scope ring -->
+  <circle cx="100" cy="75" r="36" fill="none" stroke="#558b2f" stroke-width="2"/>
+  <!-- Innermost circle -->
+  <circle cx="100" cy="75" r="6" fill="none" stroke="#33691e" stroke-width="2"/>
+  <!-- Center dot -->
+  <circle cx="100" cy="75" r="2" fill="#33691e"/>
+  <!-- Crosshair lines -->
+  <!-- Top -->
+  <line x1="100" y1="15" x2="100" y2="39" stroke="#558b2f" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bottom -->
+  <line x1="100" y1="111" x2="100" y2="135" stroke="#558b2f" stroke-width="3" stroke-linecap="round"/>
+  <!-- Left -->
+  <line x1="15" y1="75" x2="48" y2="75" stroke="#558b2f" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right -->
+  <line x1="152" y1="75" x2="185" y2="75" stroke="#558b2f" stroke-width="3" stroke-linecap="round"/>
+  <!-- Range tick marks -->
+  <line x1="100" y1="43" x2="100" y2="50" stroke="#33691e" stroke-width="1.5"/>
+  <line x1="100" y1="100" x2="100" y2="107" stroke="#33691e" stroke-width="1.5"/>
+  <line x1="52" y1="75" x2="59" y2="75" stroke="#33691e" stroke-width="1.5"/>
+  <line x1="141" y1="75" x2="148" y2="75" stroke="#33691e" stroke-width="1.5"/>
+  <!-- Mil-dot marks -->
+  <circle cx="100" cy="55" r="1.5" fill="#33691e"/>
+  <circle cx="100" cy="95" r="1.5" fill="#33691e"/>
+  <circle cx="65" cy="75" r="1.5" fill="#33691e"/>
+  <circle cx="135" cy="75" r="1.5" fill="#33691e"/>
+</svg>

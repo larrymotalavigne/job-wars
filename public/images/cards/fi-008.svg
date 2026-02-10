@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Vault door - outer ring -->
+  <circle cx="100" cy="75" r="55" fill="#546e7a"/>
+  <!-- Vault door - inner ring -->
+  <circle cx="100" cy="75" r="48" fill="#37474f"/>
+  <!-- Vault door - inner plate -->
+  <circle cx="100" cy="75" r="38" fill="#546e7a"/>
+  <!-- Vault handle / wheel spokes -->
+  <line x1="100" y1="50" x2="100" y2="100" stroke="#eceff1" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <line x1="75" y1="75" x2="125" y2="75" stroke="#eceff1" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <line x1="82" y1="57" x2="118" y2="93" stroke="#eceff1" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <line x1="118" y1="57" x2="82" y2="93" stroke="#eceff1" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <!-- Center hub -->
+  <circle cx="100" cy="75" r="10" fill="#37474f"/>
+  <circle cx="100" cy="75" r="6" fill="#eceff1" opacity="0.4"/>
+  <!-- Bolt details on outer ring -->
+  <circle cx="100" cy="24" r="4" fill="#37474f"/>
+  <circle cx="100" cy="126" r="4" fill="#37474f"/>
+  <circle cx="49" cy="75" r="4" fill="#37474f"/>
+  <circle cx="151" cy="75" r="4" fill="#37474f"/>
+  <!-- Handle bar on right -->
+  <rect x="158" y="65" width="18" height="20" rx="4" fill="#546e7a"/>
+  <rect x="162" y="69" width="10" height="12" rx="2" fill="#37474f"/>
+</svg>

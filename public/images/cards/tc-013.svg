@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Left large hand -->
+  <path d="M40 90 Q30 70 35 55 L40 55 Q38 70 45 85 Z" fill="#f9a825"/>
+  <path d="M45 85 Q40 60 45 45 L50 45 Q48 60 50 80 Z" fill="#f9a825"/>
+  <path d="M50 80 Q48 55 52 40 L57 40 Q55 55 55 75 Z" fill="#f9a825"/>
+  <path d="M55 75 Q55 55 58 45 L63 45 Q62 58 60 75 Z" fill="#f9a825"/>
+  <path d="M35 90 Q30 95 30 100 L65 100 Q65 90 60 80" fill="#f9a825"/>
+  <!-- Right large hand -->
+  <path d="M160 90 Q170 70 165 55 L160 55 Q162 70 155 85 Z" fill="#f9a825"/>
+  <path d="M155 85 Q160 60 155 45 L150 45 Q152 60 150 80 Z" fill="#f9a825"/>
+  <path d="M150 80 Q152 55 148 40 L143 40 Q145 55 145 75 Z" fill="#f9a825"/>
+  <path d="M145 75 Q145 55 142 45 L137 45 Q138 58 140 75 Z" fill="#f9a825"/>
+  <path d="M165 90 Q170 95 170 100 L135 100 Q135 90 140 80" fill="#f9a825"/>
+  <!-- Small hand in center -->
+  <path d="M90 95 Q88 82 90 75 L93 75 Q92 82 93 92 Z" fill="#f57f17"/>
+  <path d="M93 92 Q92 80 94 72 L97 72 Q96 80 97 88 Z" fill="#f57f17"/>
+  <path d="M97 88 Q97 78 99 70 L102 70 Q101 78 100 86 Z" fill="#f57f17"/>
+  <path d="M100 86 Q101 78 103 73 L106 73 Q105 80 104 86 Z" fill="#f57f17"/>
+  <path d="M88 95 Q86 100 88 105 L108 105 Q110 100 108 88" fill="#f57f17"/>
+  <!-- Heart above small hand -->
+  <path d="M95 60 Q95 52 100 52 Q105 52 105 60 Q105 68 100 72 Q95 68 95 60 Z" fill="#f57f17"/>
+</svg>

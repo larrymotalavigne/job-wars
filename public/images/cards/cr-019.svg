@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Cobbler's last (shoe form) -->
+  <path d="M40,100 Q40,60 60,50 Q80,42 110,45 Q130,48 145,55 Q160,65 165,80 Q168,95 155,105 Q145,110 130,112 L40,112 Z" fill="#4e342e"/>
+  <!-- Shoe on the last -->
+  <path d="M45,105 Q45,70 65,58 Q85,50 110,52 Q125,54 140,60 Q155,70 158,82 Q160,95 150,102 Q140,108 125,108 L45,108 Z" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Shoe sole -->
+  <path d="M45,108 L155,108 Q160,108 158,112 L42,112 Q40,112 42,108 Z" fill="#4e342e"/>
+  <!-- Shoe details - stitching -->
+  <path d="M55,90 Q80,85 110,85 Q130,86 148,92" stroke="#efebe9" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+  <!-- Shoe lace holes -->
+  <circle cx="80" cy="62" r="2" fill="#4e342e"/>
+  <circle cx="90" cy="60" r="2" fill="#4e342e"/>
+  <circle cx="100" cy="59" r="2" fill="#4e342e"/>
+  <circle cx="110" cy="60" r="2" fill="#4e342e"/>
+  <!-- Last stand -->
+  <rect x="90" y="112" width="8" height="20" fill="#4e342e"/>
+  <rect x="80" y="130" width="28" height="5" rx="2" fill="#4e342e"/>
+</svg>

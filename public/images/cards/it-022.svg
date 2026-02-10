@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Chart area -->
+  <rect x="20" y="15" width="165" height="120" rx="4" ry="4" fill="white" stroke="#1a73e8" stroke-width="1.5"/>
+  <!-- Y-axis labels (task rows) -->
+  <rect x="24" y="30" width="30" height="8" rx="1" fill="#e8f0fe"/>
+  <rect x="24" y="48" width="30" height="8" rx="1" fill="#e8f0fe"/>
+  <rect x="24" y="66" width="30" height="8" rx="1" fill="#e8f0fe"/>
+  <rect x="24" y="84" width="30" height="8" rx="1" fill="#e8f0fe"/>
+  <rect x="24" y="102" width="30" height="8" rx="1" fill="#e8f0fe"/>
+  <!-- Grid lines -->
+  <line x1="60" y1="22" x2="60" y2="130" stroke="#e8f0fe" stroke-width="1"/>
+  <line x1="90" y1="22" x2="90" y2="130" stroke="#e8f0fe" stroke-width="1"/>
+  <line x1="120" y1="22" x2="120" y2="130" stroke="#e8f0fe" stroke-width="1"/>
+  <line x1="150" y1="22" x2="150" y2="130" stroke="#e8f0fe" stroke-width="1"/>
+  <!-- Gantt bars -->
+  <rect x="62" y="30" width="50" height="8" rx="2" fill="#1a73e8"/>
+  <rect x="80" y="48" width="45" height="8" rx="2" fill="#174ea6"/>
+  <rect x="100" y="66" width="55" height="8" rx="2" fill="#1a73e8"/>
+  <rect x="120" y="84" width="40" height="8" rx="2" fill="#174ea6"/>
+  <rect x="140" y="102" width="35" height="8" rx="2" fill="#1a73e8"/>
+  <!-- Milestone diamonds -->
+  <polygon points="112,34 116,38 112,42 108,38" fill="#174ea6"/>
+  <polygon points="125,52 129,56 125,60 121,56" fill="#174ea6"/>
+  <polygon points="155,70 159,74 155,78 151,74" fill="#174ea6"/>
+  <!-- Dependency arrows -->
+  <line x1="112" y1="42" x2="112" y2="48" stroke="#174ea6" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="125" y1="60" x2="125" y2="66" stroke="#174ea6" stroke-width="1" stroke-dasharray="2,2"/>
+  <!-- Today line -->
+  <line x1="130" y1="18" x2="130" y2="132" stroke="#e8453c" stroke-width="1.5" stroke-dasharray="4,3"/>
+</svg>

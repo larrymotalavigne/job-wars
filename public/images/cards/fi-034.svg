@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Ground line -->
+  <line x1="15" y1="130" x2="185" y2="130" stroke="#546e7a" stroke-width="1.5"/>
+  <!-- Small bubble -->
+  <circle cx="40" cy="115" r="10" fill="none" stroke="#546e7a" stroke-width="2"/>
+  <circle cx="40" cy="115" r="6" fill="#546e7a" opacity="0.15"/>
+  <!-- Medium bubble -->
+  <circle cx="72" cy="98" r="18" fill="none" stroke="#546e7a" stroke-width="2"/>
+  <circle cx="72" cy="98" r="14" fill="#546e7a" opacity="0.15"/>
+  <!-- Highlight on medium bubble -->
+  <ellipse cx="66" cy="90" rx="4" ry="3" fill="white" opacity="0.3"/>
+  <!-- Large bubble -->
+  <circle cx="115" cy="72" r="30" fill="none" stroke="#546e7a" stroke-width="2.5"/>
+  <circle cx="115" cy="72" r="26" fill="#546e7a" opacity="0.15"/>
+  <!-- Highlight on large bubble -->
+  <ellipse cx="105" cy="60" rx="7" ry="5" fill="white" opacity="0.3"/>
+  <!-- Biggest bubble (about to burst) -->
+  <circle cx="160" cy="50" r="35" fill="none" stroke="#37474f" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <circle cx="160" cy="50" r="30" fill="#546e7a" opacity="0.1"/>
+  <!-- Highlight on biggest bubble -->
+  <ellipse cx="148" cy="35" rx="8" ry="6" fill="white" opacity="0.3"/>
+  <!-- Burst lines around biggest bubble -->
+  <line x1="175" y1="18" x2="182" y2="10" stroke="#37474f" stroke-width="2" stroke-linecap="round"/>
+  <line x1="185" y1="25" x2="194" y2="22" stroke="#37474f" stroke-width="2" stroke-linecap="round"/>
+  <line x1="190" y1="40" x2="198" y2="38" stroke="#37474f" stroke-width="2" stroke-linecap="round"/>
+  <line x1="188" y1="55" x2="196" y2="58" stroke="#37474f" stroke-width="2" stroke-linecap="round"/>
+  <line x1="170" y1="15" x2="172" y2="8" stroke="#37474f" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Crack on biggest bubble -->
+  <polyline points="178,30 183,35 180,42 185,48" fill="none" stroke="#37474f" stroke-width="1.5"/>
+  <!-- Growth arrow underneath -->
+  <polyline points="30,125 60,118 95,108 130,92 155,70" fill="none" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4 3"/>
+</svg>

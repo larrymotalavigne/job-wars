@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Forge structure - stone base -->
+  <rect x="30" y="70" width="120" height="55" rx="4" fill="#4e342e"/>
+  <!-- Stone texture blocks -->
+  <rect x="34" y="74" width="25" height="18" rx="2" fill="#795548" opacity="0.4"/>
+  <rect x="63" y="74" width="30" height="18" rx="2" fill="#795548" opacity="0.35"/>
+  <rect x="97" y="74" width="25" height="18" rx="2" fill="#795548" opacity="0.4"/>
+  <rect x="126" y="74" width="20" height="18" rx="2" fill="#795548" opacity="0.35"/>
+  <rect x="34" y="96" width="30" height="16" rx="2" fill="#795548" opacity="0.35"/>
+  <rect x="68" y="96" width="25" height="16" rx="2" fill="#795548" opacity="0.4"/>
+  <rect x="97" y="96" width="30" height="16" rx="2" fill="#795548" opacity="0.35"/>
+  <!-- Forge opening (arch) -->
+  <path d="M 60,125 L 60,85 Q 60,70 90,70 Q 120,70 120,85 L 120,125 Z" fill="#4e342e"/>
+  <path d="M 65,125 L 65,88 Q 65,76 90,76 Q 115,76 115,88 L 115,125 Z" fill="#795548" opacity="0.2"/>
+  <!-- Flames inside forge -->
+  <!-- Large central flame -->
+  <ellipse cx="90" cy="115" rx="15" ry="8" fill="#795548" opacity="0.6"/>
+  <path d="M 82,115 Q 80,95 90,85 Q 100,95 98,115 Z" fill="#795548" opacity="0.7"/>
+  <path d="M 86,115 Q 85,100 90,92 Q 95,100 94,115 Z" fill="#efebe9" opacity="0.4"/>
+  <!-- Left flame -->
+  <path d="M 70,120 Q 68,105 75,95 Q 80,105 78,120 Z" fill="#795548" opacity="0.5"/>
+  <!-- Right flame -->
+  <path d="M 102,120 Q 100,105 107,97 Q 112,107 110,120 Z" fill="#795548" opacity="0.5"/>
+  <!-- Chimney/hood -->
+  <polygon points="40,70 160,70 145,25 55,25" fill="#4e342e" opacity="0.8"/>
+  <polygon points="45,70 155,70 142,30 58,30" fill="#795548" opacity="0.3"/>
+  <!-- Chimney top -->
+  <rect x="70" y="10" width="60" height="18" rx="3" fill="#4e342e"/>
+  <!-- Smoke wisps -->
+  <path d="M 90,10 Q 85,0 90,-5" fill="none" stroke="#795548" stroke-width="2" opacity="0.25"/>
+  <path d="M 100,8 Q 105,-2 100,-8" fill="none" stroke="#795548" stroke-width="2" opacity="0.2"/>
+  <!-- Ember particles -->
+  <circle cx="80" cy="80" r="1.5" fill="#795548" opacity="0.5"/>
+  <circle cx="95" cy="75" r="1" fill="#795548" opacity="0.4"/>
+  <circle cx="105" cy="82" r="1.5" fill="#795548" opacity="0.45"/>
+  <!-- Base/floor -->
+  <rect x="25" y="125" width="130" height="5" rx="2" fill="#4e342e" opacity="0.5"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fce4ec"/>
+  <!-- Walkie-talkie body -->
+  <rect x="65" y="35" width="50" height="90" rx="6" fill="#c62828"/>
+  <rect x="70" y="55" width="40" height="30" rx="3" fill="#b71c1c"/>
+  <!-- Screen -->
+  <rect x="75" y="58" width="30" height="22" rx="2" fill="#fce4ec" opacity="0.3"/>
+  <!-- Screen lines -->
+  <line x1="80" y1="64" x2="100" y2="64" stroke="#fce4ec" stroke-width="1.5" opacity="0.4"/>
+  <line x1="80" y1="70" x2="95" y2="70" stroke="#fce4ec" stroke-width="1.5" opacity="0.4"/>
+  <!-- Buttons -->
+  <circle cx="80" cy="95" r="4" fill="#b71c1c"/>
+  <circle cx="92" cy="95" r="4" fill="#b71c1c"/>
+  <circle cx="104" cy="95" r="4" fill="#b71c1c"/>
+  <circle cx="80" cy="108" r="4" fill="#b71c1c"/>
+  <circle cx="92" cy="108" r="4" fill="#b71c1c"/>
+  <circle cx="104" cy="108" r="4" fill="#b71c1c"/>
+  <!-- Speaker grille -->
+  <line x1="78" y1="42" x2="102" y2="42" stroke="#b71c1c" stroke-width="1.5"/>
+  <line x1="78" y1="46" x2="102" y2="46" stroke="#b71c1c" stroke-width="1.5"/>
+  <line x1="78" y1="50" x2="102" y2="50" stroke="#b71c1c" stroke-width="1.5"/>
+  <!-- Antenna -->
+  <rect x="72" y="8" width="6" height="30" rx="2" fill="#b71c1c"/>
+  <circle cx="75" cy="8" r="4" fill="#c62828"/>
+  <!-- Side button -->
+  <rect x="115" y="55" width="8" height="14" rx="2" fill="#b71c1c"/>
+  <!-- Signal waves -->
+  <path d="M130 25 Q140 20 140 30" fill="none" stroke="#c62828" stroke-width="2"/>
+  <path d="M138 20 Q152 12 152 35" fill="none" stroke="#c62828" stroke-width="2" opacity="0.7"/>
+  <path d="M146 15 Q164 5 164 40" fill="none" stroke="#c62828" stroke-width="2" opacity="0.4"/>
+</svg>

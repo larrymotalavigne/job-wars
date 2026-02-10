@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Blowtorch body -->
+  <rect x="40" y="70" width="60" height="25" rx="5" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Blowtorch tank -->
+  <rect x="30" y="65" width="25" height="55" rx="8" fill="#4e342e"/>
+  <!-- Nozzle -->
+  <rect x="100" y="76" width="25" height="10" rx="2" fill="#4e342e"/>
+  <polygon points="125,74 135,78 135,86 125,90" fill="#4e342e"/>
+  <!-- Handle -->
+  <rect x="55" y="95" width="12" height="30" rx="3" fill="#795548"/>
+  <!-- Valve knob -->
+  <circle cx="80" cy="68" r="5" fill="#4e342e"/>
+  <line x1="80" y1="64" x2="80" y2="68" stroke="#efebe9" stroke-width="1.5"/>
+  <!-- Blue flame - outer -->
+  <path d="M135,82 Q140,65 145,55 Q148,45 150,40 Q152,35 148,30 Q155,38 158,35 Q155,45 160,40 Q157,50 162,48 Q158,60 155,65 Q150,75 148,82 Z" fill="#795548" opacity="0.4"/>
+  <!-- Blue flame - inner (darker to suggest blue with limited palette) -->
+  <path d="M138,82 Q142,68 146,58 Q148,50 150,45 Q152,42 150,38 Q154,44 156,42 Q154,50 157,48 Q155,58 152,65 Q148,75 146,82 Z" fill="#4e342e" opacity="0.3"/>
+  <!-- Flame core -->
+  <path d="M141,82 Q144,72 147,62 Q149,55 150,50 Q151,55 153,55 Q151,62 154,60 Q152,70 150,75 Q148,80 147,82 Z" fill="#efebe9" opacity="0.5"/>
+</svg>

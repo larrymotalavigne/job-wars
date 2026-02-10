@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#fce4ec"/>
+  <!-- Mystery Silhouette Figure -->
+  <g transform="translate(100,70)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="20" fill="#c62828"/>
+    <!-- Sunglasses -->
+    <g fill="#b71c1c">
+      <!-- Left lens -->
+      <rect x="-18" y="-36" width="14" height="9" rx="2"/>
+      <!-- Right lens -->
+      <rect x="4" y="-36" width="14" height="9" rx="2"/>
+      <!-- Bridge -->
+      <rect x="-4" y="-34" width="8" height="3" rx="1"/>
+      <!-- Left arm -->
+      <line x1="-18" y1="-32" x2="-22" y2="-34" stroke="#b71c1c" stroke-width="2"/>
+      <!-- Right arm -->
+      <line x1="18" y1="-32" x2="22" y2="-34" stroke="#b71c1c" stroke-width="2"/>
+    </g>
+    <!-- Collar / coat -->
+    <path d="M-22,-10 L-30,30 Q-30,36 -24,36 L24,36 Q30,36 30,30 L22,-10 Q12,-16 0,-16 Q-12,-16 -22,-10 Z"
+          fill="#c62828" stroke="#b71c1c" stroke-width="1.5"/>
+    <!-- Collar flaps -->
+    <path d="M-8,-14 L-20,-2 L-14,-10 Z" fill="#b71c1c"/>
+    <path d="M8,-14 L20,-2 L14,-10 Z" fill="#b71c1c"/>
+    <!-- Coat line -->
+    <line x1="0" y1="-14" x2="0" y2="36" stroke="#b71c1c" stroke-width="1.5"/>
+  </g>
+  <!-- Question Mark -->
+  <g transform="translate(148,42)" fill="#c62828" opacity="0.6">
+    <path d="M0,-20 Q0,-26 6,-26 Q12,-26 12,-20 Q12,-14 6,-12 L6,-6"
+          fill="none" stroke="#c62828" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="6" cy="0" r="2.5"/>
+  </g>
+  <!-- Second smaller question mark -->
+  <g transform="translate(42,36)" fill="#c62828" opacity="0.35">
+    <path d="M0,-14 Q0,-18 4,-18 Q8,-18 8,-14 Q8,-10 4,-8.5 L4,-5"
+          fill="none" stroke="#c62828" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="4" cy="-1" r="2"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Corporal rank insignia - chevrons on shield -->
+  <!-- Shield background -->
+  <path d="M100,15 L145,35 L145,90 Q145,120 100,138 Q55,120 55,90 L55,35 Z" fill="#558b2f"/>
+  <!-- Inner shield border -->
+  <path d="M100,22 L139,40 L139,88 Q139,115 100,131 Q61,115 61,88 L61,40 Z" fill="none" stroke="#f1f8e9" stroke-width="2"/>
+  <!-- Two chevrons (corporal rank) -->
+  <!-- Upper chevron -->
+  <polyline points="72,58 100,42 128,58" fill="none" stroke="#f1f8e9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Lower chevron -->
+  <polyline points="72,82 100,66 128,82" fill="none" stroke="#f1f8e9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Small accent line below -->
+  <line x1="85" y1="105" x2="115" y2="105" stroke="#33691e" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,131 @@
+<div class="gallery-container">
+  <!-- Filtres -->
+  <div class="filters-bar">
+    <div class="filter-group">
+      <label>Domaine</label>
+      <p-multiselect
+        [options]="domainOptions"
+        [(ngModel)]="selectedDomains"
+        (onChange)="applyFilters()"
+        placeholder="Tous les domaines"
+        [showClear]="true"
+        display="chip"
+      />
+    </div>
+
+    <div class="filter-group">
+      <label>Type</label>
+      <p-select
+        [options]="typeOptions"
+        [(ngModel)]="selectedTypes"
+        (onChange)="applyFilters()"
+        placeholder="Tous les types"
+        [showClear]="true"
+      />
+    </div>
+
+    <div class="filter-group">
+      <label>Rareté</label>
+      <p-multiselect
+        [options]="rarityOptions"
+        [(ngModel)]="selectedRarities"
+        (onChange)="applyFilters()"
+        placeholder="Toutes les raretés"
+        [showClear]="true"
+        display="chip"
+      />
+    </div>
+
+    <div class="filter-group cost-filter">
+      <label>Coût : {{ costRange[0] }} – {{ costRange[1] }}</label>
+      <p-slider
+        [(ngModel)]="costRange"
+        [range]="true"
+        [min]="0"
+        [max]="7"
+        (onSlideEnd)="applyFilters()"
+      />
+    </div>
+
+    <div class="filter-group search-group">
+      <label>Recherche</label>
+      <input
+        pInputText
+        type="text"
+        [(ngModel)]="searchText"
+        (input)="applyFilters()"
+        placeholder="Rechercher des cartes..."
+      />
+    </div>
+
+    <div class="filter-group">
+      <label>Design</label>
+      <p-select
+        [options]="designOptions"
+        [(ngModel)]="currentDesign"
+        placeholder="Style de carte"
+      />
+    </div>
+  </div>
+
+  <!-- Barre de sélection -->
+  <div class="selection-bar">
+    <span class="count">{{ filteredCards.length }} cartes affichées · {{ selectedCards.size }} sélectionnées</span>
+    <div class="selection-actions">
+      <p-button label="Tout sélectionner" icon="pi pi-check-square" [text]="true" size="small" (onClick)="selectAll()" />
+      <p-button label="Effacer" icon="pi pi-times" [text]="true" size="small" (onClick)="clearSelection()" />
+      <p-button
+        label="Imprimer la sélection"
+        icon="pi pi-print"
+        size="small"
+        [disabled]="selectedCards.size === 0"
+        (onClick)="printSelected()"
+      />
+    </div>
+  </div>
+
+  <!-- Grille de cartes -->
+  <div class="card-grid">
+    <div
+      class="card-wrapper"
+      *ngFor="let card of filteredCards"
+      (click)="toggleSelection(card)"
+      (dblclick)="openDetail(card)"
+    >
+      <app-card [card]="card" [selected]="isSelected(card)" [design]="currentDesign" />
+      <div class="card-select-overlay" *ngIf="isSelected(card)">
+        <i class="pi pi-check"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="empty-state" *ngIf="filteredCards.length === 0">
+    <i class="pi pi-search"></i>
+    <p>Aucune carte ne correspond à vos filtres.</p>
+  </div>
+</div>
+
+<!-- Dialogue de détail -->
+<p-dialog
+  [(visible)]="showDetail"
+  [modal]="true"
+  [dismissableMask]="true"
+  [style]="{ width: 'auto' }"
+  header="{{ detailCard?.name }}"
+>
+  <div class="detail-content" *ngIf="detailCard">
+    <div class="detail-card-preview">
+      <app-card [card]="detailCard" [design]="currentDesign" />
+    </div>
+    <div class="detail-info">
+      <div class="detail-row"><strong>Domaine :</strong> {{ detailCard.domain }}</div>
+      <div class="detail-row"><strong>Type :</strong> {{ detailCard.type }}</div>
+      <div class="detail-row"><strong>Coût :</strong> {{ detailCard.cost }} Budget</div>
+      <div class="detail-row"><strong>Rareté :</strong> {{ detailCard.rarity }}</div>
+      <div class="detail-row" *ngIf="isJobCard(detailCard)">
+        <strong>Stats :</strong> {{ $any(detailCard).productivity }} / {{ $any(detailCard).resilience }}
+      </div>
+      <div class="detail-row flavor" *ngIf="detailCard.flavorText">{{ detailCard.flavorText }}</div>
+    </div>
+  </div>
+</p-dialog>

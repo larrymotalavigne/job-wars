@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Scroll body -->
+  <rect x="50" y="30" width="100" height="100" rx="3" fill="#795548" opacity="0.3" stroke="#795548" stroke-width="1.5"/>
+  <!-- Scroll top curl -->
+  <ellipse cx="50" cy="30" rx="8" ry="12" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <ellipse cx="150" cy="30" rx="8" ry="12" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Scroll bottom curl -->
+  <ellipse cx="50" cy="130" rx="8" ry="12" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <ellipse cx="150" cy="130" rx="8" ry="12" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Scroll text lines -->
+  <line x1="65" y1="55" x2="135" y2="55" stroke="#4e342e" stroke-width="1.5" opacity="0.4"/>
+  <line x1="65" y1="65" x2="135" y2="65" stroke="#4e342e" stroke-width="1.5" opacity="0.4"/>
+  <line x1="65" y1="75" x2="120" y2="75" stroke="#4e342e" stroke-width="1.5" opacity="0.4"/>
+  <line x1="65" y1="85" x2="135" y2="85" stroke="#4e342e" stroke-width="1.5" opacity="0.4"/>
+  <line x1="65" y1="95" x2="110" y2="95" stroke="#4e342e" stroke-width="1.5" opacity="0.4"/>
+  <!-- Crown seal at bottom -->
+  <circle cx="100" cy="115" r="12" fill="#4e342e"/>
+  <circle cx="100" cy="115" r="9" fill="#795548"/>
+  <!-- Crown inside seal -->
+  <polygon points="92,118 94,110 97,115 100,108 103,115 106,110 108,118" fill="#4e342e"/>
+  <!-- Ribbon from seal -->
+  <path d="M92,125 L88,140 L95,135" stroke="#4e342e" stroke-width="2" fill="#4e342e"/>
+  <path d="M108,125 L112,140 L105,135" stroke="#4e342e" stroke-width="2" fill="#4e342e"/>
+</svg>

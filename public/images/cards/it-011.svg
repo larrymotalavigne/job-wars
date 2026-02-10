@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e8f0fe"/>
+  <!-- Binary code background columns -->
+  <g fill="#1a73e8" opacity="0.12" font-family="monospace" font-size="8">
+    <!-- Left binary column represented as rects -->
+    <rect x="16" y="10" width="4" height="4" rx="1"/>
+    <rect x="22" y="10" width="4" height="4" rx="1"/>
+    <rect x="16" y="18" width="4" height="4" rx="1"/>
+    <rect x="22" y="18" width="4" height="4" rx="1"/>
+    <rect x="16" y="26" width="4" height="4" rx="1"/>
+    <rect x="16" y="34" width="4" height="4" rx="1"/>
+    <rect x="22" y="34" width="4" height="4" rx="1"/>
+    <rect x="16" y="42" width="4" height="4" rx="1"/>
+    <!-- Right binary column -->
+    <rect x="174" y="10" width="4" height="4" rx="1"/>
+    <rect x="180" y="10" width="4" height="4" rx="1"/>
+    <rect x="174" y="18" width="4" height="4" rx="1"/>
+    <rect x="180" y="26" width="4" height="4" rx="1"/>
+    <rect x="174" y="34" width="4" height="4" rx="1"/>
+    <rect x="180" y="34" width="4" height="4" rx="1"/>
+    <rect x="174" y="42" width="4" height="4" rx="1"/>
+    <rect x="180" y="42" width="4" height="4" rx="1"/>
+    <!-- Bottom left -->
+    <rect x="16" y="108" width="4" height="4" rx="1"/>
+    <rect x="22" y="108" width="4" height="4" rx="1"/>
+    <rect x="16" y="116" width="4" height="4" rx="1"/>
+    <rect x="16" y="124" width="4" height="4" rx="1"/>
+    <rect x="22" y="124" width="4" height="4" rx="1"/>
+    <rect x="16" y="132" width="4" height="4" rx="1"/>
+    <!-- Bottom right -->
+    <rect x="174" y="108" width="4" height="4" rx="1"/>
+    <rect x="180" y="116" width="4" height="4" rx="1"/>
+    <rect x="174" y="124" width="4" height="4" rx="1"/>
+    <rect x="180" y="124" width="4" height="4" rx="1"/>
+    <rect x="174" y="132" width="4" height="4" rx="1"/>
+    <rect x="180" y="132" width="4" height="4" rx="1"/>
+  </g>
+  <!-- Skull shape -->
+  <!-- Cranium -->
+  <ellipse cx="100" cy="58" rx="36" ry="32" fill="#1a73e8" opacity="0.2" stroke="#1a73e8" stroke-width="2"/>
+  <!-- Skull top highlight -->
+  <ellipse cx="100" cy="48" rx="28" ry="18" fill="#1a73e8" opacity="0.08"/>
+  <!-- Left eye socket -->
+  <ellipse cx="86" cy="58" rx="10" ry="11" fill="#e8f0fe" stroke="#1a73e8" stroke-width="2"/>
+  <ellipse cx="86" cy="58" rx="5" ry="6" fill="#1a73e8" opacity="0.5"/>
+  <!-- Right eye socket -->
+  <ellipse cx="114" cy="58" rx="10" ry="11" fill="#e8f0fe" stroke="#1a73e8" stroke-width="2"/>
+  <ellipse cx="114" cy="58" rx="5" ry="6" fill="#1a73e8" opacity="0.5"/>
+  <!-- Nose cavity -->
+  <path d="M96,72 L100,80 L104,72 Z" fill="#1a73e8" opacity="0.4"/>
+  <!-- Jaw / teeth area -->
+  <rect x="82" y="86" width="36" height="10" rx="3" fill="#1a73e8" opacity="0.15" stroke="#1a73e8" stroke-width="1.5"/>
+  <!-- Teeth lines -->
+  <line x1="88" y1="86" x2="88" y2="96" stroke="#1a73e8" stroke-width="1.2" opacity="0.4"/>
+  <line x1="94" y1="86" x2="94" y2="96" stroke="#1a73e8" stroke-width="1.2" opacity="0.4"/>
+  <line x1="100" y1="86" x2="100" y2="96" stroke="#1a73e8" stroke-width="1.2" opacity="0.4"/>
+  <line x1="106" y1="86" x2="106" y2="96" stroke="#1a73e8" stroke-width="1.2" opacity="0.4"/>
+  <line x1="112" y1="86" x2="112" y2="96" stroke="#1a73e8" stroke-width="1.2" opacity="0.4"/>
+  <!-- Crossbones behind skull -->
+  <line x1="48" y1="105" x2="152" y2="140" stroke="#1a73e8" stroke-width="4" stroke-linecap="round" opacity="0.25"/>
+  <line x1="152" y1="105" x2="48" y2="140" stroke="#1a73e8" stroke-width="4" stroke-linecap="round" opacity="0.25"/>
+  <!-- Bone ends -->
+  <circle cx="48" cy="105" r="5" fill="#1a73e8" opacity="0.2"/>
+  <circle cx="152" cy="105" r="5" fill="#1a73e8" opacity="0.2"/>
+  <circle cx="48" cy="140" r="5" fill="#1a73e8" opacity="0.2"/>
+  <circle cx="152" cy="140" r="5" fill="#1a73e8" opacity="0.2"/>
+  <!-- Streaming binary data across skull -->
+  <g fill="#1a73e8" opacity="0.2">
+    <rect x="40" y="50" width="3" height="3" rx="0.5"/>
+    <rect x="46" y="50" width="3" height="3" rx="0.5"/>
+    <rect x="151" y="50" width="3" height="3" rx="0.5"/>
+    <rect x="157" y="50" width="3" height="3" rx="0.5"/>
+    <rect x="40" y="64" width="3" height="3" rx="0.5"/>
+    <rect x="157" y="64" width="3" height="3" rx="0.5"/>
+    <rect x="151" y="64" width="3" height="3" rx="0.5"/>
+  </g>
+</svg>

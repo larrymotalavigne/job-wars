@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect width="200" height="150" rx="8" fill="#fef7e0"/>
+  <!-- Open book -->
+  <g transform="translate(55, 45)">
+    <!-- Left page -->
+    <path d="M45,10 Q25,5 5,10 L5,70 Q25,65 45,70 Z" fill="#fff" stroke="#f9a825" stroke-width="2.5"/>
+    <!-- Right page -->
+    <path d="M45,10 Q65,5 85,10 L85,70 Q65,65 45,70 Z" fill="#fff" stroke="#f9a825" stroke-width="2.5"/>
+    <!-- Spine -->
+    <line x1="45" y1="10" x2="45" y2="70" stroke="#f57f17" stroke-width="2"/>
+    <!-- Left page lines -->
+    <line x1="15" y1="25" x2="38" y2="23" stroke="#f9a825" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="15" y1="35" x2="38" y2="33" stroke="#f9a825" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="15" y1="45" x2="38" y2="43" stroke="#f9a825" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="15" y1="55" x2="38" y2="53" stroke="#f9a825" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <!-- Right page lines -->
+    <line x1="52" y1="23" x2="75" y2="25" stroke="#f9a825" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="52" y1="33" x2="75" y2="35" stroke="#f9a825" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="52" y1="43" x2="75" y2="45" stroke="#f9a825" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="52" y1="53" x2="75" y2="55" stroke="#f9a825" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  <!-- Raised hand -->
+  <g transform="translate(138, 22)">
+    <!-- Forearm -->
+    <rect x="8" y="45" width="16" height="30" rx="6" fill="#f9a825"/>
+    <!-- Palm -->
+    <rect x="4" y="20" width="24" height="28" rx="5" fill="#f9a825"/>
+    <!-- Fingers -->
+    <rect x="5" y="2" width="7" height="22" rx="3.5" fill="#f9a825"/>
+    <rect x="14" y="0" width="7" height="24" rx="3.5" fill="#f9a825"/>
+    <rect x="23" y="4" width="7" height="20" rx="3.5" fill="#f9a825"/>
+    <!-- Thumb -->
+    <rect x="-2" y="24" width="7" height="16" rx="3.5" fill="#f57f17" transform="rotate(-20, 0, 28)"/>
+  </g>
+  <!-- Subtle glow lines around hand -->
+  <line x1="135" y1="18" x2="130" y2="12" stroke="#f57f17" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <line x1="155" y1="15" x2="155" y2="8" stroke="#f57f17" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <line x1="172" y1="20" x2="178" y2="14" stroke="#f57f17" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Brain outline (left hemisphere) -->
+  <path d="M100 30 Q70 30 55 45 Q40 60 45 80 Q48 95 60 105 Q75 118 100 120" fill="#f9a825" stroke="#f57f17" stroke-width="2"/>
+  <!-- Brain outline (right hemisphere) -->
+  <path d="M100 30 Q130 30 145 45 Q160 60 155 80 Q152 95 140 105 Q125 118 100 120" fill="#f9a825" stroke="#f57f17" stroke-width="2"/>
+  <!-- Brain folds -->
+  <path d="M100 35 Q85 50 90 65" fill="none" stroke="#f57f17" stroke-width="1.5" opacity="0.6"/>
+  <path d="M60 60 Q75 55 85 65 Q90 72 80 80" fill="none" stroke="#f57f17" stroke-width="1.5" opacity="0.6"/>
+  <path d="M100 35 Q115 50 110 65" fill="none" stroke="#f57f17" stroke-width="1.5" opacity="0.6"/>
+  <path d="M140 60 Q125 55 115 65 Q110 72 120 80" fill="none" stroke="#f57f17" stroke-width="1.5" opacity="0.6"/>
+  <path d="M55 80 Q70 75 80 85" fill="none" stroke="#f57f17" stroke-width="1.5" opacity="0.6"/>
+  <path d="M145 80 Q130 75 120 85" fill="none" stroke="#f57f17" stroke-width="1.5" opacity="0.6"/>
+  <!-- Heart inside brain -->
+  <path d="M88 72 Q88 62 95 62 Q100 62 100 70 Q100 62 105 62 Q112 62 112 72 Q112 82 100 92 Q88 82 88 72 Z" fill="#f57f17"/>
+  <!-- Heart highlight -->
+  <circle cx="93" cy="68" r="2" fill="#f9a825" opacity="0.5"/>
+</svg>

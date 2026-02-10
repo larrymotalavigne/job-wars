@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Water tank truck body -->
+  <rect x="25" y="55" width="120" height="50" rx="10" ry="10" fill="#ef6c00"/>
+  <!-- Truck cab -->
+  <rect x="140" y="60" width="38" height="50" rx="5" ry="5" fill="#e65100"/>
+  <!-- Cab window -->
+  <rect x="148" y="65" width="22" height="16" rx="2" ry="2" fill="#fff3e0"/>
+  <!-- Tank rivet lines -->
+  <ellipse cx="85" cy="55" rx="60" ry="4" fill="#e65100" opacity="0.3"/>
+  <ellipse cx="85" cy="105" rx="60" ry="4" fill="#e65100" opacity="0.3"/>
+  <!-- Tank bands -->
+  <rect x="50" y="55" width="4" height="50" fill="#e65100" opacity="0.4"/>
+  <rect x="85" y="55" width="4" height="50" fill="#e65100" opacity="0.4"/>
+  <rect x="120" y="55" width="4" height="50" fill="#e65100" opacity="0.4"/>
+  <!-- Water symbol on tank -->
+  <path d="M75,72 Q80,65 85,72 Q90,79 95,72" fill="none" stroke="#fff3e0" stroke-width="3" stroke-linecap="round"/>
+  <path d="M70,82 Q77,75 84,82 Q91,89 98,82" fill="none" stroke="#fff3e0" stroke-width="3" stroke-linecap="round"/>
+  <!-- Wheels -->
+  <circle cx="55" cy="112" r="10" fill="#e65100"/>
+  <circle cx="55" cy="112" r="5" fill="#fff3e0"/>
+  <circle cx="115" cy="112" r="10" fill="#e65100"/>
+  <circle cx="115" cy="112" r="5" fill="#fff3e0"/>
+  <circle cx="160" cy="112" r="10" fill="#e65100"/>
+  <circle cx="160" cy="112" r="5" fill="#fff3e0"/>
+  <!-- Bumper -->
+  <rect x="20" y="100" width="10" height="8" rx="2" ry="2" fill="#e65100"/>
+  <!-- Hose connection on back -->
+  <circle cx="28" cy="80" r="6" fill="#e65100"/>
+  <circle cx="28" cy="80" r="3" fill="#fff3e0"/>
+</svg>

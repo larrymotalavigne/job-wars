@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+
+  <!-- Chart area background -->
+  <rect x="20" y="60" width="110" height="75" rx="4" fill="white" opacity="0.6"/>
+
+  <!-- Chart axes -->
+  <line x1="35" y1="65" x2="35" y2="128" stroke="#00897b" stroke-width="2" stroke-linecap="round"/>
+  <line x1="35" y1="128" x2="125" y2="128" stroke="#00897b" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Epidemic curve (bar chart) -->
+  <rect x="42" y="118" width="8" height="10" fill="#00897b" opacity="0.5"/>
+  <rect x="53" y="110" width="8" height="18" fill="#00897b" opacity="0.6"/>
+  <rect x="64" y="95" width="8" height="33" fill="#00897b" opacity="0.7"/>
+  <rect x="75" y="78" width="8" height="50" fill="#00695c"/>
+  <rect x="86" y="88" width="8" height="40" fill="#00897b" opacity="0.7"/>
+  <rect x="97" y="105" width="8" height="23" fill="#00897b" opacity="0.6"/>
+  <rect x="108" y="115" width="8" height="13" fill="#00897b" opacity="0.5"/>
+
+  <!-- Trend line over bars -->
+  <polyline points="46,115 57,108 68,92 79,75 90,85 101,102 112,112" fill="none" stroke="#00695c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Virus particle - large -->
+  <circle cx="160" cy="45" r="18" fill="#00897b" opacity="0.8"/>
+  <circle cx="160" cy="45" r="10" fill="#00695c"/>
+  <!-- Virus spikes -->
+  <line x1="160" y1="24" x2="160" y2="18" stroke="#00897b" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="160" cy="16" r="3" fill="#00897b"/>
+  <line x1="160" y1="66" x2="160" y2="72" stroke="#00897b" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="160" cy="74" r="3" fill="#00897b"/>
+  <line x1="139" y1="45" x2="133" y2="45" stroke="#00897b" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="131" cy="45" r="3" fill="#00897b"/>
+  <line x1="181" y1="45" x2="187" y2="45" stroke="#00897b" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="189" cy="45" r="3" fill="#00897b"/>
+  <line x1="147" y1="32" x2="143" y2="28" stroke="#00897b" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="141" cy="26" r="3" fill="#00897b"/>
+  <line x1="173" y1="32" x2="177" y2="28" stroke="#00897b" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="179" cy="26" r="3" fill="#00897b"/>
+  <line x1="147" y1="58" x2="143" y2="62" stroke="#00897b" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="141" cy="64" r="3" fill="#00897b"/>
+  <line x1="173" y1="58" x2="177" y2="62" stroke="#00897b" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="179" cy="64" r="3" fill="#00897b"/>
+
+  <!-- Small virus particle -->
+  <circle cx="155" cy="105" r="10" fill="#00897b" opacity="0.5"/>
+  <circle cx="155" cy="105" r="5.5" fill="#00695c" opacity="0.6"/>
+  <line x1="155" y1="93" x2="155" y2="89" stroke="#00897b" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="155" cy="88" r="2" fill="#00897b" opacity="0.5"/>
+  <line x1="155" y1="117" x2="155" y2="121" stroke="#00897b" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="155" cy="122" r="2" fill="#00897b" opacity="0.5"/>
+  <line x1="143" y1="105" x2="139" y2="105" stroke="#00897b" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="138" cy="105" r="2" fill="#00897b" opacity="0.5"/>
+  <line x1="167" y1="105" x2="171" y2="105" stroke="#00897b" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="172" cy="105" r="2" fill="#00897b" opacity="0.5"/>
+
+  <!-- Magnifying glass hint top-left -->
+  <circle cx="50" cy="30" r="12" fill="none" stroke="#00897b" stroke-width="2.5" opacity="0.35"/>
+  <line x1="58" y1="38" x2="66" y2="46" stroke="#00897b" stroke-width="2.5" stroke-linecap="round" opacity="0.35"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Shield shape -->
+  <path d="M100,15 L145,35 L145,75 C145,105 100,135 100,135 C100,135 55,105 55,75 L55,35 Z"
+    fill="#546e7a"/>
+  <!-- Inner shield -->
+  <path d="M100,28 L135,44 L135,75 C135,100 100,124 100,124 C100,124 65,100 65,75 L65,44 Z"
+    fill="#37474f"/>
+  <!-- Umbrella top -->
+  <path d="M100,45 C80,45 72,60 72,65 L82,65 C82,60 86,55 92,55 L92,65 L108,65 L108,55 C114,55 118,60 118,65 L128,65 C128,60 120,45 100,45Z"
+    fill="#eceff1" opacity="0.7"/>
+  <!-- Umbrella handle -->
+  <line x1="100" y1="55" x2="100" y2="95" stroke="#eceff1" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <!-- Umbrella hook -->
+  <path d="M100,95 C100,102 94,102 94,95" fill="none" stroke="#eceff1" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <!-- Checkmark inside shield bottom -->
+  <polyline points="88,78 96,88 114,68" fill="none" stroke="#eceff1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+</svg>

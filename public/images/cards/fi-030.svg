@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Umbrella canopy -->
+  <path d="M30 72 A70 55 0 0 1 170 72 Z" fill="#37474f"/>
+  <!-- Umbrella segments -->
+  <path d="M60 72 A30 30 0 0 1 100 60" fill="none" stroke="#546e7a" stroke-width="1.5"/>
+  <path d="M100 60 A30 30 0 0 1 140 72" fill="none" stroke="#546e7a" stroke-width="1.5"/>
+  <!-- Umbrella handle (pole) -->
+  <line x1="100" y1="60" x2="100" y2="120" stroke="#37474f" stroke-width="3"/>
+  <!-- Handle curve at bottom -->
+  <path d="M100 120 Q100 130 108 130 Q116 130 116 122" fill="none" stroke="#37474f" stroke-width="3"/>
+  <!-- Family underneath - Parent 1 (taller) -->
+  <circle cx="82" cy="88" r="6" fill="#546e7a"/>
+  <rect x="78" y="94" width="8" height="20" rx="2" ry="2" fill="#546e7a"/>
+  <!-- Parent 1 legs -->
+  <line x1="80" y1="114" x2="78" y2="125" stroke="#546e7a" stroke-width="2.5"/>
+  <line x1="84" y1="114" x2="86" y2="125" stroke="#546e7a" stroke-width="2.5"/>
+  <!-- Parent 2 (taller) -->
+  <circle cx="120" cy="88" r="6" fill="#546e7a"/>
+  <rect x="116" y="94" width="8" height="20" rx="2" ry="2" fill="#546e7a"/>
+  <!-- Parent 2 legs -->
+  <line x1="118" y1="114" x2="116" y2="125" stroke="#546e7a" stroke-width="2.5"/>
+  <line x1="122" y1="114" x2="124" y2="125" stroke="#546e7a" stroke-width="2.5"/>
+  <!-- Child (smaller, between parents) -->
+  <circle cx="100" cy="98" r="5" fill="#546e7a"/>
+  <rect x="97" y="103" width="6" height="14" rx="2" ry="2" fill="#546e7a"/>
+  <!-- Child legs -->
+  <line x1="99" y1="117" x2="97" y2="125" stroke="#546e7a" stroke-width="2"/>
+  <line x1="102" y1="117" x2="104" y2="125" stroke="#546e7a" stroke-width="2"/>
+  <!-- Rain drops outside umbrella -->
+  <line x1="22" y1="30" x2="22" y2="40" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="15" y1="55" x2="15" y2="65" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="28" y1="80" x2="28" y2="90" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="178" y1="35" x2="178" y2="45" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="185" y1="60" x2="185" y2="70" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="172" y1="82" x2="172" y2="92" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="10" y1="100" x2="10" y2="110" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="190" y1="95" x2="190" y2="105" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Lathe bed -->
+  <rect x="20" y="95" width="160" height="10" rx="2" fill="#4e342e"/>
+  <!-- Lathe left headstock -->
+  <rect x="25" y="55" width="20" height="40" rx="2" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Lathe right tailstock -->
+  <rect x="155" y="65" width="15" height="30" rx="2" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Center point left -->
+  <polygon points="45,75 55,72 55,78" fill="#4e342e"/>
+  <!-- Center point right -->
+  <polygon points="155,75 145,72 145,78" fill="#4e342e"/>
+  <!-- Spinning wood piece -->
+  <rect x="55" y="65" width="90" height="20" rx="10" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Shaped profile on the wood -->
+  <path d="M65,65 Q70,60 80,60 Q85,65 90,62 Q95,58 100,58 Q105,62 110,60 Q120,58 130,62 Q135,65 140,65" stroke="#4e342e" stroke-width="1.5" fill="none"/>
+  <path d="M65,85 Q70,90 80,90 Q85,85 90,88 Q95,92 100,92 Q105,88 110,90 Q120,92 130,88 Q135,85 140,85" stroke="#4e342e" stroke-width="1.5" fill="none"/>
+  <!-- Rotation arrows -->
+  <path d="M85,45 Q100,35 115,45" stroke="#795548" stroke-width="2" fill="none"/>
+  <polygon points="115,45 112,38 118,42" fill="#795548"/>
+  <!-- Lathe legs -->
+  <rect x="35" y="105" width="8" height="25" fill="#4e342e"/>
+  <rect x="157" y="105" width="8" height="25" fill="#4e342e"/>
+  <!-- Wood shavings -->
+  <path d="M90,108 Q95,115 88,120" stroke="#795548" stroke-width="1.5" fill="none"/>
+  <path d="M105,108 Q110,118 103,122" stroke="#795548" stroke-width="1.5" fill="none"/>
+</svg>

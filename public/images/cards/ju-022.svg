@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Prison bars -->
+  <rect x="30" y="20" width="100" height="115" rx="2" fill="none" stroke="#6a1b9a" stroke-width="3"/>
+  <!-- Horizontal bars -->
+  <line x1="30" y1="50" x2="130" y2="50" stroke="#6a1b9a" stroke-width="2.5"/>
+  <line x1="30" y1="85" x2="130" y2="85" stroke="#6a1b9a" stroke-width="2.5"/>
+  <!-- Vertical bars -->
+  <line x1="50" y1="20" x2="50" y2="135" stroke="#6a1b9a" stroke-width="3"/>
+  <line x1="70" y1="20" x2="70" y2="135" stroke="#6a1b9a" stroke-width="3"/>
+  <line x1="90" y1="20" x2="90" y2="135" stroke="#6a1b9a" stroke-width="3"/>
+  <line x1="110" y1="20" x2="110" y2="135" stroke="#6a1b9a" stroke-width="3"/>
+  <!-- Keyhole on bar -->
+  <circle cx="80" cy="68" r="5" fill="#4a148c"/>
+  <rect x="78" y="68" width="4" height="8" fill="#4a148c"/>
+  <!-- Key turning in lock -->
+  <circle cx="155" cy="68" r="12" fill="none" stroke="#4a148c" stroke-width="3"/>
+  <line x1="155" y1="80" x2="155" y2="110" stroke="#4a148c" stroke-width="3.5"/>
+  <line x1="155" y1="100" x2="165" y2="100" stroke="#4a148c" stroke-width="2.5"/>
+  <line x1="155" y1="107" x2="167" y2="107" stroke="#4a148c" stroke-width="2.5"/>
+  <!-- Turn indicator arc -->
+  <path d="M145,55 Q140,68 145,80" stroke="#6a1b9a" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+  <polygon points="145,80 141,74 148,76" fill="#6a1b9a"/>
+</svg>

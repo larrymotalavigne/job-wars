@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Pilote de Char: tank silhouette with treads -->
+  <!-- Tank treads -->
+  <rect x="30" y="95" width="140" height="30" rx="15" fill="#33691e"/>
+  <rect x="35" y="100" width="130" height="20" rx="10" fill="#558b2f"/>
+  <!-- Tread wheels -->
+  <circle cx="55" cy="110" r="8" fill="#33691e"/>
+  <circle cx="55" cy="110" r="4" fill="#558b2f"/>
+  <circle cx="80" cy="110" r="8" fill="#33691e"/>
+  <circle cx="80" cy="110" r="4" fill="#558b2f"/>
+  <circle cx="105" cy="110" r="8" fill="#33691e"/>
+  <circle cx="105" cy="110" r="4" fill="#558b2f"/>
+  <circle cx="130" cy="110" r="8" fill="#33691e"/>
+  <circle cx="130" cy="110" r="4" fill="#558b2f"/>
+  <circle cx="155" cy="110" r="8" fill="#33691e"/>
+  <circle cx="155" cy="110" r="4" fill="#558b2f"/>
+  <!-- Tank hull -->
+  <polygon points="45,95 155,95 145,70 55,70" fill="#558b2f"/>
+  <!-- Turret -->
+  <rect x="70" y="50" width="55" height="22" rx="8" fill="#33691e"/>
+  <!-- Cannon barrel -->
+  <rect x="125" y="56" width="50" height="8" rx="3" fill="#33691e"/>
+  <rect x="170" y="54" width="10" height="12" rx="2" fill="#558b2f"/>
+  <!-- Hatch -->
+  <rect x="88" y="46" width="18" height="6" rx="3" fill="#558b2f"/>
+  <!-- Antenna -->
+  <line x1="78" y1="50" x2="72" y2="30" stroke="#33691e" stroke-width="2"/>
+  <circle cx="72" cy="28" r="2" fill="#558b2f"/>
+</svg>

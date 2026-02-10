@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Chart background -->
+  <rect x="20" y="12" width="160" height="126" rx="6" fill="#546e7a"/>
+  <!-- Grid lines -->
+  <line x1="38" y1="32" x2="168" y2="32" stroke="#eceff1" stroke-width="0.5" opacity="0.12"/>
+  <line x1="38" y1="52" x2="168" y2="52" stroke="#eceff1" stroke-width="0.5" opacity="0.12"/>
+  <line x1="38" y1="72" x2="168" y2="72" stroke="#eceff1" stroke-width="0.5" opacity="0.12"/>
+  <line x1="38" y1="92" x2="168" y2="92" stroke="#eceff1" stroke-width="0.5" opacity="0.12"/>
+  <line x1="38" y1="112" x2="168" y2="112" stroke="#eceff1" stroke-width="0.5" opacity="0.12"/>
+  <!-- Axes -->
+  <line x1="38" y1="22" x2="38" y2="128" stroke="#eceff1" stroke-width="1" opacity="0.4"/>
+  <line x1="38" y1="128" x2="172" y2="128" stroke="#eceff1" stroke-width="1" opacity="0.4"/>
+  <!-- Plummeting chart line - starts high, drops dramatically -->
+  <polyline points="42,38 55,35 68,32 80,30 90,34 98,40 105,55 110,72 114,90 118,105 125,115 135,120 150,122 165,124"
+    fill="none" stroke="#eceff1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Area under crash -->
+  <polygon points="42,38 55,35 68,32 80,30 90,34 98,40 105,55 110,72 114,90 118,105 125,115 135,120 150,122 165,124 165,128 42,128"
+    fill="#eceff1" opacity="0.1"/>
+  <!-- Dramatic drop arrow -->
+  <line x1="85" y1="30" x2="125" y2="115" stroke="#37474f" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <polygon points="125,115 118,104 128,107" fill="#37474f" opacity="0.7"/>
+  <!-- Crack/lightning bolt effect -->
+  <polyline points="92,22 88,42 96,48 86,70 94,76 82,100"
+    fill="none" stroke="#eceff1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+  <!-- Small down arrows scattered -->
+  <polygon points="148,45 152,55 144,55" fill="#eceff1" opacity="0.25"/>
+  <polygon points="158,60 162,70 154,70" fill="#eceff1" opacity="0.2"/>
+  <polygon points="140,65 144,75 136,75" fill="#eceff1" opacity="0.15"/>
+</svg>

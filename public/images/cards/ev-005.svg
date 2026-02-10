@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e6f4ea"/>
+  <!-- Central shape being reshaped - old form (faded) -->
+  <rect x="70" y="40" width="60" height="60" rx="4" fill="none" stroke="#0d652d" stroke-width="2" stroke-dasharray="4,3" opacity="0.2"/>
+  <!-- New form emerging (rotated/transformed) -->
+  <rect x="70" y="40" width="60" height="60" rx="4" fill="#0d652d" opacity="0.1" stroke="#0d652d" stroke-width="2" transform="rotate(15, 100, 70)"/>
+  <!-- Reshaping arrows - top-left outward -->
+  <g transform="translate(60, 30)">
+    <line x1="12" y1="12" x2="0" y2="0" stroke="#0d652d" stroke-width="2.5" opacity="0.5"/>
+    <polygon points="0,0 8,0 0,8" fill="#0d652d" opacity="0.5"/>
+  </g>
+  <!-- Top-right outward -->
+  <g transform="translate(140, 30)">
+    <line x1="-12" y1="12" x2="0" y2="0" stroke="#0d652d" stroke-width="2.5" opacity="0.5"/>
+    <polygon points="0,0 -8,0 0,8" fill="#0d652d" opacity="0.5"/>
+  </g>
+  <!-- Bottom-left outward -->
+  <g transform="translate(60, 110)">
+    <line x1="12" y1="-12" x2="0" y2="0" stroke="#0d652d" stroke-width="2.5" opacity="0.5"/>
+    <polygon points="0,0 8,0 0,-8" fill="#0d652d" opacity="0.5"/>
+  </g>
+  <!-- Bottom-right outward -->
+  <g transform="translate(140, 110)">
+    <line x1="-12" y1="-12" x2="0" y2="0" stroke="#0d652d" stroke-width="2.5" opacity="0.5"/>
+    <polygon points="0,0 -8,0 0,-8" fill="#0d652d" opacity="0.5"/>
+  </g>
+  <!-- Circular reform arrows (around the shape) -->
+  <!-- Top arc arrow -->
+  <path d="M70,25 Q100,10 130,25" fill="none" stroke="#0d652d" stroke-width="2" opacity="0.4"/>
+  <polygon points="130,25 126,18 134,20" fill="#0d652d" opacity="0.4"/>
+  <!-- Bottom arc arrow -->
+  <path d="M130,115 Q100,130 70,115" fill="none" stroke="#0d652d" stroke-width="2" opacity="0.4"/>
+  <polygon points="70,115 74,122 66,120" fill="#0d652d" opacity="0.4"/>
+  <!-- Left arc arrow -->
+  <path d="M55,100 Q40,70 55,40" fill="none" stroke="#0d652d" stroke-width="2" opacity="0.4"/>
+  <polygon points="55,40 48,44 50,36" fill="#0d652d" opacity="0.4"/>
+  <!-- Right arc arrow -->
+  <path d="M145,40 Q160,70 145,100" fill="none" stroke="#0d652d" stroke-width="2" opacity="0.4"/>
+  <polygon points="145,100 152,96 150,104" fill="#0d652d" opacity="0.4"/>
+  <!-- Internal restructure lines -->
+  <line x1="82" y1="50" x2="118" y2="90" stroke="#0d652d" stroke-width="1.5" opacity="0.25"/>
+  <line x1="118" y1="50" x2="82" y2="90" stroke="#0d652d" stroke-width="1.5" opacity="0.25"/>
+  <!-- Center node -->
+  <circle cx="100" cy="70" r="6" fill="#0d652d" opacity="0.3"/>
+  <circle cx="100" cy="70" r="3" fill="#0d652d" opacity="0.5"/>
+  <!-- Corner nodes -->
+  <circle cx="82" cy="50" r="4" fill="#0d652d" opacity="0.25"/>
+  <circle cx="118" cy="50" r="4" fill="#0d652d" opacity="0.25"/>
+  <circle cx="82" cy="90" r="4" fill="#0d652d" opacity="0.25"/>
+  <circle cx="118" cy="90" r="4" fill="#0d652d" opacity="0.25"/>
+</svg>

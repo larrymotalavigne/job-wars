@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Stork -->
+  <!-- Body -->
+  <ellipse cx="130" cy="45" rx="22" ry="14" fill="#00897b"/>
+  <!-- Neck -->
+  <path d="M115 40 Q105 25 108 15" stroke="#00897b" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="108" cy="13" r="6" fill="#00897b"/>
+  <!-- Beak -->
+  <polygon points="102,12 90,14 102,16" fill="#00695c"/>
+  <!-- Wing -->
+  <ellipse cx="135" cy="42" rx="14" ry="8" fill="#00695c"/>
+  <!-- Legs -->
+  <line x1="125" y1="58" x2="122" y2="78" stroke="#00695c" stroke-width="2"/>
+  <line x1="135" y1="58" x2="138" y2="78" stroke="#00695c" stroke-width="2"/>
+  <!-- Bundle cloth hanging from beak -->
+  <line x1="95" y1="14" x2="85" y2="55" stroke="#00695c" stroke-width="2"/>
+  <line x1="95" y1="14" x2="105" y2="55" stroke="#00695c" stroke-width="2"/>
+  <!-- Baby bundle -->
+  <ellipse cx="95" cy="75" rx="22" ry="20" fill="#00897b"/>
+  <ellipse cx="95" cy="75" rx="18" ry="16" fill="#e0f2f1"/>
+  <!-- Bundle wrap lines -->
+  <path d="M77 70 Q95 85 113 70" stroke="#00897b" stroke-width="2" fill="none"/>
+  <path d="M80 78 Q95 90 110 78" stroke="#00897b" stroke-width="2" fill="none"/>
+  <!-- Baby head circle -->
+  <circle cx="95" cy="62" r="8" fill="#00897b" opacity="0.5"/>
+  <!-- Knot at top -->
+  <circle cx="95" cy="55" r="4" fill="#00695c"/>
+</svg>

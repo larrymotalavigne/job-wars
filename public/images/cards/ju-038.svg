@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Circular arrow -->
+  <path d="M100,25 A50,50 0 1,1 55,55" fill="none" stroke="#6a1b9a" stroke-width="5"/>
+  <!-- Arrow head -->
+  <polygon points="55,55 50,42 65,50" fill="#6a1b9a"/>
+  <!-- Second arc for emphasis -->
+  <path d="M100,35 A40,40 0 1,1 65,60" fill="none" stroke="#6a1b9a" stroke-width="2" opacity="0.3"/>
+  <!-- Warning triangle in center -->
+  <polygon points="100,55 80,95 120,95" fill="none" stroke="#4a148c" stroke-width="3"/>
+  <!-- Exclamation mark -->
+  <rect x="97" y="63" width="6" height="18" rx="2" fill="#4a148c"/>
+  <circle cx="100" cy="88" r="3.5" fill="#4a148c"/>
+  <!-- Small repeat ticks around circle -->
+  <line x1="100" y1="18" x2="100" y2="12" stroke="#6a1b9a" stroke-width="2" opacity="0.4"/>
+  <line x1="130" y1="22" x2="134" y2="17" stroke="#6a1b9a" stroke-width="2" opacity="0.4"/>
+  <line x1="152" y1="45" x2="158" y2="42" stroke="#6a1b9a" stroke-width="2" opacity="0.4"/>
+  <line x1="155" y1="75" x2="162" y2="75" stroke="#6a1b9a" stroke-width="2" opacity="0.4"/>
+  <line x1="145" y1="102" x2="150" y2="107" stroke="#6a1b9a" stroke-width="2" opacity="0.4"/>
+  <line x1="120" y1="118" x2="123" y2="124" stroke="#6a1b9a" stroke-width="2" opacity="0.4"/>
+  <line x1="80" y1="118" x2="77" y2="124" stroke="#6a1b9a" stroke-width="2" opacity="0.4"/>
+  <line x1="55" y1="102" x2="50" y2="107" stroke="#6a1b9a" stroke-width="2" opacity="0.4"/>
+</svg>

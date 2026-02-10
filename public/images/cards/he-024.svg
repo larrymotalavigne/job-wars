@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Left paddle -->
+  <rect x="25" y="45" width="55" height="40" rx="8" ry="8" fill="#00897b"/>
+  <rect x="35" y="52" width="35" height="26" rx="4" ry="4" fill="#00695c"/>
+  <!-- Left paddle handle -->
+  <rect x="45" y="85" width="15" height="30" rx="4" ry="4" fill="#00695c"/>
+  <rect x="42" y="112" width="21" height="8" rx="3" ry="3" fill="#00897b"/>
+  <!-- Right paddle -->
+  <rect x="120" y="45" width="55" height="40" rx="8" ry="8" fill="#00897b"/>
+  <rect x="130" y="52" width="35" height="26" rx="4" ry="4" fill="#00695c"/>
+  <!-- Right paddle handle -->
+  <rect x="140" y="85" width="15" height="30" rx="4" ry="4" fill="#00695c"/>
+  <rect x="137" y="112" width="21" height="8" rx="3" ry="3" fill="#00897b"/>
+  <!-- Lightning bolt between paddles -->
+  <polygon points="100,18 92,55 102,55 88,95 112,50 100,50 110,18" fill="#00695c"/>
+  <!-- Electric arcs -->
+  <path d="M80 60 Q85 55 90 60" stroke="#00695c" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M110 60 Q115 55 120 60" stroke="#00695c" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M82 70 Q87 65 92 70" stroke="#00695c" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M108 70 Q113 65 118 70" stroke="#00695c" stroke-width="1.5" fill="none" opacity="0.4"/>
+</svg>

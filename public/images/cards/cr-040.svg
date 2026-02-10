@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Exhibition hall structure -->
+  <rect x="25" y="45" width="150" height="85" fill="#795548" opacity="0.3" stroke="#4e342e" stroke-width="2"/>
+  <!-- Domed roof -->
+  <path d="M25,45 Q100,5 175,45" fill="none" stroke="#4e342e" stroke-width="2.5"/>
+  <!-- Dome detail arcs -->
+  <path d="M50,45 Q100,15 150,45" fill="none" stroke="#795548" stroke-width="1.5"/>
+  <path d="M75,45 Q100,25 125,45" fill="none" stroke="#795548" stroke-width="1"/>
+  <!-- Pillars -->
+  <rect x="35" y="45" width="8" height="85" fill="#795548" stroke="#4e342e" stroke-width="1"/>
+  <rect x="65" y="45" width="8" height="85" fill="#795548" stroke="#4e342e" stroke-width="1"/>
+  <rect x="127" y="45" width="8" height="85" fill="#795548" stroke="#4e342e" stroke-width="1"/>
+  <rect x="157" y="45" width="8" height="85" fill="#795548" stroke="#4e342e" stroke-width="1"/>
+  <!-- Pillar capitals -->
+  <rect x="32" y="43" width="14" height="5" rx="1" fill="#4e342e"/>
+  <rect x="62" y="43" width="14" height="5" rx="1" fill="#4e342e"/>
+  <rect x="124" y="43" width="14" height="5" rx="1" fill="#4e342e"/>
+  <rect x="154" y="43" width="14" height="5" rx="1" fill="#4e342e"/>
+  <!-- Entrance -->
+  <path d="M85,130 L85,75 Q100,60 115,75 L115,130" fill="#4e342e" opacity="0.5"/>
+  <!-- Banner -->
+  <rect x="80" y="15" width="40" height="25" rx="2" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Banner decoration -->
+  <line x1="88" y1="22" x2="112" y2="22" stroke="#4e342e" stroke-width="1.5"/>
+  <line x1="88" y1="28" x2="112" y2="28" stroke="#4e342e" stroke-width="1.5"/>
+  <line x1="88" y1="34" x2="105" y2="34" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Banner triangular bottom -->
+  <polygon points="80,40 100,48 120,40" fill="#795548" stroke="#4e342e" stroke-width="1"/>
+  <!-- Display stands inside -->
+  <rect x="42" y="105" width="15" height="25" rx="1" fill="#4e342e" opacity="0.4"/>
+  <rect x="140" y="105" width="15" height="25" rx="1" fill="#4e342e" opacity="0.4"/>
+  <!-- Floor line -->
+  <line x1="25" y1="130" x2="175" y2="130" stroke="#4e342e" stroke-width="1.5"/>
+</svg>

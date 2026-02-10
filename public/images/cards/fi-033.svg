@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Credit card body -->
+  <rect x="20" y="28" width="160" height="95" rx="10" ry="10" fill="#37474f"/>
+  <!-- Premium gradient band -->
+  <rect x="20" y="28" width="160" height="30" rx="10" ry="0" fill="#546e7a"/>
+  <rect x="20" y="48" width="160" height="10" fill="#546e7a"/>
+  <!-- Chip -->
+  <rect x="42" y="62" width="28" height="22" rx="4" ry="4" fill="#546e7a"/>
+  <!-- Chip internal lines -->
+  <line x1="56" y1="62" x2="56" y2="84" stroke="#37474f" stroke-width="0.8"/>
+  <line x1="42" y1="73" x2="70" y2="73" stroke="#37474f" stroke-width="0.8"/>
+  <rect x="48" y="66" width="8" height="5" fill="none" stroke="#37474f" stroke-width="0.5"/>
+  <rect x="48" y="76" width="8" height="5" fill="none" stroke="#37474f" stroke-width="0.5"/>
+  <rect x="58" y="66" width="8" height="5" fill="none" stroke="#37474f" stroke-width="0.5"/>
+  <rect x="58" y="76" width="8" height="5" fill="none" stroke="#37474f" stroke-width="0.5"/>
+  <!-- Contactless symbol -->
+  <path d="M82 68 A6 6 0 0 1 82 80" fill="none" stroke="#eceff1" stroke-width="1.5" opacity="0.7"/>
+  <path d="M86 65 A10 10 0 0 1 86 83" fill="none" stroke="#eceff1" stroke-width="1.5" opacity="0.5"/>
+  <path d="M90 62 A14 14 0 0 1 90 86" fill="none" stroke="#eceff1" stroke-width="1.5" opacity="0.3"/>
+  <!-- Card number dots (4 groups) -->
+  <circle cx="42" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="50" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="58" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="66" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="80" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="88" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="96" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="104" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="118" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="126" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="134" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <circle cx="142" cy="96" r="2" fill="#eceff1" opacity="0.6"/>
+  <!-- Last 4 digits representation -->
+  <line x1="152" y1="96" x2="158" y2="96" stroke="#eceff1" stroke-width="2.5" opacity="0.7"/>
+  <line x1="160" y1="96" x2="166" y2="96" stroke="#eceff1" stroke-width="2.5" opacity="0.7"/>
+  <!-- Name line -->
+  <line x1="35" y1="110" x2="95" y2="110" stroke="#eceff1" stroke-width="1.5" opacity="0.5"/>
+  <!-- Premium star emblem -->
+  <polygon points="160,38 163,46 172,46 165,51 167,60 160,55 153,60 155,51 148,46 157,46" fill="#eceff1" opacity="0.4"/>
+  <!-- Hologram circle -->
+  <circle cx="155" cy="110" r="7" fill="#546e7a"/>
+  <circle cx="155" cy="110" r="4" fill="#37474f"/>
+</svg>

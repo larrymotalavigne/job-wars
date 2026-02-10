@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Executive desk -->
+  <rect x="20" y="80" width="160" height="12" rx="3" ry="3" fill="#37474f"/>
+  <rect x="25" y="92" width="10" height="35" fill="#546e7a"/>
+  <rect x="165" y="92" width="10" height="35" fill="#546e7a"/>
+  <!-- Desk cross bar -->
+  <rect x="30" y="105" width="140" height="4" fill="#546e7a" opacity="0.5"/>
+  <!-- Financial report 1 -->
+  <rect x="35" y="40" width="35" height="38" rx="2" ry="2" fill="white" stroke="#546e7a" stroke-width="1.5"/>
+  <line x1="40" y1="50" x2="65" y2="50" stroke="#546e7a" stroke-width="1" opacity="0.5"/>
+  <line x1="40" y1="56" x2="65" y2="56" stroke="#546e7a" stroke-width="1" opacity="0.5"/>
+  <line x1="40" y1="62" x2="60" y2="62" stroke="#546e7a" stroke-width="1" opacity="0.5"/>
+  <!-- Small bar chart on report 1 -->
+  <rect x="42" y="66" width="4" height="8" fill="#546e7a"/>
+  <rect x="48" y="63" width="4" height="11" fill="#37474f"/>
+  <rect x="54" y="65" width="4" height="9" fill="#546e7a"/>
+  <rect x="60" y="60" width="4" height="14" fill="#37474f"/>
+  <!-- Financial report 2 -->
+  <rect x="82" y="35" width="35" height="43" rx="2" ry="2" fill="white" stroke="#546e7a" stroke-width="1.5"/>
+  <!-- Pie chart on report 2 -->
+  <circle cx="100" cy="52" r="10" fill="#546e7a"/>
+  <path d="M100 52 L100 42 A10 10 0 0 1 108 48 Z" fill="#37474f"/>
+  <line x1="87" y1="68" x2="112" y2="68" stroke="#546e7a" stroke-width="1" opacity="0.5"/>
+  <line x1="87" y1="72" x2="108" y2="72" stroke="#546e7a" stroke-width="1" opacity="0.5"/>
+  <!-- Financial report 3 -->
+  <rect x="130" y="42" width="35" height="36" rx="2" ry="2" fill="white" stroke="#546e7a" stroke-width="1.5"/>
+  <!-- Line chart on report 3 -->
+  <polyline points="136,68 142,62 148,65 154,55 160,50" fill="none" stroke="#37474f" stroke-width="1.5"/>
+  <line x1="136" y1="72" x2="160" y2="72" stroke="#546e7a" stroke-width="1" opacity="0.5"/>
+  <!-- Pen -->
+  <line x1="75" y1="78" x2="85" y2="68" stroke="#37474f" stroke-width="2"/>
+  <polygon points="75,78 73,80 77,80" fill="#37474f"/>
+  <!-- Executive chair silhouette -->
+  <rect x="80" y="100" width="40" height="28" rx="4" ry="4" fill="#37474f" opacity="0.3"/>
+  <ellipse cx="100" cy="98" rx="22" ry="6" fill="#37474f" opacity="0.3"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Ground/terrain -->
+  <rect x="0" y="105" width="200" height="45" rx="0" fill="#558b2f" opacity="0.25"/>
+  <!-- Bunker main body (half-buried) -->
+  <path d="M25,105 L25,72 Q25,50 50,50 L150,50 Q175,50 175,72 L175,105 Z" fill="#558b2f"/>
+  <!-- Bunker rounded top -->
+  <path d="M25,72 Q100,30 175,72" fill="#33691e"/>
+  <!-- Concrete texture lines -->
+  <line x1="35" y1="80" x2="165" y2="80" stroke="#33691e" stroke-width="1" opacity="0.4"/>
+  <line x1="30" y1="90" x2="170" y2="90" stroke="#33691e" stroke-width="1" opacity="0.3"/>
+  <!-- Bunker slit/window (firing port) -->
+  <rect x="60" y="72" width="80" height="10" rx="2" fill="#33691e"/>
+  <rect x="65" y="74" width="70" height="6" rx="1" fill="#f1f8e9" opacity="0.15"/>
+  <!-- Reinforced door -->
+  <rect x="88" y="85" width="24" height="20" rx="1" fill="#33691e"/>
+  <circle cx="108" cy="95" r="2" fill="#f1f8e9" opacity="0.4"/>
+  <!-- Door reinforcement lines -->
+  <line x1="88" y1="92" x2="112" y2="92" stroke="#558b2f" stroke-width="1" opacity="0.5"/>
+  <line x1="88" y1="98" x2="112" y2="98" stroke="#558b2f" stroke-width="1" opacity="0.5"/>
+  <!-- Sandbags at base -->
+  <ellipse cx="35" cy="108" rx="12" ry="6" fill="#558b2f" opacity="0.7"/>
+  <ellipse cx="55" cy="112" rx="12" ry="6" fill="#558b2f" opacity="0.6"/>
+  <ellipse cx="145" cy="108" rx="12" ry="6" fill="#558b2f" opacity="0.7"/>
+  <ellipse cx="165" cy="112" rx="12" ry="6" fill="#558b2f" opacity="0.6"/>
+  <!-- Antenna on top -->
+  <line x1="140" y1="45" x2="140" y2="22" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="140" y1="28" x2="148" y2="32" stroke="#33691e" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="140" y1="22" x2="146" y2="25" stroke="#33691e" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Ground detail -->
+  <circle cx="15" cy="118" r="1.5" fill="#558b2f" opacity="0.3"/>
+  <circle cx="185" cy="115" r="2" fill="#558b2f" opacity="0.3"/>
+</svg>

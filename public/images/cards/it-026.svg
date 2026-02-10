@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Gateway arch -->
+  <path d="M60,120 L60,50 C60,30 100,15 100,15 C100,15 140,30 140,50 L140,120" fill="none" stroke="#1a73e8" stroke-width="3"/>
+  <rect x="80" y="70" width="40" height="50" rx="4" fill="white" stroke="#1a73e8" stroke-width="2"/>
+  <!-- Gateway keystone -->
+  <circle cx="100" cy="35" r="8" fill="#174ea6"/>
+  <circle cx="100" cy="35" r="4" fill="#e8f0fe"/>
+  <!-- Left endpoint lines -->
+  <line x1="15" y1="60" x2="60" y2="60" stroke="#174ea6" stroke-width="2"/>
+  <circle cx="15" cy="60" r="4" fill="#1a73e8"/>
+  <line x1="15" y1="80" x2="60" y2="80" stroke="#174ea6" stroke-width="2"/>
+  <circle cx="15" cy="80" r="4" fill="#1a73e8"/>
+  <line x1="15" y1="100" x2="60" y2="100" stroke="#174ea6" stroke-width="2"/>
+  <circle cx="15" cy="100" r="4" fill="#1a73e8"/>
+  <!-- Right endpoint lines -->
+  <line x1="140" y1="60" x2="185" y2="60" stroke="#174ea6" stroke-width="2"/>
+  <circle cx="185" cy="60" r="4" fill="#1a73e8"/>
+  <line x1="140" y1="80" x2="185" y2="80" stroke="#174ea6" stroke-width="2"/>
+  <circle cx="185" cy="80" r="4" fill="#1a73e8"/>
+  <line x1="140" y1="100" x2="185" y2="100" stroke="#174ea6" stroke-width="2"/>
+  <circle cx="185" cy="100" r="4" fill="#1a73e8"/>
+  <!-- API arrows through gateway -->
+  <polygon points="84,82 78,78 78,86" fill="#1a73e8"/>
+  <line x1="78" y1="82" x2="70" y2="82" stroke="#1a73e8" stroke-width="1.5"/>
+  <polygon points="116,88 122,84 122,92" fill="#1a73e8"/>
+  <line x1="122" y1="88" x2="130" y2="88" stroke="#1a73e8" stroke-width="1.5"/>
+  <!-- Inner gateway pattern -->
+  <line x1="88" y1="78" x2="112" y2="78" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="88" y1="85" x2="112" y2="85" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="88" y1="92" x2="112" y2="92" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="88" y1="99" x2="112" y2="99" stroke="#e8f0fe" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Payment terminal body -->
+  <rect x="55" y="12" width="90" height="130" rx="10" ry="10" fill="#37474f"/>
+  <rect x="60" y="17" width="80" height="120" rx="8" ry="8" fill="#546e7a"/>
+  <!-- Screen -->
+  <rect x="68" y="24" width="64" height="35" rx="4" ry="4" fill="#eceff1"/>
+  <!-- Screen content - amount display -->
+  <line x1="75" y1="38" x2="95" y2="38" stroke="#546e7a" stroke-width="2"/>
+  <line x1="100" y1="45" x2="125" y2="45" stroke="#37474f" stroke-width="2.5"/>
+  <!-- Keypad buttons -->
+  <rect x="70" y="68" width="15" height="11" rx="2" ry="2" fill="#37474f"/>
+  <rect x="92" y="68" width="15" height="11" rx="2" ry="2" fill="#37474f"/>
+  <rect x="114" y="68" width="15" height="11" rx="2" ry="2" fill="#37474f"/>
+  <rect x="70" y="84" width="15" height="11" rx="2" ry="2" fill="#37474f"/>
+  <rect x="92" y="84" width="15" height="11" rx="2" ry="2" fill="#37474f"/>
+  <rect x="114" y="84" width="15" height="11" rx="2" ry="2" fill="#37474f"/>
+  <rect x="70" y="100" width="15" height="11" rx="2" ry="2" fill="#37474f"/>
+  <rect x="92" y="100" width="15" height="11" rx="2" ry="2" fill="#37474f"/>
+  <rect x="114" y="100" width="15" height="11" rx="2" ry="2" fill="#37474f"/>
+  <!-- OK button -->
+  <rect x="70" y="116" width="59" height="12" rx="3" ry="3" fill="#37474f"/>
+  <!-- Card being inserted -->
+  <rect x="30" y="55" width="40" height="26" rx="3" ry="3" fill="#37474f"/>
+  <!-- Card chip -->
+  <rect x="38" y="62" width="10" height="8" rx="1" ry="1" fill="#eceff1"/>
+  <!-- Card chip lines -->
+  <line x1="43" y1="62" x2="43" y2="70" stroke="#546e7a" stroke-width="0.5"/>
+  <line x1="38" y1="66" x2="48" y2="66" stroke="#546e7a" stroke-width="0.5"/>
+  <!-- Contactless waves at top -->
+  <path d="M92 18 A5 5 0 0 1 108 18" fill="none" stroke="#eceff1" stroke-width="1" opacity="0.4"/>
+  <path d="M95 15 A8 8 0 0 1 105 15" fill="none" stroke="#eceff1" stroke-width="1" opacity="0.3"/>
+</svg>

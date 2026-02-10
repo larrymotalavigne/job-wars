@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#f1f8e9"/>
+  <!-- Barricade structure -->
+  <!-- Main horizontal bars -->
+  <rect x="20" y="72" width="160" height="8" rx="3" fill="#558b2f" opacity="0.4"/>
+  <rect x="20" y="92" width="160" height="8" rx="3" fill="#558b2f" opacity="0.35"/>
+  <!-- Vertical supports -->
+  <rect x="36" y="60" width="8" height="52" rx="2" fill="#558b2f" opacity="0.45"/>
+  <rect x="96" y="60" width="8" height="52" rx="2" fill="#558b2f" opacity="0.45"/>
+  <rect x="156" y="60" width="8" height="52" rx="2" fill="#558b2f" opacity="0.45"/>
+  <!-- Cross braces -->
+  <line x1="40" y1="64" x2="100" y2="108" stroke="#558b2f" stroke-width="3" opacity="0.25"/>
+  <line x1="100" y1="64" x2="40" y2="108" stroke="#558b2f" stroke-width="3" opacity="0.25"/>
+  <line x1="100" y1="64" x2="160" y2="108" stroke="#558b2f" stroke-width="3" opacity="0.25"/>
+  <line x1="160" y1="64" x2="100" y2="108" stroke="#558b2f" stroke-width="3" opacity="0.25"/>
+  <!-- Barbed wire on top -->
+  <path d="M20,62 Q30,56 40,62 Q50,68 60,62 Q70,56 80,62 Q90,68 100,62 Q110,56 120,62 Q130,68 140,62 Q150,56 160,62 Q170,68 180,62"
+        fill="none" stroke="#558b2f" stroke-width="1.5" opacity="0.4"/>
+  <!-- Wire barbs -->
+  <g stroke="#558b2f" stroke-width="1" opacity="0.3">
+    <line x1="35" y1="57" x2="39" y2="63"/>
+    <line x1="37" y1="63" x2="33" y2="57"/>
+    <line x1="55" y1="63" x2="59" y2="57"/>
+    <line x1="57" y1="57" x2="53" y2="63"/>
+    <line x1="75" y1="57" x2="79" y2="63"/>
+    <line x1="77" y1="63" x2="73" y2="57"/>
+    <line x1="115" y1="57" x2="119" y2="63"/>
+    <line x1="117" y1="63" x2="113" y2="57"/>
+    <line x1="135" y1="63" x2="139" y2="57"/>
+    <line x1="137" y1="57" x2="133" y2="63"/>
+    <line x1="155" y1="57" x2="159" y2="63"/>
+    <line x1="157" y1="63" x2="153" y2="57"/>
+    <line x1="175" y1="63" x2="179" y2="57"/>
+    <line x1="177" y1="57" x2="173" y2="63"/>
+  </g>
+  <!-- Raised fist (center, above barricade) -->
+  <g transform="translate(100, 28)">
+    <!-- Fist body -->
+    <rect x="-8" y="0" width="16" height="20" rx="4" fill="#558b2f" opacity="0.5"/>
+    <!-- Knuckles -->
+    <rect x="-10" y="-6" width="6" height="10" rx="2.5" fill="#558b2f" opacity="0.45"/>
+    <rect x="-3" y="-8" width="6" height="12" rx="2.5" fill="#558b2f" opacity="0.45"/>
+    <rect x="4" y="-6" width="6" height="10" rx="2.5" fill="#558b2f" opacity="0.45"/>
+    <!-- Thumb -->
+    <rect x="-14" y="2" width="8" height="6" rx="3" fill="#558b2f" opacity="0.4"/>
+    <!-- Wrist -->
+    <rect x="-6" y="18" width="12" height="12" rx="3" fill="#558b2f" opacity="0.35"/>
+  </g>
+  <!-- Ground line -->
+  <line x1="10" y1="120" x2="190" y2="120" stroke="#558b2f" stroke-width="2" opacity="0.2"/>
+  <!-- Sandbag shapes at base -->
+  <ellipse cx="44" cy="118" rx="14" ry="6" fill="#558b2f" opacity="0.15" stroke="#558b2f" stroke-width="1"/>
+  <ellipse cx="70" cy="118" rx="14" ry="6" fill="#558b2f" opacity="0.15" stroke="#558b2f" stroke-width="1"/>
+  <ellipse cx="130" cy="118" rx="14" ry="6" fill="#558b2f" opacity="0.15" stroke="#558b2f" stroke-width="1"/>
+  <ellipse cx="156" cy="118" rx="14" ry="6" fill="#558b2f" opacity="0.15" stroke="#558b2f" stroke-width="1"/>
+  <!-- Stacked sandbags -->
+  <ellipse cx="57" cy="112" rx="12" ry="5" fill="#558b2f" opacity="0.12" stroke="#558b2f" stroke-width="1"/>
+  <ellipse cx="143" cy="112" rx="12" ry="5" fill="#558b2f" opacity="0.12" stroke="#558b2f" stroke-width="1"/>
+  <!-- Warning atmosphere lines -->
+  <line x1="20" y1="134" x2="50" y2="134" stroke="#558b2f" stroke-width="1.5" opacity="0.12"/>
+  <line x1="80" y1="138" x2="120" y2="138" stroke="#558b2f" stroke-width="1.5" opacity="0.12"/>
+  <line x1="150" y1="134" x2="180" y2="134" stroke="#558b2f" stroke-width="1.5" opacity="0.12"/>
+</svg>

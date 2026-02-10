@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fce4ec"/>
+  <!-- Car body -->
+  <rect x="30" y="70" width="140" height="35" rx="8" fill="#c62828"/>
+  <!-- Car roof -->
+  <path d="M65 70 L80 45 L140 45 L155 70" fill="#c62828"/>
+  <!-- Windshield -->
+  <path d="M70 70 L82 50 L120 50 L125 70" fill="#fce4ec" opacity="0.3"/>
+  <!-- Rear window -->
+  <path d="M132 70 L138 50 L150 50 L150 70" fill="#fce4ec" opacity="0.3"/>
+  <!-- Wheels -->
+  <circle cx="65" cy="108" r="16" fill="#b71c1c"/>
+  <circle cx="65" cy="108" r="10" fill="#fce4ec"/>
+  <circle cx="65" cy="108" r="4" fill="#b71c1c"/>
+  <circle cx="150" cy="108" r="16" fill="#b71c1c"/>
+  <circle cx="150" cy="108" r="10" fill="#fce4ec"/>
+  <circle cx="150" cy="108" r="4" fill="#b71c1c"/>
+  <!-- Wheel well -->
+  <path d="M45 105 Q65 90 85 105" fill="#fce4ec"/>
+  <path d="M130 105 Q150 90 170 105" fill="#fce4ec"/>
+  <!-- Headlights -->
+  <rect x="165" y="78" width="10" height="8" rx="2" fill="#fce4ec" opacity="0.5"/>
+  <rect x="25" y="78" width="10" height="8" rx="2" fill="#fce4ec" opacity="0.5"/>
+  <!-- Hidden lights in grille (subtle) -->
+  <rect x="168" y="72" width="4" height="4" rx="1" fill="#fce4ec" opacity="0.6"/>
+  <rect x="168" y="88" width="4" height="4" rx="1" fill="#fce4ec" opacity="0.6"/>
+  <!-- Hidden dashboard light -->
+  <rect x="100" y="52" width="12" height="4" rx="1" fill="#fce4ec" opacity="0.5"/>
+  <!-- Light rays (subtle) -->
+  <line x1="106" y1="48" x2="106" y2="42" stroke="#c62828" stroke-width="1.5" opacity="0.4"/>
+  <line x1="102" y1="49" x2="99" y2="43" stroke="#c62828" stroke-width="1.5" opacity="0.4"/>
+  <line x1="110" y1="49" x2="113" y2="43" stroke="#c62828" stroke-width="1.5" opacity="0.4"/>
+  <!-- Door line -->
+  <line x1="110" y1="52" x2="110" y2="100" stroke="#b71c1c" stroke-width="1.5"/>
+  <!-- Door handle -->
+  <rect x="115" y="80" width="10" height="3" rx="1" fill="#b71c1c"/>
+</svg>

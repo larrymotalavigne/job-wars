@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#fce4ec"/>
+  <!-- Police Badge / Star Shape -->
+  <g transform="translate(100,78)">
+    <!-- Outer star (badge shape) -->
+    <polygon points="0,-48 11,-18 42,-18 18,2 27,34 0,16 -27,34 -18,2 -42,-18 -11,-18"
+             fill="#c62828" stroke="#b71c1c" stroke-width="2"/>
+    <!-- Inner circle on badge -->
+    <circle cx="0" cy="2" r="16" fill="#fce4ec" stroke="#b71c1c" stroke-width="1.5"/>
+    <!-- Inner smaller star -->
+    <polygon points="0,-10 2.5,-4 9,-4 4,1 6,8 0,4 -6,8 -4,1 -9,-4 -2.5,-4"
+             fill="#c62828"/>
+  </g>
+  <!-- Small decorative dots -->
+  <circle cx="40" cy="130" r="3" fill="#c62828" opacity="0.3"/>
+  <circle cx="160" cy="130" r="3" fill="#c62828" opacity="0.3"/>
+  <circle cx="100" cy="135" r="2" fill="#c62828" opacity="0.2"/>
+</svg>

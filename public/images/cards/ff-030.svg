@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Jaws of Life tool -->
+  <!-- Hydraulic body/pump -->
+  <rect x="75" y="80" width="50" height="25" rx="5" ry="5" fill="#ef6c00"/>
+  <!-- Hydraulic hose -->
+  <path d="M100,105 Q100,125 85,130 Q70,135 65,130" fill="none" stroke="#e65100" stroke-width="4" stroke-linecap="round"/>
+  <!-- Pivot point -->
+  <circle cx="100" cy="75" r="8" fill="#e65100"/>
+  <circle cx="100" cy="75" r="4" fill="#fff3e0"/>
+  <!-- Left jaw/arm -->
+  <path d="M92,75 L50,30 L40,35 L55,50 L45,55 L80,72" fill="#ef6c00" stroke="#e65100" stroke-width="2"/>
+  <!-- Right jaw/arm -->
+  <path d="M108,75 L150,30 L160,35 L145,50 L155,55 L120,72" fill="#ef6c00" stroke="#e65100" stroke-width="2"/>
+  <!-- Jaw tips (spreader teeth) -->
+  <polygon points="50,30 40,35 35,25 45,22" fill="#e65100"/>
+  <polygon points="150,30 160,35 165,25 155,22" fill="#e65100"/>
+  <!-- Handle grips -->
+  <rect x="82" y="90" width="8" height="15" rx="2" ry="2" fill="#e65100"/>
+  <rect x="110" y="90" width="8" height="15" rx="2" ry="2" fill="#e65100"/>
+  <!-- Force arrows showing spreading -->
+  <line x1="60" y1="45" x2="48" y2="38" stroke="#e65100" stroke-width="2" stroke-linecap="round"/>
+  <line x1="140" y1="45" x2="152" y2="38" stroke="#e65100" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Test tube rack -->
+  <rect x="20" y="40" width="90" height="6" rx="2" fill="#00695c"/>
+  <rect x="20" y="95" width="90" height="6" rx="2" fill="#00695c"/>
+  <!-- Rack legs -->
+  <rect x="25" y="40" width="4" height="60" fill="#00695c"/>
+  <rect x="101" y="40" width="4" height="60" fill="#00695c"/>
+  <!-- Test tubes -->
+  <rect x="35" y="28" width="10" height="62" rx="5" ry="5" fill="#00897b"/>
+  <rect x="35" y="28" width="10" height="30" rx="5" ry="0" fill="#00695c" opacity="0.5"/>
+  <rect x="52" y="28" width="10" height="62" rx="5" ry="5" fill="#00897b"/>
+  <rect x="52" y="28" width="10" height="45" rx="5" ry="0" fill="#00695c" opacity="0.5"/>
+  <rect x="69" y="28" width="10" height="62" rx="5" ry="5" fill="#00897b"/>
+  <rect x="69" y="28" width="10" height="20" rx="5" ry="0" fill="#00695c" opacity="0.5"/>
+  <rect x="86" y="28" width="10" height="62" rx="5" ry="5" fill="#00897b"/>
+  <rect x="86" y="28" width="10" height="38" rx="5" ry="0" fill="#00695c" opacity="0.5"/>
+  <!-- Centrifuge body -->
+  <circle cx="152" cy="80" r="35" fill="#00695c"/>
+  <circle cx="152" cy="80" r="30" fill="#00897b"/>
+  <!-- Centrifuge lid -->
+  <ellipse cx="152" cy="50" rx="30" ry="8" fill="#00695c"/>
+  <!-- Centrifuge inner rotor -->
+  <circle cx="152" cy="80" r="12" fill="#00695c"/>
+  <circle cx="152" cy="80" r="4" fill="#e0f2f1"/>
+  <!-- Centrifuge slots -->
+  <rect x="148" y="60" width="8" height="4" rx="1" fill="#e0f2f1" transform="rotate(0 152 80)" opacity="0.5"/>
+  <rect x="148" y="96" width="8" height="4" rx="1" fill="#e0f2f1" transform="rotate(0 152 80)" opacity="0.5"/>
+  <rect x="168" y="78" width="4" height="8" rx="1" fill="#e0f2f1" opacity="0.5"/>
+  <rect x="132" y="78" width="4" height="8" rx="1" fill="#e0f2f1" opacity="0.5"/>
+</svg>

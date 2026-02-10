@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e8f0fe"/>
+
+  <!-- Shield shape -->
+  <path d="M100,18 L145,38 Q148,40 147,44 L142,90 Q138,112 100,132 Q62,112 58,90 L53,44 Q52,40 55,38 Z"
+        fill="#1a73e8" opacity="0.15" stroke="#1a73e8" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Inner shield highlight -->
+  <path d="M100,30 L135,46 L131,85 Q128,102 100,118 Q72,102 69,85 L65,46 Z"
+        fill="#1a73e8" opacity="0.1"/>
+
+  <!-- Lock body -->
+  <rect x="86" y="72" width="28" height="22" rx="4" fill="#1a73e8" opacity="0.85"/>
+
+  <!-- Lock shackle -->
+  <path d="M90,72 L90,62 Q90,52 100,52 Q110,52 110,62 L110,72"
+        fill="none" stroke="#1a73e8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Keyhole -->
+  <circle cx="100" cy="80" r="4" fill="#ffffff"/>
+  <rect x="98" y="82" width="4" height="6" rx="1" fill="#ffffff"/>
+
+  <!-- Small checkmark accent -->
+  <polyline points="88,48 94,54 108,40" fill="none" stroke="#1a73e8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+</svg>

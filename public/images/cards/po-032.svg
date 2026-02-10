@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fce4ec"/>
+  <!-- Speed camera body -->
+  <rect x="60" y="30" width="60" height="50" rx="6" fill="#c62828"/>
+  <!-- Camera lens -->
+  <circle cx="90" cy="55" r="16" fill="#b71c1c"/>
+  <circle cx="90" cy="55" r="11" fill="#fce4ec" opacity="0.3"/>
+  <circle cx="90" cy="55" r="6" fill="#b71c1c"/>
+  <!-- Sensor window -->
+  <rect x="65" y="35" width="15" height="10" rx="2" fill="#b71c1c"/>
+  <!-- Flash unit -->
+  <rect x="55" y="22" width="70" height="12" rx="3" fill="#b71c1c"/>
+  <!-- Flash burst -->
+  <polygon points="90,12 94,22 100,10 96,22 105,15 98,24" fill="#fce4ec" opacity="0.6"/>
+  <line x1="80" y1="14" x2="82" y2="22" stroke="#fce4ec" stroke-width="2" opacity="0.5"/>
+  <line x1="70" y1="16" x2="73" y2="22" stroke="#fce4ec" stroke-width="2" opacity="0.5"/>
+  <line x1="110" y1="16" x2="107" y2="22" stroke="#fce4ec" stroke-width="2" opacity="0.5"/>
+  <!-- Pole mount -->
+  <rect x="85" y="80" width="10" height="50" fill="#b71c1c"/>
+  <!-- Base -->
+  <rect x="70" y="125" width="40" height="8" rx="2" fill="#b71c1c"/>
+  <!-- Speed readout area -->
+  <rect x="105" y="40" width="12" height="18" rx="2" fill="#fce4ec" opacity="0.2"/>
+  <!-- Indicator light -->
+  <circle cx="68" cy="72" r="3" fill="#fce4ec" opacity="0.5"/>
+  <!-- Road lines (context) -->
+  <rect x="145" y="100" width="30" height="4" rx="1" fill="#c62828" opacity="0.2"/>
+  <rect x="150" y="115" width="25" height="4" rx="1" fill="#c62828" opacity="0.2"/>
+  <rect x="155" y="130" width="20" height="4" rx="1" fill="#c62828" opacity="0.2"/>
+</svg>

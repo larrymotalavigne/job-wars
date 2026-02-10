@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Treble clef (stylized) -->
+  <path d="M70 110 Q60 95 65 80 Q70 65 75 55 Q80 45 78 35 Q75 25 68 30 Q62 35 65 45 Q68 55 75 55 Q82 55 85 48 Q88 40 82 35" fill="none" stroke="#f57f17" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="65" cy="112" r="5" fill="#f57f17"/>
+  <!-- Staff lines -->
+  <line x1="25" y1="50" x2="175" y2="50" stroke="#f9a825" stroke-width="1.5" opacity="0.5"/>
+  <line x1="25" y1="62" x2="175" y2="62" stroke="#f9a825" stroke-width="1.5" opacity="0.5"/>
+  <line x1="25" y1="74" x2="175" y2="74" stroke="#f9a825" stroke-width="1.5" opacity="0.5"/>
+  <line x1="25" y1="86" x2="175" y2="86" stroke="#f9a825" stroke-width="1.5" opacity="0.5"/>
+  <line x1="25" y1="98" x2="175" y2="98" stroke="#f9a825" stroke-width="1.5" opacity="0.5"/>
+  <!-- Musical notes -->
+  <!-- Quarter note 1 -->
+  <ellipse cx="110" cy="74" rx="7" ry="5" transform="rotate(-20 110 74)" fill="#f9a825"/>
+  <line x1="116" y1="72" x2="116" y2="42" stroke="#f9a825" stroke-width="2"/>
+  <!-- Quarter note 2 -->
+  <ellipse cx="135" cy="62" rx="7" ry="5" transform="rotate(-20 135 62)" fill="#f9a825"/>
+  <line x1="141" y1="60" x2="141" y2="30" stroke="#f9a825" stroke-width="2"/>
+  <!-- Eighth notes (beamed) -->
+  <ellipse cx="155" cy="86" rx="6" ry="4.5" transform="rotate(-20 155 86)" fill="#f57f17"/>
+  <line x1="160" y1="84" x2="160" y2="56" stroke="#f57f17" stroke-width="2"/>
+  <ellipse cx="170" cy="80" rx="6" ry="4.5" transform="rotate(-20 170 80)" fill="#f57f17"/>
+  <line x1="175" y1="78" x2="175" y2="50" stroke="#f57f17" stroke-width="2"/>
+  <line x1="160" y1="56" x2="175" y2="50" stroke="#f57f17" stroke-width="2.5"/>
+</svg>

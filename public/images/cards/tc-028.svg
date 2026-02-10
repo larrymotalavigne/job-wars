@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Ground -->
+  <rect x="0" y="120" width="200" height="30" rx="0" fill="#f9a825" opacity="0.2"/>
+  <!-- Swing set frame - A-frame left -->
+  <line x1="30" y1="120" x2="60" y2="25" stroke="#f57f17" stroke-width="4" stroke-linecap="round"/>
+  <line x1="90" y1="120" x2="60" y2="25" stroke="#f57f17" stroke-width="4" stroke-linecap="round"/>
+  <!-- Swing set frame - A-frame right -->
+  <line x1="110" y1="120" x2="140" y2="25" stroke="#f57f17" stroke-width="4" stroke-linecap="round"/>
+  <line x1="170" y1="120" x2="140" y2="25" stroke="#f57f17" stroke-width="4" stroke-linecap="round"/>
+  <!-- Top bar -->
+  <line x1="60" y1="25" x2="140" y2="25" stroke="#f57f17" stroke-width="5" stroke-linecap="round"/>
+  <!-- Swing 1 - chains -->
+  <line x1="82" y1="25" x2="75" y2="85" stroke="#f9a825" stroke-width="2"/>
+  <line x1="92" y1="25" x2="95" y2="85" stroke="#f9a825" stroke-width="2"/>
+  <!-- Swing 1 - seat -->
+  <rect x="72" y="85" width="26" height="5" rx="2" fill="#f9a825"/>
+  <!-- Swing 2 - chains (swinging) -->
+  <line x1="108" y1="25" x2="115" y2="80" stroke="#f9a825" stroke-width="2"/>
+  <line x1="118" y1="25" x2="135" y2="80" stroke="#f9a825" stroke-width="2"/>
+  <!-- Swing 2 - seat -->
+  <rect x="112" y="80" width="26" height="5" rx="2" fill="#f9a825" transform="rotate(10 125 82)"/>
+  <!-- Small decorative elements - clouds -->
+  <ellipse cx="25" cy="18" rx="15" ry="8" fill="#f9a825" opacity="0.2"/>
+  <ellipse cx="175" cy="15" rx="12" ry="6" fill="#f9a825" opacity="0.2"/>
+</svg>

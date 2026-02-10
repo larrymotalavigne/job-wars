@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Sorting bars at various heights (partially sorted visualization) -->
+  <rect x="22" y="105" width="14" height="20" rx="2" fill="#174ea6"/>
+  <rect x="40" y="85" width="14" height="40" rx="2" fill="#174ea6"/>
+  <rect x="58" y="95" width="14" height="30" rx="2" fill="#1a73e8"/>
+  <rect x="76" y="55" width="14" height="70" rx="2" fill="#1a73e8"/>
+  <rect x="94" y="35" width="14" height="90" rx="2" fill="#1a73e8" opacity="0.7"/>
+  <rect x="112" y="65" width="14" height="60" rx="2" fill="#1a73e8"/>
+  <rect x="130" y="45" width="14" height="80" rx="2" fill="#174ea6"/>
+  <rect x="148" y="75" width="14" height="50" rx="2" fill="#174ea6"/>
+  <rect x="166" y="25" width="14" height="100" rx="2" fill="#174ea6"/>
+  <!-- Swap arrows on two bars being compared -->
+  <path d="M65,50 C65,40 83,40 83,50" fill="none" stroke="#e8453c" stroke-width="2"/>
+  <polygon points="83,50 80,44 86,44" fill="#e8453c"/>
+  <path d="M83,92 C83,88 65,88 65,92" fill="none" stroke="#e8453c" stroke-width="2"/>
+  <polygon points="65,92 68,86 62,86" fill="#e8453c"/>
+  <!-- Floor line -->
+  <line x1="18" y1="126" x2="184" y2="126" stroke="#174ea6" stroke-width="1.5"/>
+  <!-- Comparison indicator -->
+  <line x1="58" y1="15" x2="58" y2="22" stroke="#1a73e8" stroke-width="1.5"/>
+  <line x1="90" y1="15" x2="90" y2="22" stroke="#1a73e8" stroke-width="1.5"/>
+  <line x1="58" y1="15" x2="90" y2="15" stroke="#1a73e8" stroke-width="1.5"/>
+</svg>

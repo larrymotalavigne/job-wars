@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Lab coat -->
+  <path d="M50 35 L50 130 L90 130 L90 80 L110 80 L110 130 L150 130 L150 35 Q140 25 130 30 L120 45 L115 35 Q100 28 100 28 Q100 28 85 35 L80 45 L70 30 Q60 25 50 35Z" fill="#00897b"/>
+  <!-- Coat collar -->
+  <path d="M85 35 L95 55 L100 50 L105 55 L115 35" stroke="#00695c" stroke-width="2" fill="#e0f2f1"/>
+  <!-- Coat pocket -->
+  <rect x="55" y="85" width="25" height="2" fill="#00695c"/>
+  <rect x="120" y="85" width="25" height="2" fill="#00695c"/>
+  <!-- Coat buttons -->
+  <circle cx="100" cy="65" r="2" fill="#00695c"/>
+  <circle cx="100" cy="78" r="2" fill="#00695c"/>
+  <circle cx="100" cy="91" r="2" fill="#00695c"/>
+  <!-- DNA helix on the right -->
+  <path d="M165 25 Q175 40 165 55 Q155 70 165 85 Q175 100 165 115" stroke="#00695c" stroke-width="2.5" fill="none"/>
+  <path d="M175 25 Q165 40 175 55 Q185 70 175 85 Q165 100 175 115" stroke="#00695c" stroke-width="2.5" fill="none"/>
+  <!-- DNA rungs -->
+  <line x1="167" y1="32" x2="173" y2="32" stroke="#00695c" stroke-width="1.5"/>
+  <line x1="163" y1="47" x2="177" y2="47" stroke="#00695c" stroke-width="1.5"/>
+  <line x1="167" y1="62" x2="173" y2="62" stroke="#00695c" stroke-width="1.5"/>
+  <line x1="163" y1="77" x2="177" y2="77" stroke="#00695c" stroke-width="1.5"/>
+  <line x1="167" y1="92" x2="173" y2="92" stroke="#00695c" stroke-width="1.5"/>
+  <line x1="163" y1="107" x2="177" y2="107" stroke="#00695c" stroke-width="1.5"/>
+  <!-- Award/medal -->
+  <line x1="30" y1="15" x2="22" y2="45" stroke="#00695c" stroke-width="3"/>
+  <line x1="30" y1="15" x2="38" y2="45" stroke="#00695c" stroke-width="3"/>
+  <circle cx="30" cy="55" r="12" fill="#00695c"/>
+  <polygon points="30,46 33,52 39,52 34,56 36,62 30,58 24,62 26,56 21,52 27,52" fill="#e0f2f1"/>
+</svg>

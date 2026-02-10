@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect width="200" height="150" rx="8" fill="#fef7e0"/>
+  <!-- Person silhouette -->
+  <g transform="translate(75, 25)">
+    <!-- Head -->
+    <circle cx="25" cy="15" r="15" fill="#f9a825"/>
+    <!-- Body -->
+    <path d="M5,40 Q5,30 25,30 Q45,30 45,40 L45,80 Q45,90 35,90 L15,90 Q5,90 5,80 Z" fill="#f9a825"/>
+  </g>
+  <!-- Swap/Refresh circular arrow -->
+  <g transform="translate(100, 90)">
+    <!-- Top arc arrow -->
+    <path d="M-35,0 A35,35 0 0,1 15,-32" fill="none" stroke="#f57f17" stroke-width="4" stroke-linecap="round"/>
+    <!-- Top arrowhead -->
+    <polygon points="15,-32 8,-22 22,-22" fill="#f57f17" transform="rotate(-15, 15, -32)"/>
+    <!-- Bottom arc arrow -->
+    <path d="M35,0 A35,35 0 0,1 -15,32" fill="none" stroke="#f57f17" stroke-width="4" stroke-linecap="round"/>
+    <!-- Bottom arrowhead -->
+    <polygon points="-15,32 -8,22 -22,22" fill="#f57f17" transform="rotate(165, -15, 32)"/>
+  </g>
+  <!-- Small dots to suggest motion -->
+  <circle cx="50" cy="75" r="2.5" fill="#f9a825" opacity="0.4"/>
+  <circle cx="150" cy="105" r="2.5" fill="#f9a825" opacity="0.4"/>
+</svg>

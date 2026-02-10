@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#fef7e0"/>
+  <!-- Calendar body -->
+  <rect x="40" y="24" width="120" height="110" rx="6" fill="#fff" stroke="#f9a825" stroke-width="2.5"/>
+  <!-- Calendar top bar (month header) -->
+  <rect x="40" y="24" width="120" height="24" rx="6" fill="#f9a825" opacity="0.4"/>
+  <rect x="40" y="36" width="120" height="12" fill="#f9a825" opacity="0.4"/>
+  <!-- Calendar rings -->
+  <rect x="64" y="18" width="6" height="16" rx="3" fill="#f9a825" opacity="0.6"/>
+  <rect x="90" y="18" width="6" height="16" rx="3" fill="#f9a825" opacity="0.6"/>
+  <rect x="116" y="18" width="6" height="16" rx="3" fill="#f9a825" opacity="0.6"/>
+  <rect x="140" y="18" width="6" height="16" rx="3" fill="#f9a825" opacity="0.6"/>
+  <!-- Day header row dots -->
+  <g fill="#f9a825" opacity="0.3">
+    <circle cx="56" cy="58" r="2"/>
+    <circle cx="72" cy="58" r="2"/>
+    <circle cx="88" cy="58" r="2"/>
+    <circle cx="104" cy="58" r="2"/>
+    <circle cx="120" cy="58" r="2"/>
+    <circle cx="136" cy="58" r="2"/>
+    <circle cx="148" cy="58" r="2"/>
+  </g>
+  <!-- Day grid lines -->
+  <line x1="46" y1="64" x2="154" y2="64" stroke="#f9a825" stroke-width="0.8" opacity="0.2"/>
+  <line x1="46" y1="80" x2="154" y2="80" stroke="#f9a825" stroke-width="0.8" opacity="0.2"/>
+  <line x1="46" y1="96" x2="154" y2="96" stroke="#f9a825" stroke-width="0.8" opacity="0.2"/>
+  <line x1="46" y1="112" x2="154" y2="112" stroke="#f9a825" stroke-width="0.8" opacity="0.2"/>
+  <!-- Day cells (simplified as small rects) -->
+  <g fill="#f9a825" opacity="0.1">
+    <rect x="48" y="66" width="14" height="12" rx="1"/>
+    <rect x="64" y="66" width="14" height="12" rx="1"/>
+    <rect x="80" y="66" width="14" height="12" rx="1"/>
+    <rect x="96" y="66" width="14" height="12" rx="1"/>
+    <rect x="112" y="66" width="14" height="12" rx="1"/>
+    <rect x="128" y="66" width="14" height="12" rx="1"/>
+    <rect x="48" y="82" width="14" height="12" rx="1"/>
+    <rect x="64" y="82" width="14" height="12" rx="1"/>
+    <rect x="80" y="82" width="14" height="12" rx="1"/>
+    <rect x="112" y="82" width="14" height="12" rx="1"/>
+    <rect x="128" y="82" width="14" height="12" rx="1"/>
+    <rect x="48" y="98" width="14" height="12" rx="1"/>
+    <rect x="64" y="98" width="14" height="12" rx="1"/>
+    <rect x="80" y="98" width="14" height="12" rx="1"/>
+    <rect x="96" y="98" width="14" height="12" rx="1"/>
+    <rect x="112" y="98" width="14" height="12" rx="1"/>
+    <rect x="128" y="98" width="14" height="12" rx="1"/>
+    <rect x="48" y="114" width="14" height="12" rx="1"/>
+    <rect x="64" y="114" width="14" height="12" rx="1"/>
+  </g>
+  <!-- Highlighted holiday cell -->
+  <rect x="96" y="82" width="14" height="12" rx="2" fill="#f9a825" opacity="0.35" stroke="#f9a825" stroke-width="1.5"/>
+  <!-- Star on the holiday -->
+  <polygon points="103,83 105,87 109,87.5 106,90 107,94 103,91.5 99,94 100,90 97,87.5 101,87"
+           fill="#f57f17" opacity="0.7"/>
+  <!-- Large decorative star (upper right) -->
+  <g transform="translate(170, 30)">
+    <polygon points="0,-16 4,-5 16,-5 7,2 10,14 0,7 -10,14 -7,2 -16,-5 -4,-5"
+             fill="#f9a825" opacity="0.35" stroke="#f9a825" stroke-width="1.5"/>
+    <polygon points="0,-10 2.5,-3 10,-3 4.5,1.5 6.5,9 0,4.5 -6.5,9 -4.5,1.5 -10,-3 -2.5,-3"
+             fill="#f9a825" opacity="0.2"/>
+  </g>
+  <!-- Small stars -->
+  <polygon points="24,50 25,53 28,54 25,55 24,58 23,55 20,54 23,53" fill="#f9a825" opacity="0.3"/>
+  <polygon points="176,90 177,93 180,94 177,95 176,98 175,95 172,94 175,93" fill="#f9a825" opacity="0.25"/>
+  <polygon points="30,100 31,102 33,103 31,104 30,106 29,104 27,103 29,102" fill="#f9a825" opacity="0.2"/>
+</svg>

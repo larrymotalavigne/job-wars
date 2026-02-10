@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Anesthesia mask -->
+  <path d="M60 50 Q60 30 100 25 Q140 30 140 50 L145 95 Q145 115 100 120 Q55 115 55 95 Z" fill="#00897b"/>
+  <path d="M68 55 Q68 38 100 34 Q132 38 132 55 L135 90 Q135 106 100 110 Q65 106 65 90 Z" fill="#e0f2f1" opacity="0.3"/>
+  <!-- Mask opening -->
+  <ellipse cx="100" cy="80" rx="25" ry="18" fill="#00695c"/>
+  <ellipse cx="100" cy="80" rx="20" ry="14" fill="#e0f2f1" opacity="0.2"/>
+  <!-- Nose bridge -->
+  <path d="M85 50 Q100 42 115 50" stroke="#00695c" stroke-width="3" fill="none"/>
+  <!-- Tube connector at top -->
+  <circle cx="100" cy="25" r="8" fill="#00695c"/>
+  <circle cx="100" cy="25" r="5" fill="#00897b"/>
+  <!-- Gas tube -->
+  <path d="M100 17 Q100 5 115 5 Q140 5 155 15 Q170 25 170 45 Q170 65 160 75" stroke="#00695c" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M100 17 Q100 5 115 5 Q140 5 155 15 Q170 25 170 45 Q170 65 160 75" stroke="#00897b" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Elastic straps -->
+  <path d="M60 55 Q40 55 35 65" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M140 55 Q160 55 165 65" stroke="#00695c" stroke-width="2" fill="none"/>
+</svg>

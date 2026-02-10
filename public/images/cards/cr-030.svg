@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Sewing machine body -->
+  <path d="M40,100 L40,45 Q40,35 50,35 L100,35 Q115,35 120,45 L130,70 L130,100 Z" fill="#795548" stroke="#4e342e" stroke-width="2"/>
+  <!-- Machine base -->
+  <rect x="30" y="100" width="120" height="12" rx="3" fill="#4e342e"/>
+  <!-- Needle area -->
+  <rect x="125" y="65" width="15" height="35" rx="2" fill="#4e342e"/>
+  <!-- Needle -->
+  <line x1="132" y1="70" x2="132" y2="100" stroke="#efebe9" stroke-width="1.5"/>
+  <!-- Presser foot -->
+  <rect x="128" y="92" width="10" height="4" rx="1" fill="#efebe9" opacity="0.6"/>
+  <!-- Thread spool on top -->
+  <rect x="60" y="22" width="4" height="15" fill="#4e342e"/>
+  <ellipse cx="62" cy="22" rx="8" ry="4" fill="#795548" stroke="#4e342e" stroke-width="1"/>
+  <!-- Thread from spool to needle -->
+  <path d="M62,26 Q80,28 100,35 Q120,42 125,55 Q128,62 132,70" stroke="#4e342e" stroke-width="1" fill="none"/>
+  <!-- Wheel -->
+  <circle cx="45" cy="65" r="12" fill="#4e342e" opacity="0.3" stroke="#4e342e" stroke-width="2"/>
+  <circle cx="45" cy="65" r="4" fill="#4e342e"/>
+  <!-- Fabric under needle -->
+  <path d="M110,96 L155,96 Q165,96 170,90 L175,80" stroke="#795548" stroke-width="3" fill="none"/>
+  <!-- Stitch line on fabric -->
+  <line x1="135" y1="96" x2="170" y2="87" stroke="#4e342e" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Machine details -->
+  <rect x="70" y="50" width="30" height="8" rx="2" fill="#4e342e" opacity="0.3"/>
+</svg>

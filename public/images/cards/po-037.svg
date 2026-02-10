@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fce4ec"/>
+  <!-- Cell bars -->
+  <rect x="30" y="15" width="8" height="120" rx="2" fill="#c62828"/>
+  <rect x="58" y="15" width="8" height="120" rx="2" fill="#c62828"/>
+  <rect x="86" y="15" width="8" height="120" rx="2" fill="#c62828"/>
+  <rect x="114" y="15" width="8" height="120" rx="2" fill="#c62828"/>
+  <rect x="142" y="15" width="8" height="120" rx="2" fill="#c62828"/>
+  <rect x="170" y="15" width="8" height="120" rx="2" fill="#c62828"/>
+  <!-- Top bar -->
+  <rect x="25" y="12" width="158" height="10" rx="3" fill="#b71c1c"/>
+  <!-- Bottom bar -->
+  <rect x="25" y="128" width="158" height="10" rx="3" fill="#b71c1c"/>
+  <!-- Cross bar -->
+  <rect x="25" y="70" width="158" height="8" rx="2" fill="#b71c1c"/>
+  <!-- Lock mechanism -->
+  <rect x="160" y="60" width="25" height="30" rx="4" fill="#c62828"/>
+  <rect x="163" y="63" width="19" height="24" rx="3" fill="#b71c1c"/>
+  <!-- Keyhole -->
+  <circle cx="172" cy="72" r="4" fill="#fce4ec" opacity="0.5"/>
+  <rect x="170" y="72" width="4" height="8" rx="1" fill="#fce4ec" opacity="0.5"/>
+  <!-- Lock shackle -->
+  <path d="M165 60 Q165 48 172 48 Q180 48 180 60" fill="none" stroke="#c62828" stroke-width="4"/>
+  <!-- Shadow lines on bars -->
+  <line x1="36" y1="25" x2="36" y2="125" stroke="#b71c1c" stroke-width="1" opacity="0.3"/>
+  <line x1="64" y1="25" x2="64" y2="125" stroke="#b71c1c" stroke-width="1" opacity="0.3"/>
+  <line x1="92" y1="25" x2="92" y2="125" stroke="#b71c1c" stroke-width="1" opacity="0.3"/>
+  <line x1="120" y1="25" x2="120" y2="125" stroke="#b71c1c" stroke-width="1" opacity="0.3"/>
+  <line x1="148" y1="25" x2="148" y2="125" stroke="#b71c1c" stroke-width="1" opacity="0.3"/>
+</svg>

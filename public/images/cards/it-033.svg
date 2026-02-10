@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Blockchain: chain of connected blocks -->
+  <!-- Block 1 -->
+  <rect x="8" y="45" width="38" height="50" rx="4" ry="4" fill="#1a73e8" stroke="#174ea6" stroke-width="1.5"/>
+  <rect x="13" y="52" width="28" height="6" rx="1" fill="#e8f0fe" opacity="0.5"/>
+  <rect x="13" y="62" width="28" height="6" rx="1" fill="#e8f0fe" opacity="0.3"/>
+  <!-- Hash symbol on block 1 -->
+  <line x1="20" y1="74" x2="20" y2="86" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="26" y1="74" x2="26" y2="86" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="16" y1="78" x2="30" y2="78" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="16" y1="82" x2="30" y2="82" stroke="#e8f0fe" stroke-width="1.5"/>
+  <!-- Chain link 1-2 -->
+  <line x1="46" y1="70" x2="52" y2="70" stroke="#174ea6" stroke-width="3"/>
+  <circle cx="49" cy="70" r="3" fill="#174ea6"/>
+  <!-- Block 2 -->
+  <rect x="52" y="45" width="38" height="50" rx="4" ry="4" fill="#174ea6" stroke="#1a73e8" stroke-width="1.5"/>
+  <rect x="57" y="52" width="28" height="6" rx="1" fill="#e8f0fe" opacity="0.5"/>
+  <rect x="57" y="62" width="28" height="6" rx="1" fill="#e8f0fe" opacity="0.3"/>
+  <!-- Hash symbol on block 2 -->
+  <line x1="64" y1="74" x2="64" y2="86" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="70" y1="74" x2="70" y2="86" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="60" y1="78" x2="74" y2="78" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="60" y1="82" x2="74" y2="82" stroke="#e8f0fe" stroke-width="1.5"/>
+  <!-- Chain link 2-3 -->
+  <line x1="90" y1="70" x2="96" y2="70" stroke="#174ea6" stroke-width="3"/>
+  <circle cx="93" cy="70" r="3" fill="#174ea6"/>
+  <!-- Block 3 -->
+  <rect x="96" y="45" width="38" height="50" rx="4" ry="4" fill="#1a73e8" stroke="#174ea6" stroke-width="1.5"/>
+  <rect x="101" y="52" width="28" height="6" rx="1" fill="#e8f0fe" opacity="0.5"/>
+  <rect x="101" y="62" width="28" height="6" rx="1" fill="#e8f0fe" opacity="0.3"/>
+  <!-- Hash symbol on block 3 -->
+  <line x1="108" y1="74" x2="108" y2="86" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="114" y1="74" x2="114" y2="86" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="104" y1="78" x2="118" y2="78" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="104" y1="82" x2="118" y2="82" stroke="#e8f0fe" stroke-width="1.5"/>
+  <!-- Chain link 3-4 -->
+  <line x1="134" y1="70" x2="140" y2="70" stroke="#174ea6" stroke-width="3"/>
+  <circle cx="137" cy="70" r="3" fill="#174ea6"/>
+  <!-- Block 4 -->
+  <rect x="140" y="45" width="38" height="50" rx="4" ry="4" fill="#174ea6" stroke="#1a73e8" stroke-width="1.5"/>
+  <rect x="145" y="52" width="28" height="6" rx="1" fill="#e8f0fe" opacity="0.5"/>
+  <rect x="145" y="62" width="28" height="6" rx="1" fill="#e8f0fe" opacity="0.3"/>
+  <!-- Hash symbol on block 4 -->
+  <line x1="152" y1="74" x2="152" y2="86" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="158" y1="74" x2="158" y2="86" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="148" y1="78" x2="162" y2="78" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="148" y1="82" x2="162" y2="82" stroke="#e8f0fe" stroke-width="1.5"/>
+  <!-- Trailing chain dots -->
+  <circle cx="183" cy="70" r="2" fill="#174ea6"/>
+  <circle cx="190" cy="70" r="2" fill="#174ea6" opacity="0.6"/>
+  <circle cx="197" cy="70" r="2" fill="#174ea6" opacity="0.3"/>
+  <!-- Top hash arrows connecting blocks -->
+  <path d="M27,45 L27,30 L71,30 L71,45" fill="none" stroke="#1a73e8" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M71,45 L71,22 L115,22 L115,45" fill="none" stroke="#1a73e8" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M115,45 L115,30 L159,30 L159,45" fill="none" stroke="#1a73e8" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

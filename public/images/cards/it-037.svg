@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Bug/beetle body -->
+  <ellipse cx="90" cy="80" rx="28" ry="35" fill="#174ea6"/>
+  <!-- Bug head -->
+  <circle cx="90" cy="40" r="16" fill="#1a73e8"/>
+  <!-- Bug eyes -->
+  <circle cx="82" cy="36" r="5" fill="white"/>
+  <circle cx="82" cy="36" r="2.5" fill="#174ea6"/>
+  <circle cx="98" cy="36" r="5" fill="white"/>
+  <circle cx="98" cy="36" r="2.5" fill="#174ea6"/>
+  <!-- Antennae -->
+  <path d="M82,26 C78,16 70,14 65,12" fill="none" stroke="#174ea6" stroke-width="2" stroke-linecap="round"/>
+  <path d="M98,26 C102,16 110,14 115,12" fill="none" stroke="#174ea6" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="65" cy="12" r="3" fill="#1a73e8"/>
+  <circle cx="115" cy="12" r="3" fill="#1a73e8"/>
+  <!-- Bug legs (left) -->
+  <path d="M62,65 C50,60 42,55 35,50" fill="none" stroke="#174ea6" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M62,80 C48,78 38,78 30,78" fill="none" stroke="#174ea6" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M62,95 C50,100 42,105 35,110" fill="none" stroke="#174ea6" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Bug legs (right) - shorter to make room for warning triangle -->
+  <path d="M118,65 C122,62 126,58 130,55" fill="none" stroke="#174ea6" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M118,80 C124,79 128,79 132,79" fill="none" stroke="#174ea6" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M118,95 C122,98 126,102 130,105" fill="none" stroke="#174ea6" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Wing line on body -->
+  <line x1="90" y1="50" x2="90" y2="115" stroke="#1a73e8" stroke-width="1.5"/>
+  <!-- Shell pattern -->
+  <path d="M66,70 Q90,65 114,70" fill="none" stroke="#1a73e8" stroke-width="1"/>
+  <path d="M64,85 Q90,80 116,85" fill="none" stroke="#1a73e8" stroke-width="1"/>
+  <!-- Warning triangle -->
+  <polygon points="160,45 140,80 180,80" fill="#e8453c" stroke="#174ea6" stroke-width="2"/>
+  <rect x="158" y="56" width="4" height="12" rx="1" fill="white"/>
+  <circle cx="160" cy="73" r="2.5" fill="white"/>
+  <!-- Small sparks around warning -->
+  <line x1="145" y1="40" x2="140" y2="35" stroke="#e8453c" stroke-width="1.5"/>
+  <line x1="175" y1="40" x2="180" y2="35" stroke="#e8453c" stroke-width="1.5"/>
+  <line x1="182" y1="60" x2="188" y2="58" stroke="#e8453c" stroke-width="1.5"/>
+</svg>

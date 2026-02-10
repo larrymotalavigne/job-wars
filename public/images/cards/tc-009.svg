@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#fef7e0"/>
+  <!-- Whiteboard frame -->
+  <rect x="28" y="16" width="144" height="96" rx="4" fill="#fff" stroke="#f9a825" stroke-width="3"/>
+  <!-- Screen inner border -->
+  <rect x="34" y="22" width="132" height="84" rx="2" fill="#f9a825" opacity="0.06"/>
+  <!-- Interactive elements on screen -->
+  <!-- Graph/chart -->
+  <rect x="42" y="70" width="12" height="28" rx="1" fill="#f9a825" opacity="0.35"/>
+  <rect x="58" y="56" width="12" height="42" rx="1" fill="#f9a825" opacity="0.45"/>
+  <rect x="74" y="42" width="12" height="56" rx="1" fill="#f9a825" opacity="0.55"/>
+  <rect x="90" y="50" width="12" height="48" rx="1" fill="#f9a825" opacity="0.4"/>
+  <!-- Text lines -->
+  <rect x="112" y="30" width="46" height="4" rx="2" fill="#f9a825" opacity="0.3"/>
+  <rect x="112" y="40" width="38" height="4" rx="2" fill="#f9a825" opacity="0.25"/>
+  <rect x="112" y="50" width="42" height="4" rx="2" fill="#f9a825" opacity="0.2"/>
+  <!-- Interactive circle/button -->
+  <circle cx="130" cy="72" r="12" fill="none" stroke="#f9a825" stroke-width="2" opacity="0.5"/>
+  <polygon points="126,67 126,77 135,72" fill="#f9a825" opacity="0.5"/>
+  <!-- Drawing line (freehand feel) -->
+  <polyline points="44,34 52,30 62,36 72,28 82,32"
+            fill="none" stroke="#f9a825" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+  <!-- Touch indicator circles -->
+  <circle cx="74" cy="42" r="4" fill="none" stroke="#f57f17" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="74" cy="42" r="8" fill="none" stroke="#f57f17" stroke-width="1" opacity="0.2"/>
+  <!-- Board stand/legs -->
+  <line x1="60" y1="112" x2="50" y2="140" stroke="#f9a825" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <line x1="140" y1="112" x2="150" y2="140" stroke="#f9a825" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <!-- Tray at bottom of board -->
+  <rect x="40" y="110" width="120" height="6" rx="2" fill="#f9a825" opacity="0.4"/>
+  <!-- Markers on tray -->
+  <rect x="62" y="108" width="4" height="8" rx="1" fill="#f57f17" opacity="0.6"/>
+  <rect x="70" y="108" width="4" height="8" rx="1" fill="#f9a825" opacity="0.7"/>
+  <rect x="78" y="108" width="4" height="8" rx="1" fill="#f57f17" opacity="0.5"/>
+</svg>

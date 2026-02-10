@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Single chevron -->
+  <polyline points="60,105 100,65 140,105" fill="none" stroke="#ef6c00" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Flame above chevron -->
+  <path d="M100,55 Q110,40 108,25 Q115,35 116,48 Q112,38 108,50 Q106,45 100,55Z" fill="#e65100"/>
+  <path d="M100,55 Q90,40 92,25 Q85,35 84,48 Q88,38 92,50 Q94,45 100,55Z" fill="#ef6c00"/>
+  <path d="M100,55 Q105,45 104,35 Q100,42 96,35 Q95,45 100,55Z" fill="#fff3e0" opacity="0.6"/>
+</svg>

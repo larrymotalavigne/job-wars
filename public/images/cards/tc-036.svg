@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Background hills/nature -->
+  <path d="M120 55 Q145 20 170 55 Q195 20 210 55" fill="#f9a825" opacity="0.2"/>
+  <path d="M100 65 Q125 35 150 65" fill="#f9a825" opacity="0.15"/>
+  <!-- Museum/destination building -->
+  <rect x="135" y="55" width="50" height="40" rx="3" fill="#f9a825"/>
+  <polygon points="133,55 160,30 187,55" fill="#f57f17" opacity="0.5"/>
+  <!-- Building columns -->
+  <rect x="142" y="60" width="5" height="32" fill="#fef7e0"/>
+  <rect x="155" y="60" width="5" height="32" fill="#fef7e0"/>
+  <rect x="168" y="60" width="5" height="32" fill="#fef7e0"/>
+  <!-- Building door -->
+  <rect x="152" y="78" width="16" height="17" rx="8" fill="#f57f17"/>
+  <!-- Ground -->
+  <rect x="0" y="95" width="200" height="55" rx="0" fill="#f9a825" opacity="0.12"/>
+  <!-- Road -->
+  <path d="M0 110 Q50 105 100 108 Q150 112 200 108" fill="none" stroke="#f57f17" stroke-width="2" opacity="0.3"/>
+  <!-- Bus body -->
+  <rect x="15" y="72" width="90" height="35" rx="6" fill="#f9a825"/>
+  <!-- Bus roof -->
+  <rect x="18" y="68" width="84" height="8" rx="4" fill="#f57f17" opacity="0.3"/>
+  <!-- Bus windows -->
+  <rect x="22" y="78" width="14" height="12" rx="2" fill="#fef7e0"/>
+  <rect x="40" y="78" width="14" height="12" rx="2" fill="#fef7e0"/>
+  <rect x="58" y="78" width="14" height="12" rx="2" fill="#fef7e0"/>
+  <rect x="76" y="78" width="14" height="12" rx="2" fill="#fef7e0"/>
+  <!-- Windshield -->
+  <rect x="92" y="76" width="10" height="20" rx="3" fill="#fef7e0"/>
+  <!-- Wheels -->
+  <circle cx="35" cy="110" r="8" fill="#f57f17"/>
+  <circle cx="35" cy="110" r="4" fill="#f9a825"/>
+  <circle cx="85" cy="110" r="8" fill="#f57f17"/>
+  <circle cx="85" cy="110" r="4" fill="#f9a825"/>
+  <!-- Trees near destination -->
+  <circle cx="125" cy="68" r="10" fill="#f9a825" opacity="0.4"/>
+  <rect x="123" y="75" width="4" height="20" fill="#f57f17" opacity="0.3"/>
+  <!-- Arrow showing direction -->
+  <line x1="108" y1="90" x2="128" y2="82" stroke="#f57f17" stroke-width="2" stroke-dasharray="3,2"/>
+  <polygon points="128,82 125,88 131,86" fill="#f57f17"/>
+</svg>

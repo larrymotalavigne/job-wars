@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e8f0fe"/>
+
+  <!-- Chart axes -->
+  <line x1="42" y1="28" x2="42" y2="118" stroke="#1a73e8" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="42" y1="118" x2="142" y2="118" stroke="#1a73e8" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Grid lines (subtle) -->
+  <line x1="42" y1="88" x2="142" y2="88" stroke="#1a73e8" stroke-width="0.5" opacity="0.2"/>
+  <line x1="42" y1="58" x2="142" y2="58" stroke="#1a73e8" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Bar 1 -->
+  <rect x="50" y="88" width="16" height="30" rx="3" fill="#1a73e8" opacity="0.4"/>
+  <!-- Bar 2 -->
+  <rect x="72" y="62" width="16" height="56" rx="3" fill="#1a73e8" opacity="0.6"/>
+  <!-- Bar 3 -->
+  <rect x="94" y="48" width="16" height="70" rx="3" fill="#1a73e8" opacity="0.75"/>
+  <!-- Bar 4 -->
+  <rect x="116" y="72" width="16" height="46" rx="3" fill="#1a73e8" opacity="0.55"/>
+
+  <!-- Trend line -->
+  <polyline points="58,84 80,58 102,42 124,66" fill="none" stroke="#1a73e8" stroke-width="2" stroke-dasharray="4,3" opacity="0.5"/>
+
+  <!-- Magnifying glass -->
+  <circle cx="148" cy="48" r="20" fill="#ffffff" fill-opacity="0.6" stroke="#1a73e8" stroke-width="3"/>
+  <circle cx="148" cy="48" r="14" fill="none" stroke="#1a73e8" stroke-width="1" opacity="0.3"/>
+  <line x1="162" y1="62" x2="176" y2="76" stroke="#1a73e8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Data point inside magnifier -->
+  <circle cx="143" cy="46" r="2.5" fill="#1a73e8" opacity="0.6"/>
+  <circle cx="150" cy="42" r="2.5" fill="#1a73e8" opacity="0.8"/>
+  <circle cx="155" cy="50" r="2.5" fill="#1a73e8" opacity="0.5"/>
+
+  <!-- Small scatter dots on chart -->
+  <circle cx="58" cy="80" r="2" fill="#1a73e8"/>
+  <circle cx="80" cy="54" r="2" fill="#1a73e8"/>
+  <circle cx="102" cy="40" r="2" fill="#1a73e8"/>
+  <circle cx="124" cy="62" r="2" fill="#1a73e8"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Welding mask -->
+  <rect x="60" y="25" width="80" height="75" rx="10" fill="#4e342e"/>
+  <!-- Mask visor -->
+  <rect x="72" y="45" width="56" height="25" rx="4" fill="#795548"/>
+  <rect x="76" y="49" width="48" height="17" rx="2" fill="#efebe9" opacity="0.3"/>
+  <!-- Mask top -->
+  <path d="M60,40 Q100,20 140,40" fill="#4e342e" stroke="#4e342e" stroke-width="1"/>
+  <!-- Sparks flying from bottom right -->
+  <line x1="130" y1="110" x2="145" y2="95" stroke="#795548" stroke-width="2"/>
+  <line x1="130" y1="110" x2="155" y2="105" stroke="#795548" stroke-width="2"/>
+  <line x1="130" y1="110" x2="150" y2="115" stroke="#795548" stroke-width="2"/>
+  <line x1="130" y1="110" x2="140" y2="130" stroke="#795548" stroke-width="2"/>
+  <line x1="130" y1="110" x2="160" y2="110" stroke="#795548" stroke-width="1.5"/>
+  <line x1="130" y1="110" x2="148" y2="125" stroke="#795548" stroke-width="1.5"/>
+  <!-- Spark dots -->
+  <circle cx="148" cy="93" r="2" fill="#795548"/>
+  <circle cx="158" cy="103" r="1.5" fill="#795548"/>
+  <circle cx="152" cy="117" r="2" fill="#795548"/>
+  <circle cx="163" cy="112" r="1.5" fill="#795548"/>
+  <circle cx="143" cy="132" r="1.5" fill="#795548"/>
+  <!-- Welding point glow -->
+  <circle cx="130" cy="110" r="6" fill="#795548" opacity="0.5"/>
+  <circle cx="130" cy="110" r="3" fill="#efebe9" opacity="0.6"/>
+</svg>

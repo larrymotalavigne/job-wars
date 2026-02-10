@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fce4ec"/>
+  <!-- Speed lines -->
+  <line x1="5" y1="50" x2="45" y2="50" stroke="#c62828" stroke-width="2" opacity="0.3"/>
+  <line x1="10" y1="60" x2="50" y2="60" stroke="#c62828" stroke-width="2" opacity="0.25"/>
+  <line x1="5" y1="70" x2="40" y2="70" stroke="#c62828" stroke-width="2" opacity="0.2"/>
+  <line x1="15" y1="80" x2="55" y2="80" stroke="#c62828" stroke-width="2" opacity="0.3"/>
+  <line x1="10" y1="90" x2="48" y2="90" stroke="#c62828" stroke-width="2" opacity="0.25"/>
+  <line x1="5" y1="100" x2="42" y2="100" stroke="#c62828" stroke-width="2" opacity="0.2"/>
+  <!-- Rear car (police) -->
+  <rect x="30" y="60" width="70" height="28" rx="5" fill="#c62828"/>
+  <path d="M48 60 L55 44 L82 44 L90 60" fill="#c62828"/>
+  <!-- Police car windshield -->
+  <path d="M52 60 L57 48 L80 48 L85 60" fill="#fce4ec" opacity="0.3"/>
+  <!-- Police car wheels -->
+  <circle cx="48" cy="90" r="10" fill="#b71c1c"/>
+  <circle cx="48" cy="90" r="6" fill="#fce4ec"/>
+  <circle cx="48" cy="90" r="2" fill="#b71c1c"/>
+  <circle cx="85" cy="90" r="10" fill="#b71c1c"/>
+  <circle cx="85" cy="90" r="6" fill="#fce4ec"/>
+  <circle cx="85" cy="90" r="2" fill="#b71c1c"/>
+  <!-- Police light bar -->
+  <rect x="60" y="40" width="15" height="5" rx="2" fill="#fce4ec" opacity="0.7"/>
+  <!-- Light flash -->
+  <line x1="67" y1="35" x2="67" y2="30" stroke="#c62828" stroke-width="2" opacity="0.6"/>
+  <line x1="62" y1="37" x2="59" y2="32" stroke="#c62828" stroke-width="1.5" opacity="0.4"/>
+  <line x1="73" y1="37" x2="76" y2="32" stroke="#c62828" stroke-width="1.5" opacity="0.4"/>
+  <!-- Front car (fleeing) -->
+  <rect x="110" y="55" width="65" height="25" rx="5" fill="#b71c1c"/>
+  <path d="M125 55 L132 42 L155 42 L162 55" fill="#b71c1c"/>
+  <!-- Fleeing car windshield -->
+  <path d="M128 55 L134 46 L153 46 L158 55" fill="#fce4ec" opacity="0.3"/>
+  <!-- Fleeing car wheels -->
+  <circle cx="125" cy="82" r="10" fill="#c62828"/>
+  <circle cx="125" cy="82" r="6" fill="#fce4ec"/>
+  <circle cx="125" cy="82" r="2" fill="#c62828"/>
+  <circle cx="162" cy="82" r="10" fill="#c62828"/>
+  <circle cx="162" cy="82" r="6" fill="#fce4ec"/>
+  <circle cx="162" cy="82" r="2" fill="#c62828"/>
+  <!-- More speed lines behind fleeing car -->
+  <line x1="95" y1="62" x2="108" y2="62" stroke="#c62828" stroke-width="1.5" opacity="0.3"/>
+  <line x1="98" y1="68" x2="108" y2="68" stroke="#c62828" stroke-width="1.5" opacity="0.25"/>
+  <line x1="96" y1="74" x2="108" y2="74" stroke="#c62828" stroke-width="1.5" opacity="0.2"/>
+  <!-- Road -->
+  <rect x="10" y="100" width="180" height="3" rx="1" fill="#c62828" opacity="0.2"/>
+  <!-- Dust clouds -->
+  <circle cx="105" cy="85" r="5" fill="#c62828" opacity="0.15"/>
+  <circle cx="112" cy="80" r="4" fill="#c62828" opacity="0.1"/>
+  <circle cx="22" cy="88" r="6" fill="#c62828" opacity="0.1"/>
+</svg>

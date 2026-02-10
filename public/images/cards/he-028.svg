@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Syringe barrel -->
+  <rect x="30" y="60" width="80" height="20" rx="3" ry="3" fill="#00897b"/>
+  <!-- Syringe measurement lines -->
+  <line x1="45" y1="60" x2="45" y2="68" stroke="#e0f2f1" stroke-width="1" opacity="0.5"/>
+  <line x1="55" y1="60" x2="55" y2="68" stroke="#e0f2f1" stroke-width="1" opacity="0.5"/>
+  <line x1="65" y1="60" x2="65" y2="68" stroke="#e0f2f1" stroke-width="1" opacity="0.5"/>
+  <line x1="75" y1="60" x2="75" y2="68" stroke="#e0f2f1" stroke-width="1" opacity="0.5"/>
+  <line x1="85" y1="60" x2="85" y2="68" stroke="#e0f2f1" stroke-width="1" opacity="0.5"/>
+  <line x1="95" y1="60" x2="95" y2="68" stroke="#e0f2f1" stroke-width="1" opacity="0.5"/>
+  <!-- Syringe liquid -->
+  <rect x="33" y="63" width="50" height="14" rx="1" fill="#00695c" opacity="0.4"/>
+  <!-- Plunger -->
+  <rect x="110" y="63" width="25" height="14" rx="2" ry="2" fill="#00695c"/>
+  <rect x="132" y="58" width="5" height="24" rx="2" ry="2" fill="#00695c"/>
+  <!-- Needle tip -->
+  <rect x="15" y="66" width="18" height="8" rx="1" fill="#00695c"/>
+  <polygon points="15,67 8,70 15,73" fill="#00695c"/>
+  <!-- Shield -->
+  <path d="M155 25 Q155 15 170 10 Q185 15 185 25 L185 65 Q185 90 170 100 Q155 90 155 65 Z" fill="#00897b"/>
+  <path d="M160 28 Q160 20 170 16 Q180 20 180 28 L180 62 Q180 82 170 90 Q160 82 160 62 Z" fill="#00695c"/>
+  <!-- Shield cross -->
+  <rect x="165" y="35" width="10" height="4" rx="1" fill="#e0f2f1"/>
+  <rect x="168" y="30" width="4" height="14" rx="1" fill="#e0f2f1"/>
+  <!-- Shield checkmark -->
+  <polyline points="163,60 168,68 178,52" stroke="#e0f2f1" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

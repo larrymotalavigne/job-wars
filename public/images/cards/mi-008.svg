@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- General - Stars and epaulettes -->
+  <!-- Left epaulette -->
+  <path d="M28,65 Q28,45 55,40 L70,40 L70,65 Q70,85 55,90 L28,90 Z" fill="#558b2f"/>
+  <path d="M28,65 Q28,45 55,40 L70,40 L70,65 Q70,85 55,90 L28,90 Z" fill="none" stroke="#33691e" stroke-width="2"/>
+  <!-- Left fringe -->
+  <line x1="30" y1="90" x2="30" y2="102" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="36" y1="90" x2="36" y2="105" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="42" y1="90" x2="42" y2="108" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="48" y1="90" x2="48" y2="105" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="54" y1="90" x2="54" y2="102" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right epaulette -->
+  <path d="M172,65 Q172,45 145,40 L130,40 L130,65 Q130,85 145,90 L172,90 Z" fill="#558b2f"/>
+  <path d="M172,65 Q172,45 145,40 L130,40 L130,65 Q130,85 145,90 L172,90 Z" fill="none" stroke="#33691e" stroke-width="2"/>
+  <!-- Right fringe -->
+  <line x1="146" y1="90" x2="146" y2="102" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="152" y1="90" x2="152" y2="105" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="158" y1="90" x2="158" y2="108" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="164" y1="90" x2="164" y2="105" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <line x1="170" y1="90" x2="170" y2="102" stroke="#33691e" stroke-width="2" stroke-linecap="round"/>
+  <!-- Three general stars - top row -->
+  <polygon points="100,18 103,27 112,27 105,32 107,41 100,36 93,41 95,32 88,27 97,27" fill="#33691e"/>
+  <!-- Left star -->
+  <polygon points="49,58 51,64 58,64 53,68 54,74 49,70 44,74 45,68 40,64 47,64" fill="#f1f8e9"/>
+  <!-- Right star -->
+  <polygon points="151,58 153,64 160,64 155,68 156,74 151,70 146,74 147,68 142,64 149,64" fill="#f1f8e9"/>
+  <!-- Shoulder connection bar -->
+  <rect x="70" y="58" width="60" height="8" rx="2" fill="#33691e"/>
+  <!-- Lower decoration line -->
+  <line x1="75" y1="125" x2="125" y2="125" stroke="#558b2f" stroke-width="2" stroke-linecap="round"/>
+  <line x1="80" y1="130" x2="120" y2="130" stroke="#558b2f" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

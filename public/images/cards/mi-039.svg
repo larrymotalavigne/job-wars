@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Trahison: broken sword with mask -->
+  <!-- Broken sword - top half -->
+  <polygon points="65,15 72,18 90,75 83,78" fill="#558b2f"/>
+  <polygon points="67,16 70,17 88,72 85,75" fill="#33691e" opacity="0.3"/>
+  <!-- Break jagged edge top piece -->
+  <polygon points="83,78 88,72 92,78 86,82 90,86 83,83" fill="#558b2f"/>
+  <!-- Broken sword - bottom half (offset/fallen) -->
+  <polygon points="100,82 107,79 130,135 123,138" fill="#558b2f"/>
+  <polygon points="102,83 105,80 128,133 125,136" fill="#33691e" opacity="0.3"/>
+  <!-- Break jagged edge bottom piece -->
+  <polygon points="100,82 95,78 98,74 104,79 101,75 107,79" fill="#558b2f"/>
+  <!-- Sword guard (on top piece) -->
+  <rect x="73" y="72" width="25" height="5" rx="2" fill="#33691e"/>
+  <!-- Sword handle -->
+  <rect x="82" y="77" width="6" height="18" rx="2" fill="#33691e"/>
+  <circle cx="85" cy="98" r="4" fill="#558b2f"/>
+  <!-- Mask (theatrical/drama style) -->
+  <ellipse cx="150" cy="65" rx="28" ry="32" fill="#558b2f"/>
+  <ellipse cx="150" cy="62" rx="25" ry="28" fill="#33691e"/>
+  <!-- Eye holes -->
+  <ellipse cx="140" cy="55" rx="8" ry="5" fill="#f1f8e9" opacity="0.7"/>
+  <ellipse cx="160" cy="55" rx="8" ry="5" fill="#f1f8e9" opacity="0.7"/>
+  <!-- Dark eyes behind mask -->
+  <ellipse cx="140" cy="55" rx="4" ry="3" fill="#33691e"/>
+  <ellipse cx="160" cy="55" rx="4" ry="3" fill="#33691e"/>
+  <!-- Sinister mouth -->
+  <path d="M138,75 Q145,68 150,75 Q155,68 162,75" fill="none" stroke="#f1f8e9" stroke-width="2" opacity="0.7"/>
+  <!-- Nose -->
+  <line x1="150" y1="60" x2="150" y2="70" stroke="#558b2f" stroke-width="1.5"/>
+  <line x1="150" y1="70" x2="146" y2="70" stroke="#558b2f" stroke-width="1.5"/>
+  <!-- Crack/scar on mask -->
+  <path d="M155,42 L158,50 L154,58 L157,65" fill="none" stroke="#558b2f" stroke-width="1.5"/>
+</svg>

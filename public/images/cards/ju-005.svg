@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+
+  <!-- Document underneath -->
+  <rect x="45" y="70" width="80" height="60" rx="3" fill="#e1bee7"/>
+  <!-- Document lines -->
+  <line x1="55" y1="82" x2="115" y2="82" stroke="#6a1b9a" stroke-width="1.5" opacity="0.3"/>
+  <line x1="55" y1="90" x2="115" y2="90" stroke="#6a1b9a" stroke-width="1.5" opacity="0.3"/>
+  <line x1="55" y1="98" x2="100" y2="98" stroke="#6a1b9a" stroke-width="1.5" opacity="0.3"/>
+  <line x1="55" y1="106" x2="115" y2="106" stroke="#6a1b9a" stroke-width="1.5" opacity="0.3"/>
+  <line x1="55" y1="114" x2="90" y2="114" stroke="#6a1b9a" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Stamp body -->
+  <g transform="translate(130, 40)">
+    <!-- Stamp handle top -->
+    <rect x="-14" y="0" width="28" height="20" rx="6" fill="#4a148c"/>
+    <!-- Stamp handle grip -->
+    <rect x="-10" y="18" width="20" height="8" rx="2" fill="#6a1b9a"/>
+    <!-- Stamp neck -->
+    <rect x="-6" y="24" width="12" height="15" rx="1" fill="#4a148c"/>
+    <!-- Stamp base -->
+    <rect x="-18" y="37" width="36" height="12" rx="3" fill="#6a1b9a"/>
+    <!-- Stamp bottom (ink pad surface) -->
+    <rect x="-16" y="46" width="32" height="4" rx="1" fill="#4a148c"/>
+  </g>
+
+  <!-- Seal impression (stamped on document) -->
+  <circle cx="105" cy="115" r="14" fill="none" stroke="#4a148c" stroke-width="2.5" opacity="0.7"/>
+  <circle cx="105" cy="115" r="9" fill="none" stroke="#4a148c" stroke-width="1.5" opacity="0.5"/>
+  <!-- Star in seal center -->
+  <polygon points="105,108 107,112 111,112 108,115 109,119 105,117 101,119 102,115 99,112 103,112" fill="#4a148c" opacity="0.6"/>
+
+  <!-- Ink pad -->
+  <rect x="30" y="25" width="50" height="30" rx="4" fill="#6a1b9a" opacity="0.7"/>
+  <rect x="34" y="29" width="42" height="22" rx="2" fill="#4a148c" opacity="0.8"/>
+</svg>

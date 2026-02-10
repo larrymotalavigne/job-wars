@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+
+  <!-- French Republic Seal - large circular seal -->
+  <g transform="translate(100, 75)">
+    <!-- Outer decorative ring -->
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#4a148c" stroke-width="4"/>
+    <!-- Second ring -->
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#6a1b9a" stroke-width="2"/>
+    <!-- Inner fill -->
+    <circle cx="0" cy="0" r="46" fill="#6a1b9a" opacity="0.3"/>
+    <!-- Inner ring -->
+    <circle cx="0" cy="0" r="36" fill="none" stroke="#4a148c" stroke-width="1.5"/>
+
+    <!-- Seated Liberty figure (simplified geometric) -->
+    <!-- Body/torso -->
+    <polygon points="-4,-28 4,-28 6,-10 -6,-10" fill="#4a148c"/>
+    <!-- Head -->
+    <circle cx="0" cy="-32" r="6" fill="#4a148c"/>
+    <!-- Crown rays (liberty crown) -->
+    <line x1="-4" y1="-38" x2="-6" y2="-44" stroke="#4a148c" stroke-width="1.5"/>
+    <line x1="0" y1="-38" x2="0" y2="-45" stroke="#4a148c" stroke-width="1.5"/>
+    <line x1="4" y1="-38" x2="6" y2="-44" stroke="#4a148c" stroke-width="1.5"/>
+
+    <!-- Right arm holding fasces -->
+    <line x1="6" y1="-22" x2="16" y2="-8" stroke="#4a148c" stroke-width="2.5"/>
+    <!-- Fasces (bundle of rods) -->
+    <rect x="14" y="-14" width="4" height="28" rx="1" fill="#4a148c"/>
+    <line x1="12" y1="-14" x2="12" y2="14" stroke="#4a148c" stroke-width="1"/>
+    <line x1="20" y1="-14" x2="20" y2="14" stroke="#4a148c" stroke-width="1"/>
+
+    <!-- Left arm holding tablet -->
+    <line x1="-6" y1="-22" x2="-16" y2="-10" stroke="#4a148c" stroke-width="2.5"/>
+    <!-- Tablet -->
+    <rect x="-26" y="-16" width="12" height="18" rx="2" fill="#4a148c"/>
+
+    <!-- Seated lower body / draping -->
+    <polygon points="-10,-10 10,-10 16,12 -16,12" fill="#4a148c" opacity="0.7"/>
+    <!-- Seat -->
+    <rect x="-18" y="10" width="36" height="6" rx="2" fill="#4a148c"/>
+
+    <!-- Decorative stars around the rim -->
+    <g fill="#4a148c">
+      <circle cx="0" cy="-52" r="2"/>
+      <circle cx="26" cy="-45" r="2"/>
+      <circle cx="45" cy="-26" r="2"/>
+      <circle cx="52" cy="0" r="2"/>
+      <circle cx="45" cy="26" r="2"/>
+      <circle cx="26" cy="45" r="2"/>
+      <circle cx="0" cy="52" r="2"/>
+      <circle cx="-26" cy="45" r="2"/>
+      <circle cx="-45" cy="26" r="2"/>
+      <circle cx="-52" cy="0" r="2"/>
+      <circle cx="-45" cy="-26" r="2"/>
+      <circle cx="-26" cy="-45" r="2"/>
+    </g>
+
+    <!-- Olive/laurel branches at bottom -->
+    <path d="M-20,20 Q-25,30 -15,32 Q-20,25 -15,22" fill="#6a1b9a" opacity="0.6"/>
+    <path d="M20,20 Q25,30 15,32 Q20,25 15,22" fill="#6a1b9a" opacity="0.6"/>
+  </g>
+</svg>

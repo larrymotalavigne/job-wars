@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Database cylinder 1 -->
+  <ellipse cx="55" cy="35" rx="30" ry="10" fill="#1a73e8"/>
+  <rect x="25" y="35" width="60" height="40" fill="#1a73e8"/>
+  <ellipse cx="55" cy="75" rx="30" ry="10" fill="#174ea6"/>
+  <ellipse cx="55" cy="35" rx="30" ry="10" fill="#1a73e8" stroke="#174ea6" stroke-width="1"/>
+  <ellipse cx="55" cy="50" rx="30" ry="10" fill="none" stroke="#174ea6" stroke-width="1" opacity="0.4"/>
+  <!-- Database cylinder 2 -->
+  <ellipse cx="145" cy="35" rx="30" ry="10" fill="#1a73e8"/>
+  <rect x="115" y="35" width="60" height="40" fill="#1a73e8"/>
+  <ellipse cx="145" cy="75" rx="30" ry="10" fill="#174ea6"/>
+  <ellipse cx="145" cy="35" rx="30" ry="10" fill="#1a73e8" stroke="#174ea6" stroke-width="1"/>
+  <ellipse cx="145" cy="50" rx="30" ry="10" fill="none" stroke="#174ea6" stroke-width="1" opacity="0.4"/>
+  <!-- Query arrows -->
+  <line x1="85" y1="48" x2="110" y2="48" stroke="#174ea6" stroke-width="2"/>
+  <polygon points="112,48 106,44 106,52" fill="#174ea6"/>
+  <line x1="115" y1="60" x2="90" y2="60" stroke="#174ea6" stroke-width="2"/>
+  <polygon points="88,60 94,56 94,64" fill="#174ea6"/>
+  <!-- Result arrows going down -->
+  <line x1="55" y1="85" x2="55" y2="115" stroke="#1a73e8" stroke-width="2"/>
+  <polygon points="55,118 50,112 60,112" fill="#1a73e8"/>
+  <line x1="145" y1="85" x2="145" y2="115" stroke="#1a73e8" stroke-width="2"/>
+  <polygon points="145,118 140,112 150,112" fill="#1a73e8"/>
+  <!-- Data table indicators -->
+  <rect x="35" y="120" width="40" height="18" rx="3" fill="white" stroke="#1a73e8" stroke-width="1.5"/>
+  <line x1="35" y1="127" x2="75" y2="127" stroke="#1a73e8" stroke-width="1"/>
+  <rect x="125" y="120" width="40" height="18" rx="3" fill="white" stroke="#1a73e8" stroke-width="1.5"/>
+  <line x1="125" y1="127" x2="165" y2="127" stroke="#1a73e8" stroke-width="1"/>
+</svg>

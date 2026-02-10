@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Book -->
+  <rect x="45" y="65" width="80" height="60" rx="3" fill="#795548" stroke="#4e342e" stroke-width="2"/>
+  <!-- Book spine -->
+  <rect x="45" y="65" width="8" height="60" fill="#4e342e"/>
+  <!-- Book pages (visible edge) -->
+  <rect x="53" y="68" width="68" height="54" rx="1" fill="#efebe9" opacity="0.5"/>
+  <!-- Page lines -->
+  <line x1="60" y1="78" x2="115" y2="78" stroke="#795548" stroke-width="1" opacity="0.4"/>
+  <line x1="60" y1="85" x2="115" y2="85" stroke="#795548" stroke-width="1" opacity="0.4"/>
+  <line x1="60" y1="92" x2="100" y2="92" stroke="#795548" stroke-width="1" opacity="0.4"/>
+  <line x1="60" y1="99" x2="115" y2="99" stroke="#795548" stroke-width="1" opacity="0.4"/>
+  <line x1="60" y1="106" x2="90" y2="106" stroke="#795548" stroke-width="1" opacity="0.4"/>
+  <!-- Fast-forward arrow (double arrow) -->
+  <polygon points="110,20 140,40 110,60" fill="#4e342e"/>
+  <polygon points="135,20 165,40 135,60" fill="#4e342e"/>
+  <!-- Speed lines behind arrows -->
+  <line x1="85" y1="30" x2="108" y2="30" stroke="#795548" stroke-width="2"/>
+  <line x1="90" y1="40" x2="108" y2="40" stroke="#795548" stroke-width="2"/>
+  <line x1="85" y1="50" x2="108" y2="50" stroke="#795548" stroke-width="2"/>
+  <!-- Motion lines -->
+  <line x1="75" y1="35" x2="95" y2="35" stroke="#795548" stroke-width="1.5" opacity="0.5"/>
+  <line x1="80" y1="45" x2="95" y2="45" stroke="#795548" stroke-width="1.5" opacity="0.5"/>
+</svg>

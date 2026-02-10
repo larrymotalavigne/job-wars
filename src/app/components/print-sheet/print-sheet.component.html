@@ -1,0 +1,16 @@
+<div class="print-controls no-print">
+  <h2>Feuille d'impression — {{ cards.length }} cartes ({{ pages.length }} pages)</h2>
+  <p class="hint">Les cartes s'imprimeront au format standard MTG (63 × 88 mm), 9 par page. Utilisez Ctrl+P ou le bouton ci-dessous.</p>
+  <p-button label="Imprimer" icon="pi pi-print" (onClick)="print()" />
+</div>
+
+<div class="print-area">
+  <div class="print-page" *ngFor="let page of pages; let i = index">
+    <div class="card-grid">
+      <div class="card-slot" *ngFor="let card of page">
+        <app-card [card]="card" [design]="design" />
+      </div>
+    </div>
+    <div class="page-number no-print">Page {{ i + 1 }} sur {{ pages.length }}</div>
+  </div>
+</div>

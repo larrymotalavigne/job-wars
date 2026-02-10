@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Whistle body -->
+  <ellipse cx="90" cy="75" rx="30" ry="20" fill="#f9a825"/>
+  <rect x="105" y="65" width="25" height="20" rx="3" fill="#f9a825"/>
+  <!-- Whistle mouthpiece -->
+  <rect x="125" y="70" width="20" height="10" rx="5" fill="#f57f17"/>
+  <!-- Whistle hole -->
+  <circle cx="80" cy="75" r="6" fill="#fef7e0"/>
+  <!-- Lanyard -->
+  <path d="M130 65 Q140 30 120 20 Q100 10 80 20 Q60 30 70 50" fill="none" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <path d="M70 50 Q75 60 75 65" fill="none" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <!-- Sound lines -->
+  <line x1="65" y1="60" x2="55" y2="50" stroke="#f9a825" stroke-width="2" stroke-linecap="round"/>
+  <line x1="60" y1="72" x2="48" y2="68" stroke="#f9a825" stroke-width="2" stroke-linecap="round"/>
+  <line x1="65" y1="88" x2="55" y2="96" stroke="#f9a825" stroke-width="2" stroke-linecap="round"/>
+</svg>

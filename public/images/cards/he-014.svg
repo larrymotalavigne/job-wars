@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Tooth -->
+  <path d="M65 45 Q65 25 80 25 Q90 25 95 35 Q100 25 110 25 Q125 25 125 45 Q125 65 115 90 Q110 100 105 100 Q100 90 95 90 Q90 90 85 100 Q80 100 75 90 Q65 65 65 45Z" fill="#00897b"/>
+  <!-- Tooth shine -->
+  <ellipse cx="85" cy="42" rx="6" ry="10" fill="#e0f2f1" opacity="0.3"/>
+  <!-- Dental mirror handle -->
+  <rect x="135" y="60" width="5" height="55" rx="2" ry="2" fill="#00695c" transform="rotate(-15 137 87)"/>
+  <!-- Mirror head connector -->
+  <rect x="133" y="50" width="9" height="14" rx="2" ry="2" fill="#00695c" transform="rotate(-15 137 57)"/>
+  <!-- Mirror circle -->
+  <circle cx="140" cy="40" r="14" fill="#00695c"/>
+  <circle cx="140" cy="40" r="11" fill="#e0f2f1"/>
+  <circle cx="140" cy="40" r="9" fill="#00897b" opacity="0.3"/>
+</svg>

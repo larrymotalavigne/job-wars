@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e8f0fe"/>
+
+  <!-- Crown -->
+  <polygon points="66,28 74,48 86,32 100,50 114,32 126,48 134,28 138,58 62,58"
+           fill="#1a73e8" opacity="0.85" stroke="#1a73e8" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Crown base band -->
+  <rect x="62" y="54" width="76" height="8" rx="2" fill="#1a73e8"/>
+  <!-- Crown jewels -->
+  <circle cx="100" cy="42" r="3" fill="#ffffff" opacity="0.8"/>
+  <circle cx="82" cy="38" r="2.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="118" cy="38" r="2.5" fill="#ffffff" opacity="0.6"/>
+
+  <!-- Circuit board body -->
+  <rect x="50" y="72" width="100" height="58" rx="6" fill="#1a73e8" opacity="0.12" stroke="#1a73e8" stroke-width="2"/>
+
+  <!-- Central chip/processor -->
+  <rect x="84" y="88" width="32" height="24" rx="3" fill="#1a73e8" opacity="0.3" stroke="#1a73e8" stroke-width="2"/>
+  <rect x="90" y="94" width="20" height="12" rx="2" fill="#1a73e8" opacity="0.5"/>
+
+  <!-- Circuit traces from chip - left -->
+  <line x1="84" y1="94" x2="66" y2="94" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="84" y1="100" x2="58" y2="100" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="84" y1="106" x2="66" y2="106" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Circuit traces from chip - right -->
+  <line x1="116" y1="94" x2="134" y2="94" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="116" y1="100" x2="142" y2="100" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="116" y1="106" x2="134" y2="106" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Circuit traces from chip - top -->
+  <line x1="94" y1="88" x2="94" y2="78" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="100" y1="88" x2="100" y2="75" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="106" y1="88" x2="106" y2="78" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Circuit traces from chip - bottom -->
+  <line x1="94" y1="112" x2="94" y2="122" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="100" y1="112" x2="100" y2="125" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="106" y1="112" x2="106" y2="122" stroke="#1a73e8" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Circuit nodes (solder points) -->
+  <circle cx="66" cy="94" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="58" cy="100" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="66" cy="106" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="134" cy="94" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="142" cy="100" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="134" cy="106" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="94" cy="78" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="100" cy="75" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="106" cy="78" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="94" cy="122" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="100" cy="125" r="2.5" fill="#1a73e8" opacity="0.5"/>
+  <circle cx="106" cy="122" r="2.5" fill="#1a73e8" opacity="0.5"/>
+
+  <!-- Corner traces for detail -->
+  <polyline points="58,80 66,80 66,86" fill="none" stroke="#1a73e8" stroke-width="1.2" opacity="0.4"/>
+  <polyline points="142,80 134,80 134,86" fill="none" stroke="#1a73e8" stroke-width="1.2" opacity="0.4"/>
+  <polyline points="58,120 66,120 66,114" fill="none" stroke="#1a73e8" stroke-width="1.2" opacity="0.4"/>
+  <polyline points="142,120 134,120 134,114" fill="none" stroke="#1a73e8" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- Connecting line from crown to board -->
+  <line x1="100" y1="62" x2="100" y2="72" stroke="#1a73e8" stroke-width="2" stroke-dasharray="3,2" opacity="0.4"/>
+</svg>

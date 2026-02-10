@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e6f4ea"/>
+  <!-- Drafting board -->
+  <rect x="35" y="25" width="130" height="105" rx="3" fill="#fff" stroke="#0d652d" stroke-width="2"/>
+  <!-- Grid lines on drafting board -->
+  <line x1="35" y1="51" x2="165" y2="51" stroke="#0d652d" stroke-width="0.5" opacity="0.15"/>
+  <line x1="35" y1="77" x2="165" y2="77" stroke="#0d652d" stroke-width="0.5" opacity="0.15"/>
+  <line x1="35" y1="103" x2="165" y2="103" stroke="#0d652d" stroke-width="0.5" opacity="0.15"/>
+  <line x1="68" y1="25" x2="68" y2="130" stroke="#0d652d" stroke-width="0.5" opacity="0.15"/>
+  <line x1="100" y1="25" x2="100" y2="130" stroke="#0d652d" stroke-width="0.5" opacity="0.15"/>
+  <line x1="132" y1="25" x2="132" y2="130" stroke="#0d652d" stroke-width="0.5" opacity="0.15"/>
+  <!-- T-square horizontal bar -->
+  <rect x="28" y="62" width="144" height="6" rx="1" fill="#0d652d"/>
+  <!-- T-square vertical head -->
+  <rect x="28" y="45" width="8" height="40" rx="1" fill="#0d652d"/>
+  <!-- Set square / Triangle -->
+  <polygon points="90,68 140,68 140,38" fill="#1a8a3e" opacity="0.7" stroke="#0d652d" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Inner cutout triangle -->
+  <polygon points="105,65 133,65 133,46" fill="#e6f4ea" opacity="0.6"/>
+  <!-- Pencil -->
+  <line x1="70" y1="110" x2="120" y2="80" stroke="#0d652d" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="68,112 66,116 71,113" fill="#0d652d"/>
+  <!-- Pencil tip detail -->
+  <line x1="120" y1="80" x2="125" y2="77" stroke="#1a8a3e" stroke-width="3" stroke-linecap="round"/>
+  <!-- Draft lines drawn on board -->
+  <line x1="60" y1="95" x2="110" y2="95" stroke="#0d652d" stroke-width="1" opacity="0.4"/>
+  <line x1="60" y1="100" x2="95" y2="100" stroke="#0d652d" stroke-width="1" opacity="0.4"/>
+  <rect x="55" y="85" width="20" height="12" fill="none" stroke="#0d652d" stroke-width="1" opacity="0.3"/>
+</svg>

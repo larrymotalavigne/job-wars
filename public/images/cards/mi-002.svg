@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Watchtower -->
+  <!-- Tower base/legs -->
+  <polygon points="68,135 78,65 82,65 88,135" fill="#558b2f"/>
+  <polygon points="112,135 118,65 122,65 132,135" fill="#558b2f"/>
+  <!-- Cross braces -->
+  <line x1="76" y1="90" x2="124" y2="110" stroke="#558b2f" stroke-width="3"/>
+  <line x1="124" y1="90" x2="76" y2="110" stroke="#558b2f" stroke-width="3"/>
+  <line x1="79" y1="75" x2="121" y2="75" stroke="#558b2f" stroke-width="2"/>
+  <!-- Platform -->
+  <rect x="60" y="55" width="80" height="6" rx="1" fill="#33691e"/>
+  <!-- Cabin -->
+  <rect x="68" y="22" width="64" height="33" rx="2" fill="#558b2f"/>
+  <!-- Roof -->
+  <polygon points="62,22 100,8 138,22" fill="#33691e"/>
+  <!-- Window -->
+  <rect x="78" y="30" width="18" height="12" rx="1" fill="#f1f8e9"/>
+  <rect x="104" y="30" width="18" height="12" rx="1" fill="#f1f8e9"/>
+  <!-- Window cross bars -->
+  <line x1="87" y1="30" x2="87" y2="42" stroke="#558b2f" stroke-width="1.5"/>
+  <line x1="113" y1="30" x2="113" y2="42" stroke="#558b2f" stroke-width="1.5"/>
+  <!-- Searchlight -->
+  <circle cx="100" cy="48" r="4" fill="#f1f8e9" opacity="0.7"/>
+  <!-- Light beam -->
+  <polygon points="96,50 60,130 50,125" fill="#f1f8e9" opacity="0.15"/>
+</svg>

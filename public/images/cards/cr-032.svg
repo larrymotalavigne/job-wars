@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Hand plane body -->
+  <path d="M30,75 L170,65 L170,85 L30,95 Z" fill="#795548" stroke="#4e342e" stroke-width="2"/>
+  <!-- Plane sole (bottom) -->
+  <rect x="30" y="90" width="140" height="5" rx="1" fill="#4e342e"/>
+  <!-- Plane blade opening -->
+  <rect x="95" y="68" width="15" height="22" fill="#4e342e" transform="rotate(-5,102,79)"/>
+  <!-- Blade -->
+  <rect x="97" y="50" width="10" height="30" fill="#4e342e" transform="rotate(-5,102,65)"/>
+  <!-- Plane handle (tote) - rear -->
+  <path d="M50,75 Q48,55 55,45 Q60,40 62,45 Q65,55 60,75" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Plane knob - front -->
+  <circle cx="145" cy="62" r="8" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Wood curls -->
+  <path d="M85,100 Q90,105 85,115 Q80,125 85,130" stroke="#795548" stroke-width="2.5" fill="none"/>
+  <path d="M105,100 Q110,108 105,118 Q100,128 105,135" stroke="#795548" stroke-width="2" fill="none"/>
+  <path d="M125,98 Q130,105 127,112 Q122,120 127,125" stroke="#795548" stroke-width="2" fill="none"/>
+  <!-- Additional small curls -->
+  <path d="M70,98 Q73,103 70,108" stroke="#795548" stroke-width="1.5" fill="none"/>
+  <path d="M145,97 Q148,102 146,107" stroke="#795548" stroke-width="1.5" fill="none"/>
+</svg>

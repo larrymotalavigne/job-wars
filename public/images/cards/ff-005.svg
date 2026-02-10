@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+
+  <!-- Diving Mask - Plongeur Sauveteur -->
+  <!-- Mask frame outer -->
+  <path d="M50 55 Q50 35 75 32 L125 32 Q150 35 150 55 L150 85 Q150 100 130 100 L70 100 Q50 100 50 85 Z" fill="#ef6c00"/>
+  <!-- Mask lens left -->
+  <ellipse cx="82" cy="62" rx="22" ry="20" fill="#fff3e0" opacity="0.8"/>
+  <!-- Mask lens right -->
+  <ellipse cx="118" cy="62" rx="22" ry="20" fill="#fff3e0" opacity="0.8"/>
+  <!-- Nose bridge -->
+  <path d="M94 58 Q100 72 106 58" fill="#ef6c00"/>
+  <!-- Mask strap left -->
+  <rect x="30" y="55" width="22" height="8" rx="4" fill="#e65100"/>
+  <!-- Mask strap right -->
+  <rect x="148" y="55" width="22" height="8" rx="4" fill="#e65100"/>
+  <!-- Lens reflections -->
+  <ellipse cx="76" cy="56" rx="6" ry="4" fill="#fff3e0" opacity="0.5" transform="rotate(-20 76 56)"/>
+  <ellipse cx="112" cy="56" rx="6" ry="4" fill="#fff3e0" opacity="0.5" transform="rotate(-20 112 56)"/>
+  <!-- Mask bottom seal -->
+  <path d="M60 90 Q100 108 140 90" fill="none" stroke="#e65100" stroke-width="3"/>
+
+  <!-- Bubbles -->
+  <circle cx="155" cy="28" r="5" fill="#ef6c00" opacity="0.3"/>
+  <circle cx="165" cy="18" r="4" fill="#ef6c00" opacity="0.25"/>
+  <circle cx="160" cy="38" r="3" fill="#ef6c00" opacity="0.2"/>
+  <circle cx="172" cy="30" r="3" fill="#ef6c00" opacity="0.2"/>
+  <circle cx="148" cy="16" r="3.5" fill="#ef6c00" opacity="0.25"/>
+
+  <!-- Water wave hints at bottom -->
+  <path d="M15 130 Q35 124 55 130 Q75 136 95 130 Q115 124 135 130 Q155 136 175 130 Q185 127 195 130" fill="none" stroke="#ef6c00" stroke-width="2" opacity="0.2"/>
+  <path d="M15 138 Q35 132 55 138 Q75 144 95 138 Q115 132 135 138 Q155 144 175 138 Q185 135 195 138" fill="none" stroke="#ef6c00" stroke-width="2" opacity="0.15"/>
+</svg>

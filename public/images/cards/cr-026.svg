@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Hammer handle -->
+  <rect x="55" y="50" width="8" height="75" rx="2" fill="#795548"/>
+  <!-- Hammer head -->
+  <rect x="35" y="35" width="50" height="20" rx="3" fill="#4e342e"/>
+  <!-- Hammer claw -->
+  <path d="M35,35 L25,22 Q28,20 32,25 L35,30" fill="#4e342e"/>
+  <path d="M35,40 L22,30 Q25,27 30,32" fill="#4e342e"/>
+  <!-- Nail 1 - standing -->
+  <rect x="110" y="65" width="4" height="40" fill="#4e342e"/>
+  <rect x="106" y="62" width="12" height="6" rx="1" fill="#4e342e"/>
+  <!-- Nail 2 - standing -->
+  <rect x="135" y="75" width="4" height="30" fill="#4e342e"/>
+  <rect x="131" y="72" width="12" height="6" rx="1" fill="#4e342e"/>
+  <!-- Nail 3 - lying flat -->
+  <rect x="115" y="115" width="35" height="3" fill="#4e342e"/>
+  <rect x="148" y="112" width="5" height="9" rx="1" fill="#4e342e"/>
+  <!-- Nail 4 -->
+  <rect x="150" y="80" width="4" height="25" fill="#795548"/>
+  <rect x="146" y="77" width="12" height="6" rx="1" fill="#795548"/>
+  <!-- Wood surface -->
+  <rect x="95" y="105" width="80" height="30" rx="2" fill="#795548" opacity="0.3" stroke="#795548" stroke-width="1"/>
+</svg>

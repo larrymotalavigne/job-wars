@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Offensive Éclair: lightning bolt with advancing arrows -->
+  <!-- Lightning bolt -->
+  <polygon points="95,10 75,65 95,60 80,110 120,50 100,55 115,10" fill="#558b2f"/>
+  <polygon points="97,15 80,62 97,58 84,105 115,53 100,56 112,15" fill="#33691e" opacity="0.5"/>
+  <!-- Advancing arrows - left -->
+  <polygon points="25,90 45,75 45,82 65,82 65,98 45,98 45,105" fill="#558b2f"/>
+  <!-- Advancing arrows - center -->
+  <polygon points="75,115 95,100 95,107 115,107 115,123 95,123 95,130" fill="#33691e"/>
+  <!-- Advancing arrows - right -->
+  <polygon points="135,90 155,75 155,82 175,82 175,98 155,98 155,105" fill="#558b2f"/>
+  <!-- Impact lines around bolt -->
+  <line x1="65" y1="35" x2="50" y2="28" stroke="#558b2f" stroke-width="2" opacity="0.5"/>
+  <line x1="60" y1="50" x2="42" y2="48" stroke="#558b2f" stroke-width="2" opacity="0.5"/>
+  <line x1="135" y1="30" x2="150" y2="22" stroke="#558b2f" stroke-width="2" opacity="0.5"/>
+  <line x1="140" y1="45" x2="155" y2="42" stroke="#558b2f" stroke-width="2" opacity="0.5"/>
+  <!-- Speed lines -->
+  <line x1="15" y1="85" x2="5" y2="85" stroke="#558b2f" stroke-width="1.5" opacity="0.4"/>
+  <line x1="18" y1="95" x2="8" y2="95" stroke="#558b2f" stroke-width="1.5" opacity="0.4"/>
+  <line x1="15" y1="105" x2="5" y2="105" stroke="#558b2f" stroke-width="1.5" opacity="0.4"/>
+</svg>

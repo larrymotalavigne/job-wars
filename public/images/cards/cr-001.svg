@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Floor line -->
+  <rect x="30" y="115" width="140" height="3" rx="1" fill="#795548" opacity="0.3"/>
+  <!-- Small figure (apprentice) -->
+  <!-- Head -->
+  <circle cx="85" cy="55" r="12" fill="#795548"/>
+  <!-- Body -->
+  <rect x="78" y="67" width="14" height="25" rx="4" fill="#795548"/>
+  <!-- Legs -->
+  <rect x="79" y="90" width="5" height="25" rx="2" fill="#4e342e"/>
+  <rect x="87" y="90" width="5" height="25" rx="2" fill="#4e342e"/>
+  <!-- Small hammer in hand -->
+  <!-- Handle -->
+  <rect x="96" y="60" width="3" height="28" rx="1" fill="#4e342e" transform="rotate(-30 97 74)"/>
+  <!-- Hammer head -->
+  <rect x="88" y="52" width="16" height="8" rx="2" fill="#4e342e" transform="rotate(-30 96 56)"/>
+  <!-- Sparkle (learning) -->
+  <polygon points="135,40 138,48 146,48 140,53 142,61 135,56 128,61 130,53 124,48 132,48" fill="#795548" opacity="0.5"/>
+  <polygon points="150,65 152,69 156,69 153,72 154,76 150,73 146,76 147,72 144,69 148,69" fill="#795548" opacity="0.35"/>
+  <!-- Small nail/target piece -->
+  <rect x="120" y="100" width="20" height="15" rx="2" fill="#795548" opacity="0.6"/>
+  <rect x="129" y="97" width="2" height="6" rx="1" fill="#4e342e"/>
+</svg>

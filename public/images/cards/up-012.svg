@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e6f4ea"/>
+  <!-- Hard Hat -->
+  <ellipse cx="80" cy="65" rx="35" ry="18" fill="#0d652d"/>
+  <rect x="50" y="45" width="60" height="20" rx="10" fill="#0d652d"/>
+  <rect x="55" y="35" width="50" height="15" rx="8" fill="#0d652d"/>
+  <rect x="45" y="62" width="70" height="6" rx="2" fill="#0d652d" opacity="0.7"/>
+  <!-- Clipboard -->
+  <rect x="125" y="35" width="45" height="60" rx="4" fill="#0d652d"/>
+  <rect x="130" y="42" width="35" height="48" rx="2" fill="#e6f4ea"/>
+  <rect x="140" y="30" width="15" height="12" rx="3" fill="#0d652d"/>
+  <!-- Clipboard lines -->
+  <line x1="135" y1="52" x2="160" y2="52" stroke="#0d652d" stroke-width="2"/>
+  <line x1="135" y1="60" x2="160" y2="60" stroke="#0d652d" stroke-width="2"/>
+  <line x1="135" y1="68" x2="155" y2="68" stroke="#0d652d" stroke-width="2"/>
+  <line x1="135" y1="76" x2="158" y2="76" stroke="#0d652d" stroke-width="2"/>
+  <!-- Ground line -->
+  <line x1="20" y1="110" x2="180" y2="110" stroke="#0d652d" stroke-width="2" opacity="0.3"/>
+</svg>

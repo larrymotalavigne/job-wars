@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Ground line -->
+  <line x1="0" y1="128" x2="200" y2="128" stroke="#558b2f" stroke-width="2" opacity="0.3"/>
+  <!-- Marching soldiers silhouettes - row of 5 figures -->
+  <!-- Soldier 1 (leftmost, slightly smaller = further away) -->
+  <g transform="translate(18,0) scale(0.85)" opacity="0.5">
+    <!-- Helmet -->
+    <ellipse cx="28" cy="62" rx="8" ry="6" fill="#33691e"/>
+    <!-- Head -->
+    <circle cx="28" cy="68" r="6" fill="#558b2f"/>
+    <!-- Body -->
+    <rect x="22" y="74" width="12" height="22" rx="2" fill="#558b2f"/>
+    <!-- Left leg (marching forward) -->
+    <rect x="22" y="96" width="5" height="20" rx="2" fill="#33691e" transform="rotate(-15,24,96)"/>
+    <!-- Right leg (marching back) -->
+    <rect x="29" y="96" width="5" height="20" rx="2" fill="#33691e" transform="rotate(10,31,96)"/>
+    <!-- Arm -->
+    <rect x="17" y="76" width="4" height="16" rx="2" fill="#558b2f" transform="rotate(15,19,76)"/>
+    <rect x="35" y="76" width="4" height="16" rx="2" fill="#558b2f" transform="rotate(-15,37,76)"/>
+  </g>
+  <!-- Soldier 2 -->
+  <g transform="translate(45,0) scale(0.9)" opacity="0.6">
+    <ellipse cx="28" cy="58" rx="9" ry="6" fill="#33691e"/>
+    <circle cx="28" cy="64" r="7" fill="#558b2f"/>
+    <rect x="21" y="71" width="14" height="24" rx="2" fill="#558b2f"/>
+    <rect x="21" y="95" width="5" height="22" rx="2" fill="#33691e" transform="rotate(12,23,95)"/>
+    <rect x="30" y="95" width="5" height="22" rx="2" fill="#33691e" transform="rotate(-12,32,95)"/>
+    <rect x="15" y="73" width="5" height="18" rx="2" fill="#558b2f" transform="rotate(-12,17,73)"/>
+    <rect x="36" y="73" width="5" height="18" rx="2" fill="#558b2f" transform="rotate(12,38,73)"/>
+  </g>
+  <!-- Soldier 3 (center, largest) -->
+  <g transform="translate(78,0)" opacity="0.85">
+    <ellipse cx="28" cy="52" rx="10" ry="7" fill="#33691e"/>
+    <circle cx="28" cy="59" r="8" fill="#558b2f"/>
+    <rect x="19" y="67" width="18" height="28" rx="3" fill="#558b2f"/>
+    <rect x="19" y="95" width="7" height="26" rx="2" fill="#33691e" transform="rotate(-15,22,95)"/>
+    <rect x="30" y="95" width="7" height="26" rx="2" fill="#33691e" transform="rotate(10,33,95)"/>
+    <rect x="12" y="70" width="6" height="20" rx="2" fill="#558b2f" transform="rotate(15,15,70)"/>
+    <rect x="38" y="70" width="6" height="20" rx="2" fill="#558b2f" transform="rotate(-10,41,70)"/>
+  </g>
+  <!-- Soldier 4 -->
+  <g transform="translate(115,0) scale(0.9)" opacity="0.65">
+    <ellipse cx="28" cy="58" rx="9" ry="6" fill="#33691e"/>
+    <circle cx="28" cy="64" r="7" fill="#558b2f"/>
+    <rect x="21" y="71" width="14" height="24" rx="2" fill="#558b2f"/>
+    <rect x="21" y="95" width="5" height="22" rx="2" fill="#33691e" transform="rotate(-10,23,95)"/>
+    <rect x="30" y="95" width="5" height="22" rx="2" fill="#33691e" transform="rotate(15,32,95)"/>
+    <rect x="15" y="73" width="5" height="18" rx="2" fill="#558b2f" transform="rotate(10,17,73)"/>
+    <rect x="36" y="73" width="5" height="18" rx="2" fill="#558b2f" transform="rotate(-15,38,73)"/>
+  </g>
+  <!-- Soldier 5 (rightmost, smaller) -->
+  <g transform="translate(148,0) scale(0.85)" opacity="0.5">
+    <ellipse cx="28" cy="62" rx="8" ry="6" fill="#33691e"/>
+    <circle cx="28" cy="68" r="6" fill="#558b2f"/>
+    <rect x="22" y="74" width="12" height="22" rx="2" fill="#558b2f"/>
+    <rect x="22" y="96" width="5" height="20" rx="2" fill="#33691e" transform="rotate(12,24,96)"/>
+    <rect x="29" y="96" width="5" height="20" rx="2" fill="#33691e" transform="rotate(-12,31,96)"/>
+    <rect x="17" y="76" width="4" height="16" rx="2" fill="#558b2f" transform="rotate(-12,19,76)"/>
+    <rect x="35" y="76" width="4" height="16" rx="2" fill="#558b2f" transform="rotate(12,37,76)"/>
+  </g>
+  <!-- Motion lines behind soldiers -->
+  <line x1="8" y1="85" x2="18" y2="85" stroke="#558b2f" stroke-width="1.5" opacity="0.25" stroke-linecap="round"/>
+  <line x1="5" y1="92" x2="20" y2="92" stroke="#558b2f" stroke-width="1" opacity="0.2" stroke-linecap="round"/>
+  <line x1="10" y1="99" x2="22" y2="99" stroke="#558b2f" stroke-width="1.5" opacity="0.15" stroke-linecap="round"/>
+</svg>

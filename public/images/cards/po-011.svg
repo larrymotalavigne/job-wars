@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#fce4ec"/>
+  <!-- Door frame -->
+  <rect x="60" y="16" width="80" height="118" rx="3" fill="#c62828" opacity="0.1" stroke="#c62828" stroke-width="2.5"/>
+  <!-- Door panels -->
+  <rect x="66" y="22" width="32" height="50" rx="2" fill="#c62828" opacity="0.08" stroke="#c62828" stroke-width="1.5"/>
+  <rect x="102" y="22" width="32" height="50" rx="2" fill="#c62828" opacity="0.08" stroke="#c62828" stroke-width="1.5"/>
+  <rect x="66" y="78" width="32" height="50" rx="2" fill="#c62828" opacity="0.08" stroke="#c62828" stroke-width="1.5"/>
+  <rect x="102" y="78" width="32" height="50" rx="2" fill="#c62828" opacity="0.08" stroke="#c62828" stroke-width="1.5"/>
+  <!-- Door center line -->
+  <line x1="100" y1="16" x2="100" y2="134" stroke="#c62828" stroke-width="2" opacity="0.3"/>
+  <!-- Door handle -->
+  <circle cx="96" cy="75" r="3" fill="#c62828" opacity="0.5"/>
+  <circle cx="104" cy="75" r="3" fill="#c62828" opacity="0.5"/>
+  <!-- Impact/breach marks - radiating from center -->
+  <line x1="100" y1="75" x2="60" y2="55" stroke="#c62828" stroke-width="2" opacity="0.25"/>
+  <line x1="100" y1="75" x2="56" y2="75" stroke="#c62828" stroke-width="2" opacity="0.25"/>
+  <line x1="100" y1="75" x2="60" y2="95" stroke="#c62828" stroke-width="2" opacity="0.25"/>
+  <line x1="100" y1="75" x2="140" y2="55" stroke="#c62828" stroke-width="2" opacity="0.25"/>
+  <line x1="100" y1="75" x2="144" y2="75" stroke="#c62828" stroke-width="2" opacity="0.25"/>
+  <line x1="100" y1="75" x2="140" y2="95" stroke="#c62828" stroke-width="2" opacity="0.25"/>
+  <!-- Impact burst circle -->
+  <circle cx="100" cy="75" r="12" fill="none" stroke="#c62828" stroke-width="2" opacity="0.3"/>
+  <circle cx="100" cy="75" r="20" fill="none" stroke="#c62828" stroke-width="1.5" opacity="0.15"/>
+  <!-- Police badge (upper left) -->
+  <g transform="translate(28, 30)">
+    <!-- Badge shield shape -->
+    <path d="M0,-18 L12,-10 L12,6 Q12,16 0,20 Q-12,16 -12,6 L-12,-10 Z"
+          fill="#c62828" opacity="0.35" stroke="#c62828" stroke-width="1.5"/>
+    <!-- Inner badge -->
+    <path d="M0,-12 L8,-6 L8,4 Q8,12 0,14 Q-8,12 -8,4 L-8,-6 Z"
+          fill="#c62828" opacity="0.15"/>
+    <!-- Star on badge -->
+    <polygon points="0,-8 1.5,-3 6,-3 2.5,0 4,5 0,2 -4,5 -2.5,0 -6,-3 -1.5,-3"
+             fill="#c62828" opacity="0.5"/>
+  </g>
+  <!-- Motion lines (forced entry) -->
+  <line x1="148" y1="40" x2="168" y2="30" stroke="#c62828" stroke-width="2" opacity="0.2"/>
+  <line x1="150" y1="55" x2="172" y2="50" stroke="#c62828" stroke-width="2" opacity="0.2"/>
+  <line x1="150" y1="70" x2="174" y2="68" stroke="#c62828" stroke-width="2" opacity="0.2"/>
+  <line x1="150" y1="85" x2="172" y2="88" stroke="#c62828" stroke-width="2" opacity="0.2"/>
+  <line x1="148" y1="100" x2="168" y2="108" stroke="#c62828" stroke-width="2" opacity="0.2"/>
+  <!-- Arrow indicating force direction -->
+  <polygon points="46,75 32,68 32,82" fill="#c62828" opacity="0.3"/>
+  <rect x="18" y="72" width="16" height="6" rx="2" fill="#c62828" opacity="0.3"/>
+</svg>

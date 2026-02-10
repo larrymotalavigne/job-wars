@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Air tank (cylinder) -->
+  <rect x="130" y="25" width="30" height="80" rx="15" ry="15" fill="#ef6c00"/>
+  <ellipse cx="145" cy="25" rx="15" ry="6" fill="#e65100"/>
+  <!-- Tank valve on top -->
+  <rect x="141" y="18" width="8" height="10" rx="2" ry="2" fill="#e65100"/>
+  <!-- Pressure gauge -->
+  <circle cx="152" cy="22" r="5" fill="#fff3e0"/>
+  <circle cx="152" cy="22" r="3" fill="#e65100" opacity="0.3"/>
+  <!-- Hose from tank to mask -->
+  <path d="M138,30 Q120,30 110,40 Q100,50 95,55" fill="none" stroke="#e65100" stroke-width="4" stroke-linecap="round"/>
+  <!-- Breathing mask -->
+  <path d="M55,45 Q55,35 75,30 Q95,35 95,45 L95,80 Q95,95 75,98 Q55,95 55,80Z" fill="#ef6c00"/>
+  <!-- Mask visor -->
+  <ellipse cx="75" cy="55" rx="16" ry="14" fill="#fff3e0"/>
+  <ellipse cx="75" cy="55" rx="13" ry="11" fill="#e65100" opacity="0.2"/>
+  <!-- Mask breathing port -->
+  <circle cx="75" cy="80" r="8" fill="#e65100"/>
+  <circle cx="75" cy="80" r="5" fill="#fff3e0"/>
+  <!-- Port grille lines -->
+  <line x1="71" y1="77" x2="71" y2="83" stroke="#e65100" stroke-width="1"/>
+  <line x1="75" y1="77" x2="75" y2="83" stroke="#e65100" stroke-width="1"/>
+  <line x1="79" y1="77" x2="79" y2="83" stroke="#e65100" stroke-width="1"/>
+  <!-- Straps -->
+  <line x1="55" y1="50" x2="40" y2="45" stroke="#e65100" stroke-width="3" stroke-linecap="round"/>
+  <line x1="95" y1="50" x2="110" y2="45" stroke="#e65100" stroke-width="3" stroke-linecap="round"/>
+  <!-- Tank straps -->
+  <rect x="128" y="45" width="34" height="5" rx="2" ry="2" fill="#e65100" opacity="0.6"/>
+  <rect x="128" y="75" width="34" height="5" rx="2" ry="2" fill="#e65100" opacity="0.6"/>
+</svg>

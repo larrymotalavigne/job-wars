@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Artilleur: cannon/howitzer firing -->
+  <!-- Ground -->
+  <rect x="0" y="125" width="200" height="25" rx="0" fill="#558b2f" opacity="0.2"/>
+  <!-- Cannon body -->
+  <ellipse cx="90" cy="110" rx="30" ry="18" fill="#558b2f"/>
+  <!-- Barrel -->
+  <rect x="100" y="62" width="12" height="55" rx="3" fill="#33691e" transform="rotate(-35, 106, 90)"/>
+  <!-- Barrel tip -->
+  <rect x="108" y="42" width="16" height="10" rx="2" fill="#33691e" transform="rotate(-35, 116, 47)"/>
+  <!-- Wheels -->
+  <circle cx="70" cy="120" r="14" fill="#33691e"/>
+  <circle cx="70" cy="120" r="8" fill="#558b2f"/>
+  <circle cx="70" cy="120" r="3" fill="#33691e"/>
+  <circle cx="110" cy="120" r="14" fill="#33691e"/>
+  <circle cx="110" cy="120" r="8" fill="#558b2f"/>
+  <circle cx="110" cy="120" r="3" fill="#33691e"/>
+  <!-- Firing blast -->
+  <polygon points="145,48 170,35 160,48 180,42 158,55 175,58 148,58" fill="#558b2f" opacity="0.7"/>
+  <polygon points="150,42 165,28 155,42 172,32 152,48" fill="#558b2f" opacity="0.4"/>
+  <!-- Trail/support -->
+  <line x1="90" y1="115" x2="35" y2="125" stroke="#33691e" stroke-width="5" stroke-linecap="round"/>
+</svg>

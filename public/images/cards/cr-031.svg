@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Stone block -->
+  <rect x="95" y="55" width="75" height="75" rx="3" fill="#795548" stroke="#4e342e" stroke-width="2"/>
+  <!-- Stone texture -->
+  <line x1="100" y1="70" x2="130" y2="70" stroke="#4e342e" stroke-width="0.5" opacity="0.4"/>
+  <line x1="110" y1="90" x2="165" y2="90" stroke="#4e342e" stroke-width="0.5" opacity="0.4"/>
+  <line x1="100" y1="110" x2="140" y2="110" stroke="#4e342e" stroke-width="0.5" opacity="0.4"/>
+  <!-- Partially carved shape emerging from stone -->
+  <path d="M105,55 Q110,45 120,42 Q130,40 135,45 Q140,50 138,55" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Chisel -->
+  <line x1="75" y1="30" x2="105" y2="58" stroke="#4e342e" stroke-width="3"/>
+  <polygon points="102,55 108,58 105,62" fill="#4e342e"/>
+  <!-- Chisel blade -->
+  <rect x="72" y="26" width="6" height="8" rx="1" fill="#795548" transform="rotate(-40,75,30)"/>
+  <!-- Mallet -->
+  <rect x="25" y="50" width="6" height="40" rx="2" fill="#795548" transform="rotate(-20,28,70)"/>
+  <rect x="15" y="40" width="26" height="16" rx="3" fill="#4e342e" transform="rotate(-20,28,48)"/>
+  <!-- Dust/chips -->
+  <circle cx="100" cy="50" r="1.5" fill="#795548" opacity="0.5"/>
+  <circle cx="110" cy="48" r="1" fill="#795548" opacity="0.6"/>
+  <circle cx="95" cy="45" r="2" fill="#795548" opacity="0.4"/>
+  <circle cx="115" cy="52" r="1" fill="#795548" opacity="0.5"/>
+  <circle cx="88" cy="52" r="1.5" fill="#795548" opacity="0.4"/>
+</svg>

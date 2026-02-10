@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e6f4ea"/>
+  <!-- Theodolite / Surveyor Instrument -->
+  <!-- Tripod legs -->
+  <line x1="100" y1="85" x2="65" y2="135" stroke="#0d652d" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="100" y1="85" x2="135" y2="135" stroke="#0d652d" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="100" y1="85" x2="100" y2="138" stroke="#0d652d" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Tripod feet -->
+  <circle cx="65" cy="135" r="2.5" fill="#0d652d"/>
+  <circle cx="135" cy="135" r="2.5" fill="#0d652d"/>
+  <circle cx="100" cy="138" r="2.5" fill="#0d652d"/>
+  <!-- Mount plate -->
+  <rect x="88" y="78" width="24" height="10" rx="2" fill="#0d652d"/>
+  <!-- Telescope body -->
+  <rect x="68" y="52" width="64" height="16" rx="4" fill="#0d652d"/>
+  <!-- Telescope eyepiece -->
+  <rect x="56" y="55" width="14" height="10" rx="3" fill="#1a8a3e"/>
+  <!-- Telescope objective lens -->
+  <rect x="130" y="54" width="10" height="12" rx="2" fill="#1a8a3e"/>
+  <!-- Vertical circle / dial -->
+  <circle cx="100" cy="60" r="14" fill="none" stroke="#1a8a3e" stroke-width="2"/>
+  <circle cx="100" cy="60" r="10" fill="#e6f4ea"/>
+  <line x1="100" y1="50" x2="100" y2="70" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="90" y1="60" x2="110" y2="60" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Vertical post connecting telescope to tripod -->
+  <rect x="96" y="66" width="8" height="14" rx="1" fill="#0d652d"/>
+  <!-- Adjustment knobs -->
+  <circle cx="82" cy="72" r="3.5" fill="#1a8a3e"/>
+  <circle cx="118" cy="72" r="3.5" fill="#1a8a3e"/>
+  <!-- Sighting crosshair lines on lens -->
+  <line x1="133" y1="57" x2="138" y2="57" stroke="#e6f4ea" stroke-width="1"/>
+  <line x1="135" y1="55" x2="135" y2="64" stroke="#e6f4ea" stroke-width="1"/>
+  <!-- Ground line -->
+  <line x1="40" y1="140" x2="160" y2="140" stroke="#0d652d" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.4"/>
+</svg>

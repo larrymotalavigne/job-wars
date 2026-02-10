@@ -1,0 +1,105 @@
+<!-- CLASSIQUE design (MTG-inspired traditional) -->
+<div class="card-frame classique" *ngIf="design === 'classique'"
+     [class.selected]="selected"
+     [style.border-color]="colors.primary">
+  <div class="card-header" [style.background]="'linear-gradient(135deg, ' + colors.primary + ', ' + colors.accent + ')'">
+    <span class="card-cost">{{ card.cost }}</span>
+    <span class="card-name">{{ card.name }}</span>
+  </div>
+  <div class="card-art" [style.background]="colors.secondary">
+    <img *ngIf="card.image" [src]="card.image" [alt]="card.name" class="card-image" />
+    <i *ngIf="!card.image" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
+  </div>
+  <div class="card-type-line" [style.background]="colors.secondary" [style.border-color]="colors.primary">
+    <span class="card-type">{{ card.type }} — {{ card.domain }}</span>
+    <span class="rarity-gem" [style.background]="rarityColor"></span>
+  </div>
+  <div class="card-text-box">
+    <p class="ability-text">{{ abilityText }}</p>
+    <p class="flavor-text" *ngIf="card.flavorText">{{ card.flavorText }}</p>
+  </div>
+  <div class="card-stats" *ngIf="isJob && jobCard" [style.background]="colors.primary">
+    <span class="stat">{{ jobCard.productivity }}</span>
+    <span class="stat-sep">/</span>
+    <span class="stat">{{ jobCard.resilience }}</span>
+  </div>
+</div>
+
+<!-- MODERNE design (minimalist, clean, large art) -->
+<div class="card-frame moderne" *ngIf="design === 'moderne'"
+     [class.selected]="selected"
+     [style.border-color]="colors.primary">
+  <div class="moderne-cost" [style.background]="colors.primary">{{ card.cost }}</div>
+  <div class="card-art moderne-art" [style.background]="colors.secondary">
+    <img *ngIf="card.image" [src]="card.image" [alt]="card.name" class="card-image" />
+    <i *ngIf="!card.image" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
+  </div>
+  <div class="moderne-body">
+    <div class="moderne-name">{{ card.name }}</div>
+    <div class="moderne-type" [style.color]="colors.primary">
+      <i [class]="typeIcon" style="font-size: 2mm"></i>
+      {{ card.type }} · {{ card.domain }}
+      <span class="rarity-dot" [style.background]="rarityColor"></span>
+    </div>
+    <div class="moderne-text">{{ abilityText }}</div>
+    <div class="moderne-flavor" *ngIf="card.flavorText">{{ card.flavorText }}</div>
+  </div>
+  <div class="moderne-stats" *ngIf="isJob && jobCard" [style.color]="colors.primary">
+    {{ jobCard.productivity }} / {{ jobCard.resilience }}
+  </div>
+</div>
+
+<!-- RETRO design (pixel art borders, chunky) -->
+<div class="card-frame retro" *ngIf="design === 'retro'"
+     [class.selected]="selected"
+     [style.border-color]="colors.primary"
+     [style.background]="colors.secondary">
+  <div class="retro-top" [style.background]="colors.primary">
+    <span class="retro-cost">★{{ card.cost }}</span>
+    <span class="retro-name">{{ card.name }}</span>
+  </div>
+  <div class="retro-art" [style.border-color]="colors.primary">
+    <img *ngIf="card.image" [src]="card.image" [alt]="card.name" class="card-image" />
+    <i *ngIf="!card.image" [class]="domainIcon" class="domain-icon" [style.color]="colors.accent"></i>
+  </div>
+  <div class="retro-bar" [style.background]="colors.accent">
+    <span>{{ card.type }}</span>
+    <span class="retro-domain">{{ card.domain }}</span>
+  </div>
+  <div class="retro-text-box">
+    <p>{{ abilityText }}</p>
+  </div>
+  <div class="retro-footer" [style.background]="colors.primary">
+    <span class="retro-rarity">{{ card.rarity }}</span>
+    <span *ngIf="isJob && jobCard" class="retro-stats">⚔{{ jobCard.productivity }} 🛡{{ jobCard.resilience }}</span>
+  </div>
+</div>
+
+<!-- ELEGANT design (dark theme, gold accents) -->
+<div class="card-frame elegant" *ngIf="design === 'elegant'"
+     [class.selected]="selected">
+  <div class="elegant-border" [style.border-color]="colors.primary">
+    <div class="elegant-header">
+      <span class="elegant-cost" [style.border-color]="colors.primary" [style.color]="colors.primary">{{ card.cost }}</span>
+      <span class="elegant-name">{{ card.name }}</span>
+    </div>
+    <div class="elegant-art">
+      <img *ngIf="card.image" [src]="card.image" [alt]="card.name" class="card-image" />
+      <i *ngIf="!card.image" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
+    </div>
+    <div class="elegant-divider" [style.background]="colors.primary"></div>
+    <div class="elegant-type" [style.color]="colors.primary">
+      {{ card.type }} — {{ card.domain }}
+    </div>
+    <div class="elegant-text">
+      <p class="elegant-ability">{{ abilityText }}</p>
+      <p class="elegant-flavor" *ngIf="card.flavorText">{{ card.flavorText }}</p>
+    </div>
+    <div class="elegant-footer">
+      <span class="elegant-rarity" [style.color]="rarityColor">{{ card.rarity }}</span>
+      <span *ngIf="isJob && jobCard" class="elegant-stats" [style.color]="colors.primary">
+        {{ jobCard.productivity }} / {{ jobCard.resilience }}
+      </span>
+    </div>
+  </div>
+</div>

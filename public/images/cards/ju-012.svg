@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Ink well -->
+  <ellipse cx="70" cy="110" rx="22" ry="8" fill="#4a148c"/>
+  <rect x="48" y="85" width="44" height="25" rx="4" fill="#6a1b9a"/>
+  <ellipse cx="70" cy="85" rx="22" ry="8" fill="#4a148c"/>
+  <ellipse cx="70" cy="85" rx="16" ry="5" fill="#f3e5f5"/>
+  <ellipse cx="70" cy="85" rx="12" ry="4" fill="#4a148c" opacity="0.6"/>
+  <!-- Quill pen -->
+  <line x1="85" y1="80" x2="150" y2="20" stroke="#6a1b9a" stroke-width="2.5"/>
+  <path d="M150,20 L155,15 L148,18 Z" fill="#6a1b9a"/>
+  <path d="M140,28 Q155,22 152,16 L148,18 Q148,26 140,28 Z" fill="#6a1b9a" opacity="0.7"/>
+  <path d="M130,38 Q125,30 140,28 Q135,36 130,38 Z" fill="#6a1b9a" opacity="0.5"/>
+  <path d="M120,48 Q115,40 130,38 Q125,46 120,48 Z" fill="#6a1b9a" opacity="0.5"/>
+  <!-- Ink drip -->
+  <circle cx="87" cy="82" r="2" fill="#4a148c"/>
+</svg>

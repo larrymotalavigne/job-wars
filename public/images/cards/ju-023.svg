@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- High back of chair -->
+  <rect x="60" y="10" width="80" height="85" rx="6" fill="#6a1b9a"/>
+  <!-- Inner back panel -->
+  <rect x="68" y="18" width="64" height="70" rx="4" fill="#4a148c" opacity="0.4"/>
+  <!-- Ornate top finial -->
+  <circle cx="100" cy="12" r="8" fill="#4a148c"/>
+  <polygon points="100,5 96,12 104,12" fill="#4a148c"/>
+  <!-- Side finials -->
+  <circle cx="62" cy="15" r="5" fill="#4a148c"/>
+  <circle cx="138" cy="15" r="5" fill="#4a148c"/>
+  <!-- Armrests -->
+  <rect x="45" y="80" width="20" height="8" rx="3" fill="#6a1b9a"/>
+  <rect x="135" y="80" width="20" height="8" rx="3" fill="#6a1b9a"/>
+  <!-- Arm supports -->
+  <rect x="48" y="88" width="6" height="22" fill="#6a1b9a"/>
+  <rect x="146" y="88" width="6" height="22" fill="#6a1b9a"/>
+  <!-- Seat cushion -->
+  <rect x="60" y="92" width="80" height="15" rx="4" fill="#6a1b9a"/>
+  <rect x="63" y="94" width="74" height="10" rx="3" fill="#4a148c" opacity="0.3"/>
+  <!-- Front legs -->
+  <rect x="65" y="107" width="8" height="30" rx="2" fill="#6a1b9a"/>
+  <rect x="127" y="107" width="8" height="30" rx="2" fill="#6a1b9a"/>
+  <!-- Decorative detail on back -->
+  <circle cx="100" cy="50" r="12" fill="none" stroke="#f3e5f5" stroke-width="1.5" opacity="0.4"/>
+  <polygon points="100,42 102,48 108,48 103,52 105,58 100,54 95,58 97,52 92,48 98,48" fill="#f3e5f5" opacity="0.3"/>
+</svg>

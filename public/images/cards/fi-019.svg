@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Tax stamp outer -->
+  <rect x="20" y="25" width="100" height="100" rx="6" ry="6" fill="#546e7a"/>
+  <rect x="26" y="31" width="88" height="88" rx="4" ry="4" fill="none" stroke="#eceff1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- Inner stamp design -->
+  <circle cx="70" cy="75" r="30" fill="none" stroke="#eceff1" stroke-width="2"/>
+  <circle cx="70" cy="75" r="24" fill="none" stroke="#eceff1" stroke-width="1"/>
+  <!-- Star in center of stamp -->
+  <polygon points="70,55 73,66 85,66 76,73 79,84 70,77 61,84 64,73 55,66 67,66" fill="#eceff1"/>
+  <!-- Decorative lines top and bottom of stamp -->
+  <line x1="35" y1="38" x2="105" y2="38" stroke="#eceff1" stroke-width="1.5"/>
+  <line x1="35" y1="112" x2="105" y2="112" stroke="#eceff1" stroke-width="1.5"/>
+  <!-- Stern eye -->
+  <ellipse cx="155" cy="60" rx="28" ry="16" fill="white" stroke="#37474f" stroke-width="2.5"/>
+  <!-- Iris -->
+  <circle cx="155" cy="60" r="11" fill="#546e7a"/>
+  <!-- Pupil -->
+  <circle cx="155" cy="60" r="5" fill="#37474f"/>
+  <!-- Pupil highlight -->
+  <circle cx="158" cy="57" r="2" fill="#eceff1"/>
+  <!-- Eyebrow (stern/angled down) -->
+  <path d="M130 42 Q142 35 160 38 Q168 40 178 44" stroke="#37474f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Lower eyelid line -->
+  <path d="M130 68 Q142 74 155 76 Q168 74 180 68" stroke="#37474f" stroke-width="1.5" fill="none"/>
+  <!-- Lines under eye suggesting sternness -->
+  <line x1="140" y1="85" x2="170" y2="85" stroke="#546e7a" stroke-width="1.5"/>
+  <line x1="143" y1="92" x2="167" y2="92" stroke="#546e7a" stroke-width="1.5"/>
+  <line x1="146" y1="99" x2="164" y2="99" stroke="#546e7a" stroke-width="1.5"/>
+</svg>

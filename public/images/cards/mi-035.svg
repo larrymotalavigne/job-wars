@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Embuscade: hidden figures in foliage -->
+  <!-- Foliage/bush background -->
+  <ellipse cx="50" cy="90" rx="40" ry="35" fill="#558b2f" opacity="0.4"/>
+  <ellipse cx="100" cy="85" rx="45" ry="40" fill="#558b2f" opacity="0.5"/>
+  <ellipse cx="150" cy="90" rx="40" ry="35" fill="#558b2f" opacity="0.4"/>
+  <!-- Dense foliage layer -->
+  <ellipse cx="70" cy="80" rx="30" ry="25" fill="#558b2f" opacity="0.6"/>
+  <ellipse cx="130" cy="80" rx="30" ry="25" fill="#558b2f" opacity="0.6"/>
+  <ellipse cx="100" cy="75" rx="35" ry="30" fill="#558b2f" opacity="0.5"/>
+  <!-- Leaves -->
+  <ellipse cx="40" cy="70" rx="12" ry="6" fill="#33691e" opacity="0.7" transform="rotate(-20,40,70)"/>
+  <ellipse cx="65" cy="60" rx="12" ry="6" fill="#33691e" opacity="0.7" transform="rotate(15,65,60)"/>
+  <ellipse cx="100" cy="55" rx="14" ry="6" fill="#33691e" opacity="0.7" transform="rotate(-10,100,55)"/>
+  <ellipse cx="135" cy="60" rx="12" ry="6" fill="#33691e" opacity="0.7" transform="rotate(-25,135,60)"/>
+  <ellipse cx="160" cy="70" rx="12" ry="6" fill="#33691e" opacity="0.7" transform="rotate(20,160,70)"/>
+  <!-- Hidden soldier 1 (left) - just helmet and eyes visible -->
+  <path d="M55,82 Q65,72 75,82" fill="#33691e"/>
+  <circle cx="62" cy="80" r="1.5" fill="#f1f8e9"/>
+  <circle cx="68" cy="80" r="1.5" fill="#f1f8e9"/>
+  <!-- Rifle barrel sticking out -->
+  <line x1="78" y1="82" x2="95" y2="78" stroke="#33691e" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Hidden soldier 2 (right) - just helmet and eyes visible -->
+  <path d="M125,82 Q135,72 145,82" fill="#33691e"/>
+  <circle cx="132" cy="80" r="1.5" fill="#f1f8e9"/>
+  <circle cx="138" cy="80" r="1.5" fill="#f1f8e9"/>
+  <!-- Rifle barrel -->
+  <line x1="148" y1="82" x2="165" y2="78" stroke="#33691e" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Ground -->
+  <rect x="0" y="115" width="200" height="35" fill="#558b2f" opacity="0.2"/>
+  <path d="M0,115 Q25,110 50,115 Q75,120 100,115 Q125,110 150,115 Q175,120 200,115" fill="#558b2f" opacity="0.3"/>
+  <!-- More foliage in front -->
+  <ellipse cx="50" cy="110" rx="20" ry="8" fill="#558b2f" opacity="0.6"/>
+  <ellipse cx="100" cy="108" rx="22" ry="8" fill="#558b2f" opacity="0.6"/>
+  <ellipse cx="150" cy="110" rx="20" ry="8" fill="#558b2f" opacity="0.6"/>
+</svg>

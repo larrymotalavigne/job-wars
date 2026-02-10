@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Smartphone body -->
+  <rect x="60" y="8" width="80" height="134" rx="12" ry="12" fill="white" stroke="#1a73e8" stroke-width="2.5"/>
+  <!-- Screen -->
+  <rect x="68" y="26" width="64" height="100" fill="#174ea6"/>
+  <!-- Top speaker -->
+  <rect x="90" y="14" width="20" height="4" rx="2" ry="2" fill="#e8f0fe"/>
+  <!-- Home indicator -->
+  <rect x="88" y="130" width="24" height="4" rx="2" ry="2" fill="#e8f0fe"/>
+  <!-- Code bracket left < -->
+  <polyline points="88,55 78,68 88,81" fill="none" stroke="#1a73e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Code bracket right > -->
+  <polyline points="112,55 122,68 112,81" fill="none" stroke="#1a73e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Slash / in middle -->
+  <line x1="104" y1="52" x2="96" y2="84" stroke="#e8f0fe" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Code lines on screen -->
+  <line x1="74" y1="36" x2="110" y2="36" stroke="#1a73e8" stroke-width="2" opacity="0.5"/>
+  <line x1="74" y1="42" x2="98" y2="42" stroke="#e8f0fe" stroke-width="1.5" opacity="0.4"/>
+  <line x1="74" y1="94" x2="120" y2="94" stroke="#1a73e8" stroke-width="2" opacity="0.5"/>
+  <line x1="74" y1="100" x2="105" y2="100" stroke="#e8f0fe" stroke-width="1.5" opacity="0.4"/>
+  <line x1="74" y1="106" x2="115" y2="106" stroke="#1a73e8" stroke-width="1.5" opacity="0.3"/>
+  <line x1="74" y1="112" x2="95" y2="112" stroke="#e8f0fe" stroke-width="1.5" opacity="0.3"/>
+</svg>

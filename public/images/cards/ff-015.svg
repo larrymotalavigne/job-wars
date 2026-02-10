@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Ground -->
+  <rect x="0" y="115" width="200" height="35" rx="0" ry="0" fill="#ef6c00" opacity="0.2"/>
+  <!-- Left tree trunk -->
+  <rect x="30" y="60" width="8" height="55" fill="#e65100"/>
+  <!-- Left tree canopy -->
+  <polygon points="34,25 15,65 53,65" fill="#ef6c00"/>
+  <!-- Left tree flames -->
+  <path d="M20,30 Q25,15 28,25 Q30,10 34,22 Q38,8 40,25 Q44,12 46,30" fill="#e65100" opacity="0.9"/>
+  <!-- Center tree trunk -->
+  <rect x="68" y="55" width="8" height="60" fill="#e65100"/>
+  <!-- Center tree canopy -->
+  <polygon points="72,20 50,60 94,60" fill="#ef6c00"/>
+  <!-- Center tree flames -->
+  <path d="M55,25 Q60,10 65,22 Q68,5 72,18 Q76,2 80,20 Q84,8 88,28" fill="#e65100" opacity="0.9"/>
+  <!-- Firebreak line (cleared area) -->
+  <rect x="105" y="115" width="8" height="35" fill="#fff3e0"/>
+  <line x1="109" y1="80" x2="109" y2="150" stroke="#e65100" stroke-width="2" stroke-dasharray="6,4"/>
+  <!-- Right tree (safe side) trunk -->
+  <rect x="140" y="55" width="8" height="60" fill="#e65100" opacity="0.5"/>
+  <!-- Right tree canopy (no flames) -->
+  <polygon points="144,20 122,60 166,60" fill="#ef6c00" opacity="0.5"/>
+  <!-- Right tree 2 -->
+  <rect x="168" y="65" width="7" height="50" fill="#e65100" opacity="0.5"/>
+  <polygon points="171,30 153,70 189,70" fill="#ef6c00" opacity="0.5"/>
+</svg>

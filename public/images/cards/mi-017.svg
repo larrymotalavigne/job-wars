@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Parachutiste: parachute descending -->
+  <!-- Parachute canopy -->
+  <path d="M40 45 Q100 -10 160 45 Z" fill="#558b2f"/>
+  <path d="M40 45 Q70 55 100 45 Q70 10 40 45" fill="#33691e" opacity="0.4"/>
+  <path d="M100 45 Q130 55 160 45 Q130 10 100 45" fill="#33691e" opacity="0.4"/>
+  <!-- Canopy panels -->
+  <line x1="60" y1="42" x2="60" y2="10" stroke="#33691e" stroke-width="1" opacity="0.5"/>
+  <line x1="80" y1="38" x2="80" y2="5" stroke="#33691e" stroke-width="1" opacity="0.5"/>
+  <line x1="100" y1="36" x2="100" y2="3" stroke="#33691e" stroke-width="1" opacity="0.5"/>
+  <line x1="120" y1="38" x2="120" y2="5" stroke="#33691e" stroke-width="1" opacity="0.5"/>
+  <line x1="140" y1="42" x2="140" y2="10" stroke="#33691e" stroke-width="1" opacity="0.5"/>
+  <!-- Canopy outline -->
+  <path d="M40 45 Q100 -10 160 45" fill="none" stroke="#33691e" stroke-width="2"/>
+  <!-- Suspension lines -->
+  <line x1="45" y1="45" x2="95" y2="100" stroke="#33691e" stroke-width="1.2"/>
+  <line x1="70" y1="42" x2="97" y2="100" stroke="#33691e" stroke-width="1.2"/>
+  <line x1="100" y1="38" x2="100" y2="100" stroke="#33691e" stroke-width="1.2"/>
+  <line x1="130" y1="42" x2="103" y2="100" stroke="#33691e" stroke-width="1.2"/>
+  <line x1="155" y1="45" x2="105" y2="100" stroke="#33691e" stroke-width="1.2"/>
+  <!-- Soldier figure -->
+  <circle cx="100" cy="105" r="6" fill="#558b2f"/>
+  <rect x="95" y="111" width="10" height="18" rx="3" fill="#558b2f"/>
+  <!-- Arms -->
+  <line x1="95" y1="114" x2="86" y2="120" stroke="#558b2f" stroke-width="3" stroke-linecap="round"/>
+  <line x1="105" y1="114" x2="114" y2="120" stroke="#558b2f" stroke-width="3" stroke-linecap="round"/>
+  <!-- Legs -->
+  <line x1="97" y1="129" x2="92" y2="140" stroke="#558b2f" stroke-width="3" stroke-linecap="round"/>
+  <line x1="103" y1="129" x2="108" y2="140" stroke="#558b2f" stroke-width="3" stroke-linecap="round"/>
+</svg>

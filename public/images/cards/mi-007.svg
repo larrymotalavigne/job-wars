@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Eye symbol with data streams -->
+  <!-- Eye outer shape -->
+  <path d="M30,75 Q100,20 170,75 Q100,130 30,75 Z" fill="#558b2f" opacity="0.2"/>
+  <path d="M30,75 Q100,20 170,75 Q100,130 30,75 Z" fill="none" stroke="#558b2f" stroke-width="3"/>
+  <!-- Iris -->
+  <circle cx="100" cy="75" r="22" fill="#558b2f"/>
+  <!-- Pupil -->
+  <circle cx="100" cy="75" r="10" fill="#33691e"/>
+  <!-- Pupil highlight -->
+  <circle cx="95" cy="70" r="4" fill="#f1f8e9" opacity="0.5"/>
+  <circle cx="104" cy="68" r="2" fill="#f1f8e9" opacity="0.3"/>
+  <!-- Data stream lines - left side -->
+  <line x1="18" y1="35" x2="38" y2="35" stroke="#558b2f" stroke-width="2" opacity="0.4"/>
+  <line x1="22" y1="42" x2="34" y2="42" stroke="#33691e" stroke-width="1.5" opacity="0.3"/>
+  <line x1="15" y1="49" x2="40" y2="49" stroke="#558b2f" stroke-width="1" opacity="0.4"/>
+  <!-- Data stream lines - right side -->
+  <line x1="162" y1="35" x2="182" y2="35" stroke="#558b2f" stroke-width="2" opacity="0.4"/>
+  <line x1="166" y1="42" x2="178" y2="42" stroke="#33691e" stroke-width="1.5" opacity="0.3"/>
+  <line x1="160" y1="49" x2="185" y2="49" stroke="#558b2f" stroke-width="1" opacity="0.4"/>
+  <!-- Binary/data dots around eye -->
+  <circle cx="25" cy="110" r="2" fill="#558b2f" opacity="0.3"/>
+  <circle cx="35" cy="115" r="1.5" fill="#33691e" opacity="0.4"/>
+  <circle cx="28" cy="120" r="2" fill="#558b2f" opacity="0.2"/>
+  <circle cx="172" cy="108" r="2" fill="#558b2f" opacity="0.3"/>
+  <circle cx="178" cy="115" r="1.5" fill="#33691e" opacity="0.4"/>
+  <circle cx="168" cy="118" r="2" fill="#558b2f" opacity="0.2"/>
+  <!-- Circuit-like connecting lines -->
+  <polyline points="20,95 30,95 30,105 40,105" stroke="#558b2f" stroke-width="1" fill="none" opacity="0.3"/>
+  <polyline points="180,95 170,95 170,105 160,105" stroke="#558b2f" stroke-width="1" fill="none" opacity="0.3"/>
+  <!-- Small nodes -->
+  <circle cx="40" cy="105" r="2" fill="#33691e" opacity="0.4"/>
+  <circle cx="160" cy="105" r="2" fill="#33691e" opacity="0.4"/>
+</svg>

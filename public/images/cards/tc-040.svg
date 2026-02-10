@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Sun -->
+  <circle cx="150" cy="30" r="22" fill="#f9a825"/>
+  <line x1="150" y1="2" x2="150" y2="10" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <line x1="150" y1="50" x2="150" y2="58" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <line x1="122" y1="30" x2="130" y2="30" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <line x1="170" y1="30" x2="178" y2="30" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <line x1="134" y1="14" x2="139" y2="19" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <line x1="161" y1="41" x2="166" y2="46" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <line x1="166" y1="14" x2="161" y2="19" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <line x1="139" y1="41" x2="134" y2="46" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <!-- Beach umbrella pole -->
+  <rect x="58" y="45" width="4" height="80" fill="#f57f17"/>
+  <!-- Umbrella canopy -->
+  <path d="M15 50 Q60 -5 105 50 Z" fill="#f9a825"/>
+  <path d="M30 50 Q45 20 60 50" fill="#f57f17" opacity="0.4"/>
+  <path d="M60 50 Q75 20 90 50" fill="#f57f17" opacity="0.4"/>
+  <!-- Sand/ground -->
+  <ellipse cx="100" cy="135" rx="90" ry="15" fill="#f9a825" opacity="0.3"/>
+  <!-- Beach towel -->
+  <rect x="70" y="110" width="50" height="20" rx="2" fill="#f57f17" opacity="0.5" transform="rotate(-5 95 120)"/>
+  <line x1="75" y1="115" x2="115" y2="113" stroke="#fef7e0" stroke-width="1.5" opacity="0.5"/>
+  <line x1="76" y1="122" x2="116" y2="120" stroke="#fef7e0" stroke-width="1.5" opacity="0.5"/>
+  <!-- Sandcastle -->
+  <rect x="135" y="112" width="20" height="18" fill="#f9a825" opacity="0.6"/>
+  <rect x="139" y="105" width="12" height="10" fill="#f9a825" opacity="0.5"/>
+  <polygon points="139,105 145,98 151,105" fill="#f9a825" opacity="0.7"/>
+  <!-- Seagull -->
+  <path d="M30 25 Q35 18 40 25" fill="none" stroke="#f57f17" stroke-width="2" opacity="0.5"/>
+  <path d="M40 25 Q45 18 50 25" fill="none" stroke="#f57f17" stroke-width="2" opacity="0.5"/>
+</svg>

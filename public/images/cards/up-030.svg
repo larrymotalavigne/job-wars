@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e6f4ea"/>
+  <!-- Ground surface -->
+  <rect x="15" y="15" width="170" height="25" fill="#0d652d" opacity="0.15"/>
+  <line x1="15" y1="40" x2="185" y2="40" stroke="#0d652d" stroke-width="2"/>
+  <!-- Underground area -->
+  <rect x="15" y="40" width="170" height="95" fill="#0d652d" opacity="0.06"/>
+  <!-- Main sewer pipe horizontal -->
+  <rect x="15" y="65" width="170" height="20" rx="10" fill="#0d652d" opacity="0.4"/>
+  <rect x="15" y="69" width="170" height="12" rx="6" fill="#e6f4ea" opacity="0.5"/>
+  <!-- Branch pipe left (vertical going up) -->
+  <rect x="50" y="40" width="14" height="28" rx="7" fill="#0d652d" opacity="0.35"/>
+  <rect x="53" y="40" width="8" height="28" rx="4" fill="#e6f4ea" opacity="0.4"/>
+  <!-- Branch pipe center -->
+  <rect x="95" y="40" width="14" height="28" rx="7" fill="#0d652d" opacity="0.35"/>
+  <rect x="98" y="40" width="8" height="28" rx="4" fill="#e6f4ea" opacity="0.4"/>
+  <!-- Branch pipe right -->
+  <rect x="140" y="40" width="14" height="28" rx="7" fill="#0d652d" opacity="0.35"/>
+  <rect x="143" y="40" width="8" height="28" rx="4" fill="#e6f4ea" opacity="0.4"/>
+  <!-- Lower secondary pipe -->
+  <rect x="30" y="100" width="140" height="16" rx="8" fill="#0d652d" opacity="0.3"/>
+  <rect x="30" y="103" width="140" height="10" rx="5" fill="#e6f4ea" opacity="0.4"/>
+  <!-- Connecting vertical pipes -->
+  <rect x="70" y="82" width="10" height="22" rx="5" fill="#0d652d" opacity="0.3"/>
+  <rect x="125" y="82" width="10" height="22" rx="5" fill="#0d652d" opacity="0.3"/>
+  <!-- Manhole covers on surface -->
+  <rect x="52" y="12" width="10" height="6" rx="2" fill="#0d652d" opacity="0.5"/>
+  <rect x="97" y="12" width="10" height="6" rx="2" fill="#0d652d" opacity="0.5"/>
+  <rect x="142" y="12" width="10" height="6" rx="2" fill="#0d652d" opacity="0.5"/>
+  <!-- Flow arrows in main pipe -->
+  <polygon points="40,75 48,71 48,79" fill="#0d652d" opacity="0.3"/>
+  <polygon points="80,75 88,71 88,79" fill="#0d652d" opacity="0.3"/>
+  <polygon points="120,75 128,71 128,79" fill="#0d652d" opacity="0.3"/>
+  <polygon points="160,75 168,71 168,79" fill="#0d652d" opacity="0.3"/>
+</svg>

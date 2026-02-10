@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Jumelles de Vision Nocturne: night vision goggles -->
+  <!-- Head strap -->
+  <path d="M30,65 Q30,40 100,38 Q170,40 170,65" fill="none" stroke="#33691e" stroke-width="4"/>
+  <!-- Bridge piece -->
+  <rect x="85" y="58" width="30" height="20" rx="3" fill="#33691e"/>
+  <!-- Left tube -->
+  <rect x="38" y="50" width="48" height="40" rx="8" fill="#558b2f"/>
+  <rect x="42" y="54" width="40" height="32" rx="6" fill="#33691e"/>
+  <!-- Left lens -->
+  <circle cx="62" cy="70" r="16" fill="#558b2f"/>
+  <circle cx="62" cy="70" r="12" fill="#33691e"/>
+  <circle cx="62" cy="70" r="8" fill="#558b2f" opacity="0.4"/>
+  <circle cx="62" cy="70" r="4" fill="#f1f8e9" opacity="0.3"/>
+  <!-- Right tube -->
+  <rect x="114" y="50" width="48" height="40" rx="8" fill="#558b2f"/>
+  <rect x="118" y="54" width="40" height="32" rx="6" fill="#33691e"/>
+  <!-- Right lens -->
+  <circle cx="138" cy="70" r="16" fill="#558b2f"/>
+  <circle cx="138" cy="70" r="12" fill="#33691e"/>
+  <circle cx="138" cy="70" r="8" fill="#558b2f" opacity="0.4"/>
+  <circle cx="138" cy="70" r="4" fill="#f1f8e9" opacity="0.3"/>
+  <!-- Mount bracket on top -->
+  <rect x="90" y="42" width="20" height="10" rx="2" fill="#33691e"/>
+  <rect x="95" y="35" width="10" height="10" rx="2" fill="#558b2f"/>
+  <!-- Battery pack -->
+  <rect x="80" y="95" width="40" height="18" rx="3" fill="#558b2f"/>
+  <rect x="83" y="98" width="34" height="12" rx="2" fill="#33691e"/>
+  <!-- Wire to battery -->
+  <line x1="100" y1="90" x2="100" y2="95" stroke="#33691e" stroke-width="2"/>
+</svg>

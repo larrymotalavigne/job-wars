@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Emergency stretcher bed -->
+  <rect x="30" y="55" width="140" height="10" rx="3" ry="3" fill="#00897b"/>
+  <!-- Mattress pad -->
+  <rect x="35" y="45" width="130" height="12" rx="2" ry="2" fill="#00695c"/>
+  <!-- Pillow -->
+  <rect x="130" y="38" width="30" height="9" rx="4" ry="4" fill="#00897b"/>
+  <!-- Side rails -->
+  <rect x="35" y="35" width="3" height="22" rx="1" fill="#00695c"/>
+  <rect x="162" y="35" width="3" height="22" rx="1" fill="#00695c"/>
+  <!-- Strap 1 -->
+  <rect x="55" y="48" width="5" height="25" rx="1" fill="#00695c" opacity="0.7"/>
+  <rect x="50" y="71" width="15" height="4" rx="2" fill="#00695c"/>
+  <!-- Strap buckle 1 -->
+  <rect x="53" y="71" width="4" height="4" fill="#e0f2f1" opacity="0.5"/>
+  <!-- Strap 2 -->
+  <rect x="100" y="48" width="5" height="25" rx="1" fill="#00695c" opacity="0.7"/>
+  <rect x="95" y="71" width="15" height="4" rx="2" fill="#00695c"/>
+  <!-- Strap buckle 2 -->
+  <rect x="98" y="71" width="4" height="4" fill="#e0f2f1" opacity="0.5"/>
+  <!-- Left legs -->
+  <rect x="45" y="65" width="4" height="35" fill="#00897b"/>
+  <rect x="65" y="65" width="4" height="35" fill="#00897b"/>
+  <!-- Right legs -->
+  <rect x="130" y="65" width="4" height="35" fill="#00897b"/>
+  <rect x="150" y="65" width="4" height="35" fill="#00897b"/>
+  <!-- Cross bars -->
+  <line x1="47" y1="85" x2="67" y2="85" stroke="#00695c" stroke-width="2"/>
+  <line x1="132" y1="85" x2="152" y2="85" stroke="#00695c" stroke-width="2"/>
+  <!-- Wheels -->
+  <circle cx="47" cy="105" r="7" fill="none" stroke="#00695c" stroke-width="2.5"/>
+  <circle cx="47" cy="105" r="2" fill="#00695c"/>
+  <circle cx="67" cy="105" r="7" fill="none" stroke="#00695c" stroke-width="2.5"/>
+  <circle cx="67" cy="105" r="2" fill="#00695c"/>
+  <circle cx="132" cy="105" r="7" fill="none" stroke="#00695c" stroke-width="2.5"/>
+  <circle cx="132" cy="105" r="2" fill="#00695c"/>
+  <circle cx="152" cy="105" r="7" fill="none" stroke="#00695c" stroke-width="2.5"/>
+  <circle cx="152" cy="105" r="2" fill="#00695c"/>
+  <!-- Urgency cross -->
+  <rect x="80" y="118" width="16" height="5" rx="1" fill="#00695c" opacity="0.5"/>
+  <rect x="85.5" y="113" width="5" height="16" rx="1" fill="#00695c" opacity="0.5"/>
+</svg>

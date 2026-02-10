@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Brain outline -->
+  <path d="M55 75 Q55 30 100 25 Q145 30 145 75 Q145 110 100 115 Q55 110 55 75Z" fill="#00897b"/>
+  <!-- Brain folds left -->
+  <path d="M65 55 Q80 45 95 55" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M60 72 Q78 62 96 72" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M62 88 Q78 80 92 90" stroke="#00695c" stroke-width="2" fill="none"/>
+  <!-- Brain center line -->
+  <path d="M100 30 Q98 70 100 110" stroke="#00695c" stroke-width="2" fill="none"/>
+  <!-- Brain folds right -->
+  <path d="M105 55 Q120 45 135 55" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M104 72 Q122 62 140 72" stroke="#00695c" stroke-width="2" fill="none"/>
+  <path d="M108 90 Q122 80 138 88" stroke="#00695c" stroke-width="2" fill="none"/>
+  <!-- Puzzle piece cutout area (bottom right) -->
+  <path d="M115 80 L135 80 L135 72 Q140 68 145 72 L145 80 L145 95 L137 95 Q133 100 137 105 L145 105 L145 115 Q130 118 115 110 Z" fill="#e0f2f1"/>
+  <!-- Puzzle piece floating -->
+  <path d="M150 85 L165 85 L165 78 Q170 74 175 78 L175 85 L175 100 L168 100 Q164 105 168 110 L175 110 L175 120 L150 120 L150 112 Q145 108 150 103 L150 100 Z" fill="#00695c"/>
+  <!-- Puzzle piece connector bumps matching -->
+  <circle cx="142" cy="97" r="4" fill="#e0f2f1"/>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e8f0fe"/>
+
+  <!-- Terminal window -->
+  <rect x="30" y="18" width="140" height="114" rx="8" fill="#1a1a2e" stroke="#1a73e8" stroke-width="2.5"/>
+
+  <!-- Title bar -->
+  <rect x="30" y="18" width="140" height="20" rx="8" fill="#1a73e8" opacity="0.85"/>
+  <rect x="30" y="30" width="140" height="8" fill="#1a73e8" opacity="0.85"/>
+
+  <!-- Window buttons -->
+  <circle cx="44" cy="28" r="3.5" fill="#ff5f57" opacity="0.9"/>
+  <circle cx="56" cy="28" r="3.5" fill="#ffbd2e" opacity="0.9"/>
+  <circle cx="68" cy="28" r="3.5" fill="#28ca41" opacity="0.9"/>
+
+  <!-- Terminal content area -->
+  <rect x="34" y="42" width="132" height="86" rx="3" fill="#0d1117"/>
+
+  <!-- Skull made of brackets and symbols -->
+  <!-- Forehead line -->
+  <g fill="none" stroke="#1a73e8" stroke-width="1.8" stroke-linecap="round" opacity="0.9">
+    <!-- Top of skull: curly braces -->
+    <path d="M78,56 Q74,56 74,60 Q74,64 70,64" />
+    <path d="M122,56 Q126,56 126,60 Q126,64 130,64" />
+    <path d="M78,56 L122,56" />
+  </g>
+
+  <!-- Eyes: parentheses as eye sockets -->
+  <g fill="none" stroke="#1a73e8" stroke-width="2" stroke-linecap="round">
+    <!-- Left eye ( o ) -->
+    <path d="M80,68 Q76,75 80,82" />
+    <circle cx="84" cy="75" r="3" fill="#1a73e8" opacity="0.8"/>
+    <path d="M88,68 Q92,75 88,82" />
+
+    <!-- Right eye ( o ) -->
+    <path d="M108,68 Q104,75 108,82" />
+    <circle cx="112" cy="75" r="3" fill="#1a73e8" opacity="0.8"/>
+    <path d="M116,68 Q120,75 116,82" />
+  </g>
+
+  <!-- Nose: caret ^ -->
+  <polyline points="95,86 100,80 105,86" fill="none" stroke="#1a73e8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+
+  <!-- Mouth: brackets as teeth -->
+  <g fill="none" stroke="#1a73e8" stroke-width="1.5" stroke-linecap="round" opacity="0.8">
+    <line x1="82" y1="94" x2="118" y2="94"/>
+    <line x1="88" y1="90" x2="88" y2="98"/>
+    <line x1="95" y1="90" x2="95" y2="98"/>
+    <line x1="102" y1="90" x2="102" y2="98"/>
+    <line x1="109" y1="90" x2="109" y2="98"/>
+    <line x1="82" y1="90" x2="82" y2="98"/>
+    <line x1="118" y1="90" x2="118" y2="98"/>
+  </g>
+
+  <!-- Bottom brace for jaw -->
+  <g fill="none" stroke="#1a73e8" stroke-width="1.8" stroke-linecap="round" opacity="0.9">
+    <path d="M78,100 Q74,100 74,96 Q74,94 70,94" />
+    <path d="M122,100 Q126,100 126,96 Q126,94 130,94" />
+    <path d="M78,100 L122,100" />
+  </g>
+
+  <!-- Blinking cursor -->
+  <rect x="72" y="110" width="2" height="8" fill="#1a73e8" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Prompt character -->
+  <polyline points="40,114 46,110 40,106" fill="none" stroke="#28ca41" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Command text lines (decorative) -->
+  <line x1="50" y1="110" x2="68" y2="110" stroke="#1a73e8" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+</svg>

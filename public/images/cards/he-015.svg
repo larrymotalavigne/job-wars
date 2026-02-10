@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Spine/back -->
+  <path d="M100 20 Q100 75 100 130" stroke="#00695c" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Vertebrae -->
+  <ellipse cx="100" cy="30" rx="10" ry="5" fill="#00897b" opacity="0.6"/>
+  <ellipse cx="100" cy="45" rx="11" ry="5" fill="#00897b" opacity="0.6"/>
+  <ellipse cx="100" cy="60" rx="12" ry="5" fill="#00897b" opacity="0.6"/>
+  <ellipse cx="100" cy="75" rx="12" ry="5" fill="#00897b" opacity="0.6"/>
+  <ellipse cx="100" cy="90" rx="11" ry="5" fill="#00897b" opacity="0.6"/>
+  <ellipse cx="100" cy="105" rx="10" ry="5" fill="#00897b" opacity="0.6"/>
+  <ellipse cx="100" cy="120" rx="9" ry="4" fill="#00897b" opacity="0.6"/>
+  <!-- Left hand -->
+  <ellipse cx="62" cy="58" rx="18" ry="12" fill="#00897b" transform="rotate(-20 62 58)"/>
+  <!-- Left fingers -->
+  <ellipse cx="52" cy="48" rx="4" ry="8" fill="#00897b" transform="rotate(-30 52 48)"/>
+  <ellipse cx="58" cy="44" rx="4" ry="8" fill="#00897b" transform="rotate(-15 58 44)"/>
+  <ellipse cx="65" cy="43" rx="4" ry="8" fill="#00897b" transform="rotate(0 65 43)"/>
+  <ellipse cx="72" cy="45" rx="4" ry="7" fill="#00897b" transform="rotate(15 72 45)"/>
+  <!-- Right hand -->
+  <ellipse cx="138" cy="78" rx="18" ry="12" fill="#00897b" transform="rotate(20 138 78)"/>
+  <!-- Right fingers -->
+  <ellipse cx="148" cy="68" rx="4" ry="8" fill="#00897b" transform="rotate(30 148 68)"/>
+  <ellipse cx="142" cy="64" rx="4" ry="8" fill="#00897b" transform="rotate(15 142 64)"/>
+  <ellipse cx="135" cy="63" rx="4" ry="8" fill="#00897b" transform="rotate(0 135 63)"/>
+  <ellipse cx="128" cy="65" rx="4" ry="7" fill="#00897b" transform="rotate(-15 128 65)"/>
+  <!-- Motion lines -->
+  <path d="M75 55 Q85 52 88 58" stroke="#00695c" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M112 78 Q122 75 125 82" stroke="#00695c" stroke-width="1.5" fill="none" opacity="0.5"/>
+</svg>

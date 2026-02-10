@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e6f4ea"/>
+  <!-- Recycling circle arrows -->
+  <!-- Arrow 1: top-right -->
+  <path d="M120,38 A40,40 0 0,1 130,95" fill="none" stroke="#0d652d" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="126,98 138,96 130,86" fill="#0d652d"/>
+  <!-- Arrow 2: bottom -->
+  <path d="M125,100 A40,40 0 0,1 72,100" fill="none" stroke="#0d652d" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="69,96 65,108 78,104" fill="#0d652d"/>
+  <!-- Arrow 3: top-left -->
+  <path d="M70,95 A40,40 0 0,1 80,38" fill="none" stroke="#0d652d" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="83,41 75,30 72,44" fill="#0d652d"/>
+  <!-- Leaf shape centered -->
+  <path d="M100,42 Q125,50 128,75 Q120,95 100,105 Q80,95 72,75 Q75,50 100,42 Z" fill="#1a8a3e" opacity="0.75"/>
+  <!-- Leaf center vein -->
+  <line x1="100" y1="48" x2="100" y2="100" stroke="#0d652d" stroke-width="2" stroke-linecap="round"/>
+  <!-- Leaf side veins -->
+  <line x1="100" y1="58" x2="115" y2="54" stroke="#0d652d" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="100" y1="68" x2="120" y2="62" stroke="#0d652d" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="100" y1="78" x2="118" y2="74" stroke="#0d652d" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="100" y1="88" x2="113" y2="86" stroke="#0d652d" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="100" y1="58" x2="85" y2="54" stroke="#0d652d" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="100" y1="68" x2="80" y2="62" stroke="#0d652d" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="100" y1="78" x2="82" y2="74" stroke="#0d652d" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="100" y1="88" x2="87" y2="86" stroke="#0d652d" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Leaf stem -->
+  <path d="M100,105 Q102,115 108,122" fill="none" stroke="#0d652d" stroke-width="2" stroke-linecap="round"/>
+</svg>

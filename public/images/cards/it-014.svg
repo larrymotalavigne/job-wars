@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Board background -->
+  <rect x="15" y="15" width="170" height="120" rx="6" ry="6" fill="white" stroke="#1a73e8" stroke-width="2"/>
+  <!-- Column dividers -->
+  <line x1="72" y1="15" x2="72" y2="135" stroke="#1a73e8" stroke-width="1.5"/>
+  <line x1="129" y1="15" x2="129" y2="135" stroke="#1a73e8" stroke-width="1.5"/>
+  <!-- Column header bars -->
+  <rect x="15" y="15" width="57" height="16" fill="#174ea6"/>
+  <rect x="72" y="15" width="57" height="16" fill="#174ea6"/>
+  <rect x="129" y="15" width="56" height="16" rx="0" fill="#174ea6"/>
+  <!-- Header dots -->
+  <circle cx="44" cy="23" r="3" fill="white"/>
+  <circle cx="100" cy="23" r="3" fill="white"/>
+  <circle cx="157" cy="23" r="3" fill="white"/>
+  <!-- To Do sticky notes -->
+  <rect x="22" y="38" width="42" height="20" rx="2" fill="#fbbc04"/>
+  <rect x="22" y="63" width="42" height="20" rx="2" fill="#fbbc04"/>
+  <rect x="22" y="88" width="42" height="20" rx="2" fill="#fbbc04"/>
+  <!-- In Progress sticky notes -->
+  <rect x="79" y="38" width="42" height="20" rx="2" fill="#1a73e8"/>
+  <rect x="79" y="63" width="42" height="20" rx="2" fill="#1a73e8"/>
+  <!-- Done sticky notes -->
+  <rect x="136" y="38" width="42" height="20" rx="2" fill="#34a853"/>
+  <rect x="136" y="63" width="42" height="20" rx="2" fill="#34a853"/>
+  <rect x="136" y="88" width="42" height="20" rx="2" fill="#34a853"/>
+  <!-- Lines on sticky notes -->
+  <line x1="26" y1="46" x2="58" y2="46" stroke="white" stroke-width="1" opacity="0.6"/>
+  <line x1="26" y1="51" x2="50" y2="51" stroke="white" stroke-width="1" opacity="0.6"/>
+</svg>

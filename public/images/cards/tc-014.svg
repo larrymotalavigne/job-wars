@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Bookshelf frame -->
+  <rect x="30" y="25" width="110" height="105" rx="3" fill="#f57f17"/>
+  <rect x="34" y="29" width="102" height="97" fill="#fef7e0"/>
+  <!-- Shelf divider -->
+  <rect x="30" y="72" width="110" height="4" fill="#f57f17"/>
+  <!-- Top shelf books -->
+  <rect x="38" y="33" width="12" height="35" rx="1" fill="#f9a825"/>
+  <rect x="52" y="36" width="10" height="32" rx="1" fill="#f57f17"/>
+  <rect x="64" y="33" width="14" height="35" rx="1" fill="#f9a825"/>
+  <rect x="80" y="38" width="10" height="30" rx="1" fill="#f57f17"/>
+  <rect x="92" y="33" width="12" height="35" rx="1" fill="#f9a825"/>
+  <rect x="106" y="35" width="11" height="33" rx="1" fill="#f57f17"/>
+  <rect x="119" y="33" width="13" height="35" rx="1" fill="#f9a825"/>
+  <!-- Bottom shelf books -->
+  <rect x="38" y="80" width="14" height="38" rx="1" fill="#f57f17"/>
+  <rect x="54" y="83" width="11" height="35" rx="1" fill="#f9a825"/>
+  <rect x="67" y="80" width="13" height="38" rx="1" fill="#f57f17"/>
+  <rect x="82" y="85" width="10" height="33" rx="1" fill="#f9a825"/>
+  <rect x="94" y="80" width="15" height="38" rx="1" fill="#f57f17"/>
+  <rect x="111" y="82" width="12" height="36" rx="1" fill="#f9a825"/>
+  <!-- Lamp base -->
+  <rect x="155" y="100" width="30" height="4" rx="2" fill="#f57f17"/>
+  <!-- Lamp stand -->
+  <rect x="168" y="55" width="4" height="45" fill="#f57f17"/>
+  <!-- Lamp shade -->
+  <polygon points="155,55 185,55 180,35 160,35" fill="#f9a825"/>
+  <!-- Light rays -->
+  <line x1="162" y1="58" x2="155" y2="75" stroke="#f9a825" stroke-width="1.5" opacity="0.5"/>
+  <line x1="170" y1="58" x2="170" y2="78" stroke="#f9a825" stroke-width="1.5" opacity="0.5"/>
+  <line x1="178" y1="58" x2="185" y2="75" stroke="#f9a825" stroke-width="1.5" opacity="0.5"/>
+</svg>

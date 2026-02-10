@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e6f4ea"/>
+  <!-- Map border -->
+  <rect x="20" y="15" width="160" height="120" rx="3" fill="none" stroke="#0d652d" stroke-width="2"/>
+  <!-- Land parcel divisions - irregular polygon shapes -->
+  <!-- Parcel 1 -->
+  <polygon points="22,17 80,17 75,55 22,50" fill="#0d652d" opacity="0.12" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Parcel 2 -->
+  <polygon points="80,17 140,17 145,50 75,55" fill="#0d652d" opacity="0.22" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Parcel 3 -->
+  <polygon points="140,17 178,17 178,55 145,50" fill="#0d652d" opacity="0.15" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Parcel 4 -->
+  <polygon points="22,50 75,55 70,95 22,90" fill="#0d652d" opacity="0.25" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Parcel 5 (center) -->
+  <polygon points="75,55 145,50 150,95 70,95" fill="#0d652d" opacity="0.18" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Parcel 6 -->
+  <polygon points="145,50 178,55 178,90 150,95" fill="#0d652d" opacity="0.28" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Parcel 7 -->
+  <polygon points="22,90 70,95 65,133 22,133" fill="#0d652d" opacity="0.2" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Parcel 8 -->
+  <polygon points="70,95 150,95 145,133 65,133" fill="#0d652d" opacity="0.1" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Parcel 9 -->
+  <polygon points="150,95 178,90 178,133 145,133" fill="#0d652d" opacity="0.22" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Parcel number dots -->
+  <circle cx="48" cy="35" r="3" fill="#0d652d" opacity="0.4"/>
+  <circle cx="108" cy="35" r="3" fill="#0d652d" opacity="0.4"/>
+  <circle cx="160" cy="35" r="3" fill="#0d652d" opacity="0.4"/>
+  <circle cx="45" cy="72" r="3" fill="#0d652d" opacity="0.4"/>
+  <circle cx="110" cy="75" r="3" fill="#0d652d" opacity="0.4"/>
+  <circle cx="163" cy="72" r="3" fill="#0d652d" opacity="0.4"/>
+  <circle cx="42" cy="112" r="3" fill="#0d652d" opacity="0.4"/>
+  <circle cx="105" cy="114" r="3" fill="#0d652d" opacity="0.4"/>
+  <circle cx="162" cy="112" r="3" fill="#0d652d" opacity="0.4"/>
+  <!-- Road through the middle -->
+  <line x1="22" y1="50" x2="178" y2="52" stroke="#0d652d" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,2"/>
+  <line x1="22" y1="90" x2="178" y2="90" stroke="#0d652d" stroke-width="0.8" opacity="0.3" stroke-dasharray="4,2"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Water/waves at bottom -->
+  <path d="M0 120 Q25 110 50 120 Q75 130 100 120 Q125 110 150 120 Q175 130 200 120 L200 150 L0 150 Z" fill="#558b2f" opacity="0.2"/>
+  <path d="M0 125 Q25 115 50 125 Q75 135 100 125 Q125 115 150 125 Q175 135 200 125 L200 150 L0 150 Z" fill="#558b2f" opacity="0.15"/>
+  <!-- Landing craft hull -->
+  <polygon points="30,95 170,95 180,120 20,120" fill="#558b2f"/>
+  <rect x="30" y="85" width="140" height="12" fill="#33691e"/>
+  <!-- Ramp (open front) -->
+  <polygon points="30,85 10,60 30,60 30,85" fill="#558b2f"/>
+  <polygon points="170,85 190,60 170,60 170,85" fill="#558b2f"/>
+  <rect x="30" y="60" width="140" height="5" fill="#33691e"/>
+  <!-- Ramp lowered -->
+  <rect x="60" y="60" width="80" height="4" fill="#558b2f" opacity="0.6"/>
+  <line x1="60" y1="62" x2="60" y2="50" stroke="#33691e" stroke-width="3"/>
+  <line x1="140" y1="62" x2="140" y2="50" stroke="#33691e" stroke-width="3"/>
+  <!-- Soldiers disembarking -->
+  <!-- Soldier 1 -->
+  <circle cx="75" cy="42" r="5" fill="#33691e"/>
+  <rect x="72" y="47" width="6" height="12" fill="#558b2f"/>
+  <line x1="75" y1="59" x2="72" y2="70" stroke="#33691e" stroke-width="2.5"/>
+  <line x1="75" y1="59" x2="78" y2="70" stroke="#33691e" stroke-width="2.5"/>
+  <!-- Soldier 2 -->
+  <circle cx="95" cy="40" r="5" fill="#33691e"/>
+  <rect x="92" y="45" width="6" height="12" fill="#558b2f"/>
+  <line x1="95" y1="57" x2="92" y2="68" stroke="#33691e" stroke-width="2.5"/>
+  <line x1="95" y1="57" x2="98" y2="68" stroke="#33691e" stroke-width="2.5"/>
+  <!-- Soldier 3 -->
+  <circle cx="115" cy="44" r="5" fill="#33691e"/>
+  <rect x="112" y="49" width="6" height="12" fill="#558b2f"/>
+  <line x1="115" y1="61" x2="112" y2="72" stroke="#33691e" stroke-width="2.5"/>
+  <line x1="115" y1="61" x2="118" y2="72" stroke="#33691e" stroke-width="2.5"/>
+  <!-- Beach/shore -->
+  <rect x="0" y="115" width="20" height="35" rx="5" fill="#558b2f" opacity="0.15"/>
+  <rect x="180" y="115" width="20" height="35" rx="5" fill="#558b2f" opacity="0.15"/>
+  <!-- Motion lines -->
+  <line x1="45" y1="100" x2="25" y2="100" stroke="#33691e" stroke-width="1.5" opacity="0.4"/>
+  <line x1="45" y1="105" x2="20" y2="105" stroke="#33691e" stroke-width="1.5" opacity="0.3"/>
+  <line x1="45" y1="110" x2="28" y2="110" stroke="#33691e" stroke-width="1.5" opacity="0.2"/>
+  <!-- Small flag on craft -->
+  <line x1="165" y1="65" x2="165" y2="45" stroke="#33691e" stroke-width="2"/>
+  <polygon points="165,45 180,50 165,55" fill="#558b2f"/>
+</svg>

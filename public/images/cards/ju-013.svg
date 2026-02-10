@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Balance scale above -->
+  <line x1="100" y1="18" x2="100" y2="45" stroke="#6a1b9a" stroke-width="3"/>
+  <line x1="65" y1="35" x2="135" y2="35" stroke="#6a1b9a" stroke-width="2.5"/>
+  <circle cx="100" cy="18" r="4" fill="#4a148c"/>
+  <!-- Left pan -->
+  <line x1="65" y1="35" x2="55" y2="50" stroke="#6a1b9a" stroke-width="1.5"/>
+  <line x1="65" y1="35" x2="75" y2="50" stroke="#6a1b9a" stroke-width="1.5"/>
+  <path d="M50,50 Q65,58 80,50" stroke="#6a1b9a" stroke-width="2" fill="none"/>
+  <!-- Right pan -->
+  <line x1="135" y1="35" x2="125" y2="50" stroke="#6a1b9a" stroke-width="1.5"/>
+  <line x1="135" y1="35" x2="145" y2="50" stroke="#6a1b9a" stroke-width="1.5"/>
+  <path d="M120,50 Q135,58 150,50" stroke="#6a1b9a" stroke-width="2" fill="none"/>
+  <!-- Left hand -->
+  <path d="M75,80 Q72,72 78,68 Q82,65 86,68 L92,74 Q96,68 100,68 Q104,68 104,74 L104,90 Q104,100 95,100 L82,100 Q75,100 75,93 Z" fill="#6a1b9a"/>
+  <!-- Right hand -->
+  <path d="M125,80 Q128,72 122,68 Q118,65 114,68 L108,74 Q104,68 100,68 Q96,68 96,74 L96,90 Q96,100 105,100 L118,100 Q125,100 125,93 Z" fill="#4a148c"/>
+  <!-- Handshake overlap -->
+  <rect x="95" y="72" width="10" height="20" rx="3" fill="#6a1b9a" opacity="0.7"/>
+</svg>

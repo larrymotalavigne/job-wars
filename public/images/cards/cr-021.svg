@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Gemstone -->
+  <polygon points="70,45 90,30 110,45 105,75 75,75" fill="#795548" stroke="#4e342e" stroke-width="2"/>
+  <!-- Gemstone facets -->
+  <line x1="90" y1="30" x2="85" y2="75" stroke="#4e342e" stroke-width="1"/>
+  <line x1="90" y1="30" x2="95" y2="75" stroke="#4e342e" stroke-width="1"/>
+  <line x1="70" y1="45" x2="90" y2="55" stroke="#4e342e" stroke-width="1"/>
+  <line x1="110" y1="45" x2="90" y2="55" stroke="#4e342e" stroke-width="1"/>
+  <line x1="75" y1="75" x2="90" y2="55" stroke="#4e342e" stroke-width="1"/>
+  <line x1="105" y1="75" x2="90" y2="55" stroke="#4e342e" stroke-width="1"/>
+  <!-- Gemstone top facet highlight -->
+  <polygon points="90,30 70,45 90,55" fill="#efebe9" opacity="0.2"/>
+  <!-- Sparkles around gem -->
+  <polygon points="55,35 57,30 59,35 64,37 59,39 57,44 55,39 50,37" fill="#795548" opacity="0.5"/>
+  <polygon points="115,32 117,28 119,32 123,34 119,36 117,40 115,36 111,34" fill="#795548" opacity="0.5"/>
+  <!-- Jeweler's loupe -->
+  <circle cx="150" cy="90" r="22" fill="none" stroke="#4e342e" stroke-width="3"/>
+  <circle cx="150" cy="90" r="18" fill="#efebe9" opacity="0.3" stroke="#795548" stroke-width="1"/>
+  <!-- Loupe handle -->
+  <rect x="145" y="110" width="10" height="25" rx="3" fill="#4e342e"/>
+  <!-- Loupe rim detail -->
+  <circle cx="150" cy="90" r="20" fill="none" stroke="#795548" stroke-width="1" opacity="0.5"/>
+</svg>

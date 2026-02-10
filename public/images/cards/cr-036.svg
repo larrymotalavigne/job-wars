@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Workshop building -->
+  <rect x="35" y="55" width="130" height="75" fill="#795548" stroke="#4e342e" stroke-width="2"/>
+  <!-- Roof -->
+  <polygon points="30,55 100,20 170,55" fill="#4e342e"/>
+  <!-- Door -->
+  <rect x="80" y="85" width="30" height="45" rx="2" fill="#4e342e"/>
+  <!-- Windows -->
+  <rect x="45" y="70" width="25" height="20" rx="2" fill="#efebe9" opacity="0.5" stroke="#4e342e" stroke-width="1"/>
+  <rect x="125" y="70" width="25" height="20" rx="2" fill="#efebe9" opacity="0.5" stroke="#4e342e" stroke-width="1"/>
+  <!-- Window cross bars -->
+  <line x1="57" y1="70" x2="57" y2="90" stroke="#4e342e" stroke-width="1"/>
+  <line x1="45" y1="80" x2="70" y2="80" stroke="#4e342e" stroke-width="1"/>
+  <line x1="137" y1="70" x2="137" y2="90" stroke="#4e342e" stroke-width="1"/>
+  <line x1="125" y1="80" x2="150" y2="80" stroke="#4e342e" stroke-width="1"/>
+  <!-- Flames from roof -->
+  <path d="M60,55 Q55,35 65,25 Q68,20 65,15 Q72,22 75,18 Q72,30 78,25 Q75,40 80,35 Q76,50 70,55" fill="#795548" opacity="0.8"/>
+  <path d="M100,20 Q95,5 105,-5 Q108,-8 105,-12 Q112,-5 115,-8 Q112,5 118,0 Q115,12 120,8 Q115,18 100,20" fill="#795548" opacity="0.8"/>
+  <path d="M130,55 Q125,38 135,28 Q138,22 135,18 Q142,25 145,20 Q142,32 148,28 Q145,42 150,38 Q146,50 140,55" fill="#795548" opacity="0.8"/>
+  <!-- Flames from windows -->
+  <path d="M50,70 Q48,60 55,55" fill="#795548" opacity="0.6"/>
+  <path d="M140,70 Q138,60 145,55" fill="#795548" opacity="0.6"/>
+  <!-- Smoke -->
+  <circle cx="85" cy="8" r="8" fill="#795548" opacity="0.3"/>
+  <circle cx="100" cy="0" r="10" fill="#795548" opacity="0.2"/>
+  <circle cx="115" cy="5" r="7" fill="#795548" opacity="0.25"/>
+</svg>

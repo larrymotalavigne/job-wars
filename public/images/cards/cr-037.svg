@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Podium - 1st place (center, tallest) -->
+  <rect x="75" y="55" width="50" height="75" rx="3" fill="#795548" stroke="#4e342e" stroke-width="2"/>
+  <!-- Podium - 2nd place (left) -->
+  <rect x="25" y="80" width="50" height="50" rx="3" fill="#795548" stroke="#4e342e" stroke-width="2" opacity="0.8"/>
+  <!-- Podium - 3rd place (right) -->
+  <rect x="125" y="90" width="50" height="40" rx="3" fill="#795548" stroke="#4e342e" stroke-width="2" opacity="0.6"/>
+  <!-- Position markers -->
+  <circle cx="50" cy="95" r="8" fill="#4e342e"/>
+  <circle cx="100" cy="70" r="8" fill="#4e342e"/>
+  <circle cx="150" cy="105" r="8" fill="#4e342e"/>
+  <!-- Number indicators (geometric, not text) -->
+  <rect x="98" y="66" width="4" height="8" rx="1" fill="#efebe9"/>
+  <rect x="46" y="93" width="8" height="4" rx="1" fill="#efebe9"/>
+  <rect x="46" y="91" width="8" height="2" rx="1" fill="#efebe9"/>
+  <!-- Medal hanging above first place -->
+  <circle cx="100" cy="35" r="12" fill="#4e342e"/>
+  <circle cx="100" cy="35" r="9" fill="#795548"/>
+  <!-- Medal star -->
+  <polygon points="100,28 102,33 107,33 103,36 105,41 100,38 95,41 97,36 93,33 98,33" fill="#4e342e"/>
+  <!-- Medal ribbon -->
+  <polygon points="94,23 100,28 106,23 106,20 94,20" fill="#795548"/>
+  <!-- Podium base -->
+  <rect x="20" y="130" width="160" height="5" rx="2" fill="#4e342e"/>
+</svg>

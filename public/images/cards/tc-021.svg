@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Pedestal base -->
+  <rect x="60" y="125" width="80" height="8" rx="2" fill="#f57f17"/>
+  <rect x="70" y="118" width="60" height="10" rx="2" fill="#f9a825"/>
+  <!-- Bust neck -->
+  <rect x="85" y="100" width="30" height="20" rx="3" fill="#f9a825"/>
+  <!-- Bust shoulders -->
+  <path d="M70 118 Q75 105 85 102 L115 102 Q125 105 130 118 Z" fill="#f9a825"/>
+  <!-- Head shape -->
+  <ellipse cx="100" cy="70" rx="28" ry="34" fill="#f9a825"/>
+  <!-- Forehead/cranium -->
+  <path d="M72 65 Q72 36 100 36 Q128 36 128 65" fill="#f9a825"/>
+  <!-- Nose profile (silhouette-like) -->
+  <path d="M100 58 L105 72 L100 76" fill="none" stroke="#f57f17" stroke-width="2" opacity="0.5"/>
+  <!-- Eye area -->
+  <ellipse cx="88" cy="62" rx="6" ry="3" fill="#f57f17" opacity="0.3"/>
+  <ellipse cx="112" cy="62" rx="6" ry="3" fill="#f57f17" opacity="0.3"/>
+  <!-- Thinking dots above head -->
+  <circle cx="135" cy="38" r="3" fill="#f57f17" opacity="0.6"/>
+  <circle cx="145" cy="28" r="4" fill="#f57f17" opacity="0.5"/>
+  <circle cx="158" cy="18" r="6" fill="#f57f17" opacity="0.4"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e6f4ea"/>
+  <!-- Road surface -->
+  <rect x="15" y="30" width="170" height="30" fill="#0d652d" opacity="0.3"/>
+  <!-- Road center line -->
+  <line x1="40" y1="45" x2="60" y2="45" stroke="#e6f4ea" stroke-width="2"/>
+  <line x1="75" y1="45" x2="95" y2="45" stroke="#e6f4ea" stroke-width="2"/>
+  <line x1="110" y1="45" x2="130" y2="45" stroke="#e6f4ea" stroke-width="2"/>
+  <line x1="145" y1="45" x2="165" y2="45" stroke="#e6f4ea" stroke-width="2"/>
+  <!-- Ground cross-section -->
+  <rect x="15" y="60" width="170" height="15" fill="#0d652d" opacity="0.15"/>
+  <rect x="15" y="75" width="170" height="55" fill="#0d652d" opacity="0.1"/>
+  <!-- Underground pipes -->
+  <!-- Water pipe -->
+  <circle cx="60" cy="90" r="10" fill="none" stroke="#0d652d" stroke-width="2.5"/>
+  <circle cx="60" cy="90" r="6" fill="#e6f4ea"/>
+  <!-- Sewer pipe -->
+  <circle cx="140" cy="95" r="13" fill="none" stroke="#0d652d" stroke-width="2.5"/>
+  <circle cx="140" cy="95" r="9" fill="#e6f4ea"/>
+  <!-- Connecting horizontal pipes -->
+  <line x1="70" y1="90" x2="127" y2="95" stroke="#0d652d" stroke-width="2" stroke-dasharray="4,3"/>
+  <!-- Small cable conduit -->
+  <circle cx="100" cy="78" r="5" fill="none" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Ground layers lines -->
+  <line x1="15" y1="60" x2="185" y2="60" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="15" y1="75" x2="185" y2="75" stroke="#0d652d" stroke-width="1" opacity="0.5" stroke-dasharray="5,3"/>
+  <!-- Curb edges -->
+  <rect x="15" y="55" width="170" height="5" fill="#0d652d" opacity="0.4"/>
+</svg>

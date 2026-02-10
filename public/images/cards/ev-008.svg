@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e8f0fe"/>
+  <!-- Person silhouette (left - original form) -->
+  <g transform="translate(60, 40)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="14" fill="#1a73e8" opacity="0.3"/>
+    <!-- Body -->
+    <rect x="-10" y="16" width="20" height="30" rx="6" fill="#1a73e8" opacity="0.25"/>
+    <!-- Left arm -->
+    <rect x="-18" y="18" width="10" height="24" rx="4" fill="#1a73e8" opacity="0.2"/>
+    <!-- Right arm -->
+    <rect x="8" y="18" width="10" height="24" rx="4" fill="#1a73e8" opacity="0.2"/>
+    <!-- Left leg -->
+    <rect x="-10" y="44" width="8" height="26" rx="3" fill="#1a73e8" opacity="0.2"/>
+    <!-- Right leg -->
+    <rect x="2" y="44" width="8" height="26" rx="3" fill="#1a73e8" opacity="0.2"/>
+  </g>
+  <!-- Morphing/transition particles in middle -->
+  <g fill="#1a73e8" opacity="0.15">
+    <circle cx="90" cy="40" r="3"/>
+    <circle cx="95" cy="50" r="4"/>
+    <circle cx="92" cy="62" r="3"/>
+    <circle cx="97" cy="74" r="4"/>
+    <circle cx="93" cy="86" r="3"/>
+    <circle cx="96" cy="96" r="3"/>
+  </g>
+  <g fill="#1a73e8" opacity="0.25">
+    <circle cx="103" cy="36" r="2.5"/>
+    <circle cx="108" cy="48" r="3"/>
+    <circle cx="105" cy="58" r="2.5"/>
+    <circle cx="110" cy="70" r="3"/>
+    <circle cx="106" cy="80" r="2.5"/>
+    <circle cx="109" cy="92" r="2.5"/>
+  </g>
+  <!-- Transition arrow -->
+  <line x1="82" y1="65" x2="114" y2="65" stroke="#1a73e8" stroke-width="2" opacity="0.3" stroke-dasharray="4,3"/>
+  <polygon points="114,65 108,60 108,70" fill="#1a73e8" opacity="0.3"/>
+  <!-- Person silhouette (right - transformed form, slightly different) -->
+  <g transform="translate(140, 38)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="14" fill="#1a73e8" opacity="0.45"/>
+    <!-- Body (different shape - more angular) -->
+    <path d="M-12,16 L12,16 L10,48 L-10,48 Z" fill="#1a73e8" opacity="0.35" rx="4"/>
+    <!-- Left arm (raised) -->
+    <rect x="-22" y="10" width="10" height="26" rx="4" fill="#1a73e8" opacity="0.3" transform="rotate(-30, -17, 23)"/>
+    <!-- Right arm (raised) -->
+    <rect x="12" y="10" width="10" height="26" rx="4" fill="#1a73e8" opacity="0.3" transform="rotate(30, 17, 23)"/>
+    <!-- Left leg -->
+    <rect x="-10" y="46" width="8" height="26" rx="3" fill="#1a73e8" opacity="0.3"/>
+    <!-- Right leg -->
+    <rect x="2" y="46" width="8" height="26" rx="3" fill="#1a73e8" opacity="0.3"/>
+  </g>
+  <!-- Glow/aura around transformed person -->
+  <circle cx="140" cy="65" r="38" fill="none" stroke="#1a73e8" stroke-width="1.5" opacity="0.12"/>
+  <circle cx="140" cy="65" r="45" fill="none" stroke="#1a73e8" stroke-width="1" opacity="0.08"/>
+  <!-- Stars/sparkles indicating change -->
+  <polygon points="140,12 141.5,16 146,17 142,19 143,23 140,20 137,23 138,19 134,17 138.5,16" fill="#1a73e8" opacity="0.35"/>
+  <polygon points="165,28 166,31 169,32 166,33 167,36 165,34 163,36 164,33 161,32 164,31" fill="#1a73e8" opacity="0.25"/>
+  <polygon points="118,22 119,25 122,26 119,27 120,30 118,28 116,30 117,27 114,26 117,25" fill="#1a73e8" opacity="0.25"/>
+</svg>

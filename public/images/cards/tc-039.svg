@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Graduation caps thrown in air -->
+  <!-- Cap 1 (left, high) -->
+  <polygon points="30,30 60,30 65,25 55,20 35,20 25,25" fill="#f9a825"/>
+  <rect x="38" y="30" width="14" height="8" fill="#f57f17"/>
+  <line x1="55" y1="25" x2="62" y2="15" stroke="#f57f17" stroke-width="2"/>
+  <circle cx="62" cy="13" r="3" fill="#f57f17"/>
+  <!-- Cap 2 (center, highest) -->
+  <polygon points="80,20 110,20 115,15 105,10 85,10 75,15" fill="#f57f17"/>
+  <rect x="88" y="20" width="14" height="8" fill="#f9a825"/>
+  <line x1="105" y1="15" x2="112" y2="5" stroke="#f9a825" stroke-width="2"/>
+  <circle cx="112" cy="3" r="3" fill="#f9a825"/>
+  <!-- Cap 3 (right, medium) -->
+  <polygon points="135,35 165,35 170,30 160,25 140,25 130,30" fill="#f9a825"/>
+  <rect x="143" y="35" width="14" height="8" fill="#f57f17"/>
+  <line x1="160" y1="30" x2="167" y2="20" stroke="#f57f17" stroke-width="2"/>
+  <circle cx="167" cy="18" r="3" fill="#f57f17"/>
+  <!-- Cap 4 (far left, low) -->
+  <polygon points="10,50 40,50 45,45 35,40 15,40 5,45" fill="#f57f17" opacity="0.7"/>
+  <rect x="18" y="50" width="14" height="8" fill="#f9a825" opacity="0.7"/>
+  <!-- Cap 5 (far right, low) -->
+  <polygon points="155,55 185,55 190,50 180,45 160,45 150,50" fill="#f57f17" opacity="0.7"/>
+  <rect x="163" y="55" width="14" height="8" fill="#f9a825" opacity="0.7"/>
+  <!-- Confetti/celebration dots -->
+  <circle cx="50" cy="70" r="3" fill="#f9a825" opacity="0.6"/>
+  <circle cx="95" cy="55" r="2" fill="#f57f17" opacity="0.5"/>
+  <circle cx="140" cy="65" r="3" fill="#f9a825" opacity="0.6"/>
+  <circle cx="70" cy="80" r="2" fill="#f57f17" opacity="0.4"/>
+  <circle cx="120" cy="75" r="2.5" fill="#f9a825" opacity="0.5"/>
+  <!-- Crowd silhouette at bottom -->
+  <ellipse cx="40" cy="130" rx="18" ry="12" fill="#f9a825" opacity="0.3"/>
+  <ellipse cx="70" cy="128" rx="16" ry="14" fill="#f57f17" opacity="0.3"/>
+  <ellipse cx="100" cy="130" rx="18" ry="12" fill="#f9a825" opacity="0.3"/>
+  <ellipse cx="130" cy="128" rx="16" ry="14" fill="#f57f17" opacity="0.3"/>
+  <ellipse cx="160" cy="130" rx="18" ry="12" fill="#f9a825" opacity="0.3"/>
+  <!-- Star sparkles -->
+  <polygon points="25,90 27,85 29,90 34,92 29,94 27,99 25,94 20,92" fill="#f9a825" opacity="0.6"/>
+  <polygon points="170,85 172,80 174,85 179,87 174,89 172,94 170,89 165,87" fill="#f57f17" opacity="0.6"/>
+  <polygon points="100,95 102,90 104,95 109,97 104,99 102,104 100,99 95,97" fill="#f9a825" opacity="0.5"/>
+</svg>

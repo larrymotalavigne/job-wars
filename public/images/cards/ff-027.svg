@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Extinguisher body -->
+  <rect x="55" y="35" width="40" height="80" rx="18" ry="18" fill="#ef6c00"/>
+  <!-- Extinguisher top -->
+  <rect x="68" y="25" width="14" height="15" rx="3" ry="3" fill="#e65100"/>
+  <!-- Handle/trigger -->
+  <path d="M82,28 L95,28 L95,35 L88,40 L82,35Z" fill="#e65100"/>
+  <!-- Nozzle and hose -->
+  <path d="M95,32 Q110,32 115,30 Q125,28 130,35" fill="none" stroke="#e65100" stroke-width="4" stroke-linecap="round"/>
+  <!-- Nozzle tip -->
+  <rect x="128" y="30" width="12" height="8" rx="2" ry="2" fill="#e65100"/>
+  <!-- Foam spray coming out -->
+  <ellipse cx="152" cy="34" rx="8" ry="6" fill="#ef6c00" opacity="0.4"/>
+  <ellipse cx="162" cy="38" rx="10" ry="8" fill="#ef6c00" opacity="0.3"/>
+  <ellipse cx="170" cy="30" rx="7" ry="6" fill="#ef6c00" opacity="0.25"/>
+  <ellipse cx="175" cy="42" rx="9" ry="7" fill="#ef6c00" opacity="0.2"/>
+  <ellipse cx="158" cy="46" rx="6" ry="5" fill="#ef6c00" opacity="0.3"/>
+  <ellipse cx="168" cy="50" rx="8" ry="5" fill="#ef6c00" opacity="0.15"/>
+  <!-- Foam drops falling -->
+  <circle cx="155" cy="55" r="3" fill="#ef6c00" opacity="0.3"/>
+  <circle cx="165" cy="60" r="2" fill="#ef6c00" opacity="0.25"/>
+  <circle cx="148" cy="58" r="2" fill="#ef6c00" opacity="0.2"/>
+  <!-- Pressure gauge on extinguisher -->
+  <circle cx="75" cy="55" r="8" fill="#fff3e0"/>
+  <circle cx="75" cy="55" r="6" fill="#e65100" opacity="0.2"/>
+  <line x1="75" y1="55" x2="78" y2="51" stroke="#e65100" stroke-width="1.5"/>
+</svg>

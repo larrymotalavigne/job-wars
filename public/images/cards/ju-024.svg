@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Hanger hook -->
+  <path d="M100,10 Q100,5 105,5 Q115,5 115,15 Q115,22 105,22" stroke="#4a148c" stroke-width="3" fill="none"/>
+  <!-- Hanger body -->
+  <line x1="100" y1="22" x2="60" y2="42" stroke="#4a148c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="100" y1="22" x2="140" y2="42" stroke="#4a148c" stroke-width="3" stroke-linecap="round"/>
+  <!-- Robe body -->
+  <path d="M60,42 L55,140 Q100,145 145,140 L140,42 Z" fill="#6a1b9a"/>
+  <!-- Collar/neckline -->
+  <path d="M75,42 Q100,55 125,42" fill="#4a148c"/>
+  <!-- Front opening line -->
+  <line x1="100" y1="50" x2="100" y2="140" stroke="#4a148c" stroke-width="1.5"/>
+  <!-- Left sleeve -->
+  <path d="M60,48 L30,80 L40,83 L65,60" fill="#6a1b9a" stroke="#4a148c" stroke-width="1"/>
+  <!-- Right sleeve -->
+  <path d="M140,48 L170,80 L160,83 L135,60" fill="#6a1b9a" stroke="#4a148c" stroke-width="1"/>
+  <!-- Sleeve cuffs - fur/ermine detail -->
+  <rect x="28" y="78" width="15" height="6" rx="2" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="0.5"/>
+  <rect x="157" y="78" width="15" height="6" rx="2" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="0.5"/>
+  <!-- Decorative buttons -->
+  <circle cx="100" cy="65" r="2.5" fill="#4a148c"/>
+  <circle cx="100" cy="80" r="2.5" fill="#4a148c"/>
+  <circle cx="100" cy="95" r="2.5" fill="#4a148c"/>
+</svg>

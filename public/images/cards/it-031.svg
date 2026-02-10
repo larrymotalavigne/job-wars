@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Hexagonal pods grid -->
+  <!-- Row 1 -->
+  <polygon points="55,30 70,22 85,30 85,46 70,54 55,46" fill="#1a73e8" stroke="white" stroke-width="2"/>
+  <polygon points="90,30 105,22 120,30 120,46 105,54 90,46" fill="#174ea6" stroke="white" stroke-width="2"/>
+  <polygon points="125,30 140,22 155,30 155,46 140,54 125,46" fill="#1a73e8" stroke="white" stroke-width="2"/>
+  <!-- Row 2 (offset) -->
+  <polygon points="38,55 53,47 68,55 68,71 53,79 38,71" fill="#174ea6" stroke="white" stroke-width="2"/>
+  <polygon points="73,55 88,47 103,55 103,71 88,79 73,71" fill="#1a73e8" stroke="white" stroke-width="2"/>
+  <polygon points="108,55 123,47 138,55 138,71 123,79 108,71" fill="#174ea6" stroke="white" stroke-width="2"/>
+  <polygon points="143,55 158,47 173,55 173,71 158,79 143,71" fill="#1a73e8" stroke="white" stroke-width="2"/>
+  <!-- Row 3 -->
+  <polygon points="55,80 70,72 85,80 85,96 70,104 55,96" fill="#1a73e8" stroke="white" stroke-width="2"/>
+  <polygon points="90,80 105,72 120,80 120,96 105,104 90,96" fill="#174ea6" stroke="white" stroke-width="2"/>
+  <polygon points="125,80 140,72 155,80 155,96 140,104 125,96" fill="#1a73e8" stroke="white" stroke-width="2"/>
+  <!-- Row 4 (offset) -->
+  <polygon points="73,105 88,97 103,105 103,121 88,129 73,121" fill="#174ea6" stroke="white" stroke-width="2"/>
+  <polygon points="108,105 123,97 138,105 138,121 123,129 108,121" fill="#1a73e8" stroke="white" stroke-width="2"/>
+  <!-- Container icons inside pods (small circles) -->
+  <circle cx="70" cy="38" r="4" fill="#e8f0fe"/>
+  <circle cx="105" cy="38" r="4" fill="#e8f0fe"/>
+  <circle cx="140" cy="38" r="4" fill="#e8f0fe"/>
+  <circle cx="88" cy="63" r="4" fill="#e8f0fe"/>
+  <circle cx="123" cy="63" r="4" fill="#e8f0fe"/>
+  <circle cx="105" cy="88" r="4" fill="#e8f0fe"/>
+  <!-- Connection dots -->
+  <circle cx="53" cy="63" r="3" fill="#e8f0fe"/>
+  <circle cx="158" cy="63" r="3" fill="#e8f0fe"/>
+  <circle cx="70" cy="88" r="3" fill="#e8f0fe"/>
+  <circle cx="140" cy="88" r="3" fill="#e8f0fe"/>
+  <circle cx="88" cy="113" r="3" fill="#e8f0fe"/>
+  <circle cx="123" cy="113" r="3" fill="#e8f0fe"/>
+</svg>

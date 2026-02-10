@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e8f0fe"/>
+  <!-- Cloud shape -->
+  <ellipse cx="100" cy="42" rx="40" ry="22" fill="#1a73e8" opacity="0.2"/>
+  <ellipse cx="72" cy="46" rx="24" ry="18" fill="#1a73e8" opacity="0.25"/>
+  <ellipse cx="128" cy="46" rx="24" ry="18" fill="#1a73e8" opacity="0.25"/>
+  <ellipse cx="100" cy="50" rx="48" ry="18" fill="#1a73e8" opacity="0.3"/>
+  <!-- Cloud outline -->
+  <path d="M52,54 Q52,28 76,28 Q82,18 100,18 Q118,18 124,28 Q148,28 148,54 Z"
+        fill="#1a73e8" opacity="0.15" stroke="#1a73e8" stroke-width="2"/>
+  <!-- Connection lines from cloud to server -->
+  <line x1="85" y1="54" x2="85" y2="72" stroke="#1a73e8" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.5"/>
+  <line x1="100" y1="54" x2="100" y2="72" stroke="#1a73e8" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.5"/>
+  <line x1="115" y1="54" x2="115" y2="72" stroke="#1a73e8" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.5"/>
+  <!-- Server rack body -->
+  <rect x="68" y="72" width="64" height="62" rx="4" fill="#1a73e8" opacity="0.12" stroke="#1a73e8" stroke-width="2"/>
+  <!-- Server unit 1 -->
+  <rect x="74" y="78" width="52" height="14" rx="2" fill="#1a73e8" opacity="0.3"/>
+  <circle cx="82" cy="85" r="2.5" fill="#1a73e8" opacity="0.7"/>
+  <line x1="90" y1="83" x2="118" y2="83" stroke="#1a73e8" stroke-width="1.5" opacity="0.4"/>
+  <line x1="90" y1="87" x2="112" y2="87" stroke="#1a73e8" stroke-width="1.5" opacity="0.4"/>
+  <!-- Server unit 2 -->
+  <rect x="74" y="96" width="52" height="14" rx="2" fill="#1a73e8" opacity="0.3"/>
+  <circle cx="82" cy="103" r="2.5" fill="#1a73e8" opacity="0.7"/>
+  <line x1="90" y1="101" x2="118" y2="101" stroke="#1a73e8" stroke-width="1.5" opacity="0.4"/>
+  <line x1="90" y1="105" x2="112" y2="105" stroke="#1a73e8" stroke-width="1.5" opacity="0.4"/>
+  <!-- Server unit 3 -->
+  <rect x="74" y="114" width="52" height="14" rx="2" fill="#1a73e8" opacity="0.3"/>
+  <circle cx="82" cy="121" r="2.5" fill="#1a73e8" opacity="0.7"/>
+  <line x1="90" y1="119" x2="118" y2="119" stroke="#1a73e8" stroke-width="1.5" opacity="0.4"/>
+  <line x1="90" y1="123" x2="112" y2="123" stroke="#1a73e8" stroke-width="1.5" opacity="0.4"/>
+  <!-- Status LEDs on servers -->
+  <circle cx="120" cy="85" r="2" fill="#4caf50" opacity="0.7"/>
+  <circle cx="120" cy="103" r="2" fill="#4caf50" opacity="0.7"/>
+  <circle cx="120" cy="121" r="2" fill="#f9a825" opacity="0.7"/>
+</svg>

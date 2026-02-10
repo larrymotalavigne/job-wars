@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Mold bottom half -->
+  <rect x="25" y="70" width="70" height="50" rx="4" fill="#795548" stroke="#4e342e" stroke-width="2"/>
+  <!-- Mold cavity in bottom -->
+  <path d="M35,70 Q40,85 55,90 Q70,95 85,70" fill="#4e342e" opacity="0.4"/>
+  <!-- Mold top half (slightly separated) -->
+  <rect x="25" y="25" width="70" height="45" rx="4" fill="#795548" stroke="#4e342e" stroke-width="2"/>
+  <!-- Mold cavity in top -->
+  <path d="M35,70 Q40,55 55,50 Q70,45 85,70" fill="#4e342e" opacity="0.4"/>
+  <!-- Alignment pins -->
+  <circle cx="35" cy="70" r="3" fill="#4e342e"/>
+  <circle cx="85" cy="70" r="3" fill="#4e342e"/>
+  <!-- Cast ceramic shape coming out -->
+  <path d="M120,40 Q115,50 118,65 Q120,80 125,90 Q130,100 140,105 Q150,100 155,90 Q160,80 162,65 Q165,50 160,40 Q150,30 140,30 Q130,30 120,40 Z" fill="#795548" opacity="0.6" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Vase shape details -->
+  <ellipse cx="140" cy="40" rx="18" ry="5" fill="none" stroke="#4e342e" stroke-width="1"/>
+  <path d="M122,60 Q130,55 140,55 Q150,55 158,60" stroke="#4e342e" stroke-width="0.8" fill="none"/>
+  <path d="M120,80 Q130,75 140,75 Q150,75 160,80" stroke="#4e342e" stroke-width="0.8" fill="none"/>
+  <!-- Arrow from mold to shape -->
+  <line x1="100" y1="65" x2="115" y2="65" stroke="#4e342e" stroke-width="1.5"/>
+  <polygon points="115,62 120,65 115,68" fill="#4e342e"/>
+</svg>

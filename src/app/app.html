@@ -1,0 +1,16 @@
+<div class="app-layout">
+  <header class="app-header no-print">
+    <p-menubar [model]="menuItems">
+      <ng-template #start>
+        <a routerLink="/" class="app-brand">
+          <i class="pi pi-briefcase"></i>
+          <span>Job Wars</span>
+        </a>
+      </ng-template>
+    </p-menubar>
+  </header>
+
+  <main class="app-main">
+    <router-outlet />
+  </main>
+</div>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fce4ec"/>
+  <!-- Desk -->
+  <rect x="20" y="75" width="130" height="8" rx="2" fill="#c62828"/>
+  <rect x="25" y="83" width="8" height="40" rx="1" fill="#b71c1c"/>
+  <rect x="137" y="83" width="8" height="40" rx="1" fill="#b71c1c"/>
+  <!-- Files stacked on desk -->
+  <rect x="35" y="45" width="35" height="30" rx="2" fill="#b71c1c"/>
+  <rect x="38" y="42" width="35" height="30" rx="2" fill="#c62828"/>
+  <rect x="41" y="39" width="35" height="30" rx="2" fill="#b71c1c" opacity="0.8"/>
+  <!-- File lines -->
+  <line x1="46" y1="48" x2="70" y2="48" stroke="#fce4ec" stroke-width="1.5" opacity="0.4"/>
+  <line x1="46" y1="54" x2="65" y2="54" stroke="#fce4ec" stroke-width="1.5" opacity="0.4"/>
+  <line x1="46" y1="60" x2="68" y2="60" stroke="#fce4ec" stroke-width="1.5" opacity="0.4"/>
+  <!-- More files -->
+  <rect x="85" y="55" width="28" height="20" rx="2" fill="#c62828"/>
+  <rect x="88" y="52" width="28" height="20" rx="2" fill="#b71c1c"/>
+  <!-- Star badge -->
+  <polygon points="160,40 165,55 180,58 169,67 172,82 160,75 148,82 151,67 140,58 155,55" fill="#c62828"/>
+  <polygon points="160,47 163,56 173,58 166,64 168,74 160,69 152,74 154,64 147,58 157,56" fill="#b71c1c"/>
+  <circle cx="160" cy="61" r="4" fill="#fce4ec"/>
+  <!-- Pen on desk -->
+  <line x1="120" y1="72" x2="140" y2="60" stroke="#b71c1c" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="140,60 143,55 141,58" fill="#c62828"/>
+</svg>

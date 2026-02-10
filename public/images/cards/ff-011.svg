@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+
+  <!-- Building in Flames - Incendie Majeur -->
+  <!-- Building structure -->
+  <rect x="50" y="50" width="100" height="80" fill="#e65100"/>
+  <!-- Building roof -->
+  <polygon points="45,50 155,50 150,40 50,40" fill="#e65100"/>
+
+  <!-- Windows row 1 -->
+  <rect x="60" y="56" width="16" height="14" rx="1" fill="#ef6c00" opacity="0.7"/>
+  <rect x="92" y="56" width="16" height="14" rx="1" fill="#ef6c00" opacity="0.7"/>
+  <rect x="124" y="56" width="16" height="14" rx="1" fill="#ef6c00" opacity="0.7"/>
+
+  <!-- Windows row 2 -->
+  <rect x="60" y="78" width="16" height="14" rx="1" fill="#ef6c00" opacity="0.7"/>
+  <rect x="92" y="78" width="16" height="14" rx="1" fill="#ef6c00" opacity="0.7"/>
+  <rect x="124" y="78" width="16" height="14" rx="1" fill="#ef6c00" opacity="0.7"/>
+
+  <!-- Door -->
+  <rect x="88" y="105" width="24" height="25" rx="2" fill="#ef6c00" opacity="0.6"/>
+  <circle cx="108" cy="118" r="2" fill="#fff3e0" opacity="0.4"/>
+
+  <!-- Fire from windows - left window top -->
+  <path d="M64 56 Q60 42 66 36 Q62 44 68 40 Q64 48 70 44 Q66 52 68 56" fill="#ef6c00" opacity="0.8"/>
+  <!-- Fire from center window top -->
+  <path d="M96 56 Q92 38 98 30 Q94 40 100 34 Q96 44 102 38 Q98 48 104 42 Q100 50 102 56" fill="#ef6c00" opacity="0.9"/>
+  <!-- Fire from right window top -->
+  <path d="M128 56 Q126 44 132 38 Q128 46 134 42 Q130 50 134 56" fill="#ef6c00" opacity="0.8"/>
+
+  <!-- Large flames rising from roof -->
+  <path d="M70 40 Q66 20 74 10 Q68 22 78 14 Q72 26 80 18 Q74 30 78 40" fill="#ef6c00"/>
+  <path d="M90 40 Q84 14 94 4 Q88 18 98 8 Q90 24 100 16 Q94 30 98 40" fill="#ef6c00"/>
+  <path d="M110 40 Q106 18 114 8 Q108 22 118 12 Q112 28 116 40" fill="#ef6c00"/>
+  <path d="M130 40 Q128 24 134 16 Q130 28 136 22 Q132 32 136 40" fill="#ef6c00"/>
+
+  <!-- Inner flame highlights -->
+  <path d="M92 40 Q88 22 96 14 Q92 26 96 40" fill="#fff3e0" opacity="0.3"/>
+  <path d="M72 40 Q70 28 76 20 Q73 30 76 40" fill="#fff3e0" opacity="0.25"/>
+
+  <!-- Smoke clouds -->
+  <circle cx="80" cy="8" r="8" fill="#e65100" opacity="0.2"/>
+  <circle cx="95" cy="4" r="10" fill="#e65100" opacity="0.15"/>
+  <circle cx="112" cy="6" r="9" fill="#e65100" opacity="0.18"/>
+  <circle cx="125" cy="10" r="7" fill="#e65100" opacity="0.15"/>
+  <circle cx="68" cy="14" r="6" fill="#e65100" opacity="0.12"/>
+
+  <!-- Fire glow from windows row 2 -->
+  <path d="M64 78 Q62 72 66 68 Q64 74 68 78" fill="#ef6c00" opacity="0.5"/>
+  <path d="M128 78 Q126 72 130 68 Q128 74 132 78" fill="#ef6c00" opacity="0.5"/>
+
+  <!-- Ground / debris -->
+  <rect x="30" y="130" width="140" height="4" rx="2" fill="#e65100" opacity="0.3"/>
+  <rect x="44" y="128" width="6" height="4" rx="1" fill="#e65100" opacity="0.2"/>
+  <rect x="150" y="126" width="8" height="6" rx="1" fill="#e65100" opacity="0.2"/>
+
+  <!-- Ember particles floating -->
+  <circle cx="55" cy="24" r="1.5" fill="#ef6c00" opacity="0.5"/>
+  <circle cx="140" cy="18" r="1.5" fill="#ef6c00" opacity="0.4"/>
+  <circle cx="160" cy="30" r="1" fill="#ef6c00" opacity="0.35"/>
+  <circle cx="38" cy="36" r="1" fill="#ef6c00" opacity="0.3"/>
+  <circle cx="148" cy="44" r="1.5" fill="#ef6c00" opacity="0.4"/>
+</svg>

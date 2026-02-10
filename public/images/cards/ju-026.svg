@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Folder back -->
+  <rect x="35" y="30" width="120" height="100" rx="4" fill="#4a148c" opacity="0.6"/>
+  <!-- Folder tab -->
+  <path d="M35,35 L35,25 L80,25 L90,35" fill="#6a1b9a" stroke="#4a148c" stroke-width="1"/>
+  <!-- Folder front -->
+  <rect x="30" y="35" width="120" height="95" rx="4" fill="#6a1b9a"/>
+  <!-- Document peeking out -->
+  <rect x="45" y="28" width="70" height="15" rx="2" fill="white" stroke="#6a1b9a" stroke-width="0.8"/>
+  <line x1="50" y1="33" x2="100" y2="33" stroke="#6a1b9a" stroke-width="0.6" opacity="0.4"/>
+  <line x1="50" y1="38" x2="90" y2="38" stroke="#6a1b9a" stroke-width="0.6" opacity="0.4"/>
+  <!-- Folder crease -->
+  <line x1="35" y1="55" x2="145" y2="55" stroke="#4a148c" stroke-width="1" opacity="0.5"/>
+  <!-- Evidence tag -->
+  <rect x="125" y="85" width="50" height="35" rx="3" fill="white" stroke="#4a148c" stroke-width="2"/>
+  <!-- Tag hole and string -->
+  <circle cx="130" cy="92" r="3" fill="none" stroke="#4a148c" stroke-width="1.5"/>
+  <line x1="127" y1="92" x2="120" y2="80" stroke="#4a148c" stroke-width="1.5"/>
+  <!-- Tag lines -->
+  <line x1="138" y1="96" x2="168" y2="96" stroke="#6a1b9a" stroke-width="1" opacity="0.5"/>
+  <line x1="138" y1="102" x2="165" y2="102" stroke="#6a1b9a" stroke-width="1" opacity="0.5"/>
+  <line x1="138" y1="108" x2="160" y2="108" stroke="#6a1b9a" stroke-width="1" opacity="0.5"/>
+  <!-- Folder label area -->
+  <rect x="60" y="65" width="60" height="20" rx="2" fill="#4a148c" opacity="0.2"/>
+  <line x1="68" y1="73" x2="112" y2="73" stroke="#4a148c" stroke-width="0.8" opacity="0.4"/>
+  <line x1="68" y1="79" x2="100" y2="79" stroke="#4a148c" stroke-width="0.8" opacity="0.4"/>
+</svg>

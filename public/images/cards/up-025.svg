@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e6f4ea"/>
+  <!-- Map border -->
+  <rect x="20" y="15" width="160" height="120" rx="3" fill="none" stroke="#0d652d" stroke-width="2"/>
+  <!-- Residential zone (light) -->
+  <rect x="22" y="17" width="55" height="45" fill="#0d652d" opacity="0.15"/>
+  <!-- Commercial zone (medium) -->
+  <rect x="79" y="17" width="50" height="45" fill="#0d652d" opacity="0.35"/>
+  <!-- Industrial zone (darker) -->
+  <rect x="131" y="17" width="47" height="45" fill="#0d652d" opacity="0.55"/>
+  <!-- Park/green zone -->
+  <rect x="22" y="64" width="40" height="35" fill="#0d652d" opacity="0.25"/>
+  <!-- Mixed use zone -->
+  <rect x="64" y="64" width="45" height="35" fill="#0d652d" opacity="0.45"/>
+  <!-- Public zone -->
+  <rect x="111" y="64" width="67" height="35" fill="#0d652d" opacity="0.2"/>
+  <!-- Bottom zones -->
+  <rect x="22" y="101" width="70" height="32" fill="#0d652d" opacity="0.3"/>
+  <rect x="94" y="101" width="84" height="32" fill="#0d652d" opacity="0.5"/>
+  <!-- Roads/grid lines -->
+  <line x1="77" y1="17" x2="77" y2="135" stroke="#e6f4ea" stroke-width="2"/>
+  <line x1="129" y1="17" x2="129" y2="135" stroke="#e6f4ea" stroke-width="2"/>
+  <line x1="22" y1="62" x2="178" y2="62" stroke="#e6f4ea" stroke-width="2"/>
+  <line x1="22" y1="99" x2="178" y2="99" stroke="#e6f4ea" stroke-width="2"/>
+  <!-- Zone pattern marks -->
+  <!-- Small dots for residential -->
+  <circle cx="35" cy="30" r="2" fill="#0d652d" opacity="0.3"/>
+  <circle cx="50" cy="35" r="2" fill="#0d652d" opacity="0.3"/>
+  <circle cx="42" cy="48" r="2" fill="#0d652d" opacity="0.3"/>
+  <!-- Legend area -->
+  <rect x="140" y="108" width="8" height="6" fill="#0d652d" opacity="0.15"/>
+  <rect x="140" y="117" width="8" height="6" fill="#0d652d" opacity="0.35"/>
+  <rect x="140" y="126" width="8" height="6" fill="#0d652d" opacity="0.55"/>
+  <line x1="152" y1="111" x2="172" y2="111" stroke="#0d652d" stroke-width="1" opacity="0.5"/>
+  <line x1="152" y1="120" x2="172" y2="120" stroke="#0d652d" stroke-width="1" opacity="0.5"/>
+  <line x1="152" y1="129" x2="172" y2="129" stroke="#0d652d" stroke-width="1" opacity="0.5"/>
+</svg>

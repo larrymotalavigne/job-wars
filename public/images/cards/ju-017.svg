@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Gavel head -->
+  <rect x="55" y="30" width="50" height="22" rx="4" fill="#6a1b9a"/>
+  <rect x="52" y="32" width="8" height="18" rx="3" fill="#4a148c"/>
+  <rect x="100" y="32" width="8" height="18" rx="3" fill="#4a148c"/>
+  <!-- Gavel handle -->
+  <line x1="80" y1="52" x2="80" y2="95" stroke="#6a1b9a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Sound block -->
+  <rect x="55" y="100" width="50" height="12" rx="3" fill="#4a148c"/>
+  <ellipse cx="80" cy="100" rx="25" ry="4" fill="#6a1b9a"/>
+  <!-- Price tag -->
+  <rect x="130" y="45" width="45" height="30" rx="4" fill="white" stroke="#6a1b9a" stroke-width="2"/>
+  <circle cx="168" cy="52" r="3" fill="none" stroke="#6a1b9a" stroke-width="1.5"/>
+  <!-- Tag string -->
+  <path d="M130,60 L120,50 L125,45" stroke="#6a1b9a" stroke-width="1.5" fill="none"/>
+  <!-- Price lines on tag -->
+  <line x1="137" y1="56" x2="160" y2="56" stroke="#6a1b9a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="137" y1="62" x2="155" y2="62" stroke="#6a1b9a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="137" y1="68" x2="158" y2="68" stroke="#6a1b9a" stroke-width="1.5" opacity="0.5"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect width="200" height="150" rx="8" fill="#fef7e0"/>
+  <!-- Chalkboard -->
+  <rect x="25" y="18" width="150" height="100" rx="4" fill="#f9a825"/>
+  <!-- Inner chalkboard surface -->
+  <rect x="32" y="25" width="136" height="86" rx="2" fill="#fef7e0" opacity="0.15"/>
+  <!-- Chalkboard frame highlight -->
+  <rect x="32" y="25" width="136" height="86" rx="2" fill="none" stroke="#f57f17" stroke-width="1.5"/>
+  <!-- Pi symbol -->
+  <g transform="translate(50, 42)">
+    <path d="M0,10 L40,10" stroke="#fef7e0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M12,10 L10,50" stroke="#fef7e0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M30,10 Q32,35 26,50" stroke="#fef7e0" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+  <!-- Triangle -->
+  <polygon points="120,85 145,50 150,85" fill="none" stroke="#fef7e0" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Small circle -->
+  <circle cx="125" cy="42" r="10" fill="none" stroke="#fef7e0" stroke-width="3"/>
+  <!-- Plus sign -->
+  <line x1="100" y1="62" x2="100" y2="78" stroke="#fef7e0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="92" y1="70" x2="108" y2="70" stroke="#fef7e0" stroke-width="3" stroke-linecap="round"/>
+  <!-- Chalk tray -->
+  <rect x="35" y="118" width="130" height="6" rx="1" fill="#f57f17"/>
+  <!-- Chalk piece -->
+  <rect x="80" y="116" width="18" height="4" rx="2" fill="#fef7e0"/>
+  <!-- Board legs/stand -->
+  <line x1="55" y1="124" x2="50" y2="140" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+  <line x1="145" y1="124" x2="150" y2="140" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+</svg>

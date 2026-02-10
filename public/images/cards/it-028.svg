@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Sprint board background -->
+  <rect x="15" y="50" width="170" height="85" rx="4" ry="4" fill="white" stroke="#1a73e8" stroke-width="1.5"/>
+  <!-- Board columns -->
+  <line x1="72" y1="50" x2="72" y2="135" stroke="#e8f0fe" stroke-width="1.5"/>
+  <line x1="128" y1="50" x2="128" y2="135" stroke="#e8f0fe" stroke-width="1.5"/>
+  <!-- Column cards -->
+  <rect x="22" y="58" width="42" height="14" rx="2" fill="#1a73e8"/>
+  <rect x="22" y="76" width="42" height="14" rx="2" fill="#1a73e8"/>
+  <rect x="79" y="58" width="42" height="14" rx="2" fill="#174ea6"/>
+  <rect x="79" y="76" width="42" height="14" rx="2" fill="#174ea6"/>
+  <rect x="135" y="58" width="42" height="14" rx="2" fill="#34a853"/>
+  <!-- Iteration circles (sprints) above board -->
+  <circle cx="40" cy="25" r="16" fill="none" stroke="#1a73e8" stroke-width="2"/>
+  <!-- Sprint 1 progress arc -->
+  <path d="M40,9 A16,16 0 1,1 24,25" fill="none" stroke="#1a73e8" stroke-width="3"/>
+  <circle cx="100" cy="25" r="16" fill="none" stroke="#174ea6" stroke-width="2"/>
+  <!-- Sprint 2 progress arc -->
+  <path d="M100,9 A16,16 0 0,1 116,25" fill="none" stroke="#174ea6" stroke-width="3"/>
+  <circle cx="160" cy="25" r="16" fill="none" stroke="#174ea6" stroke-width="2" stroke-dasharray="3,3"/>
+  <!-- Sprint labels (dots inside circles) -->
+  <circle cx="40" cy="25" r="3" fill="#1a73e8"/>
+  <circle cx="100" cy="25" r="3" fill="#174ea6"/>
+  <circle cx="160" cy="25" r="3" fill="#174ea6" opacity="0.5"/>
+  <!-- Connecting arrows between sprints -->
+  <line x1="56" y1="25" x2="82" y2="25" stroke="#174ea6" stroke-width="1.5"/>
+  <polygon points="84,25 80,22 80,28" fill="#174ea6"/>
+  <line x1="116" y1="25" x2="142" y2="25" stroke="#174ea6" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="144,25 140,22 140,28" fill="#174ea6" opacity="0.5"/>
+  <!-- Velocity burndown in bottom area -->
+  <polyline points="22,125 50,118 80,110 105,105 130,115 155,100 170,95" fill="none" stroke="#1a73e8" stroke-width="1.5" opacity="0.5"/>
+</svg>

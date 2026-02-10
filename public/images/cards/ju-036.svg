@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Courthouse base -->
+  <rect x="40" y="85" width="120" height="45" rx="2" fill="#6a1b9a"/>
+  <!-- Courthouse pillars -->
+  <rect x="50" y="55" width="10" height="30" fill="#6a1b9a"/>
+  <rect x="72" y="55" width="10" height="30" fill="#6a1b9a"/>
+  <rect x="118" y="55" width="10" height="30" fill="#6a1b9a"/>
+  <rect x="140" y="55" width="10" height="30" fill="#6a1b9a"/>
+  <!-- Courthouse roof/pediment -->
+  <polygon points="35,58 100,30 165,58" fill="#4a148c"/>
+  <polygon points="40,58 100,35 160,58" fill="#6a1b9a"/>
+  <!-- Door -->
+  <rect x="85" y="95" width="30" height="35" rx="2" fill="#4a148c"/>
+  <path d="M85,95 Q100,85 115,95" fill="#4a148c"/>
+  <!-- Steps -->
+  <rect x="35" y="130" width="130" height="5" rx="1" fill="#4a148c" opacity="0.6"/>
+  <rect x="30" y="135" width="140" height="5" rx="1" fill="#4a148c" opacity="0.4"/>
+  <!-- Ascending arrow -->
+  <line x1="100" y1="120" x2="100" y2="10" stroke="#4a148c" stroke-width="4" opacity="0"/>
+  <path d="M170,90 L170,15 L160,25" stroke="#4a148c" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M170,15 L180,25" stroke="#4a148c" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Arrow stepped path showing appeal ascending -->
+  <path d="M170,90 L170,15" stroke="#4a148c" stroke-width="3" fill="none"/>
+  <!-- Small step marks on arrow -->
+  <line x1="166" y1="75" x2="174" y2="75" stroke="#4a148c" stroke-width="1.5"/>
+  <line x1="166" y1="55" x2="174" y2="55" stroke="#4a148c" stroke-width="1.5"/>
+  <line x1="166" y1="35" x2="174" y2="35" stroke="#4a148c" stroke-width="1.5"/>
+</svg>

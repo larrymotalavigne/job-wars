@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Mine Antipersonnel: buried mine with danger sign -->
+  <!-- Ground level -->
+  <rect x="0" y="100" width="200" height="50" rx="0" fill="#558b2f" opacity="0.25"/>
+  <!-- Dirt mound -->
+  <ellipse cx="100" cy="100" rx="50" ry="10" fill="#558b2f" opacity="0.4"/>
+  <!-- Mine body (partially buried) -->
+  <ellipse cx="100" cy="100" rx="35" ry="8" fill="#33691e"/>
+  <ellipse cx="100" cy="97" rx="30" ry="6" fill="#558b2f"/>
+  <!-- Mine pressure plate -->
+  <ellipse cx="100" cy="94" rx="18" ry="4" fill="#33691e"/>
+  <!-- Mine trigger -->
+  <circle cx="100" cy="92" r="4" fill="#558b2f"/>
+  <circle cx="100" cy="92" r="2" fill="#f1f8e9"/>
+  <!-- Danger sign -->
+  <polygon points="155,20 140,50 170,50" fill="none" stroke="#558b2f" stroke-width="3"/>
+  <polygon points="155,20 140,50 170,50" fill="#f1f8e9" opacity="0.5"/>
+  <!-- Skull on sign -->
+  <circle cx="155" cy="36" r="5" fill="#33691e"/>
+  <circle cx="153" cy="35" r="1.5" fill="#f1f8e9"/>
+  <circle cx="157" cy="35" r="1.5" fill="#f1f8e9"/>
+  <rect x="153" y="39" width="4" height="3" rx="1" fill="#33691e"/>
+  <!-- Exclamation -->
+  <rect x="154" y="27" width="2" height="5" fill="#33691e"/>
+  <rect x="154" y="33" width="2" height="2" fill="#33691e"/>
+  <!-- Danger lines radiating -->
+  <line x1="85" y1="82" x2="80" y2="72" stroke="#558b2f" stroke-width="1.5" opacity="0.5"/>
+  <line x1="100" y1="80" x2="100" y2="68" stroke="#558b2f" stroke-width="1.5" opacity="0.5"/>
+  <line x1="115" y1="82" x2="120" y2="72" stroke="#558b2f" stroke-width="1.5" opacity="0.5"/>
+  <!-- Sign pole -->
+  <line x1="155" y1="50" x2="155" y2="85" stroke="#558b2f" stroke-width="2"/>
+</svg>

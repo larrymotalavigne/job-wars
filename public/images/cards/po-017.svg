@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fce4ec"/>
+  <!-- Police dog silhouette -->
+  <!-- Body -->
+  <ellipse cx="80" cy="95" rx="35" ry="18" fill="#c62828"/>
+  <!-- Head -->
+  <circle cx="115" cy="78" r="14" fill="#c62828"/>
+  <!-- Snout -->
+  <ellipse cx="128" cy="82" rx="10" ry="6" fill="#c62828"/>
+  <circle cx="135" cy="80" r="2.5" fill="#b71c1c"/>
+  <!-- Ear -->
+  <polygon points="108,68 118,55 122,72" fill="#b71c1c"/>
+  <!-- Eye -->
+  <circle cx="118" cy="76" r="2.5" fill="#fce4ec"/>
+  <!-- Legs -->
+  <rect x="55" y="108" width="6" height="22" rx="2" fill="#c62828"/>
+  <rect x="67" y="108" width="6" height="20" rx="2" fill="#c62828"/>
+  <rect x="90" y="108" width="6" height="22" rx="2" fill="#c62828"/>
+  <rect x="100" y="108" width="6" height="20" rx="2" fill="#c62828"/>
+  <!-- Tail -->
+  <path d="M48 90 Q35 75 40 65" fill="none" stroke="#c62828" stroke-width="5" stroke-linecap="round"/>
+  <!-- Handler (simplified) -->
+  <!-- Body -->
+  <rect x="148" y="60" width="18" height="40" rx="4" fill="#b71c1c"/>
+  <!-- Head -->
+  <circle cx="157" cy="50" r="12" fill="#c62828"/>
+  <!-- Cap -->
+  <rect x="145" y="40" width="24" height="6" rx="2" fill="#b71c1c"/>
+  <rect x="143" y="44" width="28" height="4" rx="1" fill="#b71c1c"/>
+  <!-- Legs -->
+  <rect x="150" y="98" width="6" height="24" rx="2" fill="#b71c1c"/>
+  <rect x="160" y="98" width="6" height="24" rx="2" fill="#b71c1c"/>
+  <!-- Arm holding leash -->
+  <line x1="148" y1="70" x2="110" y2="85" stroke="#b71c1c" stroke-width="3"/>
+  <!-- Leash -->
+  <path d="M110 85 Q120 90 130 85" fill="none" stroke="#b71c1c" stroke-width="2"/>
+</svg>

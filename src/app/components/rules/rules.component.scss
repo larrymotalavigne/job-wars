@@ -1,0 +1,83 @@
+.rules-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  line-height: 1.6;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--p-primary-color);
+    padding-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 2rem 0 0.75rem;
+    color: var(--p-primary-color);
+  }
+
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+.type-grid,
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.type-card,
+.domain-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--p-surface-50);
+  border-left: 4px solid var(--p-surface-300);
+}
+
+.domain-it { border-left-color: #1a73e8; }
+.domain-urban { border-left-color: #0d652d; }
+.domain-teacher { border-left-color: #f9a825; }
+.domain-police { border-left-color: #c62828; }
+.domain-health { border-left-color: #00897b; }
+.domain-firefighter { border-left-color: #ef6c00; }
+.domain-justice { border-left-color: #6a1b9a; }
+.domain-finance { border-left-color: #546e7a; }
+.domain-crafts { border-left-color: #795548; }
+.domain-military { border-left-color: #558b2f; }
+
+.turn-steps {
+  padding-left: 1.5rem;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.keyword-list {
+  dt {
+    font-weight: 700;
+    margin-top: 0.75rem;
+    color: var(--p-primary-color);
+  }
+
+  dd {
+    margin-left: 1rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media print {
+  .rules-container {
+    max-width: none;
+    padding: 0;
+  }
+}

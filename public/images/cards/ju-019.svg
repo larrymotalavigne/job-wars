@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Sword -->
+  <line x1="100" y1="15" x2="100" y2="115" stroke="#6a1b9a" stroke-width="4"/>
+  <!-- Blade -->
+  <polygon points="100,15 95,20 95,70 100,75 105,70 105,20" fill="#6a1b9a"/>
+  <line x1="100" y1="20" x2="100" y2="68" stroke="#f3e5f5" stroke-width="1" opacity="0.5"/>
+  <!-- Cross guard -->
+  <rect x="80" y="72" width="40" height="6" rx="3" fill="#4a148c"/>
+  <!-- Grip -->
+  <rect x="96" y="78" width="8" height="25" rx="2" fill="#6a1b9a"/>
+  <!-- Pommel -->
+  <circle cx="100" cy="108" r="6" fill="#4a148c"/>
+  <!-- Left laurel branch -->
+  <path d="M60,100 Q55,85 58,70" fill="none" stroke="#6a1b9a" stroke-width="1.5"/>
+  <ellipse cx="52" cy="90" rx="6" ry="10" fill="#6a1b9a" opacity="0.5" transform="rotate(-20,52,90)"/>
+  <ellipse cx="54" cy="78" rx="5" ry="9" fill="#6a1b9a" opacity="0.5" transform="rotate(-15,54,78)"/>
+  <ellipse cx="57" cy="67" rx="5" ry="8" fill="#6a1b9a" opacity="0.5" transform="rotate(-10,57,67)"/>
+  <ellipse cx="63" cy="95" rx="6" ry="10" fill="#6a1b9a" opacity="0.4" transform="rotate(15,63,95)"/>
+  <ellipse cx="62" cy="82" rx="5" ry="9" fill="#6a1b9a" opacity="0.4" transform="rotate(10,62,82)"/>
+  <!-- Right laurel branch -->
+  <path d="M140,100 Q145,85 142,70" fill="none" stroke="#6a1b9a" stroke-width="1.5"/>
+  <ellipse cx="148" cy="90" rx="6" ry="10" fill="#6a1b9a" opacity="0.5" transform="rotate(20,148,90)"/>
+  <ellipse cx="146" cy="78" rx="5" ry="9" fill="#6a1b9a" opacity="0.5" transform="rotate(15,146,78)"/>
+  <ellipse cx="143" cy="67" rx="5" ry="8" fill="#6a1b9a" opacity="0.5" transform="rotate(10,143,67)"/>
+  <ellipse cx="137" cy="95" rx="6" ry="10" fill="#6a1b9a" opacity="0.4" transform="rotate(-15,137,95)"/>
+  <ellipse cx="138" cy="82" rx="5" ry="9" fill="#6a1b9a" opacity="0.4" transform="rotate(-10,138,82)"/>
+  <!-- Laurel tie -->
+  <path d="M90,120 Q100,130 110,120" stroke="#4a148c" stroke-width="2" fill="none"/>
+</svg>

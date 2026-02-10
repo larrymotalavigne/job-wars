@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Wire/cable path -->
+  <path d="M 25,120 Q 50,120 55,100 Q 60,80 75,80 Q 90,80 90,95 Q 90,110 105,110 Q 120,110 125,90 Q 130,70 145,70 L 175,70" fill="none" stroke="#795548" stroke-width="4" stroke-linecap="round"/>
+  <!-- Wire ends (connectors) -->
+  <circle cx="25" cy="120" r="5" fill="#4e342e"/>
+  <circle cx="175" cy="70" r="5" fill="#4e342e"/>
+  <!-- Lightning bolt -->
+  <polygon points="100,10 85,55 100,55 80,95 115,45 98,45 115,10" fill="#795548"/>
+  <!-- Inner lightning highlight -->
+  <polygon points="102,18 92,50 102,50 88,82 110,50 100,50 110,18" fill="#4e342e" opacity="0.6"/>
+  <!-- Electricity sparks around bolt -->
+  <line x1="75" y1="35" x2="65" y2="30" stroke="#795548" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="125" y1="35" x2="135" y2="30" stroke="#795548" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="70" y1="60" x2="60" y2="62" stroke="#795548" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <line x1="125" y1="55" x2="135" y2="53" stroke="#795548" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <!-- Small spark dots -->
+  <circle cx="62" cy="28" r="2" fill="#795548" opacity="0.4"/>
+  <circle cx="138" cy="28" r="2" fill="#795548" opacity="0.4"/>
+  <circle cx="57" cy="63" r="1.5" fill="#795548" opacity="0.3"/>
+  <circle cx="138" cy="52" r="1.5" fill="#795548" opacity="0.3"/>
+</svg>

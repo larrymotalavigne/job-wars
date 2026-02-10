@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Axe handle (diagonal) -->
+  <line x1="55" y1="130" x2="130" y2="30" stroke="#ef6c00" stroke-width="8" stroke-linecap="round"/>
+  <!-- Axe handle grip lines -->
+  <line x1="62" y1="122" x2="70" y2="110" stroke="#e65100" stroke-width="1.5"/>
+  <line x1="66" y1="118" x2="74" y2="106" stroke="#e65100" stroke-width="1.5"/>
+  <line x1="70" y1="114" x2="78" y2="102" stroke="#e65100" stroke-width="1.5"/>
+  <!-- Axe head -->
+  <path d="M120,40 L130,30 L150,22 Q155,35 148,48 L130,40Z" fill="#e65100"/>
+  <!-- Axe blade edge -->
+  <path d="M150,22 Q158,32 148,48" fill="none" stroke="#ef6c00" stroke-width="2"/>
+  <!-- Axe spike (back side) -->
+  <polygon points="120,40 108,32 115,28 128,34" fill="#e65100"/>
+  <!-- Handle end cap -->
+  <circle cx="55" cy="130" r="5" fill="#e65100"/>
+</svg>

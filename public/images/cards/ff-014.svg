@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Firefighter helmet -->
+  <ellipse cx="100" cy="85" rx="45" ry="15" fill="#e65100"/>
+  <path d="M60,85 Q60,40 100,35 Q140,40 140,85Z" fill="#ef6c00"/>
+  <!-- Helmet brim -->
+  <ellipse cx="100" cy="88" rx="50" ry="10" fill="#e65100"/>
+  <!-- Helmet front shield area -->
+  <rect x="82" y="55" width="36" height="28" rx="4" ry="4" fill="#fff3e0"/>
+  <!-- First aid cross on shield -->
+  <rect x="94" y="58" width="12" height="22" rx="1" ry="1" fill="#ef6c00"/>
+  <rect x="87" y="63" width="26" height="12" rx="1" ry="1" fill="#ef6c00"/>
+  <!-- Helmet ridge on top -->
+  <rect x="90" y="33" width="20" height="6" rx="3" ry="3" fill="#e65100"/>
+</svg>

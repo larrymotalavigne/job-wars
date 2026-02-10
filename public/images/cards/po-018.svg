@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fce4ec"/>
+  <!-- Computer monitor -->
+  <rect x="30" y="25" width="85" height="65" rx="5" fill="#c62828"/>
+  <rect x="35" y="30" width="75" height="50" rx="3" fill="#fce4ec"/>
+  <!-- Screen content - code/data lines -->
+  <line x1="42" y1="42" x2="75" y2="42" stroke="#c62828" stroke-width="2" opacity="0.5"/>
+  <line x1="42" y1="50" x2="90" y2="50" stroke="#c62828" stroke-width="2" opacity="0.5"/>
+  <line x1="42" y1="58" x2="68" y2="58" stroke="#c62828" stroke-width="2" opacity="0.5"/>
+  <line x1="42" y1="66" x2="82" y2="66" stroke="#c62828" stroke-width="2" opacity="0.5"/>
+  <!-- Lock icon on screen -->
+  <rect x="85" y="38" width="16" height="12" rx="2" fill="#b71c1c"/>
+  <path d="M88 38 Q88 30 93 30 Q98 30 98 38" fill="none" stroke="#b71c1c" stroke-width="2"/>
+  <!-- Monitor stand -->
+  <rect x="65" y="90" width="15" height="10" fill="#b71c1c"/>
+  <rect x="55" y="98" width="35" height="5" rx="2" fill="#b71c1c"/>
+  <!-- Handcuffs -->
+  <circle cx="145" cy="75" r="18" fill="none" stroke="#c62828" stroke-width="4"/>
+  <circle cx="175" cy="75" r="18" fill="none" stroke="#c62828" stroke-width="4"/>
+  <!-- Handcuff chain -->
+  <line x1="155" y1="60" x2="165" y2="60" stroke="#c62828" stroke-width="4"/>
+  <!-- Keyholes -->
+  <circle cx="145" cy="82" r="3" fill="#b71c1c"/>
+  <circle cx="175" cy="82" r="3" fill="#b71c1c"/>
+  <!-- Lock mechanisms -->
+  <rect x="135" y="58" width="6" height="8" rx="1" fill="#c62828"/>
+  <rect x="169" y="58" width="6" height="8" rx="1" fill="#c62828"/>
+</svg>

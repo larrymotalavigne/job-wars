@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Mountain peak -->
+  <polygon points="100,20 40,130 160,130" fill="#ef6c00"/>
+  <!-- Snow cap -->
+  <polygon points="100,20 85,50 115,50" fill="#fff3e0"/>
+  <!-- Second mountain behind -->
+  <polygon points="155,45 110,130 200,130" fill="#e65100" opacity="0.5"/>
+  <!-- Rope going up -->
+  <path d="M75,125 Q80,90 90,70 Q95,55 100,40" fill="none" stroke="#e65100" stroke-width="3" stroke-linecap="round"/>
+  <!-- Carabiner at top of rope -->
+  <ellipse cx="100" cy="42" rx="8" ry="10" fill="none" stroke="#e65100" stroke-width="3"/>
+  <line x1="95" y1="35" x2="105" y2="35" stroke="#e65100" stroke-width="2"/>
+  <!-- Gate of carabiner -->
+  <line x1="108" y1="38" x2="106" y2="48" stroke="#ef6c00" stroke-width="2"/>
+  <!-- Rope knots -->
+  <circle cx="85" cy="80" r="3" fill="#e65100"/>
+  <circle cx="78" cy="105" r="3" fill="#e65100"/>
+</svg>

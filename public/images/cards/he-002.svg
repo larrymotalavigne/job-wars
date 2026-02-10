@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+
+  <!-- Soft circle backdrop -->
+  <circle cx="100" cy="75" r="52" fill="#00897b" opacity="0.12"/>
+
+  <!-- Nurse cap body -->
+  <rect x="62" y="50" width="76" height="40" rx="4" ry="4" fill="white" stroke="#00897b" stroke-width="2.5"/>
+
+  <!-- Cap top fold -->
+  <path d="M62,50 L70,30 L130,30 L138,50" fill="white" stroke="#00897b" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Horizontal band on cap -->
+  <rect x="62" y="62" width="76" height="8" fill="#00897b" opacity="0.3"/>
+
+  <!-- Cross on cap -->
+  <rect x="94" y="36" width="12" height="30" rx="2" fill="#00695c"/>
+  <rect x="85" y="45" width="30" height="12" rx="2" fill="#00695c"/>
+
+  <!-- Cap base curved line -->
+  <path d="M55,90 Q100,100 145,90" fill="none" stroke="#00897b" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Small decorative crosses -->
+  <g fill="#00897b" opacity="0.3">
+    <rect x="28" y="25" width="3" height="10" rx="1"/>
+    <rect x="24.5" y="28.5" width="10" height="3" rx="1"/>
+
+    <rect x="168" y="25" width="3" height="10" rx="1"/>
+    <rect x="164.5" y="28.5" width="10" height="3" rx="1"/>
+
+    <rect x="30" y="110" width="3" height="10" rx="1"/>
+    <rect x="26.5" y="113.5" width="10" height="3" rx="1"/>
+
+    <rect x="166" y="110" width="3" height="10" rx="1"/>
+    <rect x="162.5" y="113.5" width="10" height="3" rx="1"/>
+  </g>
+</svg>

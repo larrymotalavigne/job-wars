@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#fce4ec"/>
+  <!-- Desk/console surface -->
+  <rect x="10" y="90" width="180" height="50" rx="3" fill="#c62828" opacity="0.1" stroke="#c62828" stroke-width="1.5"/>
+  <!-- Console panel -->
+  <rect x="16" y="96" width="168" height="10" rx="2" fill="#c62828" opacity="0.15"/>
+  <!-- Console buttons -->
+  <circle cx="30" cy="101" r="3" fill="#c62828" opacity="0.4"/>
+  <circle cx="42" cy="101" r="3" fill="#c62828" opacity="0.3"/>
+  <circle cx="54" cy="101" r="3" fill="#c62828" opacity="0.35"/>
+  <rect x="66" y="98" width="20" height="6" rx="2" fill="#c62828" opacity="0.25"/>
+  <rect x="92" y="98" width="20" height="6" rx="2" fill="#c62828" opacity="0.25"/>
+  <circle cx="130" cy="101" r="3" fill="#c62828" opacity="0.4"/>
+  <circle cx="142" cy="101" r="3" fill="#c62828" opacity="0.3"/>
+  <rect x="154" y="98" width="24" height="6" rx="2" fill="#c62828" opacity="0.25"/>
+  <!-- Keyboard area -->
+  <rect x="60" y="114" width="80" height="18" rx="2" fill="#c62828" opacity="0.08" stroke="#c62828" stroke-width="1"/>
+  <!-- Keyboard keys (simplified) -->
+  <g fill="#c62828" opacity="0.2">
+    <rect x="64" y="117" width="6" height="4" rx="0.5"/>
+    <rect x="72" y="117" width="6" height="4" rx="0.5"/>
+    <rect x="80" y="117" width="6" height="4" rx="0.5"/>
+    <rect x="88" y="117" width="6" height="4" rx="0.5"/>
+    <rect x="96" y="117" width="6" height="4" rx="0.5"/>
+    <rect x="104" y="117" width="6" height="4" rx="0.5"/>
+    <rect x="112" y="117" width="6" height="4" rx="0.5"/>
+    <rect x="120" y="117" width="6" height="4" rx="0.5"/>
+    <rect x="128" y="117" width="6" height="4" rx="0.5"/>
+    <rect x="66" y="124" width="6" height="4" rx="0.5"/>
+    <rect x="74" y="124" width="6" height="4" rx="0.5"/>
+    <rect x="82" y="124" width="6" height="4" rx="0.5"/>
+    <rect x="90" y="124" width="6" height="4" rx="0.5"/>
+    <rect x="98" y="124" width="6" height="4" rx="0.5"/>
+    <rect x="106" y="124" width="6" height="4" rx="0.5"/>
+    <rect x="114" y="124" width="6" height="4" rx="0.5"/>
+    <rect x="122" y="124" width="6" height="4" rx="0.5"/>
+  </g>
+  <!-- Monitor 1 (left) -->
+  <rect x="14" y="12" width="54" height="72" rx="3" fill="#c62828" opacity="0.08" stroke="#c62828" stroke-width="2"/>
+  <rect x="18" y="16" width="46" height="58" rx="2" fill="#c62828" opacity="0.05"/>
+  <!-- Monitor 1 content - map view -->
+  <line x1="20" y1="30" x2="62" y2="30" stroke="#c62828" stroke-width="0.8" opacity="0.2"/>
+  <line x1="20" y1="44" x2="62" y2="44" stroke="#c62828" stroke-width="0.8" opacity="0.2"/>
+  <line x1="20" y1="58" x2="62" y2="58" stroke="#c62828" stroke-width="0.8" opacity="0.2"/>
+  <line x1="34" y1="16" x2="34" y2="74" stroke="#c62828" stroke-width="0.8" opacity="0.2"/>
+  <line x1="48" y1="16" x2="48" y2="74" stroke="#c62828" stroke-width="0.8" opacity="0.2"/>
+  <!-- Blinking dots on map -->
+  <circle cx="28" cy="36" r="3" fill="#c62828" opacity="0.5"/>
+  <circle cx="28" cy="36" r="5" fill="none" stroke="#c62828" stroke-width="1" opacity="0.2"/>
+  <circle cx="52" cy="52" r="3" fill="#c62828" opacity="0.4"/>
+  <!-- Monitor 1 stand -->
+  <rect x="36" y="84" width="10" height="6" rx="1" fill="#c62828" opacity="0.3"/>
+  <!-- Monitor 2 (center - larger) -->
+  <rect x="72" y="8" width="56" height="76" rx="3" fill="#c62828" opacity="0.08" stroke="#c62828" stroke-width="2"/>
+  <rect x="76" y="12" width="48" height="62" rx="2" fill="#c62828" opacity="0.05"/>
+  <!-- Monitor 2 content - camera feeds (2x2 grid) -->
+  <line x1="100" y1="12" x2="100" y2="74" stroke="#c62828" stroke-width="1" opacity="0.3"/>
+  <line x1="76" y1="43" x2="124" y2="43" stroke="#c62828" stroke-width="1" opacity="0.3"/>
+  <!-- Camera feed indicators -->
+  <circle cx="84" cy="22" r="2" fill="#c62828" opacity="0.6"/>
+  <circle cx="112" cy="22" r="2" fill="#c62828" opacity="0.6"/>
+  <circle cx="84" cy="52" r="2" fill="#c62828" opacity="0.6"/>
+  <circle cx="112" cy="52" r="2" fill="#c62828" opacity="0.6"/>
+  <!-- Simple silhouette figures in feeds -->
+  <circle cx="88" cy="30" r="3" fill="#c62828" opacity="0.2"/>
+  <rect x="86" y="34" width="4" height="6" rx="1" fill="#c62828" opacity="0.15"/>
+  <circle cx="108" cy="58" r="3" fill="#c62828" opacity="0.2"/>
+  <rect x="106" y="62" width="4" height="6" rx="1" fill="#c62828" opacity="0.15"/>
+  <!-- Monitor 2 stand -->
+  <rect x="95" y="84" width="10" height="6" rx="1" fill="#c62828" opacity="0.3"/>
+  <!-- Monitor 3 (right) -->
+  <rect x="132" y="12" width="54" height="72" rx="3" fill="#c62828" opacity="0.08" stroke="#c62828" stroke-width="2"/>
+  <rect x="136" y="16" width="46" height="58" rx="2" fill="#c62828" opacity="0.05"/>
+  <!-- Monitor 3 content - data/list -->
+  <rect x="140" y="22" width="38" height="4" rx="1" fill="#c62828" opacity="0.2"/>
+  <rect x="140" y="30" width="32" height="4" rx="1" fill="#c62828" opacity="0.15"/>
+  <rect x="140" y="38" width="36" height="4" rx="1" fill="#c62828" opacity="0.2"/>
+  <rect x="140" y="46" width="28" height="4" rx="1" fill="#c62828" opacity="0.15"/>
+  <rect x="140" y="54" width="34" height="4" rx="1" fill="#c62828" opacity="0.2"/>
+  <rect x="140" y="62" width="30" height="4" rx="1" fill="#c62828" opacity="0.15"/>
+  <!-- Monitor 3 stand -->
+  <rect x="154" y="84" width="10" height="6" rx="1" fill="#c62828" opacity="0.3"/>
+</svg>

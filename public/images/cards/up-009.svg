@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e6f4ea"/>
+  <!-- Blueprint paper -->
+  <rect x="20" y="12" width="160" height="126" rx="3" fill="#0d652d" opacity="0.08" stroke="#0d652d" stroke-width="2"/>
+  <!-- Grid lines - horizontal -->
+  <line x1="20" y1="30" x2="180" y2="30" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="20" y1="48" x2="180" y2="48" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="20" y1="66" x2="180" y2="66" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="20" y1="84" x2="180" y2="84" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="20" y1="102" x2="180" y2="102" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="20" y1="120" x2="180" y2="120" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <!-- Grid lines - vertical -->
+  <line x1="40" y1="12" x2="40" y2="138" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="60" y1="12" x2="60" y2="138" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="80" y1="12" x2="80" y2="138" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="100" y1="12" x2="100" y2="138" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="120" y1="12" x2="120" y2="138" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="140" y1="12" x2="140" y2="138" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <line x1="160" y1="12" x2="160" y2="138" stroke="#0d652d" stroke-width="0.5" opacity="0.2"/>
+  <!-- Main road layout -->
+  <line x1="40" y1="48" x2="160" y2="48" stroke="#0d652d" stroke-width="2.5" opacity="0.5"/>
+  <line x1="40" y1="102" x2="160" y2="102" stroke="#0d652d" stroke-width="2.5" opacity="0.5"/>
+  <line x1="60" y1="30" x2="60" y2="120" stroke="#0d652d" stroke-width="2.5" opacity="0.5"/>
+  <line x1="140" y1="30" x2="140" y2="120" stroke="#0d652d" stroke-width="2.5" opacity="0.5"/>
+  <!-- Building footprints -->
+  <rect x="68" y="54" width="28" height="20" rx="1" fill="none" stroke="#0d652d" stroke-width="1.5" opacity="0.6"/>
+  <rect x="108" y="54" width="24" height="18" rx="1" fill="none" stroke="#0d652d" stroke-width="1.5" opacity="0.6"/>
+  <rect x="68" y="80" width="20" height="16" rx="1" fill="none" stroke="#0d652d" stroke-width="1.5" opacity="0.6"/>
+  <rect x="110" y="78" width="22" height="18" rx="1" fill="none" stroke="#0d652d" stroke-width="1.5" opacity="0.6"/>
+  <!-- Building interior cross lines -->
+  <line x1="68" y1="64" x2="96" y2="64" stroke="#0d652d" stroke-width="0.8" opacity="0.3"/>
+  <line x1="82" y1="54" x2="82" y2="74" stroke="#0d652d" stroke-width="0.8" opacity="0.3"/>
+  <!-- Dimension arrows -->
+  <line x1="68" y1="110" x2="96" y2="110" stroke="#0d652d" stroke-width="1" opacity="0.5"/>
+  <line x1="68" y1="108" x2="68" y2="112" stroke="#0d652d" stroke-width="1" opacity="0.5"/>
+  <line x1="96" y1="108" x2="96" y2="112" stroke="#0d652d" stroke-width="1" opacity="0.5"/>
+  <!-- Park area (green zone) -->
+  <ellipse cx="100" cy="36" rx="12" ry="5" fill="#0d652d" opacity="0.2"/>
+  <!-- Scale marker -->
+  <rect x="148" y="126" width="24" height="3" rx="1" fill="#0d652d" opacity="0.4"/>
+  <line x1="148" y1="124" x2="148" y2="131" stroke="#0d652d" stroke-width="1" opacity="0.4"/>
+  <line x1="172" y1="124" x2="172" y2="131" stroke="#0d652d" stroke-width="1" opacity="0.4"/>
+  <!-- Corner fold -->
+  <path d="M164,12 L180,12 L180,28 Z" fill="#0d652d" opacity="0.06"/>
+  <line x1="164" y1="12" x2="180" y2="28" stroke="#0d652d" stroke-width="1" opacity="0.2"/>
+</svg>

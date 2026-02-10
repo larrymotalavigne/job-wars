@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#fef7e0"/>
+  <!-- Bookshelf frame -->
+  <rect x="20" y="10" width="160" height="130" rx="3" fill="#f9a825" opacity="0.1" stroke="#f9a825" stroke-width="2"/>
+  <!-- Shelf 1 (top) -->
+  <rect x="20" y="40" width="160" height="4" rx="1" fill="#f9a825" opacity="0.5"/>
+  <!-- Books on shelf 1 -->
+  <rect x="28" y="14" width="10" height="26" rx="1" fill="#f9a825" opacity="0.6"/>
+  <rect x="40" y="16" width="8" height="24" rx="1" fill="#f57f17" opacity="0.5"/>
+  <rect x="50" y="12" width="12" height="28" rx="1" fill="#f9a825" opacity="0.4"/>
+  <rect x="64" y="14" width="9" height="26" rx="1" fill="#f57f17" opacity="0.6"/>
+  <rect x="75" y="16" width="11" height="24" rx="1" fill="#f9a825" opacity="0.5"/>
+  <rect x="88" y="13" width="8" height="27" rx="1" fill="#f57f17" opacity="0.4"/>
+  <rect x="98" y="15" width="14" height="25" rx="1" fill="#f9a825" opacity="0.55"/>
+  <rect x="114" y="14" width="9" height="26" rx="1" fill="#f57f17" opacity="0.5"/>
+  <rect x="125" y="16" width="10" height="24" rx="1" fill="#f9a825" opacity="0.45"/>
+  <rect x="137" y="12" width="12" height="28" rx="1" fill="#f57f17" opacity="0.55"/>
+  <rect x="151" y="15" width="8" height="25" rx="1" fill="#f9a825" opacity="0.6"/>
+  <rect x="161" y="14" width="11" height="26" rx="1" fill="#f57f17" opacity="0.4"/>
+  <!-- Shelf 2 (middle) -->
+  <rect x="20" y="78" width="160" height="4" rx="1" fill="#f9a825" opacity="0.5"/>
+  <!-- Books on shelf 2 -->
+  <rect x="28" y="52" width="12" height="26" rx="1" fill="#f57f17" opacity="0.5"/>
+  <rect x="42" y="50" width="9" height="28" rx="1" fill="#f9a825" opacity="0.55"/>
+  <rect x="53" y="54" width="11" height="24" rx="1" fill="#f57f17" opacity="0.45"/>
+  <rect x="66" y="51" width="8" height="27" rx="1" fill="#f9a825" opacity="0.6"/>
+  <rect x="76" y="53" width="13" height="25" rx="1" fill="#f57f17" opacity="0.5"/>
+  <!-- Globe on shelf 2 -->
+  <circle cx="108" cy="66" r="11" fill="none" stroke="#f9a825" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="108" cy="66" rx="11" ry="4" fill="none" stroke="#f9a825" stroke-width="1" opacity="0.3"/>
+  <line x1="108" y1="55" x2="108" y2="77" stroke="#f9a825" stroke-width="1" opacity="0.3"/>
+  <!-- More books -->
+  <rect x="125" y="52" width="10" height="26" rx="1" fill="#f9a825" opacity="0.5"/>
+  <rect x="137" y="54" width="8" height="24" rx="1" fill="#f57f17" opacity="0.55"/>
+  <rect x="147" y="50" width="12" height="28" rx="1" fill="#f9a825" opacity="0.45"/>
+  <rect x="161" y="53" width="9" height="25" rx="1" fill="#f57f17" opacity="0.5"/>
+  <!-- Shelf 3 (bottom) -->
+  <rect x="20" y="116" width="160" height="4" rx="1" fill="#f9a825" opacity="0.5"/>
+  <!-- Books on shelf 3 -->
+  <rect x="28" y="88" width="14" height="28" rx="1" fill="#f9a825" opacity="0.5"/>
+  <rect x="44" y="90" width="9" height="26" rx="1" fill="#f57f17" opacity="0.45"/>
+  <rect x="55" y="86" width="11" height="30" rx="1" fill="#f9a825" opacity="0.6"/>
+  <rect x="68" y="90" width="8" height="26" rx="1" fill="#f57f17" opacity="0.5"/>
+  <rect x="78" y="88" width="10" height="28" rx="1" fill="#f9a825" opacity="0.4"/>
+  <!-- Bookend -->
+  <path d="M96,88 L96,116 L104,116 L104,96 Z" fill="#f57f17" opacity="0.35"/>
+  <!-- Stacked books (horizontal) -->
+  <rect x="112" y="104" width="24" height="5" rx="1" fill="#f9a825" opacity="0.5"/>
+  <rect x="114" y="98" width="20" height="5" rx="1" fill="#f57f17" opacity="0.45"/>
+  <rect x="110" y="92" width="26" height="5" rx="1" fill="#f9a825" opacity="0.55"/>
+  <!-- More vertical books -->
+  <rect x="144" y="89" width="10" height="27" rx="1" fill="#f57f17" opacity="0.5"/>
+  <rect x="156" y="90" width="8" height="26" rx="1" fill="#f9a825" opacity="0.55"/>
+  <rect x="166" y="88" width="6" height="28" rx="1" fill="#f57f17" opacity="0.4"/>
+  <!-- Bottom shelf base -->
+  <rect x="20" y="126" width="160" height="6" rx="2" fill="#f9a825" opacity="0.25"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Bus body -->
+  <rect x="20" y="45" width="160" height="60" rx="8" fill="#f9a825"/>
+  <!-- Bus roof -->
+  <rect x="25" y="40" width="150" height="10" rx="5" fill="#f57f17" opacity="0.4"/>
+  <!-- Bus bottom -->
+  <rect x="20" y="95" width="160" height="10" rx="3" fill="#f57f17"/>
+  <!-- Windshield -->
+  <rect x="155" y="50" width="20" height="35" rx="4" fill="#fef7e0"/>
+  <!-- Windows -->
+  <rect x="30" y="52" width="20" height="20" rx="3" fill="#fef7e0"/>
+  <rect x="55" y="52" width="20" height="20" rx="3" fill="#fef7e0"/>
+  <rect x="80" y="52" width="20" height="20" rx="3" fill="#fef7e0"/>
+  <rect x="105" y="52" width="20" height="20" rx="3" fill="#fef7e0"/>
+  <rect x="130" y="52" width="20" height="20" rx="3" fill="#fef7e0"/>
+  <!-- Door -->
+  <rect x="140" y="75" width="15" height="25" rx="2" fill="#f57f17" opacity="0.5"/>
+  <line x1="147" y1="75" x2="147" y2="100" stroke="#fef7e0" stroke-width="1"/>
+  <!-- Headlight -->
+  <circle cx="178" cy="85" r="5" fill="#fef7e0"/>
+  <!-- Tail light -->
+  <rect x="20" y="80" width="5" height="10" rx="2" fill="#f57f17"/>
+  <!-- Wheels -->
+  <circle cx="55" cy="110" r="12" fill="#f57f17"/>
+  <circle cx="55" cy="110" r="6" fill="#f9a825"/>
+  <circle cx="55" cy="110" r="3" fill="#f57f17"/>
+  <circle cx="150" cy="110" r="12" fill="#f57f17"/>
+  <circle cx="150" cy="110" r="6" fill="#f9a825"/>
+  <circle cx="150" cy="110" r="3" fill="#f57f17"/>
+  <!-- Bumper -->
+  <rect x="175" y="90" width="8" height="15" rx="3" fill="#f57f17" opacity="0.5"/>
+  <!-- Stop sign arm (folded) -->
+  <rect x="15" y="55" width="8" height="3" rx="1" fill="#f57f17"/>
+  <!-- Hood stripe -->
+  <line x1="25" y1="88" x2="135" y2="88" stroke="#f57f17" stroke-width="2" opacity="0.3"/>
+</svg>

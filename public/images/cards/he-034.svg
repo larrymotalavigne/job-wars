@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Globe -->
+  <circle cx="100" cy="75" r="50" fill="#00897b"/>
+  <!-- Globe grid lines -->
+  <ellipse cx="100" cy="75" rx="50" ry="20" fill="none" stroke="#00695c" stroke-width="1.2"/>
+  <ellipse cx="100" cy="75" rx="50" ry="35" fill="none" stroke="#00695c" stroke-width="1.2"/>
+  <ellipse cx="100" cy="75" rx="20" ry="50" fill="none" stroke="#00695c" stroke-width="1.2"/>
+  <line x1="50" y1="75" x2="150" y2="75" stroke="#00695c" stroke-width="1.2"/>
+  <line x1="100" y1="25" x2="100" y2="125" stroke="#00695c" stroke-width="1.2"/>
+  <!-- Continent-like shapes -->
+  <ellipse cx="85" cy="60" rx="15" ry="10" fill="#00695c" opacity="0.4"/>
+  <ellipse cx="115" cy="70" rx="12" ry="18" fill="#00695c" opacity="0.4"/>
+  <ellipse cx="80" cy="90" rx="10" ry="8" fill="#00695c" opacity="0.4"/>
+  <!-- Virus dots spreading -->
+  <circle cx="85" cy="55" r="4" fill="#00695c"/>
+  <circle cx="75" cy="48" r="3" fill="#00695c" opacity="0.8"/>
+  <circle cx="65" cy="42" r="2.5" fill="#00695c" opacity="0.6"/>
+  <circle cx="55" cy="38" r="2" fill="#00695c" opacity="0.4"/>
+  <!-- Spreading right -->
+  <circle cx="95" cy="50" r="3" fill="#00695c" opacity="0.8"/>
+  <circle cx="108" cy="45" r="2.5" fill="#00695c" opacity="0.6"/>
+  <circle cx="120" cy="40" r="2" fill="#00695c" opacity="0.4"/>
+  <!-- Spreading down -->
+  <circle cx="90" cy="68" r="3.5" fill="#00695c" opacity="0.8"/>
+  <circle cx="95" cy="82" r="3" fill="#00695c" opacity="0.6"/>
+  <circle cx="100" cy="95" r="2.5" fill="#00695c" opacity="0.4"/>
+  <!-- More virus spread points -->
+  <circle cx="115" cy="60" r="3" fill="#00695c" opacity="0.7"/>
+  <circle cx="130" cy="55" r="2" fill="#00695c" opacity="0.5"/>
+  <circle cx="140" cy="50" r="1.5" fill="#00695c" opacity="0.3"/>
+  <circle cx="70" cy="70" r="2.5" fill="#00695c" opacity="0.7"/>
+  <circle cx="60" cy="78" r="2" fill="#00695c" opacity="0.4"/>
+  <!-- Virus spikes on main dots -->
+  <line x1="85" y1="51" x2="85" y2="48" stroke="#00695c" stroke-width="1"/>
+  <line x1="89" y1="55" x2="92" y2="53" stroke="#00695c" stroke-width="1"/>
+  <line x1="81" y1="55" x2="78" y2="53" stroke="#00695c" stroke-width="1"/>
+  <line x1="85" y1="59" x2="85" y2="62" stroke="#00695c" stroke-width="1"/>
+</svg>

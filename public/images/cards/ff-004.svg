@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+
+  <!-- Fire Truck Silhouette - Conducteur d'Engin -->
+  <!-- Truck body -->
+  <rect x="30" y="60" width="140" height="40" rx="4" fill="#ef6c00"/>
+  <!-- Cab -->
+  <rect x="130" y="42" width="40" height="58" rx="6" fill="#e65100"/>
+  <!-- Windshield -->
+  <rect x="138" y="48" width="24" height="18" rx="3" fill="#fff3e0" opacity="0.7"/>
+  <!-- Cab roof light bar -->
+  <rect x="140" y="36" width="20" height="8" rx="3" fill="#ef6c00"/>
+  <!-- Light beacon -->
+  <rect x="146" y="32" width="8" height="6" rx="2" fill="#fff3e0" opacity="0.8"/>
+
+  <!-- Compartment doors -->
+  <rect x="38" y="68" width="22" height="24" rx="2" fill="#e65100" opacity="0.7"/>
+  <rect x="64" y="68" width="22" height="24" rx="2" fill="#e65100" opacity="0.7"/>
+  <rect x="90" y="68" width="22" height="24" rx="2" fill="#e65100" opacity="0.7"/>
+
+  <!-- Ladder on top -->
+  <rect x="35" y="52" width="90" height="4" rx="2" fill="#e65100"/>
+  <rect x="35" y="56" width="90" height="4" rx="2" fill="#e65100" opacity="0.6"/>
+  <!-- Ladder rungs -->
+  <rect x="50" y="52" width="3" height="8" fill="#fff3e0" opacity="0.4"/>
+  <rect x="68" y="52" width="3" height="8" fill="#fff3e0" opacity="0.4"/>
+  <rect x="86" y="52" width="3" height="8" fill="#fff3e0" opacity="0.4"/>
+  <rect x="104" y="52" width="3" height="8" fill="#fff3e0" opacity="0.4"/>
+
+  <!-- Bumper -->
+  <rect x="26" y="100" width="148" height="6" rx="3" fill="#e65100"/>
+
+  <!-- Wheels -->
+  <circle cx="55" cy="108" r="14" fill="#e65100"/>
+  <circle cx="55" cy="108" r="8" fill="#fff3e0" opacity="0.3"/>
+  <circle cx="55" cy="108" r="4" fill="#e65100"/>
+  <circle cx="150" cy="108" r="14" fill="#e65100"/>
+  <circle cx="150" cy="108" r="8" fill="#fff3e0" opacity="0.3"/>
+  <circle cx="150" cy="108" r="4" fill="#e65100"/>
+
+  <!-- Ground line -->
+  <line x1="20" y1="122" x2="180" y2="122" stroke="#e65100" stroke-width="2" opacity="0.3"/>
+</svg>

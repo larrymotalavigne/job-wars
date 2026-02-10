@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Chair back -->
+  <rect x="40" y="25" width="50" height="60" rx="4" fill="#795548"/>
+  <!-- Chair cushion pattern -->
+  <line x1="48" y1="35" x2="48" y2="75" stroke="#4e342e" stroke-width="0.8"/>
+  <line x1="56" y1="35" x2="56" y2="75" stroke="#4e342e" stroke-width="0.8"/>
+  <line x1="64" y1="35" x2="64" y2="75" stroke="#4e342e" stroke-width="0.8"/>
+  <line x1="72" y1="35" x2="72" y2="75" stroke="#4e342e" stroke-width="0.8"/>
+  <line x1="80" y1="35" x2="80" y2="75" stroke="#4e342e" stroke-width="0.8"/>
+  <!-- Chair seat -->
+  <rect x="35" y="85" width="60" height="15" rx="3" fill="#795548"/>
+  <!-- Chair legs -->
+  <rect x="38" y="100" width="5" height="30" fill="#4e342e"/>
+  <rect x="87" y="100" width="5" height="30" fill="#4e342e"/>
+  <rect x="42" y="100" width="3" height="25" fill="#4e342e" transform="rotate(-5,43,100)"/>
+  <rect x="85" y="100" width="3" height="25" fill="#4e342e" transform="rotate(5,86,100)"/>
+  <!-- Fabric roll -->
+  <ellipse cx="145" cy="95" rx="12" ry="25" fill="#795548"/>
+  <ellipse cx="145" cy="95" rx="8" ry="20" fill="#efebe9"/>
+  <ellipse cx="145" cy="95" rx="4" ry="10" fill="#795548"/>
+  <!-- Unrolled fabric -->
+  <path d="M145,70 Q160,65 170,50 Q175,45 170,42" stroke="#795548" stroke-width="3" fill="none"/>
+  <rect x="130" y="115" width="30" height="4" rx="1" fill="#795548"/>
+</svg>

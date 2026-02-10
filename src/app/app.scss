@@ -1,0 +1,36 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--p-text-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-right: 1rem;
+
+  i {
+    font-size: 1.4rem;
+  }
+}
+
+.app-main {
+  flex: 1;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

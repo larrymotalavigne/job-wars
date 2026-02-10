@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Editor window frame -->
+  <rect x="15" y="12" width="170" height="126" rx="6" ry="6" fill="#1e293b" stroke="#1a73e8" stroke-width="2"/>
+  <!-- Title bar -->
+  <rect x="15" y="12" width="170" height="20" rx="6" ry="6" fill="#174ea6"/>
+  <rect x="15" y="26" width="170" height="6" fill="#174ea6"/>
+  <!-- Window buttons -->
+  <circle cx="28" cy="22" r="4" fill="#e8453c"/>
+  <circle cx="40" cy="22" r="4" fill="#fbbc04"/>
+  <circle cx="52" cy="22" r="4" fill="#34a853"/>
+  <!-- Tab -->
+  <rect x="70" y="14" width="50" height="14" rx="2" fill="#1e293b"/>
+  <!-- Line numbers gutter -->
+  <rect x="15" y="32" width="22" height="106" fill="#162033"/>
+  <circle cx="26" cy="44" r="1.5" fill="#475569" opacity="0.6"/>
+  <circle cx="26" cy="54" r="1.5" fill="#475569" opacity="0.6"/>
+  <circle cx="26" cy="64" r="1.5" fill="#475569" opacity="0.6"/>
+  <circle cx="26" cy="74" r="1.5" fill="#475569" opacity="0.6"/>
+  <circle cx="26" cy="84" r="1.5" fill="#475569" opacity="0.6"/>
+  <circle cx="26" cy="94" r="1.5" fill="#475569" opacity="0.6"/>
+  <circle cx="26" cy="104" r="1.5" fill="#475569" opacity="0.6"/>
+  <circle cx="26" cy="114" r="1.5" fill="#475569" opacity="0.6"/>
+  <circle cx="26" cy="124" r="1.5" fill="#475569" opacity="0.6"/>
+  <!-- Syntax highlighted code lines -->
+  <!-- Line 1: keyword + function -->
+  <rect x="42" y="42" width="22" height="4" rx="1" fill="#c792ea"/>
+  <rect x="68" y="42" width="30" height="4" rx="1" fill="#82aaff"/>
+  <rect x="100" y="42" width="6" height="4" rx="1" fill="#89ddff"/>
+  <!-- Line 2: indented string -->
+  <rect x="52" y="52" width="18" height="4" rx="1" fill="#c792ea"/>
+  <rect x="74" y="52" width="40" height="4" rx="1" fill="#c3e88d"/>
+  <!-- Line 3: variable -->
+  <rect x="52" y="62" width="24" height="4" rx="1" fill="#f07178"/>
+  <rect x="80" y="62" width="8" height="4" rx="1" fill="#89ddff"/>
+  <rect x="92" y="62" width="20" height="4" rx="1" fill="#ffcb6b"/>
+  <!-- Line 4: comment -->
+  <rect x="52" y="72" width="60" height="4" rx="1" fill="#546e7a"/>
+  <!-- Line 5: keyword + value -->
+  <rect x="52" y="82" width="18" height="4" rx="1" fill="#c792ea"/>
+  <rect x="74" y="82" width="36" height="4" rx="1" fill="#82aaff"/>
+  <rect x="114" y="82" width="8" height="4" rx="1" fill="#89ddff"/>
+  <!-- Line 6: return -->
+  <rect x="52" y="92" width="22" height="4" rx="1" fill="#c792ea"/>
+  <rect x="78" y="92" width="28" height="4" rx="1" fill="#f78c6c"/>
+  <!-- Line 7: closing brace -->
+  <rect x="42" y="102" width="6" height="4" rx="1" fill="#89ddff"/>
+  <!-- Line 8: blank -->
+  <!-- Line 9: new function -->
+  <rect x="42" y="122" width="22" height="4" rx="1" fill="#c792ea"/>
+  <rect x="68" y="122" width="36" height="4" rx="1" fill="#82aaff"/>
+  <!-- Cursor blink line -->
+  <line x1="108" y1="120" x2="108" y2="128" stroke="#1a73e8" stroke-width="1.5"/>
+</svg>

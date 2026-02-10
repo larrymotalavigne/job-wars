@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#fef7e0"/>
+  <!-- Picket sign 1 (left) -->
+  <g transform="translate(58, 20) rotate(-12)">
+    <!-- Sign board -->
+    <rect x="-22" y="0" width="44" height="30" rx="3" fill="#f9a825" opacity="0.35" stroke="#f9a825" stroke-width="2"/>
+    <!-- Sign lines -->
+    <line x1="-14" y1="10" x2="14" y2="10" stroke="#f9a825" stroke-width="2.5" opacity="0.5"/>
+    <line x1="-12" y1="18" x2="10" y2="18" stroke="#f9a825" stroke-width="2" opacity="0.35"/>
+    <!-- Handle -->
+    <rect x="-3" y="30" width="6" height="60" rx="2" fill="#f57f17" opacity="0.5"/>
+  </g>
+  <!-- Picket sign 2 (center) -->
+  <g transform="translate(100, 14)">
+    <rect x="-24" y="0" width="48" height="32" rx="3" fill="#f9a825" opacity="0.4" stroke="#f9a825" stroke-width="2"/>
+    <line x1="-16" y1="10" x2="16" y2="10" stroke="#f9a825" stroke-width="2.5" opacity="0.55"/>
+    <line x1="-14" y1="18" x2="12" y2="18" stroke="#f9a825" stroke-width="2" opacity="0.4"/>
+    <rect x="-3" y="32" width="6" height="65" rx="2" fill="#f57f17" opacity="0.5"/>
+  </g>
+  <!-- Picket sign 3 (right) -->
+  <g transform="translate(142, 20) rotate(10)">
+    <rect x="-20" y="0" width="40" height="28" rx="3" fill="#f9a825" opacity="0.3" stroke="#f9a825" stroke-width="2"/>
+    <line x1="-12" y1="9" x2="12" y2="9" stroke="#f9a825" stroke-width="2.5" opacity="0.45"/>
+    <line x1="-10" y1="17" x2="8" y2="17" stroke="#f9a825" stroke-width="2" opacity="0.3"/>
+    <rect x="-3" y="28" width="6" height="58" rx="2" fill="#f57f17" opacity="0.5"/>
+  </g>
+  <!-- Crowd silhouettes (bottom) -->
+  <!-- Row of heads -->
+  <circle cx="30" cy="118" r="8" fill="#f9a825" opacity="0.25"/>
+  <circle cx="50" cy="114" r="9" fill="#f9a825" opacity="0.3"/>
+  <circle cx="72" cy="116" r="8" fill="#f9a825" opacity="0.25"/>
+  <circle cx="92" cy="112" r="9" fill="#f9a825" opacity="0.3"/>
+  <circle cx="112" cy="115" r="8" fill="#f9a825" opacity="0.28"/>
+  <circle cx="132" cy="113" r="9" fill="#f9a825" opacity="0.25"/>
+  <circle cx="152" cy="117" r="8" fill="#f9a825" opacity="0.3"/>
+  <circle cx="172" cy="115" r="8" fill="#f9a825" opacity="0.22"/>
+  <!-- Body mass below heads -->
+  <rect x="10" y="122" width="180" height="28" rx="4" fill="#f9a825" opacity="0.15"/>
+  <!-- Raised fist (center accent) -->
+  <g transform="translate(100, 100)">
+    <rect x="-4" y="-14" width="8" height="14" rx="2" fill="#f57f17" opacity="0.5"/>
+    <rect x="-6" y="-20" width="4" height="8" rx="1.5" fill="#f57f17" opacity="0.45"/>
+    <rect x="-1" y="-22" width="4" height="10" rx="1.5" fill="#f57f17" opacity="0.45"/>
+    <rect x="4" y="-20" width="4" height="8" rx="1.5" fill="#f57f17" opacity="0.45"/>
+  </g>
+</svg>

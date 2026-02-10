@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Currency exchange arrows -->
+  <path d="M60 55 L90 55" stroke="#546e7a" stroke-width="3" fill="none"/>
+  <polygon points="90,50 100,55 90,60" fill="#546e7a"/>
+  <path d="M140 75 L110 75" stroke="#546e7a" stroke-width="3" fill="none"/>
+  <polygon points="110,70 100,75 110,80" fill="#546e7a"/>
+  <!-- Left coin stack -->
+  <ellipse cx="45" cy="65" rx="18" ry="6" fill="#546e7a"/>
+  <rect x="27" y="59" width="36" height="6" fill="#546e7a"/>
+  <ellipse cx="45" cy="59" rx="18" ry="6" fill="#37474f"/>
+  <ellipse cx="45" cy="53" rx="18" ry="6" fill="#546e7a"/>
+  <rect x="27" y="47" width="36" height="6" fill="#546e7a"/>
+  <ellipse cx="45" cy="47" rx="18" ry="6" fill="#37474f"/>
+  <!-- Right coin stack -->
+  <ellipse cx="155" cy="65" rx="18" ry="6" fill="#546e7a"/>
+  <rect x="137" y="59" width="36" height="6" fill="#546e7a"/>
+  <ellipse cx="155" cy="59" rx="18" ry="6" fill="#37474f"/>
+  <!-- Circular arrows around center -->
+  <path d="M95 40 A25 25 0 0 1 120 65" stroke="#37474f" stroke-width="2.5" fill="none"/>
+  <polygon points="120,60 125,68 115,68" fill="#37474f"/>
+  <path d="M105 90 A25 25 0 0 1 80 65" stroke="#37474f" stroke-width="2.5" fill="none"/>
+  <polygon points="80,70 75,62 85,62" fill="#37474f"/>
+  <!-- Small coins scattered -->
+  <circle cx="70" cy="100" r="8" fill="#546e7a"/>
+  <circle cx="70" cy="100" r="5" fill="#37474f"/>
+  <circle cx="130" cy="100" r="8" fill="#546e7a"/>
+  <circle cx="130" cy="100" r="5" fill="#37474f"/>
+  <circle cx="100" cy="110" r="8" fill="#546e7a"/>
+  <circle cx="100" cy="110" r="5" fill="#37474f"/>
+</svg>

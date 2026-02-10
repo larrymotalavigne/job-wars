@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#eceff1"/>
+  <!-- Left hand -->
+  <g transform="translate(50, 65)">
+    <!-- Palm -->
+    <rect x="-20" y="-8" width="40" height="16" rx="6" fill="#546e7a" opacity="0.3"/>
+    <!-- Fingers -->
+    <rect x="16" y="-10" width="24" height="6" rx="3" fill="#546e7a" opacity="0.25"/>
+    <rect x="18" y="-3" width="26" height="6" rx="3" fill="#546e7a" opacity="0.25"/>
+    <rect x="16" y="4" width="24" height="6" rx="3" fill="#546e7a" opacity="0.25"/>
+    <!-- Thumb -->
+    <rect x="8" y="-18" width="6" height="14" rx="3" fill="#546e7a" opacity="0.25" transform="rotate(-20, 11, -11)"/>
+    <!-- Wrist/arm -->
+    <rect x="-30" y="-6" width="14" height="12" rx="3" fill="#546e7a" opacity="0.2"/>
+  </g>
+  <!-- Right hand (clasping) -->
+  <g transform="translate(150, 65)">
+    <!-- Palm -->
+    <rect x="-20" y="-8" width="40" height="16" rx="6" fill="#546e7a" opacity="0.3"/>
+    <!-- Fingers -->
+    <rect x="-40" y="-10" width="24" height="6" rx="3" fill="#546e7a" opacity="0.25"/>
+    <rect x="-44" y="-3" width="26" height="6" rx="3" fill="#546e7a" opacity="0.25"/>
+    <rect x="-40" y="4" width="24" height="6" rx="3" fill="#546e7a" opacity="0.25"/>
+    <!-- Thumb -->
+    <rect x="-14" y="-18" width="6" height="14" rx="3" fill="#546e7a" opacity="0.25" transform="rotate(20, -11, -11)"/>
+    <!-- Wrist/arm -->
+    <rect x="16" y="-6" width="14" height="12" rx="3" fill="#546e7a" opacity="0.2"/>
+  </g>
+  <!-- Handshake overlap area -->
+  <ellipse cx="100" cy="65" rx="16" ry="12" fill="#546e7a" opacity="0.08"/>
+  <!-- Coins floating above -->
+  <g>
+    <!-- Coin 1 -->
+    <circle cx="80" cy="24" r="12" fill="#546e7a" opacity="0.2" stroke="#546e7a" stroke-width="1.5"/>
+    <circle cx="80" cy="24" r="7" fill="none" stroke="#546e7a" stroke-width="1" opacity="0.2"/>
+    <rect x="78" y="18" width="4" height="12" rx="1" fill="#546e7a" opacity="0.2"/>
+    <!-- Coin 2 -->
+    <circle cx="100" cy="18" r="14" fill="#546e7a" opacity="0.25" stroke="#546e7a" stroke-width="1.5"/>
+    <circle cx="100" cy="18" r="8" fill="none" stroke="#546e7a" stroke-width="1" opacity="0.2"/>
+    <rect x="98" y="11" width="4" height="14" rx="1" fill="#546e7a" opacity="0.2"/>
+    <!-- Coin 3 -->
+    <circle cx="120" cy="24" r="12" fill="#546e7a" opacity="0.2" stroke="#546e7a" stroke-width="1.5"/>
+    <circle cx="120" cy="24" r="7" fill="none" stroke="#546e7a" stroke-width="1" opacity="0.2"/>
+    <rect x="118" y="18" width="4" height="12" rx="1" fill="#546e7a" opacity="0.2"/>
+  </g>
+  <!-- Small coins falling -->
+  <circle cx="70" cy="42" r="6" fill="#546e7a" opacity="0.12" stroke="#546e7a" stroke-width="1"/>
+  <circle cx="130" cy="42" r="6" fill="#546e7a" opacity="0.12" stroke="#546e7a" stroke-width="1"/>
+  <circle cx="90" cy="44" r="5" fill="#546e7a" opacity="0.1" stroke="#546e7a" stroke-width="1"/>
+  <circle cx="110" cy="44" r="5" fill="#546e7a" opacity="0.1" stroke="#546e7a" stroke-width="1"/>
+  <!-- Plus signs (bonus) -->
+  <g fill="#546e7a" opacity="0.3">
+    <rect x="36" y="94" width="12" height="3" rx="1"/>
+    <rect x="40.5" y="89.5" width="3" height="12" rx="1"/>
+    <rect x="152" y="94" width="12" height="3" rx="1"/>
+    <rect x="156.5" y="89.5" width="3" height="12" rx="1"/>
+  </g>
+  <!-- Decorative line -->
+  <line x1="40" y1="120" x2="160" y2="120" stroke="#546e7a" stroke-width="1.5" opacity="0.15"/>
+  <!-- Arrow up (value increase) -->
+  <polygon points="100,108 108,118 104,118 104,130 96,130 96,118 92,118" fill="#546e7a" opacity="0.2"/>
+</svg>

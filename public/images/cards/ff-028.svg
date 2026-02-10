@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Camera body -->
+  <rect x="50" y="40" width="80" height="60" rx="6" ry="6" fill="#ef6c00"/>
+  <!-- Camera lens -->
+  <circle cx="90" cy="65" r="18" fill="#e65100"/>
+  <circle cx="90" cy="65" r="14" fill="#fff3e0"/>
+  <!-- Thermal image inside lens (heat signatures) -->
+  <circle cx="85" cy="60" r="5" fill="#ef6c00" opacity="0.7"/>
+  <circle cx="95" cy="68" r="4" fill="#ef6c00" opacity="0.5"/>
+  <circle cx="87" cy="70" r="3" fill="#e65100" opacity="0.4"/>
+  <!-- Camera grip on right -->
+  <rect x="130" y="45" width="20" height="45" rx="5" ry="5" fill="#e65100"/>
+  <!-- Camera screen on top -->
+  <rect x="55" y="30" width="35" height="12" rx="2" ry="2" fill="#e65100"/>
+  <rect x="57" y="32" width="31" height="8" rx="1" ry="1" fill="#fff3e0"/>
+  <!-- Heat signature colors on screen -->
+  <rect x="58" y="33" width="10" height="6" fill="#e65100" opacity="0.7"/>
+  <rect x="68" y="33" width="10" height="6" fill="#ef6c00" opacity="0.5"/>
+  <rect x="78" y="33" width="9" height="6" fill="#ef6c00" opacity="0.3"/>
+  <!-- Buttons -->
+  <circle cx="118" cy="48" r="3" fill="#fff3e0"/>
+  <circle cx="110" cy="48" r="3" fill="#fff3e0"/>
+  <!-- Heat wave indicators around camera -->
+  <path d="M35,55 Q30,65 35,75" fill="none" stroke="#e65100" stroke-width="2" opacity="0.4"/>
+  <path d="M28,50 Q22,65 28,80" fill="none" stroke="#e65100" stroke-width="2" opacity="0.3"/>
+  <path d="M160,55 Q165,65 160,75" fill="none" stroke="#e65100" stroke-width="2" opacity="0.4"/>
+  <path d="M167,50 Q173,65 167,80" fill="none" stroke="#e65100" stroke-width="2" opacity="0.3"/>
+</svg>

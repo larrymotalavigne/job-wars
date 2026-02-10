@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Key body -->
+  <rect x="40" y="65" width="80" height="12" rx="3" ry="3" fill="#00897b"/>
+  <!-- Key head (ring) -->
+  <circle cx="35" cy="71" r="20" fill="none" stroke="#00897b" stroke-width="8"/>
+  <circle cx="35" cy="71" r="12" fill="#e0f2f1"/>
+  <!-- Key teeth -->
+  <rect x="100" y="65" width="8" height="18" rx="1" fill="#00897b"/>
+  <rect x="112" y="65" width="6" height="14" rx="1" fill="#00897b"/>
+  <rect x="122" y="65" width="8" height="20" rx="1" fill="#00897b"/>
+  <!-- Cross symbol -->
+  <rect x="135" y="25" width="30" height="8" rx="2" fill="#00695c"/>
+  <rect x="146" y="15" width="8" height="30" rx="2" fill="#00695c"/>
+  <!-- Cross glow/circle -->
+  <circle cx="150" cy="29" r="22" fill="none" stroke="#00695c" stroke-width="2" opacity="0.3"/>
+  <!-- Key ring highlight -->
+  <path d="M25 58 Q22 65 28 71" stroke="#e0f2f1" stroke-width="2" fill="none" opacity="0.5"/>
+</svg>

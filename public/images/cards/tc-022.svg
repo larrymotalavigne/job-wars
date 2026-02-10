@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Report card -->
+  <rect x="45" y="25" width="80" height="105" rx="4" fill="#f9a825" opacity="0.3"/>
+  <rect x="48" y="28" width="74" height="99" rx="3" fill="#fef7e0"/>
+  <!-- Lines on report card -->
+  <line x1="58" y1="45" x2="112" y2="45" stroke="#f9a825" stroke-width="2" opacity="0.5"/>
+  <line x1="58" y1="58" x2="112" y2="58" stroke="#f9a825" stroke-width="1.5" opacity="0.4"/>
+  <line x1="58" y1="68" x2="100" y2="68" stroke="#f9a825" stroke-width="1.5" opacity="0.4"/>
+  <line x1="58" y1="78" x2="112" y2="78" stroke="#f9a825" stroke-width="1.5" opacity="0.4"/>
+  <line x1="58" y1="88" x2="95" y2="88" stroke="#f9a825" stroke-width="1.5" opacity="0.4"/>
+  <line x1="58" y1="98" x2="112" y2="98" stroke="#f9a825" stroke-width="1.5" opacity="0.4"/>
+  <line x1="58" y1="108" x2="105" y2="108" stroke="#f9a825" stroke-width="1.5" opacity="0.4"/>
+  <!-- Grade marks -->
+  <rect x="100" y="55" width="12" height="8" rx="1" fill="#f57f17" opacity="0.4"/>
+  <rect x="100" y="75" width="12" height="8" rx="1" fill="#f57f17" opacity="0.4"/>
+  <rect x="100" y="95" width="12" height="8" rx="1" fill="#f57f17" opacity="0.4"/>
+  <!-- Magnifying glass -->
+  <circle cx="140" cy="75" r="30" fill="none" stroke="#f9a825" stroke-width="5"/>
+  <circle cx="140" cy="75" r="27" fill="#fef7e0" opacity="0.5"/>
+  <line x1="160" y1="97" x2="180" y2="125" stroke="#f9a825" stroke-width="6" stroke-linecap="round"/>
+  <!-- Glass glare -->
+  <path d="M125 60 Q130 55 135 58" fill="none" stroke="#fef7e0" stroke-width="2" opacity="0.8"/>
+  <!-- Magnifying glass rim -->
+  <circle cx="140" cy="75" r="30" fill="none" stroke="#f57f17" stroke-width="3"/>
+</svg>

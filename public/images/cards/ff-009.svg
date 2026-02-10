@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+
+  <!-- Fire Hose Nozzle - Lance a Incendie -->
+  <!-- Hose coil in background -->
+  <circle cx="50" cy="95" r="28" fill="none" stroke="#ef6c00" stroke-width="10" opacity="0.3"/>
+  <circle cx="50" cy="95" r="14" fill="none" stroke="#ef6c00" stroke-width="10" opacity="0.2"/>
+
+  <!-- Hose line connecting to nozzle -->
+  <path d="M70 90 Q90 85 105 72" fill="none" stroke="#ef6c00" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Nozzle body -->
+  <rect x="100" y="42" width="60" height="22" rx="4" fill="#e65100" transform="rotate(25 130 53)"/>
+  <!-- Nozzle tip (narrower) -->
+  <polygon points="155,48 175,55 175,62 155,68" fill="#ef6c00" transform="rotate(25 165 56)"/>
+  <!-- Nozzle grip rings -->
+  <rect x="108" y="44" width="5" height="22" rx="2" fill="#ef6c00" opacity="0.6" transform="rotate(25 110 55)"/>
+  <rect x="118" y="44" width="5" height="22" rx="2" fill="#ef6c00" opacity="0.6" transform="rotate(25 120 55)"/>
+  <!-- Nozzle valve handle -->
+  <rect x="126" y="36" width="4" height="14" rx="2" fill="#e65100" transform="rotate(25 128 43)"/>
+  <circle cx="128" cy="34" r="4" fill="#e65100" transform="rotate(25 128 34)"/>
+
+  <!-- Water spray -->
+  <path d="M168 38 Q178 28 185 20" fill="none" stroke="#ef6c00" stroke-width="2" opacity="0.3"/>
+  <path d="M170 42 Q182 34 192 28" fill="none" stroke="#ef6c00" stroke-width="2" opacity="0.3"/>
+  <path d="M172 46 Q184 42 195 38" fill="none" stroke="#ef6c00" stroke-width="2" opacity="0.3"/>
+  <!-- Water droplets -->
+  <circle cx="186" cy="18" r="2" fill="#ef6c00" opacity="0.25"/>
+  <circle cx="194" cy="26" r="2" fill="#ef6c00" opacity="0.25"/>
+  <circle cx="192" cy="36" r="2" fill="#ef6c00" opacity="0.25"/>
+
+  <!-- Coupling detail on hose -->
+  <circle cx="98" cy="78" r="6" fill="#e65100" opacity="0.6"/>
+  <circle cx="98" cy="78" r="3" fill="#fff3e0" opacity="0.4"/>
+</svg>

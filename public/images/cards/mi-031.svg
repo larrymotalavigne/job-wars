@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Drone de Reconnaissance: surveillance drone flying -->
+  <!-- Drone body -->
+  <ellipse cx="100" cy="70" rx="18" ry="10" fill="#33691e"/>
+  <!-- Wings -->
+  <polygon points="82,65 40,50 42,58 80,70" fill="#558b2f"/>
+  <polygon points="118,65 160,50 158,58 120,70" fill="#558b2f"/>
+  <!-- Tail -->
+  <polygon points="95,78 85,95 100,88 115,95 105,78" fill="#558b2f"/>
+  <!-- Vertical tail fin -->
+  <polygon points="98,78 100,60 102,78" fill="#33691e" opacity="0.5"/>
+  <!-- Camera pod underneath -->
+  <ellipse cx="100" cy="78" rx="8" ry="5" fill="#558b2f"/>
+  <circle cx="100" cy="80" r="3" fill="#33691e"/>
+  <circle cx="100" cy="80" r="1.5" fill="#f1f8e9" opacity="0.5"/>
+  <!-- Propeller front -->
+  <ellipse cx="100" cy="62" rx="12" ry="2" fill="#558b2f" opacity="0.5"/>
+  <!-- Wing tip pods -->
+  <ellipse cx="40" cy="53" rx="5" ry="3" fill="#33691e"/>
+  <ellipse cx="160" cy="53" rx="5" ry="3" fill="#33691e"/>
+  <!-- Signal waves from drone -->
+  <path d="M92,82 Q85,90 88,100" fill="none" stroke="#558b2f" stroke-width="1" opacity="0.5"/>
+  <path d="M108,82 Q115,90 112,100" fill="none" stroke="#558b2f" stroke-width="1" opacity="0.5"/>
+  <path d="M88,85 Q78,95 82,108" fill="none" stroke="#558b2f" stroke-width="1" opacity="0.3"/>
+  <path d="M112,85 Q122,95 118,108" fill="none" stroke="#558b2f" stroke-width="1" opacity="0.3"/>
+  <!-- Ground scan area -->
+  <line x1="90" y1="100" x2="70" y2="130" stroke="#558b2f" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/>
+  <line x1="110" y1="100" x2="130" y2="130" stroke="#558b2f" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/>
+  <line x1="70" y1="130" x2="130" y2="130" stroke="#558b2f" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/>
+</svg>

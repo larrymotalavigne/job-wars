@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+
+  <!-- Simple Helmet - Pompier Volontaire -->
+  <!-- Helmet dome -->
+  <ellipse cx="100" cy="58" rx="34" ry="24" fill="#ef6c00"/>
+  <!-- Helmet top ridge -->
+  <rect x="86" y="34" width="28" height="6" rx="3" fill="#e65100"/>
+  <!-- Helmet brim -->
+  <path d="M60 66 Q62 74 82 76 L118 76 Q138 74 140 66 L142 62 Q138 70 118 72 L82 72 Q62 70 58 62 Z" fill="#e65100"/>
+  <!-- Face opening -->
+  <ellipse cx="100" cy="70" rx="16" ry="10" fill="#fff3e0" opacity="0.5"/>
+
+  <!-- Heart symbol -->
+  <path d="M92 100 Q92 90 100 90 Q108 90 108 100 L100 114 Z" fill="#e65100"/>
+  <circle cx="96" cy="98" r="6" fill="#e65100"/>
+  <circle cx="104" cy="98" r="6" fill="#e65100"/>
+
+  <!-- Small decorative dots -->
+  <circle cx="40" cy="40" r="3" fill="#ef6c00" opacity="0.3"/>
+  <circle cx="160" cy="40" r="3" fill="#ef6c00" opacity="0.3"/>
+  <circle cx="40" cy="120" r="3" fill="#ef6c00" opacity="0.3"/>
+  <circle cx="160" cy="120" r="3" fill="#ef6c00" opacity="0.3"/>
+</svg>

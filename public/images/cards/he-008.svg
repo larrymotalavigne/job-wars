@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+
+  <!-- Hospital building - main block -->
+  <rect x="55" y="40" width="90" height="80" rx="3" fill="white" stroke="#00897b" stroke-width="2"/>
+
+  <!-- Hospital roof accent -->
+  <rect x="55" y="40" width="90" height="8" rx="3" fill="#00897b"/>
+
+  <!-- Cross on building -->
+  <rect x="94" y="52" width="12" height="24" rx="2" fill="#00695c"/>
+  <rect x="88" y="58" width="24" height="12" rx="2" fill="#00695c"/>
+
+  <!-- Windows - row 1 -->
+  <rect x="65" y="82" width="14" height="14" rx="2" fill="#00897b" opacity="0.3"/>
+  <rect x="93" y="82" width="14" height="14" rx="2" fill="#00897b" opacity="0.3"/>
+  <rect x="121" y="82" width="14" height="14" rx="2" fill="#00897b" opacity="0.3"/>
+
+  <!-- Windows - row 2 -->
+  <rect x="65" y="102" width="14" height="14" rx="2" fill="#00897b" opacity="0.3"/>
+  <rect x="121" y="102" width="14" height="14" rx="2" fill="#00897b" opacity="0.3"/>
+
+  <!-- Hospital entrance door -->
+  <rect x="93" y="102" width="14" height="18" rx="2" fill="#00695c"/>
+  <rect x="93" y="102" width="14" height="2" fill="#00897b"/>
+
+  <!-- Left wing -->
+  <rect x="30" y="65" width="25" height="55" rx="2" fill="white" stroke="#00897b" stroke-width="1.5"/>
+  <rect x="30" y="65" width="25" height="6" rx="2" fill="#00897b" opacity="0.6"/>
+  <rect x="36" y="78" width="12" height="10" rx="2" fill="#00897b" opacity="0.25"/>
+  <rect x="36" y="95" width="12" height="10" rx="2" fill="#00897b" opacity="0.25"/>
+  <rect x="36" y="110" width="12" height="10" rx="2" fill="#00897b" opacity="0.25"/>
+
+  <!-- Right wing -->
+  <rect x="145" y="65" width="25" height="55" rx="2" fill="white" stroke="#00897b" stroke-width="1.5"/>
+  <rect x="145" y="65" width="25" height="6" rx="2" fill="#00897b" opacity="0.6"/>
+  <rect x="152" y="78" width="12" height="10" rx="2" fill="#00897b" opacity="0.25"/>
+  <rect x="152" y="95" width="12" height="10" rx="2" fill="#00897b" opacity="0.25"/>
+  <rect x="152" y="110" width="12" height="10" rx="2" fill="#00897b" opacity="0.25"/>
+
+  <!-- Ground line -->
+  <line x1="15" y1="120" x2="185" y2="120" stroke="#00897b" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- Small trees -->
+  <circle cx="22" cy="108" r="8" fill="#00897b" opacity="0.25"/>
+  <rect x="20" y="112" width="4" height="8" fill="#00695c" opacity="0.3"/>
+  <circle cx="178" cy="108" r="8" fill="#00897b" opacity="0.25"/>
+  <rect x="176" y="112" width="4" height="8" fill="#00695c" opacity="0.3"/>
+
+  <!-- Helipad marking on roof implied -->
+  <circle cx="100" cy="32" r="5" fill="none" stroke="#00897b" stroke-width="1.5" opacity="0.4"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#eceff1"/>
+  <!-- Ledger/book base -->
+  <rect x="45" y="30" width="110" height="100" rx="4" fill="#546e7a" opacity="0.08" stroke="#546e7a" stroke-width="2"/>
+  <!-- Ledger binding -->
+  <rect x="45" y="30" width="8" height="100" rx="2" fill="#546e7a" opacity="0.2"/>
+  <!-- Ledger lines (rows) -->
+  <line x1="58" y1="48" x2="148" y2="48" stroke="#546e7a" stroke-width="0.8" opacity="0.2"/>
+  <line x1="58" y1="60" x2="148" y2="60" stroke="#546e7a" stroke-width="0.8" opacity="0.2"/>
+  <line x1="58" y1="72" x2="148" y2="72" stroke="#546e7a" stroke-width="0.8" opacity="0.2"/>
+  <line x1="58" y1="84" x2="148" y2="84" stroke="#546e7a" stroke-width="0.8" opacity="0.2"/>
+  <line x1="58" y1="96" x2="148" y2="96" stroke="#546e7a" stroke-width="0.8" opacity="0.2"/>
+  <line x1="58" y1="108" x2="148" y2="108" stroke="#546e7a" stroke-width="0.8" opacity="0.2"/>
+  <line x1="58" y1="120" x2="148" y2="120" stroke="#546e7a" stroke-width="0.8" opacity="0.2"/>
+  <!-- Ledger columns -->
+  <line x1="90" y1="36" x2="90" y2="126" stroke="#546e7a" stroke-width="0.8" opacity="0.2"/>
+  <line x1="120" y1="36" x2="120" y2="126" stroke="#546e7a" stroke-width="0.8" opacity="0.2"/>
+  <!-- Column header lines -->
+  <rect x="60" y="36" width="24" height="4" rx="1" fill="#546e7a" opacity="0.2"/>
+  <rect x="95" y="36" width="18" height="4" rx="1" fill="#546e7a" opacity="0.2"/>
+  <rect x="125" y="36" width="18" height="4" rx="1" fill="#546e7a" opacity="0.2"/>
+  <!-- Data entries -->
+  <rect x="60" y="50" width="20" height="3" rx="1" fill="#546e7a" opacity="0.15"/>
+  <rect x="96" y="50" width="14" height="3" rx="1" fill="#546e7a" opacity="0.15"/>
+  <rect x="126" y="50" width="12" height="3" rx="1" fill="#546e7a" opacity="0.15"/>
+  <rect x="60" y="62" width="22" height="3" rx="1" fill="#546e7a" opacity="0.15"/>
+  <rect x="96" y="62" width="16" height="3" rx="1" fill="#546e7a" opacity="0.15"/>
+  <rect x="126" y="62" width="14" height="3" rx="1" fill="#546e7a" opacity="0.15"/>
+  <rect x="60" y="74" width="18" height="3" rx="1" fill="#546e7a" opacity="0.15"/>
+  <rect x="96" y="74" width="12" height="3" rx="1" fill="#546e7a" opacity="0.15"/>
+  <rect x="126" y="74" width="16" height="3" rx="1" fill="#546e7a" opacity="0.15"/>
+  <!-- Highlighted row (being audited) -->
+  <rect x="58" y="84" width="90" height="12" rx="1" fill="#546e7a" opacity="0.1"/>
+  <rect x="60" y="86" width="20" height="3" rx="1" fill="#546e7a" opacity="0.25"/>
+  <rect x="96" y="86" width="14" height="3" rx="1" fill="#546e7a" opacity="0.25"/>
+  <rect x="126" y="86" width="12" height="3" rx="1" fill="#546e7a" opacity="0.25"/>
+  <!-- Magnifying glass (overlapping the ledger) -->
+  <g transform="translate(130, 50)">
+    <!-- Glass circle -->
+    <circle cx="0" cy="0" r="28" fill="#eceff1" opacity="0.6" stroke="#546e7a" stroke-width="3"/>
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#546e7a" stroke-width="1.5" opacity="0.3"/>
+    <!-- Lens shine -->
+    <path d="M-10,-18 Q-4,-22 4,-18" fill="none" stroke="#fff" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+    <!-- Handle -->
+    <rect x="18" y="18" width="10" height="32" rx="4" fill="#546e7a" opacity="0.5" transform="rotate(45, 18, 18)"/>
+  </g>
+  <!-- Exclamation mark (surprise) -->
+  <g transform="translate(30, 30)">
+    <rect x="-3" y="0" width="6" height="18" rx="3" fill="#546e7a" opacity="0.4"/>
+    <circle cx="0" cy="24" r="3" fill="#546e7a" opacity="0.4"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Vise base -->
+  <rect x="50" y="110" width="100" height="15" rx="3" fill="#4e342e"/>
+  <!-- Vise fixed jaw -->
+  <rect x="60" y="50" width="15" height="60" rx="2" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Vise moving jaw -->
+  <rect x="125" y="50" width="15" height="60" rx="2" fill="#795548" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Vise screw -->
+  <rect x="140" y="75" width="35" height="8" rx="2" fill="#4e342e"/>
+  <!-- Screw handle -->
+  <rect x="172" y="65" width="6" height="28" rx="2" fill="#4e342e"/>
+  <!-- Screw thread lines -->
+  <line x1="145" y1="76" x2="145" y2="82" stroke="#795548" stroke-width="0.8"/>
+  <line x1="150" y1="76" x2="150" y2="82" stroke="#795548" stroke-width="0.8"/>
+  <line x1="155" y1="76" x2="155" y2="82" stroke="#795548" stroke-width="0.8"/>
+  <line x1="160" y1="76" x2="160" y2="82" stroke="#795548" stroke-width="0.8"/>
+  <line x1="165" y1="76" x2="165" y2="82" stroke="#795548" stroke-width="0.8"/>
+  <!-- Piece being gripped -->
+  <rect x="75" y="55" width="50" height="50" rx="2" fill="#795548" opacity="0.5" stroke="#4e342e" stroke-width="1" stroke-dasharray="4,2"/>
+  <!-- Grip pressure lines -->
+  <line x1="68" y1="60" x2="72" y2="60" stroke="#4e342e" stroke-width="1.5"/>
+  <line x1="68" y1="70" x2="72" y2="70" stroke="#4e342e" stroke-width="1.5"/>
+  <line x1="68" y1="80" x2="72" y2="80" stroke="#4e342e" stroke-width="1.5"/>
+  <line x1="128" y1="60" x2="132" y2="60" stroke="#4e342e" stroke-width="1.5"/>
+  <line x1="128" y1="70" x2="132" y2="70" stroke="#4e342e" stroke-width="1.5"/>
+  <line x1="128" y1="80" x2="132" y2="80" stroke="#4e342e" stroke-width="1.5"/>
+  <!-- Vise body -->
+  <rect x="55" y="105" width="90" height="8" rx="2" fill="#4e342e" opacity="0.6"/>
+</svg>

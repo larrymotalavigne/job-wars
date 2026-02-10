@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#efebe9"/>
+  <!-- Roof structure -->
+  <polygon points="100,20 30,80 170,80" fill="none" stroke="#4e342e" stroke-width="2"/>
+  <!-- Roof tiles rows -->
+  <rect x="55" y="50" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <rect x="73" y="50" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <rect x="91" y="50" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <rect x="109" y="50" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <rect x="127" y="50" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <rect x="45" y="62" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <rect x="63" y="62" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <rect x="81" y="62" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <rect x="99" y="62" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <rect x="117" y="62" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <rect x="135" y="62" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="0.5"/>
+  <!-- Tile being placed -->
+  <rect x="100" y="35" width="18" height="12" rx="1" fill="#795548" stroke="#4e342e" stroke-width="1" transform="rotate(-10,109,41)"/>
+  <!-- Hammer -->
+  <rect x="140" y="85" width="5" height="35" rx="1" fill="#795548"/>
+  <rect x="130" y="80" width="25" height="10" rx="2" fill="#4e342e"/>
+</svg>

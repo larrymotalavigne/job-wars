@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fef7e0"/>
+  <!-- Building base -->
+  <rect x="40" y="115" width="120" height="12" rx="2" fill="#f57f17"/>
+  <!-- Building body -->
+  <rect x="50" y="50" width="100" height="65" fill="#f9a825"/>
+  <!-- Pediment/triangle roof -->
+  <polygon points="45,50 100,18 155,50" fill="#f57f17"/>
+  <polygon points="52,50 100,23 148,50" fill="#f9a825"/>
+  <!-- Columns -->
+  <rect x="58" y="55" width="8" height="58" rx="2" fill="#fef7e0"/>
+  <rect x="78" y="55" width="8" height="58" rx="2" fill="#fef7e0"/>
+  <rect x="96" y="55" width="8" height="58" rx="2" fill="#fef7e0"/>
+  <rect x="114" y="55" width="8" height="58" rx="2" fill="#fef7e0"/>
+  <rect x="134" y="55" width="8" height="58" rx="2" fill="#fef7e0"/>
+  <!-- Column capitals -->
+  <rect x="56" y="52" width="12" height="5" rx="1" fill="#f57f17" opacity="0.6"/>
+  <rect x="76" y="52" width="12" height="5" rx="1" fill="#f57f17" opacity="0.6"/>
+  <rect x="94" y="52" width="12" height="5" rx="1" fill="#f57f17" opacity="0.6"/>
+  <rect x="112" y="52" width="12" height="5" rx="1" fill="#f57f17" opacity="0.6"/>
+  <rect x="132" y="52" width="12" height="5" rx="1" fill="#f57f17" opacity="0.6"/>
+  <!-- Door -->
+  <rect x="90" y="85" width="20" height="28" rx="10" fill="#f57f17"/>
+  <!-- Left laurel branch -->
+  <path d="M25 90 Q20 80 25 70" fill="none" stroke="#f9a825" stroke-width="2"/>
+  <ellipse cx="22" cy="72" rx="5" ry="8" fill="#f9a825" opacity="0.6" transform="rotate(-20 22 72)"/>
+  <ellipse cx="20" cy="82" rx="5" ry="8" fill="#f9a825" opacity="0.6" transform="rotate(-10 20 82)"/>
+  <ellipse cx="22" cy="92" rx="5" ry="8" fill="#f9a825" opacity="0.6" transform="rotate(10 22 92)"/>
+  <ellipse cx="25" cy="100" rx="5" ry="8" fill="#f9a825" opacity="0.6" transform="rotate(20 25 100)"/>
+  <!-- Right laurel branch -->
+  <path d="M175 90 Q180 80 175 70" fill="none" stroke="#f9a825" stroke-width="2"/>
+  <ellipse cx="178" cy="72" rx="5" ry="8" fill="#f9a825" opacity="0.6" transform="rotate(20 178 72)"/>
+  <ellipse cx="180" cy="82" rx="5" ry="8" fill="#f9a825" opacity="0.6" transform="rotate(10 180 82)"/>
+  <ellipse cx="178" cy="92" rx="5" ry="8" fill="#f9a825" opacity="0.6" transform="rotate(-10 178 92)"/>
+  <ellipse cx="175" cy="100" rx="5" ry="8" fill="#f9a825" opacity="0.6" transform="rotate(-20 175 100)"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e8f0fe"/>
+  <!-- Robot head outline -->
+  <rect x="60" y="20" width="80" height="75" rx="12" ry="12" fill="white" stroke="#1a73e8" stroke-width="2.5"/>
+  <!-- Antenna -->
+  <line x1="100" y1="20" x2="100" y2="8" stroke="#174ea6" stroke-width="2.5"/>
+  <circle cx="100" cy="6" r="4" fill="#1a73e8"/>
+  <!-- Ears -->
+  <rect x="50" y="40" width="10" height="20" rx="3" fill="#174ea6"/>
+  <rect x="140" y="40" width="10" height="20" rx="3" fill="#174ea6"/>
+  <!-- Glowing eyes -->
+  <circle cx="82" cy="48" r="10" fill="#174ea6"/>
+  <circle cx="82" cy="48" r="6" fill="#1a73e8"/>
+  <circle cx="82" cy="46" r="3" fill="#e8f0fe"/>
+  <circle cx="118" cy="48" r="10" fill="#174ea6"/>
+  <circle cx="118" cy="48" r="6" fill="#1a73e8"/>
+  <circle cx="118" cy="46" r="3" fill="#e8f0fe"/>
+  <!-- Mouth -->
+  <rect x="82" y="72" width="36" height="6" rx="3" fill="#174ea6"/>
+  <line x1="91" y1="72" x2="91" y2="78" stroke="#e8f0fe" stroke-width="1"/>
+  <line x1="100" y1="72" x2="100" y2="78" stroke="#e8f0fe" stroke-width="1"/>
+  <line x1="109" y1="72" x2="109" y2="78" stroke="#e8f0fe" stroke-width="1"/>
+  <!-- Circuit patterns on face -->
+  <line x1="68" y1="60" x2="72" y2="60" stroke="#1a73e8" stroke-width="1"/>
+  <line x1="72" y1="60" x2="72" y2="68" stroke="#1a73e8" stroke-width="1"/>
+  <circle cx="72" cy="68" r="1.5" fill="#1a73e8"/>
+  <line x1="128" y1="60" x2="132" y2="60" stroke="#1a73e8" stroke-width="1"/>
+  <line x1="128" y1="60" x2="128" y2="68" stroke="#1a73e8" stroke-width="1"/>
+  <circle cx="128" cy="68" r="1.5" fill="#1a73e8"/>
+  <!-- Circuit patterns below head -->
+  <line x1="80" y1="100" x2="80" y2="115" stroke="#1a73e8" stroke-width="1.5"/>
+  <line x1="80" y1="115" x2="95" y2="115" stroke="#1a73e8" stroke-width="1.5"/>
+  <circle cx="95" cy="115" r="2" fill="#1a73e8"/>
+  <line x1="100" y1="100" x2="100" y2="125" stroke="#1a73e8" stroke-width="1.5"/>
+  <circle cx="100" cy="125" r="2" fill="#1a73e8"/>
+  <line x1="120" y1="100" x2="120" y2="115" stroke="#1a73e8" stroke-width="1.5"/>
+  <line x1="120" y1="115" x2="105" y2="115" stroke="#1a73e8" stroke-width="1.5"/>
+  <circle cx="105" cy="115" r="2" fill="#1a73e8"/>
+  <!-- Neck -->
+  <rect x="90" y="95" width="20" height="10" rx="2" fill="#174ea6"/>
+  <!-- Side circuit patterns -->
+  <line x1="25" y1="50" x2="50" y2="50" stroke="#1a73e8" stroke-width="1" opacity="0.4"/>
+  <line x1="25" y1="50" x2="25" y2="70" stroke="#1a73e8" stroke-width="1" opacity="0.4"/>
+  <circle cx="25" cy="70" r="2" fill="#1a73e8" opacity="0.4"/>
+  <line x1="150" y1="50" x2="175" y2="50" stroke="#1a73e8" stroke-width="1" opacity="0.4"/>
+  <line x1="175" y1="50" x2="175" y2="70" stroke="#1a73e8" stroke-width="1" opacity="0.4"/>
+  <circle cx="175" cy="70" r="2" fill="#1a73e8" opacity="0.4"/>
+</svg>

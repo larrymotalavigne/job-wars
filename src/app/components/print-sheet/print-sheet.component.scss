@@ -1,0 +1,96 @@
+$card-width: 63mm;
+$card-height: 88mm;
+
+.print-controls {
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    margin: 0 0 0.5rem;
+  }
+
+  .hint {
+    color: var(--p-text-muted-color);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.print-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.print-page {
+  width: calc(#{$card-width} * 3 + 6mm);
+  background: #fff;
+  padding: 3mm;
+  border: 1px dashed #ccc;
+  position: relative;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, $card-width);
+  grid-template-rows: repeat(3, $card-height);
+  gap: 0;
+}
+
+.card-slot {
+  width: $card-width;
+  height: $card-height;
+  outline: 0.5px dashed #ddd;
+}
+
+.page-number {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 2mm;
+}
+
+// Print styles
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-area {
+    padding: 0;
+    gap: 0;
+  }
+
+  .print-page {
+    width: auto;
+    border: none;
+    padding: 0;
+    margin: 0;
+    page-break-after: always;
+    break-after: page;
+
+    &:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+  }
+
+  .card-grid {
+    margin: 0 auto;
+  }
+
+  .card-slot {
+    outline: 0.25px solid #ccc;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 10mm;
+}

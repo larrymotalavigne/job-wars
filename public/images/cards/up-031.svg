@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e6f4ea"/>
+  <!-- Building/rooftop -->
+  <rect x="30" y="85" width="140" height="40" rx="2" fill="#0d652d" opacity="0.4"/>
+  <line x1="30" y1="85" x2="170" y2="85" stroke="#0d652d" stroke-width="2"/>
+  <!-- Solar panel array - row 1 -->
+  <rect x="40" y="45" width="35" height="22" rx="1" fill="#0d652d" opacity="0.75" transform="rotate(-15, 57, 56)"/>
+  <line x1="42" y1="50" x2="73" y2="43" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="44" y1="56" x2="75" y2="49" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="46" y1="62" x2="77" y2="55" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="50" y1="42" x2="52" y2="68" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="60" y1="39" x2="62" y2="65" stroke="#e6f4ea" stroke-width="0.8"/>
+
+  <rect x="82" y="45" width="35" height="22" rx="1" fill="#0d652d" opacity="0.75" transform="rotate(-15, 99, 56)"/>
+  <line x1="84" y1="50" x2="115" y2="43" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="86" y1="56" x2="117" y2="49" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="88" y1="62" x2="119" y2="55" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="92" y1="42" x2="94" y2="68" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="102" y1="39" x2="104" y2="65" stroke="#e6f4ea" stroke-width="0.8"/>
+
+  <rect x="124" y="45" width="35" height="22" rx="1" fill="#0d652d" opacity="0.75" transform="rotate(-15, 141, 56)"/>
+  <line x1="126" y1="50" x2="157" y2="43" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="128" y1="56" x2="159" y2="49" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="130" y1="62" x2="161" y2="55" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="134" y1="42" x2="136" y2="68" stroke="#e6f4ea" stroke-width="0.8"/>
+  <line x1="144" y1="39" x2="146" y2="65" stroke="#e6f4ea" stroke-width="0.8"/>
+  <!-- Panel supports -->
+  <line x1="50" y1="68" x2="50" y2="85" stroke="#0d652d" stroke-width="2"/>
+  <line x1="65" y1="65" x2="65" y2="85" stroke="#0d652d" stroke-width="2"/>
+  <line x1="92" y1="68" x2="92" y2="85" stroke="#0d652d" stroke-width="2"/>
+  <line x1="107" y1="65" x2="107" y2="85" stroke="#0d652d" stroke-width="2"/>
+  <line x1="134" y1="68" x2="134" y2="85" stroke="#0d652d" stroke-width="2"/>
+  <line x1="149" y1="65" x2="149" y2="85" stroke="#0d652d" stroke-width="2"/>
+  <!-- Sun rays -->
+  <circle cx="170" cy="25" r="12" fill="#0d652d" opacity="0.25"/>
+  <line x1="170" y1="8" x2="170" y2="14" stroke="#0d652d" stroke-width="1.5" opacity="0.2"/>
+  <line x1="183" y1="12" x2="179" y2="17" stroke="#0d652d" stroke-width="1.5" opacity="0.2"/>
+  <line x1="187" y1="25" x2="182" y2="25" stroke="#0d652d" stroke-width="1.5" opacity="0.2"/>
+  <line x1="157" y1="12" x2="161" y2="17" stroke="#0d652d" stroke-width="1.5" opacity="0.2"/>
+  <!-- Ground -->
+  <line x1="20" y1="125" x2="180" y2="125" stroke="#0d652d" stroke-width="2"/>
+</svg>

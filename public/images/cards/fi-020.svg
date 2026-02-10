@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Axes -->
+  <line x1="35" y1="15" x2="35" y2="130" stroke="#37474f" stroke-width="2"/>
+  <line x1="35" y1="130" x2="180" y2="130" stroke="#37474f" stroke-width="2"/>
+  <!-- Axis arrows -->
+  <polygon points="35,12 31,20 39,20" fill="#37474f"/>
+  <polygon points="183,130 175,126 175,134" fill="#37474f"/>
+  <!-- Supply curve (upward sloping) -->
+  <path d="M45 120 Q80 100 100 75 Q120 50 165 25" fill="none" stroke="#546e7a" stroke-width="3"/>
+  <!-- Demand curve (downward sloping) -->
+  <path d="M45 25 Q80 50 100 75 Q120 100 165 120" fill="none" stroke="#37474f" stroke-width="3"/>
+  <!-- Intersection point -->
+  <circle cx="100" cy="75" r="5" fill="#37474f"/>
+  <!-- Dashed lines to axes from intersection -->
+  <line x1="100" y1="75" x2="100" y2="130" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="100" y1="75" x2="35" y2="75" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- Axis tick marks -->
+  <line x1="100" y1="128" x2="100" y2="133" stroke="#37474f" stroke-width="1.5"/>
+  <line x1="33" y1="75" x2="37" y2="75" stroke="#37474f" stroke-width="1.5"/>
+  <!-- Grid dots -->
+  <circle cx="60" cy="100" r="1.5" fill="#546e7a" opacity="0.4"/>
+  <circle cx="80" cy="85" r="1.5" fill="#546e7a" opacity="0.4"/>
+  <circle cx="120" cy="65" r="1.5" fill="#546e7a" opacity="0.4"/>
+  <circle cx="140" cy="50" r="1.5" fill="#546e7a" opacity="0.4"/>
+</svg>

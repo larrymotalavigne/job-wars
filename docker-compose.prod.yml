@@ -1,0 +1,12 @@
+services:
+  card-game:
+    image: ghcr.io/larrymotalavigne/card-game:latest
+    container_name: card-game
+    restart: unless-stopped
+    networks:
+      - card-game
+
+networks:
+  card-game:
+    name: card-game
+    driver: bridge

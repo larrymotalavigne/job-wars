@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+  <!-- Surgical light arm from ceiling -->
+  <rect x="95" y="5" width="10" height="20" fill="#00695c"/>
+  <!-- Surgical light head -->
+  <ellipse cx="100" cy="32" rx="30" ry="10" fill="#00695c"/>
+  <ellipse cx="100" cy="30" rx="28" ry="8" fill="#00897b"/>
+  <!-- Light beam -->
+  <polygon points="75,38 125,38 145,95 55,95" fill="#00897b" opacity="0.15"/>
+  <!-- Light glow -->
+  <ellipse cx="100" cy="30" rx="15" ry="4" fill="#e0f2f1" opacity="0.5"/>
+  <!-- Operating table -->
+  <rect x="40" y="95" width="120" height="8" rx="3" ry="3" fill="#00897b"/>
+  <!-- Table mattress -->
+  <rect x="45" y="88" width="110" height="9" rx="2" ry="2" fill="#00695c"/>
+  <!-- Table pillow -->
+  <rect x="120" y="82" width="28" height="8" rx="3" ry="3" fill="#00897b"/>
+  <!-- Table pedestal -->
+  <rect x="90" y="103" width="20" height="25" fill="#00695c"/>
+  <!-- Table base -->
+  <rect x="70" y="125" width="60" height="8" rx="3" ry="3" fill="#00897b"/>
+  <!-- Small surgical lights on sides -->
+  <circle cx="75" cy="30" r="4" fill="#e0f2f1" opacity="0.6"/>
+  <circle cx="100" cy="28" r="4" fill="#e0f2f1" opacity="0.6"/>
+  <circle cx="125" cy="30" r="4" fill="#e0f2f1" opacity="0.6"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Briefcase body -->
+  <rect x="35" y="45" width="130" height="80" rx="6" ry="6" fill="#37474f"/>
+  <!-- Briefcase handle -->
+  <rect x="78" y="32" width="44" height="16" rx="6" ry="6" fill="none" stroke="#37474f" stroke-width="4"/>
+  <!-- Briefcase latch -->
+  <rect x="92" y="45" width="16" height="6" rx="2" ry="2" fill="#546e7a"/>
+  <circle cx="100" cy="48" r="2" fill="#eceff1"/>
+  <!-- Briefcase divider line -->
+  <line x1="100" y1="55" x2="100" y2="120" stroke="#546e7a" stroke-width="1" opacity="0.5"/>
+  <!-- Stock chart 1 (left side) -->
+  <polyline points="45,100 55,95 62,98 70,85 78,75 88,68" fill="none" stroke="#eceff1" stroke-width="2"/>
+  <!-- Up arrow for chart 1 -->
+  <polygon points="88,63 92,70 84,70" fill="#eceff1"/>
+  <!-- Stock chart 2 (right side) -->
+  <polyline points="110,95 118,88 125,90 132,78 140,82 150,70" fill="none" stroke="#eceff1" stroke-width="2"/>
+  <!-- Up arrow for chart 2 -->
+  <polygon points="150,65 154,72 146,72" fill="#eceff1"/>
+  <!-- Small bar chart in briefcase -->
+  <rect x="50" y="105" width="6" height="12" fill="#546e7a"/>
+  <rect x="60" y="100" width="6" height="17" fill="#eceff1" opacity="0.5"/>
+  <rect x="70" y="108" width="6" height="9" fill="#546e7a"/>
+  <rect x="80" y="102" width="6" height="15" fill="#eceff1" opacity="0.5"/>
+  <!-- Right side mini chart -->
+  <rect x="112" y="103" width="6" height="14" fill="#546e7a"/>
+  <rect x="122" y="98" width="6" height="19" fill="#eceff1" opacity="0.5"/>
+  <rect x="132" y="106" width="6" height="11" fill="#546e7a"/>
+  <rect x="142" y="100" width="6" height="17" fill="#eceff1" opacity="0.5"/>
+</svg>

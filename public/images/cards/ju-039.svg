@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f3e5f5"/>
+  <!-- Document - left torn half -->
+  <path d="M30,15 L95,15 L95,25 L88,35 L95,45 L90,55 L95,65 L88,75 L95,85 L90,95 L95,105 L88,115 L95,125 L95,135 L30,135 Z" fill="white" stroke="#6a1b9a" stroke-width="1.5"/>
+  <!-- Document - right torn half -->
+  <path d="M105,15 L170,15 L170,135 L105,135 L105,125 L112,115 L105,105 L110,95 L105,85 L112,75 L105,65 L110,55 L105,45 L112,35 L105,25 Z" fill="white" stroke="#6a1b9a" stroke-width="1.5"/>
+  <!-- Text lines on left part -->
+  <line x1="40" y1="30" x2="85" y2="30" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="40" y1="42" x2="80" y2="42" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="40" y1="54" x2="85" y2="54" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="40" y1="66" x2="78" y2="66" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <!-- Text lines on right part -->
+  <line x1="115" y1="30" x2="162" y2="30" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="115" y1="42" x2="160" y2="42" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="115" y1="54" x2="158" y2="54" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <line x1="115" y1="66" x2="162" y2="66" stroke="#6a1b9a" stroke-width="0.8" opacity="0.3"/>
+  <!-- VOID stamp circle -->
+  <rect x="55" y="80" width="90" height="40" rx="8" fill="none" stroke="#4a148c" stroke-width="4" opacity="0.7" transform="rotate(-10,100,100)"/>
+  <!-- VOID represented by geometric shapes -->
+  <!-- V -->
+  <line x1="65" y1="88" x2="72" y2="108" stroke="#4a148c" stroke-width="3" opacity="0.7"/>
+  <line x1="72" y1="108" x2="79" y2="88" stroke="#4a148c" stroke-width="3" opacity="0.7"/>
+  <!-- O -->
+  <ellipse cx="92" cy="98" rx="8" ry="10" fill="none" stroke="#4a148c" stroke-width="3" opacity="0.7"/>
+  <!-- I -->
+  <line x1="108" y1="88" x2="108" y2="108" stroke="#4a148c" stroke-width="3" opacity="0.7"/>
+  <!-- D -->
+  <path d="M120,88 L120,108 L128,108 Q136,98 128,88 Z" fill="none" stroke="#4a148c" stroke-width="3" opacity="0.7"/>
+</svg>

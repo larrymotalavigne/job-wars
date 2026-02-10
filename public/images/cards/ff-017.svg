@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#fff3e0"/>
+  <!-- Water / waves at bottom -->
+  <path d="M0,120 Q25,110 50,120 Q75,130 100,120 Q125,110 150,120 Q175,130 200,120 L200,150 L0,150Z" fill="#ef6c00" opacity="0.3"/>
+  <path d="M0,130 Q25,120 50,130 Q75,140 100,130 Q125,120 150,130 Q175,140 200,130 L200,150 L0,150Z" fill="#ef6c00" opacity="0.4"/>
+  <!-- Diving mask -->
+  <ellipse cx="100" cy="65" rx="38" ry="28" fill="#e65100"/>
+  <ellipse cx="100" cy="65" rx="33" ry="23" fill="#fff3e0"/>
+  <!-- Mask lens (single panoramic) -->
+  <ellipse cx="100" cy="62" rx="28" ry="16" fill="#ef6c00" opacity="0.3"/>
+  <!-- Mask strap -->
+  <line x1="62" y1="60" x2="40" y2="55" stroke="#e65100" stroke-width="4" stroke-linecap="round"/>
+  <line x1="138" y1="60" x2="160" y2="55" stroke="#e65100" stroke-width="4" stroke-linecap="round"/>
+  <!-- Snorkel -->
+  <path d="M138,65 L145,65 L148,40 L148,25 Q148,18 142,18 L140,18" fill="none" stroke="#ef6c00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Snorkel top -->
+  <ellipse cx="140" cy="17" rx="6" ry="4" fill="#ef6c00"/>
+  <!-- Nose bridge -->
+  <path d="M95,72 L100,80 L105,72" fill="none" stroke="#e65100" stroke-width="2"/>
+</svg>

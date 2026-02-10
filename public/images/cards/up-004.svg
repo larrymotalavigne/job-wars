@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="8" fill="#e6f4ea"/>
+  <!-- Water -->
+  <rect x="0" y="110" width="200" height="40" rx="0" fill="#b8e6c8" opacity="0.4"/>
+  <path d="M0,120 Q20,116 40,120 Q60,124 80,120 Q100,116 120,120 Q140,124 160,120 Q180,116 200,120" fill="none" stroke="#0d652d" stroke-width="1" opacity="0.3"/>
+  <path d="M0,128 Q20,124 40,128 Q60,132 80,128 Q100,124 120,128 Q140,132 160,128 Q180,124 200,128" fill="none" stroke="#0d652d" stroke-width="1" opacity="0.25"/>
+  <!-- Left bank -->
+  <rect x="0" y="100" width="40" height="15" fill="#e6f4ea"/>
+  <line x1="0" y1="112" x2="40" y2="112" stroke="#0d652d" stroke-width="2"/>
+  <!-- Right bank -->
+  <rect x="160" y="100" width="40" height="15" fill="#e6f4ea"/>
+  <line x1="160" y1="112" x2="200" y2="112" stroke="#0d652d" stroke-width="2"/>
+  <!-- Bridge deck -->
+  <rect x="30" y="55" width="140" height="8" rx="1" fill="#0d652d"/>
+  <!-- Road surface -->
+  <rect x="30" y="48" width="140" height="8" rx="1" fill="#1a8a3e" opacity="0.6"/>
+  <!-- Main arch 1 -->
+  <path d="M35,112 Q70,65 100,63" fill="none" stroke="#0d652d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M100,63 Q130,65 165,112" fill="none" stroke="#0d652d" stroke-width="4" stroke-linecap="round"/>
+  <!-- Support cables/pillars from arch to deck -->
+  <line x1="52" y1="95" x2="52" y2="63" stroke="#0d652d" stroke-width="2"/>
+  <line x1="72" y1="80" x2="72" y2="63" stroke="#0d652d" stroke-width="2"/>
+  <line x1="100" y1="63" x2="100" y2="63" stroke="#0d652d" stroke-width="2"/>
+  <line x1="128" y1="80" x2="128" y2="63" stroke="#0d652d" stroke-width="2"/>
+  <line x1="148" y1="95" x2="148" y2="63" stroke="#0d652d" stroke-width="2"/>
+  <!-- Left pillar -->
+  <rect x="32" y="48" width="12" height="66" rx="2" fill="#0d652d"/>
+  <!-- Right pillar -->
+  <rect x="156" y="48" width="12" height="66" rx="2" fill="#0d652d"/>
+  <!-- Pillar bases -->
+  <rect x="28" y="108" width="20" height="6" rx="1" fill="#0d652d"/>
+  <rect x="152" y="108" width="20" height="6" rx="1" fill="#0d652d"/>
+  <!-- Railing posts -->
+  <line x1="50" y1="42" x2="50" y2="48" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="65" y1="42" x2="65" y2="48" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="80" y1="42" x2="80" y2="48" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="95" y1="42" x2="95" y2="48" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="110" y1="42" x2="110" y2="48" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="125" y1="42" x2="125" y2="48" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="140" y1="42" x2="140" y2="48" stroke="#0d652d" stroke-width="1.5"/>
+  <line x1="155" y1="42" x2="155" y2="48" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Top railing -->
+  <line x1="38" y1="42" x2="162" y2="42" stroke="#0d652d" stroke-width="1.5"/>
+  <!-- Road markings -->
+  <line x1="55" y1="52" x2="65" y2="52" stroke="#e6f4ea" stroke-width="1" opacity="0.6"/>
+  <line x1="80" y1="52" x2="90" y2="52" stroke="#e6f4ea" stroke-width="1" opacity="0.6"/>
+  <line x1="105" y1="52" x2="115" y2="52" stroke="#e6f4ea" stroke-width="1" opacity="0.6"/>
+  <line x1="130" y1="52" x2="140" y2="52" stroke="#e6f4ea" stroke-width="1" opacity="0.6"/>
+</svg>

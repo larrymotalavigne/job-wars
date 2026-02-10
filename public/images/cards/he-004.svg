@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="150" rx="12" ry="12" fill="#e0f2f1"/>
+
+  <!-- Soft circle backdrop -->
+  <circle cx="100" cy="75" r="52" fill="#00897b" opacity="0.1"/>
+
+  <!-- Scalpel -->
+  <g transform="translate(65, 25) rotate(15, 35, 50)">
+    <!-- Scalpel handle -->
+    <rect x="28" y="55" width="14" height="55" rx="3" fill="#00897b"/>
+    <!-- Handle grip lines -->
+    <line x1="30" y1="70" x2="40" y2="70" stroke="#00695c" stroke-width="1.5"/>
+    <line x1="30" y1="76" x2="40" y2="76" stroke="#00695c" stroke-width="1.5"/>
+    <line x1="30" y1="82" x2="40" y2="82" stroke="#00695c" stroke-width="1.5"/>
+    <line x1="30" y1="88" x2="40" y2="88" stroke="#00695c" stroke-width="1.5"/>
+    <!-- Scalpel blade -->
+    <path d="M28,55 L35,20 L42,55 Z" fill="#00695c"/>
+    <!-- Blade highlight -->
+    <path d="M33,55 L35,28 L37,55 Z" fill="#e0f2f1" opacity="0.3"/>
+  </g>
+
+  <!-- Surgical scissors -->
+  <g transform="translate(115, 30) rotate(-10, 20, 45)">
+    <!-- Left blade -->
+    <path d="M18,40 L10,10 Q8,5 12,5 L16,8 Z" fill="#00695c"/>
+    <!-- Right blade -->
+    <path d="M22,40 L30,10 Q32,5 28,5 L24,8 Z" fill="#00897b"/>
+    <!-- Pivot point -->
+    <circle cx="20" cy="42" r="4" fill="#00695c"/>
+    <circle cx="20" cy="42" r="2" fill="#e0f2f1"/>
+    <!-- Left handle -->
+    <ellipse cx="12" cy="65" rx="8" ry="12" fill="none" stroke="#00695c" stroke-width="3"/>
+    <!-- Right handle -->
+    <ellipse cx="28" cy="65" rx="8" ry="12" fill="none" stroke="#00897b" stroke-width="3"/>
+  </g>
+
+  <!-- Surgical mask at bottom -->
+  <path d="M60,115 Q100,135 140,115" fill="#00897b" opacity="0.2" stroke="#00897b" stroke-width="1.5"/>
+  <path d="M60,115 Q100,100 140,115" fill="#00897b" opacity="0.2" stroke="#00897b" stroke-width="1.5"/>
+  <!-- Mask ties -->
+  <line x1="60" y1="115" x2="45" y2="108" stroke="#00897b" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="140" y1="115" x2="155" y2="108" stroke="#00897b" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#f1f8e9"/>
+  <!-- Officier du Génie: crossed pick and shovel with star -->
+  <!-- Shovel handle -->
+  <line x1="55" y1="130" x2="130" y2="25" stroke="#33691e" stroke-width="5" stroke-linecap="round"/>
+  <!-- Shovel head -->
+  <path d="M125,30 L140,15 Q148,20 142,32 L130,28 Z" fill="#558b2f"/>
+  <!-- Pick handle -->
+  <line x1="145" y1="130" x2="70" y2="25" stroke="#33691e" stroke-width="5" stroke-linecap="round"/>
+  <!-- Pick head -->
+  <path d="M60,28 L50,18 Q48,15 52,14 L78,22 Q80,24 78,27 Z" fill="#558b2f"/>
+  <path d="M72,24 L82,20 Q86,18 85,22 L75,30 Z" fill="#558b2f"/>
+  <!-- Star at crossing point -->
+  <polygon points="100,58 103,68 113,68 105,74 108,84 100,78 92,84 95,74 87,68 97,68" fill="#f1f8e9" stroke="#33691e" stroke-width="1.5"/>
+  <!-- Smaller accent stars -->
+  <polygon points="50,55 51,58 54,58 52,60 53,63 50,61 47,63 48,60 46,58 49,58" fill="#558b2f" opacity="0.5"/>
+  <polygon points="150,55 151,58 154,58 152,60 153,63 150,61 147,63 148,60 146,58 149,58" fill="#558b2f" opacity="0.5"/>
+</svg>

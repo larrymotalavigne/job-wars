@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" rx="12" ry="12" fill="#eceff1"/>
+  <!-- Ocean/water -->
+  <path d="M0 115 Q30 110 60 115 Q90 120 120 115 Q150 110 180 115 Q195 117 200 115 L200 150 L0 150 Z" fill="#546e7a" opacity="0.25"/>
+  <path d="M0 122 Q25 118 50 122 Q75 126 100 122 Q125 118 150 122 Q175 126 200 122 L200 150 L0 150 Z" fill="#546e7a" opacity="0.35"/>
+  <!-- Island sand -->
+  <ellipse cx="100" cy="115" rx="55" ry="12" fill="#546e7a" opacity="0.4"/>
+  <ellipse cx="100" cy="112" rx="48" ry="8" fill="#546e7a" opacity="0.3"/>
+  <!-- Palm tree trunk -->
+  <path d="M90 112 Q88 85 92 55" fill="none" stroke="#37474f" stroke-width="4" stroke-linecap="round"/>
+  <!-- Palm fronds -->
+  <path d="M92 55 Q110 45 125 50" fill="none" stroke="#546e7a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M92 55 Q115 55 130 65" fill="none" stroke="#546e7a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M92 55 Q80 40 65 42" fill="none" stroke="#546e7a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M92 55 Q70 50 55 55" fill="none" stroke="#546e7a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M92 55 Q95 38 100 30" fill="none" stroke="#546e7a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Leaf details -->
+  <path d="M125 50 Q118 48 110 50" fill="none" stroke="#37474f" stroke-width="0.8" opacity="0.5"/>
+  <path d="M65 42 Q72 42 80 46" fill="none" stroke="#37474f" stroke-width="0.8" opacity="0.5"/>
+  <!-- Vault on island -->
+  <rect x="100" y="80" width="35" height="30" rx="3" ry="3" fill="#37474f"/>
+  <!-- Vault door -->
+  <circle cx="117" cy="95" r="11" fill="#546e7a"/>
+  <circle cx="117" cy="95" r="8" fill="#37474f"/>
+  <!-- Vault door handle spokes -->
+  <line x1="117" y1="88" x2="117" y2="102" stroke="#eceff1" stroke-width="1.5"/>
+  <line x1="110" y1="95" x2="124" y2="95" stroke="#eceff1" stroke-width="1.5"/>
+  <!-- Center hub -->
+  <circle cx="117" cy="95" r="2" fill="#eceff1"/>
+  <!-- Coins on island -->
+  <circle cx="78" cy="107" r="5" fill="#37474f"/>
+  <circle cx="78" cy="107" r="3" fill="#546e7a"/>
+  <circle cx="68" cy="110" r="4" fill="#37474f"/>
+  <circle cx="68" cy="110" r="2.5" fill="#546e7a"/>
+  <!-- Sun -->
+  <circle cx="165" cy="25" r="12" fill="#546e7a" opacity="0.3"/>
+  <!-- Sun rays -->
+  <line x1="165" y1="8" x2="165" y2="14" stroke="#546e7a" stroke-width="1.5" opacity="0.2"/>
+  <line x1="180" y1="25" x2="185" y2="25" stroke="#546e7a" stroke-width="1.5" opacity="0.2"/>
+  <line x1="175" y1="15" x2="180" y2="10" stroke="#546e7a" stroke-width="1.5" opacity="0.2"/>
+  <line x1="175" y1="35" x2="180" y2="40" stroke="#546e7a" stroke-width="1.5" opacity="0.2"/>
+</svg>
