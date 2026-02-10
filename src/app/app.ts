@@ -13,6 +13,7 @@ import { Menubar } from 'primeng/menubar';
 export class AppComponent {
   menuItems: MenuItem[] = [
     { label: 'Galerie', icon: 'pi pi-th-large', routerLink: '/gallery' },
+    { label: 'Constructeur', icon: 'pi pi-objects-column', routerLink: '/deck-builder' },
     { label: 'Imprimer', icon: 'pi pi-print', routerLink: '/print' },
     { label: 'Règles', icon: 'pi pi-book', routerLink: '/rules' },
   ];

@@ -1,0 +1,55 @@
+.stats-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0.5rem 0;
+}
+
+.stats-summary {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--p-primary-color);
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--p-text-muted-color);
+  }
+}
+
+.chart-section {
+  h4 {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--p-text-muted-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+.chart-container {
+  height: 180px;
+}
+
+.chart-doughnut {
+  height: 200px;
+}
+
+.chart-type {
+  height: 120px;
+}

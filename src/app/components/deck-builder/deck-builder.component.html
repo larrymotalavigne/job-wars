@@ -1,0 +1,491 @@
+<p-toast />
+<p-confirmDialog />
+
+<div class="deck-builder">
+  <!-- Header Bar -->
+  <div class="deck-header">
+    <div class="deck-header-left">
+      <input
+        pInputText
+        type="text"
+        [(ngModel)]="deckName"
+        placeholder="Nom du deck"
+        class="deck-name-input"
+      />
+      <p-select
+        [options]="deckSelectorOptions"
+        [(ngModel)]="selectedDeckId"
+        (onChange)="onDeckSelect()"
+        placeholder="Charger un deck..."
+        [showClear]="true"
+        class="deck-selector"
+      />
+    </div>
+    <div class="deck-header-actions">
+      <p-button label="Nouveau" icon="pi pi-plus" [text]="true" size="small" (onClick)="newDeck()" />
+      <p-button label="Sauvegarder" icon="pi pi-save" size="small" (onClick)="saveDeck()" />
+      <p-button
+        label="Deck"
+        icon="pi pi-bars"
+        size="small"
+        [outlined]="true"
+        class="mobile-deck-btn"
+        (onClick)="showDeckDrawer = true"
+      />
+    </div>
+  </div>
+
+  <!-- Desktop Layout: Splitter -->
+  <p-splitter [panelSizes]="[55, 45]" class="desktop-splitter" styleClass="deck-splitter">
+    <ng-template pTemplate>
+      <!-- Browse Panel -->
+      <div class="browse-panel">
+        <div class="filters-bar">
+          <div class="filter-group">
+            <label>Domaine</label>
+            <p-multiselect
+              [options]="domainOptions"
+              [(ngModel)]="selectedDomains"
+              (onChange)="applyFilters()"
+              placeholder="Tous"
+              [showClear]="true"
+              display="chip"
+            />
+          </div>
+          <div class="filter-group">
+            <label>Type</label>
+            <p-select
+              [options]="typeOptions"
+              [(ngModel)]="selectedTypes"
+              (onChange)="applyFilters()"
+              placeholder="Tous"
+              [showClear]="true"
+            />
+          </div>
+          <div class="filter-group">
+            <label>Rareté</label>
+            <p-multiselect
+              [options]="rarityOptions"
+              [(ngModel)]="selectedRarities"
+              (onChange)="applyFilters()"
+              placeholder="Toutes"
+              [showClear]="true"
+              display="chip"
+            />
+          </div>
+          <div class="filter-group cost-filter">
+            <label>Coût : {{ costRange[0] }} – {{ costRange[1] }}</label>
+            <p-slider
+              [(ngModel)]="costRange"
+              [range]="true"
+              [min]="0"
+              [max]="7"
+              (onSlideEnd)="applyFilters()"
+            />
+          </div>
+          <div class="filter-group search-group">
+            <label>Recherche</label>
+            <input
+              pInputText
+              type="text"
+              [(ngModel)]="searchText"
+              (input)="applyFilters()"
+              placeholder="Rechercher..."
+            />
+          </div>
+        </div>
+
+        <div class="browse-info">
+          <span>{{ filteredCards.length }} cartes disponibles</span>
+          <span class="hint">Cliquez pour ajouter au deck</span>
+        </div>
+
+        <div class="card-grid">
+          <div
+            class="card-wrapper"
+            *ngFor="let card of filteredCards; trackBy: trackByCard"
+            (click)="addCardToDeck(card)"
+            (dblclick)="openDetail(card)"
+          >
+            <app-card [card]="card" [design]="currentDesign" />
+            <div class="card-qty-badge" *ngIf="getCardQuantity(card.id) > 0">
+              {{ getCardQuantity(card.id) }}
+            </div>
+            <div class="card-max-overlay" *ngIf="isAtMaxCopies(card.id)">
+              <span>MAX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="empty-state" *ngIf="filteredCards.length === 0">
+          <i class="pi pi-search"></i>
+          <p>Aucune carte ne correspond à vos filtres.</p>
+        </div>
+      </div>
+    </ng-template>
+
+    <ng-template pTemplate>
+      <!-- Deck Panel (desktop) -->
+      <ng-container *ngTemplateOutlet="deckPanelTpl" />
+    </ng-template>
+  </p-splitter>
+
+  <!-- Mobile: full browse + Drawer for deck -->
+  <div class="mobile-browse">
+    <div class="browse-panel">
+      <div class="filters-bar">
+        <div class="filter-group">
+          <label>Domaine</label>
+          <p-multiselect
+            [options]="domainOptions"
+            [(ngModel)]="selectedDomains"
+            (onChange)="applyFilters()"
+            placeholder="Tous"
+            [showClear]="true"
+            display="chip"
+          />
+        </div>
+        <div class="filter-group">
+          <label>Type</label>
+          <p-select
+            [options]="typeOptions"
+            [(ngModel)]="selectedTypes"
+            (onChange)="applyFilters()"
+            placeholder="Tous"
+            [showClear]="true"
+          />
+        </div>
+        <div class="filter-group">
+          <label>Rareté</label>
+          <p-multiselect
+            [options]="rarityOptions"
+            [(ngModel)]="selectedRarities"
+            (onChange)="applyFilters()"
+            placeholder="Toutes"
+            [showClear]="true"
+            display="chip"
+          />
+        </div>
+        <div class="filter-group cost-filter">
+          <label>Coût : {{ costRange[0] }} – {{ costRange[1] }}</label>
+          <p-slider
+            [(ngModel)]="costRange"
+            [range]="true"
+            [min]="0"
+            [max]="7"
+            (onSlideEnd)="applyFilters()"
+          />
+        </div>
+        <div class="filter-group search-group">
+          <label>Recherche</label>
+          <input
+            pInputText
+            type="text"
+            [(ngModel)]="searchText"
+            (input)="applyFilters()"
+            placeholder="Rechercher..."
+          />
+        </div>
+      </div>
+
+      <div class="browse-info">
+        <span>{{ filteredCards.length }} cartes disponibles</span>
+        <span class="hint">Cliquez pour ajouter au deck</span>
+      </div>
+
+      <div class="card-grid">
+        <div
+          class="card-wrapper"
+          *ngFor="let card of filteredCards; trackBy: trackByCard"
+          (click)="addCardToDeck(card)"
+          (dblclick)="openDetail(card)"
+        >
+          <app-card [card]="card" [design]="currentDesign" />
+          <div class="card-qty-badge" *ngIf="getCardQuantity(card.id) > 0">
+            {{ getCardQuantity(card.id) }}
+          </div>
+          <div class="card-max-overlay" *ngIf="isAtMaxCopies(card.id)">
+            <span>MAX</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="empty-state" *ngIf="filteredCards.length === 0">
+        <i class="pi pi-search"></i>
+        <p>Aucune carte ne correspond à vos filtres.</p>
+      </div>
+    </div>
+  </div>
+
+  <p-drawer
+    [(visible)]="showDeckDrawer"
+    position="right"
+    [style]="{ width: '90vw', maxWidth: '500px' }"
+    header="Mon Deck"
+    class="mobile-drawer"
+  >
+    <ng-container *ngTemplateOutlet="deckPanelTpl" />
+  </p-drawer>
+</div>
+
+<!-- Shared Deck Panel Template -->
+<ng-template #deckPanelTpl>
+  <div class="deck-panel">
+    <p-tabs [value]="0">
+      <p-tablist>
+        <p-tab [value]="0">Liste</p-tab>
+        <p-tab [value]="1">Statistiques</p-tab>
+        <p-tab [value]="2">Mes Decks</p-tab>
+      </p-tablist>
+
+      <p-tabpanels>
+        <!-- Tab 1: Deck List -->
+        <p-tabpanel [value]="0">
+          <div class="deck-list-header">
+            <span class="deck-card-count">{{ deckStats.totalCards }} carte{{ deckStats.totalCards !== 1 ? 's' : '' }}</span>
+            <p-select
+              [options]="groupByOptions"
+              [(ngModel)]="groupBy"
+              size="small"
+              class="group-select"
+            />
+          </div>
+
+          <div class="deck-entries" *ngIf="deckEntries.length > 0">
+            <div class="deck-group" *ngFor="let group of groupedEntries">
+              <div class="group-header">{{ group.label }}</div>
+              <div
+                class="deck-entry"
+                *ngFor="let entry of group.entries; trackBy: trackByCardId"
+              >
+                <i
+                  [class]="getDomainIcon(entry.card.domain)"
+                  [style.color]="getDomainColor(entry.card.domain)"
+                  class="entry-domain-icon"
+                ></i>
+                <span
+                  class="entry-name"
+                  [pTooltip]="getAbilityText(entry.card)"
+                  tooltipPosition="left"
+                  (click)="openDetail(entry.card)"
+                >
+                  {{ entry.card.name }}
+                </span>
+                <span class="entry-cost">{{ entry.card.cost }}</span>
+                <span
+                  class="entry-rarity-dot"
+                  [style.background]="getRarityColor(entry.card.rarity)"
+                ></span>
+                <div class="entry-controls">
+                  <p-button
+                    icon="pi pi-minus"
+                    [rounded]="true"
+                    [text]="true"
+                    size="small"
+                    (onClick)="decrementCard(entry.card.id)"
+                  />
+                  <span class="entry-qty">{{ entry.quantity }}</span>
+                  <p-button
+                    icon="pi pi-plus"
+                    [rounded]="true"
+                    [text]="true"
+                    size="small"
+                    [disabled]="entry.quantity >= entry.maxCopies"
+                    (onClick)="incrementCard(entry.card.id)"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="empty-deck" *ngIf="deckEntries.length === 0">
+            <i class="pi pi-inbox"></i>
+            <p>Votre deck est vide. Cliquez sur des cartes pour les ajouter.</p>
+          </div>
+        </p-tabpanel>
+
+        <!-- Tab 2: Stats -->
+        <p-tabpanel [value]="1">
+          <app-deck-stats
+            *ngIf="deckStats.totalCards > 0"
+            [stats]="deckStats"
+          />
+          <div class="empty-deck" *ngIf="deckStats.totalCards === 0">
+            <i class="pi pi-chart-bar"></i>
+            <p>Ajoutez des cartes pour voir les statistiques.</p>
+          </div>
+        </p-tabpanel>
+
+        <!-- Tab 3: Saved Decks -->
+        <p-tabpanel [value]="2">
+          <div class="saved-decks-list" *ngIf="savedDecks.length > 0">
+            <div class="saved-deck-item" *ngFor="let deck of savedDecks">
+              <div class="saved-deck-info">
+                <span class="saved-deck-name">{{ deck.name }}</span>
+                <span class="saved-deck-meta">
+                  {{ deck.entries.length }} carte(s) unique(s) · modifié le {{ deck.updatedAt | date : 'short' }}
+                </span>
+              </div>
+              <div class="saved-deck-actions">
+                <p-button
+                  icon="pi pi-upload"
+                  pTooltip="Charger"
+                  [rounded]="true"
+                  [text]="true"
+                  size="small"
+                  (onClick)="loadDeck(deck.id)"
+                />
+                <p-button
+                  icon="pi pi-copy"
+                  pTooltip="Dupliquer"
+                  [rounded]="true"
+                  [text]="true"
+                  size="small"
+                  (onClick)="duplicateDeck(deck.id)"
+                />
+                <p-button
+                  icon="pi pi-trash"
+                  pTooltip="Supprimer"
+                  [rounded]="true"
+                  [text]="true"
+                  severity="danger"
+                  size="small"
+                  (onClick)="deleteDeck(deck.id)"
+                />
+                <p-button
+                  icon="pi pi-download"
+                  pTooltip="Exporter"
+                  [rounded]="true"
+                  [text]="true"
+                  size="small"
+                  (onClick)="loadDeck(deck.id); exportDeck()"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="empty-deck" *ngIf="savedDecks.length === 0">
+            <i class="pi pi-folder-open"></i>
+            <p>Aucun deck sauvegardé.</p>
+          </div>
+        </p-tabpanel>
+      </p-tabpanels>
+    </p-tabs>
+
+    <!-- Validation Footer -->
+    <div class="deck-footer">
+      <div class="validation-status">
+        <span class="card-count" [class.valid]="deckValidation.isValid">
+          {{ deckStats.totalCards }}/{{ DECK_MIN_CARDS }} cartes
+        </span>
+        <p-tag
+          *ngIf="deckValidation.isValid"
+          value="Valide"
+          severity="success"
+          [rounded]="true"
+        />
+        <p-tag
+          *ngIf="!deckValidation.isValid && deckStats.totalCards > 0"
+          value="Incomplet"
+          severity="warn"
+          [rounded]="true"
+        />
+      </div>
+
+      <div class="validation-messages" *ngIf="deckValidation.errors.length > 0 || deckValidation.warnings.length > 0">
+        <div class="validation-error" *ngFor="let err of deckValidation.errors">
+          <i class="pi pi-times-circle"></i> {{ err }}
+        </div>
+        <div class="validation-warning" *ngFor="let warn of deckValidation.warnings">
+          <i class="pi pi-exclamation-triangle"></i> {{ warn }}
+        </div>
+      </div>
+
+      <div class="footer-actions">
+        <p-button
+          label="Exporter"
+          icon="pi pi-download"
+          [text]="true"
+          size="small"
+          [disabled]="deckEntries.length === 0"
+          (onClick)="exportDeck()"
+        />
+        <p-button
+          label="Importer"
+          icon="pi pi-upload"
+          [text]="true"
+          size="small"
+          (onClick)="openImportDialog()"
+        />
+        <p-button
+          label="Imprimer"
+          icon="pi pi-print"
+          size="small"
+          [disabled]="deckEntries.length === 0"
+          (onClick)="printDeck()"
+        />
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<!-- Detail Dialog -->
+<p-dialog
+  [(visible)]="showDetail"
+  [modal]="true"
+  [dismissableMask]="true"
+  [style]="{ width: 'auto' }"
+  header="{{ detailCard?.name }}"
+>
+  <div class="detail-content" *ngIf="detailCard">
+    <div class="detail-card-preview">
+      <app-card [card]="detailCard" [design]="currentDesign" />
+    </div>
+    <div class="detail-info">
+      <div class="detail-row"><strong>Domaine :</strong> {{ detailCard.domain }}</div>
+      <div class="detail-row"><strong>Type :</strong> {{ detailCard.type }}</div>
+      <div class="detail-row"><strong>Coût :</strong> {{ detailCard.cost }} Budget</div>
+      <div class="detail-row"><strong>Rareté :</strong> {{ detailCard.rarity }}</div>
+      <div class="detail-row" *ngIf="isJobCard(detailCard)">
+        <strong>Stats :</strong> {{ $any(detailCard).productivity }} / {{ $any(detailCard).resilience }}
+      </div>
+      <div class="detail-row flavor" *ngIf="detailCard.flavorText">{{ detailCard.flavorText }}</div>
+    </div>
+  </div>
+  <ng-template pTemplate="footer">
+    <p-button
+      label="Ajouter au deck"
+      icon="pi pi-plus"
+      (onClick)="addCardToDeck(detailCard!)"
+      [disabled]="!detailCard || isAtMaxCopies(detailCard.id)"
+    />
+  </ng-template>
+</p-dialog>
+
+<!-- Import Dialog -->
+<p-dialog
+  [(visible)]="showImportDialog"
+  [modal]="true"
+  header="Importer un deck"
+  [style]="{ width: '500px' }"
+>
+  <div class="import-dialog-content">
+    <p>Collez le JSON du deck exporté :</p>
+    <textarea
+      pTextarea
+      [(ngModel)]="importJson"
+      rows="10"
+      class="import-textarea"
+      placeholder='{"version": 1, "name": "...", "entries": [...]}'
+    ></textarea>
+  </div>
+  <ng-template pTemplate="footer">
+    <p-button label="Annuler" [text]="true" (onClick)="showImportDialog = false" />
+    <p-button
+      label="Importer"
+      icon="pi pi-upload"
+      (onClick)="importDeck()"
+      [disabled]="!importJson.trim()"
+    />
+  </ng-template>
+</p-dialog>

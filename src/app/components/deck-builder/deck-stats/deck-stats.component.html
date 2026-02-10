@@ -1,0 +1,33 @@
+<div class="stats-panel">
+  <div class="stats-summary">
+    <div class="stat-item">
+      <span class="stat-value">{{ stats.totalCards }}</span>
+      <span class="stat-label">Cartes</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">{{ stats.averageCost | number : '1.1-1' }}</span>
+      <span class="stat-label">Coût moyen</span>
+    </div>
+  </div>
+
+  <div class="chart-section">
+    <h4>Courbe de coût</h4>
+    <div class="chart-container">
+      <p-chart type="bar" [data]="costCurveData" [options]="costCurveOptions" />
+    </div>
+  </div>
+
+  <div class="chart-section">
+    <h4>Répartition par domaine</h4>
+    <div class="chart-container chart-doughnut">
+      <p-chart type="doughnut" [data]="domainData" [options]="domainOptions" />
+    </div>
+  </div>
+
+  <div class="chart-section">
+    <h4>Répartition par type</h4>
+    <div class="chart-container chart-type">
+      <p-chart type="bar" [data]="typeData" [options]="typeOptions" />
+    </div>
+  </div>
+</div>
