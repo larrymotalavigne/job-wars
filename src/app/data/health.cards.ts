@@ -13,7 +13,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Restaurez 1 Réputation.',
     flavorText: '« Le soin commence par l\'écoute. »',
-    image: 'images/cards/he-001.svg',
+    image: 'images/cards/he-001.png',
   },
   {
     id: 'he-002',
@@ -26,7 +26,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 3,
     ability: 'Restaure 1 Résilience à un Métier allié à la fin du tour.',
     flavorText: '« Toujours debout, même après 12 heures de garde. »',
-    image: 'images/cards/he-002.svg',
+    image: 'images/cards/he-002.png',
   },
   {
     id: 'he-003',
@@ -39,7 +39,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand embauché : Restaurez 2 Réputation.',
     flavorText: '« Consultations le matin, urgences l\'après-midi. »',
-    image: 'images/cards/he-003.svg',
+    image: 'images/cards/he-003.png',
   },
   {
     id: 'he-004',
@@ -52,7 +52,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 3,
     ability: 'Inflige 2 dégâts à un Métier ciblé (opération).',
     flavorText: '« Précision chirurgicale, résultats garantis. »',
-    image: 'images/cards/he-004.svg',
+    image: 'images/cards/he-004.png',
   },
   {
     id: 'he-005',
@@ -65,7 +65,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 4,
     ability: 'Vos Outils Santé ont un effet doublé.',
     flavorText: '« La bonne dose, au bon moment. »',
-    image: 'images/cards/he-005.svg',
+    image: 'images/cards/he-005.png',
   },
   {
     id: 'he-006',
@@ -78,7 +78,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 3,
     ability: 'Peut être joué à tout moment, comme un Événement.',
     flavorText: '« Chaque seconde compte au SAMU. »',
-    image: 'images/cards/he-006.svg',
+    image: 'images/cards/he-006.png',
   },
   {
     id: 'he-007',
@@ -91,7 +91,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 4,
     ability: 'Inflige 1 dégât à tous les Métiers adverses.',
     flavorText: '« Les chiffres racontent l\'histoire de l\'épidémie. »',
-    image: 'images/cards/he-007.svg',
+    image: 'images/cards/he-007.png',
   },
   {
     id: 'he-008',
@@ -104,7 +104,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 5,
     ability: 'Tous les Métiers Santé restaurent 1 Réputation par tour.',
     flavorText: '« L\'hôpital ne dort jamais. »',
-    image: 'images/cards/he-008.svg',
+    image: 'images/cards/he-008.png',
   },
   {
     id: 'he-012',
@@ -117,7 +117,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Déplacez un Métier allié vers une zone protégée (il ne peut pas être ciblé ce tour).',
     flavorText: '« Il porte les blessés avant que le médecin ne les guérisse. »',
-    image: 'images/cards/he-012.svg',
+    image: 'images/cards/he-012.png',
   },
   {
     id: 'he-013',
@@ -130,7 +130,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand embauché : Créez un jeton Métier 1/1 « Nouveau-Né » avec Protection.',
     flavorText: '« Chaque naissance est un miracle qu\'elle accompagne. »',
-    image: 'images/cards/he-013.svg',
+    image: 'images/cards/he-013.png',
   },
   {
     id: 'he-014',
@@ -143,7 +143,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 2,
     ability: 'Inflige 1 dégât à un Métier ciblé. Restaurez 1 Réputation.',
     flavorText: '« Ouvrez grand… ceci ne fera pas mal. »',
-    image: 'images/cards/he-014.svg',
+    image: 'images/cards/he-014.png',
   },
   {
     id: 'he-015',
@@ -156,7 +156,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 4,
     ability: 'Au début de votre tour : Restaurez 2 Résilience à un Métier allié.',
     flavorText: '« La guérison passe par le mouvement. »',
-    image: 'images/cards/he-015.svg',
+    image: 'images/cards/he-015.png',
   },
   {
     id: 'he-016',
@@ -169,7 +169,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand embauché : Révélez le prochain Outil ou Événement du deck adverse.',
     flavorText: '« Ce que l\'œil ne voit pas, la machine le révèle. »',
-    image: 'images/cards/he-016.svg',
+    image: 'images/cards/he-016.png',
   },
   {
     id: 'he-017',
@@ -182,7 +182,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 4,
     ability: 'Quand embauché : Un Métier adverse ciblé ne peut pas attaquer au prochain tour.',
     flavorText: '« Dormez tranquille, je veille sur vos constantes. »',
-    image: 'images/cards/he-017.svg',
+    image: 'images/cards/he-017.png',
   },
   {
     id: 'he-018',
@@ -195,7 +195,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 3,
     ability: 'À la fin de votre tour : Piochez 1 carte si vous avez restauré de la Réputation ce tour.',
     flavorText: '« Parler, c\'est déjà commencer à guérir. »',
-    image: 'images/cards/he-018.svg',
+    image: 'images/cards/he-018.png',
   },
   {
     id: 'he-019',
@@ -208,7 +208,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 5,
     ability: 'Quand un Événement Santé est joué, piochez 1 carte.',
     flavorText: '« Derrière chaque diagnostic, il y a une analyse. »',
-    image: 'images/cards/he-019.svg',
+    image: 'images/cards/he-019.png',
   },
   {
     id: 'he-020',
@@ -221,7 +221,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand un Métier est détruit : Piochez 1 carte et révélez-la.',
     flavorText: '« Les morts ont encore des secrets à livrer. »',
-    image: 'images/cards/he-020.svg',
+    image: 'images/cards/he-020.png',
   },
   {
     id: 'he-021',
@@ -234,7 +234,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 5,
     ability: 'Les Métiers alliés adjacents gagnent +0/+2.',
     flavorText: '« Au bloc, chaque geste doit être parfait. »',
-    image: 'images/cards/he-021.svg',
+    image: 'images/cards/he-021.png',
   },
   {
     id: 'he-022',
@@ -247,7 +247,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 1,
     ability: 'Rapidité. Quand embauché : Restaurez 1 Résilience à un Métier allié.',
     flavorText: '« Sirène hurlante, il fend la circulation. »',
-    image: 'images/cards/he-022.svg',
+    image: 'images/cards/he-022.png',
   },
   {
     id: 'he-023',
@@ -260,7 +260,7 @@ export const HEALTH_CARDS: Card[] = [
     resilience: 6,
     ability: 'Au début de votre tour : Réduisez de 1 le coût de tous les Outils et Événements Santé dans votre main.',
     flavorText: '« Des années de recherche aboutissent en un instant d\'eurêka. »',
-    image: 'images/cards/he-023.svg',
+    image: 'images/cards/he-023.png',
   },
   // ── Tools ──
   {
@@ -272,7 +272,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Un Métier ciblé gagne +0/+2 et restaure sa Résilience complète.',
     flavorText: '« L\'essentiel pour les urgences du quotidien. »',
-    image: 'images/cards/he-009.svg',
+    image: 'images/cards/he-009.png',
   },
   {
     id: 'he-010',
@@ -283,7 +283,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Regardez la main de l\'adversaire. Piochez 1 carte.',
     flavorText: '« Diagnostic complet en un instant. »',
-    image: 'images/cards/he-010.svg',
+    image: 'images/cards/he-010.png',
   },
   {
     id: 'he-024',
@@ -294,7 +294,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Remettez en jeu un Métier Santé depuis votre défausse avec 1 Résilience.',
     flavorText: '« Dégagez ! On le ramène. »',
-    image: 'images/cards/he-024.svg',
+    image: 'images/cards/he-024.png',
   },
   {
     id: 'he-025',
@@ -305,7 +305,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Un Métier allié ciblé restaure toute sa Résilience et gagne +2/+0 jusqu\'à la fin du tour.',
     flavorText: '« Ici, la science et le courage opèrent ensemble. »',
-    image: 'images/cards/he-025.svg',
+    image: 'images/cards/he-025.png',
   },
   {
     id: 'he-026',
@@ -316,7 +316,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Piochez 2 cartes. Si l\'une est un Métier Santé, vous pouvez le jouer gratuitement.',
     flavorText: '« Les résultats sont formels : positif. »',
-    image: 'images/cards/he-026.svg',
+    image: 'images/cards/he-026.png',
   },
   {
     id: 'he-027',
@@ -327,7 +327,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Un Métier Santé dans votre main peut être joué ce tour avec Rapidité.',
     flavorText: '« Gyrophare allumé, chaque minute sauve une vie. »',
-    image: 'images/cards/he-027.svg',
+    image: 'images/cards/he-027.png',
   },
   {
     id: 'he-028',
@@ -338,7 +338,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Tous les Métiers alliés gagnent +0/+2 de façon permanente.',
     flavorText: '« Une seule injection, et le mal recule pour toujours. »',
-    image: 'images/cards/he-028.svg',
+    image: 'images/cards/he-028.png',
   },
   {
     id: 'he-029',
@@ -349,7 +349,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Regardez les 3 cartes du dessus de votre deck. Ajoutez-en 1 à votre main, défaussez les autres.',
     flavorText: '« Tout est dans le dossier, il suffit de chercher. »',
-    image: 'images/cards/he-029.svg',
+    image: 'images/cards/he-029.png',
   },
   {
     id: 'he-030',
@@ -360,7 +360,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Regardez le deck adverse. Choisissez 1 carte et placez-la au fond du deck.',
     flavorText: '« L\'image est nette : on voit tout, absolument tout. »',
-    image: 'images/cards/he-030.svg',
+    image: 'images/cards/he-030.png',
   },
   {
     id: 'he-031',
@@ -371,7 +371,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Infligez 1 dégât à un Métier ciblé. Restaurez 1 Réputation.',
     flavorText: '« Une petite piqûre, et on n\'en parle plus. »',
-    image: 'images/cards/he-031.svg',
+    image: 'images/cards/he-031.png',
   },
   {
     id: 'he-032',
@@ -382,7 +382,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Retirez un Métier allié du combat. Il ne peut pas être ciblé jusqu\'au prochain tour.',
     flavorText: '« Évacuation immédiate, le patient est prioritaire. »',
-    image: 'images/cards/he-032.svg',
+    image: 'images/cards/he-032.png',
   },
   {
     id: 'he-033',
@@ -393,7 +393,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Restaurez 3 Réputation. Si vous avez un Pharmacien en jeu, restaurez 5 Réputation à la place.',
     flavorText: '« Ouverte même le dimanche, même la nuit. »',
-    image: 'images/cards/he-033.svg',
+    image: 'images/cards/he-033.png',
   },
   // ── Events ──
   {
@@ -405,7 +405,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Tous les Métiers perdent -1/-1 jusqu\'à la fin du tour.',
     flavorText: '« Le virus ne fait pas de distinction. »',
-    image: 'images/cards/he-011.svg',
+    image: 'images/cards/he-011.png',
   },
   {
     id: 'he-034',
@@ -416,7 +416,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Tous les Métiers en jeu perdent -2/-2. Les Métiers Santé sont immunisés.',
     flavorText: '« Le monde s\'arrête, mais les soignants continuent. »',
-    image: 'images/cards/he-034.svg',
+    image: 'images/cards/he-034.png',
   },
   {
     id: 'he-035',
@@ -427,7 +427,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Infligez 3 dégâts à un Métier ciblé. Si vous contrôlez un Chirurgien, infligez 5 dégâts à la place.',
     flavorText: '« Scalpel. Compresse. On y va. »',
-    image: 'images/cards/he-035.svg',
+    image: 'images/cards/he-035.png',
   },
   {
     id: 'he-036',
@@ -438,7 +438,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Restaurez 3 Réputation. Chaque joueur pioche 1 carte.',
     flavorText: '« Un geste simple qui sauve des vies. »',
-    image: 'images/cards/he-036.svg',
+    image: 'images/cards/he-036.png',
   },
   {
     id: 'he-037',
@@ -449,7 +449,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Tous les Métiers alliés gagnent +0/+1 jusqu\'à la fin du tour. Restaurez 1 Réputation.',
     flavorText: '« Mieux vaut prévenir que guérir. »',
-    image: 'images/cards/he-037.svg',
+    image: 'images/cards/he-037.png',
   },
   {
     id: 'he-038',
@@ -460,7 +460,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Les Outils coûtent 2 de plus à jouer pour tous les joueurs jusqu\'à la fin du prochain tour.',
     flavorText: '« Les étagères sont vides, la panique s\'installe. »',
-    image: 'images/cards/he-038.svg',
+    image: 'images/cards/he-038.png',
   },
   {
     id: 'he-039',
@@ -471,7 +471,7 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     effect: 'Piochez 3 cartes. Réduisez le coût de toutes les cartes Santé dans votre main de 2.',
     flavorText: '« Une découverte qui change tout, pour toujours. »',
-    image: 'images/cards/he-039.svg',
+    image: 'images/cards/he-039.png',
   },
   {
     id: 'he-040',
@@ -482,6 +482,6 @@ export const HEALTH_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Aucun joueur ne peut jouer de Métier pendant 2 tours. Les Métiers déjà en jeu ne peuvent pas attaquer.',
     flavorText: '« Restez chez vous. C\'est un ordre sanitaire. »',
-    image: 'images/cards/he-040.svg',
+    image: 'images/cards/he-040.png',
   },
 ];

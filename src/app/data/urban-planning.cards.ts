@@ -12,7 +12,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 1,
     ability: 'Quand embauché : Gagnez +1 Budget au prochain tour.',
     flavorText: '« Mesurer deux fois, construire une fois. »',
-    image: 'images/cards/up-001.svg',
+    image: 'images/cards/up-001.png',
   },
   {
     id: 'up-002',
@@ -25,7 +25,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 2,
     ability: 'Augmente la Résilience d\'un autre Métier de +1.',
     flavorText: '« Chaque trait compte. »',
-    image: 'images/cards/up-002.svg',
+    image: 'images/cards/up-002.png',
   },
   {
     id: 'up-003',
@@ -38,7 +38,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand embauché : Tous vos Métiers gagnent +0/+1 ce tour.',
     flavorText: '« Les espaces verts font les communautés fortes. »',
-    image: 'images/cards/up-003.svg',
+    image: 'images/cards/up-003.png',
   },
   {
     id: 'up-004',
@@ -51,7 +51,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 2,
     ability: 'Construction : Gagne +1/+0 chaque tour (max +3).',
     flavorText: '« L\'infrastructure, c\'est la civilisation. »',
-    image: 'images/cards/up-004.svg',
+    image: 'images/cards/up-004.png',
   },
   {
     id: 'up-005',
@@ -64,7 +64,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 4,
     ability: 'Restaure 2 Réputation quand embauché.',
     flavorText: '« La durabilité n\'est pas un slogan — c\'est un plan. »',
-    image: 'images/cards/up-005.svg',
+    image: 'images/cards/up-005.png',
   },
   {
     id: 'up-006',
@@ -77,7 +77,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 4,
     ability: 'Les Métiers adjacents gagnent +1/+1.',
     flavorText: '« La ville est un organisme vivant. »',
-    image: 'images/cards/up-006.svg',
+    image: 'images/cards/up-006.png',
   },
   {
     id: 'up-007',
@@ -90,7 +90,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 1,
     ability: 'Quand licencié (détruit) : Inflige 3 dégâts à une cible.',
     flavorText: '« Parfois il faut détruire pour reconstruire. »',
-    image: 'images/cards/up-007.svg',
+    image: 'images/cards/up-007.png',
   },
   {
     id: 'up-008',
@@ -103,7 +103,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 6,
     ability: 'Tous les Métiers Urbanisme gagnent +0/+2.',
     flavorText: '« Cette ville tiendra des siècles. »',
-    image: 'images/cards/up-008.svg',
+    image: 'images/cards/up-008.png',
   },
   // ── Tools ──
   {
@@ -115,7 +115,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Vos Métiers Urbanisme avec Construction gagnent +1 supplémentaire par tour.',
     flavorText: '« La carte du développement futur. »',
-    image: 'images/cards/up-009.svg',
+    image: 'images/cards/up-009.png',
   },
   {
     id: 'up-010',
@@ -126,7 +126,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Tous les Métiers Urbanisme gagnent +0/+1 en permanence.',
     flavorText: '« Le chantier avance, jour et nuit. »',
-    image: 'images/cards/up-010.svg',
+    image: 'images/cards/up-010.png',
   },
   // ── Events ──
   {
@@ -138,7 +138,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Gagnez +3 Budget. Piochez 1 carte.',
     flavorText: '« Inauguration en grande pompe ! »',
-    image: 'images/cards/up-011.svg',
+    image: 'images/cards/up-011.png',
   },
   // ── New Jobs (up-012 to up-023) ──
   {
@@ -152,7 +152,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 3,
     ability: 'Construction : Gagne +0/+1 chaque tour (max +2).',
     flavorText: '« Le planning est respecté, quoi qu\'il arrive. »',
-    image: 'images/cards/up-012.svg',
+    image: 'images/cards/up-012.png',
   },
   {
     id: 'up-013',
@@ -165,7 +165,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Un Métier allié gagne +1/+0 jusqu\'à la fin du tour.',
     flavorText: '« L\'espace intérieur reflète l\'âme du bâtiment. »',
-    image: 'images/cards/up-013.svg',
+    image: 'images/cards/up-013.png',
   },
   {
     id: 'up-014',
@@ -178,7 +178,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 5,
     ability: 'Les Métiers Urbanisme alliés ne peuvent pas être ciblés par des Événements adverses ce tour.',
     flavorText: '« Un pont relie plus que deux rives — il unit des communautés. »',
-    image: 'images/cards/up-014.svg',
+    image: 'images/cards/up-014.png',
   },
   {
     id: 'up-015',
@@ -191,7 +191,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 1,
     ability: 'Quand embauché : Gagnez +1 Budget immédiatement.',
     flavorText: '« Sans réseaux, pas de ville. »',
-    image: 'images/cards/up-015.svg',
+    image: 'images/cards/up-015.png',
   },
   {
     id: 'up-016',
@@ -204,7 +204,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 1,
     ability: 'Quand embauché : Regardez les 3 premières cartes de votre deck. Remettez-les dans l\'ordre de votre choix.',
     flavorText: '« Connaître le terrain, c\'est déjà bâtir. »',
-    image: 'images/cards/up-016.svg',
+    image: 'images/cards/up-016.png',
   },
   {
     id: 'up-017',
@@ -217,7 +217,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 3,
     ability: 'Tous vos Métiers avec Construction gagnent leurs bonus deux fois plus vite.',
     flavorText: '« On ne discute pas les ordres sur mon chantier. »',
-    image: 'images/cards/up-017.svg',
+    image: 'images/cards/up-017.png',
   },
   {
     id: 'up-018',
@@ -230,7 +230,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 5,
     ability: 'Quand embauché : Restaurez 3 Réputation. Vos Métiers Urbanisme gagnent +0/+1.',
     flavorText: '« La ville de demain sera verte ou ne sera pas. »',
-    image: 'images/cards/up-018.svg',
+    image: 'images/cards/up-018.png',
   },
   {
     id: 'up-019',
@@ -243,7 +243,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Détruisez un Outil adverse de coût 3 ou moins.',
     flavorText: '« Non conforme. Démontez-moi ça immédiatement. »',
-    image: 'images/cards/up-019.svg',
+    image: 'images/cards/up-019.png',
   },
   {
     id: 'up-020',
@@ -256,7 +256,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 2,
     ability: 'Construction : Gagne +0/+1 chaque tour (max +3).',
     flavorText: '« Brique par brique, on élève des cathédrales. »',
-    image: 'images/cards/up-020.svg',
+    image: 'images/cards/up-020.png',
   },
   {
     id: 'up-021',
@@ -269,7 +269,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 2,
     ability: 'Le prochain Métier Urbanisme que vous embauchez ce tour coûte 1 de moins.',
     flavorText: '« Les fondations, ça ne se voit pas, mais ça porte tout. »',
-    image: 'images/cards/up-021.svg',
+    image: 'images/cards/up-021.png',
   },
   {
     id: 'up-022',
@@ -282,7 +282,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand embauché : Vous pouvez déplacer un Outil allié vers un autre Métier.',
     flavorText: '« Tout le chantier dépend de mes mains. »',
-    image: 'images/cards/up-022.svg',
+    image: 'images/cards/up-022.png',
   },
   {
     id: 'up-023',
@@ -295,7 +295,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     resilience: 7,
     ability: 'Quand embauché : Tous vos Métiers Urbanisme gagnent +1/+2. Construction : Gagne +1/+1 chaque tour (max +3).',
     flavorText: '« Il a bâti des villes entières là où il n\'y avait que du sable. »',
-    image: 'images/cards/up-023.svg',
+    image: 'images/cards/up-023.png',
   },
   // ── New Tools (up-024 to up-033) ──
   {
@@ -307,7 +307,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Le Métier équipé gagne +1/+0. Quand embauché : Piochez 1 carte.',
     flavorText: '« Précision au millimètre. »',
-    image: 'images/cards/up-024.svg',
+    image: 'images/cards/up-024.png',
   },
   {
     id: 'up-025',
@@ -318,7 +318,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Vos Métiers Urbanisme coûtent 1 de moins à embaucher (minimum 1).',
     flavorText: '« Le schéma directeur guide chaque décision. »',
-    image: 'images/cards/up-025.svg',
+    image: 'images/cards/up-025.png',
   },
   {
     id: 'up-026',
@@ -329,7 +329,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Le Métier équipé gagne +0/+2.',
     flavorText: '« Le béton coule, les murs montent. »',
-    image: 'images/cards/up-026.svg',
+    image: 'images/cards/up-026.png',
   },
   {
     id: 'up-027',
@@ -340,7 +340,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Le Métier équipé gagne +2/+1. Quand embauché : Infligez 1 dégât à un Métier adverse.',
     flavorText: '« La terre tremble quand il avance. »',
-    image: 'images/cards/up-027.svg',
+    image: 'images/cards/up-027.png',
   },
   {
     id: 'up-028',
@@ -351,7 +351,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Le Métier équipé gagne +1/+1. Si c\'est un Géomètre, il gagne +2/+2 à la place.',
     flavorText: '« L\'œil électronique qui ne se trompe jamais. »',
-    image: 'images/cards/up-028.svg',
+    image: 'images/cards/up-028.png',
   },
   {
     id: 'up-029',
@@ -362,7 +362,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Le prochain Métier Urbanisme que vous embauchez gagne +1/+1 en permanence.',
     flavorText: '« Tampon officiel : les travaux peuvent commencer. »',
-    image: 'images/cards/up-029.svg',
+    image: 'images/cards/up-029.png',
   },
   {
     id: 'up-030',
@@ -373,7 +373,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Tous vos Métiers Urbanisme gagnent +0/+2. Restaurez 1 Réputation à chaque tour.',
     flavorText: '« Sous la ville, un labyrinthe vital. »',
-    image: 'images/cards/up-030.svg',
+    image: 'images/cards/up-030.png',
   },
   {
     id: 'up-031',
@@ -384,7 +384,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Gagnez +1 Budget supplémentaire à chaque tour.',
     flavorText: '« L\'énergie du soleil au service de la cité. »',
-    image: 'images/cards/up-031.svg',
+    image: 'images/cards/up-031.png',
   },
   {
     id: 'up-032',
@@ -395,7 +395,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Le Métier équipé gagne +0/+2. Sacrifiez cet Outil pour empêcher la destruction d\'un Métier.',
     flavorText: '« Temporaire, mais indispensable. »',
-    image: 'images/cards/up-032.svg',
+    image: 'images/cards/up-032.png',
   },
   {
     id: 'up-033',
@@ -406,7 +406,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Quand joué : Piochez 2 cartes. Vos Métiers Urbanisme gagnent +1/+0 en permanence.',
     flavorText: '« Chaque parcelle raconte l\'histoire d\'un quartier. »',
-    image: 'images/cards/up-033.svg',
+    image: 'images/cards/up-033.png',
   },
   // ── New Events (up-034 to up-040) ──
   {
@@ -418,7 +418,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Le prochain Métier Urbanisme que vous embauchez ce tour coûte 3 de moins (minimum 0).',
     flavorText: '« Dossier accepté — feu vert immédiat. »',
-    image: 'images/cards/up-034.svg',
+    image: 'images/cards/up-034.png',
   },
   {
     id: 'up-035',
@@ -429,7 +429,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Détruisez un Outil adverse. Le joueur adverse perd 1 Budget.',
     flavorText: '« Vos documents, s\'il vous plaît. »',
-    image: 'images/cards/up-035.svg',
+    image: 'images/cards/up-035.png',
   },
   {
     id: 'up-036',
@@ -440,7 +440,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Détruisez un Métier adverse avec la Résilience la plus basse. Infligez 2 dégâts de Réputation à l\'adversaire.',
     flavorText: '« Le sol a cédé sans prévenir. »',
-    image: 'images/cards/up-036.svg',
+    image: 'images/cards/up-036.png',
   },
   {
     id: 'up-037',
@@ -451,7 +451,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Tous vos Métiers Urbanisme gagnent +2/+2 jusqu\'à la fin du tour. Restaurez 3 Réputation.',
     flavorText: '« Mesdames et Messieurs, bienvenue dans votre nouveau quartier ! »',
-    image: 'images/cards/up-037.svg',
+    image: 'images/cards/up-037.png',
   },
   {
     id: 'up-038',
@@ -462,7 +462,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     effect: 'Prenez le contrôle d\'un Métier adverse de coût 4 ou moins jusqu\'à la fin du tour.',
     flavorText: '« Déclaration d\'utilité publique — ce terrain est réquisitionné. »',
-    image: 'images/cards/up-038.svg',
+    image: 'images/cards/up-038.png',
   },
   {
     id: 'up-039',
@@ -473,7 +473,7 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Tous les Métiers adverses perdent leurs bonus de Construction. Ils ne peuvent pas attaquer ce tour.',
     flavorText: '« Arrêt des travaux par décision préfectorale. »',
-    image: 'images/cards/up-039.svg',
+    image: 'images/cards/up-039.png',
   },
   {
     id: 'up-040',
@@ -484,6 +484,6 @@ export const URBAN_PLANNING_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Piochez 3 cartes. Défaussez-en 1. Gagnez +2 Budget.',
     flavorText: '« Le marché public est ouvert — que le meilleur l\'emporte. »',
-    image: 'images/cards/up-040.svg',
+    image: 'images/cards/up-040.png',
   },
 ];

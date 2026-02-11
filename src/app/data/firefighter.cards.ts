@@ -13,7 +13,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 1,
     ability: 'Première Frappe.',
     flavorText: '« Premier arrivé, premier au feu. »',
-    image: 'images/cards/ff-001.svg',
+    image: 'images/cards/ff-001.png',
   },
   {
     id: 'ff-002',
@@ -26,7 +26,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 1,
     ability: 'Quand embauché : Gagnez +1 Budget au prochain tour.',
     flavorText: '« Civil le jour, héros la nuit. »',
-    image: 'images/cards/ff-002.svg',
+    image: 'images/cards/ff-002.png',
   },
   {
     id: 'ff-003',
@@ -39,7 +39,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 3,
     ability: 'Les Métiers Pompiers adjacents gagnent +1/+0.',
     flavorText: '« On avance ensemble ou pas du tout. »',
-    image: 'images/cards/ff-003.svg',
+    image: 'images/cards/ff-003.png',
   },
   {
     id: 'ff-004',
@@ -52,7 +52,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Ne peut pas être bloqué par des Métiers avec 2 ou moins de Résilience.',
     flavorText: '« La grande échelle n\'attend personne. »',
-    image: 'images/cards/ff-004.svg',
+    image: 'images/cards/ff-004.png',
   },
   {
     id: 'ff-005',
@@ -65,7 +65,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 4,
     ability: 'Quand un Métier allié est détruit, piochez 1 carte.',
     flavorText: '« Sous l\'eau, au-dessus du danger. »',
-    image: 'images/cards/ff-005.svg',
+    image: 'images/cards/ff-005.png',
   },
   {
     id: 'ff-006',
@@ -78,7 +78,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Détruisez un Outil adverse.',
     flavorText: '« Du calme et des mains sûres. »',
-    image: 'images/cards/ff-006.svg',
+    image: 'images/cards/ff-006.png',
   },
   {
     id: 'ff-007',
@@ -91,7 +91,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 3,
     ability: 'Invoque un jeton Chien de Sauvetage 1/1 quand embauché.',
     flavorText: '« Le meilleur binôme sur le terrain. »',
-    image: 'images/cards/ff-007.svg',
+    image: 'images/cards/ff-007.png',
   },
   {
     id: 'ff-008',
@@ -104,7 +104,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 5,
     ability: 'Les Métiers Pompiers gagnent +1/+1. Immunisé aux Événements.',
     flavorText: '« Cinquante ans de service, pas une seconde d\'hésitation. »',
-    image: 'images/cards/ff-008.svg',
+    image: 'images/cards/ff-008.png',
   },
   {
     id: 'ff-012',
@@ -117,7 +117,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Un Métier Pompier allié gagne +1/+0 jusqu\'à la fin du tour.',
     flavorText: '« Galon mérité, respect acquis. »',
-    image: 'images/cards/ff-012.svg',
+    image: 'images/cards/ff-012.png',
   },
   {
     id: 'ff-013',
@@ -130,7 +130,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Activation : Regardez la première carte de votre deck. Vous pouvez la placer en dessous.',
     flavorText: '« Chaque seconde compte, chaque appel sauve. »',
-    image: 'images/cards/ff-013.svg',
+    image: 'images/cards/ff-013.png',
   },
   {
     id: 'ff-014',
@@ -143,7 +143,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 3,
     ability: 'Activation : Restaurez 1 point de Résilience à un Métier allié.',
     flavorText: '« Soigner sous le feu, c\'est notre quotidien. »',
-    image: 'images/cards/ff-014.svg',
+    image: 'images/cards/ff-014.png',
   },
   {
     id: 'ff-015',
@@ -156,7 +156,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 3,
     ability: 'Gagne +2/+0 quand un Événement est en jeu.',
     flavorText: '« La forêt brûle, mais nous tenons la ligne. »',
-    image: 'images/cards/ff-015.svg',
+    image: 'images/cards/ff-015.png',
   },
   {
     id: 'ff-016',
@@ -169,7 +169,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 3,
     ability: 'Ne peut pas être ciblé par les Événements adverses.',
     flavorText: '« Là-haut, même le vent nous craint. »',
-    image: 'images/cards/ff-016.svg',
+    image: 'images/cards/ff-016.png',
   },
   {
     id: 'ff-017',
@@ -182,7 +182,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Piochez 1 carte si vous contrôlez un autre Métier Pompier.',
     flavorText: '« L\'eau glacée ne ralentit que les hésitants. »',
-    image: 'images/cards/ff-017.svg',
+    image: 'images/cards/ff-017.png',
   },
   {
     id: 'ff-018',
@@ -195,7 +195,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 4,
     ability: 'Les Métiers Pompiers alliés avec 2 ou moins de Productivité gagnent +1/+0.',
     flavorText: '« Trente mètres de bravoure déployée. »',
-    image: 'images/cards/ff-018.svg',
+    image: 'images/cards/ff-018.png',
   },
   {
     id: 'ff-019',
@@ -208,7 +208,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 4,
     ability: 'Au début de votre tour, vous pouvez sacrifier un Métier Pompier : Infligez 3 dégâts à un Métier adverse.',
     flavorText: '« Des ordres difficiles pour des résultats nécessaires. »',
-    image: 'images/cards/ff-019.svg',
+    image: 'images/cards/ff-019.png',
   },
   {
     id: 'ff-020',
@@ -221,7 +221,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Sacrifice : Infligez 2 dégâts à un Métier adverse.',
     flavorText: '« La bravoure n\'a pas besoin de galons. »',
-    image: 'images/cards/ff-020.svg',
+    image: 'images/cards/ff-020.png',
   },
   {
     id: 'ff-021',
@@ -234,7 +234,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 4,
     ability: 'Immunisé aux dégâts des Événements. Quand embauché : Détruisez un Outil adverse.',
     flavorText: '« Nucléaire, radiologique, biologique, chimique — rien ne l\'arrête. »',
-    image: 'images/cards/ff-021.svg',
+    image: 'images/cards/ff-021.png',
   },
   {
     id: 'ff-022',
@@ -247,7 +247,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 5,
     ability: 'Les Métiers Pompiers alliés coûtent 1 de moins à embaucher (minimum 1). Activation : Piochez 1 carte.',
     flavorText: '« Chaque caserne est un royaume, chaque chef un roi modeste. »',
-    image: 'images/cards/ff-022.svg',
+    image: 'images/cards/ff-022.png',
   },
   {
     id: 'ff-023',
@@ -260,7 +260,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     resilience: 4,
     ability: 'Vol. Quand embauché : Infligez 2 dégâts à chaque Métier adverse. Les Métiers Pompiers alliés gagnent +1/+0 ce tour.',
     flavorText: '« Du ciel, je vois tout — et le feu ne voit rien venir. »',
-    image: 'images/cards/ff-023.svg',
+    image: 'images/cards/ff-023.png',
   },
   // ── Tools ──
   {
@@ -272,7 +272,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Un Métier Pompier ciblé gagne +2/+0 jusqu\'à la fin du tour.',
     flavorText: '« Pression maximale, dégâts garantis. »',
-    image: 'images/cards/ff-009.svg',
+    image: 'images/cards/ff-009.png',
   },
   {
     id: 'ff-010',
@@ -283,7 +283,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Tous les Métiers Pompiers gagnent +0/+2 en permanence.',
     flavorText: '« Sirènes hurlantes, la cavalerie arrive. »',
-    image: 'images/cards/ff-010.svg',
+    image: 'images/cards/ff-010.png',
   },
   {
     id: 'ff-024',
@@ -294,7 +294,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Équipement : Le Métier équipé gagne +2/+0. Sacrifice : Détruisez un Outil adverse.',
     flavorText: '« Portes, murs, obstacles — tout cède. »',
-    image: 'images/cards/ff-024.svg',
+    image: 'images/cards/ff-024.png',
   },
   {
     id: 'ff-025',
@@ -305,7 +305,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Équipement : Le Métier équipé gagne +0/+2 et est immunisé aux dégâts des Événements.',
     flavorText: '« Quinze minutes d\'air, une éternité d\'espoir. »',
-    image: 'images/cards/ff-025.svg',
+    image: 'images/cards/ff-025.png',
   },
   {
     id: 'ff-026',
@@ -316,7 +316,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Équipement : Le Métier équipé gagne +1/+3 et ne peut pas être bloqué par des Métiers avec moins de 3 Résilience.',
     flavorText: '« Trente mètres d\'acier entre le sol et le salut. »',
-    image: 'images/cards/ff-026.svg',
+    image: 'images/cards/ff-026.png',
   },
   {
     id: 'ff-027',
@@ -327,7 +327,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Neutralisez un Métier adverse jusqu\'à votre prochain tour (il ne peut ni attaquer ni bloquer).',
     flavorText: '« Étouffé, neutralisé, maîtrisé. »',
-    image: 'images/cards/ff-027.svg',
+    image: 'images/cards/ff-027.png',
   },
   {
     id: 'ff-028',
@@ -338,7 +338,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Regardez la main de l\'adversaire. Piochez 1 carte.',
     flavorText: '« Derrière la fumée, la vérité apparaît. »',
-    image: 'images/cards/ff-028.svg',
+    image: 'images/cards/ff-028.png',
   },
   {
     id: 'ff-029',
@@ -349,7 +349,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Quand un Événement est joué, vous pouvez sacrifier Citerne d\'Eau : Annulez cet Événement.',
     flavorText: '« Dix mille litres de réponse à n\'importe quel problème. »',
-    image: 'images/cards/ff-029.svg',
+    image: 'images/cards/ff-029.png',
   },
   {
     id: 'ff-030',
@@ -360,7 +360,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Équipement : Le Métier équipé gagne +3/+0. Quand il détruit un Métier adverse, piochez 1 carte.',
     flavorText: '« Les mâchoires de vie arrachent les victimes à la mort. »',
-    image: 'images/cards/ff-030.svg',
+    image: 'images/cards/ff-030.png',
   },
   {
     id: 'ff-031',
@@ -371,7 +371,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Quand embauché un Métier Pompier ce tour, il gagne Première Frappe jusqu\'à la fin du tour.',
     flavorText: '« Le hurlement qui glace le sang et réveille les braves. »',
-    image: 'images/cards/ff-031.svg',
+    image: 'images/cards/ff-031.png',
   },
   {
     id: 'ff-032',
@@ -382,7 +382,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Activation : Un Métier Pompier ciblé gagne +1/+0 jusqu\'à la fin du tour. Si vous contrôlez 3 Métiers Pompiers ou plus, il gagne +2/+0 à la place.',
     flavorText: '« Trois cents mètres de tuyaux, zéro mètre de recul. »',
-    image: 'images/cards/ff-032.svg',
+    image: 'images/cards/ff-032.png',
   },
   {
     id: 'ff-033',
@@ -393,7 +393,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Équipement : Le Métier équipé gagne +1/+4, est immunisé aux Événements et ne peut pas être détruit par des effets adverses (il peut encore être détruit au combat).',
     flavorText: '« Mille degrés dehors, zéro doute dedans. »',
-    image: 'images/cards/ff-033.svg',
+    image: 'images/cards/ff-033.png',
   },
   // ── Events ──
   {
@@ -405,7 +405,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Infligez 2 dégâts à tous les Métiers (alliés et adverses).',
     flavorText: '« Le feu ne fait pas de quartier. »',
-    image: 'images/cards/ff-011.svg',
+    image: 'images/cards/ff-011.png',
   },
   {
     id: 'ff-034',
@@ -416,7 +416,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Tous les Métiers Pompiers alliés gagnent +2/+0 jusqu\'à la fin du tour.',
     flavorText: '« Alerte générale — plus personne ne dort. »',
-    image: 'images/cards/ff-034.svg',
+    image: 'images/cards/ff-034.png',
   },
   {
     id: 'ff-035',
@@ -427,7 +427,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Infligez 3 dégâts à tous les Métiers adverses. Les Métiers Pompiers alliés ne subissent que 1 dégât à la place.',
     flavorText: '« L\'horizon est orange, la terre est noire. »',
-    image: 'images/cards/ff-035.svg',
+    image: 'images/cards/ff-035.png',
   },
   {
     id: 'ff-036',
@@ -438,7 +438,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Renvoyez un Métier Pompier allié détruit ce tour de votre défausse à votre main. Piochez 1 carte.',
     flavorText: '« On ne laisse personne derrière. Personne. »',
-    image: 'images/cards/ff-036.svg',
+    image: 'images/cards/ff-036.png',
   },
   {
     id: 'ff-037',
@@ -449,7 +449,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Détruisez un Métier ciblé et infligez 2 dégâts à chaque Métier adjacent.',
     flavorText: '« Le silence avant l\'explosion est le pire des avertissements. »',
-    image: 'images/cards/ff-037.svg',
+    image: 'images/cards/ff-037.png',
   },
   {
     id: 'ff-038',
@@ -460,7 +460,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Renvoyez jusqu\'à 2 Métiers Pompiers alliés à votre main. Pour chaque Métier renvoyé, piochez 1 carte.',
     flavorText: '« L\'entraînement d\'aujourd\'hui est la survie de demain. »',
-    image: 'images/cards/ff-038.svg',
+    image: 'images/cards/ff-038.png',
   },
   {
     id: 'ff-039',
@@ -471,7 +471,7 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     effect: 'Tous les Métiers non-Pompiers perdent -1/-1 en permanence. Les Métiers Pompiers alliés gagnent +1/+0 en permanence.',
     flavorText: '« Quarante-cinq degrés à l\'ombre. Il n\'y a plus d\'ombre. »',
-    image: 'images/cards/ff-039.svg',
+    image: 'images/cards/ff-039.png',
   },
   {
     id: 'ff-040',
@@ -482,6 +482,6 @@ export const FIREFIGHTER_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Détruisez tous les Outils en jeu. Infligez 2 dégâts à tous les Métiers adverses. Piochez 2 cartes.',
     flavorText: '« Quand la nature se déchaîne, seuls les pompiers répondent à l\'appel. »',
-    image: 'images/cards/ff-040.svg',
+    image: 'images/cards/ff-040.png',
   },
 ];

@@ -11,7 +11,7 @@ export const UNIVERSAL_EVENTS: EventCard[] = [
     rarity: Rarity.Rare,
     effect: 'Aucun Métier ne peut attaquer ce tour. Tous les joueurs piochent 2 cartes.',
     flavorText: '« Le travail s\'arrête, les négociations commencent. »',
-    image: 'images/cards/ev-001.svg',
+    image: 'images/cards/ev-001.png',
   },
   {
     id: 'ev-002',
@@ -22,7 +22,7 @@ export const UNIVERSAL_EVENTS: EventCard[] = [
     rarity: Rarity.Uncommon,
     effect: 'L\'adversaire perd 3 Budget. Vous en gagnez 1.',
     flavorText: '« Austérité immédiate sur toute la ligne. »',
-    image: 'images/cards/ev-002.svg',
+    image: 'images/cards/ev-002.png',
   },
   {
     id: 'ev-003',
@@ -33,7 +33,7 @@ export const UNIVERSAL_EVENTS: EventCard[] = [
     rarity: Rarity.Common,
     effect: 'Le prochain Métier que vous jouez ce tour coûte 3 Budget de moins.',
     flavorText: '« Bienvenue dans l\'équipe ! »',
-    image: 'images/cards/ev-003.svg',
+    image: 'images/cards/ev-003.png',
   },
   {
     id: 'ev-004',
@@ -44,7 +44,7 @@ export const UNIVERSAL_EVENTS: EventCard[] = [
     rarity: Rarity.Uncommon,
     effect: 'Regardez la main adverse. L\'adversaire défausse 1 carte de votre choix.',
     flavorText: '« Vos comptes ne sont pas en règle. »',
-    image: 'images/cards/ev-004.svg',
+    image: 'images/cards/ev-004.png',
   },
   {
     id: 'ev-005',
@@ -55,7 +55,7 @@ export const UNIVERSAL_EVENTS: EventCard[] = [
     rarity: Rarity.Rare,
     effect: 'Renvoyez tous les Métiers avec 1 de Résilience dans la main de leur propriétaire.',
     flavorText: '« On repart de zéro. »',
-    image: 'images/cards/ev-005.svg',
+    image: 'images/cards/ev-005.png',
   },
   {
     id: 'ev-006',
@@ -66,7 +66,7 @@ export const UNIVERSAL_EVENTS: EventCard[] = [
     rarity: Rarity.Common,
     effect: 'Un Métier ciblé gagne +1/+1 en permanence.',
     flavorText: '« Investir dans les compétences, c\'est investir dans l\'avenir. »',
-    image: 'images/cards/ev-006.svg',
+    image: 'images/cards/ev-006.png',
   },
   {
     id: 'ev-007',
@@ -77,7 +77,7 @@ export const UNIVERSAL_EVENTS: EventCard[] = [
     rarity: Rarity.Rare,
     effect: 'Détruisez tous les Métiers avec 2 ou moins de Résilience.',
     flavorText: '« La nature reprend toujours ses droits. »',
-    image: 'images/cards/ev-007.svg',
+    image: 'images/cards/ev-007.png',
   },
   {
     id: 'ev-008',
@@ -88,7 +88,7 @@ export const UNIVERSAL_EVENTS: EventCard[] = [
     rarity: Rarity.Uncommon,
     effect: 'Changez le domaine d\'un de vos Métiers jusqu\'à la fin du tour.',
     flavorText: '« Reconversion réussie ! »',
-    image: 'images/cards/ev-008.svg',
+    image: 'images/cards/ev-008.png',
   },
   {
     id: 'ev-009',
@@ -99,7 +99,7 @@ export const UNIVERSAL_EVENTS: EventCard[] = [
     rarity: Rarity.Common,
     effect: 'Restaurez 3 Réputation.',
     flavorText: '« Un jour de repos bien mérité. »',
-    image: 'images/cards/ev-009.svg',
+    image: 'images/cards/ev-009.png',
   },
   {
     id: 'ev-010',
@@ -110,6 +110,6 @@ export const UNIVERSAL_EVENTS: EventCard[] = [
     rarity: Rarity.Rare,
     effect: 'Engagez tous les Métiers adverses. Ils ne peuvent pas agir au prochain tour.',
     flavorText: '« Couvre-feu immédiat. »',
-    image: 'images/cards/ev-010.svg',
+    image: 'images/cards/ev-010.png',
   },
 ];

@@ -15,7 +15,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Augmente la Productivité du Métier adjacent de +1.',
     flavorText: '« Je suis là pour aider. »',
-    image: 'images/cards/tc-001.svg',
+    image: 'images/cards/tc-001.png',
   },
   {
     id: 'tc-002',
@@ -28,7 +28,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 1,
     ability: 'Peut remplacer un Métier détruit (jouez-le gratuitement après la destruction d\'un Métier).',
     flavorText: '« Le spectacle doit continuer. »',
-    image: 'images/cards/tc-002.svg',
+    image: 'images/cards/tc-002.png',
   },
   {
     id: 'tc-003',
@@ -41,7 +41,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 3,
     ability: 'Vos coûts en Budget sont calculés de manière optimale : arrondis à l\'inférieur.',
     flavorText: '« Laissez-moi simplifier ça pour vous. »',
-    image: 'images/cards/tc-003.svg',
+    image: 'images/cards/tc-003.png',
   },
   {
     id: 'tc-004',
@@ -54,7 +54,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Inflige 1 dégât à un Métier ciblé (expérience !).',
     flavorText: '« Pour la science ! »',
-    image: 'images/cards/tc-004.svg',
+    image: 'images/cards/tc-004.png',
   },
   {
     id: 'tc-005',
@@ -67,7 +67,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 3,
     ability: 'Restaure 1 Réputation par tour.',
     flavorText: '« Parlons de votre avenir. »',
-    image: 'images/cards/tc-005.svg',
+    image: 'images/cards/tc-005.png',
   },
   {
     id: 'tc-006',
@@ -80,7 +80,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 4,
     ability: 'Tous les Métiers Enseignement coûtent 1 de moins à embaucher.',
     flavorText: '« Mon département tourne comme une horloge. »',
-    image: 'images/cards/tc-006.svg',
+    image: 'images/cards/tc-006.png',
   },
   {
     id: 'tc-007',
@@ -93,7 +93,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 4,
     ability: 'Ne peut pas être ciblé par les Événements.',
     flavorText: '« Chaque élève mérite un champion. »',
-    image: 'images/cards/tc-007.svg',
+    image: 'images/cards/tc-007.png',
   },
   {
     id: 'tc-008',
@@ -106,7 +106,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 5,
     ability: 'Tous les Métiers Enseignement gagnent +1/+0 et restaurent 1 Réputation quand embauchés.',
     flavorText: '« Cette école changera des vies. »',
-    image: 'images/cards/tc-008.svg',
+    image: 'images/cards/tc-008.png',
   },
   {
     id: 'tc-012',
@@ -119,7 +119,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 3,
     ability: 'Tant que ce Métier est en jeu, vos autres Métiers Enseignement ne peuvent pas être ciblés par les attaques directes.',
     flavorText: '« Pas de bêtises dans ma cour. »',
-    image: 'images/cards/tc-012.svg',
+    image: 'images/cards/tc-012.png',
   },
   {
     id: 'tc-013',
@@ -132,7 +132,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Restaure 1 Résilience à un Métier Enseignement ciblé.',
     flavorText: '« L\'inclusion n\'est pas une option, c\'est une mission. »',
-    image: 'images/cards/tc-013.svg',
+    image: 'images/cards/tc-013.png',
   },
   {
     id: 'tc-014',
@@ -145,7 +145,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Piochez 1 carte.',
     flavorText: '« Le CDI est le cœur battant de l\'établissement. »',
-    image: 'images/cards/tc-014.svg',
+    image: 'images/cards/tc-014.png',
   },
   {
     id: 'tc-015',
@@ -158,7 +158,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Gagne +1 Productivité pour chaque autre Métier Enseignement que vous contrôlez ayant 3 Résilience ou plus.',
     flavorText: '« Un esprit sain dans un corps sain. »',
-    image: 'images/cards/tc-015.svg',
+    image: 'images/cards/tc-015.png',
   },
   {
     id: 'tc-016',
@@ -171,7 +171,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, tous vos Métiers Enseignement gagnent +0/+1 jusqu\'à la fin du tour.',
     flavorText: '« La musique adoucit les mœurs… et les examens. »',
-    image: 'images/cards/tc-016.svg',
+    image: 'images/cards/tc-016.png',
   },
   {
     id: 'tc-017',
@@ -184,7 +184,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 2,
     ability: 'Vos Outils Enseignement coûtent 1 de moins à jouer.',
     flavorText: '« Créer, c\'est résister. »',
-    image: 'images/cards/tc-017.svg',
+    image: 'images/cards/tc-017.png',
   },
   {
     id: 'tc-018',
@@ -197,7 +197,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand un de vos Métiers Enseignement est détruit, piochez 1 carte.',
     flavorText: '« Ceux qui oublient le passé sont condamnés à le répéter. »',
-    image: 'images/cards/tc-018.svg',
+    image: 'images/cards/tc-018.png',
   },
   {
     id: 'tc-019',
@@ -210,7 +210,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 3,
     ability: 'Peut être embauché en utilisant le Budget de n\'importe quel Domaine.',
     flavorText: '« Parler une autre langue, c\'est posséder une deuxième âme. »',
-    image: 'images/cards/tc-019.svg',
+    image: 'images/cards/tc-019.png',
   },
   {
     id: 'tc-020',
@@ -223,7 +223,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 4,
     ability: 'Une fois par tour, restaure 2 Résilience à un Métier Enseignement ciblé.',
     flavorText: '« Écouter, c\'est déjà guérir. »',
-    image: 'images/cards/tc-020.svg',
+    image: 'images/cards/tc-020.png',
   },
   {
     id: 'tc-021',
@@ -236,7 +236,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 5,
     ability: 'Ne peut pas être détruit par des Événements. Quand embauché : Chaque joueur pioche 1 carte.',
     flavorText: '« Je pense, donc je résiste. »',
-    image: 'images/cards/tc-021.svg',
+    image: 'images/cards/tc-021.png',
   },
   {
     id: 'tc-022',
@@ -249,7 +249,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 5,
     ability: 'Quand embauché : Tous vos Métiers Enseignement gagnent +1/+1 en permanence.',
     flavorText: '« L\'excellence n\'est pas négociable. »',
-    image: 'images/cards/tc-022.svg',
+    image: 'images/cards/tc-022.png',
   },
   {
     id: 'tc-023',
@@ -262,7 +262,7 @@ export const TEACHER_CARDS: Card[] = [
     resilience: 6,
     ability: 'Tous vos Métiers Enseignement gagnent +2/+1. Au début de votre tour, restaure 2 Réputation.',
     flavorText: '« L\'éducation est l\'arme la plus puissante pour changer le monde. »',
-    image: 'images/cards/tc-023.svg',
+    image: 'images/cards/tc-023.png',
   },
 
   // ══════════════════════════════════════════
@@ -277,7 +277,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Un Métier Enseignement ciblé gagne +1/+1 en permanence.',
     flavorText: '« La technologie au service de la pédagogie. »',
-    image: 'images/cards/tc-009.svg',
+    image: 'images/cards/tc-009.png',
   },
   {
     id: 'tc-010',
@@ -288,7 +288,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Piochez 1 carte supplémentaire au début de chaque tour.',
     flavorText: '« Le savoir est la plus grande des armes. »',
-    image: 'images/cards/tc-010.svg',
+    image: 'images/cards/tc-010.png',
   },
   {
     id: 'tc-024',
@@ -299,7 +299,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Un Métier Enseignement ciblé gagne +1/+0 en permanence.',
     flavorText: '« Ouvrez vos livres page 42. »',
-    image: 'images/cards/tc-024.svg',
+    image: 'images/cards/tc-024.png',
   },
   {
     id: 'tc-025',
@@ -310,7 +310,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Regardez les 3 premières cartes de votre deck. Remettez-les dans l\'ordre de votre choix.',
     flavorText: '« Les notes ne mentent jamais. »',
-    image: 'images/cards/tc-025.svg',
+    image: 'images/cards/tc-025.png',
   },
   {
     id: 'tc-026',
@@ -321,7 +321,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Révélez la carte du dessus du deck adverse. Si c\'est un Événement, défaussez-la.',
     flavorText: '« Aujourd\'hui, on regarde un documentaire. »',
-    image: 'images/cards/tc-026.svg',
+    image: 'images/cards/tc-026.png',
   },
   {
     id: 'tc-027',
@@ -332,7 +332,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Au début de votre tour, restaure 1 Résilience à tous vos Métiers Enseignement.',
     flavorText: '« On ne travaille pas bien le ventre vide. »',
-    image: 'images/cards/tc-027.svg',
+    image: 'images/cards/tc-027.png',
   },
   {
     id: 'tc-028',
@@ -343,7 +343,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Quand un Métier Enseignement est embauché, il gagne +0/+1 en permanence.',
     flavorText: '« Dix minutes de pause, et on repart. »',
-    image: 'images/cards/tc-028.svg',
+    image: 'images/cards/tc-028.png',
   },
   {
     id: 'tc-029',
@@ -354,7 +354,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Une fois par tour, un Métier Enseignement ciblé gagne +1 Productivité jusqu\'à la fin du tour.',
     flavorText: '« Ctrl+Z ne marche pas dans la vraie vie. »',
-    image: 'images/cards/tc-029.svg',
+    image: 'images/cards/tc-029.png',
   },
   {
     id: 'tc-030',
@@ -365,7 +365,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Tous vos Métiers Enseignement gagnent +0/+2 en permanence.',
     flavorText: '« Le sport forge le caractère autant que l\'esprit. »',
-    image: 'images/cards/tc-030.svg',
+    image: 'images/cards/tc-030.png',
   },
   {
     id: 'tc-031',
@@ -376,7 +376,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Quand vous jouez un Événement Enseignement, piochez 1 carte.',
     flavorText: '« Hypothèse, expérience, conclusion… recommencez. »',
-    image: 'images/cards/tc-031.svg',
+    image: 'images/cards/tc-031.png',
   },
   {
     id: 'tc-032',
@@ -387,7 +387,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Une fois par tour, déplacez un Métier Enseignement d\'une position à une autre. Il gagne +1/+0 jusqu\'à la fin du tour.',
     flavorText: '« Tout le monde à bord, prochaine étape : la victoire. »',
-    image: 'images/cards/tc-032.svg',
+    image: 'images/cards/tc-032.png',
   },
   {
     id: 'tc-033',
@@ -398,7 +398,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Un Métier Enseignement ciblé gagne +2/+2 en permanence et ne peut plus être ciblé par les Outils adverses.',
     flavorText: '« Décerné pour services exceptionnels rendus à l\'éducation. »',
-    image: 'images/cards/tc-033.svg',
+    image: 'images/cards/tc-033.png',
   },
 
   // ══════════════════════════════════════════
@@ -413,7 +413,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Tous vos Métiers Enseignement gagnent +1/+1 jusqu\'à la fin du tour.',
     flavorText: '« Formation continue, résultats permanents. »',
-    image: 'images/cards/tc-011.svg',
+    image: 'images/cards/tc-011.png',
   },
   {
     id: 'tc-034',
@@ -424,7 +424,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Piochez 2 cartes. Si l\'une d\'elles est un Métier Enseignement, vous pouvez le jouer immédiatement en payant 1 de moins.',
     flavorText: '« Nouveaux cahiers, nouveaux espoirs. »',
-    image: 'images/cards/tc-034.svg',
+    image: 'images/cards/tc-034.png',
   },
   {
     id: 'tc-035',
@@ -435,7 +435,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Regardez la main de l\'adversaire. Choisissez une carte et défaussez-la.',
     flavorText: '« Les résultats du trimestre sont… préoccupants. »',
-    image: 'images/cards/tc-035.svg',
+    image: 'images/cards/tc-035.png',
   },
   {
     id: 'tc-036',
@@ -446,7 +446,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Tous vos Métiers Enseignement restaurent intégralement leur Résilience.',
     flavorText: '« En route pour le musée ! N\'oubliez pas vos autorisations. »',
-    image: 'images/cards/tc-036.svg',
+    image: 'images/cards/tc-036.png',
   },
   {
     id: 'tc-037',
@@ -457,7 +457,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Inflige 2 dégâts à tous les Métiers adverses ayant une Productivité inférieure ou égale à 2.',
     flavorText: '« Silence. Vous avez quatre heures. »',
-    image: 'images/cards/tc-037.svg',
+    image: 'images/cards/tc-037.png',
   },
   {
     id: 'tc-038',
@@ -468,7 +468,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Aucun joueur ne peut embaucher de Métiers au prochain tour. Restaure 3 Réputation.',
     flavorText: '« Pas de prof, pas de cours, pas de soumission. »',
-    image: 'images/cards/tc-038.svg',
+    image: 'images/cards/tc-038.png',
   },
   {
     id: 'tc-039',
@@ -479,7 +479,7 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Tous vos Métiers Enseignement gagnent +2/+2 en permanence. Restaure 2 Réputation.',
     flavorText: '« Félicitations à la promotion. Vous avez changé le monde. »',
-    image: 'images/cards/tc-039.svg',
+    image: 'images/cards/tc-039.png',
   },
   {
     id: 'tc-040',
@@ -490,6 +490,6 @@ export const TEACHER_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     effect: 'Tous les Métiers en jeu (les vôtres et ceux de l\'adversaire) sont renvoyés dans la main de leur propriétaire. Restaure 5 Réputation.',
     flavorText: '« Bonnes vacances à tous. On se retrouve en septembre. »',
-    image: 'images/cards/tc-040.svg',
+    image: 'images/cards/tc-040.png',
   },
 ];

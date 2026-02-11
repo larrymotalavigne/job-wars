@@ -13,7 +13,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 1,
     ability: 'Quand embauché : Gagnez +1 Budget.',
     flavorText: '« La monnaie, c\'est la confiance. »',
-    image: 'images/cards/fi-001.svg',
+    image: 'images/cards/fi-001.png',
   },
   {
     id: 'fi-002',
@@ -26,7 +26,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 3,
     ability: 'Gagnez +1 Budget au début de chacun de vos tours.',
     flavorText: '« Les chiffres ne mentent jamais. Enfin, presque. »',
-    image: 'images/cards/fi-002.svg',
+    image: 'images/cards/fi-002.png',
   },
   {
     id: 'fi-003',
@@ -39,7 +39,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 2,
     ability: 'Regardez les 2 premières cartes de votre deck, gardez-en 1.',
     flavorText: '« Tendance haussière confirmée. »',
-    image: 'images/cards/fi-003.svg',
+    image: 'images/cards/fi-003.png',
   },
   {
     id: 'fi-004',
@@ -52,7 +52,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 3,
     ability: 'Vos cartes coûtent 1 Budget de moins (minimum 1).',
     flavorText: '« Taux préférentiel pour nos meilleurs clients. »',
-    image: 'images/cards/fi-004.svg',
+    image: 'images/cards/fi-004.png',
   },
   {
     id: 'fi-005',
@@ -65,7 +65,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand embauché : L\'adversaire défausse 1 carte au hasard.',
     flavorText: '« Voyons un peu ces comptes de plus près. »',
-    image: 'images/cards/fi-005.svg',
+    image: 'images/cards/fi-005.png',
   },
   {
     id: 'fi-006',
@@ -78,7 +78,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 2,
     ability: 'Gagne +2/+0 si vous avez 5+ Budget. Perd -2/-0 sinon.',
     flavorText: '« Achetez bas, vendez haut. Simple, non ? »',
-    image: 'images/cards/fi-006.svg',
+    image: 'images/cards/fi-006.png',
   },
   {
     id: 'fi-007',
@@ -91,7 +91,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 4,
     ability: 'Quand un Métier allié est détruit, restaurez 2 Réputation.',
     flavorText: '« Couvert contre tous les risques professionnels. »',
-    image: 'images/cards/fi-007.svg',
+    image: 'images/cards/fi-007.png',
   },
   {
     id: 'fi-008',
@@ -104,7 +104,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 5,
     ability: 'Tous les Métiers Finance gagnent +1/+0. Gagnez +2 Budget par tour.',
     flavorText: '« L\'argent est un outil, pas une fin. »',
-    image: 'images/cards/fi-008.svg',
+    image: 'images/cards/fi-008.png',
   },
   {
     id: 'fi-012',
@@ -117,7 +117,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Convertissez 1 carte de votre main en +2 Budget.',
     flavorText: '« Le taux du jour vous convient ? »',
-    image: 'images/cards/fi-012.svg',
+    image: 'images/cards/fi-012.png',
   },
   {
     id: 'fi-013',
@@ -130,7 +130,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 2,
     ability: 'Vos Événements coûtent 1 Budget de moins (minimum 1).',
     flavorText: '« Il existe toujours une niche, il suffit de chercher. »',
-    image: 'images/cards/fi-013.svg',
+    image: 'images/cards/fi-013.png',
   },
   {
     id: 'fi-014',
@@ -143,7 +143,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 1,
     ability: 'Quand embauché : Regardez la première carte du deck adverse.',
     flavorText: '« Chaque centime est tracé, chaque euro justifié. »',
-    image: 'images/cards/fi-014.svg',
+    image: 'images/cards/fi-014.png',
   },
   {
     id: 'fi-015',
@@ -156,7 +156,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 3,
     ability: 'Au début de votre tour, si vous avez 3+ Métiers en jeu, gagnez +1 Budget.',
     flavorText: '« Le risque n\'est pas un ennemi, c\'est une variable. »',
-    image: 'images/cards/fi-015.svg',
+    image: 'images/cards/fi-015.png',
   },
   {
     id: 'fi-016',
@@ -169,7 +169,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand embauché : Piochez 1 carte pour chaque Outil Finance en jeu.',
     flavorText: '« Diversifier, c\'est protéger. »',
-    image: 'images/cards/fi-016.svg',
+    image: 'images/cards/fi-016.png',
   },
   {
     id: 'fi-017',
@@ -182,7 +182,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 1,
     ability: 'Attaque rapide : peut attaquer le tour où il est embauché.',
     flavorText: '« Trois secondes de retard, c\'est une fortune perdue. »',
-    image: 'images/cards/fi-017.svg',
+    image: 'images/cards/fi-017.png',
   },
   {
     id: 'fi-018',
@@ -195,7 +195,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 4,
     ability: 'Au début de votre tour, piochez 1 carte si votre Budget est supérieur à celui de l\'adversaire.',
     flavorText: '« Bilan certifié, comptes approuvés. »',
-    image: 'images/cards/fi-018.svg',
+    image: 'images/cards/fi-018.png',
   },
   {
     id: 'fi-019',
@@ -208,7 +208,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand embauché : L\'adversaire perd 2 Budget.',
     flavorText: '« Vos déclarations présentent quelques… incohérences. »',
-    image: 'images/cards/fi-019.svg',
+    image: 'images/cards/fi-019.png',
   },
   {
     id: 'fi-020',
@@ -221,7 +221,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 3,
     ability: 'Quand embauché : Regardez les 3 premières cartes de votre deck, réarrangez-les dans l\'ordre de votre choix.',
     flavorText: '« À long terme, nous serons tous morts. »',
-    image: 'images/cards/fi-020.svg',
+    image: 'images/cards/fi-020.png',
   },
   {
     id: 'fi-021',
@@ -234,7 +234,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 4,
     ability: 'Les Métiers Finance alliés ne peuvent pas être ciblés par des Événements adverses coûtant 3 ou moins.',
     flavorText: '« Probabilité de défaillance : négligeable. »',
-    image: 'images/cards/fi-021.svg',
+    image: 'images/cards/fi-021.png',
   },
   {
     id: 'fi-022',
@@ -247,7 +247,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 4,
     ability: 'Tous les Outils Finance en jeu gagnent un effet supplémentaire : « Gagnez +1 Budget par tour. »',
     flavorText: '« Le bénéfice net a dépassé toutes les prévisions. »',
-    image: 'images/cards/fi-022.svg',
+    image: 'images/cards/fi-022.png',
   },
   {
     id: 'fi-023',
@@ -260,7 +260,7 @@ export const FINANCE_CARDS: Card[] = [
     resilience: 6,
     ability: 'Au début de votre tour, gagnez +3 Budget. Vos Métiers Finance coûtent 2 de moins (minimum 1).',
     flavorText: '« La politique monétaire, c\'est moi. »',
-    image: 'images/cards/fi-023.svg',
+    image: 'images/cards/fi-023.png',
   },
   // ── Tools ──
   {
@@ -272,7 +272,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Votre Budget maximum augmente de +2.',
     flavorText: '« Combinaison connue du directeur uniquement. »',
-    image: 'images/cards/fi-009.svg',
+    image: 'images/cards/fi-009.png',
   },
   {
     id: 'fi-010',
@@ -283,7 +283,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Au début de votre tour, piochez 1 carte supplémentaire si vous avez 3+ Budget.',
     flavorText: '« Les marchés sont ouverts. »',
-    image: 'images/cards/fi-010.svg',
+    image: 'images/cards/fi-010.png',
   },
   {
     id: 'fi-024',
@@ -294,7 +294,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Votre Budget ne peut pas être réduit par les effets adverses de plus de 1 par tour.',
     flavorText: '« Chiffrement 256 bits. Inviolable… en théorie. »',
-    image: 'images/cards/fi-024.svg',
+    image: 'images/cards/fi-024.png',
   },
   {
     id: 'fi-025',
@@ -305,7 +305,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Quand vous embauchéz un Métier, gagnez +1 Budget.',
     flavorText: '« Sans contact, sans limite, sans souci. »',
-    image: 'images/cards/fi-025.svg',
+    image: 'images/cards/fi-025.png',
   },
   {
     id: 'fi-026',
@@ -316,7 +316,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Une fois par tour, vous pouvez défausser 1 carte pour gagner +2 Budget.',
     flavorText: '« Vos écritures sont synchronisées en temps réel. »',
-    image: 'images/cards/fi-026.svg',
+    image: 'images/cards/fi-026.png',
   },
   {
     id: 'fi-027',
@@ -327,7 +327,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Au début de votre tour, lancez une pièce : face, gagnez +2 Budget ; pile, perdez 1 Budget.',
     flavorText: '« Les dividendes arrivent… ou pas. »',
-    image: 'images/cards/fi-027.svg',
+    image: 'images/cards/fi-027.png',
   },
   {
     id: 'fi-028',
@@ -338,7 +338,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Au début de votre tour, gagnez +1 Budget. Ne peut pas être détruit par les effets adverses.',
     flavorText: '« Garanti par le Trésor public. Rendement modeste mais sûr. »',
-    image: 'images/cards/fi-028.svg',
+    image: 'images/cards/fi-028.png',
   },
   {
     id: 'fi-029',
@@ -349,7 +349,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Quand un Événement est joué par n\'importe quel joueur, gagnez +1 Budget.',
     flavorText: '« Décentralisé, volatile, irrésistible. »',
-    image: 'images/cards/fi-029.svg',
+    image: 'images/cards/fi-029.png',
   },
   {
     id: 'fi-030',
@@ -360,7 +360,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Quand un de vos Métiers est détruit, piochez 1 carte.',
     flavorText: '« En cas de pépin, vos proches sont protégés. »',
-    image: 'images/cards/fi-030.svg',
+    image: 'images/cards/fi-030.png',
   },
   {
     id: 'fi-031',
@@ -371,7 +371,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Vous pouvez stocker jusqu\'à 3 Budget inutilisé entre les tours.',
     flavorText: '« Livret A, taux garanti, zéro risque. »',
-    image: 'images/cards/fi-031.svg',
+    image: 'images/cards/fi-031.png',
   },
   {
     id: 'fi-032',
@@ -382,7 +382,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Activation : Payez 2 Budget pour piocher 2 cartes. Utilisable une fois par tour.',
     flavorText: '« Retrait autorisé. Solde insuffisant ? Pas ici. »',
-    image: 'images/cards/fi-032.svg',
+    image: 'images/cards/fi-032.png',
   },
   {
     id: 'fi-033',
@@ -393,7 +393,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Vous pouvez jouer des cartes même si votre Budget est insuffisant : la différence est déduite de votre Réputation.',
     flavorText: '« Plafond illimité, conséquences limitées… pour l\'instant. »',
-    image: 'images/cards/fi-033.svg',
+    image: 'images/cards/fi-033.png',
   },
   // ── Events ──
   {
@@ -405,7 +405,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Les deux joueurs perdent tout leur Budget restant. Chaque joueur défausse 2 cartes.',
     flavorText: '« Lundi noir sur les marchés mondiaux. »',
-    image: 'images/cards/fi-011.svg',
+    image: 'images/cards/fi-011.png',
   },
   {
     id: 'fi-034',
@@ -416,7 +416,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Doublez votre Budget actuel. Au début de votre prochain tour, perdez tout votre Budget.',
     flavorText: '« Ça ne peut que monter ! Enfin… c\'est ce qu\'on disait. »',
-    image: 'images/cards/fi-034.svg',
+    image: 'images/cards/fi-034.png',
   },
   {
     id: 'fi-035',
@@ -427,7 +427,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Détruisez tous les Outils d\'un joueur ciblé. Ce joueur perd 3 Budget.',
     flavorText: '« Liquidation judiciaire prononcée. Rideau. »',
-    image: 'images/cards/fi-035.svg',
+    image: 'images/cards/fi-035.png',
   },
   {
     id: 'fi-036',
@@ -438,7 +438,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     effect: 'Prenez le contrôle d\'un Métier adverse coûtant 5 ou moins. Il devient allié jusqu\'à la fin de la partie.',
     flavorText: '« Offre non sollicitée, acceptation non négociable. »',
-    image: 'images/cards/fi-036.svg',
+    image: 'images/cards/fi-036.png',
   },
   {
     id: 'fi-037',
@@ -449,7 +449,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Toutes les cartes coûtent 1 Budget de plus jusqu\'à la fin du prochain tour de chaque joueur.',
     flavorText: '« Le prix de la baguette a encore augmenté. »',
-    image: 'images/cards/fi-037.svg',
+    image: 'images/cards/fi-037.png',
   },
   {
     id: 'fi-038',
@@ -460,7 +460,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Gagnez +4 Budget. Piochez 1 carte.',
     flavorText: '« Dossier accepté. Les fonds seront versés sous quinzaine. »',
-    image: 'images/cards/fi-038.svg',
+    image: 'images/cards/fi-038.png',
   },
   {
     id: 'fi-039',
@@ -471,7 +471,7 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Vos Métiers Finance ne peuvent pas être ciblés par l\'adversaire jusqu\'à votre prochain tour. Gagnez +2 Budget.',
     flavorText: '« Société offshore immatriculée. Aucune trace. »',
-    image: 'images/cards/fi-039.svg',
+    image: 'images/cards/fi-039.png',
   },
   {
     id: 'fi-040',
@@ -482,6 +482,6 @@ export const FINANCE_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'L\'adversaire révèle sa main. Pour chaque carte coûtant 4+, il perd 1 Budget.',
     flavorText: '« Veuillez fournir l\'intégralité de vos justificatifs. »',
-    image: 'images/cards/fi-040.svg',
+    image: 'images/cards/fi-040.png',
   },
 ];

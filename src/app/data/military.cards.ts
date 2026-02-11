@@ -13,7 +13,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 1,
     ability: 'Première Frappe.',
     flavorText: '« Engagé pour servir. »',
-    image: 'images/cards/mi-001.svg',
+    image: 'images/cards/mi-001.png',
   },
   {
     id: 'mi-002',
@@ -26,7 +26,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 3,
     ability: 'Doit bloquer si possible.',
     flavorText: '« Personne ne passe sans autorisation. »',
-    image: 'images/cards/mi-002.svg',
+    image: 'images/cards/mi-002.png',
   },
   {
     id: 'mi-003',
@@ -39,7 +39,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 3,
     ability: 'Les Métiers Armée adjacents gagnent +1/+0.',
     flavorText: '« En formation, pas de place pour l\'erreur. »',
-    image: 'images/cards/mi-003.svg',
+    image: 'images/cards/mi-003.png',
   },
   {
     id: 'mi-004',
@@ -52,7 +52,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 1,
     ability: 'Peut attaquer un Métier adverse directement.',
     flavorText: '« Un tir, une cible. »',
-    image: 'images/cards/mi-004.svg',
+    image: 'images/cards/mi-004.png',
   },
   {
     id: 'mi-005',
@@ -65,7 +65,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 4,
     ability: 'Quand embauché : Détruisez un Outil adverse.',
     flavorText: '« Construction ou destruction, au choix. »',
-    image: 'images/cards/mi-005.svg',
+    image: 'images/cards/mi-005.png',
   },
   {
     id: 'mi-006',
@@ -78,7 +78,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 4,
     ability: 'Tous les Métiers Armée gagnent +1/+0.',
     flavorText: '« À mon commandement, en avant ! »',
-    image: 'images/cards/mi-006.svg',
+    image: 'images/cards/mi-006.png',
   },
   {
     id: 'mi-007',
@@ -91,7 +91,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 2,
     ability: 'Caché. Quand révélé : Regardez la main adverse et l\'adversaire défausse 1 carte.',
     flavorText: '« Vous ne me verrez jamais venir. »',
-    image: 'images/cards/mi-007.svg',
+    image: 'images/cards/mi-007.png',
   },
   {
     id: 'mi-008',
@@ -104,7 +104,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 6,
     ability: 'Tous les Métiers Armée gagnent +1/+1. Première Frappe.',
     flavorText: '« La victoire appartient à ceux qui y croient le plus longtemps. »',
-    image: 'images/cards/mi-008.svg',
+    image: 'images/cards/mi-008.png',
   },
   {
     id: 'mi-012',
@@ -117,7 +117,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand un autre Métier Armée est embauché : le Fantassin gagne +1/+0 jusqu\'à la fin du tour.',
     flavorText: '« Le premier à avancer, le dernier à reculer. »',
-    image: 'images/cards/mi-012.svg',
+    image: 'images/cards/mi-012.png',
   },
   {
     id: 'mi-013',
@@ -130,7 +130,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 2,
     ability: 'Ne peut pas bloquer. Inflige 1 dégât à chaque Métier adverse quand il attaque.',
     flavorText: '« La pluie d\'acier ne fait pas de distinction. »',
-    image: 'images/cards/mi-013.svg',
+    image: 'images/cards/mi-013.png',
   },
   {
     id: 'mi-014',
@@ -143,7 +143,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 5,
     ability: 'Écrasement : les dégâts excédentaires sont infligés à l\'adversaire.',
     flavorText: '« Blindage épais, volonté d\'acier. »',
-    image: 'images/cards/mi-014.svg',
+    image: 'images/cards/mi-014.png',
   },
   {
     id: 'mi-015',
@@ -156,7 +156,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 3,
     ability: 'Engagement : Restaurez 2 points de résilience à un Métier Armée ciblé.',
     flavorText: '« Soigner sous le feu, c\'est ça le vrai courage. »',
-    image: 'images/cards/mi-015.svg',
+    image: 'images/cards/mi-015.png',
   },
   {
     id: 'mi-016',
@@ -169,7 +169,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 2,
     ability: 'Quand embauché : Piochez 1 carte si vous contrôlez un autre Métier Armée.',
     flavorText: '« Message reçu, cinq sur cinq. »',
-    image: 'images/cards/mi-016.svg',
+    image: 'images/cards/mi-016.png',
   },
   {
     id: 'mi-017',
@@ -182,7 +182,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 2,
     ability: 'Assaut : Peut attaquer le tour où il est embauché.',
     flavorText: '« Largué derrière les lignes, prêt au combat. »',
-    image: 'images/cards/mi-017.svg',
+    image: 'images/cards/mi-017.png',
   },
   {
     id: 'mi-018',
@@ -195,7 +195,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 2,
     ability: 'Première Frappe tant que vous contrôlez au moins 3 Métiers Armée.',
     flavorText: '« Legio Patria Nostra. »',
-    image: 'images/cards/mi-018.svg',
+    image: 'images/cards/mi-018.png',
   },
   {
     id: 'mi-019',
@@ -208,7 +208,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 3,
     ability: 'Coordination : Quand il attaque, un autre Métier Armée ciblé gagne +1/+1 jusqu\'à la fin du tour.',
     flavorText: '« Le grade ne fait pas le chef, mais le chef fait le grade. »',
-    image: 'images/cards/mi-019.svg',
+    image: 'images/cards/mi-019.png',
   },
   {
     id: 'mi-020',
@@ -221,7 +221,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 3,
     ability: 'Vol : Ne peut être bloqué que par des Métiers avec Vol. Première Frappe.',
     flavorText: '« Maître du ciel, terreur du sol. »',
-    image: 'images/cards/mi-020.svg',
+    image: 'images/cards/mi-020.png',
   },
   {
     id: 'mi-021',
@@ -234,7 +234,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 1,
     ability: 'Engagement : Regardez la carte du dessus du deck adverse. Vous pouvez la placer en dessous.',
     flavorText: '« Surveillance permanente, jour et nuit. »',
-    image: 'images/cards/mi-021.svg',
+    image: 'images/cards/mi-021.png',
   },
   {
     id: 'mi-022',
@@ -247,7 +247,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 4,
     ability: 'Quand embauché : Posez un Outil Armée de votre main avec un coût réduit de 2.',
     flavorText: '« Là où il n\'y a pas de route, on en construit une. »',
-    image: 'images/cards/mi-022.svg',
+    image: 'images/cards/mi-022.png',
   },
   {
     id: 'mi-023',
@@ -260,7 +260,7 @@ export const MILITARY_CARDS: Card[] = [
     resilience: 7,
     ability: 'Tous les Métiers Armée gagnent +2/+1. Au début de votre tour : Créez un jeton Soldat 1/1 avec Première Frappe.',
     flavorText: '« Un seul ordre, et des nations entières se mettent en marche. »',
-    image: 'images/cards/mi-023.svg',
+    image: 'images/cards/mi-023.png',
   },
   // ── Tools ──
   {
@@ -272,7 +272,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Tous les Métiers Armée gagnent +1/+0 en permanence.',
     flavorText: '« Armes et munitions pour toute l\'unité. »',
-    image: 'images/cards/mi-009.svg',
+    image: 'images/cards/mi-009.png',
   },
   {
     id: 'mi-010',
@@ -283,7 +283,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Un Métier Armée ciblé gagne +0/+3 en permanence.',
     flavorText: '« Imprenable, même sous les bombardements. »',
-    image: 'images/cards/mi-010.svg',
+    image: 'images/cards/mi-010.png',
   },
   {
     id: 'mi-024',
@@ -294,7 +294,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     ability: 'Attachez à un Métier Armée. Il gagne +2/+3 et Écrasement.',
     flavorText: '« Soixante tonnes de persuasion en acier. »',
-    image: 'images/cards/mi-024.svg',
+    image: 'images/cards/mi-024.png',
   },
   {
     id: 'mi-025',
@@ -305,7 +305,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Au début de votre tour : Piochez 1 carte supplémentaire si vous contrôlez 3 Métiers Armée ou plus.',
     flavorText: '« L\'information, c\'est le nerf de la guerre. »',
-    image: 'images/cards/mi-025.svg',
+    image: 'images/cards/mi-025.png',
   },
   {
     id: 'mi-026',
@@ -316,7 +316,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Quand posée : Un Métier Armée ciblé gagne +0/+2 jusqu\'à la fin du tour. Piochez 1 carte.',
     flavorText: '« Pas gastronomique, mais ça tient au ventre. »',
-    image: 'images/cards/mi-026.svg',
+    image: 'images/cards/mi-026.png',
   },
   {
     id: 'mi-027',
@@ -327,7 +327,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Attachez à un Métier Armée. Il gagne +0/+2. La première fois qu\'il devrait être licencié chaque tour, il survit avec 1 point de résilience.',
     flavorText: '« Léger, résistant, indispensable. »',
-    image: 'images/cards/mi-027.svg',
+    image: 'images/cards/mi-027.png',
   },
   {
     id: 'mi-028',
@@ -338,7 +338,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Attachez à un Métier Armée. Il gagne +1/+0 et ne peut pas être bloqué par des Métiers avec une résilience de 2 ou moins.',
     flavorText: '« Dans l\'obscurité, nous voyons tout. »',
-    image: 'images/cards/mi-028.svg',
+    image: 'images/cards/mi-028.png',
   },
   {
     id: 'mi-029',
@@ -349,7 +349,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Caché. Quand un Métier adverse attaque : Révélez et infligez 3 dégâts à ce Métier. Détruisez la Mine.',
     flavorText: '« Le sol lui-même est un ennemi. »',
-    image: 'images/cards/mi-029.svg',
+    image: 'images/cards/mi-029.png',
   },
   {
     id: 'mi-030',
@@ -360,7 +360,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Vos Métiers Armée avec Coordination activent leur effet sur tous les Métiers Armée alliés, pas un seul.',
     flavorText: '« Fréquence sécurisée, canal ouvert. »',
-    image: 'images/cards/mi-030.svg',
+    image: 'images/cards/mi-030.png',
   },
   {
     id: 'mi-031',
@@ -371,7 +371,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Engagement : Regardez les 3 cartes du dessus de votre deck. Placez-en 1 dans votre main et le reste en dessous.',
     flavorText: '« Altitude basse, précision haute. »',
-    image: 'images/cards/mi-031.svg',
+    image: 'images/cards/mi-031.png',
   },
   {
     id: 'mi-032',
@@ -382,7 +382,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Common,
     ability: 'Les Métiers adverses infligent 1 dégât de moins quand ils attaquent (minimum 1).',
     flavorText: '« Chaque mètre gagné coûte du sang. »',
-    image: 'images/cards/mi-032.svg',
+    image: 'images/cards/mi-032.png',
   },
   {
     id: 'mi-033',
@@ -393,7 +393,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Rare,
     ability: 'Quand posée : Regardez la main de l\'adversaire. Les Métiers Armée que vous contrôlez gagnent +1/+0 jusqu\'à la fin du tour.',
     flavorText: '« Connaître le terrain, c\'est déjà vaincre à moitié. »',
-    image: 'images/cards/mi-033.svg',
+    image: 'images/cards/mi-033.png',
   },
   // ── Events ──
   {
@@ -405,7 +405,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Tous vos Métiers Armée peuvent attaquer ce tour, même s\'ils viennent d\'être embauchés.',
     flavorText: '« Tous aux postes de combat ! »',
-    image: 'images/cards/mi-011.svg',
+    image: 'images/cards/mi-011.png',
   },
   {
     id: 'mi-034',
@@ -416,7 +416,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Tous vos Métiers Armée gagnent +2/+0 et Première Frappe jusqu\'à la fin du tour.',
     flavorText: '« Frapper vite, frapper fort, ne rien laisser debout. »',
-    image: 'images/cards/mi-034.svg',
+    image: 'images/cards/mi-034.png',
   },
   {
     id: 'mi-035',
@@ -427,7 +427,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Common,
     effect: 'Jouez pendant l\'attaque adverse. Infligez 2 dégâts à chaque Métier attaquant.',
     flavorText: '« Ils ne nous ont pas vus avant qu\'il soit trop tard. »',
-    image: 'images/cards/mi-035.svg',
+    image: 'images/cards/mi-035.png',
   },
   {
     id: 'mi-036',
@@ -438,7 +438,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Aucun Métier ne peut attaquer pendant le prochain tour. Chaque joueur pioche 1 carte.',
     flavorText: '« Le silence après la tempête n\'est pas la paix, mais un répit. »',
-    image: 'images/cards/mi-036.svg',
+    image: 'images/cards/mi-036.png',
   },
   {
     id: 'mi-037',
@@ -449,7 +449,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Rare,
     effect: 'Infligez 3 dégâts à tous les Métiers adverses et 1 dégât à tous vos Métiers.',
     flavorText: '« Quand le ciel gronde, la terre tremble. »',
-    image: 'images/cards/mi-037.svg',
+    image: 'images/cards/mi-037.png',
   },
   {
     id: 'mi-038',
@@ -460,7 +460,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Créez 3 jetons Parachutiste 2/1 avec Assaut.',
     flavorText: '« Le ciel s\'ouvre et des ombres en tombent par dizaines. »',
-    image: 'images/cards/mi-038.svg',
+    image: 'images/cards/mi-038.png',
   },
   {
     id: 'mi-039',
@@ -471,7 +471,7 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     effect: 'Prenez le contrôle d\'un Métier adverse avec une productivité de 3 ou moins jusqu\'à la fin du tour. Il gagne Assaut.',
     flavorText: '« La confiance est une arme à double tranchant. »',
-    image: 'images/cards/mi-039.svg',
+    image: 'images/cards/mi-039.png',
   },
   {
     id: 'mi-040',
@@ -482,6 +482,6 @@ export const MILITARY_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     effect: 'Cherchez dans votre deck jusqu\'à 3 Métiers Armée avec un coût de 3 ou moins et embauchéz-les directement. Ils gagnent Assaut ce tour.',
     flavorText: '« À l\'aube, la marée apporta la guerre sur ces rivages. »',
-    image: 'images/cards/mi-040.svg',
+    image: 'images/cards/mi-040.png',
   },
 ];
