@@ -13,6 +13,7 @@ import {
 } from '../../models/card.model';
 
 export type CardDesign = 'classique' | 'moderne' | 'retro' | 'elegant';
+export type ImageStyle = 'pixel' | 'icone';
 
 @Component({
   selector: 'app-card',
@@ -25,6 +26,15 @@ export class CardComponent {
   @Input({ required: true }) card!: Card;
   @Input() selected = false;
   @Input() design: CardDesign = 'classique';
+  @Input() imageStyle: ImageStyle = 'pixel';
+
+  get imageSrc(): string | null {
+    if (!this.card.image) return null;
+    if (this.imageStyle === 'icone') {
+      return this.card.image.replace(/\.png$/, '.svg');
+    }
+    return this.card.image;
+  }
 
   get colors() {
     return DOMAIN_COLORS[this.card.domain];

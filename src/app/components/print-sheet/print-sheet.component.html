@@ -8,7 +8,7 @@
   <div class="print-page" *ngFor="let page of pages; let i = index">
     <div class="card-grid">
       <div class="card-slot" *ngFor="let card of page">
-        <app-card [card]="card" [design]="design" />
+        <app-card [card]="card" [design]="design" [imageStyle]="imageStyle" />
       </div>
     </div>
     <div class="page-number no-print">Page {{ i + 1 }} sur {{ pages.length }}</div>

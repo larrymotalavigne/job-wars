@@ -93,6 +93,13 @@
               placeholder="Rechercher..."
             />
           </div>
+          <div class="filter-group">
+            <label>Image</label>
+            <p-select
+              [options]="imageStyleOptions"
+              [(ngModel)]="currentImageStyle"
+            />
+          </div>
         </div>
 
         <div class="browse-info">
@@ -107,7 +114,7 @@
             (click)="addCardToDeck(card)"
             (dblclick)="openDetail(card)"
           >
-            <app-card [card]="card" [design]="currentDesign" />
+            <app-card [card]="card" [design]="currentDesign" [imageStyle]="currentImageStyle" />
             <div class="card-qty-badge" *ngIf="getCardQuantity(card.id) > 0">
               {{ getCardQuantity(card.id) }}
             </div>
@@ -186,6 +193,13 @@
             placeholder="Rechercher..."
           />
         </div>
+        <div class="filter-group">
+          <label>Image</label>
+          <p-select
+            [options]="imageStyleOptions"
+            [(ngModel)]="currentImageStyle"
+          />
+        </div>
       </div>
 
       <div class="browse-info">
@@ -200,7 +214,7 @@
           (click)="addCardToDeck(card)"
           (dblclick)="openDetail(card)"
         >
-          <app-card [card]="card" [design]="currentDesign" />
+          <app-card [card]="card" [design]="currentDesign" [imageStyle]="currentImageStyle" />
           <div class="card-qty-badge" *ngIf="getCardQuantity(card.id) > 0">
             {{ getCardQuantity(card.id) }}
           </div>
@@ -439,7 +453,7 @@
 >
   <div class="detail-content" *ngIf="detailCard">
     <div class="detail-card-preview">
-      <app-card [card]="detailCard" [design]="currentDesign" />
+      <app-card [card]="detailCard" [design]="currentDesign" [imageStyle]="currentImageStyle" />
     </div>
     <div class="detail-info">
       <div class="detail-row"><strong>Domaine :</strong> {{ detailCard.domain }}</div>

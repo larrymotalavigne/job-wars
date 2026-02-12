@@ -66,6 +66,14 @@
         placeholder="Style de carte"
       />
     </div>
+
+    <div class="filter-group">
+      <label>Image</label>
+      <p-select
+        [options]="imageStyleOptions"
+        [(ngModel)]="currentImageStyle"
+      />
+    </div>
   </div>
 
   <!-- Barre de sélection -->
@@ -92,7 +100,7 @@
       (click)="toggleSelection(card)"
       (dblclick)="openDetail(card)"
     >
-      <app-card [card]="card" [selected]="isSelected(card)" [design]="currentDesign" />
+      <app-card [card]="card" [selected]="isSelected(card)" [design]="currentDesign" [imageStyle]="currentImageStyle" />
       <div class="card-select-overlay" *ngIf="isSelected(card)">
         <i class="pi pi-check"></i>
       </div>
@@ -115,7 +123,7 @@
 >
   <div class="detail-content" *ngIf="detailCard">
     <div class="detail-card-preview">
-      <app-card [card]="detailCard" [design]="currentDesign" />
+      <app-card [card]="detailCard" [design]="currentDesign" [imageStyle]="currentImageStyle" />
     </div>
     <div class="detail-info">
       <div class="detail-row"><strong>Domaine :</strong> {{ detailCard.domain }}</div>

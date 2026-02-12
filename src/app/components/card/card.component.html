@@ -7,8 +7,8 @@
     <span class="card-name">{{ card.name }}</span>
   </div>
   <div class="card-art" [style.background]="colors.secondary">
-    <img *ngIf="card.image" [src]="card.image" [alt]="card.name" class="card-image" />
-    <i *ngIf="!card.image" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
+    <img *ngIf="imageSrc" [src]="imageSrc" [alt]="card.name" class="card-image" />
+    <i *ngIf="!imageSrc" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
   </div>
   <div class="card-type-line" [style.background]="colors.secondary" [style.border-color]="colors.primary">
     <span class="card-type">{{ card.type }} — {{ card.domain }}</span>
@@ -31,8 +31,8 @@
      [style.border-color]="colors.primary">
   <div class="moderne-cost" [style.background]="colors.primary">{{ card.cost }}</div>
   <div class="card-art moderne-art" [style.background]="colors.secondary">
-    <img *ngIf="card.image" [src]="card.image" [alt]="card.name" class="card-image" />
-    <i *ngIf="!card.image" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
+    <img *ngIf="imageSrc" [src]="imageSrc" [alt]="card.name" class="card-image" />
+    <i *ngIf="!imageSrc" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
   </div>
   <div class="moderne-body">
     <div class="moderne-name">{{ card.name }}</div>
@@ -59,8 +59,8 @@
     <span class="retro-name">{{ card.name }}</span>
   </div>
   <div class="retro-art" [style.border-color]="colors.primary">
-    <img *ngIf="card.image" [src]="card.image" [alt]="card.name" class="card-image" />
-    <i *ngIf="!card.image" [class]="domainIcon" class="domain-icon" [style.color]="colors.accent"></i>
+    <img *ngIf="imageSrc" [src]="imageSrc" [alt]="card.name" class="card-image" />
+    <i *ngIf="!imageSrc" [class]="domainIcon" class="domain-icon" [style.color]="colors.accent"></i>
   </div>
   <div class="retro-bar" [style.background]="colors.accent">
     <span>{{ card.type }}</span>
@@ -84,8 +84,8 @@
       <span class="elegant-name">{{ card.name }}</span>
     </div>
     <div class="elegant-art">
-      <img *ngIf="card.image" [src]="card.image" [alt]="card.name" class="card-image" />
-      <i *ngIf="!card.image" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
+      <img *ngIf="imageSrc" [src]="imageSrc" [alt]="card.name" class="card-image" />
+      <i *ngIf="!imageSrc" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
     </div>
     <div class="elegant-divider" [style.background]="colors.primary"></div>
     <div class="elegant-type" [style.color]="colors.primary">

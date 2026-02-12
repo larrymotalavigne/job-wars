@@ -8,7 +8,7 @@ import { Slider } from 'primeng/slider';
 import { InputText } from 'primeng/inputtext';
 import { Button } from 'primeng/button';
 import { Dialog } from 'primeng/dialog';
-import { CardComponent, CardDesign } from '../card/card.component';
+import { CardComponent, CardDesign, ImageStyle } from '../card/card.component';
 import { CardService } from '../../services/card.service';
 import { Card, CardType, Domain, Rarity, isJobCard } from '../../models/card.model';
 
@@ -43,6 +43,13 @@ export class CardGalleryComponent implements OnInit {
     { label: 'Moderne', value: 'moderne' },
     { label: 'Rétro', value: 'retro' },
     { label: 'Élégant', value: 'elegant' },
+  ];
+
+  // Image style
+  currentImageStyle: ImageStyle = 'pixel';
+  imageStyleOptions: { label: string; value: ImageStyle }[] = [
+    { label: 'Pixel Art', value: 'pixel' },
+    { label: 'Icône', value: 'icone' },
   ];
 
   // Filter options
@@ -101,7 +108,7 @@ export class CardGalleryComponent implements OnInit {
 
   printSelected() {
     const ids = Array.from(this.selectedCards);
-    this.router.navigate(['/print'], { queryParams: { cards: ids.join(','), design: this.currentDesign } });
+    this.router.navigate(['/print'], { queryParams: { cards: ids.join(','), design: this.currentDesign, imageStyle: this.currentImageStyle } });
   }
 
   openDetail(card: Card) {

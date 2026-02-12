@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Button } from 'primeng/button';
-import { CardComponent, CardDesign } from '../card/card.component';
+import { CardComponent, CardDesign, ImageStyle } from '../card/card.component';
 import { CardService } from '../../services/card.service';
 import { Card } from '../../models/card.model';
 
@@ -17,6 +17,7 @@ export class PrintSheetComponent implements OnInit {
   cards: Card[] = [];
   pages: Card[][] = [];
   design: CardDesign = 'classique';
+  imageStyle: ImageStyle = 'pixel';
 
   constructor(
     private route: ActivatedRoute,
@@ -27,6 +28,9 @@ export class PrintSheetComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       if (params['design']) {
         this.design = params['design'] as CardDesign;
+      }
+      if (params['imageStyle']) {
+        this.imageStyle = params['imageStyle'] as ImageStyle;
       }
       if (params['cards']) {
         const ids = params['cards'].split(',');

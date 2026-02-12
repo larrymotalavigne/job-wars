@@ -17,7 +17,7 @@ import { Tabs, Tab, TabList, TabPanel, TabPanels } from 'primeng/tabs';
 import { Drawer } from 'primeng/drawer';
 import { Textarea } from 'primeng/textarea';
 import { MessageService, ConfirmationService } from 'primeng/api';
-import { CardComponent, CardDesign } from '../card/card.component';
+import { CardComponent, CardDesign, ImageStyle } from '../card/card.component';
 import { DeckStatsComponent } from './deck-stats/deck-stats.component';
 import { CardService } from '../../services/card.service';
 import { DeckService } from '../../services/deck.service';
@@ -76,6 +76,11 @@ export class DeckBuilderComponent implements OnInit {
   detailCard: Card | null = null;
   showDetail = false;
   currentDesign: CardDesign = 'classique';
+  currentImageStyle: ImageStyle = 'pixel';
+  imageStyleOptions: { label: string; value: ImageStyle }[] = [
+    { label: 'Pixel Art', value: 'pixel' },
+    { label: 'Icône', value: 'icone' },
+  ];
 
   // Filters
   domainOptions = Object.values(Domain).map(d => ({ label: d, value: d }));
@@ -406,7 +411,7 @@ export class DeckBuilderComponent implements OnInit {
     if (!this.currentDeck) return;
     const cards = this.deckService.expandDeck(this.currentDeck);
     const ids = cards.map(c => c.id).join(',');
-    this.router.navigate(['/print'], { queryParams: { cards: ids, design: this.currentDesign } });
+    this.router.navigate(['/print'], { queryParams: { cards: ids, design: this.currentDesign, imageStyle: this.currentImageStyle } });
   }
 
   // --- Helpers ---
