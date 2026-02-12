@@ -13,7 +13,7 @@ import {
 } from '../../models/card.model';
 
 export type CardDesign = 'classique' | 'moderne' | 'retro' | 'elegant';
-export type ImageStyle = 'pixel' | 'pixel-v2' | 'icone';
+export type ImageStyle = 'pixel' | 'pixel-v2' | 'realistic' | 'icone';
 
 @Component({
   selector: 'app-card',
@@ -35,6 +35,9 @@ export class CardComponent {
     }
     if (this.imageStyle === 'pixel-v2') {
       return this.card.image.replace('/cards/', '/cards-v2/');
+    }
+    if (this.imageStyle === 'realistic') {
+      return this.card.image.replace('/cards/', '/cards-v3/');
     }
     return this.card.image;
   }

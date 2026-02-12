@@ -80,6 +80,7 @@ export class DeckBuilderComponent implements OnInit {
   imageStyleOptions: { label: string; value: ImageStyle }[] = [
     { label: 'Pixel Art', value: 'pixel' },
     { label: 'Pixel Art v2', value: 'pixel-v2' },
+    { label: 'Réaliste', value: 'realistic' },
     { label: 'Icône', value: 'icone' },
   ];
 
