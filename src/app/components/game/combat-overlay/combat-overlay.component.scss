@@ -7,10 +7,12 @@
   align-items: center;
   justify-content: center;
   animation: fadeIn 0.2s ease;
+  pointer-events: none;
 }
 
 .combat-panel {
   background: #1e1e2e;
+  pointer-events: all;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   padding: 1.5rem;
