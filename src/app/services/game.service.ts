@@ -282,9 +282,9 @@ export class GameService {
     for (const card of player.field) {
       this.effectService.executeAutoEffects(
         card, EffectTrigger.OnTurnStart, state,
-        (msg) => this.addLog(msg),
-        (p, n) => this.drawCards(p, n),
-        (id) => this.destroyCard(id),
+        (msg: string) => this.addLog(msg),
+        (p: PlayerState, n: number) => this.drawCards(p, n),
+        (id: string) => this.destroyCard(id),
       );
     }
 
@@ -349,9 +349,9 @@ export class GameService {
     const trigger = isEventCard(cardInstance.card) ? EffectTrigger.OnCast : EffectTrigger.OnHire;
     const pending = this.effectService.executeAutoEffects(
       cardInstance, trigger, state,
-      (msg) => this.addLog(msg),
-      (p, n) => this.drawCards(p, n),
-      (id) => this.destroyCard(id),
+      (msg: string) => this.addLog(msg),
+      (p: PlayerState, n: number) => this.drawCards(p, n),
+      (id: string) => this.destroyCard(id),
     );
     if (pending) {
       state.pendingEffect = pending;
@@ -570,9 +570,9 @@ export class GameService {
       if (card) {
         this.effectService.executeAutoEffects(
           card, EffectTrigger.OnDestroy, state,
-          (msg) => this.addLog(msg),
-          (p, n) => this.drawCards(p, n),
-          (cid) => this.destroyCard(cid),
+          (msg: string) => this.addLog(msg),
+          (p: PlayerState, n: number) => this.drawCards(p, n),
+          (cid: string) => this.destroyCard(cid),
         );
       }
       this.destroyCard(id);
@@ -599,9 +599,9 @@ export class GameService {
     for (const card of player.field) {
       this.effectService.executeAutoEffects(
         card, EffectTrigger.OnTurnEnd, state,
-        (msg) => this.addLog(msg),
-        (p, n) => this.drawCards(p, n),
-        (id) => this.destroyCard(id),
+        (msg: string) => this.addLog(msg),
+        (p: PlayerState, n: number) => this.drawCards(p, n),
+        (id: string) => this.destroyCard(id),
       );
     }
 
@@ -723,9 +723,9 @@ export class GameService {
     if (!state?.pendingEffect) return;
     const next = this.effectService.resolveTargetedEffect(
       state.pendingEffect, targetInstanceId, state,
-      (msg) => this.addLog(msg),
-      (p, n) => this.drawCards(p, n),
-      (id) => this.destroyCard(id),
+      (msg: string) => this.addLog(msg),
+      (p: PlayerState, n: number) => this.drawCards(p, n),
+      (id: string) => this.destroyCard(id),
     );
     state.pendingEffect = next;
     this.checkWinCondition();

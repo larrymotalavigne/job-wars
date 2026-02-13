@@ -1,0 +1,29 @@
+@if (state.pendingEffect) {
+  <div class="targeting-overlay">
+    <div class="targeting-panel">
+      <h3>{{ state.pendingEffect.sourceCardName }}</h3>
+      @if (currentEffect) {
+        <p class="targeting-hint">{{ currentEffect.description }}</p>
+      }
+      <p class="targeting-instruction">Cliquez sur une cible valide.</p>
+
+      <div class="targeting-cards">
+        @for (card of validTargets; track card.instanceId) {
+          <app-game-card
+            [instance]="card"
+            [selectable]="true"
+            [selected]="false"
+            (cardClick)="selectTarget($event)"
+          />
+        }
+        @if (validTargets.length === 0) {
+          <p class="no-targets">Aucune cible valide disponible.</p>
+        }
+      </div>
+
+      <div class="targeting-actions">
+        <p-button label="Annuler" icon="pi pi-times" severity="secondary" (onClick)="cancel()" />
+      </div>
+    </div>
+  </div>
+}
