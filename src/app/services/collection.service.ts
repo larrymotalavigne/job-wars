@@ -27,6 +27,8 @@ export interface CollectionStats {
 @Injectable({ providedIn: 'root' })
 export class CollectionService {
   private readonly STORAGE_KEY = 'jobwars-collection';
+  private readonly VERSION_KEY = 'jobwars-collection-version';
+  private readonly CURRENT_VERSION = 2; // Increment when card structure changes
 
   constructor(
     private cardService: CardService,
@@ -34,21 +36,91 @@ export class CollectionService {
   ) {}
 
   /**
-   * Initialize collection with all cards
+   * Initialize collection with all cards (optimized)
    */
   initializeCollection(): void {
-    const existing = this.loadCollection();
-    if (existing.length > 0) return; // Already initialized
-
+    const storedVersion = this.getStoredVersion();
     const allCards = this.cardService.getAllCards();
-    const collection: CardCollectionEntry[] = allCards.map(card => ({
+
+    // Check if we need to reinitialize (version mismatch or new cards added)
+    if (storedVersion !== this.CURRENT_VERSION) {
+      console.log('Migrating collection to new version...');
+      this.migrateCollection(allCards);
+      return;
+    }
+
+    const existing = this.loadCollection();
+    if (existing.length > 0 && existing.length === allCards.length) {
+      return; // Already initialized with correct number of cards
+    }
+
+    // Initialize or add missing cards
+    this.initializeOrUpdateCollection(allCards, existing);
+  }
+
+  private initializeOrUpdateCollection(allCards: Card[], existing: CardCollectionEntry[]): void {
+    const existingIds = new Set(existing.map(e => e.cardId));
+    const newEntries: CardCollectionEntry[] = [];
+
+    // Add any missing cards
+    for (const card of allCards) {
+      if (!existingIds.has(card.id)) {
+        newEntries.push({
+          cardId: card.id,
+          unlocked: this.isStarterCard(card),
+          unlockedAt: this.isStarterCard(card) ? new Date().toISOString() : undefined,
+          unlockCondition: this.getUnlockCondition(card),
+        });
+      }
+    }
+
+    if (newEntries.length > 0 || existing.length === 0) {
+      const collection = existing.length === 0
+        ? allCards.map(card => ({
+            cardId: card.id,
+            unlocked: this.isStarterCard(card),
+            unlockedAt: this.isStarterCard(card) ? new Date().toISOString() : undefined,
+            unlockCondition: this.getUnlockCondition(card),
+          }))
+        : [...existing, ...newEntries];
+
+      this.saveCollection(collection);
+      this.setStoredVersion(this.CURRENT_VERSION);
+    }
+  }
+
+  private migrateCollection(allCards: Card[]): void {
+    const oldCollection = this.loadCollection();
+    const unlockedIds = new Set(oldCollection.filter(e => e.unlocked).map(e => e.cardId));
+
+    const newCollection: CardCollectionEntry[] = allCards.map(card => ({
       cardId: card.id,
-      unlocked: this.isStarterCard(card),
-      unlockedAt: this.isStarterCard(card) ? new Date().toISOString() : undefined,
+      unlocked: unlockedIds.has(card.id) || this.isStarterCard(card),
+      unlockedAt: unlockedIds.has(card.id) ? new Date().toISOString() :
+                  this.isStarterCard(card) ? new Date().toISOString() : undefined,
       unlockCondition: this.getUnlockCondition(card),
     }));
 
-    this.saveCollection(collection);
+    this.saveCollection(newCollection);
+    this.setStoredVersion(this.CURRENT_VERSION);
+    console.log(`Migration complete: ${newCollection.length} cards`);
+  }
+
+  private getStoredVersion(): number {
+    try {
+      const version = localStorage.getItem(this.VERSION_KEY);
+      return version ? parseInt(version, 10) : 0;
+    } catch {
+      return 0;
+    }
+  }
+
+  private setStoredVersion(version: number): void {
+    try {
+      localStorage.setItem(this.VERSION_KEY, version.toString());
+    } catch (err) {
+      console.warn('Failed to save version:', err);
+    }
   }
 
   /**
@@ -191,18 +263,41 @@ export class CollectionService {
   private loadCollection(): CardCollectionEntry[] {
     try {
       const data = localStorage.getItem(this.STORAGE_KEY);
-      return data ? JSON.parse(data) : [];
+      if (!data) return [];
+
+      const parsed = JSON.parse(data);
+      if (!Array.isArray(parsed)) {
+        console.warn('Invalid collection data, resetting...');
+        return [];
+      }
+
+      return parsed;
     } catch (err) {
-      console.warn('Failed to load collection:', err);
+      console.error('Failed to load collection, resetting:', err);
+      // Clear corrupted data
+      localStorage.removeItem(this.STORAGE_KEY);
       return [];
     }
   }
 
   private saveCollection(collection: CardCollectionEntry[]): void {
     try {
-      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(collection));
+      const json = JSON.stringify(collection);
+
+      // Check if data is too large (most browsers have ~5-10MB limit)
+      if (json.length > 5 * 1024 * 1024) {
+        console.error('Collection data too large for localStorage');
+        return;
+      }
+
+      localStorage.setItem(this.STORAGE_KEY, json);
     } catch (err) {
-      console.warn('Failed to save collection:', err);
+      if (err instanceof DOMException && err.name === 'QuotaExceededError') {
+        console.error('localStorage quota exceeded. Collection not saved.');
+        // Optionally: implement fallback storage or warn user
+      } else {
+        console.error('Failed to save collection:', err);
+      }
     }
   }
 
