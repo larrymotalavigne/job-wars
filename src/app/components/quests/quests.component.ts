@@ -16,7 +16,10 @@ import { Observable } from 'rxjs';
   styleUrl: './quests.component.scss'
 })
 export class QuestsComponent implements OnInit {
-  questState$ = this.questService.state$;
+  get questState$() {
+    return this.questService.state$;
+  }
+
   timeUntilReset = '';
 
   constructor(public questService: QuestService) {}
@@ -47,7 +50,7 @@ export class QuestsComponent implements OnInit {
     return Math.floor((quest.progress / quest.requirement) * 100);
   }
 
-  getDifficultyColor(reward: { coins: number; gems: number }): string {
+  getDifficultyColor(reward: { coins: number; gems: number }): 'success' | 'warning' | 'danger' {
     if (reward.coins >= 150 || reward.gems > 0) return 'danger';
     if (reward.coins >= 100) return 'warning';
     return 'success';

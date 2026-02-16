@@ -217,6 +217,22 @@ export class DeckService {
     };
   }
 
+  /**
+   * Get the dominant domain (most cards) from a deck
+   */
+  getDominantDomain(deck: Deck): string | undefined {
+    const stats = this.computeStats(deck);
+    const domains = Object.entries(stats.domainDistribution);
+    if (domains.length === 0) return undefined;
+
+    // Find domain with most cards
+    const [dominantDomain] = domains.reduce((max, current) =>
+      current[1] > max[1] ? current : max
+    );
+
+    return dominantDomain;
+  }
+
   exportDeck(deck: Deck): string {
     const data: DeckExport = {
       version: 1,

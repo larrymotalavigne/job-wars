@@ -17,7 +17,10 @@ import { PlayerAvatar, PlayerTitle } from '../../models/profile.model';
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent implements OnInit {
-  profile$ = this.profileService.profile$;
+  get profile$() {
+    return this.profileService.profile$;
+  }
+
   avatars: PlayerAvatar[] = [];
   titles: PlayerTitle[] = [];
 
@@ -77,5 +80,13 @@ export class ProfileComponent implements OnInit {
 
   getXPProgress() {
     return this.profileService.getXPProgress();
+  }
+
+  getUnlockedAvatarsCount(): number {
+    return this.avatars.filter(a => a.unlocked).length;
+  }
+
+  getUnlockedTitlesCount(): number {
+    return this.titles.filter(t => t.unlocked).length;
   }
 }

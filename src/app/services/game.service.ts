@@ -1287,8 +1287,11 @@ export class GameService {
       this.questService.updateQuestProgress(QuestType.GamesWon, 1);
       // Track win with domain
       const deck = this.deckService.getDeckById(state.player1.deckId);
-      if (deck?.domain) {
-        this.questService.updateQuestProgress(QuestType.WinWithDomain, 1, { domain: deck.domain });
+      if (deck) {
+        const dominantDomain = this.deckService.getDominantDomain(deck);
+        if (dominantDomain) {
+          this.questService.updateQuestProgress(QuestType.WinWithDomain, 1, { domain: dominantDomain });
+        }
       }
       // Track ranked match (win)
       if (state.isRankedGame && !state.isAiGame) {

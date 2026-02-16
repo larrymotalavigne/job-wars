@@ -4,19 +4,21 @@ import { Card } from 'primeng/card';
 import { Button } from 'primeng/button';
 import { ProgressBar } from 'primeng/progressbar';
 import { Tag } from 'primeng/tag';
-import { Table } from 'primeng/table';
 import { RankedService } from '../../services/ranked.service';
 import { RankedStats, RankTier, formatRank } from '../../models/ranked.model';
 
 @Component({
   selector: 'app-ranked',
   standalone: true,
-  imports: [CommonModule, Card, Button, ProgressBar, Tag, Table],
+  imports: [CommonModule, Card, Button, ProgressBar, Tag],
   templateUrl: './ranked.component.html',
   styleUrl: './ranked.component.scss'
 })
 export class RankedComponent implements OnInit {
-  stats$ = this.rankedService.stats$;
+  get stats$() {
+    return this.rankedService.stats$;
+  }
+
   seasonEndTime = '';
   RankTier = RankTier; // For template access
 

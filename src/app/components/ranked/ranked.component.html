@@ -148,38 +148,36 @@
     <!-- Match History -->
     @if (stats.matchHistory.length > 0) {
       <div class="history-section">
-        <h2>Historique des Parties</h2>
-        <p-table [value]="stats.matchHistory" [paginator]="true" [rows]="10">
-          <ng-template #header>
-            <tr>
-              <th>Date</th>
-              <th>Résultat</th>
-              <th>Adversaire</th>
-              <th>MMR Adv.</th>
-              <th>MMR Change</th>
-              <th>Rang Avant</th>
-              <th>Rang Après</th>
-            </tr>
-          </ng-template>
-          <ng-template #body let-match>
-            <tr>
-              <td>{{ formatDate(match.timestamp) }}</td>
-              <td>
+        <h2>Historique des Parties ({{ stats.matchHistory.length }} dernières)</h2>
+        <div class="history-table">
+          <div class="history-header">
+            <div class="col-date">Date</div>
+            <div class="col-result">Résultat</div>
+            <div class="col-opponent">Adversaire</div>
+            <div class="col-mmr">MMR Adv.</div>
+            <div class="col-change">MMR Change</div>
+            <div class="col-rank-before">Rang Avant</div>
+            <div class="col-rank-after">Rang Après</div>
+          </div>
+          @for (match of stats.matchHistory.slice(0, 10); track match.timestamp) {
+            <div class="history-row">
+              <div class="col-date">{{ formatDate(match.timestamp) }}</div>
+              <div class="col-result">
                 <p-tag
                   [value]="getMatchResultLabel(match.result)"
                   [severity]="getMatchResultSeverity(match.result)">
                 </p-tag>
-              </td>
-              <td>{{ match.opponentName }}</td>
-              <td>{{ match.opponentMMR }}</td>
-              <td [class.positive]="match.mmrChange > 0" [class.negative]="match.mmrChange < 0">
+              </div>
+              <div class="col-opponent">{{ match.opponentName }}</div>
+              <div class="col-mmr">{{ match.opponentMMR }}</div>
+              <div class="col-change" [class.positive]="match.mmrChange > 0" [class.negative]="match.mmrChange < 0">
                 {{ formatMMRChange(match.mmrChange) }}
-              </td>
-              <td>{{ match.rankBefore }}</td>
-              <td>{{ match.rankAfter }}</td>
-            </tr>
-          </ng-template>
-        </p-table>
+              </div>
+              <div class="col-rank-before">{{ match.rankBefore }}</div>
+              <div class="col-rank-after">{{ match.rankAfter }}</div>
+            </div>
+          }
+        </div>
       </div>
     }
   </div>

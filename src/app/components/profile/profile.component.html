@@ -87,12 +87,12 @@
       <div class="unlockables-grid">
         <div class="unlockable-section">
           <h3>Avatars</h3>
-          <p>{{ avatars.filter(a => a.unlocked).length }} / {{ avatars.length }} débloqués</p>
+          <p>{{ getUnlockedAvatarsCount() }} / {{ avatars.length }} débloqués</p>
         </div>
 
         <div class="unlockable-section">
           <h3>Titres</h3>
-          <p>{{ titles.filter(t => t.unlocked).length }} / {{ titles.length }} débloqués</p>
+          <p>{{ getUnlockedTitlesCount() }} / {{ titles.length }} débloqués</p>
         </div>
       </div>
     </p-card>
