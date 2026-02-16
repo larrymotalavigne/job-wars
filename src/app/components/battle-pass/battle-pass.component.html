@@ -24,7 +24,7 @@
                   label="Débloquer Premium ({{ premiumCost }} gemmes)"
                   icon="pi pi-star"
                   (onClick)="purchasePremium()"
-                  severity="warning"
+                  severity="warn"
                   size="small">
                 </p-button>
               } @else {
@@ -81,7 +81,7 @@
                       <p-button
                         label="Réclamer"
                         size="small"
-                        severity="warning"
+                        severity="warn"
                         (onClick)="claimReward(level, 'premium')">
                       </p-button>
                     } @else if (reward.claimed) {

@@ -1,4 +1,5 @@
-import { AsyncPipe, Component } from '@angular/core';
+import { Component } from '@angular/core';
+import { AsyncPipe } from '@angular/common';
 import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import { Menubar } from 'primeng/menubar';
@@ -21,7 +22,10 @@ import { ProfileService } from './services/profile.service';
 })
 export class AppComponent {
   hideNav = false;
-  balance$ = this.currencyService.balance$;
+
+  get balance$() {
+    return this.currencyService.balance$;
+  }
 
   menuItems: MenuItem[] = [
     { label: 'Galerie', icon: 'pi pi-th-large', routerLink: '/gallery' },
