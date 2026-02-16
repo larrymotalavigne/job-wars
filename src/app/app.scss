@@ -29,6 +29,43 @@
   flex: 1;
 }
 
+.currency-display {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .currency-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--p-border-radius);
+    background: var(--p-surface-50);
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    i {
+      font-size: 1rem;
+    }
+
+    &.coins {
+      color: #f59e0b;
+
+      i {
+        color: #f59e0b;
+      }
+    }
+
+    &.gems {
+      color: #3b82f6;
+
+      i {
+        color: #3b82f6;
+      }
+    }
+  }
+}
+
 .app-layout.fullscreen {
   .app-main {
     height: 100vh;

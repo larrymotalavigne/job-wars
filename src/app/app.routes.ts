@@ -7,6 +7,11 @@ import { GameLobbyComponent } from './components/game/game-lobby/game-lobby.comp
 import { GameBoardComponent } from './components/game/game-board/game-board.component';
 import { StatsComponent } from './components/stats/stats.component';
 import { CollectionComponent } from './components/collection/collection.component';
+import { QuestsComponent } from './components/quests/quests.component';
+import { RankedComponent } from './components/ranked/ranked.component';
+import { BattlePassComponent } from './components/battle-pass/battle-pass.component';
+import { CosmeticsComponent } from './components/cosmetics/cosmetics.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { gameGuard } from './guards/game.guard';
 
 export const routes: Routes = [
@@ -20,4 +25,9 @@ export const routes: Routes = [
   { path: 'game', component: GameLobbyComponent },
   { path: 'game/play', component: GameBoardComponent, canActivate: [gameGuard], data: { hideNav: true } },
   { path: 'stats', component: StatsComponent },
+  { path: 'quests', component: QuestsComponent },
+  { path: 'ranked', component: RankedComponent },
+  { path: 'battle-pass', component: BattlePassComponent },
+  { path: 'cosmetics', component: CosmeticsComponent },
+  { path: 'profile', component: ProfileComponent },
 ];

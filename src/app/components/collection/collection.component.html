@@ -34,11 +34,38 @@
       <p-tabpanel value="0">
         <!-- Filters -->
         <div class="filters">
+          <!-- Filter Presets -->
+          <div class="filter-presets">
+            <p-button
+              label="Récemment débloquées"
+              icon="pi pi-clock"
+              (onClick)="applyPreset('recent')"
+              [outlined]="true"
+              size="small">
+            </p-button>
+            <p-button
+              label="Légendaires"
+              icon="pi pi-star"
+              (onClick)="applyPreset('legendary')"
+              severity="danger"
+              [outlined]="true"
+              size="small">
+            </p-button>
+            <p-button
+              label="Verrouillées"
+              icon="pi pi-lock"
+              (onClick)="applyPreset('locked')"
+              severity="secondary"
+              [outlined]="true"
+              size="small">
+            </p-button>
+          </div>
+
           <div class="filter-row">
             <div class="filter-group">
               <label>Rareté</label>
               <p-select
-                [(ngModel)]="selectedRarity"
+                [(ngModel)]="filters.rarity"
                 [options]="rarityOptions"
                 optionLabel="label"
                 optionValue="value"
@@ -50,8 +77,20 @@
             <div class="filter-group">
               <label>Domaine</label>
               <p-select
-                [(ngModel)]="selectedDomain"
+                [(ngModel)]="filters.domain"
                 [options]="domainOptions"
+                optionLabel="label"
+                optionValue="value"
+                (onChange)="onFilterChange()"
+                styleClass="filter-dropdown">
+              </p-select>
+            </div>
+
+            <div class="filter-group">
+              <label>Type</label>
+              <p-select
+                [(ngModel)]="filters.type"
+                [options]="typeOptions"
                 optionLabel="label"
                 optionValue="value"
                 (onChange)="onFilterChange()"
@@ -62,8 +101,46 @@
             <div class="filter-group">
               <label>Statut</label>
               <p-select
-                [(ngModel)]="selectedStatus"
+                [(ngModel)]="filters.status"
                 [options]="statusOptions"
+                optionLabel="label"
+                optionValue="value"
+                (onChange)="onFilterChange()"
+                styleClass="filter-dropdown">
+              </p-select>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-group cost-range-group">
+              <label>Coût: {{ costRange[0] }} - {{ costRange[1] }}</label>
+              <p-slider
+                [(ngModel)]="costRange"
+                [range]="true"
+                [min]="0"
+                [max]="10"
+                [step]="1"
+                (onChange)="onCostRangeChange()">
+              </p-slider>
+            </div>
+
+            <div class="filter-group">
+              <label>Trier par</label>
+              <p-select
+                [(ngModel)]="filters.sortBy"
+                [options]="sortByOptions"
+                optionLabel="label"
+                optionValue="value"
+                (onChange)="onFilterChange()"
+                styleClass="filter-dropdown">
+              </p-select>
+            </div>
+
+            <div class="filter-group">
+              <label>Ordre</label>
+              <p-select
+                [(ngModel)]="filters.sortOrder"
+                [options]="sortOrderOptions"
                 optionLabel="label"
                 optionValue="value"
                 (onChange)="onFilterChange()"
@@ -76,7 +153,7 @@
               <input
                 type="text"
                 pInputText
-                [(ngModel)]="searchTerm"
+                [(ngModel)]="filters.searchTerm"
                 (input)="onFilterChange()"
                 placeholder="Nom de la carte..."
                 class="search-input" />

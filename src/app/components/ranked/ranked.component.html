@@ -1,0 +1,186 @@
+@if (stats$ | async; as stats) {
+  <div class="ranked-container">
+    <div class="ranked-header">
+      <h1>Mode Classé</h1>
+      <div class="season-info">
+        <i class="pi pi-calendar"></i>
+        <span>{{ stats.seasonId }} - Fin dans {{ seasonEndTime }}</span>
+      </div>
+    </div>
+
+    <!-- Current Rank Card -->
+    <div class="rank-section">
+      <p-card [styleClass]="'rank-card rank-' + stats.currentRank.tier.toLowerCase()">
+        <ng-template #header>
+          <div class="rank-header">
+            <h2>Rang Actuel</h2>
+          </div>
+        </ng-template>
+
+        <div class="rank-content">
+          <div class="rank-badge" [style.background]="getRankTierColor(stats.currentRank.tier)">
+            <i class="pi pi-star-fill"></i>
+            <div class="rank-text">
+              <div class="rank-tier">{{ stats.currentRank.tier }}</div>
+              <div class="rank-division">Division {{ stats.currentRank.division }}</div>
+            </div>
+          </div>
+
+          <div class="rank-stats">
+            <div class="stat-item">
+              <div class="stat-label">MMR</div>
+              <div class="stat-value">{{ stats.currentRank.mmr }}</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-label">Parties</div>
+              <div class="stat-value">{{ stats.rankedGames }}</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-label">Victoires</div>
+              <div class="stat-value">{{ stats.rankedWins }}</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-label">Taux victoire</div>
+              <div class="stat-value">{{ getWinRate() }}%</div>
+            </div>
+          </div>
+
+          <div class="star-progress">
+            <div class="progress-label">
+              <span>Progression</span>
+              <span class="progress-value">
+                <i class="pi pi-star-fill"></i>
+                {{ stats.currentRank.stars }} / {{ stats.currentRank.starsRequired }}
+              </span>
+            </div>
+            <p-progressBar
+              [value]="getStarProgress(stats)"
+              [showValue]="false">
+            </p-progressBar>
+          </div>
+        </div>
+      </p-card>
+
+      <!-- Season High Rank -->
+      <p-card [styleClass]="'rank-card season-high'">
+        <ng-template #header>
+          <div class="rank-header">
+            <h2>Meilleur Rang de la Saison</h2>
+          </div>
+        </ng-template>
+
+        <div class="rank-content">
+          <div class="rank-badge" [style.background]="getRankTierColor(stats.seasonHighRank.tier)">
+            <i class="pi pi-trophy"></i>
+            <div class="rank-text">
+              <div class="rank-tier">{{ stats.seasonHighRank.tier }}</div>
+              <div class="rank-division">Division {{ stats.seasonHighRank.division }}</div>
+            </div>
+          </div>
+
+          <div class="rank-stats">
+            <div class="stat-item">
+              <div class="stat-label">MMR Max</div>
+              <div class="stat-value">{{ stats.seasonHighRank.mmr }}</div>
+            </div>
+          </div>
+        </div>
+      </p-card>
+    </div>
+
+    <!-- Rank Tiers Info -->
+    <div class="tiers-section">
+      <h2>Paliers de Rang</h2>
+      <div class="tiers-grid">
+        <div class="tier-card bronze">
+          <div class="tier-icon" [style.background]="getRankTierColor(RankTier.Bronze)">
+            <i class="pi pi-circle-fill"></i>
+          </div>
+          <div class="tier-name">{{ RankTier.Bronze }}</div>
+          <div class="tier-mmr">0 - 999 MMR</div>
+        </div>
+
+        <div class="tier-card silver">
+          <div class="tier-icon" [style.background]="getRankTierColor(RankTier.Silver)">
+            <i class="pi pi-circle-fill"></i>
+          </div>
+          <div class="tier-name">{{ RankTier.Silver }}</div>
+          <div class="tier-mmr">1000 - 1299 MMR</div>
+        </div>
+
+        <div class="tier-card gold">
+          <div class="tier-icon" [style.background]="getRankTierColor(RankTier.Gold)">
+            <i class="pi pi-circle-fill"></i>
+          </div>
+          <div class="tier-name">{{ RankTier.Gold }}</div>
+          <div class="tier-mmr">1300 - 1599 MMR</div>
+        </div>
+
+        <div class="tier-card platinum">
+          <div class="tier-icon" [style.background]="getRankTierColor(RankTier.Platinum)">
+            <i class="pi pi-circle-fill"></i>
+          </div>
+          <div class="tier-name">{{ RankTier.Platinum }}</div>
+          <div class="tier-mmr">1600 - 1899 MMR</div>
+        </div>
+
+        <div class="tier-card diamond">
+          <div class="tier-icon" [style.background]="getRankTierColor(RankTier.Diamond)">
+            <i class="pi pi-circle-fill"></i>
+          </div>
+          <div class="tier-name">{{ RankTier.Diamond }}</div>
+          <div class="tier-mmr">1900 - 2199 MMR</div>
+        </div>
+
+        <div class="tier-card master">
+          <div class="tier-icon" [style.background]="getRankTierColor(RankTier.Master)">
+            <i class="pi pi-star-fill"></i>
+          </div>
+          <div class="tier-name">{{ RankTier.Master }}</div>
+          <div class="tier-mmr">2200+ MMR</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Match History -->
+    @if (stats.matchHistory.length > 0) {
+      <div class="history-section">
+        <h2>Historique des Parties</h2>
+        <p-table [value]="stats.matchHistory" [paginator]="true" [rows]="10">
+          <ng-template #header>
+            <tr>
+              <th>Date</th>
+              <th>Résultat</th>
+              <th>Adversaire</th>
+              <th>MMR Adv.</th>
+              <th>MMR Change</th>
+              <th>Rang Avant</th>
+              <th>Rang Après</th>
+            </tr>
+          </ng-template>
+          <ng-template #body let-match>
+            <tr>
+              <td>{{ formatDate(match.timestamp) }}</td>
+              <td>
+                <p-tag
+                  [value]="getMatchResultLabel(match.result)"
+                  [severity]="getMatchResultSeverity(match.result)">
+                </p-tag>
+              </td>
+              <td>{{ match.opponentName }}</td>
+              <td>{{ match.opponentMMR }}</td>
+              <td [class.positive]="match.mmrChange > 0" [class.negative]="match.mmrChange < 0">
+                {{ formatMMRChange(match.mmrChange) }}
+              </td>
+              <td>{{ match.rankBefore }}</td>
+              <td>{{ match.rankAfter }}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    }
+  </div>
+}

@@ -1,0 +1,124 @@
+@if (state$ | async; as state) {
+  <div class="cosmetics-container">
+    <div class="cosmetics-header">
+      <h1>Cosmétiques</h1>
+      <div class="unlock-count">
+        <i class="pi pi-star"></i>
+        <span>{{ state.unlockedCosmetics.length }} débloqués</span>
+      </div>
+    </div>
+
+    <p-tabs value="0">
+      <p-tablist>
+        <p-tab value="0">Effets Holographiques</p-tab>
+        <p-tab value="1">Animations</p-tab>
+        <p-tab value="2">Dos de Cartes</p-tab>
+      </p-tablist>
+
+      <p-tabpanels>
+        <!-- Foil Effects -->
+        <p-tabpanel value="0">
+          <div class="cosmetics-grid">
+            @for (cosmetic of getCosmeticsByType(CosmeticType.Foil); track cosmetic.id) {
+              <p-card [styleClass]="'cosmetic-card ' + (cosmetic.unlocked ? 'unlocked' : 'locked')">
+                <ng-template #header>
+                  <div class="cosmetic-preview foil" [class]="cosmetic.effectClass || ''">
+                    <i [class]="'pi ' + getTypeIcon(cosmetic.type)"></i>
+                  </div>
+                </ng-template>
+
+                <div class="cosmetic-info">
+                  <h3>{{ cosmetic.name }}</h3>
+                  <p class="description">{{ cosmetic.description }}</p>
+
+                  <div class="cosmetic-meta">
+                    <p-tag [value]="cosmetic.rarity" [severity]="getRaritySeverity(cosmetic.rarity)"></p-tag>
+                    <p-tag [value]="getSourceLabel(cosmetic.source)" severity="secondary"></p-tag>
+                  </div>
+
+                  @if (cosmetic.unlocked) {
+                    <p-tag value="Débloqué" severity="success" icon="pi pi-check" [rounded]="true"></p-tag>
+                  } @else {
+                    <p-tag value="Verrouillé" severity="secondary" icon="pi pi-lock" [rounded]="true"></p-tag>
+                  }
+                </div>
+              </p-card>
+            }
+          </div>
+        </p-tabpanel>
+
+        <!-- Animations -->
+        <p-tabpanel value="1">
+          <div class="cosmetics-grid">
+            @for (cosmetic of getCosmeticsByType(CosmeticType.Animation); track cosmetic.id) {
+              <p-card [styleClass]="'cosmetic-card ' + (cosmetic.unlocked ? 'unlocked' : 'locked')">
+                <ng-template #header>
+                  <div class="cosmetic-preview animation" [class]="cosmetic.effectClass || ''">
+                    <i [class]="'pi ' + getTypeIcon(cosmetic.type)"></i>
+                  </div>
+                </ng-template>
+
+                <div class="cosmetic-info">
+                  <h3>{{ cosmetic.name }}</h3>
+                  <p class="description">{{ cosmetic.description }}</p>
+
+                  <div class="cosmetic-meta">
+                    <p-tag [value]="cosmetic.rarity" [severity]="getRaritySeverity(cosmetic.rarity)"></p-tag>
+                    <p-tag [value]="getSourceLabel(cosmetic.source)" severity="secondary"></p-tag>
+                  </div>
+
+                  @if (cosmetic.unlocked) {
+                    <p-tag value="Débloqué" severity="success" icon="pi pi-check" [rounded]="true"></p-tag>
+                  } @else {
+                    <p-tag value="Verrouillé" severity="secondary" icon="pi pi-lock" [rounded]="true"></p-tag>
+                  }
+                </div>
+              </p-card>
+            }
+          </div>
+        </p-tabpanel>
+
+        <!-- Card Backs -->
+        <p-tabpanel value="2">
+          <div class="cosmetics-grid">
+            @for (cosmetic of getCosmeticsByType(CosmeticType.CardBack); track cosmetic.id) {
+              <p-card [styleClass]="'cosmetic-card ' + (cosmetic.unlocked ? 'unlocked' : 'locked')">
+                <ng-template #header>
+                  <div class="cosmetic-preview card-back">
+                    <i [class]="'pi ' + getTypeIcon(cosmetic.type)"></i>
+                  </div>
+                </ng-template>
+
+                <div class="cosmetic-info">
+                  <h3>{{ cosmetic.name }}</h3>
+                  <p class="description">{{ cosmetic.description }}</p>
+
+                  <div class="cosmetic-meta">
+                    <p-tag [value]="cosmetic.rarity" [severity]="getRaritySeverity(cosmetic.rarity)"></p-tag>
+                    <p-tag [value]="getSourceLabel(cosmetic.source)" severity="secondary"></p-tag>
+                  </div>
+
+                  @if (cosmetic.unlocked) {
+                    <div class="actions">
+                      @if (state.loadout.activeCardBack === cosmetic.id) {
+                        <p-tag value="Actif" severity="success" icon="pi pi-check" [rounded]="true"></p-tag>
+                      } @else {
+                        <p-button
+                          label="Activer"
+                          size="small"
+                          (onClick)="cosmeticsService.setActiveCardBack(cosmetic.id)">
+                        </p-button>
+                      }
+                    </div>
+                  } @else {
+                    <p-tag value="Verrouillé" severity="secondary" icon="pi pi-lock" [rounded]="true"></p-tag>
+                  }
+                </div>
+              </p-card>
+            }
+          </div>
+        </p-tabpanel>
+      </p-tabpanels>
+    </p-tabs>
+  </div>
+}

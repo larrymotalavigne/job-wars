@@ -26,6 +26,11 @@ import { StatsService } from './stats.service';
 import { CollectionService } from './collection.service';
 import { UnlockNotificationService } from './unlock-notification.service';
 import { MultiplayerService, GameAction, MessageType } from './multiplayer.service';
+import { CurrencyService } from './currency.service';
+import { QuestService } from './quest.service';
+import { QuestType } from '../models/quest.model';
+import { RankedService } from './ranked.service';
+import { BattlePassService } from './battle-pass.service';
 
 @Injectable({ providedIn: 'root' })
 export class GameService {
@@ -46,6 +51,10 @@ export class GameService {
     private collectionService: CollectionService,
     private unlockNotificationService: UnlockNotificationService,
     private multiplayerService: MultiplayerService,
+    private currencyService: CurrencyService,
+    private questService: QuestService,
+    private rankedService: RankedService,
+    private battlePassService: BattlePassService,
   ) {
     // Subscribe to multiplayer messages
     this.multiplayerSubscription = this.multiplayerService.messages$.subscribe(message => {
@@ -116,6 +125,7 @@ export class GameService {
       winner: null,
       log: [],
       isAiGame: false,
+      isRankedGame: false,
     };
 
     this.stateSubject.next(gameState);
@@ -185,6 +195,7 @@ export class GameService {
       winner: null,
       log: [],
       isAiGame: false,
+      isRankedGame: false,
     };
 
     this.stateSubject.next(gameState);
@@ -264,6 +275,7 @@ export class GameService {
       winner: null,
       log: [],
       isAiGame: false,
+      isRankedGame: false,
     };
 
     this.stateSubject.next(gameState);
@@ -386,6 +398,7 @@ export class GameService {
       winner: null,
       log: [],
       isAiGame: true,
+      isRankedGame: false,
     };
 
     this.stateSubject.next(gameState);
@@ -452,6 +465,7 @@ export class GameService {
       winner: null,
       log: [],
       isAiGame: true,
+      isRankedGame: false,
     };
 
     this.stateSubject.next(gameState);
@@ -655,6 +669,11 @@ export class GameService {
       this.soundService.play(SoundEffect.CardPlay);
     }
 
+    // Track quest progress for player1
+    if (player.id === state.player1.id) {
+      this.questService.updateQuestProgress(QuestType.PlayCards, 1);
+    }
+
     // Trigger effects
     const trigger = isEventCard(cardInstance.card) ? EffectTrigger.OnCast : EffectTrigger.OnHire;
     const pending = this.effectService.executeAutoEffects(
@@ -841,6 +860,10 @@ export class GameService {
         defender.reputation -= damage;
         this.addLog(`${attacker.card.name} inflige ${damage} dégâts à ${defender.name}.`);
         this.soundService.play(SoundEffect.Damage);
+        // Track quest progress for player1
+        if (attacker.ownerId === state.player1.id) {
+          this.questService.updateQuestProgress(QuestType.DealDamage, damage);
+        }
       } else {
         // Blocked — combat between cards
         const hasFirstStrike = this.hasKeyword(attacker, 'Première Frappe');
@@ -1235,6 +1258,17 @@ export class GameService {
       this.addLog(`${state.player2.name} remporte la partie !`);
       this.statsService.recordGame(state);
       this.checkCollectionUnlocks();
+      // Award currency (loss)
+      this.currencyService.addCurrency('Pièces', 25, 'Partie jouée');
+      // Update quest progress (loss)
+      this.questService.updateQuestProgress(QuestType.GamesPlayed, 1);
+      // Track ranked match (loss)
+      if (state.isRankedGame && !state.isAiGame) {
+        const opponentMMR = this.rankedService.getStats().currentRank.mmr; // Simplified - use player's own MMR as opponent for now
+        this.rankedService.recordRankedMatch('loss', opponentMMR, state.player2.name);
+      }
+      // Award Battle Pass XP (loss)
+      this.battlePassService.addXP(25, 'game_loss', 'Partie jouée');
       // Play defeat sound for player1, victory for player2
       this.soundService.play(SoundEffect.Defeat);
       gameEnded = true;
@@ -1244,6 +1278,25 @@ export class GameService {
       this.addLog(`${state.player1.name} remporte la partie !`);
       this.statsService.recordGame(state);
       this.checkCollectionUnlocks();
+      // Award currency (win)
+      const baseCoins = 75;
+      const rankedBonus = state.isRankedGame ? 75 : 0; // Extra coins for ranked wins
+      this.currencyService.addCurrency('Pièces', baseCoins + rankedBonus, state.isRankedGame ? 'Victoire classée' : 'Victoire');
+      // Update quest progress (win)
+      this.questService.updateQuestProgress(QuestType.GamesPlayed, 1);
+      this.questService.updateQuestProgress(QuestType.GamesWon, 1);
+      // Track win with domain
+      const deck = this.deckService.getDeckById(state.player1.deckId);
+      if (deck?.domain) {
+        this.questService.updateQuestProgress(QuestType.WinWithDomain, 1, { domain: deck.domain });
+      }
+      // Track ranked match (win)
+      if (state.isRankedGame && !state.isAiGame) {
+        const opponentMMR = this.rankedService.getStats().currentRank.mmr; // Simplified - use player's own MMR as opponent for now
+        this.rankedService.recordRankedMatch('win', opponentMMR, state.player2.name);
+      }
+      // Award Battle Pass XP (win)
+      this.battlePassService.addXP(50, 'game_win', 'Victoire');
       // Play victory sound for player1
       this.soundService.play(SoundEffect.Victory);
       gameEnded = true;

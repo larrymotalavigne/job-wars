@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { CollectionService, CardCollectionEntry, CollectionStats } from '../../services/collection.service';
 import { StatsService } from '../../services/stats.service';
 import { CardService } from '../../services/card.service';
-import { Card, Rarity, Domain } from '../../models/card.model';
+import { Card, Rarity, Domain, CardType } from '../../models/card.model';
 import { CardComponent } from '../card/card.component';
 import { Tabs, TabList, Tab, TabPanels, TabPanel } from 'primeng/tabs';
 import { Button } from 'primeng/button';
@@ -12,10 +12,24 @@ import { ProgressBar } from 'primeng/progressbar';
 import { Select } from 'primeng/select';
 import { InputText } from 'primeng/inputtext';
 import { Tag } from 'primeng/tag';
+import { Slider } from 'primeng/slider';
 
 interface FilteredCard {
   card: Card;
   entry: CardCollectionEntry;
+  unlockedDate?: string; // For sorting by unlock date
+}
+
+interface CollectionFilters {
+  rarity: Rarity | 'all';
+  domain: Domain | 'all';
+  status: 'all' | 'unlocked' | 'locked';
+  type: CardType | 'all';
+  costMin: number;
+  costMax: number;
+  searchTerm: string;
+  sortBy: 'name' | 'cost' | 'rarity' | 'unlocked_date';
+  sortOrder: 'asc' | 'desc';
 }
 
 @Component({
@@ -35,6 +49,7 @@ interface FilteredCard {
     Select,
     InputText,
     Tag,
+    Slider,
   ],
   templateUrl: './collection.component.html',
   styleUrl: './collection.component.scss',
@@ -46,10 +61,19 @@ export class CollectionComponent implements OnInit {
   recentUnlocks: CardCollectionEntry[] = [];
 
   // Filters
-  selectedRarity: Rarity | 'all' = 'all';
-  selectedDomain: Domain | 'all' = 'all';
-  selectedStatus: 'all' | 'unlocked' | 'locked' = 'all';
-  searchTerm = '';
+  private readonly FILTERS_STORAGE_KEY = 'jobwars-collection-filters';
+  filters: CollectionFilters = {
+    rarity: 'all',
+    domain: 'all',
+    status: 'all',
+    type: 'all',
+    costMin: 0,
+    costMax: 10,
+    searchTerm: '',
+    sortBy: 'name',
+    sortOrder: 'asc'
+  };
+  costRange: number[] = [0, 10];
 
   rarityOptions = [
     { label: 'Toutes les raretés', value: 'all' },
@@ -77,6 +101,25 @@ export class CollectionComponent implements OnInit {
     { label: 'Verrouillées', value: 'locked' },
   ];
 
+  typeOptions = [
+    { label: 'Tous les types', value: 'all' },
+    { label: 'Emplois', value: CardType.Job },
+    { label: 'Outils', value: CardType.Tool },
+    { label: 'Événements', value: CardType.Event },
+  ];
+
+  sortByOptions = [
+    { label: 'Nom', value: 'name' },
+    { label: 'Coût', value: 'cost' },
+    { label: 'Rareté', value: 'rarity' },
+    { label: 'Date de déverrouillage', value: 'unlocked_date' },
+  ];
+
+  sortOrderOptions = [
+    { label: 'Croissant', value: 'asc' },
+    { label: 'Décroissant', value: 'desc' },
+  ];
+
   constructor(
     private collectionService: CollectionService,
     private cardService: CardService,
@@ -84,6 +127,7 @@ export class CollectionComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.loadSavedFilters();
     this.loadCollection();
   }
 
@@ -132,38 +176,125 @@ export class CollectionComponent implements OnInit {
   }
 
   applyFilters(): void {
+    // Filter
     this.filteredCards = this.allCards.filter(({ card, entry }) => {
       // Rarity filter
-      if (this.selectedRarity !== 'all' && card.rarity !== this.selectedRarity) {
+      if (this.filters.rarity !== 'all' && card.rarity !== this.filters.rarity) {
         return false;
       }
 
       // Domain filter
-      if (this.selectedDomain !== 'all' && card.domain !== this.selectedDomain) {
+      if (this.filters.domain !== 'all' && card.domain !== this.filters.domain) {
         return false;
       }
 
       // Status filter
-      if (this.selectedStatus === 'unlocked' && !entry.unlocked) {
+      if (this.filters.status === 'unlocked' && !entry.unlocked) {
         return false;
       }
-      if (this.selectedStatus === 'locked' && entry.unlocked) {
+      if (this.filters.status === 'locked' && entry.unlocked) {
+        return false;
+      }
+
+      // Type filter
+      if (this.filters.type !== 'all' && card.type !== this.filters.type) {
+        return false;
+      }
+
+      // Cost range filter
+      if (card.cost < this.filters.costMin || card.cost > this.filters.costMax) {
         return false;
       }
 
       // Search filter
-      if (this.searchTerm) {
-        const term = this.searchTerm.toLowerCase();
+      if (this.filters.searchTerm) {
+        const term = this.filters.searchTerm.toLowerCase();
         const nameMatch = card.name.toLowerCase().includes(term);
         return nameMatch;
       }
 
       return true;
     });
+
+    // Sort
+    this.filteredCards.sort((a, b) => {
+      let comparison = 0;
+
+      switch (this.filters.sortBy) {
+        case 'name':
+          comparison = a.card.name.localeCompare(b.card.name);
+          break;
+        case 'cost':
+          comparison = a.card.cost - b.card.cost;
+          break;
+        case 'rarity':
+          const rarityOrder = { [Rarity.Common]: 0, [Rarity.Uncommon]: 1, [Rarity.Rare]: 2, [Rarity.Legendary]: 3 };
+          comparison = rarityOrder[a.card.rarity] - rarityOrder[b.card.rarity];
+          break;
+        case 'unlocked_date':
+          // Sort by unlock date (most recent first for desc)
+          const aDate = a.unlockedDate ? new Date(a.unlockedDate).getTime() : 0;
+          const bDate = b.unlockedDate ? new Date(b.unlockedDate).getTime() : 0;
+          comparison = aDate - bDate;
+          break;
+      }
+
+      return this.filters.sortOrder === 'asc' ? comparison : -comparison;
+    });
+
+    // Save filters
+    this.saveFilters();
   }
 
   onFilterChange(): void {
     this.applyFilters();
+  }
+
+  onCostRangeChange(): void {
+    this.filters.costMin = this.costRange[0];
+    this.filters.costMax = this.costRange[1];
+    this.applyFilters();
+  }
+
+  applyPreset(preset: 'recent' | 'legendary' | 'locked'): void {
+    switch (preset) {
+      case 'recent':
+        this.filters.status = 'unlocked';
+        this.filters.sortBy = 'unlocked_date';
+        this.filters.sortOrder = 'desc';
+        break;
+      case 'legendary':
+        this.filters.rarity = Rarity.Legendary;
+        this.filters.status = 'all';
+        break;
+      case 'locked':
+        this.filters.status = 'locked';
+        this.filters.sortBy = 'name';
+        this.filters.sortOrder = 'asc';
+        break;
+    }
+    this.applyFilters();
+  }
+
+  private loadSavedFilters(): void {
+    try {
+      const saved = localStorage.getItem(this.FILTERS_STORAGE_KEY);
+      if (saved) {
+        const savedFilters = JSON.parse(saved) as CollectionFilters;
+        this.filters = { ...this.filters, ...savedFilters };
+        this.costRange = [this.filters.costMin, this.filters.costMax];
+      }
+    } catch (error) {
+      console.error('Error loading saved filters:', error);
+    }
+  }
+
+  private saveFilters(): void {
+    try {
+      localStorage.setItem(this.FILTERS_STORAGE_KEY, JSON.stringify(this.filters));
+    } catch (error) {
+      console.error('Error saving filters:', error);
+    }
   }
 
   getProgressPercentage(entry: CardCollectionEntry): number {
@@ -268,10 +399,18 @@ export class CollectionComponent implements OnInit {
   }
 
   resetFilters(): void {
-    this.selectedRarity = 'all';
-    this.selectedDomain = 'all';
-    this.selectedStatus = 'all';
-    this.searchTerm = '';
+    this.filters = {
+      rarity: 'all',
+      domain: 'all',
+      status: 'all',
+      type: 'all',
+      costMin: 0,
+      costMax: 10,
+      searchTerm: '',
+      sortBy: 'name',
+      sortOrder: 'asc'
+    };
+    this.costRange = [0, 10];
     this.applyFilters();
   }
 

@@ -1,0 +1,100 @@
+@if (profile$ | async; as profile) {
+  <div class="profile-container">
+    <div class="profile-header">
+      <h1>Mon Profil</h1>
+    </div>
+
+    <!-- Profile Info Card -->
+    <p-card styleClass="profile-info-card">
+      <ng-template #header>
+        <h2>Informations du Profil</h2>
+      </ng-template>
+
+      <div class="profile-display">
+        <div class="avatar-display">
+          <i class="pi pi-user avatar-icon"></i>
+        </div>
+        <div class="profile-details">
+          <h3>{{ profile.displayName }}</h3>
+          @if (profile.titleId) {
+            <p class="title-display">{{ profile.titleId }}</p>
+          }
+          <div class="level-info">
+            <span class="level-badge">Niveau {{ profile.level }}</span>
+            <span class="xp-text">{{ profile.xp }} XP</span>
+          </div>
+          <div class="xp-progress">
+            <p-progressBar [value]="getXPProgress().percentage" [showValue]="false"></p-progressBar>
+            <span class="progress-text">
+              {{ getXPProgress().current }} / {{ getXPProgress().required }} XP
+            </span>
+          </div>
+        </div>
+      </div>
+    </p-card>
+
+    <!-- Customization Card -->
+    <p-card styleClass="customization-card">
+      <ng-template #header>
+        <h2>Personnalisation</h2>
+      </ng-template>
+
+      <div class="customization-section">
+        <div class="form-group">
+          <label>Nom d'affichage</label>
+          <div class="input-with-button">
+            <input pInputText [(ngModel)]="selectedName" placeholder="Votre nom" />
+            <p-button label="Sauvegarder" (onClick)="saveName()" size="small"></p-button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Avatar</label>
+          <div class="input-with-button">
+            <p-select
+              [(ngModel)]="selectedAvatar"
+              [options]="getAvatarOptions()"
+              optionLabel="label"
+              optionValue="value"
+              placeholder="Sélectionner un avatar">
+            </p-select>
+            <p-button label="Appliquer" (onClick)="saveAvatar()" size="small"></p-button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Titre</label>
+          <div class="input-with-button">
+            <p-select
+              [(ngModel)]="selectedTitle"
+              [options]="getTitleOptions()"
+              optionLabel="label"
+              optionValue="value"
+              placeholder="Sélectionner un titre">
+            </p-select>
+            <p-button label="Appliquer" (onClick)="saveTitle()" size="small"></p-button>
+          </div>
+        </div>
+      </div>
+    </p-card>
+
+    <!-- Unlockables Info -->
+    <p-card styleClass="unlockables-card">
+      <ng-template #header>
+        <h2>Déblocables</h2>
+      </ng-template>
+
+      <div class="unlockables-grid">
+        <div class="unlockable-section">
+          <h3>Avatars</h3>
+          <p>{{ avatars.filter(a => a.unlocked).length }} / {{ avatars.length }} débloqués</p>
+        </div>
+
+        <div class="unlockable-section">
+          <h3>Titres</h3>
+          <p>{{ titles.filter(t => t.unlocked).length }} / {{ titles.length }} débloqués</p>
+        </div>
+      </div>
+    </p-card>
+  </div>
+}

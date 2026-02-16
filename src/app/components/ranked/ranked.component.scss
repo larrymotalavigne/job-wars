@@ -1,0 +1,240 @@
+.ranked-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.ranked-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .season-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--p-surface-100);
+    border-radius: var(--p-border-radius);
+    font-weight: 500;
+
+    i {
+      color: var(--p-primary-color);
+    }
+  }
+}
+
+// Rank Section
+.rank-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.rank-card {
+  .rank-header {
+    padding: 1rem;
+
+    h2 {
+      font-size: 1.3rem;
+      margin: 0;
+    }
+  }
+
+  .rank-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .rank-badge {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: var(--p-border-radius);
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    i {
+      font-size: 4rem;
+    }
+
+    .rank-text {
+      .rank-tier {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .rank-division {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .rank-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+
+    .stat-item {
+      text-align: center;
+      padding: 1rem;
+      background: var(--p-surface-50);
+      border-radius: var(--p-border-radius);
+
+      .stat-label {
+        font-size: 0.85rem;
+        color: var(--p-text-secondary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--p-primary-color);
+      }
+    }
+  }
+
+  .star-progress {
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+
+      .progress-value {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-weight: 600;
+        color: var(--p-primary-color);
+
+        i {
+          color: #ffd700;
+        }
+      }
+    }
+  }
+
+  &.season-high {
+    .rank-badge i {
+      color: #ffd700;
+    }
+  }
+}
+
+// Tiers Section
+.tiers-section {
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.tier-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: var(--p-surface-0);
+  border: 2px solid var(--p-surface-200);
+  border-radius: var(--p-border-radius);
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  .tier-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  .tier-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .tier-mmr {
+    font-size: 0.85rem;
+    color: var(--p-text-secondary-color);
+  }
+}
+
+// History Section
+.history-section {
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .positive {
+    color: #22c55e;
+    font-weight: 600;
+  }
+
+  .negative {
+    color: #ef4444;
+    font-weight: 600;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .ranked-container {
+    padding: 1rem;
+  }
+
+  .ranked-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .rank-section {
+    grid-template-columns: 1fr;
+  }
+
+  .rank-badge {
+    flex-direction: column;
+    text-align: center;
+
+    i {
+      font-size: 3rem !important;
+    }
+  }
+
+  .tiers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

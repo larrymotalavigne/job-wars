@@ -1,0 +1,147 @@
+@if (questState$ | async; as state) {
+  <div class="quests-container">
+    <div class="quests-header">
+      <h1>Quêtes Quotidiennes</h1>
+      <div class="reset-timer">
+        <i class="pi pi-clock"></i>
+        <span>Réinitialisation dans {{ timeUntilReset }}</span>
+      </div>
+    </div>
+
+    <!-- Daily Quests -->
+    <div class="quests-section">
+      <h2>Quêtes du jour</h2>
+      <div class="quests-grid">
+        @for (quest of state.dailyQuests; track quest.id) {
+          <p-card [styleClass]="'quest-card ' + (quest.completed ? 'completed' : '')">
+            <ng-template #header>
+              <div class="quest-header">
+                <h3>{{ quest.title }}</h3>
+                <p-tag
+                  [value]="getDifficultyLabel(quest.reward)"
+                  [severity]="getDifficultyColor(quest.reward)">
+                </p-tag>
+              </div>
+            </ng-template>
+
+            <div class="quest-content">
+              <p class="quest-description">{{ quest.description }}</p>
+
+              <div class="quest-progress">
+                <div class="progress-label">
+                  <span>Progression</span>
+                  <span class="progress-value">{{ quest.progress }} / {{ quest.requirement }}</span>
+                </div>
+                <p-progressBar
+                  [value]="getProgressPercent(quest)"
+                  [showValue]="false">
+                </p-progressBar>
+              </div>
+
+              <div class="quest-reward">
+                <div class="reward-label">Récompenses:</div>
+                <div class="reward-items">
+                  @if (quest.reward.coins > 0) {
+                    <div class="reward-item coins">
+                      <i class="pi pi-circle-fill"></i>
+                      <span>{{ quest.reward.coins }}</span>
+                    </div>
+                  }
+                  @if (quest.reward.gems > 0) {
+                    <div class="reward-item gems">
+                      <i class="pi pi-star-fill"></i>
+                      <span>{{ quest.reward.gems }}</span>
+                    </div>
+                  }
+                </div>
+              </div>
+            </div>
+
+            <ng-template #footer>
+              <div class="quest-actions">
+                @if (quest.claimed) {
+                  <p-button
+                    label="Réclamé"
+                    icon="pi pi-check"
+                    [disabled]="true"
+                    severity="success">
+                  </p-button>
+                } @else if (quest.completed) {
+                  <p-button
+                    label="Réclamer"
+                    icon="pi pi-gift"
+                    (onClick)="claimQuest(quest.id)"
+                    severity="success">
+                  </p-button>
+                } @else {
+                  <p-button
+                    label="En cours"
+                    [disabled]="true"
+                    severity="secondary">
+                  </p-button>
+                }
+              </div>
+            </ng-template>
+          </p-card>
+        }
+      </div>
+    </div>
+
+    <!-- Daily Login Rewards -->
+    <div class="quests-section">
+      <h2>Récompenses de connexion</h2>
+      <div class="login-streak">
+        <div class="streak-info">
+          <i class="pi pi-calendar"></i>
+          <span>Série de connexions: <strong>{{ state.loginStreak }}</strong> jour(s)</span>
+        </div>
+      </div>
+
+      <div class="daily-rewards-grid">
+        @for (reward of state.dailyRewards; track reward.day) {
+          <div
+            class="daily-reward-card"
+            [class.current]="reward.day === state.loginStreak"
+            [class.claimed]="reward.claimed"
+            [class.locked]="reward.day > state.loginStreak">
+
+            <div class="reward-day">Jour {{ reward.day }}</div>
+
+            <div class="reward-icon">
+              @if (reward.claimed) {
+                <i class="pi pi-check-circle"></i>
+              } @else if (reward.day <= state.loginStreak) {
+                <i class="pi pi-gift"></i>
+              } @else {
+                <i class="pi pi-lock"></i>
+              }
+            </div>
+
+            <div class="reward-amounts">
+              @if (reward.reward.coins > 0) {
+                <div class="reward-item coins">
+                  <i class="pi pi-circle-fill"></i>
+                  <span>{{ reward.reward.coins }}</span>
+                </div>
+              }
+              @if (reward.reward.gems > 0) {
+                <div class="reward-item gems">
+                  <i class="pi pi-star-fill"></i>
+                  <span>{{ reward.reward.gems }}</span>
+                </div>
+              }
+            </div>
+
+            @if (canClaimDailyReward(reward, state.loginStreak)) {
+              <p-button
+                label="Réclamer"
+                size="small"
+                (onClick)="claimDailyReward(reward.day)">
+              </p-button>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+}

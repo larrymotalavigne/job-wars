@@ -1,0 +1,149 @@
+.profile-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-header {
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+
+.profile-display {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  .avatar-display {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--p-primary-500), var(--p-primary-700));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .avatar-icon {
+      font-size: 4rem;
+      color: white;
+    }
+  }
+
+  .profile-details {
+    flex: 1;
+
+    h3 {
+      font-size: 1.8rem;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .title-display {
+      color: var(--p-primary-color);
+      font-style: italic;
+      margin: 0 0 1rem 0;
+    }
+
+    .level-info {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .level-badge {
+        padding: 0.25rem 0.75rem;
+        background: var(--p-primary-color);
+        color: white;
+        border-radius: var(--p-border-radius);
+        font-weight: 600;
+      }
+
+      .xp-text {
+        color: var(--p-text-secondary-color);
+      }
+    }
+
+    .xp-progress {
+      .progress-text {
+        font-size: 0.85rem;
+        color: var(--p-text-secondary-color);
+        margin-top: 0.25rem;
+        display: block;
+      }
+    }
+  }
+}
+
+.customization-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    label {
+      font-weight: 600;
+      color: var(--p-text-secondary-color);
+    }
+
+    .input-with-button {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      input,
+      p-select {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.unlockables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+
+  .unlockable-section {
+    padding: 1rem;
+    background: var(--p-surface-50);
+    border-radius: var(--p-border-radius);
+    text-align: center;
+
+    h3 {
+      font-size: 1.1rem;
+      margin: 0 0 0.5rem 0;
+    }
+
+    p {
+      margin: 0;
+      color: var(--p-text-secondary-color);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-display {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .input-with-button {
+    flex-direction: column;
+    align-items: stretch !important;
+
+    p-button {
+      width: 100%;
+    }
+  }
+}

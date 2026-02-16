@@ -1,0 +1,121 @@
+@if (progress$ | async; as progress) {
+  <div class="battlepass-container">
+    <div class="battlepass-header">
+      <h1>Battle Pass</h1>
+      <div class="season-info">
+        <i class="pi pi-trophy"></i>
+        <span>{{ progress.seasonId }}</span>
+      </div>
+    </div>
+
+    <!-- Level Progress -->
+    <div class="level-progress">
+      <p-card>
+        <div class="progress-content">
+          <div class="level-display">
+            <div class="level-badge">
+              <span class="level-number">{{ progress.currentLevel }}</span>
+              <span class="level-label">Niveau</span>
+            </div>
+            <div class="xp-info">
+              <span class="xp-current">{{ progress.currentXP }} / {{ getXPForNextLevel(progress) }} XP</span>
+              @if (!progress.isPremium) {
+                <p-button
+                  label="Débloquer Premium ({{ premiumCost }} gemmes)"
+                  icon="pi pi-star"
+                  (onClick)="purchasePremium()"
+                  severity="warning"
+                  size="small">
+                </p-button>
+              } @else {
+                <p-tag value="Premium Actif" severity="success" icon="pi pi-check"></p-tag>
+              }
+            </div>
+          </div>
+          <p-progressBar
+            [value]="getLevelProgress(progress)"
+            [showValue]="false">
+          </p-progressBar>
+        </div>
+      </p-card>
+    </div>
+
+    <!-- Rewards Track -->
+    <div class="rewards-track">
+      <h2>Récompenses</h2>
+      <p-scrollPanel [style]="{ width: '100%', height: '500px' }">
+        <div class="track-container">
+          @for (level of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]; track level) {
+            <div class="level-column" [class.current]="level === progress.currentLevel" [class.completed]="level < progress.currentLevel">
+              <div class="level-header">Niveau {{ level }}</div>
+
+              <!-- Free Reward -->
+              @for (reward of progress.rewards; track reward.level + reward.track) {
+                @if (reward.level === level && reward.track === 'free') {
+                  <div class="reward-card free" [class.claimed]="reward.claimed" [class.locked]="isRewardLocked(reward, progress)">
+                    <i [class]="'pi ' + getRewardIcon(reward)" [style.color]="getRewardColor(reward)"></i>
+                    <span class="reward-label">{{ getRewardLabel(reward) }}</span>
+                    @if (canClaimReward(reward, progress)) {
+                      <p-button
+                        label="Réclamer"
+                        size="small"
+                        (onClick)="claimReward(level, 'free')">
+                      </p-button>
+                    } @else if (reward.claimed) {
+                      <p-tag value="Réclamé" severity="success" [rounded]="true"></p-tag>
+                    } @else {
+                      <p-tag value="Verrouillé" severity="secondary" [rounded]="true"></p-tag>
+                    }
+                  </div>
+                }
+              }
+
+              <!-- Premium Reward -->
+              @for (reward of progress.rewards; track reward.level + reward.track) {
+                @if (reward.level === level && reward.track === 'premium') {
+                  <div class="reward-card premium" [class.claimed]="reward.claimed" [class.locked]="isRewardLocked(reward, progress) || !progress.isPremium">
+                    <div class="premium-badge">Premium</div>
+                    <i [class]="'pi ' + getRewardIcon(reward)" [style.color]="getRewardColor(reward)"></i>
+                    <span class="reward-label">{{ getRewardLabel(reward) }}</span>
+                    @if (canClaimReward(reward, progress)) {
+                      <p-button
+                        label="Réclamer"
+                        size="small"
+                        severity="warning"
+                        (onClick)="claimReward(level, 'premium')">
+                      </p-button>
+                    } @else if (reward.claimed) {
+                      <p-tag value="Réclamé" severity="success" [rounded]="true"></p-tag>
+                    } @else if (!progress.isPremium) {
+                      <p-tag value="Premium requis" severity="warning" [rounded]="true"></p-tag>
+                    } @else {
+                      <p-tag value="Verrouillé" severity="secondary" [rounded]="true"></p-tag>
+                    }
+                  </div>
+                }
+              }
+            </div>
+          }
+        </div>
+      </p-scrollPanel>
+    </div>
+
+    <!-- XP History -->
+    @if (xpHistory$ | async; as history) {
+      @if (history.length > 0) {
+        <div class="xp-history">
+          <h2>Historique XP</h2>
+          <div class="history-list">
+            @for (entry of history.slice(0, 10); track entry.timestamp) {
+              <div class="history-item">
+                <span class="history-time">{{ formatDate(entry.timestamp) }}</span>
+                <span class="history-desc">{{ entry.description }}</span>
+                <span class="history-xp">+{{ entry.amount }} XP</span>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    }
+  </div>
+}

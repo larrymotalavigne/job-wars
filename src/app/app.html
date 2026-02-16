@@ -8,6 +8,20 @@
             <span>Job Wars</span>
           </a>
         </ng-template>
+        <ng-template #end>
+          @if (balance$ | async; as balance) {
+            <div class="currency-display">
+              <div class="currency-item coins">
+                <i class="pi pi-circle-fill"></i>
+                <span>{{ balance.coins }}</span>
+              </div>
+              <div class="currency-item gems">
+                <i class="pi pi-star-fill"></i>
+                <span>{{ balance.gems }}</span>
+              </div>
+            </div>
+          }
+        </ng-template>
       </p-menubar>
     </header>
   }
