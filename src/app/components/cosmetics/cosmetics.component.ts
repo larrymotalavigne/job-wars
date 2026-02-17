@@ -15,7 +15,10 @@ import { CardCosmetic, CosmeticType, CosmeticRarity } from '../../models/cosmeti
   styleUrl: './cosmetics.component.scss'
 })
 export class CosmeticsComponent implements OnInit {
-  state$ = this.cosmeticsService.state$;
+  get state$() {
+    return this.cosmeticsService.state$;
+  }
+
   allCosmetics: CardCosmetic[] = [];
 
   CosmeticType = CosmeticType;

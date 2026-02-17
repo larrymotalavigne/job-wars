@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Card } from 'primeng/card';
-import { Button } from 'primeng/button';
 import { ProgressBar } from 'primeng/progressbar';
 import { Tag } from 'primeng/tag';
 import { RankedService } from '../../services/ranked.service';
@@ -10,7 +9,7 @@ import { RankedStats, RankTier, formatRank } from '../../models/ranked.model';
 @Component({
   selector: 'app-ranked',
   standalone: true,
-  imports: [CommonModule, Card, Button, ProgressBar, Tag],
+  imports: [CommonModule, Card, ProgressBar, Tag],
   templateUrl: './ranked.component.html',
   styleUrl: './ranked.component.scss'
 })

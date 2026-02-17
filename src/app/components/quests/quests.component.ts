@@ -50,9 +50,9 @@ export class QuestsComponent implements OnInit {
     return Math.floor((quest.progress / quest.requirement) * 100);
   }
 
-  getDifficultyColor(reward: { coins: number; gems: number }): 'success' | 'warning' | 'danger' {
+  getDifficultyColor(reward: { coins: number; gems: number }): 'success' | 'warn' | 'danger' {
     if (reward.coins >= 150 || reward.gems > 0) return 'danger';
-    if (reward.coins >= 100) return 'warning';
+    if (reward.coins >= 100) return 'warn';
     return 'success';
   }
 

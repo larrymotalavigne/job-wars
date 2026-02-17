@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Subscription } from 'rxjs';
-import { Card, CardType, isJobCard, isEventCard } from '../models/card.model';
+import { Card, CardType, Domain, isJobCard, isEventCard } from '../models/card.model';
 import {
   GameState,
   PlayerState,
@@ -1290,7 +1290,7 @@ export class GameService {
       if (deck) {
         const dominantDomain = this.deckService.getDominantDomain(deck);
         if (dominantDomain) {
-          this.questService.updateQuestProgress(QuestType.WinWithDomain, 1, { domain: dominantDomain });
+          this.questService.updateQuestProgress(QuestType.WinWithDomain, 1, { domain: dominantDomain as Domain });
         }
       }
       // Track ranked match (win)

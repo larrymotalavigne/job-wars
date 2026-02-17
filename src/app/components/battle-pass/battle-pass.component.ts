@@ -17,9 +17,17 @@ import { getXPForLevel } from '../../models/battle-pass.model';
   styleUrl: './battle-pass.component.scss'
 })
 export class BattlePassComponent implements OnInit {
-  progress$ = this.battlePassService.progress$;
-  xpHistory$ = this.battlePassService.xpHistory$;
-  premiumCost = this.battlePassService.getPremiumCost();
+  get progress$() {
+    return this.battlePassService.progress$;
+  }
+
+  get xpHistory$() {
+    return this.battlePassService.xpHistory$;
+  }
+
+  get premiumCost() {
+    return this.battlePassService.getPremiumCost();
+  }
 
   constructor(public battlePassService: BattlePassService) {}
 
