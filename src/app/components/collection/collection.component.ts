@@ -140,17 +140,24 @@ export class CollectionComponent implements OnInit {
     const unlockedCards = this.collectionService.getUnlockedCards();
     const unlockedIds = new Set(unlockedCards.map(c => c.id));
 
-    this.allCards = allGameCards.map(card => {
-      const isUnlocked = unlockedIds.has(card.id);
-      return {
-        card,
-        entry: {
-          cardId: card.id,
-          unlocked: isUnlocked,
-          unlockCondition: this.getCardUnlockCondition(card),
-        },
-      };
-    });
+    const seenIds = new Set<string>();
+    this.allCards = allGameCards
+      .filter(card => {
+        if (seenIds.has(card.id)) return false;
+        seenIds.add(card.id);
+        return true;
+      })
+      .map(card => {
+        const isUnlocked = unlockedIds.has(card.id);
+        return {
+          card,
+          entry: {
+            cardId: card.id,
+            unlocked: isUnlocked,
+            unlockCondition: this.getCardUnlockCondition(card),
+          },
+        };
+      });
 
     // Get recent unlocks from stats
     this.recentUnlocks = this.stats.recentUnlocks;
@@ -416,6 +423,6 @@ export class CollectionComponent implements OnInit {
 
   getRarityStats(rarityKey: string): { total: number; unlocked: number } {
     if (!this.stats) return { total: 0, unlocked: 0 };
-    return this.stats.byRarity[rarityKey as Rarity];
+    return this.stats.byRarity[rarityKey as Rarity] ?? { total: 0, unlocked: 0 };
   }
 }

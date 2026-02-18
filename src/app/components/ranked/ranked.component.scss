@@ -263,6 +263,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+
+    h1 { font-size: 1.5rem; }
+
+    .season-info {
+      font-size: 0.85rem;
+    }
   }
 
   .rank-section {
@@ -270,15 +276,35 @@
   }
 
   .rank-badge {
-    flex-direction: column;
-    text-align: center;
+    padding: 1.25rem;
+    gap: 1rem;
 
     i {
       font-size: 3rem !important;
     }
+
+    .rank-text .rank-tier {
+      font-size: 1.5rem;
+    }
+  }
+
+  .rank-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .tiers-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .history-table {
+    .history-header,
+    .history-row {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+
+      .col-mmr,
+      .col-rank-before,
+      .col-rank-after { display: none; }
+    }
   }
 }

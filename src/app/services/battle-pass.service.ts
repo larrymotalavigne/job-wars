@@ -253,7 +253,7 @@ export class BattlePassService {
 
     return {
       seasonId,
-      currentLevel: 0,
+      currentLevel: 1,
       currentXP: 0,
       totalXP: 0,
       isPremium: false,

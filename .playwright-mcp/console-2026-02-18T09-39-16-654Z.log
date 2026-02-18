@@ -1,0 +1,4 @@
+[     398ms] [ERROR] Failed to load server stats: HttpErrorResponse @ http://localhost:4201/main.js:42210
+[     398ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/stats:0
+[     398ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/leaderboard:0
+[     398ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/api/matches/recent:0

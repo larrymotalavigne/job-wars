@@ -142,7 +142,9 @@
     flex-direction: column;
     align-items: stretch !important;
 
-    p-button {
+    p-button,
+    p-button button,
+    button[pButton] {
       width: 100%;
     }
   }
