@@ -3,8 +3,14 @@ services:
     image: ghcr.io/larrymotalavigne/job-wars:latest
     container_name: job-wars
     restart: unless-stopped
+    volumes:
+      - job-wars-data:/data
     networks:
       - job-wars
+
+volumes:
+  job-wars-data:
+    name: job-wars-data
 
 networks:
   job-wars:

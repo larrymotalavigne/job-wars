@@ -1,0 +1,11 @@
+.git
+.angular
+node_modules
+dist
+.playwright-mcp
+*.log
+back/node_modules
+back/dist
+back/__pycache__
+back/**/__pycache__
+back/.venv

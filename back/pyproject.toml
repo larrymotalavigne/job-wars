@@ -1,0 +1,13 @@
+[project]
+name = "job-wars-server"
+version = "1.0.0"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "websockets>=13.0",
+    "pydantic-settings>=2.0.0",
+]
+
+[tool.uv]
+dev-dependencies = []
