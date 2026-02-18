@@ -138,5 +138,19 @@
   .victory-content {
     .victory-icon { font-size: 2rem; }
     h2 { font-size: 1.2rem; }
+    p { font-size: 0.85rem; }
+  }
+
+  .disconnect-banner {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  .ai-thinking-banner {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.75rem;
   }
 }

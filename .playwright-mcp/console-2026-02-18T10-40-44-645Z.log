@@ -1,0 +1,2 @@
+[   12862ms] [ERROR] WebSocket connection to 'ws://localhost:3001/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4201/main.js:31811
+[   12862ms] [ERROR] ❌ WebSocket error: Event @ http://localhost:4201/main.js:31840

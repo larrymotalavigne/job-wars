@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, NgZone } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -90,6 +90,7 @@ export class GameLobbyComponent implements OnInit, OnDestroy {
     private messageService: MessageService,
     private router: Router,
     private http: HttpClient,
+    private ngZone: NgZone,
   ) {
     // In production, use the same host
     if (typeof window !== 'undefined' && window.location.protocol === 'https:') {
@@ -302,13 +303,16 @@ export class GameLobbyComponent implements OnInit, OnDestroy {
   toggleLobbyBrowser(): void {
     this.showLobbyBrowser = !this.showLobbyBrowser;
     if (this.showLobbyBrowser) {
-      this.loadAvailableRooms();
-      // Auto-refresh every 5 seconds
-      this.roomRefreshInterval = setInterval(() => {
-        this.loadAvailableRooms();
-      }, 5000);
+      // Defer first load to next tick so showLobbyBrowser CD completes first
+      this.ngZone.runOutsideAngular(() => {
+        setTimeout(() => this.ngZone.run(() => this.loadAvailableRooms()));
+        // Run interval outside zone — only re-enter zone for actual data updates
+        this.roomRefreshInterval = setInterval(
+          () => this.ngZone.run(() => this.loadAvailableRooms()),
+          5000,
+        );
+      });
     } else {
-      // Stop auto-refresh when closing
       if (this.roomRefreshInterval) {
         clearInterval(this.roomRefreshInterval);
         this.roomRefreshInterval = undefined;

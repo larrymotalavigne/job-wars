@@ -174,6 +174,65 @@
   .starter-desc {
     font-size: 0.7rem;
   }
+
+  // Online mode mobile fixes
+  .online-actions {
+    flex-direction: column;
+
+    ::ng-deep p-button {
+      display: block;
+      width: 100%;
+
+      .p-button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+
+  .join-room-input {
+    flex-direction: column;
+
+    input {
+      width: 100% !important;
+      flex: unset;
+    }
+
+    ::ng-deep p-button {
+      display: block;
+      width: 100%;
+
+      .p-button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+
+  .room-item {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.75rem;
+
+    .room-actions {
+      margin-left: 0 !important;
+      width: 100%;
+
+      ::ng-deep p-button {
+        display: block;
+        width: 100%;
+
+        .p-button {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .room-code-display .code-box .code {
+    font-size: 1.5rem;
+  }
 }
 
 // --- Online Multiplayer ---

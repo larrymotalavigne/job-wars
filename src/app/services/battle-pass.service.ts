@@ -56,6 +56,11 @@ export class BattlePassService {
         if (progress.seasonId !== currentSeasonId) {
           this.resetForNewSeason(currentSeasonId);
         } else {
+          // Ensure currentLevel is at least 1
+          if (progress.currentLevel < 1) {
+            progress.currentLevel = 1;
+            this.saveProgress(progress);
+          }
           this.progressSubject.next(progress);
         }
       } else {
