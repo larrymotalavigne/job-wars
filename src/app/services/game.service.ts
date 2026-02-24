@@ -522,14 +522,18 @@ export class GameService {
     const state = this.state;
     if (!state) return;
 
+    console.log('🎮 Mulligan check: P1 used =', state.player1.mulliganUsed, ', P2 used =', state.player2.mulliganUsed);
+
     if (state.player1.mulliganUsed && state.player2.mulliganUsed) {
       // Track when game actually starts (after mulligan)
+      console.log('✅ Both players mulliganed, advancing to Budget phase');
       state.gameStartTime = Date.now();
       state.phase = GamePhase.Budget;
       this.addLog(`Phase : ${GamePhase.Budget}`);
       this.soundService.play(SoundEffect.PhaseChange);
       this.executeBudgetPhase();
     } else {
+      console.log('⏳ Waiting for other player to mulligan');
       this.emit();
     }
   }
