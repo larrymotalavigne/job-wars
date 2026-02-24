@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ag-007",
+    "name": "Arboriculteur",
+    "domain": "agriculture",
+    "prompt": "pixel art 8-bit retro game character, Arboriculteur, farming, rural, nature, crops, barn, countryside, portrait view, detailed sprite, card game illustration, vibrant colors, centered character, simple background, NO TEXT, NO LABELS, NO WORDS, character only",
+    "output_path": "/Users/larry/Documents/projects/atom/job-wars/src/assets/images/cards/ag-007.png",
+    "exists": false
+  },
+  {
+    "id": "ag-008",
+    "name": "Céréalier",
+    "domain": "agriculture",
+    "prompt": "pixel art 8-bit retro game character, Cerealier, farming, rural, nature, crops, barn, countryside, portrait view, detailed sprite, card game illustration, vibrant colors, centered character, simple background, NO TEXT, NO LABELS, NO WORDS, character only",
+    "output_path": "/Users/larry/Documents/projects/atom/job-wars/src/assets/images/cards/ag-008.png",
+    "exists": false
+  },
+  {
+    "id": "ag-009",
+    "name": "Berger",
+    "domain": "agriculture",
+    "prompt": "pixel art 8-bit retro game character, Berger, farming, rural, nature, crops, barn, countryside, portrait view, detailed sprite, card game illustration, vibrant colors, centered character, simple background, NO TEXT, NO LABELS, NO WORDS, character only",
+    "output_path": "/Users/larry/Documents/projects/atom/job-wars/src/assets/images/cards/ag-009.png",
+    "exists": false
+  },
+  {
+    "id": "ag-010",
+    "name": "Horticulteur",
+    "domain": "agriculture",
+    "prompt": "pixel art 8-bit retro game character, Horticulteur, farming, rural, nature, crops, barn, countryside, portrait view, detailed sprite, card game illustration, vibrant colors, centered character, simple background, NO TEXT, NO LABELS, NO WORDS, character only",
+    "output_path": "/Users/larry/Documents/projects/atom/job-wars/src/assets/images/cards/ag-010.png",
+    "exists": false
+  },
+  {
+    "id": "ag-011",
+    "name": "Vigneron",
+    "domain": "agriculture",
+    "prompt": "pixel art 8-bit retro game character, Vigneron, farming, rural, nature, crops, barn, countryside, portrait view, detailed sprite, card game illustration, vibrant colors, centered character, simple background, NO TEXT, NO LABELS, NO WORDS, character only",
+    "output_path": "/Users/larry/Documents/projects/atom/job-wars/src/assets/images/cards/ag-011.png",
+    "exists": false
+  },
+  {
+    "id": "ag-012",
+    "name": "Éleveur Bovin",
+    "domain": "agriculture",
+    "prompt": "pixel art 8-bit retro game character, Éleveur Bovin, farming, rural, nature, crops, barn, countryside, portrait view, detailed sprite, card game illustration, vibrant colors, centered character, simple background, NO TEXT, NO LABELS, NO WORDS, character only",
+    "output_path": "/Users/larry/Documents/projects/atom/job-wars/src/assets/images/cards/ag-012.png",
+    "exists": false
+  },
+  {
+    "id": "ag-013",
+    "name": "Pépiniériste",
+    "domain": "agriculture",
+    "prompt": "pixel art 8-bit retro game character, Pepinieriste, farming, rural, nature, crops, barn, countryside, portrait view, detailed sprite, card game illustration, vibrant colors, centered character, simple background, NO TEXT, NO LABELS, NO WORDS, character only",
+    "output_path": "/Users/larry/Documents/projects/atom/job-wars/src/assets/images/cards/ag-013.png",
+    "exists": false
+  },
+  {
+    "id": "ag-014",
+    "name": "Ostréiculteur",
+    "domain": "agriculture",
+    "prompt": "pixel art 8-bit retro game character, Ostreiculteur, farming, rural, nature, crops, barn, countryside, portrait view, detailed sprite, card game illustration, vibrant colors, centered character, simple background, NO TEXT, NO LABELS, NO WORDS, character only",
+    "output_path": "/Users/larry/Documents/projects/atom/job-wars/src/assets/images/cards/ag-014.png",
+    "exists": false
+  },
+  {
+    "id": "ag-015",
+    "name": "Mytiliculteur",
+    "domain": "agriculture",
+    "prompt": "pixel art 8-bit retro game character, Mytiliculteur, farming, rural, nature, crops, barn, countryside, portrait view, detailed sprite, card game illustration, vibrant colors, centered character, simple background, NO TEXT, NO LABELS, NO WORDS, character only",
+    "output_path": "/Users/larry/Documents/projects/atom/job-wars/src/assets/images/cards/ag-015.png",
+    "exists": false
+  },
+  {
+    "id": "ag-016",
+    "name": "Sylviculteur",
+    "domain": "agriculture",
+    "prompt": "pixel art 8-bit retro game character, Sylviculteur, farming, rural, nature, crops, barn, countryside, portrait view, detailed sprite, card game illustration, vibrant colors, centered character, simple background, NO TEXT, NO LABELS, NO WORDS, character only",
+    "output_path": "/Users/larry/Documents/projects/atom/job-wars/src/assets/images/cards/ag-016.png",
+    "exists": false
+  }
+]
