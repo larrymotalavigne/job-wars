@@ -1,0 +1,8 @@
+[      60ms] [ERROR] Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec. @ https://job-wars.atomstudios.fr/main-BGF2UB6W.js:0
+[    7375ms] [WARNING] Sound playback failed: phase-change NotSupportedError: Failed to load because no supported source was found. @ https://job-wars.atomstudios.fr/main-BL7JQPAF.js:3218
+[    9658ms] [WARNING] Sound playback failed: phase-change NotSupportedError: Failed to load because no supported source was found. @ https://job-wars.atomstudios.fr/main-BL7JQPAF.js:3218
+[   77937ms] [WARNING] Sound playback failed: phase-change NotSupportedError: Failed to load because no supported source was found. @ https://job-wars.atomstudios.fr/main-BL7JQPAF.js:3218
+[   78978ms] [WARNING] Sound playback failed: phase-change NotSupportedError: Failed to load because no supported source was found. @ https://job-wars.atomstudios.fr/main-BL7JQPAF.js:3218
+[   80005ms] [WARNING] Sound playback failed: phase-change NotSupportedError: Failed to load because no supported source was found. @ https://job-wars.atomstudios.fr/main-BL7JQPAF.js:3218
+[  105007ms] [WARNING] Sound playback failed: phase-change NotSupportedError: Failed to load because no supported source was found. @ https://job-wars.atomstudios.fr/main-BL7JQPAF.js:3218
+[  105009ms] [WARNING] Sound playback failed: card-draw NotSupportedError: Failed to load because no supported source was found. @ https://job-wars.atomstudios.fr/main-BL7JQPAF.js:3218

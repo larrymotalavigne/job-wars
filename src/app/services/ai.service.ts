@@ -81,7 +81,6 @@ export class AiService implements OnDestroy {
 
     // 3. AI mulligan
     if (state.phase === GamePhase.Mulligan && !state.player2.mulliganUsed) {
-      console.log('🤖 AI: Mulligan phase detected, scheduling mulligan decision');
       this.delayedAction(() => this.doMulligan(state));
       return;
     }
@@ -114,14 +113,10 @@ export class AiService implements OnDestroy {
   }
 
   private delayedAction(action: () => void): void {
-    if (this.acting) {
-      console.log('🤖 AI: Already acting, skipping action');
-      return;
-    }
+    if (this.acting) return;
     this.acting = true;
     timer(AI_DELAY).subscribe(() => {
       if (!this.active || this.paused) {
-        console.log('🤖 AI: Action cancelled - active:', this.active, 'paused:', this.paused);
         this.acting = false;
         return;
       }
@@ -137,7 +132,6 @@ export class AiService implements OnDestroy {
     const toReplace = hand
       .filter(c => c.card.cost > 3)
       .map(c => c.instanceId);
-    console.log('🤖 AI: Executing mulligan, replacing', toReplace.length, 'cards');
     this.gameService.mulligan(AI_PLAYER_ID, toReplace);
   }
 
