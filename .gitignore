@@ -45,3 +45,10 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Card image assets (large binary files — baked into Docker image, not tracked in git)
+/public/images/
+/src/assets/images/cards/
+
+# Playwright MCP logs
+/.playwright-mcp/
