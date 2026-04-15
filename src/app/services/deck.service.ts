@@ -3,11 +3,13 @@ import { CardService } from './card.service';
 import { Card, Rarity } from '../models/card.model';
 import {
   Deck,
+  DeckCode,
   DeckEntry,
   DeckExport,
   DeckStats,
   DeckValidation,
   StarterDeck,
+  DECK_MAX_CARDS,
   DECK_MAX_COPIES,
   DECK_MAX_LEGENDARY_COPIES,
   DECK_MIN_CARDS,
@@ -41,7 +43,6 @@ export class DeckService {
     const local = this.loadDecks().find(d => d.id === id);
     if (local) return local;
 
-    // Fallback to starter decks
     const starter = STARTER_DECKS.find(s => s.id === id);
     if (starter) {
       return {
@@ -158,6 +159,10 @@ export class DeckService {
       errors.push(`Minimum ${DECK_MIN_CARDS} cartes requis (${totalCards} actuellement)`);
     }
 
+    if (totalCards > DECK_MAX_CARDS) {
+      errors.push(`Maximum ${DECK_MAX_CARDS} cartes autorisé (${totalCards} actuellement)`);
+    }
+
     for (const entry of deck.entries) {
       const card = this.cardService.getCardById(entry.cardId);
       if (!card) {
@@ -180,7 +185,7 @@ export class DeckService {
     }
 
     return {
-      isValid: errors.length === 0 && totalCards >= DECK_MIN_CARDS,
+      isValid: errors.length === 0 && totalCards >= DECK_MIN_CARDS && totalCards <= DECK_MAX_CARDS,
       errors,
       warnings,
     };
@@ -217,19 +222,11 @@ export class DeckService {
     };
   }
 
-  /**
-   * Get the dominant domain (most cards) from a deck
-   */
   getDominantDomain(deck: Deck): string | undefined {
     const stats = this.computeStats(deck);
     const domains = Object.entries(stats.domainDistribution);
     if (domains.length === 0) return undefined;
-
-    // Find domain with most cards
-    const [dominantDomain] = domains.reduce((max, current) =>
-      current[1] > max[1] ? current : max
-    );
-
+    const [dominantDomain] = domains.reduce((max, current) => (current[1] > max[1] ? current : max));
     return dominantDomain;
   }
 
@@ -243,13 +240,74 @@ export class DeckService {
     return JSON.stringify(data, null, 2);
   }
 
+  exportDeckCode(deck: Deck): string {
+    const payload: DeckCode = {
+      v: 1,
+      n: deck.name,
+      e: deck.entries.map(e => ({ i: e.cardId, q: e.quantity })),
+    };
+    return btoa(JSON.stringify(payload));
+  }
+
+  importDeckCode(code: string): Deck {
+    let payload: DeckCode;
+    try {
+      payload = JSON.parse(atob(code.trim()));
+    } catch {
+      throw new Error('Code de deck invalide');
+    }
+    if (payload.v !== 1 || !Array.isArray(payload.e)) {
+      throw new Error('Format de code non reconnu');
+    }
+    const entries: DeckEntry[] = [];
+    for (const item of payload.e) {
+      if (!this.cardService.getCardById(item.i)) {
+        throw new Error(`Carte inconnue : ${item.i}`);
+      }
+      if (item.q < 1) {
+        throw new Error(`Quantité invalide pour ${item.i}`);
+      }
+      entries.push({ cardId: item.i, quantity: item.q });
+    }
+    const deck: Deck = {
+      id: crypto.randomUUID(),
+      name: payload.n ?? 'Deck importé',
+      entries,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
+    const decks = this.loadDecks();
+    decks.push(deck);
+    this.saveDecks(decks);
+    return deck;
+  }
+
+  previewDeckCode(code: string): { name: string; entries: DeckEntry[] } {
+    let payload: DeckCode;
+    try {
+      payload = JSON.parse(atob(code.trim()));
+    } catch {
+      throw new Error('Code de deck invalide');
+    }
+    if (payload.v !== 1 || !Array.isArray(payload.e)) {
+      throw new Error('Format de code non reconnu');
+    }
+    const entries: DeckEntry[] = [];
+    for (const item of payload.e) {
+      if (!this.cardService.getCardById(item.i)) {
+        throw new Error(`Carte inconnue : ${item.i}`);
+      }
+      entries.push({ cardId: item.i, quantity: item.q });
+    }
+    return { name: payload.n ?? 'Deck importé', entries };
+  }
+
   importDeck(json: string): Deck {
     const data: DeckExport = JSON.parse(json);
     if (data.version !== 1) {
       throw new Error('Format de deck non reconnu');
     }
 
-    // Validate card IDs exist
     for (const entry of data.entries) {
       if (!this.cardService.getCardById(entry.cardId)) {
         throw new Error(`Carte inconnue : ${entry.cardId}`);

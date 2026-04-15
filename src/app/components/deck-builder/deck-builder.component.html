@@ -23,7 +23,15 @@
     </div>
     <div class="deck-header-actions">
       <p-button label="Nouveau" icon="pi pi-plus" [text]="true" size="small" (onClick)="newDeck()" />
-      <p-button label="Sauvegarder" icon="pi pi-save" size="small" (onClick)="saveDeck()" />
+      <p-button
+        label="Sauvegarder"
+        icon="pi pi-save"
+        size="small"
+        [disabled]="!deckValidation.isValid"
+        [pTooltip]="saveTooltip"
+        tooltipPosition="bottom"
+        (onClick)="saveDeck()"
+      />
       <p-button
         label="Deck"
         icon="pi pi-bars"
@@ -256,6 +264,37 @@
       <p-tabpanels>
         <!-- Tab 1: Deck List -->
         <p-tabpanel [value]="0">
+          <!-- Card count progress bar -->
+          <div class="count-progress-wrap">
+            <div class="count-progress-label">
+              <span class="count-label" [class.count-error]="cardCountStatus === 'error'" [class.count-warn]="cardCountStatus === 'warn'" [class.count-ok]="cardCountStatus === 'success'">
+                <i class="pi" [class.pi-check-circle]="cardCountStatus === 'success'" [class.pi-exclamation-triangle]="cardCountStatus === 'warn'" [class.pi-times-circle]="cardCountStatus === 'error'"></i>
+                {{ cardCountLabel }}
+              </span>
+              <span class="count-range">{{ DECK_MIN_CARDS }}–{{ DECK_MAX_CARDS }} cartes</span>
+            </div>
+            <div class="count-progress-bar">
+              <div
+                class="count-progress-fill"
+                [class.fill-error]="cardCountStatus === 'error'"
+                [class.fill-warn]="cardCountStatus === 'warn'"
+                [class.fill-ok]="cardCountStatus === 'success'"
+                [style.width.%]="cardCountProgress"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Domain distribution mini-bars -->
+          <div class="domain-bars" *ngIf="domainBars.length > 0">
+            <div class="domain-bar-row" *ngFor="let bar of domainBars">
+              <span class="domain-bar-label" [style.color]="bar.color">{{ bar.domain }}</span>
+              <div class="domain-bar-track">
+                <div class="domain-bar-fill" [style.width.%]="bar.percent" [style.background]="bar.color"></div>
+              </div>
+              <span class="domain-bar-count">{{ bar.count }}</span>
+            </div>
+          </div>
+
           <div class="deck-list-header">
             <span class="deck-card-count">{{ deckStats.totalCards }} carte{{ deckStats.totalCards !== 1 ? 's' : '' }}</span>
             <p-select
@@ -541,11 +580,30 @@
           (onClick)="exportDeck()"
         />
         <p-button
+          label="Code"
+          icon="pi pi-share-alt"
+          [text]="true"
+          size="small"
+          [disabled]="deckEntries.length === 0"
+          pTooltip="Exporter un code partageable"
+          tooltipPosition="top"
+          (onClick)="openExportCodeDialog()"
+        />
+        <p-button
           label="Importer"
           icon="pi pi-upload"
           [text]="true"
           size="small"
           (onClick)="openImportDialog()"
+        />
+        <p-button
+          label="Code"
+          icon="pi pi-qrcode"
+          [text]="true"
+          size="small"
+          pTooltip="Importer via un code"
+          tooltipPosition="top"
+          (onClick)="openImportCodeDialog()"
         />
         <p-button
           label="Imprimer"
@@ -592,11 +650,11 @@
   </ng-template>
 </p-dialog>
 
-<!-- Import Dialog -->
+<!-- Import JSON Dialog (legacy) -->
 <p-dialog
   [(visible)]="showImportDialog"
   [modal]="true"
-  header="Importer un deck"
+  header="Importer un deck (JSON)"
   [style]="{ width: '500px' }"
 >
   <div class="import-dialog-content">
@@ -616,6 +674,89 @@
       icon="pi pi-upload"
       (onClick)="importDeck()"
       [disabled]="!importJson.trim()"
+    />
+  </ng-template>
+</p-dialog>
+
+<!-- Export Code Dialog -->
+<p-dialog
+  [(visible)]="showExportCodeDialog"
+  [modal]="true"
+  header="Code du deck"
+  [style]="{ width: '520px' }"
+>
+  <div class="export-code-content">
+    <p class="export-code-intro">Partagez ce code pour que d'autres puissent importer votre deck.</p>
+    <div class="export-code-box">
+      <span class="export-code-text">{{ exportedCode }}</span>
+    </div>
+    <div class="export-code-actions">
+      <p-button
+        label="Copier le code"
+        icon="pi pi-copy"
+        [outlined]="true"
+        size="small"
+        (onClick)="copyCode()"
+      />
+      <p-button
+        label="Copier le lien"
+        icon="pi pi-share-alt"
+        [outlined]="true"
+        size="small"
+        (onClick)="copyShareUrl()"
+      />
+    </div>
+  </div>
+  <ng-template pTemplate="footer">
+    <p-button label="Fermer" [text]="true" (onClick)="showExportCodeDialog = false" />
+  </ng-template>
+</p-dialog>
+
+<!-- Import Code Dialog -->
+<p-dialog
+  [(visible)]="showImportCodeDialog"
+  [modal]="true"
+  header="Importer via un code"
+  [style]="{ width: '520px' }"
+>
+  <div class="import-code-content">
+    <p>Collez le code du deck :</p>
+    <div class="import-code-input-row">
+      <input
+        pInputText
+        type="text"
+        [(ngModel)]="importCode"
+        (input)="previewImportCode()"
+        placeholder="Code base64..."
+        class="import-code-input"
+      />
+    </div>
+
+    <div class="import-code-error" *ngIf="importCodeError">
+      <i class="pi pi-times-circle"></i> {{ importCodeError }}
+    </div>
+
+    <div class="import-code-preview" *ngIf="importCodePreview">
+      <div class="preview-header">
+        <i class="pi pi-check-circle preview-ok-icon"></i>
+        <strong>{{ importCodePreview.name }}</strong>
+        <span class="preview-count">{{ importCodePreview.totalCards }} cartes</span>
+      </div>
+      <ul class="preview-card-list">
+        <li *ngFor="let name of importCodePreview.cardNames">{{ name }}</li>
+        <li *ngIf="importCodePreview.entries.length > 8" class="preview-more">
+          … et {{ importCodePreview.entries.length - 8 }} autre(s) carte(s) unique(s)
+        </li>
+      </ul>
+    </div>
+  </div>
+  <ng-template pTemplate="footer">
+    <p-button label="Annuler" [text]="true" (onClick)="showImportCodeDialog = false" />
+    <p-button
+      label="Importer"
+      icon="pi pi-upload"
+      (onClick)="confirmImportCode()"
+      [disabled]="!importCodePreview || !!importCodeError"
     />
   </ng-template>
 </p-dialog>

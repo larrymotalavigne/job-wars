@@ -36,12 +36,26 @@ import {
   RARITY_COLORS,
   isJobCard,
 } from '../../models/card.model';
-import { Deck, DeckStats, DeckValidation, DECK_MIN_CARDS } from '../../models/deck.model';
+import {
+  Deck,
+  DeckEntry,
+  DeckStats,
+  DeckValidation,
+  DECK_MIN_CARDS,
+  DECK_MAX_CARDS,
+} from '../../models/deck.model';
 
 interface DeckEntryView {
   card: Card;
   quantity: number;
   maxCopies: number;
+}
+
+interface DeckCodePreview {
+  name: string;
+  entries: DeckEntry[];
+  totalCards: number;
+  cardNames: string[];
 }
 
 @Component({
@@ -127,16 +141,26 @@ export class DeckBuilderComponent implements OnInit {
   // Mobile drawer
   showDeckDrawer = false;
 
-  // Import dialog
+  // Import dialog — JSON (legacy)
   showImportDialog = false;
   importJson = '';
+
+  // Deck code export dialog
+  showExportCodeDialog = false;
+  exportedCode = '';
+
+  // Deck code import dialog
+  showImportCodeDialog = false;
+  importCode = '';
+  importCodePreview: DeckCodePreview | null = null;
+  importCodeError = '';
 
   // Recommendations
   deckAnalysis: DeckAnalysis | null = null;
   recommendations: CardRecommendation[] = [];
-  showRecommendations = false;
 
   DECK_MIN_CARDS = DECK_MIN_CARDS;
+  DECK_MAX_CARDS = DECK_MAX_CARDS;
   DOMAIN_COLORS = DOMAIN_COLORS;
   DOMAIN_ICONS = DOMAIN_ICONS;
   RARITY_COLORS = RARITY_COLORS;
@@ -155,6 +179,13 @@ export class DeckBuilderComponent implements OnInit {
     this.costRange = [0, this.cardService.getMaxCost()];
     this.applyFilters();
     this.refreshSavedDecks();
+
+    this.route.queryParams.subscribe(qp => {
+      const code = qp['code'];
+      if (code) {
+        this.openImportCodeDialogWithValue(code);
+      }
+    });
 
     this.route.params.subscribe(params => {
       if (params['deckId']) {
@@ -195,6 +226,7 @@ export class DeckBuilderComponent implements OnInit {
 
   saveDeck() {
     if (!this.currentDeck) return;
+    if (!this.deckValidation.isValid) return;
     this.currentDeck.name = this.deckName;
     this.deckService.saveDeck(this.currentDeck);
     this.refreshSavedDecks();
@@ -367,6 +399,191 @@ export class DeckBuilderComponent implements OnInit {
       }));
   }
 
+  // --- Inline progress indicator ---
+
+  get cardCountProgress(): number {
+    return Math.min(100, (this.deckStats.totalCards / DECK_MIN_CARDS) * 100);
+  }
+
+  get cardCountLabel(): string {
+    const total = this.deckStats.totalCards;
+    if (total < DECK_MIN_CARDS) {
+      const need = DECK_MIN_CARDS - total;
+      return `${total}/${DECK_MIN_CARDS} — encore ${need} carte${need > 1 ? 's' : ''}`;
+    }
+    if (total > DECK_MAX_CARDS) {
+      const over = total - DECK_MAX_CARDS;
+      return `${total}/${DECK_MAX_CARDS} — ${over} carte${over > 1 ? 's' : ''} en trop`;
+    }
+    return `${total} cartes`;
+  }
+
+  get cardCountStatus(): 'error' | 'warn' | 'success' {
+    const total = this.deckStats.totalCards;
+    if (total > DECK_MAX_CARDS) return 'error';
+    if (total < DECK_MIN_CARDS) return 'warn';
+    return 'success';
+  }
+
+  get saveTooltip(): string {
+    if (this.deckValidation.isValid) return '';
+    return this.deckValidation.errors.join(' | ');
+  }
+
+  // --- Domain distribution bars ---
+
+  get domainBars(): { domain: string; count: number; percent: number; color: string }[] {
+    const dist = this.deckStats.domainDistribution;
+    const total = this.deckStats.totalCards;
+    if (total === 0) return [];
+    return Object.entries(dist)
+      .sort(([, a], [, b]) => b - a)
+      .map(([domain, count]) => {
+        const domainKey = Object.values(Domain).find(v => v === domain) as Domain | undefined;
+        const color = domainKey ? (DOMAIN_COLORS[domainKey]?.primary ?? '#999') : '#999';
+        return { domain, count, percent: (count / total) * 100, color };
+      });
+  }
+
+  // --- Deck code export ---
+
+  openExportCodeDialog() {
+    if (!this.currentDeck) return;
+    this.currentDeck.name = this.deckName;
+    this.exportedCode = this.deckService.exportDeckCode(this.currentDeck);
+    this.showExportCodeDialog = true;
+  }
+
+  copyCode() {
+    navigator.clipboard.writeText(this.exportedCode).then(() => {
+      this.messageService.add({
+        severity: 'success',
+        summary: 'Copié',
+        detail: 'Code copié dans le presse-papier.',
+      });
+    });
+  }
+
+  copyShareUrl() {
+    const url = `${window.location.origin}/deck-builder?code=${encodeURIComponent(this.exportedCode)}`;
+    navigator.clipboard.writeText(url).then(() => {
+      this.messageService.add({
+        severity: 'success',
+        summary: 'Lien copié',
+        detail: 'URL de partage copiée dans le presse-papier.',
+      });
+    });
+  }
+
+  // --- Deck code import ---
+
+  openImportCodeDialog() {
+    this.importCode = '';
+    this.importCodePreview = null;
+    this.importCodeError = '';
+    this.showImportCodeDialog = true;
+  }
+
+  private openImportCodeDialogWithValue(code: string) {
+    this.importCode = code;
+    this.importCodePreview = null;
+    this.importCodeError = '';
+    this.showImportCodeDialog = true;
+    this.previewImportCode();
+  }
+
+  previewImportCode() {
+    this.importCodePreview = null;
+    this.importCodeError = '';
+    if (!this.importCode.trim()) return;
+    try {
+      const preview = this.deckService.previewDeckCode(this.importCode.trim());
+      const totalCards = preview.entries.reduce((s, e) => s + e.quantity, 0);
+      const cardNames = preview.entries.slice(0, 8).map(e => {
+        const card = this.cardService.getCardById(e.cardId);
+        return card ? `${card.name} x${e.quantity}` : e.cardId;
+      });
+      this.importCodePreview = { name: preview.name, entries: preview.entries, totalCards, cardNames };
+    } catch (e: any) {
+      this.importCodeError = e.message ?? 'Code invalide';
+    }
+  }
+
+  confirmImportCode() {
+    if (!this.importCode.trim()) return;
+    try {
+      const deck = this.deckService.importDeckCode(this.importCode.trim());
+      this.refreshSavedDecks();
+      this.loadDeck(deck.id);
+      this.showImportCodeDialog = false;
+      this.messageService.add({
+        severity: 'success',
+        summary: 'Importé',
+        detail: `"${deck.name}" a été importé.`,
+      });
+    } catch (e: any) {
+      this.importCodeError = e.message ?? 'Code invalide';
+    }
+  }
+
+  // --- Legacy JSON import/export ---
+
+  exportDeck() {
+    if (!this.currentDeck) return;
+    this.currentDeck.name = this.deckName;
+    const json = this.deckService.exportDeck(this.currentDeck);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${this.currentDeck.name}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    this.messageService.add({
+      severity: 'success',
+      summary: 'Exporté',
+      detail: 'Le deck a été exporté.',
+    });
+  }
+
+  openImportDialog() {
+    this.importJson = '';
+    this.showImportDialog = true;
+  }
+
+  importDeck() {
+    try {
+      const deck = this.deckService.importDeck(this.importJson);
+      this.refreshSavedDecks();
+      this.loadDeck(deck.id);
+      this.showImportDialog = false;
+      this.messageService.add({
+        severity: 'success',
+        summary: 'Importé',
+        detail: `"${deck.name}" a été importé.`,
+      });
+    } catch (e: any) {
+      this.messageService.add({
+        severity: 'error',
+        summary: "Erreur d'import",
+        detail: e.message || 'Format invalide.',
+      });
+    }
+  }
+
+  // --- Print ---
+
+  printDeck() {
+    if (!this.currentDeck) return;
+    const cards = this.deckService.expandDeck(this.currentDeck);
+    const ids = cards.map(c => c.id).join(',');
+    this.router.navigate(['/print'], {
+      queryParams: { cards: ids, design: this.currentDesign, imageStyle: this.currentImageStyle },
+    });
+  }
+
+  // --- Helpers ---
+
   getAbilityText(card: Card): string {
     if (card.type === CardType.Job) return (card as any).ability;
     if (card.type === CardType.Tool) return (card as any).ability;
@@ -441,62 +658,6 @@ export class DeckBuilderComponent implements OnInit {
   getRarityColor(rarity: Rarity): string {
     return RARITY_COLORS[rarity] ?? '#999';
   }
-
-  // --- Import / Export ---
-
-  exportDeck() {
-    if (!this.currentDeck) return;
-    this.currentDeck.name = this.deckName;
-    const json = this.deckService.exportDeck(this.currentDeck);
-    const blob = new Blob([json], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${this.currentDeck.name}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-    this.messageService.add({
-      severity: 'success',
-      summary: 'Exporté',
-      detail: 'Le deck a été exporté.',
-    });
-  }
-
-  openImportDialog() {
-    this.importJson = '';
-    this.showImportDialog = true;
-  }
-
-  importDeck() {
-    try {
-      const deck = this.deckService.importDeck(this.importJson);
-      this.refreshSavedDecks();
-      this.loadDeck(deck.id);
-      this.showImportDialog = false;
-      this.messageService.add({
-        severity: 'success',
-        summary: 'Importé',
-        detail: `"${deck.name}" a été importé.`,
-      });
-    } catch (e: any) {
-      this.messageService.add({
-        severity: 'error',
-        summary: 'Erreur d\'import',
-        detail: e.message || 'Format invalide.',
-      });
-    }
-  }
-
-  // --- Print ---
-
-  printDeck() {
-    if (!this.currentDeck) return;
-    const cards = this.deckService.expandDeck(this.currentDeck);
-    const ids = cards.map(c => c.id).join(',');
-    this.router.navigate(['/print'], { queryParams: { cards: ids, design: this.currentDesign, imageStyle: this.currentImageStyle } });
-  }
-
-  // --- Helpers ---
 
   isJobCard = isJobCard;
 

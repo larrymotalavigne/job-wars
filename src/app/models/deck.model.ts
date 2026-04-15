@@ -1,6 +1,7 @@
 import { Domain } from './card.model';
 
 export const DECK_MIN_CARDS = 40;
+export const DECK_MAX_CARDS = 60;
 export const DECK_MAX_COPIES = 3;
 export const DECK_MAX_LEGENDARY_COPIES = 1;
 
@@ -45,4 +46,10 @@ export interface DeckExport {
   name: string;
   entries: DeckEntry[];
   exportedAt: string;
+}
+
+export interface DeckCode {
+  v: 1;
+  n: string;
+  e: Array<{ i: string; q: number }>;
 }
