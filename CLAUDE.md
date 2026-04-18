@@ -171,9 +171,14 @@ npm run watch
 
 - Multi-stage build (Node 24 Alpine → Nginx)
 - Build artifacts compressed with gzip + brotli
-- Production config: `docker-compose.prod.yml`
-- Deployed to UNRAID via GitHub Actions on main branch
 - Production URL: https://job-wars.atomstudios.fr
+- Deployed via GitLab CI (`.gitlab-ci.yml`) — frontend-only pipeline archetype:
+  `test → build → deploy → verify`
+- Image: `CI_REGISTRY_IMAGE/job-wars-web:<SHA>` pushed to GitLab Container Registry
+- Deploy: `kubectl rollout restart deployment/job-wars-web -n apps`
+
+**Canonical reference:** see `process/ci/frontend-only.yml` in the infra repo.
+Required CI/CD variables: see `process/deployment/required-variables.md` in the infra repo.
 
 ## Important Notes
 
