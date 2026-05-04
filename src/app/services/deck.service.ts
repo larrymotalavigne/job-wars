@@ -40,10 +40,10 @@ export class DeckService {
   }
 
   getDeckById(id: string): Deck | undefined {
-    const local = this.loadDecks().find(d => d.id === id);
+    const local = this.loadDecks().find((d) => d.id === id);
     if (local) return local;
 
-    const starter = STARTER_DECKS.find(s => s.id === id);
+    const starter = STARTER_DECKS.find((s) => s.id === id);
     if (starter) {
       return {
         id: starter.id,
@@ -73,7 +73,7 @@ export class DeckService {
   saveDeck(deck: Deck) {
     deck.updatedAt = new Date().toISOString();
     const decks = this.loadDecks();
-    const idx = decks.findIndex(d => d.id === deck.id);
+    const idx = decks.findIndex((d) => d.id === deck.id);
     if (idx >= 0) {
       decks[idx] = deck;
     } else {
@@ -83,7 +83,7 @@ export class DeckService {
   }
 
   deleteDeck(id: string) {
-    const decks = this.loadDecks().filter(d => d.id !== id);
+    const decks = this.loadDecks().filter((d) => d.id !== id);
     this.saveDecks(decks);
   }
 
@@ -93,7 +93,7 @@ export class DeckService {
     const copy: Deck = {
       id: crypto.randomUUID(),
       name: newName,
-      entries: source.entries.map(e => ({ ...e })),
+      entries: source.entries.map((e) => ({ ...e })),
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     };
@@ -110,12 +110,12 @@ export class DeckService {
   }
 
   getCardQuantity(deck: Deck, cardId: string): number {
-    return deck.entries.find(e => e.cardId === cardId)?.quantity ?? 0;
+    return deck.entries.find((e) => e.cardId === cardId)?.quantity ?? 0;
   }
 
   addCard(deck: Deck, cardId: string): boolean {
     const max = this.getMaxCopies(cardId);
-    const entry = deck.entries.find(e => e.cardId === cardId);
+    const entry = deck.entries.find((e) => e.cardId === cardId);
     if (entry) {
       if (entry.quantity >= max) return false;
       entry.quantity++;
@@ -127,11 +127,11 @@ export class DeckService {
   }
 
   removeCard(deck: Deck, cardId: string) {
-    const entry = deck.entries.find(e => e.cardId === cardId);
+    const entry = deck.entries.find((e) => e.cardId === cardId);
     if (!entry) return;
     entry.quantity--;
     if (entry.quantity <= 0) {
-      deck.entries = deck.entries.filter(e => e.cardId !== cardId);
+      deck.entries = deck.entries.filter((e) => e.cardId !== cardId);
     }
   }
 
@@ -139,10 +139,10 @@ export class DeckService {
     const max = this.getMaxCopies(cardId);
     const clamped = Math.max(0, Math.min(qty, max));
     if (clamped === 0) {
-      deck.entries = deck.entries.filter(e => e.cardId !== cardId);
+      deck.entries = deck.entries.filter((e) => e.cardId !== cardId);
       return;
     }
-    const entry = deck.entries.find(e => e.cardId === cardId);
+    const entry = deck.entries.find((e) => e.cardId === cardId);
     if (entry) {
       entry.quantity = clamped;
     } else {
@@ -171,7 +171,9 @@ export class DeckService {
       }
       const max = this.getMaxCopies(entry.cardId);
       if (entry.quantity > max) {
-        errors.push(`${card.name} : max ${max} copie${max > 1 ? 's' : ''} (${entry.quantity} dans le deck)`);
+        errors.push(
+          `${card.name} : max ${max} copie${max > 1 ? 's' : ''} (${entry.quantity} dans le deck)`,
+        );
       }
     }
 
@@ -226,7 +228,9 @@ export class DeckService {
     const stats = this.computeStats(deck);
     const domains = Object.entries(stats.domainDistribution);
     if (domains.length === 0) return undefined;
-    const [dominantDomain] = domains.reduce((max, current) => (current[1] > max[1] ? current : max));
+    const [dominantDomain] = domains.reduce((max, current) =>
+      current[1] > max[1] ? current : max,
+    );
     return dominantDomain;
   }
 
@@ -234,7 +238,7 @@ export class DeckService {
     const data: DeckExport = {
       version: 1,
       name: deck.name,
-      entries: deck.entries.map(e => ({ ...e })),
+      entries: deck.entries.map((e) => ({ ...e })),
       exportedAt: new Date().toISOString(),
     };
     return JSON.stringify(data, null, 2);
@@ -244,7 +248,7 @@ export class DeckService {
     const payload: DeckCode = {
       v: 1,
       n: deck.name,
-      e: deck.entries.map(e => ({ i: e.cardId, q: e.quantity })),
+      e: deck.entries.map((e) => ({ i: e.cardId, q: e.quantity })),
     };
     return btoa(JSON.stringify(payload));
   }
@@ -320,7 +324,7 @@ export class DeckService {
     const deck: Deck = {
       id: crypto.randomUUID(),
       name: data.name,
-      entries: data.entries.map(e => ({ ...e })),
+      entries: data.entries.map((e) => ({ ...e })),
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     };

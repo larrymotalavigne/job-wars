@@ -38,7 +38,7 @@ export const CRAFTS_CARDS: Card[] = [
     productivity: 3,
     resilience: 2,
     ability: 'Vos Outils donnent un bonus supplémentaire de +1/+0.',
-    flavorText: '« L\'acier prend forme sous le marteau. »',
+    flavorText: "« L'acier prend forme sous le marteau. »",
     image: 'images/cards/cr-003.png',
   },
   {
@@ -103,7 +103,7 @@ export const CRAFTS_CARDS: Card[] = [
     productivity: 5,
     resilience: 5,
     ability: 'Tous les Métiers Artisanat gagnent +1/+1. Vos Outils ne peuvent pas être détruits.',
-    flavorText: '« Le savoir-faire se transmet, il ne s\'achète pas. »',
+    flavorText: "« Le savoir-faire se transmet, il ne s'achète pas. »",
     image: 'images/cards/cr-008.png',
   },
   {
@@ -116,7 +116,7 @@ export const CRAFTS_CARDS: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Construction : Gagne +0/+1 chaque tour (max +2).',
-    flavorText: '« La charpente, c\'est l\'ossature de la maison. »',
+    flavorText: "« La charpente, c'est l'ossature de la maison. »",
     image: 'images/cards/cr-012.png',
   },
   {
@@ -128,8 +128,8 @@ export const CRAFTS_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Quand embauché : Un Métier Artisanat allié gagne +0/+2 jusqu\'à la fin du tour.',
-    flavorText: '« Il n\'y a pas de maison sans toit. »',
+    ability: "Quand embauché : Un Métier Artisanat allié gagne +0/+2 jusqu'à la fin du tour.",
+    flavorText: "« Il n'y a pas de maison sans toit. »",
     image: 'images/cards/cr-013.png',
   },
   {
@@ -154,7 +154,7 @@ export const CRAFTS_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Quand un Outil est joué de votre côté, gagne +1/+0 jusqu\'à la fin du tour.',
+    ability: "Quand un Outil est joué de votre côté, gagne +1/+0 jusqu'à la fin du tour.",
     flavorText: '« Le confort est un art qui se travaille au fil. »',
     image: 'images/cards/cr-015.png',
   },
@@ -180,8 +180,9 @@ export const CRAFTS_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 2,
     resilience: 3,
-    ability: 'Au début de votre tour : Si vous contrôlez 2 Outils ou plus, gagne +1/+1 en permanence.',
-    flavorText: '« L\'argile attend la main qui lui donnera vie. »',
+    ability:
+      'Au début de votre tour : Si vous contrôlez 2 Outils ou plus, gagne +1/+1 en permanence.',
+    flavorText: "« L'argile attend la main qui lui donnera vie. »",
     image: 'images/cards/cr-017.png',
   },
   {
@@ -193,8 +194,9 @@ export const CRAFTS_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 3,
-    ability: 'Vos Outils ne peuvent pas être désactivés. Quand embauché : Réparez un Outil détruit.',
-    flavorText: '« Ce que j\'assemble, rien ne le sépare. »',
+    ability:
+      'Vos Outils ne peuvent pas être désactivés. Quand embauché : Réparez un Outil détruit.',
+    flavorText: "« Ce que j'assemble, rien ne le sépare. »",
     image: 'images/cards/cr-018.png',
   },
   {
@@ -219,8 +221,9 @@ export const CRAFTS_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 2,
     resilience: 4,
-    ability: 'Au début de votre tour : Réduisez de 1 le coût du prochain Outil que vous jouez ce tour.',
-    flavorText: '« La précision est mère de l\'excellence. »',
+    ability:
+      'Au début de votre tour : Réduisez de 1 le coût du prochain Outil que vous jouez ce tour.',
+    flavorText: "« La précision est mère de l'excellence. »",
     image: 'images/cards/cr-020.png',
   },
   {
@@ -233,7 +236,7 @@ export const CRAFTS_CARDS: Card[] = [
     productivity: 3,
     resilience: 4,
     ability: 'Quand embauché : Cherchez un Outil dans votre deck et ajoutez-le à votre main.',
-    flavorText: '« L\'or ne brille que par la main qui le façonne. »',
+    flavorText: "« L'or ne brille que par la main qui le façonne. »",
     image: 'images/cards/cr-021.png',
   },
   {
@@ -245,7 +248,8 @@ export const CRAFTS_CARDS: Card[] = [
     rarity: Rarity.Rare,
     productivity: 4,
     resilience: 5,
-    ability: 'Construction : Gagne +1/+1 chaque tour (max +3). Les dégâts infligés à ce Métier sont réduits de 1.',
+    ability:
+      'Construction : Gagne +1/+1 chaque tour (max +3). Les dégâts infligés à ce Métier sont réduits de 1.',
     flavorText: '« La pierre attend son sculpteur depuis des millénaires. »',
     image: 'images/cards/cr-022.png',
   },
@@ -258,8 +262,9 @@ export const CRAFTS_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 6,
     resilience: 6,
-    ability: 'Vos Outils coûtent 1 de moins. Quand un Outil entre en jeu de votre côté, tous vos Métiers Artisanat gagnent +1/+1 en permanence.',
-    flavorText: '« Le Tour de France forge l\'âme autant que les mains. »',
+    ability:
+      'Vos Outils coûtent 1 de moins. Quand un Outil entre en jeu de votre côté, tous vos Métiers Artisanat gagnent +1/+1 en permanence.',
+    flavorText: "« Le Tour de France forge l'âme autant que les mains. »",
     image: 'images/cards/cr-023.png',
   },
   // ── Tools ──
@@ -271,7 +276,7 @@ export const CRAFTS_CARDS: Card[] = [
     cost: 2,
     rarity: Rarity.Common,
     ability: 'Un Métier Artisanat ciblé gagne +1/+1 en permanence.',
-    flavorText: '« L\'outil du professionnel. »',
+    flavorText: "« L'outil du professionnel. »",
     image: 'images/cards/cr-009.png',
   },
   {
@@ -304,7 +309,7 @@ export const CRAFTS_CARDS: Card[] = [
     cost: 2,
     rarity: Rarity.Common,
     ability: 'Le prochain Métier Artisanat que vous jouez ce tour coûte 2 de moins.',
-    flavorText: '« Le souffle attise la flamme, la flamme attise l\'acier. »',
+    flavorText: "« Le souffle attise la flamme, la flamme attise l'acier. »",
     image: 'images/cards/cr-025.png',
   },
   {
@@ -320,12 +325,13 @@ export const CRAFTS_CARDS: Card[] = [
   },
   {
     id: 'cr-027',
-    name: 'Étau d\'Établi',
+    name: "Étau d'Établi",
     domain: Domain.Crafts,
     type: CardType.Tool,
     cost: 3,
     rarity: Rarity.Uncommon,
-    ability: 'Un Métier adverse ciblé perd -1/-1 en permanence. Un Métier allié ciblé gagne +0/+1 en permanence.',
+    ability:
+      'Un Métier adverse ciblé perd -1/-1 en permanence. Un Métier allié ciblé gagne +0/+1 en permanence.',
     flavorText: '« Ce qui est serré ne bouge plus. »',
     image: 'images/cards/cr-027.png',
   },
@@ -336,7 +342,8 @@ export const CRAFTS_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 3,
     rarity: Rarity.Uncommon,
-    ability: 'Inflige 2 dégâts à un Métier adverse. Si vous contrôlez un Forgeron ou un Soudeur, inflige 3 dégâts à la place.',
+    ability:
+      'Inflige 2 dégâts à un Métier adverse. Si vous contrôlez un Forgeron ou un Soudeur, inflige 3 dégâts à la place.',
     flavorText: '« La flamme bleue ne pardonne pas. »',
     image: 'images/cards/cr-028.png',
   },
@@ -348,7 +355,7 @@ export const CRAFTS_CARDS: Card[] = [
     cost: 2,
     rarity: Rarity.Common,
     ability: 'Quand un Métier Artisanat est embauché de votre côté, il gagne +0/+1 en permanence.',
-    flavorText: '« Le moule donne la forme, l\'artisan donne l\'âme. »',
+    flavorText: "« Le moule donne la forme, l'artisan donne l'âme. »",
     image: 'images/cards/cr-029.png',
   },
   {
@@ -358,7 +365,8 @@ export const CRAFTS_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 3,
     rarity: Rarity.Uncommon,
-    ability: 'Au début de votre tour, restaurez 1 point de Résilience à tous vos Métiers Artisanat.',
+    ability:
+      'Au début de votre tour, restaurez 1 point de Résilience à tous vos Métiers Artisanat.',
     flavorText: '« Point après point, le tissu reprend vie. »',
     image: 'images/cards/cr-030.png',
   },
@@ -369,7 +377,8 @@ export const CRAFTS_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 4,
     rarity: Rarity.Rare,
-    ability: 'Quand joué : Un Métier Artisanat ciblé gagne +2/+1 en permanence. Si ce Métier a Construction, il gagne +3/+2 à la place.',
+    ability:
+      'Quand joué : Un Métier Artisanat ciblé gagne +2/+1 en permanence. Si ce Métier a Construction, il gagne +3/+2 à la place.',
     flavorText: '« Chaque coup de burin révèle la beauté cachée. »',
     image: 'images/cards/cr-031.png',
   },
@@ -380,8 +389,9 @@ export const CRAFTS_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 1,
     rarity: Rarity.Common,
-    ability: 'Piochez une carte. Si vous contrôlez un Métier Artisanat, piochez 2 cartes à la place.',
-    flavorText: '« On enlève le superflu pour révéler l\'essentiel. »',
+    ability:
+      'Piochez une carte. Si vous contrôlez un Métier Artisanat, piochez 2 cartes à la place.',
+    flavorText: "« On enlève le superflu pour révéler l'essentiel. »",
     image: 'images/cards/cr-032.png',
   },
   {
@@ -391,31 +401,33 @@ export const CRAFTS_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 5,
     rarity: Rarity.Rare,
-    ability: 'Tous vos Métiers Artisanat gagnent +1/+1 en permanence. Les Outils que vous jouez donnent un bonus supplémentaire de +0/+1.',
-    flavorText: '« Là où va l\'enclume, va l\'atelier. »',
+    ability:
+      'Tous vos Métiers Artisanat gagnent +1/+1 en permanence. Les Outils que vous jouez donnent un bonus supplémentaire de +0/+1.',
+    flavorText: "« Là où va l'enclume, va l'atelier. »",
     image: 'images/cards/cr-033.png',
   },
   // ── Events ──
   {
     id: 'cr-011',
-    name: 'Salon de l\'Artisanat',
+    name: "Salon de l'Artisanat",
     domain: Domain.Crafts,
     type: CardType.Event,
     cost: 3,
     rarity: Rarity.Uncommon,
-    effect: 'Tous vos Métiers Artisanat gagnent +2/+0 jusqu\'à la fin du tour.',
+    effect: "Tous vos Métiers Artisanat gagnent +2/+0 jusqu'à la fin du tour.",
     flavorText: '« Vitrine du savoir-faire français. »',
     image: 'images/cards/cr-011.png',
   },
   {
     id: 'cr-034',
-    name: 'Chef-d\'Œuvre',
+    name: "Chef-d'Œuvre",
     domain: Domain.Crafts,
     type: CardType.Event,
     cost: 6,
     rarity: Rarity.Rare,
-    effect: 'Choisissez un Métier Artisanat allié. Il gagne +3/+3 en permanence et acquiert Construction : Gagne +1/+1 chaque tour (max +2).',
-    flavorText: '« L\'aboutissement d\'une vie de labeur. »',
+    effect:
+      'Choisissez un Métier Artisanat allié. Il gagne +3/+3 en permanence et acquiert Construction : Gagne +1/+1 chaque tour (max +2).',
+    flavorText: "« L'aboutissement d'une vie de labeur. »",
     image: 'images/cards/cr-034.png',
   },
   {
@@ -425,18 +437,20 @@ export const CRAFTS_CARDS: Card[] = [
     type: CardType.Event,
     cost: 5,
     rarity: Rarity.Uncommon,
-    effect: 'Cherchez jusqu\'à 2 Outils dans votre deck et mettez-les en jeu. Ils ne coûtent pas de Budget ce tour.',
+    effect:
+      "Cherchez jusqu'à 2 Outils dans votre deck et mettez-les en jeu. Ils ne coûtent pas de Budget ce tour.",
     flavorText: '« Sa Majesté exige le meilleur, sans délai. »',
     image: 'images/cards/cr-035.png',
   },
   {
     id: 'cr-036',
-    name: 'Incendie d\'Atelier',
+    name: "Incendie d'Atelier",
     domain: Domain.Crafts,
     type: CardType.Event,
     cost: 4,
     rarity: Rarity.Uncommon,
-    effect: 'Détruisez tous les Outils en jeu. Pour chaque Outil détruit de votre côté, piochez une carte.',
+    effect:
+      'Détruisez tous les Outils en jeu. Pour chaque Outil détruit de votre côté, piochez une carte.',
     flavorText: '« Le feu a tout pris, sauf le savoir-faire. »',
     image: 'images/cards/cr-036.png',
   },
@@ -447,13 +461,13 @@ export const CRAFTS_CARDS: Card[] = [
     type: CardType.Event,
     cost: 3,
     rarity: Rarity.Common,
-    effect: 'Chaque Métier Artisanat allié avec un Outil gagne +2/+2 jusqu\'à la fin du tour.',
-    flavorText: '« Que le meilleur artisan l\'emporte ! »',
+    effect: "Chaque Métier Artisanat allié avec un Outil gagne +2/+2 jusqu'à la fin du tour.",
+    flavorText: "« Que le meilleur artisan l'emporte ! »",
     image: 'images/cards/cr-037.png',
   },
   {
     id: 'cr-038',
-    name: 'Bris d\'Outil',
+    name: "Bris d'Outil",
     domain: Domain.Crafts,
     type: CardType.Event,
     cost: 1,
@@ -469,8 +483,9 @@ export const CRAFTS_CARDS: Card[] = [
     type: CardType.Event,
     cost: 2,
     rarity: Rarity.Common,
-    effect: 'Choisissez un Métier Artisanat allié. Il gagne immédiatement ses bonus de Construction maximaux.',
-    flavorText: '« En trois mois, il a appris ce que d\'autres mettent trois ans à maîtriser. »',
+    effect:
+      'Choisissez un Métier Artisanat allié. Il gagne immédiatement ses bonus de Construction maximaux.',
+    flavorText: "« En trois mois, il a appris ce que d'autres mettent trois ans à maîtriser. »",
     image: 'images/cards/cr-039.png',
   },
   {
@@ -480,7 +495,8 @@ export const CRAFTS_CARDS: Card[] = [
     type: CardType.Event,
     cost: 8,
     rarity: Rarity.Legendary,
-    effect: 'Tous vos Métiers Artisanat gagnent +2/+2 en permanence. Piochez une carte pour chaque Outil que vous contrôlez. Réduisez le coût de tous vos Outils en main de 2.',
+    effect:
+      'Tous vos Métiers Artisanat gagnent +2/+2 en permanence. Piochez une carte pour chaque Outil que vous contrôlez. Réduisez le coût de tous vos Outils en main de 2.',
     flavorText: '« Le monde entier contemple le génie de nos artisans. »',
     image: 'images/cards/cr-040.png',
   },

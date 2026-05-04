@@ -38,11 +38,7 @@
           </ng-template>
           <div class="connection-setup">
             <p>Connectez-vous au serveur multijoueur pour jouer en ligne.</p>
-            <p-button
-              label="Se connecter"
-              icon="pi pi-sign-in"
-              (onClick)="connectToServer()"
-            />
+            <p-button label="Se connecter" icon="pi pi-sign-in" (onClick)="connectToServer()" />
           </div>
         </p-card>
       }
@@ -243,7 +239,9 @@
       }
 
       <!-- In Room - Opponent Found -->
-      @if (connectionState === ConnectionState.IN_ROOM && !isWaitingForOpponent && currentRoomCode) {
+      @if (
+        connectionState === ConnectionState.IN_ROOM && !isWaitingForOpponent && currentRoomCode
+      ) {
         <p-card>
           <ng-template #header>
             <div class="card-header">
@@ -267,154 +265,159 @@
   @if (gameMode === 'local') {
     <!-- Starter Decks -->
     @if (starterDecks.length > 0) {
-    <div class="starter-section">
-      <h2 class="starter-title">Decks Prédéfinis</h2>
-      <div class="starter-grid">
-        @for (deck of starterDecks; track deck.id) {
-          <div class="starter-card">
-            <div class="starter-name">{{ deck.name }}</div>
-            <div class="starter-desc">{{ deck.description }}</div>
-            <div class="starter-domains">
-              @for (d of deck.domains; track d) {
-                <p-tag [value]="d" severity="info" />
-              }
+      <div class="starter-section">
+        <h2 class="starter-title">Decks Prédéfinis</h2>
+        <div class="starter-grid">
+          @for (deck of starterDecks; track deck.id) {
+            <div class="starter-card">
+              <div class="starter-name">{{ deck.name }}</div>
+              <div class="starter-desc">{{ deck.description }}</div>
+              <div class="starter-domains">
+                @for (d of deck.domains; track d) {
+                  <p-tag [value]="d" severity="info" />
+                }
+              </div>
+              <div class="starter-actions">
+                <p-button
+                  label="J1"
+                  icon="pi pi-user"
+                  size="small"
+                  severity="secondary"
+                  [outlined]="p1DeckId !== deck.id"
+                  (onClick)="selectStarterDeck(deck.id, 1)"
+                />
+                <p-button
+                  label="J2"
+                  icon="pi pi-user"
+                  size="small"
+                  severity="secondary"
+                  [outlined]="p2DeckId !== deck.id"
+                  (onClick)="selectStarterDeck(deck.id, 2)"
+                />
+              </div>
             </div>
-            <div class="starter-actions">
-              <p-button
-                label="J1"
-                icon="pi pi-user"
-                size="small"
-                severity="secondary"
-                [outlined]="p1DeckId !== deck.id"
-                (onClick)="selectStarterDeck(deck.id, 1)"
-              />
-              <p-button
-                label="J2"
-                icon="pi pi-user"
-                size="small"
-                severity="secondary"
-                [outlined]="p2DeckId !== deck.id"
-                (onClick)="selectStarterDeck(deck.id, 2)"
-              />
-            </div>
-          </div>
-        }
+          }
+        </div>
       </div>
+    }
+
+    <div class="lobby-grid">
+      <!-- Player 1 -->
+      <p-card class="player-card">
+        <ng-template #header>
+          <div class="player-header p1">Joueur 1</div>
+        </ng-template>
+        <div class="player-setup">
+          <label>Nom</label>
+          <input pInputText [(ngModel)]="p1Name" placeholder="Joueur 1" />
+
+          <label>Deck</label>
+          <p-select
+            [options]="deckOptions"
+            [(ngModel)]="p1DeckId"
+            optionLabel="label"
+            optionValue="value"
+            optionGroupLabel="label"
+            optionGroupChildren="items"
+            [group]="true"
+            placeholder="Choisir un deck..."
+            [style]="{ width: '100%' }"
+            (onChange)="onP1DeckChange()"
+          />
+
+          @if (p1Validation) {
+            @if (p1Validation.isValid) {
+              <p-tag severity="success" value="Deck valide" />
+            } @else {
+              <div class="validation-errors">
+                @for (err of p1Validation.errors; track err) {
+                  <p-tag severity="danger" [value]="err" />
+                }
+              </div>
+            }
+          }
+        </div>
+      </p-card>
+
+      <!-- Player 2 -->
+      <p-card class="player-card">
+        <ng-template #header>
+          <div class="player-header p2">Joueur 2</div>
+        </ng-template>
+        <div class="player-setup">
+          <label>Nom</label>
+          <input pInputText [(ngModel)]="p2Name" placeholder="Joueur 2" />
+
+          <label>Deck</label>
+          <p-select
+            [options]="deckOptions"
+            [(ngModel)]="p2DeckId"
+            optionLabel="label"
+            optionValue="value"
+            optionGroupLabel="label"
+            optionGroupChildren="items"
+            [group]="true"
+            placeholder="Choisir un deck..."
+            [style]="{ width: '100%' }"
+            (onChange)="onP2DeckChange()"
+          />
+
+          @if (p2Validation) {
+            @if (p2Validation.isValid) {
+              <p-tag severity="success" value="Deck valide" />
+            } @else {
+              <div class="validation-errors">
+                @for (err of p2Validation.errors; track err) {
+                  <p-tag severity="danger" [value]="err" />
+                }
+              </div>
+            }
+          }
+        </div>
+      </p-card>
     </div>
-  }
 
-  <div class="lobby-grid">
-    <!-- Player 1 -->
-    <p-card class="player-card">
-      <ng-template #header>
-        <div class="player-header p1">Joueur 1</div>
-      </ng-template>
-      <div class="player-setup">
-        <label>Nom</label>
-        <input pInputText [(ngModel)]="p1Name" placeholder="Joueur 1" />
-
-        <label>Deck</label>
-        <p-select
-          [options]="deckOptions"
-          [(ngModel)]="p1DeckId"
-          optionLabel="label"
-          optionValue="value"
-          optionGroupLabel="label"
-          optionGroupChildren="items"
-          [group]="true"
-          placeholder="Choisir un deck..."
-          [style]="{ width: '100%' }"
-          (onChange)="onP1DeckChange()"
-        />
-
-        @if (p1Validation) {
-          @if (p1Validation.isValid) {
-            <p-tag severity="success" value="Deck valide" />
-          } @else {
-            <div class="validation-errors">
-              @for (err of p1Validation.errors; track err) {
-                <p-tag severity="danger" [value]="err" />
-              }
-            </div>
-          }
-        }
-      </div>
-    </p-card>
-
-    <!-- Player 2 -->
-    <p-card class="player-card">
-      <ng-template #header>
-        <div class="player-header p2">Joueur 2</div>
-      </ng-template>
-      <div class="player-setup">
-        <label>Nom</label>
-        <input pInputText [(ngModel)]="p2Name" placeholder="Joueur 2" />
-
-        <label>Deck</label>
-        <p-select
-          [options]="deckOptions"
-          [(ngModel)]="p2DeckId"
-          optionLabel="label"
-          optionValue="value"
-          optionGroupLabel="label"
-          optionGroupChildren="items"
-          [group]="true"
-          placeholder="Choisir un deck..."
-          [style]="{ width: '100%' }"
-          (onChange)="onP2DeckChange()"
-        />
-
-        @if (p2Validation) {
-          @if (p2Validation.isValid) {
-            <p-tag severity="success" value="Deck valide" />
-          } @else {
-            <div class="validation-errors">
-              @for (err of p2Validation.errors; track err) {
-                <p-tag severity="danger" [value]="err" />
-              }
-            </div>
-          }
-        }
-      </div>
-    </p-card>
-  </div>
-
-  <div class="lobby-actions">
-    <p-button
-      label="Commencer la Partie"
-      icon="pi pi-play"
-      [disabled]="!canStart"
-      (onClick)="startGame()"
-      severity="success"
-      size="large"
-    />
-    <p-button
-      label="Partie Rapide"
-      icon="pi pi-bolt"
-      (onClick)="startQuickGame()"
-      severity="secondary"
-      size="large"
-    />
-    <p-button
-      label="Jouer contre l'IA"
-      icon="pi pi-android"
-      (onClick)="startAiGame()"
-      severity="help"
-      size="large"
-    />
-    <p-button
-      label="Tutoriel"
-      icon="pi pi-question-circle"
-      (onClick)="startTutorial()"
-      severity="info"
-      size="large"
-    />
-  </div>
+    <div class="lobby-actions">
+      <p-button
+        label="Commencer la Partie"
+        icon="pi pi-play"
+        [disabled]="!canStart"
+        (onClick)="startGame()"
+        severity="success"
+        size="large"
+      />
+      <p-button
+        label="Partie Rapide"
+        icon="pi pi-bolt"
+        (onClick)="startQuickGame()"
+        severity="secondary"
+        size="large"
+      />
+      <p-button
+        label="Jouer contre l'IA"
+        icon="pi pi-android"
+        (onClick)="startAiGame()"
+        severity="help"
+        size="large"
+      />
+      <p-button
+        label="Tutoriel"
+        icon="pi pi-question-circle"
+        (onClick)="startTutorial()"
+        severity="info"
+        size="large"
+      />
+    </div>
 
     @if (deckOptions.length === 0 && starterDecks.length === 0) {
       <div class="no-decks">
         <p>Aucun deck sauvegardé. Créez un deck pour jouer avec des decks personnalisés.</p>
-        <p-button label="Aller au Constructeur" icon="pi pi-objects-column" routerLink="/deck-builder" severity="info" />
+        <p-button
+          label="Aller au Constructeur"
+          icon="pi pi-objects-column"
+          routerLink="/deck-builder"
+          severity="info"
+        />
       </div>
     }
   }

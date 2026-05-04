@@ -16,12 +16,7 @@
         [outlined]="true"
         (onClick)="confirmClearStats()"
       />
-      <p-button
-        label="Retour"
-        icon="pi pi-arrow-left"
-        severity="secondary"
-        (onClick)="goBack()"
-      />
+      <p-button label="Retour" icon="pi pi-arrow-left" severity="secondary" (onClick)="goBack()" />
     </div>
   </div>
 
@@ -36,126 +31,131 @@
       </p-tablist>
       <p-tabpanels>
         <p-tabpanel value="0">
-        <div class="overview-grid">
-          <p-card header="Parties Jouées">
-            <div class="stat-value">{{ playerStats.totalGames }}</div>
-            <div class="stat-label">Total</div>
-          </p-card>
+          <div class="overview-grid">
+            <p-card header="Parties Jouées">
+              <div class="stat-value">{{ playerStats.totalGames }}</div>
+              <div class="stat-label">Total</div>
+            </p-card>
 
-          <p-card header="Taux de Victoire">
-            <div class="stat-value" [class]="'text-' + getWinRateColor(playerStats.winRate)">
-              {{ (playerStats.winRate * 100).toFixed(1) }}%
-            </div>
-            <div class="stat-label">{{ playerStats.totalWins }}V / {{ playerStats.totalLosses }}D</div>
-          </p-card>
+            <p-card header="Taux de Victoire">
+              <div class="stat-value" [class]="'text-' + getWinRateColor(playerStats.winRate)">
+                {{ (playerStats.winRate * 100).toFixed(1) }}%
+              </div>
+              <div class="stat-label">
+                {{ playerStats.totalWins }}V / {{ playerStats.totalLosses }}D
+              </div>
+            </p-card>
 
-          <p-card header="Série Actuelle">
-            <div class="stat-value">{{ playerStats.currentWinStreak }}</div>
-            <div class="stat-label">Victoires consécutives</div>
-          </p-card>
+            <p-card header="Série Actuelle">
+              <div class="stat-value">{{ playerStats.currentWinStreak }}</div>
+              <div class="stat-label">Victoires consécutives</div>
+            </p-card>
 
-          <p-card header="Record">
-            <div class="stat-value">{{ playerStats.longestWinStreak }}</div>
-            <div class="stat-label">Meilleure série</div>
-          </p-card>
+            <p-card header="Record">
+              <div class="stat-value">{{ playerStats.longestWinStreak }}</div>
+              <div class="stat-label">Meilleure série</div>
+            </p-card>
 
-          <p-card header="Durée Moyenne">
-            <div class="stat-value">{{ playerStats.averageGameLength.toFixed(1) }}</div>
-            <div class="stat-label">Tours par partie</div>
-          </p-card>
+            <p-card header="Durée Moyenne">
+              <div class="stat-value">{{ playerStats.averageGameLength.toFixed(1) }}</div>
+              <div class="stat-label">Tours par partie</div>
+            </p-card>
 
-          <p-card header="Parties vs IA">
-            <div class="stat-value">{{ playerStats.aiGames }}</div>
-            <div class="stat-label">{{ playerStats.aiWins }} victoires</div>
-          </p-card>
-        </div>
+            <p-card header="Parties vs IA">
+              <div class="stat-value">{{ playerStats.aiGames }}</div>
+              <div class="stat-label">{{ playerStats.aiWins }} victoires</div>
+            </p-card>
+          </div>
         </p-tabpanel>
 
         <p-tabpanel value="1">
-        <p-table
-          [value]="playerStats.recentGames"
-          [paginator]="true"
-          [rows]="10"
-          [rowsPerPageOptions]="[5, 10, 20]"
-          styleClass="p-datatable-sm"
-        >
-          <ng-template pTemplate="header">
-            <tr>
-              <th>Date</th>
-              <th>Résultat</th>
-              <th>Adversaire</th>
-              <th>Type</th>
-              <th>Deck</th>
-              <th>Tours</th>
-              <th>Durée</th>
-              <th>Réputation</th>
-            </tr>
-          </ng-template>
-          <ng-template pTemplate="body" let-game>
-            <tr [class.victory-row]="game.won" [class.defeat-row]="!game.won">
-              <td>{{ formatDate(game.timestamp) }}</td>
-              <td>
-                <span [class]="game.won ? 'badge badge-success' : 'badge badge-danger'">
-                  {{ game.won ? 'Victoire' : 'Défaite' }}
-                </span>
-              </td>
-              <td>{{ game.opponentName }}</td>
-              <td>
-                <span class="badge badge-info">
-                  {{ game.isAiGame ? 'vs IA' : 'vs Joueur' }}
-                </span>
-              </td>
-              <td>{{ getDeckName(game.playerDeckId) }}</td>
-              <td>{{ game.turnCount }}</td>
-              <td>{{ formatDuration(game.duration) }}</td>
-              <td>
-                <span class="reputation-display">
-                  {{ game.finalReputation }} / {{ game.opponentFinalReputation }}
-                </span>
-              </td>
-            </tr>
-          </ng-template>
-          <ng-template pTemplate="emptymessage">
-            <tr>
-              <td colspan="8" class="empty-message">
-                Aucune partie enregistrée
-              </td>
-            </tr>
-          </ng-template>
-        </p-table>
+          <p-table
+            [value]="playerStats.recentGames"
+            [paginator]="true"
+            [rows]="10"
+            [rowsPerPageOptions]="[5, 10, 20]"
+            styleClass="p-datatable-sm"
+          >
+            <ng-template pTemplate="header">
+              <tr>
+                <th>Date</th>
+                <th>Résultat</th>
+                <th>Adversaire</th>
+                <th>Type</th>
+                <th>Deck</th>
+                <th>Tours</th>
+                <th>Durée</th>
+                <th>Réputation</th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-game>
+              <tr [class.victory-row]="game.won" [class.defeat-row]="!game.won">
+                <td>{{ formatDate(game.timestamp) }}</td>
+                <td>
+                  <span [class]="game.won ? 'badge badge-success' : 'badge badge-danger'">
+                    {{ game.won ? 'Victoire' : 'Défaite' }}
+                  </span>
+                </td>
+                <td>{{ game.opponentName }}</td>
+                <td>
+                  <span class="badge badge-info">
+                    {{ game.isAiGame ? 'vs IA' : 'vs Joueur' }}
+                  </span>
+                </td>
+                <td>{{ getDeckName(game.playerDeckId) }}</td>
+                <td>{{ game.turnCount }}</td>
+                <td>{{ formatDuration(game.duration) }}</td>
+                <td>
+                  <span class="reputation-display">
+                    {{ game.finalReputation }} / {{ game.opponentFinalReputation }}
+                  </span>
+                </td>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="emptymessage">
+              <tr>
+                <td colspan="8" class="empty-message">Aucune partie enregistrée</td>
+              </tr>
+            </ng-template>
+          </p-table>
         </p-tabpanel>
 
         <p-tabpanel value="2">
-        <div class="decks-stats">
-          @for (deckId of playerStats.favoriteDecks; track deckId) {
-            @if (getDeckName(deckId) !== 'Deck Inconnu') {
-              <p-card [header]="getDeckName(deckId)">
-                @if (statsService.getDeckStats(deckId); as deckStats) {
-                  <div class="deck-stats-grid">
-                    <div class="deck-stat">
-                      <div class="deck-stat-value">{{ deckStats.gamesPlayed }}</div>
-                      <div class="deck-stat-label">Parties</div>
-                    </div>
-                    <div class="deck-stat">
-                      <div class="deck-stat-value" [class]="'text-' + getWinRateColor(deckStats.winRate)">
-                        {{ (deckStats.winRate * 100).toFixed(1) }}%
+          <div class="decks-stats">
+            @for (deckId of playerStats.favoriteDecks; track deckId) {
+              @if (getDeckName(deckId) !== 'Deck Inconnu') {
+                <p-card [header]="getDeckName(deckId)">
+                  @if (statsService.getDeckStats(deckId); as deckStats) {
+                    <div class="deck-stats-grid">
+                      <div class="deck-stat">
+                        <div class="deck-stat-value">{{ deckStats.gamesPlayed }}</div>
+                        <div class="deck-stat-label">Parties</div>
                       </div>
-                      <div class="deck-stat-label">Taux de Victoire</div>
+                      <div class="deck-stat">
+                        <div
+                          class="deck-stat-value"
+                          [class]="'text-' + getWinRateColor(deckStats.winRate)"
+                        >
+                          {{ (deckStats.winRate * 100).toFixed(1) }}%
+                        </div>
+                        <div class="deck-stat-label">Taux de Victoire</div>
+                      </div>
+                      <div class="deck-stat">
+                        <div class="deck-stat-value">
+                          {{ deckStats.wins }}V / {{ deckStats.losses }}D
+                        </div>
+                        <div class="deck-stat-label">Résultats</div>
+                      </div>
+                      <div class="deck-stat">
+                        <div class="deck-stat-value">{{ deckStats.averageTurns.toFixed(1) }}</div>
+                        <div class="deck-stat-label">Tours Moy.</div>
+                      </div>
                     </div>
-                    <div class="deck-stat">
-                      <div class="deck-stat-value">{{ deckStats.wins }}V / {{ deckStats.losses }}D</div>
-                      <div class="deck-stat-label">Résultats</div>
-                    </div>
-                    <div class="deck-stat">
-                      <div class="deck-stat-value">{{ deckStats.averageTurns.toFixed(1) }}</div>
-                      <div class="deck-stat-label">Tours Moy.</div>
-                    </div>
-                  </div>
-                }
-              </p-card>
+                  }
+                </p-card>
+              }
             }
-          }
-        </div>
+          </div>
         </p-tabpanel>
 
         <p-tabpanel value="3">
@@ -168,11 +168,7 @@
             <div class="error-state">
               <i class="pi pi-exclamation-triangle"></i>
               <p>{{ serverError }}</p>
-              <p-button
-                label="Réessayer"
-                icon="pi pi-refresh"
-                (onClick)="loadServerStats()"
-              />
+              <p-button label="Réessayer" icon="pi pi-refresh" (onClick)="loadServerStats()" />
             </div>
           } @else {
             <p-table
@@ -201,7 +197,11 @@
                   <td class="wins">{{ player.wins }}</td>
                   <td class="losses">{{ player.losses }}</td>
                   <td>
-                    <span class="win-rate-badge" [class.high]="player.win_rate >= 60" [class.medium]="player.win_rate >= 40 && player.win_rate < 60">
+                    <span
+                      class="win-rate-badge"
+                      [class.high]="player.win_rate >= 60"
+                      [class.medium]="player.win_rate >= 40 && player.win_rate < 60"
+                    >
                       {{ player.win_rate.toFixed(1) }}%
                     </span>
                   </td>
@@ -228,11 +228,7 @@
             <div class="error-state">
               <i class="pi pi-exclamation-triangle"></i>
               <p>{{ serverError }}</p>
-              <p-button
-                label="Réessayer"
-                icon="pi pi-refresh"
-                (onClick)="loadServerStats()"
-              />
+              <p-button label="Réessayer" icon="pi pi-refresh" (onClick)="loadServerStats()" />
             </div>
           } @else {
             <p-table
@@ -267,9 +263,7 @@
               </ng-template>
               <ng-template pTemplate="emptymessage">
                 <tr>
-                  <td colspan="6" class="empty-message">
-                    Aucune partie récente enregistrée.
-                  </td>
+                  <td colspan="6" class="empty-message">Aucune partie récente enregistrée.</td>
                 </tr>
               </ng-template>
             </p-table>
@@ -280,14 +274,10 @@
   } @else {
     <p-card>
       <div class="empty-state">
-        <i class="pi pi-chart-line" style="font-size: 4rem; color: var(--text-color-secondary);"></i>
+        <i class="pi pi-chart-line" style="font-size: 4rem; color: var(--text-color-secondary)"></i>
         <h2>Aucune statistique disponible</h2>
         <p>Jouez votre première partie pour commencer à accumuler des statistiques !</p>
-        <p-button
-          label="Commencer une partie"
-          icon="pi pi-play"
-          (onClick)="goBack()"
-        />
+        <p-button label="Commencer une partie" icon="pi pi-play" (onClick)="goBack()" />
       </div>
     </p-card>
   }
@@ -307,10 +297,6 @@
       [outlined]="true"
       (onClick)="showClearDialog = false"
     />
-    <p-button
-      label="Confirmer"
-      severity="danger"
-      (onClick)="clearStats()"
-    />
+    <p-button label="Confirmer" severity="danger" (onClick)="clearStats()" />
   </ng-template>
 </p-dialog>

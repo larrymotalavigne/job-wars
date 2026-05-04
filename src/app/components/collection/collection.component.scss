@@ -166,7 +166,9 @@
 
   .card-wrapper {
     position: relative;
-    transition: transform 0.2s, filter 0.3s;
+    transition:
+      transform 0.2s,
+      filter 0.3s;
 
     &:hover {
       transform: scale(1.05);

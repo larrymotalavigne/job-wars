@@ -264,7 +264,9 @@
     align-items: flex-start;
     gap: 1rem;
 
-    h1 { font-size: 1.5rem; }
+    h1 {
+      font-size: 1.5rem;
+    }
 
     .season-info {
       font-size: 0.85rem;
@@ -304,7 +306,9 @@
 
       .col-mmr,
       .col-rank-before,
-      .col-rank-after { display: none; }
+      .col-rank-after {
+        display: none;
+      }
     }
   }
 }

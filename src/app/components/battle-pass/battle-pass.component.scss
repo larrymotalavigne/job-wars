@@ -223,7 +223,9 @@
     align-items: flex-start;
     gap: 0.5rem;
 
-    h1 { font-size: 1.5rem; }
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 
   .level-display {
@@ -234,7 +236,9 @@
 
     .level-badge {
       padding: 1rem;
-      .level-number { font-size: 2rem; }
+      .level-number {
+        font-size: 2rem;
+      }
     }
 
     .xp-info {

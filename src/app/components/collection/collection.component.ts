@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { CollectionService, CardCollectionEntry, CollectionStats } from '../../services/collection.service';
+import {
+  CollectionService,
+  CardCollectionEntry,
+  CollectionStats,
+} from '../../services/collection.service';
 import { StatsService } from '../../services/stats.service';
 import { CardService } from '../../services/card.service';
 import { Card, Rarity, Domain, CardType } from '../../models/card.model';
@@ -71,7 +75,7 @@ export class CollectionComponent implements OnInit {
     costMax: 10,
     searchTerm: '',
     sortBy: 'name',
-    sortOrder: 'asc'
+    sortOrder: 'asc',
   };
   costRange: number[] = [0, 10];
 
@@ -123,7 +127,7 @@ export class CollectionComponent implements OnInit {
   constructor(
     private collectionService: CollectionService,
     private cardService: CardService,
-    private statsService: StatsService
+    private statsService: StatsService,
   ) {}
 
   ngOnInit(): void {
@@ -138,16 +142,16 @@ export class CollectionComponent implements OnInit {
     // Get all cards with collection status
     const allGameCards = this.cardService.getAllCards();
     const unlockedCards = this.collectionService.getUnlockedCards();
-    const unlockedIds = new Set(unlockedCards.map(c => c.id));
+    const unlockedIds = new Set(unlockedCards.map((c) => c.id));
 
     const seenIds = new Set<string>();
     this.allCards = allGameCards
-      .filter(card => {
+      .filter((card) => {
         if (seenIds.has(card.id)) return false;
         seenIds.add(card.id);
         return true;
       })
-      .map(card => {
+      .map((card) => {
         const isUnlocked = unlockedIds.has(card.id);
         return {
           card,
@@ -178,7 +182,11 @@ export class CollectionComponent implements OnInit {
       const winsRequired = Math.max(5, Math.min(20, card.cost * 2));
       return { type: 'games_won', requirement: winsRequired, description: 'victoires' };
     } else {
-      return { type: 'achievement', requirement: 'win_streak_5', description: 'Série de 5 victoires' };
+      return {
+        type: 'achievement',
+        requirement: 'win_streak_5',
+        description: 'Série de 5 victoires',
+      };
     }
   }
 
@@ -235,7 +243,12 @@ export class CollectionComponent implements OnInit {
           comparison = a.card.cost - b.card.cost;
           break;
         case 'rarity':
-          const rarityOrder = { [Rarity.Common]: 0, [Rarity.Uncommon]: 1, [Rarity.Rare]: 2, [Rarity.Legendary]: 3 };
+          const rarityOrder = {
+            [Rarity.Common]: 0,
+            [Rarity.Uncommon]: 1,
+            [Rarity.Rare]: 2,
+            [Rarity.Legendary]: 3,
+          };
           comparison = rarityOrder[a.card.rarity] - rarityOrder[b.card.rarity];
           break;
         case 'unlocked_date':
@@ -355,7 +368,9 @@ export class CollectionComponent implements OnInit {
     return `${currentProgress}/${requirement} ${condition.description}`;
   }
 
-  getRarityColor(rarity: Rarity | string): 'success' | 'info' | 'warn' | 'danger' | 'secondary' | 'contrast' {
+  getRarityColor(
+    rarity: Rarity | string,
+  ): 'success' | 'info' | 'warn' | 'danger' | 'secondary' | 'contrast' {
     const r = typeof rarity === 'string' ? rarity : rarity;
     switch (r) {
       case Rarity.Common:
@@ -415,7 +430,7 @@ export class CollectionComponent implements OnInit {
       costMax: 10,
       searchTerm: '',
       sortBy: 'name',
-      sortOrder: 'asc'
+      sortOrder: 'asc',
     };
     this.costRange = [0, 10];
     this.applyFilters();

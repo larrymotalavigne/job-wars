@@ -1,7 +1,11 @@
 <div class="phase-bar">
   <div class="phase-left">
     <span class="turn-badge">Tour {{ state.turnNumber }}</span>
-    <span class="active-player" [class.p1]="state.activePlayerId === state.player1.id" [class.p2]="state.activePlayerId === state.player2.id">
+    <span
+      class="active-player"
+      [class.p1]="state.activePlayerId === state.player1.id"
+      [class.p2]="state.activePlayerId === state.player2.id"
+    >
       {{ activePlayer.name }}
     </span>
   </div>

@@ -19,23 +19,23 @@ export interface Quest {
   type: QuestType;
   title: string;
   description: string;
-  requirement: number;      // How many to complete (e.g., win 3 games)
-  progress: number;          // Current progress (0 to requirement)
-  completed: boolean;        // Progress >= requirement
-  claimed: boolean;          // Rewards collected
+  requirement: number; // How many to complete (e.g., win 3 games)
+  progress: number; // Current progress (0 to requirement)
+  completed: boolean; // Progress >= requirement
+  claimed: boolean; // Rewards collected
   reward: {
     coins: number;
     gems: number;
   };
-  expiresAt: number;         // Timestamp when quest expires
-  metadata?: QuestMetadata;  // Additional data (domain, etc.)
+  expiresAt: number; // Timestamp when quest expires
+  metadata?: QuestMetadata; // Additional data (domain, etc.)
 }
 
 /**
  * Quest-specific metadata
  */
 export interface QuestMetadata {
-  domain?: Domain;           // For domain-specific quests
+  domain?: Domain; // For domain-specific quests
   [key: string]: any;
 }
 
@@ -43,7 +43,7 @@ export interface QuestMetadata {
  * Daily reward for login streak
  */
 export interface DailyReward {
-  day: number;               // Day 1-7
+  day: number; // Day 1-7
   claimed: boolean;
   reward: {
     coins: number;
@@ -55,10 +55,10 @@ export interface DailyReward {
  * Daily quest state (persisted)
  */
 export interface DailyQuestState {
-  lastReset: number;         // Timestamp of last daily reset
-  dailyQuests: Quest[];      // Current 3 daily quests
-  loginStreak: number;       // Consecutive days logged in
-  lastLoginDate: string;     // YYYY-MM-DD format
+  lastReset: number; // Timestamp of last daily reset
+  dailyQuests: Quest[]; // Current 3 daily quests
+  loginStreak: number; // Consecutive days logged in
+  lastLoginDate: string; // YYYY-MM-DD format
   dailyRewards: DailyReward[]; // 7-day login rewards
 }
 
@@ -67,7 +67,7 @@ export interface DailyQuestState {
  */
 export interface QuestTemplate {
   type: QuestType;
-  titleTemplate: string;     // e.g., "Gagner {0} parties"
+  titleTemplate: string; // e.g., "Gagner {0} parties"
   descriptionTemplate: string;
   difficulty: 'easy' | 'medium' | 'hard';
   requirement: number;

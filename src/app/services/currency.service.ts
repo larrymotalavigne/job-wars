@@ -7,7 +7,7 @@ import { CurrencyBalance, CurrencyTransaction, CurrencyType } from '../models/cu
  * Manages coins and gems for the player with transaction history
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CurrencyService {
   private readonly STORAGE_KEY = 'jobwars-currency';
@@ -77,9 +77,11 @@ export class CurrencyService {
       ...currentBalance,
       coins: type === 'Pièces' ? currentBalance.coins + amount : currentBalance.coins,
       gems: type === 'Gemmes' ? currentBalance.gems + amount : currentBalance.gems,
-      lifetimeCoins: type === 'Pièces' ? currentBalance.lifetimeCoins + amount : currentBalance.lifetimeCoins,
-      lifetimeGems: type === 'Gemmes' ? currentBalance.lifetimeGems + amount : currentBalance.lifetimeGems,
-      lastUpdated: Date.now()
+      lifetimeCoins:
+        type === 'Pièces' ? currentBalance.lifetimeCoins + amount : currentBalance.lifetimeCoins,
+      lifetimeGems:
+        type === 'Gemmes' ? currentBalance.lifetimeGems + amount : currentBalance.lifetimeGems,
+      lastUpdated: Date.now(),
     };
 
     this.balanceSubject.next(newBalance);
@@ -92,7 +94,7 @@ export class CurrencyService {
       amount,
       reason,
       timestamp: Date.now(),
-      balance: type === 'Pièces' ? newBalance.coins : newBalance.gems
+      balance: type === 'Pièces' ? newBalance.coins : newBalance.gems,
     });
   }
 
@@ -118,7 +120,7 @@ export class CurrencyService {
       ...currentBalance,
       coins: type === 'Pièces' ? currentBalance.coins - amount : currentBalance.coins,
       gems: type === 'Gemmes' ? currentBalance.gems - amount : currentBalance.gems,
-      lastUpdated: Date.now()
+      lastUpdated: Date.now(),
     };
 
     this.balanceSubject.next(newBalance);
@@ -131,7 +133,7 @@ export class CurrencyService {
       amount: -amount,
       reason,
       timestamp: Date.now(),
-      balance: type === 'Pièces' ? newBalance.coins : newBalance.gems
+      balance: type === 'Pièces' ? newBalance.coins : newBalance.gems,
     });
 
     return true;
@@ -174,11 +176,11 @@ export class CurrencyService {
 
   private getDefaultBalance(): CurrencyBalance {
     return {
-      coins: 100,        // Starting coins
-      gems: 50,          // Starting gems
+      coins: 100, // Starting coins
+      gems: 50, // Starting gems
       lifetimeCoins: 100,
       lifetimeGems: 50,
-      lastUpdated: Date.now()
+      lastUpdated: Date.now(),
     };
   }
 

@@ -107,9 +107,9 @@ export interface GameState {
 // --- Keyword Detection ---
 export const KEYWORD_PATTERNS: Record<string, RegExp> = {
   'Première Frappe': /premi[eè]re frappe/i,
-  'Célérité': /c[eé]l[eé]rit[eé]/i,
-  'Construction': /construction/i,
-  'Portée': /port[eé]e/i,
+  Célérité: /c[eé]l[eé]rit[eé]/i,
+  Construction: /construction/i,
+  Portée: /port[eé]e/i,
 };
 
 export function detectKeywords(abilityText: string): string[] {

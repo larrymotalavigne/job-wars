@@ -39,7 +39,7 @@ export const POLICE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 2,
-    ability: 'Quand embauché : Regardez la main de l\'adversaire.',
+    ability: "Quand embauché : Regardez la main de l'adversaire.",
     flavorText: '« Les indices sont tous là. »',
     image: 'images/cards/po-003.png',
   },
@@ -71,7 +71,7 @@ export const POLICE_CARDS: Card[] = [
   },
   {
     id: 'po-006',
-    name: 'Chef d\'Équipe RAID',
+    name: "Chef d'Équipe RAID",
     domain: Domain.Police,
     type: CardType.Job,
     cost: 5,
@@ -91,7 +91,7 @@ export const POLICE_CARDS: Card[] = [
     rarity: Rarity.Rare,
     productivity: 3,
     resilience: 2,
-    ability: 'Caché : Joué face cachée, révélé lors de l\'attaque.',
+    ability: "Caché : Joué face cachée, révélé lors de l'attaque.",
     flavorText: '« Vous ne me verrez jamais venir. »',
     image: 'images/cards/po-007.png',
   },
@@ -143,8 +143,9 @@ export const POLICE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 2,
     resilience: 2,
-    ability: 'Quand embauché : Regardez les 3 premières cartes du deck adverse. Remettez-les dans l\'ordre de votre choix.',
-    flavorText: '« L\'information, c\'est le pouvoir. »',
+    ability:
+      "Quand embauché : Regardez les 3 premières cartes du deck adverse. Remettez-les dans l'ordre de votre choix.",
+    flavorText: "« L'information, c'est le pouvoir. »",
     image: 'images/cards/po-014.png',
   },
   {
@@ -156,8 +157,9 @@ export const POLICE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 1,
     resilience: 4,
-    ability: 'Tant que le Négociateur est en jeu, les Métiers adverses avec 2 ou moins de Productivité ne peuvent pas attaquer.',
-    flavorText: '« Posez l\'arme. On va en parler calmement. »',
+    ability:
+      'Tant que le Négociateur est en jeu, les Métiers adverses avec 2 ou moins de Productivité ne peuvent pas attaquer.',
+    flavorText: "« Posez l'arme. On va en parler calmement. »",
     image: 'images/cards/po-015.png',
   },
   {
@@ -169,8 +171,9 @@ export const POLICE_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 1,
     resilience: 3,
-    ability: 'Quand embauché : Regardez la première carte du deck adverse et défaussez-la ou remettez-la dessus.',
-    flavorText: '« L\'ADN ne ment jamais. »',
+    ability:
+      'Quand embauché : Regardez la première carte du deck adverse et défaussez-la ou remettez-la dessus.',
+    flavorText: "« L'ADN ne ment jamais. »",
     image: 'images/cards/po-016.png',
   },
   {
@@ -195,7 +198,8 @@ export const POLICE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 2,
     resilience: 3,
-    ability: 'Quand l\'adversaire pioche une carte, vous pouvez regarder cette carte. Une fois par tour, annulez l\'effet d\'un Outil adverse.',
+    ability:
+      "Quand l'adversaire pioche une carte, vous pouvez regarder cette carte. Une fois par tour, annulez l'effet d'un Outil adverse.",
     flavorText: '« Chaque octet laisse une trace. »',
     image: 'images/cards/po-018.png',
   },
@@ -234,8 +238,9 @@ export const POLICE_CARDS: Card[] = [
     rarity: Rarity.Rare,
     productivity: 3,
     resilience: 5,
-    ability: 'Interception : Vous pouvez rediriger les attaques ciblant un autre Métier Police vers le Garde du Corps.',
-    flavorText: '« Passez par moi d\'abord. »',
+    ability:
+      'Interception : Vous pouvez rediriger les attaques ciblant un autre Métier Police vers le Garde du Corps.',
+    flavorText: "« Passez par moi d'abord. »",
     image: 'images/cards/po-021.png',
   },
   {
@@ -247,20 +252,22 @@ export const POLICE_CARDS: Card[] = [
     rarity: Rarity.Rare,
     productivity: 4,
     resilience: 5,
-    ability: 'Tous les Métiers Police gagnent +0/+1. Quand embauché : Engagez jusqu\'à deux Métiers adverses.',
+    ability:
+      "Tous les Métiers Police gagnent +0/+1. Quand embauché : Engagez jusqu'à deux Métiers adverses.",
     flavorText: '« Le commissaire est absent ? Je prends le relais. »',
     image: 'images/cards/po-022.png',
   },
   {
     id: 'po-023',
-    name: 'Tireur d\'Élite',
+    name: "Tireur d'Élite",
     domain: Domain.Police,
     type: CardType.Job,
     cost: 6,
     rarity: Rarity.Legendary,
     productivity: 6,
     resilience: 2,
-    ability: 'Portée (ne subit pas de dégâts en retour lors de l\'attaque). Quand embauché : Inflige 3 dégâts à un Métier adverse.',
+    ability:
+      "Portée (ne subit pas de dégâts en retour lors de l'attaque). Quand embauché : Inflige 3 dégâts à un Métier adverse.",
     flavorText: '« Un tir. Une cible. Aucune erreur. »',
     image: 'images/cards/po-023.png',
   },
@@ -285,7 +292,7 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 3,
     rarity: Rarity.Uncommon,
-    ability: 'Regardez la main de l\'adversaire au début de chaque tour.',
+    ability: "Regardez la main de l'adversaire au début de chaque tour.",
     flavorText: '« Chaque mouvement est surveillé. »',
     image: 'images/cards/po-010.png',
   },
@@ -296,7 +303,8 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 1,
     rarity: Rarity.Common,
-    ability: 'Engagez un Métier adverse. Ce Métier ne se désengage pas au prochain tour de son contrôleur.',
+    ability:
+      'Engagez un Métier adverse. Ce Métier ne se désengage pas au prochain tour de son contrôleur.',
     flavorText: '« Vous avez le droit de garder le silence. »',
     image: 'images/cards/po-024.png',
   },
@@ -307,7 +315,8 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 1,
     rarity: Rarity.Common,
-    ability: 'Piochez une carte. Si c\'est un Métier Police, il gagne Célérité jusqu\'à la fin du tour.',
+    ability:
+      "Piochez une carte. Si c'est un Métier Police, il gagne Célérité jusqu'à la fin du tour.",
     flavorText: '« Ici Bravo-6, renforts demandés. »',
     image: 'images/cards/po-025.png',
   },
@@ -340,7 +349,8 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 3,
     rarity: Rarity.Uncommon,
-    ability: 'Permanent. Quand un Métier adverse est embauché, révélez-le et infligez-lui 1 dégât si sa Résilience est de 3 ou moins.',
+    ability:
+      'Permanent. Quand un Métier adverse est embauché, révélez-le et infligez-lui 1 dégât si sa Résilience est de 3 ou moins.',
     flavorText: '« Nous avons une correspondance dans la base. »',
     image: 'images/cards/po-028.png',
   },
@@ -351,7 +361,8 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 4,
     rarity: Rarity.Uncommon,
-    ability: 'Permanent. Les Métiers adverses avec la capacité Caché sont révélés. Vos Métiers Police gagnent +1/+0 contre les Métiers révélés de cette façon.',
+    ability:
+      'Permanent. Les Métiers adverses avec la capacité Caché sont révélés. Vos Métiers Police gagnent +1/+0 contre les Métiers révélés de cette façon.',
     flavorText: '« Œil dans le ciel, zéro angle mort. »',
     image: 'images/cards/po-029.png',
   },
@@ -373,7 +384,8 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 2,
     rarity: Rarity.Common,
-    ability: 'Un Métier Police ciblé gagne +2/+0 en permanence. Quand ce Métier attaque, le défenseur perd Première Frappe jusqu\'à la fin du tour.',
+    ability:
+      "Un Métier Police ciblé gagne +2/+0 en permanence. Quand ce Métier attaque, le défenseur perd Première Frappe jusqu'à la fin du tour.",
     flavorText: '« Outil de dissuasion standard. »',
     image: 'images/cards/po-031.png',
   },
@@ -384,18 +396,20 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 2,
     rarity: Rarity.Common,
-    ability: 'Permanent. Les Métiers adverses avec Célérité perdent cette capacité tant que le Radar Routier est en jeu.',
+    ability:
+      'Permanent. Les Métiers adverses avec Célérité perdent cette capacité tant que le Radar Routier est en jeu.',
     flavorText: '« Flash ! Excès de vitesse détecté. »',
     image: 'images/cards/po-032.png',
   },
   {
     id: 'po-033',
-    name: 'Kit d\'Empreintes',
+    name: "Kit d'Empreintes",
     domain: Domain.Police,
     type: CardType.Tool,
     cost: 3,
     rarity: Rarity.Uncommon,
-    ability: 'Choisissez un Métier adverse. Son contrôleur révèle sa main. Détruisez tous les Outils en main qui ciblent ce Métier.',
+    ability:
+      'Choisissez un Métier adverse. Son contrôleur révèle sa main. Détruisez tous les Outils en main qui ciblent ce Métier.',
     flavorText: '« Relevé, analysé, identifié. »',
     image: 'images/cards/po-033.png',
   },
@@ -420,8 +434,9 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Event,
     cost: 2,
     rarity: Rarity.Common,
-    effect: 'Engagez tous les Métiers adverses de coût 2 ou moins. Ils ne se désengagent pas au prochain tour.',
-    flavorText: '« Papiers du véhicule, permis de conduire, s\'il vous plaît. »',
+    effect:
+      'Engagez tous les Métiers adverses de coût 2 ou moins. Ils ne se désengagent pas au prochain tour.',
+    flavorText: "« Papiers du véhicule, permis de conduire, s'il vous plaît. »",
     image: 'images/cards/po-034.png',
   },
   {
@@ -431,7 +446,8 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Event,
     cost: 3,
     rarity: Rarity.Uncommon,
-    effect: 'Choisissez un Métier adverse. Son contrôleur doit le placer au-dessus de son deck. Tous vos Métiers Police gagnent +1/+0 jusqu\'à la fin du tour.',
+    effect:
+      "Choisissez un Métier adverse. Son contrôleur doit le placer au-dessus de son deck. Tous vos Métiers Police gagnent +1/+0 jusqu'à la fin du tour.",
     flavorText: '« Alerte déclenchée. Tous les services sont mobilisés. »',
     image: 'images/cards/po-035.png',
   },
@@ -442,7 +458,7 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Event,
     cost: 3,
     rarity: Rarity.Common,
-    effect: 'Détruisez jusqu\'à deux Outils adverses.',
+    effect: "Détruisez jusqu'à deux Outils adverses.",
     flavorText: '« Retournez chaque tiroir, chaque placard. On trouvera. »',
     image: 'images/cards/po-036.png',
   },
@@ -464,7 +480,8 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Event,
     cost: 5,
     rarity: Rarity.Rare,
-    effect: 'Choisissez un Métier adverse. Infligez-lui des dégâts égaux à la Productivité de votre Métier Police le plus puissant. Si le Métier adverse est détruit, piochez 2 cartes.',
+    effect:
+      'Choisissez un Métier adverse. Infligez-lui des dégâts égaux à la Productivité de votre Métier Police le plus puissant. Si le Métier adverse est détruit, piochez 2 cartes.',
     flavorText: '« Accélérez ! On les perd pas de vue ! »',
     image: 'images/cards/po-038.png',
   },
@@ -475,8 +492,9 @@ export const POLICE_CARDS: Card[] = [
     type: CardType.Event,
     cost: 7,
     rarity: Rarity.Legendary,
-    effect: 'Détruisez tous les Métiers adverses de coût 4 ou moins. Pour chaque Métier détruit, piochez une carte.',
-    flavorText: '« Ce soir, personne ne s\'échappe. Fermez toutes les issues. »',
+    effect:
+      'Détruisez tous les Métiers adverses de coût 4 ou moins. Pour chaque Métier détruit, piochez une carte.',
+    flavorText: "« Ce soir, personne ne s'échappe. Fermez toutes les issues. »",
     image: 'images/cards/po-039.png',
   },
   // ── Extended Collection (po-041 → po-100) ──
@@ -555,7 +573,7 @@ export const POLICE_CARDS: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: 'Quand embauché : Regardez 2 cartes du deck adverse.',
-    flavorText: '« J\'ai suivi la piste. Voici mon rapport. »',
+    flavorText: "« J'ai suivi la piste. Voici mon rapport. »",
     image: 'images/cards/po-046.png',
   },
   {
@@ -659,7 +677,7 @@ export const POLICE_CARDS: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: '',
-    flavorText: '« Tout est calme pour l\'instant. »',
+    flavorText: "« Tout est calme pour l'instant. »",
     image: 'images/cards/po-054.png',
   },
   {
@@ -711,7 +729,7 @@ export const POLICE_CARDS: Card[] = [
     productivity: 5,
     resilience: 5,
     ability: 'Première Frappe. Portée.',
-    flavorText: '« Intervention d\'élite. Précision maximale. »',
+    flavorText: "« Intervention d'élite. Précision maximale. »",
     image: 'images/cards/po-058.png',
   },
   {
@@ -750,7 +768,7 @@ export const POLICE_CARDS: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: '',
-    flavorText: '« Permis et carte grise, s\'il vous plaît. »',
+    flavorText: "« Permis et carte grise, s'il vous plaît. »",
     image: 'images/cards/po-061.png',
   },
   {
@@ -776,7 +794,7 @@ export const POLICE_CARDS: Card[] = [
     productivity: 3,
     resilience: 4,
     ability: 'Construction',
-    flavorText: '« L\'expérience compte plus que tout. »',
+    flavorText: "« L'expérience compte plus que tout. »",
     image: 'images/cards/po-063.png',
   },
   {
@@ -815,7 +833,7 @@ export const POLICE_CARDS: Card[] = [
     productivity: 3,
     resilience: 3,
     ability: '',
-    flavorText: '« Maintien de l\'ordre. Formation de bouclier. »',
+    flavorText: "« Maintien de l'ordre. Formation de bouclier. »",
     image: 'images/cards/po-066.png',
   },
   {
@@ -963,7 +981,7 @@ export const POLICE_CARDS: Card[] = [
   },
   {
     id: 'po-078',
-    name: 'Agent Motard d\'Escorte',
+    name: "Agent Motard d'Escorte",
     domain: Domain.Police,
     type: CardType.Job,
     cost: 3,
@@ -989,7 +1007,7 @@ export const POLICE_CARDS: Card[] = [
   },
   {
     id: 'po-080',
-    name: 'Agent d\'Intervention',
+    name: "Agent d'Intervention",
     domain: Domain.Police,
     type: CardType.Job,
     cost: 4,
@@ -1035,7 +1053,7 @@ export const POLICE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 2,
     resilience: 3,
-    ability: 'Quand embauché : L\'adversaire défausse 1 carte.',
+    ability: "Quand embauché : L'adversaire défausse 1 carte.",
     flavorText: '« Saisie des avoirs. Comptes gelés. »',
     image: 'images/cards/po-083.png',
   },
@@ -1153,7 +1171,7 @@ export const POLICE_CARDS: Card[] = [
     productivity: 3,
     resilience: 5,
     ability: 'Annule tous les dégâts pour vos Métiers ce tour.',
-    flavorText: '« Plan d\'urgence activé. Gestion de crise. »',
+    flavorText: "« Plan d'urgence activé. Gestion de crise. »",
     image: 'images/cards/po-092.png',
   },
   {
@@ -1249,7 +1267,7 @@ export const POLICE_CARDS: Card[] = [
   },
   {
     id: 'po-100',
-    name: 'Ministre de l\'Intérieur',
+    name: "Ministre de l'Intérieur",
     domain: Domain.Police,
     type: CardType.Job,
     cost: 10,
@@ -1259,4 +1277,5 @@ export const POLICE_CARDS: Card[] = [
     ability: 'Tous vos Métiers coûtent 3 de moins. Vos Métiers Police gagnent +3/+3 et Portée.',
     flavorText: '« Place Beauvau. Sécurité nationale sous contrôle. »',
     image: 'images/cards/po-100.png',
-  },];
+  },
+];

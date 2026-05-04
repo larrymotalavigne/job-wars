@@ -8,7 +8,7 @@ export enum RankTier {
   Gold = 'Or',
   Platinum = 'Platine',
   Diamond = 'Diamant',
-  Master = 'Maître'
+  Master = 'Maître',
 }
 
 /**
@@ -16,9 +16,9 @@ export enum RankTier {
  */
 export interface RankInfo {
   tier: RankTier;
-  division: number;      // 1-3 (3 is lowest in tier, 1 is highest)
-  mmr: number;           // Match Making Rating (ELO-based)
-  stars: number;         // Current stars in division
+  division: number; // 1-3 (3 is lowest in tier, 1 is highest)
+  mmr: number; // Match Making Rating (ELO-based)
+  stars: number; // Current stars in division
   starsRequired: number; // Stars needed to advance
 }
 
@@ -31,9 +31,9 @@ export interface RankedMatch {
   result: 'win' | 'loss';
   opponentName: string;
   opponentMMR: number;
-  mmrChange: number;     // Positive for win, negative for loss
-  rankBefore: string;    // e.g., "Gold 2"
-  rankAfter: string;     // e.g., "Gold 1"
+  mmrChange: number; // Positive for win, negative for loss
+  rankBefore: string; // e.g., "Gold 2"
+  rankAfter: string; // e.g., "Gold 1"
 }
 
 /**
@@ -42,7 +42,7 @@ export interface RankedMatch {
 export interface RankedStats {
   currentRank: RankInfo;
   seasonHighRank: RankInfo;
-  seasonId: string;           // Current season identifier
+  seasonId: string; // Current season identifier
   rankedGames: number;
   rankedWins: number;
   matchHistory: RankedMatch[]; // Last 20 matches
@@ -68,7 +68,7 @@ export const MMR_RANGES: Record<RankTier, { min: number; max: number }> = {
   [RankTier.Gold]: { min: 1300, max: 1599 },
   [RankTier.Platinum]: { min: 1600, max: 1899 },
   [RankTier.Diamond]: { min: 1900, max: 2199 },
-  [RankTier.Master]: { min: 2200, max: 9999 }
+  [RankTier.Master]: { min: 2200, max: 9999 },
 };
 
 /**
@@ -80,7 +80,7 @@ export const STARS_PER_TIER: Record<RankTier, number> = {
   [RankTier.Gold]: 4,
   [RankTier.Platinum]: 5,
   [RankTier.Diamond]: 5,
-  [RankTier.Master]: 5
+  [RankTier.Master]: 5,
 };
 
 /**

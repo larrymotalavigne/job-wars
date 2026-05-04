@@ -1,16 +1,31 @@
 <!-- CLASSIQUE design (MTG-inspired traditional) -->
-<div class="card-frame classique" *ngIf="design === 'classique'"
-     [class.selected]="selected"
-     [style.border-color]="colors.primary">
-  <div class="card-header" [style.background]="'linear-gradient(135deg, ' + colors.primary + ', ' + colors.accent + ')'">
+<div
+  class="card-frame classique"
+  *ngIf="design === 'classique'"
+  [class.selected]="selected"
+  [style.border-color]="colors.primary"
+>
+  <div
+    class="card-header"
+    [style.background]="'linear-gradient(135deg, ' + colors.primary + ', ' + colors.accent + ')'"
+  >
     <span class="card-cost">{{ card.cost }}</span>
     <span class="card-name">{{ card.name }}</span>
   </div>
   <div class="card-art" [style.background]="colors.secondary">
     <img *ngIf="imageSrc" [src]="imageSrc" [alt]="card.name" class="card-image" />
-    <i *ngIf="!imageSrc" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
+    <i
+      *ngIf="!imageSrc"
+      [class]="domainIcon"
+      class="domain-icon"
+      [style.color]="colors.primary"
+    ></i>
   </div>
-  <div class="card-type-line" [style.background]="colors.secondary" [style.border-color]="colors.primary">
+  <div
+    class="card-type-line"
+    [style.background]="colors.secondary"
+    [style.border-color]="colors.primary"
+  >
     <span class="card-type">{{ card.type }} — {{ card.domain }}</span>
     <span class="rarity-gem" [style.background]="rarityColor"></span>
   </div>
@@ -26,13 +41,21 @@
 </div>
 
 <!-- MODERNE design (minimalist, clean, large art) -->
-<div class="card-frame moderne" *ngIf="design === 'moderne'"
-     [class.selected]="selected"
-     [style.border-color]="colors.primary">
+<div
+  class="card-frame moderne"
+  *ngIf="design === 'moderne'"
+  [class.selected]="selected"
+  [style.border-color]="colors.primary"
+>
   <div class="moderne-cost" [style.background]="colors.primary">{{ card.cost }}</div>
   <div class="card-art moderne-art" [style.background]="colors.secondary">
     <img *ngIf="imageSrc" [src]="imageSrc" [alt]="card.name" class="card-image" />
-    <i *ngIf="!imageSrc" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
+    <i
+      *ngIf="!imageSrc"
+      [class]="domainIcon"
+      class="domain-icon"
+      [style.color]="colors.primary"
+    ></i>
   </div>
   <div class="moderne-body">
     <div class="moderne-name">{{ card.name }}</div>
@@ -50,10 +73,13 @@
 </div>
 
 <!-- RETRO design (pixel art borders, chunky) -->
-<div class="card-frame retro" *ngIf="design === 'retro'"
-     [class.selected]="selected"
-     [style.border-color]="colors.primary"
-     [style.background]="colors.secondary">
+<div
+  class="card-frame retro"
+  *ngIf="design === 'retro'"
+  [class.selected]="selected"
+  [style.border-color]="colors.primary"
+  [style.background]="colors.secondary"
+>
   <div class="retro-top" [style.background]="colors.primary">
     <span class="retro-cost">★{{ card.cost }}</span>
     <span class="retro-name">{{ card.name }}</span>
@@ -71,21 +97,32 @@
   </div>
   <div class="retro-footer" [style.background]="colors.primary">
     <span class="retro-rarity">{{ card.rarity }}</span>
-    <span *ngIf="isJob && jobCard" class="retro-stats">⚔{{ jobCard.productivity }} 🛡{{ jobCard.resilience }}</span>
+    <span *ngIf="isJob && jobCard" class="retro-stats"
+      >⚔{{ jobCard.productivity }} 🛡{{ jobCard.resilience }}</span
+    >
   </div>
 </div>
 
 <!-- ELEGANT design (dark theme, gold accents) -->
-<div class="card-frame elegant" *ngIf="design === 'elegant'"
-     [class.selected]="selected">
+<div class="card-frame elegant" *ngIf="design === 'elegant'" [class.selected]="selected">
   <div class="elegant-border" [style.border-color]="colors.primary">
     <div class="elegant-header">
-      <span class="elegant-cost" [style.border-color]="colors.primary" [style.color]="colors.primary">{{ card.cost }}</span>
+      <span
+        class="elegant-cost"
+        [style.border-color]="colors.primary"
+        [style.color]="colors.primary"
+        >{{ card.cost }}</span
+      >
       <span class="elegant-name">{{ card.name }}</span>
     </div>
     <div class="elegant-art">
       <img *ngIf="imageSrc" [src]="imageSrc" [alt]="card.name" class="card-image" />
-      <i *ngIf="!imageSrc" [class]="domainIcon" class="domain-icon" [style.color]="colors.primary"></i>
+      <i
+        *ngIf="!imageSrc"
+        [class]="domainIcon"
+        class="domain-icon"
+        [style.color]="colors.primary"
+      ></i>
     </div>
     <div class="elegant-divider" [style.background]="colors.primary"></div>
     <div class="elegant-type" [style.color]="colors.primary">

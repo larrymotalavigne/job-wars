@@ -2,12 +2,7 @@ import { Injectable, OnDestroy } from '@angular/core';
 import { Subscription, timer } from 'rxjs';
 import { GameService } from './game.service';
 import { EffectService } from './effect.service';
-import {
-  GameState,
-  GamePhase,
-  CardInstance,
-  PlayerState,
-} from '../models/game.model';
+import { GameState, GamePhase, CardInstance, PlayerState } from '../models/game.model';
 import { isJobCard } from '../models/card.model';
 import { EffectType, TargetType } from '../models/effect.model';
 
@@ -29,7 +24,7 @@ export class AiService implements OnDestroy {
   activate(): void {
     if (this.active) return;
     this.active = true;
-    this.sub = this.gameService.gameState$.subscribe(state => {
+    this.sub = this.gameService.gameState$.subscribe((state) => {
       if (state && !this.acting && !this.paused) {
         this.evaluate(state);
       }
@@ -129,9 +124,7 @@ export class AiService implements OnDestroy {
 
   private doMulligan(state: GameState): void {
     const hand = state.player2.hand;
-    const toReplace = hand
-      .filter(c => c.card.cost > 3)
-      .map(c => c.instanceId);
+    const toReplace = hand.filter((c) => c.card.cost > 3).map((c) => c.instanceId);
     this.gameService.mulligan(AI_PLAYER_ID, toReplace);
   }
 
@@ -140,7 +133,7 @@ export class AiService implements OnDestroy {
   private playCards(state: GameState): void {
     const player = state.player2;
     const affordable = player.hand
-      .filter(c => c.card.cost <= player.budgetRemaining)
+      .filter((c) => c.card.cost <= player.budgetRemaining)
       .sort((a, b) => a.card.cost - b.card.cost);
 
     if (affordable.length > 0) {
@@ -155,7 +148,7 @@ export class AiService implements OnDestroy {
 
   private declareAttacks(state: GameState): void {
     const player = state.player2;
-    const eligible = player.field.filter(c => this.gameService.canAttack(c.instanceId));
+    const eligible = player.field.filter((c) => this.gameService.canAttack(c.instanceId));
 
     for (const card of eligible) {
       this.gameService.declareAttacker(card.instanceId);
@@ -173,15 +166,17 @@ export class AiService implements OnDestroy {
     }
 
     const aiPlayer = state.player2;
-    const availableBlockers = aiPlayer.field.filter(c =>
-      this.gameService.canBlock(c.instanceId),
-    );
+    const availableBlockers = aiPlayer.field.filter((c) => this.gameService.canBlock(c.instanceId));
 
     // Sort attackers by productivity descending (block biggest threats first)
     const attackers = state.combat.attackers
-      .map(a => this.findCard(a.attackerInstanceId, state))
+      .map((a) => this.findCard(a.attackerInstanceId, state))
       .filter((c): c is CardInstance => c !== null && isJobCard(c.card))
-      .sort((a, b) => this.gameService.getEffectiveProductivity(b) - this.gameService.getEffectiveProductivity(a));
+      .sort(
+        (a, b) =>
+          this.gameService.getEffectiveProductivity(b) -
+          this.gameService.getEffectiveProductivity(a),
+      );
 
     const usedBlockers = new Set<string>();
 
@@ -235,7 +230,7 @@ export class AiService implements OnDestroy {
 
     // Gather valid targets
     const allField = [...state.player1.field, ...state.player2.field];
-    const validTargets = allField.filter(c =>
+    const validTargets = allField.filter((c) =>
       this.effectService.isValidTarget(state.pendingEffect!, c.instanceId, state),
     );
 
@@ -248,12 +243,16 @@ export class AiService implements OnDestroy {
     if (isOffensive) {
       // Pick highest productivity enemy
       chosen = validTargets.sort(
-        (a, b) => this.gameService.getEffectiveProductivity(b) - this.gameService.getEffectiveProductivity(a),
+        (a, b) =>
+          this.gameService.getEffectiveProductivity(b) -
+          this.gameService.getEffectiveProductivity(a),
       )[0];
     } else {
       // Buff → pick weakest ally
       chosen = validTargets.sort(
-        (a, b) => this.gameService.getEffectiveProductivity(a) - this.gameService.getEffectiveProductivity(b),
+        (a, b) =>
+          this.gameService.getEffectiveProductivity(a) -
+          this.gameService.getEffectiveProductivity(b),
       )[0];
     }
 
@@ -264,7 +263,7 @@ export class AiService implements OnDestroy {
 
   private findCard(instanceId: string, state: GameState): CardInstance | null {
     for (const player of [state.player1, state.player2]) {
-      const card = player.field.find(c => c.instanceId === instanceId);
+      const card = player.field.find((c) => c.instanceId === instanceId);
       if (card) return card;
     }
     return null;

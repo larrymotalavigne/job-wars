@@ -13,7 +13,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource.',
     flavorText: 'Chaque rue est une scène.',
-    image: 'arts/ar-001.jpg'
+    image: 'arts/ar-001.jpg',
   },
   {
     id: 'ar-002',
@@ -26,7 +26,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Les autres cartes Arts que vous contrôlez gagnent +1 Productivité.',
     flavorText: 'La musique adoucit les mœurs.',
-    image: 'arts/ar-002.jpg'
+    image: 'arts/ar-002.jpg',
   },
   {
     id: 'ar-003',
@@ -39,7 +39,7 @@ export const artsCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Apprendre à voir différemment.',
-    image: 'arts/ar-003.jpg'
+    image: 'arts/ar-003.jpg',
   },
   {
     id: 'ar-004',
@@ -52,7 +52,7 @@ export const artsCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, cette carte gagne +1 Productivité.',
     flavorText: 'Chaque mouvement est une expression.',
-    image: 'arts/ar-004.jpg'
+    image: 'arts/ar-004.jpg',
   },
   {
     id: 'ar-005',
@@ -65,7 +65,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Arts, piochez une carte.',
     flavorText: 'Les mots créent des mondes.',
-    image: 'arts/ar-005.jpg'
+    image: 'arts/ar-005.jpg',
   },
   {
     id: 'ar-006',
@@ -78,7 +78,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, regardez les 2 premières cartes de votre deck.',
     flavorText: 'Incarner mille vies.',
-    image: 'arts/ar-006.jpg'
+    image: 'arts/ar-006.jpg',
   },
   {
     id: 'ar-007',
@@ -90,8 +90,8 @@ export const artsCards: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Au début de votre tour, regardez la première carte de votre deck.',
-    flavorText: 'Capturer l\'instant.',
-    image: 'arts/ar-007.jpg'
+    flavorText: "Capturer l'instant.",
+    image: 'arts/ar-007.jpg',
   },
   {
     id: 'ar-008',
@@ -103,8 +103,8 @@ export const artsCards: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Les cartes Arts que vous contrôlez gagnent +1 Résilience.',
-    flavorText: 'L\'harmonie des voix.',
-    image: 'arts/ar-008.jpg'
+    flavorText: "L'harmonie des voix.",
+    image: 'arts/ar-008.jpg',
   },
   {
     id: 'ar-009',
@@ -117,7 +117,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource.',
     flavorText: 'Donner vie aux idées.',
-    image: 'arts/ar-009.jpg'
+    image: 'arts/ar-009.jpg',
   },
   {
     id: 'ar-010',
@@ -130,7 +130,7 @@ export const artsCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
     flavorText: 'Façonner la matière.',
-    image: 'arts/ar-010.jpg'
+    image: 'arts/ar-010.jpg',
   },
   {
     id: 'ar-011',
@@ -143,7 +143,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, elle gagne +1 Productivité.',
     flavorText: 'La ville est ma toile.',
-    image: 'arts/ar-011.jpg'
+    image: 'arts/ar-011.jpg',
   },
   {
     id: 'ar-012',
@@ -155,8 +155,8 @@ export const artsCards: Card[] = [
     productivity: 1,
     resilience: 1,
     ability: 'Quand vous jouez une carte Arts, gagnez 1 ressource.',
-    flavorText: 'Les vers touchent l\'âme.',
-    image: 'arts/ar-012.jpg'
+    flavorText: "Les vers touchent l'âme.",
+    image: 'arts/ar-012.jpg',
   },
   {
     id: 'ar-013',
@@ -167,9 +167,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Au début de votre tour, les cartes Arts gagnent +1 Productivité jusqu\'à la fin du tour.',
-    flavorText: 'Mixer les sons, créer l\'ambiance.',
-    image: 'arts/ar-013.jpg'
+    ability:
+      "Au début de votre tour, les cartes Arts gagnent +1 Productivité jusqu'à la fin du tour.",
+    flavorText: "Mixer les sons, créer l'ambiance.",
+    image: 'arts/ar-013.jpg',
   },
   {
     id: 'ar-014',
@@ -181,8 +182,8 @@ export const artsCards: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
-    flavorText: 'L\'argile prend forme.',
-    image: 'arts/ar-014.jpg'
+    flavorText: "L'argile prend forme.",
+    image: 'arts/ar-014.jpg',
   },
   {
     id: 'ar-015',
@@ -195,7 +196,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Arts, piochez une carte.',
     flavorText: 'Raconter des histoires en images.',
-    image: 'arts/ar-015.jpg'
+    image: 'arts/ar-015.jpg',
   },
   {
     id: 'ar-016',
@@ -207,8 +208,8 @@ export const artsCards: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
-    flavorText: 'Chanter pour l\'amour de la musique.',
-    image: 'arts/ar-016.jpg'
+    flavorText: "Chanter pour l'amour de la musique.",
+    image: 'arts/ar-016.jpg',
   },
   {
     id: 'ar-017',
@@ -221,7 +222,7 @@ export const artsCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, regardez les 3 premières cartes de votre deck.',
     flavorText: 'Chaque toile est unique.',
-    image: 'arts/ar-017.jpg'
+    image: 'arts/ar-017.jpg',
   },
   {
     id: 'ar-018',
@@ -234,7 +235,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Arts, gagnez 1 ressource.',
     flavorText: 'Le design au service du message.',
-    image: 'arts/ar-018.jpg'
+    image: 'arts/ar-018.jpg',
   },
   {
     id: 'ar-019',
@@ -247,7 +248,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, regardez les 2 premières cartes de votre deck.',
     flavorText: 'Défier la gravité.',
-    image: 'arts/ar-019.jpg'
+    image: 'arts/ar-019.jpg',
   },
   {
     id: 'ar-020',
@@ -260,7 +261,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Au début de votre tour, regardez les 2 premières cartes de votre deck.',
     flavorText: 'Capturer le mouvement.',
-    image: 'arts/ar-020.jpg'
+    image: 'arts/ar-020.jpg',
   },
   {
     id: 'ar-021',
@@ -272,8 +273,8 @@ export const artsCards: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, elle gagne +1 Résilience.',
-    flavorText: 'L\'art sur la peau.',
-    image: 'arts/ar-021.jpg'
+    flavorText: "L'art sur la peau.",
+    image: 'arts/ar-021.jpg',
   },
   {
     id: 'ar-022',
@@ -286,7 +287,7 @@ export const artsCards: Card[] = [
     resilience: 2,
     ability: 'Cette carte ne peut pas être ciblée par les effets adverses.',
     flavorText: 'Le silence est éloquent.',
-    image: 'arts/ar-022.jpg'
+    image: 'arts/ar-022.jpg',
   },
   {
     id: 'ar-023',
@@ -299,7 +300,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 2 ressources.',
     flavorText: 'Transformer le métal en beauté.',
-    image: 'arts/ar-023.jpg'
+    image: 'arts/ar-023.jpg',
   },
   {
     id: 'ar-024',
@@ -312,7 +313,7 @@ export const artsCards: Card[] = [
     resilience: 2,
     ability: 'Quand vous jouez une carte Arts, piochez une carte.',
     flavorText: 'Les histoires traversent le temps.',
-    image: 'arts/ar-024.jpg'
+    image: 'arts/ar-024.jpg',
   },
   {
     id: 'ar-025',
@@ -325,7 +326,7 @@ export const artsCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
     flavorText: 'Les motifs racontent des histoires.',
-    image: 'arts/ar-025.jpg'
+    image: 'arts/ar-025.jpg',
   },
   {
     id: 'ar-026',
@@ -338,7 +339,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Exagérer la réalité.',
-    image: 'arts/ar-026.jpg'
+    image: 'arts/ar-026.jpg',
   },
   {
     id: 'ar-027',
@@ -351,7 +352,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource.',
     flavorText: 'La musique résonne dans les tunnels.',
-    image: 'arts/ar-027.jpg'
+    image: 'arts/ar-027.jpg',
   },
   {
     id: 'ar-028',
@@ -364,7 +365,7 @@ export const artsCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Arts, cette carte gagne +1 Productivité.',
     flavorText: 'Les rimes sont mon arme.',
-    image: 'arts/ar-028.jpg'
+    image: 'arts/ar-028.jpg',
   },
   {
     id: 'ar-029',
@@ -377,7 +378,7 @@ export const artsCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, regardez la première carte de votre deck.',
     flavorText: 'Les couleurs se mélangent.',
-    image: 'arts/ar-029.jpg'
+    image: 'arts/ar-029.jpg',
   },
   {
     id: 'ar-030',
@@ -388,9 +389,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Quand cette carte arrive en jeu, les autres cartes Arts gagnent +1 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Quand cette carte arrive en jeu, les autres cartes Arts gagnent +1 Productivité jusqu'à la fin du tour.",
     flavorText: 'Faire rire est un art.',
-    image: 'arts/ar-030.jpg'
+    image: 'arts/ar-030.jpg',
   },
 
   // Uncommon (31-50)
@@ -405,7 +407,7 @@ export const artsCards: Card[] = [
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, piochez 2 cartes et gagnez 2 ressources.',
     flavorText: 'Chaque coup de pinceau est réfléchi.',
-    image: 'arts/ar-031.jpg'
+    image: 'arts/ar-031.jpg',
   },
   {
     id: 'ar-032',
@@ -418,7 +420,7 @@ export const artsCards: Card[] = [
     resilience: 3,
     ability: 'Les cartes Arts que vous contrôlez gagnent +2 Productivité.',
     flavorText: 'La musique est ma vie.',
-    image: 'arts/ar-032.jpg'
+    image: 'arts/ar-032.jpg',
   },
   {
     id: 'ar-033',
@@ -429,9 +431,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez jouer une carte Arts supplémentaire ce tour-ci.',
+    ability:
+      'Quand cette carte arrive en jeu, vous pouvez jouer une carte Arts supplémentaire ce tour-ci.',
     flavorText: 'Les planches sont mon royaume.',
-    image: 'arts/ar-033.jpg'
+    image: 'arts/ar-033.jpg',
   },
   {
     id: 'ar-034',
@@ -444,7 +447,7 @@ export const artsCards: Card[] = [
     resilience: 3,
     ability: 'Quand vous jouez une carte Arts, piochez une carte et gagnez 1 ressource.',
     flavorText: 'Mes mots touchent des milliers de lecteurs.',
-    image: 'arts/ar-034.jpg'
+    image: 'arts/ar-034.jpg',
   },
   {
     id: 'ar-035',
@@ -457,7 +460,7 @@ export const artsCards: Card[] = [
     resilience: 3,
     ability: 'Les autres cartes Arts que vous contrôlez gagnent +1 Productivité et +1 Résilience.',
     flavorText: 'Créer des mouvements harmonieux.',
-    image: 'arts/ar-035.jpg'
+    image: 'arts/ar-035.jpg',
   },
   {
     id: 'ar-036',
@@ -470,7 +473,7 @@ export const artsCards: Card[] = [
     resilience: 3,
     ability: 'Une fois par tour, cherchez une carte Arts dans votre deck.',
     flavorText: 'Ma vision, mon film.',
-    image: 'arts/ar-036.jpg'
+    image: 'arts/ar-036.jpg',
   },
   {
     id: 'ar-037',
@@ -483,7 +486,7 @@ export const artsCards: Card[] = [
     resilience: 5,
     ability: 'Les cartes Arts que vous contrôlez gagnent +2 Résilience.',
     flavorText: 'Immortaliser dans la pierre.',
-    image: 'arts/ar-037.jpg'
+    image: 'arts/ar-037.jpg',
   },
   {
     id: 'ar-038',
@@ -495,8 +498,8 @@ export const artsCards: Card[] = [
     productivity: 4,
     resilience: 3,
     ability: 'Au début de votre tour, regardez les 4 premières cartes de votre deck.',
-    flavorText: 'Capturer l\'essence du moment.',
-    image: 'arts/ar-038.jpg'
+    flavorText: "Capturer l'essence du moment.",
+    image: 'arts/ar-038.jpg',
   },
   {
     id: 'ar-039',
@@ -507,9 +510,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 3,
-    ability: 'Quand vous jouez une carte Arts, les autres cartes Arts gagnent +2 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Quand vous jouez une carte Arts, les autres cartes Arts gagnent +2 Productivité jusqu'à la fin du tour.",
     flavorText: 'Créer des mélodies immortelles.',
-    image: 'arts/ar-039.jpg'
+    image: 'arts/ar-039.jpg',
   },
   {
     id: 'ar-040',
@@ -522,11 +526,11 @@ export const artsCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Arts dans votre main coûtent 1 de moins à jouer.',
     flavorText: 'Coordonner la vision créative.',
-    image: 'arts/ar-040.jpg'
+    image: 'arts/ar-040.jpg',
   },
   {
     id: 'ar-041',
-    name: 'Chef d\'Orchestre',
+    name: "Chef d'Orchestre",
     domain: Domain.Arts,
     type: CardType.Job,
     cost: 5,
@@ -534,8 +538,8 @@ export const artsCards: Card[] = [
     productivity: 4,
     resilience: 4,
     ability: 'Les cartes Arts que vous contrôlez gagnent +1 Productivité et +1 Résilience.',
-    flavorText: 'Diriger l\'harmonie.',
-    image: 'arts/ar-041.jpg'
+    flavorText: "Diriger l'harmonie.",
+    image: 'arts/ar-041.jpg',
   },
   {
     id: 'ar-042',
@@ -548,7 +552,7 @@ export const artsCards: Card[] = [
     resilience: 3,
     ability: 'Au début de votre tour, gagnez 2 ressources.',
     flavorText: 'La mode est un art éphémère.',
-    image: 'arts/ar-042.jpg'
+    image: 'arts/ar-042.jpg',
   },
   {
     id: 'ar-043',
@@ -560,8 +564,8 @@ export const artsCards: Card[] = [
     productivity: 4,
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, piochez 2 cartes.',
-    flavorText: 'L\'écran est ma toile.',
-    image: 'arts/ar-043.jpg'
+    flavorText: "L'écran est ma toile.",
+    image: 'arts/ar-043.jpg',
   },
   {
     id: 'ar-044',
@@ -574,11 +578,11 @@ export const artsCards: Card[] = [
     resilience: 3,
     ability: 'Quand vous jouez une carte Arts, gagnez 2 ressources.',
     flavorText: 'Créer le son parfait.',
-    image: 'arts/ar-044.jpg'
+    image: 'arts/ar-044.jpg',
   },
   {
     id: 'ar-045',
-    name: 'Architecte d\'Intérieur',
+    name: "Architecte d'Intérieur",
     domain: Domain.Arts,
     type: CardType.Job,
     cost: 5,
@@ -586,21 +590,22 @@ export const artsCards: Card[] = [
     productivity: 4,
     resilience: 4,
     ability: 'Les cartes Arts que vous contrôlez gagnent +2 Productivité.',
-    flavorText: 'Transformer les espaces en œuvres d\'art.',
-    image: 'arts/ar-045.jpg'
+    flavorText: "Transformer les espaces en œuvres d'art.",
+    image: 'arts/ar-045.jpg',
   },
   {
     id: 'ar-046',
-    name: 'Critique d\'Art',
+    name: "Critique d'Art",
     domain: Domain.Arts,
     type: CardType.Job,
     cost: 4,
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Au début de votre tour, regardez les 3 premières cartes de votre deck et organisez-les.',
+    ability:
+      'Au début de votre tour, regardez les 3 premières cartes de votre deck et organisez-les.',
     flavorText: 'Analyser la beauté.',
-    image: 'arts/ar-046.jpg'
+    image: 'arts/ar-046.jpg',
   },
   {
     id: 'ar-047',
@@ -611,9 +616,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 3,
-    ability: 'Quand cette carte arrive en jeu, les cartes Arts gagnent +2 Productivité jusqu\'à la fin du tour.',
-    flavorText: 'Défier l\'impossible.',
-    image: 'arts/ar-047.jpg'
+    ability:
+      "Quand cette carte arrive en jeu, les cartes Arts gagnent +2 Productivité jusqu'à la fin du tour.",
+    flavorText: "Défier l'impossible.",
+    image: 'arts/ar-047.jpg',
   },
   {
     id: 'ar-048',
@@ -624,9 +630,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Les cartes Arts que vous contrôlez gagnent +1 Résilience et ne peuvent pas être détruites par les effets adverses.',
-    flavorText: 'L\'art permanent.',
-    image: 'arts/ar-048.jpg'
+    ability:
+      'Les cartes Arts que vous contrôlez gagnent +1 Résilience et ne peuvent pas être détruites par les effets adverses.',
+    flavorText: "L'art permanent.",
+    image: 'arts/ar-048.jpg',
   },
   {
     id: 'ar-049',
@@ -639,7 +646,7 @@ export const artsCards: Card[] = [
     resilience: 3,
     ability: 'Quand vous jouez une carte Arts, piochez 2 cartes.',
     flavorText: 'Écrire des histoires captivantes.',
-    image: 'arts/ar-049.jpg'
+    image: 'arts/ar-049.jpg',
   },
   {
     id: 'ar-050',
@@ -652,7 +659,7 @@ export const artsCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Arts que vous contrôlez sont protégées contre la destruction.',
     flavorText: 'Préserver le patrimoine culturel.',
-    image: 'arts/ar-050.jpg'
+    image: 'arts/ar-050.jpg',
   },
 
   // Rare (51-80)
@@ -665,9 +672,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Les cartes Arts que vous contrôlez gagnent +3 Productivité. Quand vous jouez une carte Arts, piochez une carte.',
+    ability:
+      'Les cartes Arts que vous contrôlez gagnent +3 Productivité. Quand vous jouez une carte Arts, piochez une carte.',
     flavorText: 'Mon art transcende les frontières.',
-    image: 'arts/ar-051.jpg'
+    image: 'arts/ar-051.jpg',
   },
   {
     id: 'ar-052',
@@ -678,9 +686,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, piochez 3 cartes et gagnez 3 ressources. Les cartes Arts gagnent +2 Productivité.',
-    flavorText: 'L\'excellence cinématographique.',
-    image: 'arts/ar-052.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, piochez 3 cartes et gagnez 3 ressources. Les cartes Arts gagnent +2 Productivité.',
+    flavorText: "L'excellence cinématographique.",
+    image: 'arts/ar-052.jpg',
   },
   {
     id: 'ar-053',
@@ -691,9 +700,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Quand vous jouez une carte Arts, toutes les cartes Arts gagnent +3 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Quand vous jouez une carte Arts, toutes les cartes Arts gagnent +3 Productivité jusqu'à la fin du tour.",
     flavorText: 'Mes mélodies résonnent dans le monde entier.',
-    image: 'arts/ar-053.jpg'
+    image: 'arts/ar-053.jpg',
   },
   {
     id: 'ar-054',
@@ -704,9 +714,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez jouer jusqu\'à 2 cartes Arts depuis votre main.',
+    ability:
+      "Quand cette carte arrive en jeu, vous pouvez jouer jusqu'à 2 cartes Arts depuis votre main.",
     flavorText: 'Incarner les plus grands personnages.',
-    image: 'arts/ar-054.jpg'
+    image: 'arts/ar-054.jpg',
   },
   {
     id: 'ar-055',
@@ -719,7 +730,7 @@ export const artsCards: Card[] = [
     resilience: 6,
     ability: 'Quand vous jouez une carte Arts, piochez 3 cartes et gagnez 2 ressources.',
     flavorText: 'Mes mots changent le monde.',
-    image: 'arts/ar-055.jpg'
+    image: 'arts/ar-055.jpg',
   },
   {
     id: 'ar-056',
@@ -732,11 +743,11 @@ export const artsCards: Card[] = [
     resilience: 5,
     ability: 'Les cartes Arts que vous contrôlez gagnent +2 Productivité et +2 Résilience.',
     flavorText: 'La grâce incarnée.',
-    image: 'arts/ar-056.jpg'
+    image: 'arts/ar-056.jpg',
   },
   {
     id: 'ar-057',
-    name: 'Chef d\'Orchestre Philharmonique',
+    name: "Chef d'Orchestre Philharmonique",
     domain: Domain.Arts,
     type: CardType.Job,
     cost: 7,
@@ -745,7 +756,7 @@ export const artsCards: Card[] = [
     resilience: 6,
     ability: 'Les cartes Arts que vous contrôlez gagnent +3 Productivité et +3 Résilience.',
     flavorText: 'Diriger les plus grands orchestres.',
-    image: 'arts/ar-057.jpg'
+    image: 'arts/ar-057.jpg',
   },
   {
     id: 'ar-058',
@@ -756,9 +767,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, piochez 3 cartes. Les cartes Arts dans votre main coûtent 2 de moins.',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 3 cartes. Les cartes Arts dans votre main coûtent 2 de moins.',
     flavorText: 'Mes toiles valent des millions.',
-    image: 'arts/ar-058.jpg'
+    image: 'arts/ar-058.jpg',
   },
   {
     id: 'ar-059',
@@ -771,7 +783,7 @@ export const artsCards: Card[] = [
     resilience: 7,
     ability: 'Les cartes Arts que vous contrôlez sont indestructibles.',
     flavorText: 'Créer des œuvres éternelles.',
-    image: 'arts/ar-059.jpg'
+    image: 'arts/ar-059.jpg',
   },
   {
     id: 'ar-060',
@@ -782,9 +794,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Au début de votre tour, regardez les 7 premières cartes de votre deck et mettez-en jusqu\'à 3 dans votre main.',
+    ability:
+      "Au début de votre tour, regardez les 7 premières cartes de votre deck et mettez-en jusqu'à 3 dans votre main.",
     flavorText: 'Une image vaut mille mots.',
-    image: 'arts/ar-060.jpg'
+    image: 'arts/ar-060.jpg',
   },
   {
     id: 'ar-061',
@@ -795,9 +808,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Au début de votre tour, gagnez 4 ressources. Les cartes Arts gagnent +2 Productivité.',
+    ability:
+      'Au début de votre tour, gagnez 4 ressources. Les cartes Arts gagnent +2 Productivité.',
     flavorText: 'Définir les tendances mondiales.',
-    image: 'arts/ar-061.jpg'
+    image: 'arts/ar-061.jpg',
   },
   {
     id: 'ar-062',
@@ -808,9 +822,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Arts dans votre main coûtent 2 de moins. Au début de votre tour, piochez 2 cartes.',
+    ability:
+      'Les cartes Arts dans votre main coûtent 2 de moins. Au début de votre tour, piochez 2 cartes.',
     flavorText: 'Créer des blockbusters.',
-    image: 'arts/ar-062.jpg'
+    image: 'arts/ar-062.jpg',
   },
   {
     id: 'ar-063',
@@ -821,9 +836,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, les cartes Arts gagnent +4 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Quand cette carte arrive en jeu, les cartes Arts gagnent +4 Productivité jusqu'à la fin du tour.",
     flavorText: 'Ma voix transcende les langues.',
-    image: 'arts/ar-063.jpg'
+    image: 'arts/ar-063.jpg',
   },
   {
     id: 'ar-064',
@@ -834,9 +850,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Arts que vous contrôlez gagnent +3 Productivité et ne peuvent pas être ciblées.',
-    flavorText: 'Dessiner l\'avenir des villes.',
-    image: 'arts/ar-064.jpg'
+    ability:
+      'Les cartes Arts que vous contrôlez gagnent +3 Productivité et ne peuvent pas être ciblées.',
+    flavorText: "Dessiner l'avenir des villes.",
+    image: 'arts/ar-064.jpg',
   },
   {
     id: 'ar-065',
@@ -847,9 +864,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Une fois par tour, cherchez jusqu\'à 2 cartes Arts dans votre deck et ajoutez-les à votre main.',
-    flavorText: 'Célébrer l\'art sous toutes ses formes.',
-    image: 'arts/ar-065.jpg'
+    ability:
+      "Une fois par tour, cherchez jusqu'à 2 cartes Arts dans votre deck et ajoutez-les à votre main.",
+    flavorText: "Célébrer l'art sous toutes ses formes.",
+    image: 'arts/ar-065.jpg',
   },
   {
     id: 'ar-066',
@@ -860,22 +878,24 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Quand vous jouez une carte Arts, cette carte gagne +3 Productivité et piochez une carte.',
+    ability:
+      'Quand vous jouez une carte Arts, cette carte gagne +3 Productivité et piochez une carte.',
     flavorText: 'Mes rimes sont légendaires.',
-    image: 'arts/ar-066.jpg'
+    image: 'arts/ar-066.jpg',
   },
   {
     id: 'ar-067',
-    name: 'Cinéaste Cannes Palme d\'Or',
+    name: "Cinéaste Cannes Palme d'Or",
     domain: Domain.Arts,
     type: CardType.Job,
     cost: 7,
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, piochez 4 cartes. Vous pouvez jouer une carte Arts supplémentaire ce tour-ci.',
-    flavorText: 'Le sommet du cinéma d\'auteur.',
-    image: 'arts/ar-067.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, piochez 4 cartes. Vous pouvez jouer une carte Arts supplémentaire ce tour-ci.',
+    flavorText: "Le sommet du cinéma d'auteur.",
+    image: 'arts/ar-067.jpg',
   },
   {
     id: 'ar-068',
@@ -888,7 +908,7 @@ export const artsCards: Card[] = [
     resilience: 5,
     ability: 'Quand cette carte arrive en jeu, créez 2 jetons de cartes Arts 3/3.',
     flavorText: 'Mes œuvres ornent les villes du monde.',
-    image: 'arts/ar-068.jpg'
+    image: 'arts/ar-068.jpg',
   },
   {
     id: 'ar-069',
@@ -900,8 +920,8 @@ export const artsCards: Card[] = [
     productivity: 5,
     resilience: 5,
     ability: 'Quand vous jouez une carte Arts, piochez 2 cartes et gagnez 2 ressources.',
-    flavorText: 'Mes vers touchent l\'âme.',
-    image: 'arts/ar-069.jpg'
+    flavorText: "Mes vers touchent l'âme.",
+    image: 'arts/ar-069.jpg',
   },
   {
     id: 'ar-070',
@@ -913,8 +933,8 @@ export const artsCards: Card[] = [
     productivity: 6,
     resilience: 6,
     ability: 'Les cartes Arts que vous contrôlez sont indestructibles et gagnent +2 Productivité.',
-    flavorText: 'Museum of Modern Art - Préserver l\'art contemporain.',
-    image: 'arts/ar-070.jpg'
+    flavorText: "Museum of Modern Art - Préserver l'art contemporain.",
+    image: 'arts/ar-070.jpg',
   },
   {
     id: 'ar-071',
@@ -927,7 +947,7 @@ export const artsCards: Card[] = [
     resilience: 6,
     ability: 'Les autres cartes Arts que vous contrôlez gagnent +3 Productivité et +2 Résilience.',
     flavorText: 'Créer des ballets inoubliables.',
-    image: 'arts/ar-071.jpg'
+    image: 'arts/ar-071.jpg',
   },
   {
     id: 'ar-072',
@@ -938,9 +958,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Au début de votre tour, toutes les cartes Arts gagnent +3 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Au début de votre tour, toutes les cartes Arts gagnent +3 Productivité jusqu'à la fin du tour.",
     flavorText: 'Faire danser des millions.',
-    image: 'arts/ar-072.jpg'
+    image: 'arts/ar-072.jpg',
   },
   {
     id: 'ar-073',
@@ -952,8 +973,8 @@ export const artsCards: Card[] = [
     productivity: 6,
     resilience: 6,
     ability: 'Les cartes Arts que vous contrôlez gagnent +3 Productivité et +3 Résilience.',
-    flavorText: 'Le temple de l\'opéra.',
-    image: 'arts/ar-073.jpg'
+    flavorText: "Le temple de l'opéra.",
+    image: 'arts/ar-073.jpg',
   },
   {
     id: 'ar-074',
@@ -964,22 +985,24 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, cherchez jusqu\'à 3 cartes Arts dans votre deck et votre défausse.',
-    flavorText: 'Repousser les limites de l\'art.',
-    image: 'arts/ar-074.jpg'
+    ability:
+      "Quand cette carte arrive en jeu, cherchez jusqu'à 3 cartes Arts dans votre deck et votre défausse.",
+    flavorText: "Repousser les limites de l'art.",
+    image: 'arts/ar-074.jpg',
   },
   {
     id: 'ar-075',
-    name: 'Commissaire d\'Exposition Biennale',
+    name: "Commissaire d'Exposition Biennale",
     domain: Domain.Arts,
     type: CardType.Job,
     cost: 6,
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Au début de votre tour, cherchez une carte Arts dans votre deck et ajoutez-la à votre main.',
+    ability:
+      'Au début de votre tour, cherchez une carte Arts dans votre deck et ajoutez-la à votre main.',
     flavorText: 'Organiser les expositions les plus prestigieuses.',
-    image: 'arts/ar-075.jpg'
+    image: 'arts/ar-075.jpg',
   },
   {
     id: 'ar-076',
@@ -990,9 +1013,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Arts que vous contrôlez gagnent +4 Productivité. Vous pouvez jouer 2 cartes supplémentaires par tour.',
+    ability:
+      'Les cartes Arts que vous contrôlez gagnent +4 Productivité. Vous pouvez jouer 2 cartes supplémentaires par tour.',
     flavorText: 'Une icône du cinéma.',
-    image: 'arts/ar-076.jpg'
+    image: 'arts/ar-076.jpg',
   },
   {
     id: 'ar-077',
@@ -1003,9 +1027,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Quand vous jouez une carte Arts, les autres cartes Arts gagnent +2 Productivité et vous piochez une carte.',
-    flavorText: 'La maîtrise absolue de l\'instrument.',
-    image: 'arts/ar-077.jpg'
+    ability:
+      'Quand vous jouez une carte Arts, les autres cartes Arts gagnent +2 Productivité et vous piochez une carte.',
+    flavorText: "La maîtrise absolue de l'instrument.",
+    image: 'arts/ar-077.jpg',
   },
   {
     id: 'ar-078',
@@ -1016,9 +1041,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Quand vous jouez une carte Arts, piochez 3 cartes. Les cartes Arts coûtent 2 de moins.',
+    ability:
+      'Quand vous jouez une carte Arts, piochez 3 cartes. Les cartes Arts coûtent 2 de moins.',
     flavorText: 'Écrire des histoires inoubliables.',
-    image: 'arts/ar-078.jpg'
+    image: 'arts/ar-078.jpg',
   },
   {
     id: 'ar-079',
@@ -1029,9 +1055,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 7,
-    ability: 'Les cartes Arts que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 2 cartes.',
+    ability:
+      'Les cartes Arts que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 2 cartes.',
     flavorText: 'Gardien du plus grand musée du monde.',
-    image: 'arts/ar-079.jpg'
+    image: 'arts/ar-079.jpg',
   },
   {
     id: 'ar-080',
@@ -1042,9 +1069,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, piochez 4 cartes et gagnez 4 ressources. Les cartes Arts gagnent +3 Productivité.',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 4 cartes et gagnez 4 ressources. Les cartes Arts gagnent +3 Productivité.',
     flavorText: 'Fusionner tous les arts.',
-    image: 'arts/ar-080.jpg'
+    image: 'arts/ar-080.jpg',
   },
 
   // Legendary (81-100)
@@ -1057,9 +1085,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 10,
-    ability: 'Les cartes Arts que vous contrôlez gagnent +6 Productivité et +6 Résilience. Au début de votre tour, piochez 5 cartes et gagnez 5 ressources.',
+    ability:
+      'Les cartes Arts que vous contrôlez gagnent +6 Productivité et +6 Résilience. Au début de votre tour, piochez 5 cartes et gagnez 5 ressources.',
     flavorText: 'Le génie universel - Artiste, scientifique, inventeur.',
-    image: 'arts/ar-081.jpg'
+    image: 'arts/ar-081.jpg',
   },
   {
     id: 'ar-082',
@@ -1070,9 +1099,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Quand cette carte arrive en jeu, créez 4 jetons de cartes Arts 4/4. Les cartes Arts que vous contrôlez gagnent +5 Productivité.',
+    ability:
+      'Quand cette carte arrive en jeu, créez 4 jetons de cartes Arts 4/4. Les cartes Arts que vous contrôlez gagnent +5 Productivité.',
     flavorText: 'Le maître du cubisme.',
-    image: 'arts/ar-082.jpg'
+    image: 'arts/ar-082.jpg',
   },
   {
     id: 'ar-083',
@@ -1083,9 +1113,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 9,
-    ability: 'Quand vous jouez une carte Arts, piochez 4 cartes et gagnez 4 ressources. Les cartes Arts gagnent +5 Productivité.',
+    ability:
+      'Quand vous jouez une carte Arts, piochez 4 cartes et gagnez 4 ressources. Les cartes Arts gagnent +5 Productivité.',
     flavorText: 'Le prodige musical.',
-    image: 'arts/ar-083.jpg'
+    image: 'arts/ar-083.jpg',
   },
   {
     id: 'ar-084',
@@ -1096,9 +1127,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Les cartes Arts que vous contrôlez sont indestructibles et gagnent +4 Productivité et +4 Résilience.',
+    ability:
+      'Les cartes Arts que vous contrôlez sont indestructibles et gagnent +4 Productivité et +4 Résilience.',
     flavorText: 'Composer dans le silence.',
-    image: 'arts/ar-084.jpg'
+    image: 'arts/ar-084.jpg',
   },
   {
     id: 'ar-085',
@@ -1109,9 +1141,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 8,
-    ability: 'Quand cette carte arrive en jeu, piochez 10 cartes. Les cartes Arts dans votre main coûtent 3 de moins.',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 10 cartes. Les cartes Arts dans votre main coûtent 3 de moins.',
     flavorText: 'Le tourment créatif.',
-    image: 'arts/ar-085.jpg'
+    image: 'arts/ar-085.jpg',
   },
   {
     id: 'ar-086',
@@ -1122,9 +1155,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Quand vous jouez une carte Arts, piochez 3 cartes et toutes les cartes Arts gagnent +3 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Quand vous jouez une carte Arts, piochez 3 cartes et toutes les cartes Arts gagnent +3 Productivité jusqu'à la fin du tour.",
     flavorText: 'Être ou ne pas être.',
-    image: 'arts/ar-086.jpg'
+    image: 'arts/ar-086.jpg',
   },
   {
     id: 'ar-087',
@@ -1135,9 +1169,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Les cartes Arts que vous contrôlez sont indestructibles et gagnent +5 Productivité et +5 Résilience.',
-    flavorText: 'La chapelle Sixtine - L\'apogée de l\'art.',
-    image: 'arts/ar-087.jpg'
+    ability:
+      'Les cartes Arts que vous contrôlez sont indestructibles et gagnent +5 Productivité et +5 Résilience.',
+    flavorText: "La chapelle Sixtine - L'apogée de l'art.",
+    image: 'arts/ar-087.jpg',
   },
   {
     id: 'ar-088',
@@ -1148,9 +1183,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Les cartes Arts que vous contrôlez ne peuvent pas être ciblées. Au début de votre tour, piochez 4 cartes et gagnez 5 ressources.',
+    ability:
+      'Les cartes Arts que vous contrôlez ne peuvent pas être ciblées. Au début de votre tour, piochez 4 cartes et gagnez 5 ressources.',
     flavorText: 'Le génie du cinéma muet.',
-    image: 'arts/ar-088.jpg'
+    image: 'arts/ar-088.jpg',
   },
   {
     id: 'ar-089',
@@ -1161,9 +1197,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 10,
-    ability: 'Les cartes Arts que vous contrôlez gagnent +4 Productivité et +5 Résilience. Quand vous jouez une carte Arts, piochez 2 cartes.',
+    ability:
+      'Les cartes Arts que vous contrôlez gagnent +4 Productivité et +5 Résilience. Quand vous jouez une carte Arts, piochez 2 cartes.',
     flavorText: 'Peindre sa douleur, créer la beauté.',
-    image: 'arts/ar-089.jpg'
+    image: 'arts/ar-089.jpg',
   },
   {
     id: 'ar-090',
@@ -1174,9 +1211,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Quand cette carte arrive en jeu, créez 5 jetons de cartes Arts 3/3. Les cartes Arts gagnent +4 Productivité.',
+    ability:
+      'Quand cette carte arrive en jeu, créez 5 jetons de cartes Arts 3/3. Les cartes Arts gagnent +4 Productivité.',
     flavorText: 'Le roi du Pop Art.',
-    image: 'arts/ar-090.jpg'
+    image: 'arts/ar-090.jpg',
   },
   {
     id: 'ar-091',
@@ -1187,9 +1225,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 9,
-    ability: 'Quand vous jouez une carte Arts, toutes les cartes Arts gagnent +4 Productivité et vous piochez 3 cartes.',
+    ability:
+      'Quand vous jouez une carte Arts, toutes les cartes Arts gagnent +4 Productivité et vous piochez 3 cartes.',
     flavorText: 'Le maître du baroque.',
-    image: 'arts/ar-091.jpg'
+    image: 'arts/ar-091.jpg',
   },
   {
     id: 'ar-092',
@@ -1200,9 +1239,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Au début de votre tour, regardez les 10 premières cartes de votre deck et mettez-en jusqu\'à 7 dans votre main. Les cartes Arts gagnent +4 Productivité.',
-    flavorText: 'Le père de l\'impressionnisme.',
-    image: 'arts/ar-092.jpg'
+    ability:
+      "Au début de votre tour, regardez les 10 premières cartes de votre deck et mettez-en jusqu'à 7 dans votre main. Les cartes Arts gagnent +4 Productivité.",
+    flavorText: "Le père de l'impressionnisme.",
+    image: 'arts/ar-092.jpg',
   },
   {
     id: 'ar-093',
@@ -1213,9 +1253,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Quand cette carte arrive en jeu, piochez 7 cartes. Les cartes Arts que vous contrôlez gagnent +5 Productivité et +4 Résilience.',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 7 cartes. Les cartes Arts que vous contrôlez gagnent +5 Productivité et +4 Résilience.',
     flavorText: 'Le surréalisme incarné.',
-    image: 'arts/ar-093.jpg'
+    image: 'arts/ar-093.jpg',
   },
   {
     id: 'ar-094',
@@ -1226,9 +1267,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Les cartes Arts dans votre main coûtent 4 de moins. Au début de votre tour, piochez 4 cartes et gagnez 6 ressources.',
+    ability:
+      'Les cartes Arts dans votre main coûtent 4 de moins. Au début de votre tour, piochez 4 cartes et gagnez 6 ressources.',
     flavorText: 'Le maître du suspense.',
-    image: 'arts/ar-094.jpg'
+    image: 'arts/ar-094.jpg',
   },
   {
     id: 'ar-095',
@@ -1239,9 +1281,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Quand cette carte arrive en jeu, toutes les cartes Arts gagnent +6 Productivité jusqu\'à la fin du tour. Les cartes Arts gagnent +4 Productivité.',
+    ability:
+      "Quand cette carte arrive en jeu, toutes les cartes Arts gagnent +6 Productivité jusqu'à la fin du tour. Les cartes Arts gagnent +4 Productivité.",
     flavorText: 'La Divina - La plus grande soprano.',
-    image: 'arts/ar-095.jpg'
+    image: 'arts/ar-095.jpg',
   },
   {
     id: 'ar-096',
@@ -1252,9 +1295,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Quand cette carte arrive en jeu, cherchez jusqu\'à 5 cartes Arts dans votre deck. Les cartes Arts gagnent +5 Productivité.',
+    ability:
+      "Quand cette carte arrive en jeu, cherchez jusqu'à 5 cartes Arts dans votre deck. Les cartes Arts gagnent +5 Productivité.",
     flavorText: 'Le maître du cinéma japonais.',
-    image: 'arts/ar-096.jpg'
+    image: 'arts/ar-096.jpg',
   },
   {
     id: 'ar-097',
@@ -1265,9 +1309,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Cette carte ne peut pas être ciblée ou détruite. Quand cette carte arrive en jeu, créez 4 jetons de cartes Arts 4/4.',
-    flavorText: 'L\'artiste anonyme le plus célèbre.',
-    image: 'arts/ar-097.jpg'
+    ability:
+      'Cette carte ne peut pas être ciblée ou détruite. Quand cette carte arrive en jeu, créez 4 jetons de cartes Arts 4/4.',
+    flavorText: "L'artiste anonyme le plus célèbre.",
+    image: 'arts/ar-097.jpg',
   },
   {
     id: 'ar-098',
@@ -1278,9 +1323,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Les cartes Arts que vous contrôlez sont indestructibles et gagnent +5 Productivité et +6 Résilience.',
+    ability:
+      'Les cartes Arts que vous contrôlez sont indestructibles et gagnent +5 Productivité et +6 Résilience.',
     flavorText: 'Le maître de la lumière.',
-    image: 'arts/ar-098.jpg'
+    image: 'arts/ar-098.jpg',
   },
   {
     id: 'ar-099',
@@ -1291,9 +1337,10 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 9,
-    ability: 'Cette carte peut changer de forme. Au début de votre tour, piochez 5 cartes et gagnez 6 ressources. Les cartes Arts gagnent +5 Productivité.',
+    ability:
+      'Cette carte peut changer de forme. Au début de votre tour, piochez 5 cartes et gagnez 6 ressources. Les cartes Arts gagnent +5 Productivité.',
     flavorText: 'Le caméléon du rock.',
-    image: 'arts/ar-099.jpg'
+    image: 'arts/ar-099.jpg',
   },
   {
     id: 'ar-100',
@@ -1304,8 +1351,9 @@ export const artsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 11,
-    ability: 'Les cartes Arts que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 4 cartes et gagnez 7 ressources.',
+    ability:
+      'Les cartes Arts que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 4 cartes et gagnez 7 ressources.',
     flavorText: 'Le Penseur - La sculpture éternelle.',
-    image: 'arts/ar-100.jpg'
-  }
+    image: 'arts/ar-100.jpg',
+  },
 ];

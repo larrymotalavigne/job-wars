@@ -51,7 +51,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: '',
-    flavorText: '« L\'image parle mille mots. »',
+    flavorText: "« L'image parle mille mots. »",
     image: 'images/cards/me-004.png',
   },
   {
@@ -181,7 +181,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 3,
     resilience: 2,
     ability: '',
-    flavorText: '« Immortaliser l\'instant décisif. »',
+    flavorText: "« Immortaliser l'instant décisif. »",
     image: 'images/cards/me-014.png',
   },
   {
@@ -207,7 +207,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 2,
     resilience: 3,
     ability: '',
-    flavorText: '« Bras droit du rédac\' chef. »',
+    flavorText: "« Bras droit du rédac' chef. »",
     image: 'images/cards/me-016.png',
   },
   {
@@ -246,7 +246,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Quand embauché : Piochez 1 carte.',
-    flavorText: '« N\'oubliez pas de vous abonner ! »',
+    flavorText: "« N'oubliez pas de vous abonner ! »",
     image: 'images/cards/me-019.png',
   },
   {
@@ -298,7 +298,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 2,
     resilience: 3,
     ability: '',
-    flavorText: '« Relations média, gestion d\'image. »',
+    flavorText: "« Relations média, gestion d'image. »",
     image: 'images/cards/me-023.png',
   },
   {
@@ -324,7 +324,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 3,
     resilience: 2,
     ability: '',
-    flavorText: '« Passion du sport, amour de l\'écriture. »',
+    flavorText: "« Passion du sport, amour de l'écriture. »",
     image: 'images/cards/me-025.png',
   },
   {
@@ -376,7 +376,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 3,
     resilience: 3,
     ability: '',
-    flavorText: '« L\'info locale qui compte. »',
+    flavorText: "« L'info locale qui compte. »",
     image: 'images/cards/me-029.png',
   },
   {
@@ -389,14 +389,14 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 3,
     resilience: 3,
     ability: '',
-    flavorText: '« Dans l\'action, caméra à l\'épaule. »',
+    flavorText: "« Dans l'action, caméra à l'épaule. »",
     image: 'images/cards/me-030.png',
   },
 
   // ── Uncommon Cards (me-031 → me-050) ──
   {
     id: 'me-031',
-    name: 'Journaliste d\'Investigation',
+    name: "Journaliste d'Investigation",
     domain: Domain.Media,
     type: CardType.Job,
     cost: 4,
@@ -417,7 +417,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 3,
     resilience: 4,
     ability: 'Vos autres Métiers Médias coûtent 1 de moins.',
-    flavorText: '« Du concept à l\'antenne. »',
+    flavorText: "« Du concept à l'antenne. »",
     image: 'images/cards/me-032.png',
   },
   {
@@ -630,7 +630,7 @@ export const MEDIA_CARDS: Card[] = [
   },
   {
     id: 'me-049',
-    name: 'Directeur de l\'Information',
+    name: "Directeur de l'Information",
     domain: Domain.Media,
     type: CardType.Job,
     cost: 5,
@@ -744,7 +744,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 6,
     resilience: 3,
     ability: 'Célérité. Quand embauché : Tous vos Métiers gagnent +2/+0.',
-    flavorText: '« 5M d\'abonnés, rayonnement mondial. »',
+    flavorText: "« 5M d'abonnés, rayonnement mondial. »",
     image: 'images/cards/me-057.png',
   },
   {
@@ -783,7 +783,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 6,
     resilience: 6,
     ability: 'Célérité. Tous vos Métiers gagnent +2/+1.',
-    flavorText: '« 20 ans d\'antenne, légende vivante. »',
+    flavorText: "« 20 ans d'antenne, légende vivante. »",
     image: 'images/cards/me-060.png',
   },
   {
@@ -814,7 +814,7 @@ export const MEDIA_CARDS: Card[] = [
   },
   {
     id: 'me-063',
-    name: 'Journaliste d\'Investigation Célèbre',
+    name: "Journaliste d'Investigation Célèbre",
     domain: Domain.Media,
     type: CardType.Job,
     cost: 7,
@@ -861,7 +861,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 5,
     resilience: 6,
     ability: 'Vos Métiers Médias coûtent 2 de moins et gagnent +1/+1.',
-    flavorText: '« Grille des programmes, stratégie d\'antenne. »',
+    flavorText: "« Grille des programmes, stratégie d'antenne. »",
     image: 'images/cards/me-066.png',
   },
   {
@@ -1004,7 +1004,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 7,
     resilience: 3,
     ability: 'Célérité. Quand embauché : Tous vos Métiers gagnent +3/+0.',
-    flavorText: '« 50M d\'abonnés, impact planétaire. »',
+    flavorText: "« 50M d'abonnés, impact planétaire. »",
     image: 'images/cards/me-077.png',
   },
   {
@@ -1097,7 +1097,7 @@ export const MEDIA_CARDS: Card[] = [
     productivity: 7,
     resilience: 7,
     ability: 'Célérité. Tous vos Métiers gagnent +3/+2.',
-    flavorText: '« 30 ans d\'antenne, institution nationale. »',
+    flavorText: "« 30 ans d'antenne, institution nationale. »",
     image: 'images/cards/me-084.png',
   },
   {
@@ -1148,8 +1148,9 @@ export const MEDIA_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 4,
-    ability: 'Célérité. Quand embauché : Tous vos Métiers gagnent +4/+0. Vos Métiers Médias coûtent 2 de moins.',
-    flavorText: '« 200M d\'abonnés, phénomène culturel mondial. »',
+    ability:
+      'Célérité. Quand embauché : Tous vos Métiers gagnent +4/+0. Vos Métiers Médias coûtent 2 de moins.',
+    flavorText: "« 200M d'abonnés, phénomène culturel mondial. »",
     image: 'images/cards/me-088.png',
   },
   {
@@ -1291,21 +1292,23 @@ export const MEDIA_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 5,
-    ability: 'Célérité. Quand embauché : Tous vos Métiers gagnent +5/+1. Vos Métiers coûtent 3 de moins.',
-    flavorText: '« 1 milliard d\'utilisateurs, pouvoir absolu. »',
+    ability:
+      'Célérité. Quand embauché : Tous vos Métiers gagnent +5/+1. Vos Métiers coûtent 3 de moins.',
+    flavorText: "« 1 milliard d'utilisateurs, pouvoir absolu. »",
     image: 'images/cards/me-099.png',
   },
   {
     id: 'me-100',
-    name: 'Empereur de l\'Information',
+    name: "Empereur de l'Information",
     domain: Domain.Media,
     type: CardType.Job,
     cost: 12,
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 8,
-    ability: 'Vos Métiers coûtent 5 de moins. Tous vos Métiers gagnent +4/+3 et Célérité. Quand embauché : Piochez 7 cartes.',
-    flavorText: '« Murdoch, Arnault, Bezos... contrôle de l\'opinion mondiale. »',
+    ability:
+      'Vos Métiers coûtent 5 de moins. Tous vos Métiers gagnent +4/+3 et Célérité. Quand embauché : Piochez 7 cartes.',
+    flavorText: "« Murdoch, Arnault, Bezos... contrôle de l'opinion mondiale. »",
     image: 'images/cards/me-100.png',
   },
 ];

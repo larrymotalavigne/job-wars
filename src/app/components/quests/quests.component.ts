@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
   standalone: true,
   imports: [CommonModule, Card, Button, ProgressBar, Tag],
   templateUrl: './quests.component.html',
-  styleUrl: './quests.component.scss'
+  styleUrl: './quests.component.scss',
 })
 export class QuestsComponent implements OnInit {
   get questState$() {

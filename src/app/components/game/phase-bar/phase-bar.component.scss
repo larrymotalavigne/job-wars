@@ -28,8 +28,12 @@
   font-weight: 700;
   font-size: 0.9rem;
 
-  &.p1 { color: #64b5f6; }
-  &.p2 { color: #ef5350; }
+  &.p1 {
+    color: #64b5f6;
+  }
+  &.p2 {
+    color: #ef5350;
+  }
 }
 
 .phase-steps {
@@ -47,7 +51,9 @@
   background: rgba(255, 255, 255, 0.05);
   white-space: nowrap;
 
-  .phase-short { display: none; }
+  .phase-short {
+    display: none;
+  }
 
   &.current {
     color: #fff;
@@ -63,8 +69,13 @@
 }
 
 @keyframes phasePulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(var(--p-primary-500), 0.4); }
-  50% { box-shadow: 0 0 8px 2px rgba(100, 181, 246, 0.4); }
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--p-primary-500), 0.4);
+  }
+  50% {
+    box-shadow: 0 0 8px 2px rgba(100, 181, 246, 0.4);
+  }
 }
 
 .phase-right {
@@ -116,8 +127,12 @@
     padding: 0.15rem 0.3rem;
     font-size: 0.65rem;
 
-    .phase-full { display: none; }
-    .phase-short { display: inline; }
+    .phase-full {
+      display: none;
+    }
+    .phase-short {
+      display: inline;
+    }
   }
 
   .phase-right {

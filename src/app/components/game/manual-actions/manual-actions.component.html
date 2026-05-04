@@ -34,8 +34,18 @@
         <p-accordionheader>Réputation</p-accordionheader>
         <p-accordioncontent>
           <div class="action-row">
-            <p-inputnumber [(ngModel)]="repDelta" [showButtons]="true" [style]="{ width: '120px' }" />
-            <p-button label="Appliquer" icon="pi pi-heart" size="small" (onClick)="adjustReputation(repDelta)" severity="danger" />
+            <p-inputnumber
+              [(ngModel)]="repDelta"
+              [showButtons]="true"
+              [style]="{ width: '120px' }"
+            />
+            <p-button
+              label="Appliquer"
+              icon="pi pi-heart"
+              size="small"
+              (onClick)="adjustReputation(repDelta)"
+              severity="danger"
+            />
           </div>
         </p-accordioncontent>
       </p-accordionpanel>
@@ -45,8 +55,18 @@
         <p-accordionheader>Budget</p-accordionheader>
         <p-accordioncontent>
           <div class="action-row">
-            <p-inputnumber [(ngModel)]="budgetDelta" [showButtons]="true" [style]="{ width: '120px' }" />
-            <p-button label="Appliquer" icon="pi pi-wallet" size="small" (onClick)="adjustBudget(budgetDelta)" severity="warn" />
+            <p-inputnumber
+              [(ngModel)]="budgetDelta"
+              [showButtons]="true"
+              [style]="{ width: '120px' }"
+            />
+            <p-button
+              label="Appliquer"
+              icon="pi pi-wallet"
+              size="small"
+              (onClick)="adjustBudget(budgetDelta)"
+              severity="warn"
+            />
           </div>
         </p-accordioncontent>
       </p-accordionpanel>
@@ -56,7 +76,13 @@
         <p-accordionheader>Piocher des cartes</p-accordionheader>
         <p-accordioncontent>
           <div class="action-row">
-            <p-inputnumber [(ngModel)]="drawCount" [min]="1" [max]="10" [showButtons]="true" [style]="{ width: '120px' }" />
+            <p-inputnumber
+              [(ngModel)]="drawCount"
+              [min]="1"
+              [max]="10"
+              [showButtons]="true"
+              [style]="{ width: '120px' }"
+            />
             <p-button label="Piocher" icon="pi pi-download" size="small" (onClick)="drawCards()" />
           </div>
         </p-accordioncontent>
@@ -83,7 +109,12 @@
               optionValue="value"
               [style]="{ width: '100%' }"
             />
-            <p-button label="Déplacer" icon="pi pi-arrow-right" size="small" (onClick)="moveCard()" />
+            <p-button
+              label="Déplacer"
+              icon="pi pi-arrow-right"
+              size="small"
+              (onClick)="moveCard()"
+            />
           </div>
         </p-accordioncontent>
       </p-accordionpanel>
@@ -103,11 +134,19 @@
             />
             <div class="mod-row">
               <span>Productivité</span>
-              <p-inputnumber [(ngModel)]="modProd" [showButtons]="true" [style]="{ width: '100px' }" />
+              <p-inputnumber
+                [(ngModel)]="modProd"
+                [showButtons]="true"
+                [style]="{ width: '100px' }"
+              />
             </div>
             <div class="mod-row">
               <span>Résilience</span>
-              <p-inputnumber [(ngModel)]="modRes" [showButtons]="true" [style]="{ width: '100px' }" />
+              <p-inputnumber
+                [(ngModel)]="modRes"
+                [showButtons]="true"
+                [style]="{ width: '100px' }"
+              />
             </div>
             <input pInputText [(ngModel)]="modDesc" placeholder="Description..." />
             <p-button label="Ajouter" icon="pi pi-plus" size="small" (onClick)="addModifier()" />
@@ -120,7 +159,13 @@
         <p-accordionheader>Autres</p-accordionheader>
         <p-accordioncontent>
           <div class="action-col">
-            <p-button label="Mélanger le deck" icon="pi pi-refresh" size="small" (onClick)="shuffleDeck()" severity="secondary" />
+            <p-button
+              label="Mélanger le deck"
+              icon="pi pi-refresh"
+              size="small"
+              (onClick)="shuffleDeck()"
+              severity="secondary"
+            />
             <div class="destroy-row">
               <p-select
                 [options]="allFieldCards"
@@ -130,7 +175,13 @@
                 placeholder="Carte à détruire..."
                 [style]="{ width: '100%' }"
               />
-              <p-button label="Détruire" icon="pi pi-trash" size="small" (onClick)="destroyCard()" severity="danger" />
+              <p-button
+                label="Détruire"
+                icon="pi pi-trash"
+                size="small"
+                (onClick)="destroyCard()"
+                severity="danger"
+              />
             </div>
           </div>
         </p-accordioncontent>

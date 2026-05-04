@@ -9,7 +9,7 @@ import {
   getXPForLevel,
   getTotalXPForLevel,
   getLevelFromXP,
-  getProgressInLevel
+  getProgressInLevel,
 } from '../models/battle-pass.model';
 import { CurrencyService } from './currency.service';
 import { CosmeticsService } from './cosmetics.service';
@@ -19,7 +19,7 @@ import { CosmeticsService } from './cosmetics.service';
  * Manages seasonal progression with free and premium reward tracks
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BattlePassService {
   private readonly STORAGE_KEY = 'jobwars-battlepass';
@@ -37,7 +37,7 @@ export class BattlePassService {
 
   constructor(
     private currencyService: CurrencyService,
-    private cosmeticsService: CosmeticsService
+    private cosmeticsService: CosmeticsService,
   ) {}
 
   /**
@@ -128,7 +128,7 @@ export class BattlePassService {
       type: source,
       amount,
       timestamp: Date.now(),
-      description
+      description,
     });
   }
 
@@ -145,7 +145,7 @@ export class BattlePassService {
     }
 
     // Find reward
-    const reward = progress.rewards.find(r => r.level === level && r.track === track);
+    const reward = progress.rewards.find((r) => r.level === level && r.track === track);
     if (!reward) {
       console.warn('Reward not found:', level, track);
       return false;
@@ -192,7 +192,11 @@ export class BattlePassService {
     }
 
     // Deduct gems
-    const success = this.currencyService.spendCurrency('Gemmes', this.PREMIUM_COST_GEMS, 'Battle Pass Premium');
+    const success = this.currencyService.spendCurrency(
+      'Gemmes',
+      this.PREMIUM_COST_GEMS,
+      'Battle Pass Premium',
+    );
     if (!success) {
       return false;
     }
@@ -225,7 +229,7 @@ export class BattlePassService {
    */
   getAvailableRewards(): BattlePassReward[] {
     const progress = this.getProgress();
-    return progress.rewards.filter(r => {
+    return progress.rewards.filter((r) => {
       if (r.claimed) return false;
       if (r.level > progress.currentLevel) return false;
       if (r.track === 'premium' && !progress.isPremium) return false;
@@ -262,7 +266,7 @@ export class BattlePassService {
       currentXP: 0,
       totalXP: 0,
       isPremium: false,
-      rewards: this.generateRewards()
+      rewards: this.generateRewards(),
     };
   }
 
@@ -288,7 +292,7 @@ export class BattlePassService {
 
   private generateFreeReward(level: number): BattlePassReward | null {
     // Free rewards: coins + occasional gems at milestones
-    const baseCoins = 50 + (level * 10);
+    const baseCoins = 50 + level * 10;
 
     if (level % 10 === 0) {
       // Milestone: gems
@@ -297,7 +301,7 @@ export class BattlePassService {
         track: 'free',
         type: 'gems',
         amount: 25,
-        claimed: false
+        claimed: false,
       };
     } else {
       // Regular: coins
@@ -306,14 +310,14 @@ export class BattlePassService {
         track: 'free',
         type: 'coins',
         amount: baseCoins,
-        claimed: false
+        claimed: false,
       };
     }
   }
 
   private generatePremiumReward(level: number): BattlePassReward | null {
     // Premium rewards: more coins/gems + cosmetics at milestones
-    const baseCoins = 100 + (level * 20);
+    const baseCoins = 100 + level * 20;
 
     if (level % 10 === 0) {
       // Major milestone: cosmetic
@@ -323,7 +327,7 @@ export class BattlePassService {
         type: level % 20 === 0 ? 'card_back' : 'avatar',
         itemId: `bp_${this.getCurrentSeasonId()}_${level}`,
         itemName: `Récompense Niveau ${level}`,
-        claimed: false
+        claimed: false,
       };
     } else if (level % 5 === 0) {
       // Minor milestone: gems
@@ -332,7 +336,7 @@ export class BattlePassService {
         track: 'premium',
         type: 'gems',
         amount: 50,
-        claimed: false
+        claimed: false,
       };
     } else {
       // Regular: coins
@@ -341,7 +345,7 @@ export class BattlePassService {
         track: 'premium',
         type: 'coins',
         amount: baseCoins,
-        claimed: false
+        claimed: false,
       };
     }
   }
@@ -349,10 +353,18 @@ export class BattlePassService {
   private awardReward(reward: BattlePassReward): void {
     switch (reward.type) {
       case 'coins':
-        this.currencyService.addCurrency('Pièces', reward.amount!, `Battle Pass Niveau ${reward.level}`);
+        this.currencyService.addCurrency(
+          'Pièces',
+          reward.amount!,
+          `Battle Pass Niveau ${reward.level}`,
+        );
         break;
       case 'gems':
-        this.currencyService.addCurrency('Gemmes', reward.amount!, `Battle Pass Niveau ${reward.level}`);
+        this.currencyService.addCurrency(
+          'Gemmes',
+          reward.amount!,
+          `Battle Pass Niveau ${reward.level}`,
+        );
         break;
       case 'card_back':
       case 'avatar':

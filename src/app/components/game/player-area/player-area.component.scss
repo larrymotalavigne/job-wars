@@ -19,8 +19,12 @@
   background: rgba(255, 255, 255, 0.06);
   flex-shrink: 0;
 
-  &.p1 { border-left: 3px solid #64b5f6; }
-  &.p2 { border-left: 3px solid #ef5350; }
+  &.p1 {
+    border-left: 3px solid #64b5f6;
+  }
+  &.p2 {
+    border-left: 3px solid #ef5350;
+  }
 }
 
 .player-name {
@@ -43,10 +47,18 @@
     font-size: 0.75rem;
   }
 
-  &.reputation i { color: #ef5350; }
-  &.budget i { color: #ffd54f; }
-  &.deck-count i { color: #90caf9; }
-  &.graveyard-count i { color: #9e9e9e; }
+  &.reputation i {
+    color: #ef5350;
+  }
+  &.budget i {
+    color: #ffd54f;
+  }
+  &.deck-count i {
+    color: #90caf9;
+  }
+  &.graveyard-count i {
+    color: #9e9e9e;
+  }
 
   &.clickable {
     cursor: pointer;

@@ -15,7 +15,11 @@ import { DeckService } from '../../../services/deck.service';
 import { GameService } from '../../../services/game.service';
 import { TutorialService } from '../../../services/tutorial.service';
 import { SoundService, SoundEffect } from '../../../services/sound.service';
-import { MultiplayerService, ConnectionState, MessageType } from '../../../services/multiplayer.service';
+import {
+  MultiplayerService,
+  ConnectionState,
+  MessageType,
+} from '../../../services/multiplayer.service';
 import { Deck, DeckValidation, StarterDeck } from '../../../models/deck.model';
 
 interface DeckOption {
@@ -103,14 +107,14 @@ export class GameLobbyComponent implements OnInit, OnDestroy {
 
     // Subscribe to connection state
     this.subscriptions.push(
-      this.multiplayerService.connectionState$.subscribe(state => {
+      this.multiplayerService.connectionState$.subscribe((state) => {
         this.connectionState = state;
-      })
+      }),
     );
 
     // Subscribe to room info
     this.subscriptions.push(
-      this.multiplayerService.roomInfo$.subscribe(roomInfo => {
+      this.multiplayerService.roomInfo$.subscribe((roomInfo) => {
         if (roomInfo) {
           this.currentRoomCode = roomInfo.code;
           this.isWaitingForOpponent = !roomInfo.opponentId;
@@ -122,19 +126,19 @@ export class GameLobbyComponent implements OnInit, OnDestroy {
           this.isWaitingForOpponent = false;
           this.isSearchingMatch = false;
         }
-      })
+      }),
     );
 
     // Subscribe to multiplayer messages
     this.subscriptions.push(
-      this.multiplayerService.messages$.subscribe(message => {
+      this.multiplayerService.messages$.subscribe((message) => {
         this.handleMultiplayerMessage(message);
-      })
+      }),
     );
   }
 
   ngOnDestroy(): void {
-    this.subscriptions.forEach(sub => sub.unsubscribe());
+    this.subscriptions.forEach((sub) => sub.unsubscribe());
     // Clean up room refresh interval
     if (this.roomRefreshInterval) {
       clearInterval(this.roomRefreshInterval);
@@ -144,13 +148,13 @@ export class GameLobbyComponent implements OnInit, OnDestroy {
   private loadDecks(): void {
     this.starterDecks = this.deckService.getStarterDecks();
 
-    const starterItems: DeckOption[] = this.starterDecks.map(s => {
+    const starterItems: DeckOption[] = this.starterDecks.map((s) => {
       const total = s.entries.reduce((sum, e) => sum + e.quantity, 0);
       return { label: `${s.name} (${total} cartes)`, value: s.id, totalCards: total };
     });
 
     const userDecks = this.deckService.getAllDecks();
-    const userItems: DeckOption[] = userDecks.map(d => {
+    const userItems: DeckOption[] = userDecks.map((d) => {
       const total = d.entries.reduce((sum, e) => sum + e.quantity, 0);
       return { label: `${d.name} (${total} cartes)`, value: d.id, totalCards: total };
     });
@@ -183,7 +187,12 @@ export class GameLobbyComponent implements OnInit, OnDestroy {
   }
 
   get canStart(): boolean {
-    return !!(this.p1DeckId && this.p2DeckId && this.p1Validation?.isValid && this.p2Validation?.isValid);
+    return !!(
+      this.p1DeckId &&
+      this.p2DeckId &&
+      this.p1Validation?.isValid &&
+      this.p2Validation?.isValid
+    );
   }
 
   startGame(): void {
@@ -198,10 +207,7 @@ export class GameLobbyComponent implements OnInit, OnDestroy {
   }
 
   startQuickGame(): void {
-    this.gameService.startQuickGame(
-      this.p1Name || 'Joueur 1',
-      this.p2Name || 'Joueur 2',
-    );
+    this.gameService.startQuickGame(this.p1Name || 'Joueur 1', this.p2Name || 'Joueur 2');
     this.router.navigate(['/game/play']);
   }
 
@@ -218,7 +224,12 @@ export class GameLobbyComponent implements OnInit, OnDestroy {
 
   startTutorial(): void {
     // Use Cyber Assault starter deck — guaranteed multiple 1-cost cards
-    this.gameService.startGame('Vous', 'starter-cyber-assault', 'Adversaire', 'starter-cyber-assault');
+    this.gameService.startGame(
+      'Vous',
+      'starter-cyber-assault',
+      'Adversaire',
+      'starter-cyber-assault',
+    );
     // Auto-complete mulligan for both players so tutorial skips to Budget
     this.gameService.mulligan('player1', []);
     this.gameService.mulligan('player2', []);
@@ -239,11 +250,20 @@ export class GameLobbyComponent implements OnInit, OnDestroy {
   // --- Online Multiplayer Methods ---
 
   get canCreateRoom(): boolean {
-    return !!(this.playerName && this.selectedDeckId && this.connectionState === ConnectionState.CONNECTED);
+    return !!(
+      this.playerName &&
+      this.selectedDeckId &&
+      this.connectionState === ConnectionState.CONNECTED
+    );
   }
 
   get canJoinRoom(): boolean {
-    return !!(this.playerName && this.selectedDeckId && this.roomCodeInput && this.connectionState === ConnectionState.CONNECTED);
+    return !!(
+      this.playerName &&
+      this.selectedDeckId &&
+      this.roomCodeInput &&
+      this.connectionState === ConnectionState.CONNECTED
+    );
   }
 
   async connectToServer(): Promise<void> {

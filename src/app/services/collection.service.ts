@@ -59,7 +59,7 @@ export class CollectionService {
   }
 
   private initializeOrUpdateCollection(allCards: Card[], existing: CardCollectionEntry[]): void {
-    const existingIds = new Set(existing.map(e => e.cardId));
+    const existingIds = new Set(existing.map((e) => e.cardId));
     const newEntries: CardCollectionEntry[] = [];
 
     // Add any missing cards
@@ -75,14 +75,15 @@ export class CollectionService {
     }
 
     if (newEntries.length > 0 || existing.length === 0) {
-      const collection = existing.length === 0
-        ? allCards.map(card => ({
-            cardId: card.id,
-            unlocked: this.isStarterCard(card),
-            unlockedAt: this.isStarterCard(card) ? new Date().toISOString() : undefined,
-            unlockCondition: this.getUnlockCondition(card),
-          }))
-        : [...existing, ...newEntries];
+      const collection =
+        existing.length === 0
+          ? allCards.map((card) => ({
+              cardId: card.id,
+              unlocked: this.isStarterCard(card),
+              unlockedAt: this.isStarterCard(card) ? new Date().toISOString() : undefined,
+              unlockCondition: this.getUnlockCondition(card),
+            }))
+          : [...existing, ...newEntries];
 
       this.saveCollection(collection);
       this.setStoredVersion(this.CURRENT_VERSION);
@@ -91,13 +92,16 @@ export class CollectionService {
 
   private migrateCollection(allCards: Card[]): void {
     const oldCollection = this.loadCollection();
-    const unlockedIds = new Set(oldCollection.filter(e => e.unlocked).map(e => e.cardId));
+    const unlockedIds = new Set(oldCollection.filter((e) => e.unlocked).map((e) => e.cardId));
 
-    const newCollection: CardCollectionEntry[] = allCards.map(card => ({
+    const newCollection: CardCollectionEntry[] = allCards.map((card) => ({
       cardId: card.id,
       unlocked: unlockedIds.has(card.id) || this.isStarterCard(card),
-      unlockedAt: unlockedIds.has(card.id) ? new Date().toISOString() :
-                  this.isStarterCard(card) ? new Date().toISOString() : undefined,
+      unlockedAt: unlockedIds.has(card.id)
+        ? new Date().toISOString()
+        : this.isStarterCard(card)
+          ? new Date().toISOString()
+          : undefined,
       unlockCondition: this.getUnlockCondition(card),
     }));
 
@@ -170,7 +174,7 @@ export class CollectionService {
   getCollectionStats(): CollectionStats {
     const collection = this.loadCollection();
     const totalCards = collection.length;
-    const unlockedCards = collection.filter(e => e.unlocked).length;
+    const unlockedCards = collection.filter((e) => e.unlocked).length;
 
     const byRarity: Record<Rarity, { total: number; unlocked: number }> = {
       [Rarity.Common]: { total: 0, unlocked: 0 },
@@ -190,7 +194,7 @@ export class CollectionService {
     }
 
     const recentUnlocks = collection
-      .filter(e => e.unlocked && e.unlockedAt)
+      .filter((e) => e.unlocked && e.unlockedAt)
       .sort((a, b) => new Date(b.unlockedAt!).getTime() - new Date(a.unlockedAt!).getTime())
       .slice(0, 10);
 
@@ -208,7 +212,7 @@ export class CollectionService {
    */
   isCardUnlocked(cardId: string): boolean {
     const collection = this.loadCollection();
-    const entry = collection.find(e => e.cardId === cardId);
+    const entry = collection.find((e) => e.cardId === cardId);
     return entry?.unlocked ?? false;
   }
 
@@ -217,8 +221,8 @@ export class CollectionService {
    */
   getUnlockedCards(): Card[] {
     const collection = this.loadCollection();
-    const unlockedIds = collection.filter(e => e.unlocked).map(e => e.cardId);
-    return this.cardService.getAllCards().filter(c => unlockedIds.includes(c.id));
+    const unlockedIds = collection.filter((e) => e.unlocked).map((e) => e.cardId);
+    return this.cardService.getAllCards().filter((c) => unlockedIds.includes(c.id));
   }
 
   /**
@@ -226,15 +230,17 @@ export class CollectionService {
    */
   getLockedCards(): Array<{ card: Card; condition: UnlockCondition }> {
     const collection = this.loadCollection();
-    const locked = collection.filter(e => !e.unlocked);
+    const locked = collection.filter((e) => !e.unlocked);
 
-    return locked.map(entry => {
-      const card = this.cardService.getCardById(entry.cardId);
-      return {
-        card: card!,
-        condition: entry.unlockCondition,
-      };
-    }).filter(item => item.card !== null);
+    return locked
+      .map((entry) => {
+        const card = this.cardService.getCardById(entry.cardId);
+        return {
+          card: card!,
+          condition: entry.unlockCondition,
+        };
+      })
+      .filter((item) => item.card !== null);
   }
 
   /**
@@ -242,7 +248,7 @@ export class CollectionService {
    */
   unlockCard(cardId: string): void {
     const collection = this.loadCollection();
-    const entry = collection.find(e => e.cardId === cardId);
+    const entry = collection.find((e) => e.cardId === cardId);
     if (entry && !entry.unlocked) {
       entry.unlocked = true;
       entry.unlockedAt = new Date().toISOString();

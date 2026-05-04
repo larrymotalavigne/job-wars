@@ -69,19 +69,30 @@
 
     <div class="filter-group">
       <label>Image</label>
-      <p-select
-        [options]="imageStyleOptions"
-        [(ngModel)]="currentImageStyle"
-      />
+      <p-select [options]="imageStyleOptions" [(ngModel)]="currentImageStyle" />
     </div>
   </div>
 
   <!-- Barre de sélection -->
   <div class="selection-bar">
-    <span class="count">{{ filteredCards.length }} cartes affichées · {{ selectedCards.size }} sélectionnées</span>
+    <span class="count"
+      >{{ filteredCards.length }} cartes affichées · {{ selectedCards.size }} sélectionnées</span
+    >
     <div class="selection-actions">
-      <p-button label="Tout sélectionner" icon="pi pi-check-square" [text]="true" size="small" (onClick)="selectAll()" />
-      <p-button label="Effacer" icon="pi pi-times" [text]="true" size="small" (onClick)="clearSelection()" />
+      <p-button
+        label="Tout sélectionner"
+        icon="pi pi-check-square"
+        [text]="true"
+        size="small"
+        (onClick)="selectAll()"
+      />
+      <p-button
+        label="Effacer"
+        icon="pi pi-times"
+        [text]="true"
+        size="small"
+        (onClick)="clearSelection()"
+      />
       <p-button
         label="Imprimer la sélection"
         icon="pi pi-print"
@@ -100,7 +111,12 @@
       (click)="toggleSelection(card)"
       (dblclick)="openDetail(card)"
     >
-      <app-card [card]="card" [selected]="isSelected(card)" [design]="currentDesign" [imageStyle]="currentImageStyle" />
+      <app-card
+        [card]="card"
+        [selected]="isSelected(card)"
+        [design]="currentDesign"
+        [imageStyle]="currentImageStyle"
+      />
       <div class="card-select-overlay" *ngIf="isSelected(card)">
         <i class="pi pi-check"></i>
       </div>
@@ -131,7 +147,8 @@
       <div class="detail-row"><strong>Coût :</strong> {{ detailCard.cost }} Budget</div>
       <div class="detail-row"><strong>Rareté :</strong> {{ detailCard.rarity }}</div>
       <div class="detail-row" *ngIf="isJobCard(detailCard)">
-        <strong>Stats :</strong> {{ $any(detailCard).productivity }} / {{ $any(detailCard).resilience }}
+        <strong>Stats :</strong> {{ $any(detailCard).productivity }} /
+        {{ $any(detailCard).resilience }}
       </div>
       <div class="detail-row flavor" *ngIf="detailCard.flavorText">{{ detailCard.flavorText }}</div>
     </div>

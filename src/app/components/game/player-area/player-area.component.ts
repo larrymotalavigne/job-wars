@@ -10,7 +10,18 @@ import { GameCardComponent } from '../game-card/game-card.component';
 @Component({
   selector: 'app-player-area',
   standalone: true,
-  imports: [CommonModule, HandZoneComponent, FieldZoneComponent, GameCardComponent, Dialog, Tabs, TabList, Tab, TabPanels, TabPanel],
+  imports: [
+    CommonModule,
+    HandZoneComponent,
+    FieldZoneComponent,
+    GameCardComponent,
+    Dialog,
+    Tabs,
+    TabList,
+    Tab,
+    TabPanels,
+    TabPanel,
+  ],
   templateUrl: './player-area.component.html',
   styleUrl: './player-area.component.scss',
 })

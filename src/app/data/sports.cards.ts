@@ -13,7 +13,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, elle gagne +1 Résilience.',
     flavorText: 'Chaque champion a commencé quelque part.',
-    image: 'sports/sp-001.jpg'
+    image: 'sports/sp-001.jpg',
   },
   {
     id: 'sp-002',
@@ -26,7 +26,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Les autres cartes Sports que vous contrôlez gagnent +1 Résilience.',
     flavorText: 'Transmettre la passion du sport.',
-    image: 'sports/sp-002.jpg'
+    image: 'sports/sp-002.jpg',
   },
   {
     id: 'sp-003',
@@ -39,7 +39,7 @@ export const sportsCards: Card[] = [
     resilience: 3,
     ability: 'Au début de votre tour, une carte Sports ciblée gagne +1 Productivité.',
     flavorText: 'Le corps est une machine à perfectionner.',
-    image: 'sports/sp-003.jpg'
+    image: 'sports/sp-003.jpg',
   },
   {
     id: 'sp-004',
@@ -52,11 +52,11 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Faire respecter les règles du jeu.',
-    image: 'sports/sp-004.jpg'
+    image: 'sports/sp-004.jpg',
   },
   {
     id: 'sp-005',
-    name: 'Vendeur d\'Équipement Sportif',
+    name: "Vendeur d'Équipement Sportif",
     domain: Domain.Sports,
     type: CardType.Job,
     cost: 2,
@@ -64,8 +64,8 @@ export const sportsCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 2 ressources.',
-    flavorText: 'L\'équipement parfait pour votre passion.',
-    image: 'sports/sp-005.jpg'
+    flavorText: "L'équipement parfait pour votre passion.",
+    image: 'sports/sp-005.jpg',
   },
   {
     id: 'sp-006',
@@ -78,7 +78,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Une fois par tour, restaurez 2 points de Résilience à une carte Sports ciblée.',
     flavorText: 'Soigner pour revenir plus fort.',
-    image: 'sports/sp-006.jpg'
+    image: 'sports/sp-006.jpg',
   },
   {
     id: 'sp-007',
@@ -91,7 +91,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Les cartes Sports que vous contrôlez gagnent +1 Productivité.',
     flavorText: 'Former les champions de demain.',
-    image: 'sports/sp-007.jpg'
+    image: 'sports/sp-007.jpg',
   },
   {
     id: 'sp-008',
@@ -103,8 +103,8 @@ export const sportsCards: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: '+1 Productivité pour chaque autre carte Sports que vous contrôlez.',
-    flavorText: 'Le jeu d\'équipe avant tout.',
-    image: 'sports/sp-008.jpg'
+    flavorText: "Le jeu d'équipe avant tout.",
+    image: 'sports/sp-008.jpg',
   },
   {
     id: 'sp-009',
@@ -117,7 +117,7 @@ export const sportsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte attaque, piochez une carte.',
     flavorText: 'Chaque foulée est une victoire.',
-    image: 'sports/sp-009.jpg'
+    image: 'sports/sp-009.jpg',
   },
   {
     id: 'sp-010',
@@ -129,8 +129,8 @@ export const sportsCards: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
-    flavorText: 'L\'eau est son élément.',
-    image: 'sports/sp-010.jpg'
+    flavorText: "L'eau est son élément.",
+    image: 'sports/sp-010.jpg',
   },
   {
     id: 'sp-011',
@@ -143,7 +143,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, regardez les 3 premières cartes de votre deck.',
     flavorText: 'Le panier est son objectif.',
-    image: 'sports/sp-011.jpg'
+    image: 'sports/sp-011.jpg',
   },
   {
     id: 'sp-012',
@@ -156,7 +156,7 @@ export const sportsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte attaque, gagnez 1 ressource.',
     flavorText: 'La route est longue, mais belle.',
-    image: 'sports/sp-012.jpg'
+    image: 'sports/sp-012.jpg',
   },
   {
     id: 'sp-013',
@@ -169,7 +169,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, cette carte gagne +1 Productivité.',
     flavorText: 'Chaque point compte.',
-    image: 'sports/sp-013.jpg'
+    image: 'sports/sp-013.jpg',
   },
   {
     id: 'sp-014',
@@ -180,9 +180,9 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 1,
     resilience: 3,
-    ability: 'Quand cette carte est attaquée, elle gagne +2 Résilience jusqu\'à la fin du tour.',
-    flavorText: 'La force vient de l\'équilibre.',
-    image: 'sports/sp-014.jpg'
+    ability: "Quand cette carte est attaquée, elle gagne +2 Résilience jusqu'à la fin du tour.",
+    flavorText: "La force vient de l'équilibre.",
+    image: 'sports/sp-014.jpg',
   },
   {
     id: 'sp-015',
@@ -195,7 +195,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'La grâce est une discipline.',
-    image: 'sports/sp-015.jpg'
+    image: 'sports/sp-015.jpg',
   },
   {
     id: 'sp-016',
@@ -208,7 +208,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Cette carte peut attaquer le tour où elle arrive en jeu.',
     flavorText: 'La force pure incarnée.',
-    image: 'sports/sp-016.jpg'
+    image: 'sports/sp-016.jpg',
   },
   {
     id: 'sp-017',
@@ -219,9 +219,9 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Quand cette carte attaque, elle gagne +2 Productivité jusqu\'à la fin du tour.',
+    ability: "Quand cette carte attaque, elle gagne +2 Productivité jusqu'à la fin du tour.",
     flavorText: 'Rapidité et précision.',
-    image: 'sports/sp-017.jpg'
+    image: 'sports/sp-017.jpg',
   },
   {
     id: 'sp-018',
@@ -234,7 +234,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte inflige des dégâts, gagnez 1 ressource.',
     flavorText: 'Chaque coup est calculé.',
-    image: 'sports/sp-018.jpg'
+    image: 'sports/sp-018.jpg',
   },
   {
     id: 'sp-019',
@@ -247,7 +247,7 @@ export const sportsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, regardez les 2 premières cartes de votre deck.',
     flavorText: 'La montagne appelle.',
-    image: 'sports/sp-019.jpg'
+    image: 'sports/sp-019.jpg',
   },
   {
     id: 'sp-020',
@@ -260,7 +260,7 @@ export const sportsCards: Card[] = [
     resilience: 3,
     ability: '+1 Résilience pour chaque autre carte Sports que vous contrôlez.',
     flavorText: 'Le courage sur le terrain.',
-    image: 'sports/sp-020.jpg'
+    image: 'sports/sp-020.jpg',
   },
   {
     id: 'sp-021',
@@ -273,7 +273,7 @@ export const sportsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource.',
     flavorText: 'La précision est tout.',
-    image: 'sports/sp-021.jpg'
+    image: 'sports/sp-021.jpg',
   },
   {
     id: 'sp-022',
@@ -284,9 +284,9 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Cette carte peut attaquer trois fois par tour au lieu d\'une.',
+    ability: "Cette carte peut attaquer trois fois par tour au lieu d'une.",
     flavorText: 'Nager, pédaler, courir.',
-    image: 'sports/sp-022.jpg'
+    image: 'sports/sp-022.jpg',
   },
   {
     id: 'sp-023',
@@ -298,8 +298,8 @@ export const sportsCards: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, elle gagne +1 Productivité.',
-    flavorText: 'Rapidité et esprit d\'équipe.',
-    image: 'sports/sp-023.jpg'
+    flavorText: "Rapidité et esprit d'équipe.",
+    image: 'sports/sp-023.jpg',
   },
   {
     id: 'sp-024',
@@ -312,7 +312,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, piochez une carte.',
     flavorText: 'La glace est sa scène.',
-    image: 'sports/sp-024.jpg'
+    image: 'sports/sp-024.jpg',
   },
   {
     id: 'sp-025',
@@ -324,8 +324,8 @@ export const sportsCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Les autres cartes Sports que vous contrôlez gagnent +1 Productivité.',
-    flavorText: 'L\'esprit d\'équipe incarné.',
-    image: 'sports/sp-025.jpg'
+    flavorText: "L'esprit d'équipe incarné.",
+    image: 'sports/sp-025.jpg',
   },
   {
     id: 'sp-026',
@@ -338,7 +338,7 @@ export const sportsCards: Card[] = [
     resilience: 3,
     ability: 'Cette carte ne peut pas être bloquée par des cartes avec une Résilience inférieure.',
     flavorText: 'Toujours plus haut.',
-    image: 'sports/sp-026.jpg'
+    image: 'sports/sp-026.jpg',
   },
   {
     id: 'sp-027',
@@ -351,7 +351,7 @@ export const sportsCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource.',
     flavorText: 'Discipline et respect.',
-    image: 'sports/sp-027.jpg'
+    image: 'sports/sp-027.jpg',
   },
   {
     id: 'sp-028',
@@ -364,7 +364,7 @@ export const sportsCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte attaque, elle gagne +1 Productivité.',
     flavorText: 'Chevaucher les vagues.',
-    image: 'sports/sp-028.jpg'
+    image: 'sports/sp-028.jpg',
   },
   {
     id: 'sp-029',
@@ -377,7 +377,7 @@ export const sportsCards: Card[] = [
     resilience: 1,
     ability: 'Cette carte peut attaquer directement le joueur adverse.',
     flavorText: 'Précision et concentration.',
-    image: 'sports/sp-029.jpg'
+    image: 'sports/sp-029.jpg',
   },
   {
     id: 'sp-030',
@@ -388,9 +388,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Au début de votre tour, gagnez 1 ressource si vous contrôlez au moins 2 cartes Sports.',
-    flavorText: 'La force de l\'unité.',
-    image: 'sports/sp-030.jpg'
+    ability:
+      'Au début de votre tour, gagnez 1 ressource si vous contrôlez au moins 2 cartes Sports.',
+    flavorText: "La force de l'unité.",
+    image: 'sports/sp-030.jpg',
   },
 
   // Uncommon (31-50)
@@ -405,7 +406,7 @@ export const sportsCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Sports que vous contrôlez gagnent +2 Productivité et +1 Résilience.',
     flavorText: 'Transformer le talent en excellence.',
-    image: 'sports/sp-031.jpg'
+    image: 'sports/sp-031.jpg',
   },
   {
     id: 'sp-032',
@@ -418,7 +419,7 @@ export const sportsCards: Card[] = [
     resilience: 3,
     ability: '+2 Productivité pour chaque autre carte Sports que vous contrôlez.',
     flavorText: 'Le jeu collectif à son sommet.',
-    image: 'sports/sp-032.jpg'
+    image: 'sports/sp-032.jpg',
   },
   {
     id: 'sp-033',
@@ -431,7 +432,7 @@ export const sportsCards: Card[] = [
     resilience: 4,
     ability: 'Quand cette carte arrive en jeu, piochez 2 cartes et gagnez 2 ressources.',
     flavorText: 'Représenter son pays avec fierté.',
-    image: 'sports/sp-033.jpg'
+    image: 'sports/sp-033.jpg',
   },
   {
     id: 'sp-034',
@@ -443,8 +444,8 @@ export const sportsCards: Card[] = [
     productivity: 3,
     resilience: 3,
     ability: 'Une fois par tour, cherchez une carte Sports dans votre deck.',
-    flavorText: 'Gérer le talent, c\'est un art.',
-    image: 'sports/sp-034.jpg'
+    flavorText: "Gérer le talent, c'est un art.",
+    image: 'sports/sp-034.jpg',
   },
   {
     id: 'sp-035',
@@ -455,9 +456,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 3,
-    ability: 'Quand cette carte arrive en jeu, les autres cartes Sports gagnent +2 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Quand cette carte arrive en jeu, les autres cartes Sports gagnent +2 Productivité jusqu'à la fin du tour.",
     flavorText: 'La gloire régionale est un tremplin.',
-    image: 'sports/sp-035.jpg'
+    image: 'sports/sp-035.jpg',
   },
   {
     id: 'sp-036',
@@ -468,9 +470,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 2,
     resilience: 5,
-    ability: 'Au début de votre tour, restaurez 3 points de Résilience répartis comme vous le souhaitez entre les cartes Sports.',
+    ability:
+      'Au début de votre tour, restaurez 3 points de Résilience répartis comme vous le souhaitez entre les cartes Sports.',
     flavorText: 'Soigner pour prolonger les carrières.',
-    image: 'sports/sp-036.jpg'
+    image: 'sports/sp-036.jpg',
   },
   {
     id: 'sp-037',
@@ -483,7 +486,7 @@ export const sportsCards: Card[] = [
     resilience: 3,
     ability: 'Cette carte peut attaquer deux fois par tour.',
     flavorText: 'Chaque match est une bataille.',
-    image: 'sports/sp-037.jpg'
+    image: 'sports/sp-037.jpg',
   },
   {
     id: 'sp-038',
@@ -496,7 +499,7 @@ export const sportsCards: Card[] = [
     resilience: 4,
     ability: 'Quand cette carte attaque, piochez une carte.',
     flavorText: 'Dominer le terrain.',
-    image: 'sports/sp-038.jpg'
+    image: 'sports/sp-038.jpg',
   },
   {
     id: 'sp-039',
@@ -509,7 +512,7 @@ export const sportsCards: Card[] = [
     resilience: 3,
     ability: 'Quand cette carte attaque, gagnez 2 ressources.',
     flavorText: 'La route est son royaume.',
-    image: 'sports/sp-039.jpg'
+    image: 'sports/sp-039.jpg',
   },
   {
     id: 'sp-040',
@@ -522,7 +525,7 @@ export const sportsCards: Card[] = [
     resilience: 4,
     ability: 'Cette carte ne peut pas être bloquée.',
     flavorText: 'Glisser vers la victoire.',
-    image: 'sports/sp-040.jpg'
+    image: 'sports/sp-040.jpg',
   },
   {
     id: 'sp-041',
@@ -535,7 +538,7 @@ export const sportsCards: Card[] = [
     resilience: 4,
     ability: 'Quand cette carte inflige des dégâts, piochez une carte.',
     flavorText: 'Chaque round est une guerre.',
-    image: 'sports/sp-041.jpg'
+    image: 'sports/sp-041.jpg',
   },
   {
     id: 'sp-042',
@@ -548,7 +551,7 @@ export const sportsCards: Card[] = [
     resilience: 3,
     ability: 'Au début de votre tour, gagnez 2 ressources.',
     flavorText: 'La précision récompensée.',
-    image: 'sports/sp-042.jpg'
+    image: 'sports/sp-042.jpg',
   },
   {
     id: 'sp-043',
@@ -561,7 +564,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Les autres cartes Sports que vous contrôlez gagnent +2 Résilience.',
     flavorText: 'Le courage et la force.',
-    image: 'sports/sp-043.jpg'
+    image: 'sports/sp-043.jpg',
   },
   {
     id: 'sp-044',
@@ -574,7 +577,7 @@ export const sportsCards: Card[] = [
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, regardez les 5 premières cartes de votre deck.',
     flavorText: 'Descendre à toute vitesse.',
-    image: 'sports/sp-044.jpg'
+    image: 'sports/sp-044.jpg',
   },
   {
     id: 'sp-045',
@@ -585,9 +588,9 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 4,
-    ability: 'Cette carte peut attaquer jusqu\'à 3 fois par tour.',
-    flavorText: 'L\'athlète complet.',
-    image: 'sports/sp-045.jpg'
+    ability: "Cette carte peut attaquer jusqu'à 3 fois par tour.",
+    flavorText: "L'athlète complet.",
+    image: 'sports/sp-045.jpg',
   },
   {
     id: 'sp-046',
@@ -600,7 +603,7 @@ export const sportsCards: Card[] = [
     resilience: 4,
     ability: 'Au début de votre tour, les cartes Sports gagnent +1 Productivité.',
     flavorText: 'Créer des champions.',
-    image: 'sports/sp-046.jpg'
+    image: 'sports/sp-046.jpg',
   },
   {
     id: 'sp-047',
@@ -613,7 +616,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Cette carte ne peut pas être bloquée par des cartes avec moins de 4 de Résilience.',
     flavorText: 'Conquérir les sommets.',
-    image: 'sports/sp-047.jpg'
+    image: 'sports/sp-047.jpg',
   },
   {
     id: 'sp-048',
@@ -624,9 +627,9 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 3,
-    ability: 'Quand cette carte attaque, elle gagne +3 Productivité jusqu\'à la fin du tour.',
+    ability: "Quand cette carte attaque, elle gagne +3 Productivité jusqu'à la fin du tour.",
     flavorText: 'Dompter les vagues géantes.',
-    image: 'sports/sp-048.jpg'
+    image: 'sports/sp-048.jpg',
   },
   {
     id: 'sp-049',
@@ -639,7 +642,7 @@ export const sportsCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Sports que vous contrôlez gagnent +1 Productivité et +1 Résilience.',
     flavorText: 'Représenter son pays avec excellence.',
-    image: 'sports/sp-049.jpg'
+    image: 'sports/sp-049.jpg',
   },
   {
     id: 'sp-050',
@@ -650,15 +653,16 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Une fois par tour, vous pouvez chercher une carte Sports dans votre deck et l\'ajouter à votre main.',
-    flavorText: 'Développer le sport à l\'échelle nationale.',
-    image: 'sports/sp-050.jpg'
+    ability:
+      "Une fois par tour, vous pouvez chercher une carte Sports dans votre deck et l'ajouter à votre main.",
+    flavorText: "Développer le sport à l'échelle nationale.",
+    image: 'sports/sp-050.jpg',
   },
 
   // Rare (51-80)
   {
     id: 'sp-051',
-    name: 'Entraîneur d\'Équipe Nationale',
+    name: "Entraîneur d'Équipe Nationale",
     domain: Domain.Sports,
     type: CardType.Job,
     cost: 6,
@@ -667,7 +671,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Les cartes Sports que vous contrôlez gagnent +3 Productivité et +2 Résilience.',
     flavorText: 'Mener son pays vers la gloire.',
-    image: 'sports/sp-051.jpg'
+    image: 'sports/sp-051.jpg',
   },
   {
     id: 'sp-052',
@@ -678,9 +682,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, piochez 3 cartes et gagnez 3 ressources. Les autres cartes Sports gagnent +2 Productivité.',
-    flavorText: 'Le sommet de l\'excellence sportive.',
-    image: 'sports/sp-052.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, piochez 3 cartes et gagnez 3 ressources. Les autres cartes Sports gagnent +2 Productivité.',
+    flavorText: "Le sommet de l'excellence sportive.",
+    image: 'sports/sp-052.jpg',
   },
   {
     id: 'sp-053',
@@ -691,22 +696,24 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Au début de votre tour, cherchez une carte Sports dans votre deck et ajoutez-la à votre main.',
+    ability:
+      'Au début de votre tour, cherchez une carte Sports dans votre deck et ajoutez-la à votre main.',
     flavorText: 'Gouverner un sport entier.',
-    image: 'sports/sp-053.jpg'
+    image: 'sports/sp-053.jpg',
   },
   {
     id: 'sp-054',
-    name: 'Médaillé Olympique d\'Or',
+    name: "Médaillé Olympique d'Or",
     domain: Domain.Sports,
     type: CardType.Job,
     cost: 7,
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, les cartes Sports que vous contrôlez gagnent +4 Productivité jusqu\'à la fin du tour.',
-    flavorText: 'L\'or brille éternellement.',
-    image: 'sports/sp-054.jpg'
+    ability:
+      "Quand cette carte arrive en jeu, les cartes Sports que vous contrôlez gagnent +4 Productivité jusqu'à la fin du tour.",
+    flavorText: "L'or brille éternellement.",
+    image: 'sports/sp-054.jpg',
   },
   {
     id: 'sp-055',
@@ -719,7 +726,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Les cartes Sports dans votre main coûtent 2 de moins à jouer.',
     flavorText: 'Bâtir une dynastie sportive.',
-    image: 'sports/sp-055.jpg'
+    image: 'sports/sp-055.jpg',
   },
   {
     id: 'sp-056',
@@ -730,9 +737,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 7,
     resilience: 6,
-    ability: '+3 Productivité pour chaque autre carte Sports. Quand cette carte attaque, piochez 2 cartes.',
+    ability:
+      '+3 Productivité pour chaque autre carte Sports. Quand cette carte attaque, piochez 2 cartes.',
     flavorText: 'Le monde à ses pieds.',
-    image: 'sports/sp-056.jpg'
+    image: 'sports/sp-056.jpg',
   },
   {
     id: 'sp-057',
@@ -745,7 +753,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Cette carte peut attaquer quatre fois par tour.',
     flavorText: 'Dominer les quatre tournois majeurs.',
-    image: 'sports/sp-057.jpg'
+    image: 'sports/sp-057.jpg',
   },
   {
     id: 'sp-058',
@@ -758,7 +766,7 @@ export const sportsCards: Card[] = [
     resilience: 6,
     ability: 'Quand cette carte attaque, piochez 2 cartes et gagnez 2 ressources.',
     flavorText: 'Dominer le terrain à chaque match.',
-    image: 'sports/sp-058.jpg'
+    image: 'sports/sp-058.jpg',
   },
   {
     id: 'sp-059',
@@ -771,7 +779,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Quand cette carte attaque, gagnez 3 ressources et piochez une carte.',
     flavorText: 'Porter le maillot jaune avec fierté.',
-    image: 'sports/sp-059.jpg'
+    image: 'sports/sp-059.jpg',
   },
   {
     id: 'sp-060',
@@ -784,7 +792,7 @@ export const sportsCards: Card[] = [
     resilience: 7,
     ability: 'Quand cette carte inflige des dégâts, elle inflige le double de dégâts.',
     flavorText: 'Le roi du ring.',
-    image: 'sports/sp-060.jpg'
+    image: 'sports/sp-060.jpg',
   },
   {
     id: 'sp-061',
@@ -795,22 +803,23 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Au début de votre tour, cherchez jusqu\'à 2 cartes Sports dans votre deck.',
+    ability: "Au début de votre tour, cherchez jusqu'à 2 cartes Sports dans votre deck.",
     flavorText: 'Gérer les meilleurs joueurs du monde.',
-    image: 'sports/sp-061.jpg'
+    image: 'sports/sp-061.jpg',
   },
   {
     id: 'sp-062',
-    name: 'Record du Monde d\'Athlétisme',
+    name: "Record du Monde d'Athlétisme",
     domain: Domain.Sports,
     type: CardType.Job,
     cost: 7,
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, doublez la Productivité de toutes les cartes Sports jusqu\'à la fin du tour.',
+    ability:
+      "Quand cette carte arrive en jeu, doublez la Productivité de toutes les cartes Sports jusqu'à la fin du tour.",
     flavorText: 'Repousser les limites humaines.',
-    image: 'sports/sp-062.jpg'
+    image: 'sports/sp-062.jpg',
   },
   {
     id: 'sp-063',
@@ -822,8 +831,8 @@ export const sportsCards: Card[] = [
     productivity: 5,
     resilience: 5,
     ability: 'Cette carte ne peut pas être bloquée et gagne +2 Productivité quand elle attaque.',
-    flavorText: 'Fendre l\'eau comme personne.',
-    image: 'sports/sp-063.jpg'
+    flavorText: "Fendre l'eau comme personne.",
+    image: 'sports/sp-063.jpg',
   },
   {
     id: 'sp-064',
@@ -834,9 +843,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Les cartes Sports que vous contrôlez ne peuvent pas être ciblées par les effets adverses.',
+    ability:
+      'Les cartes Sports que vous contrôlez ne peuvent pas être ciblées par les effets adverses.',
     flavorText: 'Promouvoir les valeurs olympiques.',
-    image: 'sports/sp-064.jpg'
+    image: 'sports/sp-064.jpg',
   },
   {
     id: 'sp-065',
@@ -849,7 +859,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Au début de votre tour, gagnez 4 ressources.',
     flavorText: 'La précision ultime.',
-    image: 'sports/sp-065.jpg'
+    image: 'sports/sp-065.jpg',
   },
   {
     id: 'sp-066',
@@ -860,22 +870,24 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 7,
     resilience: 6,
-    ability: 'Cette carte peut attaquer le tour où elle arrive en jeu. Quand elle attaque, piochez 2 cartes.',
+    ability:
+      'Cette carte peut attaquer le tour où elle arrive en jeu. Quand elle attaque, piochez 2 cartes.',
     flavorText: 'La vitesse incarnée.',
-    image: 'sports/sp-066.jpg'
+    image: 'sports/sp-066.jpg',
   },
   {
     id: 'sp-067',
-    name: 'Propriétaire d\'Équipe Sportive',
+    name: "Propriétaire d'Équipe Sportive",
     domain: Domain.Sports,
     type: CardType.Job,
     cost: 6,
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Au début de votre tour, gagnez 2 ressources pour chaque carte Sports que vous contrôlez.',
+    ability:
+      'Au début de votre tour, gagnez 2 ressources pour chaque carte Sports que vous contrôlez.',
     flavorText: 'Investir dans la gloire.',
-    image: 'sports/sp-067.jpg'
+    image: 'sports/sp-067.jpg',
   },
   {
     id: 'sp-068',
@@ -888,7 +900,7 @@ export const sportsCards: Card[] = [
     resilience: 6,
     ability: 'Quand cette carte arrive en jeu, piochez 3 cartes.',
     flavorText: 'La grâce et la force combinées.',
-    image: 'sports/sp-068.jpg'
+    image: 'sports/sp-068.jpg',
   },
   {
     id: 'sp-069',
@@ -901,7 +913,7 @@ export const sportsCards: Card[] = [
     resilience: 6,
     ability: 'Cette carte peut attaquer deux fois par tour et inflige +2 dégâts.',
     flavorText: 'Maîtriser tous les arts martiaux.',
-    image: 'sports/sp-069.jpg'
+    image: 'sports/sp-069.jpg',
   },
   {
     id: 'sp-070',
@@ -914,7 +926,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Les cartes Sports que vous jouez ce tour-ci coûtent 2 de moins.',
     flavorText: 'Gérer le temple du sport.',
-    image: 'sports/sp-070.jpg'
+    image: 'sports/sp-070.jpg',
   },
   {
     id: 'sp-071',
@@ -927,7 +939,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Quand cette carte attaque, elle gagne +4 Productivité et ne peut pas être bloquée.',
     flavorText: 'Repousser les limites du possible.',
-    image: 'sports/sp-071.jpg'
+    image: 'sports/sp-071.jpg',
   },
   {
     id: 'sp-072',
@@ -939,8 +951,8 @@ export const sportsCards: Card[] = [
     productivity: 5,
     resilience: 6,
     ability: 'Une fois par tour, vous pouvez jouer une carte Sports depuis votre défausse.',
-    flavorText: 'Diriger l\'élite sportive.',
-    image: 'sports/sp-072.jpg'
+    flavorText: "Diriger l'élite sportive.",
+    image: 'sports/sp-072.jpg',
   },
   {
     id: 'sp-073',
@@ -953,7 +965,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Quand cette carte attaque, elle gagne +5 Productivité et piochez 2 cartes.',
     flavorText: 'Maîtriser les vagues les plus dangereuses.',
-    image: 'sports/sp-073.jpg'
+    image: 'sports/sp-073.jpg',
   },
   {
     id: 'sp-074',
@@ -965,21 +977,22 @@ export const sportsCards: Card[] = [
     productivity: 5,
     resilience: 7,
     ability: 'Quand cette carte est attaquée, elle inflige des dégâts égaux à sa Résilience.',
-    flavorText: 'Utiliser la force de l\'adversaire.',
-    image: 'sports/sp-074.jpg'
+    flavorText: "Utiliser la force de l'adversaire.",
+    image: 'sports/sp-074.jpg',
   },
   {
     id: 'sp-075',
-    name: 'Champion d\'Escalade',
+    name: "Champion d'Escalade",
     domain: Domain.Sports,
     type: CardType.Job,
     cost: 6,
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Cette carte ne peut pas être bloquée. Quand vous jouez une carte Sports, gagnez 1 ressource.',
+    ability:
+      'Cette carte ne peut pas être bloquée. Quand vous jouez une carte Sports, gagnez 1 ressource.',
     flavorText: 'Conquérir les parois impossibles.',
-    image: 'sports/sp-075.jpg'
+    image: 'sports/sp-075.jpg',
   },
   {
     id: 'sp-076',
@@ -992,7 +1005,7 @@ export const sportsCards: Card[] = [
     resilience: 6,
     ability: 'Les cartes Sports que vous contrôlez gagnent +3 Productivité et +3 Résilience.',
     flavorText: 'Organiser les plus grands événements sportifs.',
-    image: 'sports/sp-076.jpg'
+    image: 'sports/sp-076.jpg',
   },
   {
     id: 'sp-077',
@@ -1003,9 +1016,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Cette carte peut attaquer trois fois par tour. Quand elle attaque, gagnez 2 ressources.',
-    flavorText: 'L\'endurance ultime.',
-    image: 'sports/sp-077.jpg'
+    ability:
+      'Cette carte peut attaquer trois fois par tour. Quand elle attaque, gagnez 2 ressources.',
+    flavorText: "L'endurance ultime.",
+    image: 'sports/sp-077.jpg',
   },
   {
     id: 'sp-078',
@@ -1018,7 +1032,7 @@ export const sportsCards: Card[] = [
     resilience: 5,
     ability: 'Au début de votre tour, gagnez 1 ressource pour chaque carte en jeu.',
     flavorText: 'Équiper les champions du monde.',
-    image: 'sports/sp-078.jpg'
+    image: 'sports/sp-078.jpg',
   },
   {
     id: 'sp-079',
@@ -1029,9 +1043,9 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Cette carte peut attaquer jusqu\'à 5 fois par tour.',
-    flavorText: 'L\'athlète le plus complet du monde.',
-    image: 'sports/sp-079.jpg'
+    ability: "Cette carte peut attaquer jusqu'à 5 fois par tour.",
+    flavorText: "L'athlète le plus complet du monde.",
+    image: 'sports/sp-079.jpg',
   },
   {
     id: 'sp-080',
@@ -1042,9 +1056,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Au début de votre tour, cherchez jusqu\'à 3 cartes Sports dans votre deck et ajoutez-les à votre main.',
+    ability:
+      "Au début de votre tour, cherchez jusqu'à 3 cartes Sports dans votre deck et ajoutez-les à votre main.",
     flavorText: 'Développer le football mondial.',
-    image: 'sports/sp-080.jpg'
+    image: 'sports/sp-080.jpg',
   },
 
   // Legendary (81-100)
@@ -1057,9 +1072,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 8,
-    ability: 'Les cartes Sports que vous contrôlez gagnent +5 Productivité. Quand cette carte attaque, piochez 3 cartes et gagnez 5 ressources.',
+    ability:
+      'Les cartes Sports que vous contrôlez gagnent +5 Productivité. Quand cette carte attaque, piochez 3 cartes et gagnez 5 ressources.',
     flavorText: 'Le roi du football.',
-    image: 'sports/sp-081.jpg'
+    image: 'sports/sp-081.jpg',
   },
   {
     id: 'sp-082',
@@ -1070,9 +1086,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Cette carte peut attaquer trois fois par tour. Quand elle attaque, piochez 2 cartes et les autres cartes Sports gagnent +3 Productivité.',
+    ability:
+      'Cette carte peut attaquer trois fois par tour. Quand elle attaque, piochez 2 cartes et les autres cartes Sports gagnent +3 Productivité.',
     flavorText: 'His Airness - Le plus grand de tous les temps.',
-    image: 'sports/sp-082.jpg'
+    image: 'sports/sp-082.jpg',
   },
   {
     id: 'sp-083',
@@ -1083,9 +1100,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 7,
-    ability: 'Cette carte peut attaquer le tour où elle arrive en jeu et ne peut pas être bloquée. Quand elle attaque, elle inflige le triple de dégâts.',
-    flavorText: 'L\'homme le plus rapide du monde.',
-    image: 'sports/sp-083.jpg'
+    ability:
+      'Cette carte peut attaquer le tour où elle arrive en jeu et ne peut pas être bloquée. Quand elle attaque, elle inflige le triple de dégâts.',
+    flavorText: "L'homme le plus rapide du monde.",
+    image: 'sports/sp-083.jpg',
   },
   {
     id: 'sp-084',
@@ -1096,9 +1114,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Cette carte ne peut pas être bloquée. Au début de votre tour, piochez 5 cartes et gagnez 5 ressources.',
-    flavorText: '23 médailles d\'or olympiques.',
-    image: 'sports/sp-084.jpg'
+    ability:
+      'Cette carte ne peut pas être bloquée. Au début de votre tour, piochez 5 cartes et gagnez 5 ressources.',
+    flavorText: "23 médailles d'or olympiques.",
+    image: 'sports/sp-084.jpg',
   },
   {
     id: 'sp-085',
@@ -1109,9 +1128,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Cette carte peut attaquer quatre fois par tour. Les cartes Sports que vous contrôlez gagnent +4 Productivité et +3 Résilience.',
+    ability:
+      'Cette carte peut attaquer quatre fois par tour. Les cartes Sports que vous contrôlez gagnent +4 Productivité et +3 Résilience.',
     flavorText: 'La reine du tennis.',
-    image: 'sports/sp-085.jpg'
+    image: 'sports/sp-085.jpg',
   },
   {
     id: 'sp-086',
@@ -1122,9 +1142,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 10,
-    ability: 'Quand cette carte inflige des dégâts, elle inflige le triple de dégâts. Cette carte est indestructible.',
+    ability:
+      'Quand cette carte inflige des dégâts, elle inflige le triple de dégâts. Cette carte est indestructible.',
     flavorText: 'Je suis le plus grand.',
-    image: 'sports/sp-086.jpg'
+    image: 'sports/sp-086.jpg',
   },
   {
     id: 'sp-087',
@@ -1135,9 +1156,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 8,
-    ability: '+4 Productivité pour chaque autre carte Sports. Quand cette carte attaque, piochez 4 cartes et gagnez 4 ressources.',
+    ability:
+      '+4 Productivité pour chaque autre carte Sports. Quand cette carte attaque, piochez 4 cartes et gagnez 4 ressources.',
     flavorText: 'Le génie argentin.',
-    image: 'sports/sp-087.jpg'
+    image: 'sports/sp-087.jpg',
   },
   {
     id: 'sp-088',
@@ -1148,9 +1170,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 9,
-    ability: 'Cette carte peut attaquer deux fois par tour. Quand elle attaque, elle inflige +5 dégâts et vous piochez 3 cartes.',
+    ability:
+      'Cette carte peut attaquer deux fois par tour. Quand elle attaque, elle inflige +5 dégâts et vous piochez 3 cartes.',
     flavorText: 'La perfection physique.',
-    image: 'sports/sp-088.jpg'
+    image: 'sports/sp-088.jpg',
   },
   {
     id: 'sp-089',
@@ -1161,9 +1184,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Cette carte peut attaquer cinq fois par tour. Les cartes Sports que vous contrôlez gagnent +4 Productivité.',
-    flavorText: 'L\'élégance sur le court.',
-    image: 'sports/sp-089.jpg'
+    ability:
+      'Cette carte peut attaquer cinq fois par tour. Les cartes Sports que vous contrôlez gagnent +4 Productivité.',
+    flavorText: "L'élégance sur le court.",
+    image: 'sports/sp-089.jpg',
   },
   {
     id: 'sp-090',
@@ -1174,9 +1198,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Quand cette carte arrive en jeu, piochez 5 cartes. Les cartes Sports que vous contrôlez ont +3 Productivité et +3 Résilience.',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 5 cartes. Les cartes Sports que vous contrôlez ont +3 Productivité et +3 Résilience.',
     flavorText: 'Défier la gravité.',
-    image: 'sports/sp-090.jpg'
+    image: 'sports/sp-090.jpg',
   },
   {
     id: 'sp-091',
@@ -1187,9 +1212,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Au début de votre tour, gagnez 6 ressources et piochez 3 cartes. Les cartes Sports coûtent 3 de moins à jouer.',
+    ability:
+      'Au début de votre tour, gagnez 6 ressources et piochez 3 cartes. Les cartes Sports coûtent 3 de moins à jouer.',
     flavorText: 'Révolutionner le golf.',
-    image: 'sports/sp-091.jpg'
+    image: 'sports/sp-091.jpg',
   },
   {
     id: 'sp-092',
@@ -1200,9 +1226,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Cette carte peut attaquer trois fois par tour. Quand elle attaque, toutes les cartes Sports gagnent +4 Productivité et +4 Résilience.',
+    ability:
+      'Cette carte peut attaquer trois fois par tour. Quand elle attaque, toutes les cartes Sports gagnent +4 Productivité et +4 Résilience.',
     flavorText: 'Le King.',
-    image: 'sports/sp-092.jpg'
+    image: 'sports/sp-092.jpg',
   },
   {
     id: 'sp-093',
@@ -1213,9 +1240,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 10,
-    ability: 'Les cartes Sports que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 4 cartes et gagnez 6 ressources.',
+    ability:
+      'Les cartes Sports que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 4 cartes et gagnez 6 ressources.',
     flavorText: 'Comité International Olympique - Diriger le sport mondial.',
-    image: 'sports/sp-093.jpg'
+    image: 'sports/sp-093.jpg',
   },
   {
     id: 'sp-094',
@@ -1226,9 +1254,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Les cartes Sports que vous contrôlez gagnent +5 Productivité et +4 Résilience. Quand cette carte attaque, piochez 3 cartes.',
+    ability:
+      'Les cartes Sports que vous contrôlez gagnent +5 Productivité et +4 Résilience. Quand cette carte attaque, piochez 3 cartes.',
     flavorText: 'Le maestro français.',
-    image: 'sports/sp-094.jpg'
+    image: 'sports/sp-094.jpg',
   },
   {
     id: 'sp-095',
@@ -1239,9 +1268,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 9,
-    ability: 'Cette carte peut attaquer deux fois par tour et inflige +6 dégâts. Quand elle attaque, piochez 2 cartes.',
+    ability:
+      'Cette carte peut attaquer deux fois par tour et inflige +6 dégâts. Quand elle attaque, piochez 2 cartes.',
     flavorText: 'La Mamba Mentality.',
-    image: 'sports/sp-095.jpg'
+    image: 'sports/sp-095.jpg',
   },
   {
     id: 'sp-096',
@@ -1252,9 +1282,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Cette carte peut attaquer quatre fois par tour. Quand elle attaque, elle gagne +3 Productivité et +3 Résilience.',
+    ability:
+      'Cette carte peut attaquer quatre fois par tour. Quand elle attaque, elle gagne +3 Productivité et +3 Résilience.',
     flavorText: 'Le roi de la terre battue.',
-    image: 'sports/sp-096.jpg'
+    image: 'sports/sp-096.jpg',
   },
   {
     id: 'sp-097',
@@ -1265,9 +1296,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Cette carte ne peut pas être détruite. Au début de votre tour, toutes les cartes Sports gagnent +4 Productivité.',
+    ability:
+      'Cette carte ne peut pas être détruite. Au début de votre tour, toutes les cartes Sports gagnent +4 Productivité.',
     flavorText: 'La machine serbe.',
-    image: 'sports/sp-097.jpg'
+    image: 'sports/sp-097.jpg',
   },
   {
     id: 'sp-098',
@@ -1278,9 +1310,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 10,
-    ability: 'Les cartes Sports que vous contrôlez sont indestructibles. Au début de votre tour, cherchez jusqu\'à 5 cartes dans votre deck.',
+    ability:
+      "Les cartes Sports que vous contrôlez sont indestructibles. Au début de votre tour, cherchez jusqu'à 5 cartes dans votre deck.",
     flavorText: 'Diriger le football mondial.',
-    image: 'sports/sp-098.jpg'
+    image: 'sports/sp-098.jpg',
   },
   {
     id: 'sp-099',
@@ -1291,9 +1324,10 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Quand cette carte attaque, gagnez 5 ressources et piochez 4 cartes. Les cartes Sports gagnent +4 Productivité.',
+    ability:
+      'Quand cette carte attaque, gagnez 5 ressources et piochez 4 cartes. Les cartes Sports gagnent +4 Productivité.',
     flavorText: 'Le Cannibale - La légende du cyclisme.',
-    image: 'sports/sp-099.jpg'
+    image: 'sports/sp-099.jpg',
   },
   {
     id: 'sp-100',
@@ -1304,8 +1338,9 @@ export const sportsCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 8,
-    ability: 'Cette carte peut attaquer le tour où elle arrive en jeu et ne peut pas être bloquée. Au début de votre tour, piochez 5 cartes et gagnez 8 ressources.',
-    flavorText: '4 médailles d\'or olympiques en 1936 - Une légende éternelle.',
-    image: 'sports/sp-100.jpg'
-  }
+    ability:
+      'Cette carte peut attaquer le tour où elle arrive en jeu et ne peut pas être bloquée. Au début de votre tour, piochez 5 cartes et gagnez 8 ressources.',
+    flavorText: "4 médailles d'or olympiques en 1936 - Une légende éternelle.",
+    image: 'sports/sp-100.jpg',
+  },
 ];

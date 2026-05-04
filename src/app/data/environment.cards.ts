@@ -13,7 +13,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, une carte ciblée gagne +1 Résilience.',
     flavorText: 'Chaque geste compte pour la planète.',
-    image: 'environment/en-001.jpg'
+    image: 'environment/en-001.jpg',
   },
   {
     id: 'ev-002',
@@ -26,7 +26,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, vous pouvez récupérer une carte depuis votre défausse.',
     flavorText: 'Trier pour recycler.',
-    image: 'environment/en-002.jpg'
+    image: 'environment/en-002.jpg',
   },
   {
     id: 'ev-003',
@@ -39,7 +39,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Les cartes Environnement que vous contrôlez gagnent +1 Résilience.',
     flavorText: 'Protéger les forêts.',
-    image: 'environment/en-003.jpg'
+    image: 'environment/en-003.jpg',
   },
   {
     id: 'ev-004',
@@ -51,8 +51,8 @@ export const environmentCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
-    flavorText: 'L\'énergie propre du futur.',
-    image: 'environment/en-004.jpg'
+    flavorText: "L'énergie propre du futur.",
+    image: 'environment/en-004.jpg',
   },
   {
     id: 'ev-005',
@@ -65,7 +65,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Éduquer pour préserver.',
-    image: 'environment/en-005.jpg'
+    image: 'environment/en-005.jpg',
   },
   {
     id: 'ev-006',
@@ -78,7 +78,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, une carte ciblée gagne +1 Résilience.',
     flavorText: 'Cultiver en harmonie avec la nature.',
-    image: 'environment/en-006.jpg'
+    image: 'environment/en-006.jpg',
   },
   {
     id: 'ev-007',
@@ -89,9 +89,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez défausser une carte depuis votre main pour piocher 2 cartes.',
+    ability:
+      'Quand cette carte arrive en jeu, vous pouvez défausser une carte depuis votre main pour piocher 2 cartes.',
     flavorText: 'Nettoyer les océans.',
-    image: 'environment/en-007.jpg'
+    image: 'environment/en-007.jpg',
   },
   {
     id: 'ev-008',
@@ -103,8 +104,8 @@ export const environmentCards: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
-    flavorText: 'Capturer l\'énergie du soleil.',
-    image: 'environment/en-008.jpg'
+    flavorText: "Capturer l'énergie du soleil.",
+    image: 'environment/en-008.jpg',
   },
   {
     id: 'ev-009',
@@ -117,7 +118,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Une fois par tour, vous pouvez regarder votre défausse.',
     flavorText: 'Transformer les déchets en richesse.',
-    image: 'environment/en-009.jpg'
+    image: 'environment/en-009.jpg',
   },
   {
     id: 'ev-010',
@@ -130,7 +131,7 @@ export const environmentCards: Card[] = [
     resilience: 3,
     ability: 'Les cartes Environnement que vous contrôlez gagnent +1 Résilience.',
     flavorText: 'Sauver les espèces menacées.',
-    image: 'environment/en-010.jpg'
+    image: 'environment/en-010.jpg',
   },
   {
     id: 'ev-011',
@@ -143,7 +144,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, vous pouvez récupérer une carte depuis votre défausse.',
     flavorText: 'Donner une seconde vie.',
-    image: 'environment/en-011.jpg'
+    image: 'environment/en-011.jpg',
   },
   {
     id: 'ev-012',
@@ -156,7 +157,7 @@ export const environmentCards: Card[] = [
     resilience: 1,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
     flavorText: 'Dompter le vent.',
-    image: 'environment/en-012.jpg'
+    image: 'environment/en-012.jpg',
   },
   {
     id: 'ev-013',
@@ -169,7 +170,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Reconnecter avec la nature.',
-    image: 'environment/en-013.jpg'
+    image: 'environment/en-013.jpg',
   },
   {
     id: 'ev-014',
@@ -180,9 +181,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Au début de votre tour, les cartes Environnement gagnent +1 Résilience jusqu\'à la fin du tour.',
-    flavorText: 'Purifier l\'eau pour tous.',
-    image: 'environment/en-014.jpg'
+    ability:
+      "Au début de votre tour, les cartes Environnement gagnent +1 Résilience jusqu'à la fin du tour.",
+    flavorText: "Purifier l'eau pour tous.",
+    image: 'environment/en-014.jpg',
   },
   {
     id: 'ev-015',
@@ -195,7 +197,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, regardez les 3 premières cartes de votre deck.',
     flavorText: 'Observer pour protéger.',
-    image: 'environment/en-015.jpg'
+    image: 'environment/en-015.jpg',
   },
   {
     id: 'ev-016',
@@ -208,7 +210,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, une carte ciblée gagne +1 Résilience de façon permanente.',
     flavorText: 'Cultiver durablement.',
-    image: 'environment/en-016.jpg'
+    image: 'environment/en-016.jpg',
   },
   {
     id: 'ev-017',
@@ -221,7 +223,7 @@ export const environmentCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Environnement, piochez une carte.',
     flavorText: 'Informer pour agir.',
-    image: 'environment/en-017.jpg'
+    image: 'environment/en-017.jpg',
   },
   {
     id: 'ev-018',
@@ -234,7 +236,7 @@ export const environmentCards: Card[] = [
     resilience: 1,
     ability: 'Au début de votre tour, regardez les 2 premières cartes de votre deck.',
     flavorText: 'Mesurer pour comprendre.',
-    image: 'environment/en-018.jpg'
+    image: 'environment/en-018.jpg',
   },
   {
     id: 'ev-019',
@@ -246,8 +248,8 @@ export const environmentCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
-    flavorText: 'L\'énergie du cœur de la Terre.',
-    image: 'environment/en-019.jpg'
+    flavorText: "L'énergie du cœur de la Terre.",
+    image: 'environment/en-019.jpg',
   },
   {
     id: 'ev-020',
@@ -259,8 +261,8 @@ export const environmentCards: Card[] = [
     productivity: 1,
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, elle gagne +2 Résilience.',
-    flavorText: 'Planter pour l\'avenir.',
-    image: 'environment/en-020.jpg'
+    flavorText: "Planter pour l'avenir.",
+    image: 'environment/en-020.jpg',
   },
   {
     id: 'ev-021',
@@ -273,7 +275,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
     flavorText: 'Transformer les plantes en énergie.',
-    image: 'environment/en-021.jpg'
+    image: 'environment/en-021.jpg',
   },
   {
     id: 'ev-022',
@@ -286,7 +288,7 @@ export const environmentCards: Card[] = [
     resilience: 3,
     ability: 'Les cartes Environnement que vous contrôlez gagnent +1 Résilience.',
     flavorText: 'Protéger la biodiversité.',
-    image: 'environment/en-022.jpg'
+    image: 'environment/en-022.jpg',
   },
   {
     id: 'ev-023',
@@ -299,7 +301,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, vous pouvez défausser une carte.',
     flavorText: 'Combattre la pollution.',
-    image: 'environment/en-023.jpg'
+    image: 'environment/en-023.jpg',
   },
   {
     id: 'ev-024',
@@ -311,8 +313,8 @@ export const environmentCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
-    flavorText: 'L\'énergie propre du futur.',
-    image: 'environment/en-024.jpg'
+    flavorText: "L'énergie propre du futur.",
+    image: 'environment/en-024.jpg',
   },
   {
     id: 'ev-025',
@@ -325,7 +327,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Les cartes Environnement que vous contrôlez gagnent +1 Résilience.',
     flavorText: 'Sauver les océans.',
-    image: 'environment/en-025.jpg'
+    image: 'environment/en-025.jpg',
   },
   {
     id: 'ev-026',
@@ -336,9 +338,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Au début de votre tour, gagnez 1 ressource si vous contrôlez au moins 2 cartes Environnement.',
+    ability:
+      'Au début de votre tour, gagnez 1 ressource si vous contrôlez au moins 2 cartes Environnement.',
     flavorText: 'Valoriser les déchets organiques.',
-    image: 'environment/en-026.jpg'
+    image: 'environment/en-026.jpg',
   },
   {
     id: 'ev-027',
@@ -351,11 +354,11 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Une fois par tour, récupérez une carte depuis votre défausse.',
     flavorText: 'Réduire, réutiliser, recycler.',
-    image: 'environment/en-027.jpg'
+    image: 'environment/en-027.jpg',
   },
   {
     id: 'ev-028',
-    name: 'Agent de Mesure Qualité de l\'Air',
+    name: "Agent de Mesure Qualité de l'Air",
     domain: Domain.Environment,
     type: CardType.Job,
     cost: 2,
@@ -364,7 +367,7 @@ export const environmentCards: Card[] = [
     resilience: 1,
     ability: 'Au début de votre tour, regardez les 2 premières cartes de votre deck.',
     flavorText: 'Surveiller ce que nous respirons.',
-    image: 'environment/en-028.jpg'
+    image: 'environment/en-028.jpg',
   },
   {
     id: 'ev-029',
@@ -377,7 +380,7 @@ export const environmentCards: Card[] = [
     resilience: 3,
     ability: 'Les cartes Environnement que vous contrôlez gagnent +1 Résilience.',
     flavorText: 'Construire durable.',
-    image: 'environment/en-029.jpg'
+    image: 'environment/en-029.jpg',
   },
   {
     id: 'ev-030',
@@ -390,7 +393,7 @@ export const environmentCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, une carte ciblée gagne +1 Résilience.',
     flavorText: 'Préserver la terre nourricière.',
-    image: 'environment/en-030.jpg'
+    image: 'environment/en-030.jpg',
   },
 
   // Uncommon (31-50)
@@ -405,7 +408,7 @@ export const environmentCards: Card[] = [
     resilience: 3,
     ability: 'Au début de votre tour, gagnez 3 ressources.',
     flavorText: 'Concevoir les systèmes énergétiques du futur.',
-    image: 'environment/en-031.jpg'
+    image: 'environment/en-031.jpg',
   },
   {
     id: 'ev-032',
@@ -418,7 +421,7 @@ export const environmentCards: Card[] = [
     resilience: 5,
     ability: 'Les cartes Environnement que vous contrôlez gagnent +2 Résilience.',
     flavorText: 'Préserver les sanctuaires de biodiversité.',
-    image: 'environment/en-032.jpg'
+    image: 'environment/en-032.jpg',
   },
   {
     id: 'ev-033',
@@ -429,9 +432,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Quand cette carte arrive en jeu, piochez 2 cartes et toutes les cartes Environnement gagnent +1 Résilience.',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 2 cartes et toutes les cartes Environnement gagnent +1 Résilience.',
     flavorText: 'Comprendre les écosystèmes.',
-    image: 'environment/en-033.jpg'
+    image: 'environment/en-033.jpg',
   },
   {
     id: 'ev-034',
@@ -442,9 +446,9 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 3,
-    ability: 'Au début de votre tour, récupérez jusqu\'à 2 cartes depuis votre défausse.',
+    ability: "Au début de votre tour, récupérez jusqu'à 2 cartes depuis votre défausse.",
     flavorText: 'Transformer les déchets en ressources.',
-    image: 'environment/en-034.jpg'
+    image: 'environment/en-034.jpg',
   },
   {
     id: 'ev-035',
@@ -457,7 +461,7 @@ export const environmentCards: Card[] = [
     resilience: 3,
     ability: 'Les autres cartes que vous contrôlez gagnent +1 Résilience.',
     flavorText: 'Responsabilité Sociétale des Entreprises.',
-    image: 'environment/en-035.jpg'
+    image: 'environment/en-035.jpg',
   },
   {
     id: 'ev-036',
@@ -468,9 +472,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Au début de votre tour, toutes les cartes Environnement gagnent +2 Résilience jusqu\'à la fin du tour.',
-    flavorText: 'Assurer l\'accès à l\'eau potable.',
-    image: 'environment/en-036.jpg'
+    ability:
+      "Au début de votre tour, toutes les cartes Environnement gagnent +2 Résilience jusqu'à la fin du tour.",
+    flavorText: "Assurer l'accès à l'eau potable.",
+    image: 'environment/en-036.jpg',
   },
   {
     id: 'ev-037',
@@ -483,7 +488,7 @@ export const environmentCards: Card[] = [
     resilience: 3,
     ability: 'Au début de votre tour, gagnez 3 ressources.',
     flavorText: 'Développer les parcs éoliens.',
-    image: 'environment/en-037.jpg'
+    image: 'environment/en-037.jpg',
   },
   {
     id: 'ev-038',
@@ -494,9 +499,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +1 Productivité et +2 Résilience.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +1 Productivité et +2 Résilience.',
     flavorText: 'Protéger la diversité du vivant.',
-    image: 'environment/en-038.jpg'
+    image: 'environment/en-038.jpg',
   },
   {
     id: 'ev-039',
@@ -509,7 +515,7 @@ export const environmentCards: Card[] = [
     resilience: 3,
     ability: 'Une fois par tour, récupérez une carte depuis votre défausse et jouez-la.',
     flavorText: 'Fermer les boucles de production.',
-    image: 'environment/en-039.jpg'
+    image: 'environment/en-039.jpg',
   },
   {
     id: 'ev-040',
@@ -521,8 +527,8 @@ export const environmentCards: Card[] = [
     productivity: 4,
     resilience: 3,
     ability: 'Au début de votre tour, gagnez 4 ressources.',
-    flavorText: 'Capturer l\'énergie solaire à grande échelle.',
-    image: 'environment/en-040.jpg'
+    flavorText: "Capturer l'énergie solaire à grande échelle.",
+    image: 'environment/en-040.jpg',
   },
   {
     id: 'ev-041',
@@ -533,9 +539,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, toutes les cartes Environnement gagnent +2 Résilience de façon permanente.',
+    ability:
+      'Quand cette carte arrive en jeu, toutes les cartes Environnement gagnent +2 Résilience de façon permanente.',
     flavorText: 'Replanter pour les générations futures.',
-    image: 'environment/en-041.jpg'
+    image: 'environment/en-041.jpg',
   },
   {
     id: 'ev-042',
@@ -548,11 +555,11 @@ export const environmentCards: Card[] = [
     resilience: 3,
     ability: 'Au début de votre tour, gagnez 3 ressources.',
     flavorText: 'Produire le carburant du futur.',
-    image: 'environment/en-042.jpg'
+    image: 'environment/en-042.jpg',
   },
   {
     id: 'ev-043',
-    name: 'Responsable de Station d\'Épuration',
+    name: "Responsable de Station d'Épuration",
     domain: Domain.Environment,
     type: CardType.Job,
     cost: 4,
@@ -561,7 +568,7 @@ export const environmentCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Environnement que vous contrôlez gagnent +2 Résilience.',
     flavorText: 'Protéger les ressources en eau.',
-    image: 'environment/en-043.jpg'
+    image: 'environment/en-043.jpg',
   },
   {
     id: 'ev-044',
@@ -572,9 +579,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Au début de votre tour, toutes les cartes que vous contrôlez gagnent +1 Résilience de façon permanente.',
+    ability:
+      'Au début de votre tour, toutes les cartes que vous contrôlez gagnent +1 Résilience de façon permanente.',
     flavorText: 'Créer des systèmes durables.',
-    image: 'environment/en-044.jpg'
+    image: 'environment/en-044.jpg',
   },
   {
     id: 'ev-045',
@@ -585,9 +593,9 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 3,
-    ability: 'Au début de votre tour, regardez votre défausse et récupérez jusqu\'à 2 cartes.',
+    ability: "Au début de votre tour, regardez votre défausse et récupérez jusqu'à 2 cartes.",
     flavorText: 'Transformer les déchets organiques.',
-    image: 'environment/en-045.jpg'
+    image: 'environment/en-045.jpg',
   },
   {
     id: 'ev-046',
@@ -598,9 +606,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 4,
-    ability: 'Au début de votre tour, gagnez 2 ressources pour chaque carte Environnement que vous contrôlez.',
+    ability:
+      'Au début de votre tour, gagnez 2 ressources pour chaque carte Environnement que vous contrôlez.',
     flavorText: 'Accompagner le changement.',
-    image: 'environment/en-046.jpg'
+    image: 'environment/en-046.jpg',
   },
   {
     id: 'ev-047',
@@ -613,7 +622,7 @@ export const environmentCards: Card[] = [
     resilience: 3,
     ability: 'Au début de votre tour, gagnez 3 ressources.',
     flavorText: 'Exploiter la chaleur de la Terre.',
-    image: 'environment/en-047.jpg'
+    image: 'environment/en-047.jpg',
   },
   {
     id: 'ev-048',
@@ -624,9 +633,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez défausser jusqu\'à 3 cartes puis piochez autant de cartes.',
+    ability:
+      "Quand cette carte arrive en jeu, vous pouvez défausser jusqu'à 3 cartes puis piochez autant de cartes.",
     flavorText: 'Éliminer le plastique.',
-    image: 'environment/en-048.jpg'
+    image: 'environment/en-048.jpg',
   },
   {
     id: 'ev-049',
@@ -637,9 +647,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 4,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +2 Productivité et +1 Résilience.',
-    flavorText: 'L\'agriculture urbaine du futur.',
-    image: 'environment/en-049.jpg'
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +2 Productivité et +1 Résilience.',
+    flavorText: "L'agriculture urbaine du futur.",
+    image: 'environment/en-049.jpg',
   },
   {
     id: 'ev-050',
@@ -650,9 +661,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 4,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +2 Résilience et ne peuvent pas être détruites.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +2 Résilience et ne peuvent pas être détruites.',
     flavorText: 'Capturer le CO2.',
-    image: 'environment/en-050.jpg'
+    image: 'environment/en-050.jpg',
   },
 
   // Rare (51-80)
@@ -665,22 +677,24 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +3 Résilience et ne peuvent pas être ciblées.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +3 Résilience et ne peuvent pas être ciblées.',
     flavorText: 'Protéger les trésors naturels.',
-    image: 'environment/en-051.jpg'
+    image: 'environment/en-051.jpg',
   },
   {
     id: 'ev-052',
-    name: 'Président d\'ONG Environnementale',
+    name: "Président d'ONG Environnementale",
     domain: Domain.Environment,
     type: CardType.Job,
     cost: 7,
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +3 Productivité et +3 Résilience. Au début de votre tour, piochez 2 cartes.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +3 Productivité et +3 Résilience. Au début de votre tour, piochez 2 cartes.',
     flavorText: 'Mobiliser pour la planète.',
-    image: 'environment/en-052.jpg'
+    image: 'environment/en-052.jpg',
   },
   {
     id: 'ev-053',
@@ -693,7 +707,7 @@ export const environmentCards: Card[] = [
     resilience: 5,
     ability: 'Au début de votre tour, gagnez 6 ressources.',
     flavorText: 'Piloter la transition énergétique nationale.',
-    image: 'environment/en-053.jpg'
+    image: 'environment/en-053.jpg',
   },
   {
     id: 'ev-054',
@@ -704,9 +718,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Au début de votre tour, regardez les 6 premières cartes de votre deck et organisez-les comme vous voulez.',
+    ability:
+      'Au début de votre tour, regardez les 6 premières cartes de votre deck et organisez-les comme vous voulez.',
     flavorText: 'Comprendre le changement climatique.',
-    image: 'environment/en-054.jpg'
+    image: 'environment/en-054.jpg',
   },
   {
     id: 'ev-055',
@@ -719,20 +734,21 @@ export const environmentCards: Card[] = [
     resilience: 6,
     ability: 'Les cartes Environnement que vous contrôlez sont indestructibles.',
     flavorText: 'Sauver les espèces en danger.',
-    image: 'environment/en-055.jpg'
+    image: 'environment/en-055.jpg',
   },
   {
     id: 'ev-056',
-    name: 'PDG d\'Entreprise Solaire',
+    name: "PDG d'Entreprise Solaire",
     domain: Domain.Environment,
     type: CardType.Job,
     cost: 7,
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Au début de votre tour, gagnez 7 ressources. Les cartes Environnement gagnent +2 Productivité.',
-    flavorText: 'Démocratiser l\'énergie solaire.',
-    image: 'environment/en-056.jpg'
+    ability:
+      'Au début de votre tour, gagnez 7 ressources. Les cartes Environnement gagnent +2 Productivité.',
+    flavorText: "Démocratiser l'énergie solaire.",
+    image: 'environment/en-056.jpg',
   },
   {
     id: 'ev-057',
@@ -743,9 +759,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 7,
-    ability: 'Les cartes Environnement que vous contrôlez sont indestructibles et gagnent +3 Résilience.',
+    ability:
+      'Les cartes Environnement que vous contrôlez sont indestructibles et gagnent +3 Résilience.',
     flavorText: 'Préserver le patrimoine naturel mondial.',
-    image: 'environment/en-057.jpg'
+    image: 'environment/en-057.jpg',
   },
   {
     id: 'ev-058',
@@ -757,8 +774,8 @@ export const environmentCards: Card[] = [
     productivity: 6,
     resilience: 6,
     ability: 'Au début de votre tour, gagnez 8 ressources.',
-    flavorText: 'Développer l\'éolien à grande échelle.',
-    image: 'environment/en-058.jpg'
+    flavorText: "Développer l'éolien à grande échelle.",
+    image: 'environment/en-058.jpg',
   },
   {
     id: 'ev-059',
@@ -769,9 +786,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +2 Productivité et +3 Résilience.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +2 Productivité et +3 Résilience.',
     flavorText: 'Protéger 70% de la planète.',
-    image: 'environment/en-059.jpg'
+    image: 'environment/en-059.jpg',
   },
   {
     id: 'ev-060',
@@ -783,8 +801,8 @@ export const environmentCards: Card[] = [
     productivity: 7,
     resilience: 6,
     ability: 'Au début de votre tour, gagnez 10 ressources.',
-    flavorText: 'L\'énergie illimitée et propre.',
-    image: 'environment/en-060.jpg'
+    flavorText: "L'énergie illimitée et propre.",
+    image: 'environment/en-060.jpg',
   },
   {
     id: 'ev-061',
@@ -797,20 +815,21 @@ export const environmentCards: Card[] = [
     resilience: 5,
     ability: 'Les autres cartes que vous contrôlez gagnent +2 Résilience.',
     flavorText: 'Légiférer pour le climat.',
-    image: 'environment/en-061.jpg'
+    image: 'environment/en-061.jpg',
   },
   {
     id: 'ev-062',
-    name: 'PDG d\'Entreprise Hydrogène Vert',
+    name: "PDG d'Entreprise Hydrogène Vert",
     domain: Domain.Environment,
     type: CardType.Job,
     cost: 7,
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Au début de votre tour, gagnez 7 ressources. Les cartes Environnement coûtent 2 de moins.',
+    ability:
+      'Au début de votre tour, gagnez 7 ressources. Les cartes Environnement coûtent 2 de moins.',
     flavorText: 'Le carburant du futur.',
-    image: 'environment/en-062.jpg'
+    image: 'environment/en-062.jpg',
   },
   {
     id: 'ev-063',
@@ -821,9 +840,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 7,
-    ability: 'Quand cette carte arrive en jeu, toutes les cartes Environnement gagnent +3 Résilience de façon permanente.',
-    flavorText: 'Replanter des milliards d\'arbres.',
-    image: 'environment/en-063.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, toutes les cartes Environnement gagnent +3 Résilience de façon permanente.',
+    flavorText: "Replanter des milliards d'arbres.",
+    image: 'environment/en-063.jpg',
   },
   {
     id: 'ev-064',
@@ -836,7 +856,7 @@ export const environmentCards: Card[] = [
     resilience: 5,
     ability: 'Au début de votre tour, piochez 4 cartes.',
     flavorText: 'Comprendre pour agir.',
-    image: 'environment/en-064.jpg'
+    image: 'environment/en-064.jpg',
   },
   {
     id: 'ev-065',
@@ -847,9 +867,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Au début de votre tour, gagnez 5 ressources pour chaque carte Environnement que vous contrôlez.',
+    ability:
+      'Au début de votre tour, gagnez 5 ressources pour chaque carte Environnement que vous contrôlez.',
     flavorText: 'Financer la transition écologique.',
-    image: 'environment/en-065.jpg'
+    image: 'environment/en-065.jpg',
   },
   {
     id: 'ev-066',
@@ -860,9 +881,9 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Une fois par tour, récupérez jusqu\'à 3 cartes depuis votre défausse et jouez-en une.',
+    ability: "Une fois par tour, récupérez jusqu'à 3 cartes depuis votre défausse et jouez-en une.",
     flavorText: 'Fermer toutes les boucles.',
-    image: 'environment/en-066.jpg'
+    image: 'environment/en-066.jpg',
   },
   {
     id: 'ev-067',
@@ -874,8 +895,8 @@ export const environmentCards: Card[] = [
     productivity: 6,
     resilience: 6,
     ability: 'Au début de votre tour, récupérez toutes les cartes Environnement de votre défausse.',
-    flavorText: 'Recycler à l\'échelle industrielle.',
-    image: 'environment/en-067.jpg'
+    flavorText: "Recycler à l'échelle industrielle.",
+    image: 'environment/en-067.jpg',
   },
   {
     id: 'ev-068',
@@ -886,22 +907,24 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Les cartes Environnement que vous contrôlez sont indestructibles et gagnent +3 Résilience.',
+    ability:
+      'Les cartes Environnement que vous contrôlez sont indestructibles et gagnent +3 Résilience.',
     flavorText: 'Inverser le changement climatique.',
-    image: 'environment/en-068.jpg'
+    image: 'environment/en-068.jpg',
   },
   {
     id: 'ev-069',
-    name: 'Président d\'Alliance pour la Biodiversité',
+    name: "Président d'Alliance pour la Biodiversité",
     domain: Domain.Environment,
     type: CardType.Job,
     cost: 6,
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +3 Productivité et +4 Résilience.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +3 Productivité et +4 Résilience.',
     flavorText: 'Unir pour protéger la vie.',
-    image: 'environment/en-069.jpg'
+    image: 'environment/en-069.jpg',
   },
   {
     id: 'ev-070',
@@ -914,7 +937,7 @@ export const environmentCards: Card[] = [
     resilience: 6,
     ability: 'Les cartes que vous contrôlez gagnent +2 Productivité et +2 Résilience.',
     flavorText: 'Construire les villes vertes.',
-    image: 'environment/en-070.jpg'
+    image: 'environment/en-070.jpg',
   },
   {
     id: 'ev-071',
@@ -927,7 +950,7 @@ export const environmentCards: Card[] = [
     resilience: 6,
     ability: 'Au début de votre tour, gagnez 8 ressources.',
     flavorText: 'Exploiter la chaleur terrestre.',
-    image: 'environment/en-071.jpg'
+    image: 'environment/en-071.jpg',
   },
   {
     id: 'ev-072',
@@ -940,7 +963,7 @@ export const environmentCards: Card[] = [
     resilience: 5,
     ability: 'Les cartes Environnement que vous jouez depuis votre main ne coûtent rien.',
     flavorText: 'Neutralité carbone en 2050.',
-    image: 'environment/en-072.jpg'
+    image: 'environment/en-072.jpg',
   },
   {
     id: 'ev-073',
@@ -952,8 +975,8 @@ export const environmentCards: Card[] = [
     productivity: 7,
     resilience: 6,
     ability: 'Au début de votre tour, gagnez 12 ressources.',
-    flavorText: 'Capturer l\'énergie solaire sans limite.',
-    image: 'environment/en-073.jpg'
+    flavorText: "Capturer l'énergie solaire sans limite.",
+    image: 'environment/en-073.jpg',
   },
   {
     id: 'ev-074',
@@ -964,9 +987,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 7,
-    ability: 'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées.',
+    ability:
+      'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées.',
     flavorText: 'Sauver les océans du plastique.',
-    image: 'environment/en-074.jpg'
+    image: 'environment/en-074.jpg',
   },
   {
     id: 'ev-075',
@@ -978,8 +1002,8 @@ export const environmentCards: Card[] = [
     productivity: 6,
     resilience: 5,
     ability: 'Quand vous jouez une carte Environnement, piochez 3 cartes.',
-    flavorText: 'S\'inspirer de la nature.',
-    image: 'environment/en-075.jpg'
+    flavorText: "S'inspirer de la nature.",
+    image: 'environment/en-075.jpg',
   },
   {
     id: 'ev-076',
@@ -990,9 +1014,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +4 Productivité. Au début de votre tour, gagnez 6 ressources.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +4 Productivité. Au début de votre tour, gagnez 6 ressources.',
     flavorText: 'Optimiser la distribution énergétique.',
-    image: 'environment/en-076.jpg'
+    image: 'environment/en-076.jpg',
   },
   {
     id: 'ev-077',
@@ -1003,9 +1028,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Au début de votre tour, toutes les cartes que vous contrôlez gagnent +2 Résilience de façon permanente.',
+    ability:
+      'Au début de votre tour, toutes les cartes que vous contrôlez gagnent +2 Résilience de façon permanente.',
     flavorText: 'Régénérer la planète.',
-    image: 'environment/en-077.jpg'
+    image: 'environment/en-077.jpg',
   },
   {
     id: 'ev-078',
@@ -1018,7 +1044,7 @@ export const environmentCards: Card[] = [
     resilience: 5,
     ability: 'Au début de votre tour, récupérez toutes les cartes de votre défausse.',
     flavorText: 'Éliminer le concept de déchet.',
-    image: 'environment/en-078.jpg'
+    image: 'environment/en-078.jpg',
   },
   {
     id: 'ev-079',
@@ -1029,9 +1055,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Au début de votre tour, gagnez 10 ressources. Les cartes Environnement gagnent +3 Productivité.',
-    flavorText: '100% d\'énergies renouvelables.',
-    image: 'environment/en-079.jpg'
+    ability:
+      'Au début de votre tour, gagnez 10 ressources. Les cartes Environnement gagnent +3 Productivité.',
+    flavorText: "100% d'énergies renouvelables.",
+    image: 'environment/en-079.jpg',
   },
   {
     id: 'ev-080',
@@ -1043,8 +1070,8 @@ export const environmentCards: Card[] = [
     productivity: 7,
     resilience: 7,
     ability: 'Au début de votre tour, gagnez 15 ressources.',
-    flavorText: 'L\'énergie des étoiles sur Terre.',
-    image: 'environment/en-080.jpg'
+    flavorText: "L'énergie des étoiles sur Terre.",
+    image: 'environment/en-080.jpg',
   },
 
   // Legendary (81-100)
@@ -1057,9 +1084,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 10,
-    ability: 'Les cartes Environnement que vous contrôlez sont indestructibles et gagnent +5 Résilience. Au début de votre tour, piochez 5 cartes.',
+    ability:
+      'Les cartes Environnement que vous contrôlez sont indestructibles et gagnent +5 Résilience. Au début de votre tour, piochez 5 cartes.',
     flavorText: 'Notre maison brûle et nous regardons ailleurs.',
-    image: 'environment/en-081.jpg'
+    image: 'environment/en-081.jpg',
   },
   {
     id: 'ev-082',
@@ -1070,9 +1098,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Au début de votre tour, piochez 4 cartes et gagnez 8 ressources. Les cartes Environnement gagnent +5 Productivité.',
+    ability:
+      'Au début de votre tour, piochez 4 cartes et gagnez 8 ressources. Les cartes Environnement gagnent +5 Productivité.',
     flavorText: 'Une vérité qui dérange.',
-    image: 'environment/en-082.jpg'
+    image: 'environment/en-082.jpg',
   },
   {
     id: 'ev-083',
@@ -1083,9 +1112,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 10,
-    ability: 'Quand cette carte arrive en jeu, toutes les cartes Environnement gagnent +5 Résilience de façon permanente. Les cartes Environnement sont indestructibles.',
-    flavorText: 'Prix Nobel de la Paix - Planter 30 millions d\'arbres.',
-    image: 'environment/en-083.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, toutes les cartes Environnement gagnent +5 Résilience de façon permanente. Les cartes Environnement sont indestructibles.',
+    flavorText: "Prix Nobel de la Paix - Planter 30 millions d'arbres.",
+    image: 'environment/en-083.jpg',
   },
   {
     id: 'ev-084',
@@ -1096,9 +1126,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +4 Productivité et +5 Résilience. Au début de votre tour, piochez 4 cartes.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +4 Productivité et +5 Résilience. Au début de votre tour, piochez 4 cartes.',
     flavorText: 'Révéler les merveilles des océans.',
-    image: 'environment/en-084.jpg'
+    image: 'environment/en-084.jpg',
   },
   {
     id: 'ev-085',
@@ -1109,9 +1140,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Au début de votre tour, piochez 5 cartes. Les cartes Environnement que vous contrôlez gagnent +5 Productivité et +4 Résilience.',
+    ability:
+      'Au début de votre tour, piochez 5 cartes. Les cartes Environnement que vous contrôlez gagnent +5 Productivité et +4 Résilience.',
     flavorText: 'Raconter la beauté de la nature.',
-    image: 'environment/en-085.jpg'
+    image: 'environment/en-085.jpg',
   },
   {
     id: 'ev-086',
@@ -1122,9 +1154,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 7,
     resilience: 11,
-    ability: 'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, toutes les cartes gagnent +2 Résilience.',
+    ability:
+      'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, toutes les cartes gagnent +2 Résilience.',
     flavorText: 'Protéger les primates et leur habitat.',
-    image: 'environment/en-086.jpg'
+    image: 'environment/en-086.jpg',
   },
   {
     id: 'ev-087',
@@ -1135,9 +1168,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +6 Productivité et +5 Résilience. Quand vous jouez une carte Environnement, piochez 3 cartes.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +6 Productivité et +5 Résilience. Quand vous jouez une carte Environnement, piochez 3 cartes.',
     flavorText: 'Le Printemps Silencieux - Lancer le mouvement écologiste.',
-    image: 'environment/en-087.jpg'
+    image: 'environment/en-087.jpg',
   },
   {
     id: 'ev-088',
@@ -1148,9 +1182,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 5 cartes et gagnez 10 ressources.',
-    flavorText: 'Programme des Nations Unies pour l\'Environnement.',
-    image: 'environment/en-088.jpg'
+    ability:
+      'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 5 cartes et gagnez 10 ressources.',
+    flavorText: "Programme des Nations Unies pour l'Environnement.",
+    image: 'environment/en-088.jpg',
   },
   {
     id: 'ev-089',
@@ -1161,9 +1196,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 9,
-    ability: 'Au début de votre tour, gagnez 15 ressources. Les cartes Environnement que vous contrôlez gagnent +6 Productivité.',
-    flavorText: 'Accélérer la transition vers l\'énergie durable.',
-    image: 'environment/en-089.jpg'
+    ability:
+      'Au début de votre tour, gagnez 15 ressources. Les cartes Environnement que vous contrôlez gagnent +6 Productivité.',
+    flavorText: "Accélérer la transition vers l'énergie durable.",
+    image: 'environment/en-089.jpg',
   },
   {
     id: 'ev-090',
@@ -1174,9 +1210,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 10,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +4 Productivité et +6 Résilience et sont indestructibles.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +4 Productivité et +6 Résilience et sont indestructibles.',
     flavorText: 'Her Deepness - Protéger les océans.',
-    image: 'environment/en-090.jpg'
+    image: 'environment/en-090.jpg',
   },
   {
     id: 'ev-091',
@@ -1187,9 +1224,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 6 cartes et gagnez 12 ressources.',
+    ability:
+      'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 6 cartes et gagnez 12 ressources.',
     flavorText: 'Conférence des Parties - Unir le monde pour le climat.',
-    image: 'environment/en-091.jpg'
+    image: 'environment/en-091.jpg',
   },
   {
     id: 'ev-092',
@@ -1200,9 +1238,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 10,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +5 Productivité et +6 Résilience et sont indestructibles.',
-    flavorText: 'Défendre l\'Amazonie au péril de sa vie.',
-    image: 'environment/en-092.jpg'
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +5 Productivité et +6 Résilience et sont indestructibles.',
+    flavorText: "Défendre l'Amazonie au péril de sa vie.",
+    image: 'environment/en-092.jpg',
   },
   {
     id: 'ev-093',
@@ -1213,9 +1252,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Au début de votre tour, piochez 5 cartes et gagnez 8 ressources. Les cartes Environnement gagnent +4 Productivité et +4 Résilience.',
-    flavorText: 'Médiatiser l\'écologie.',
-    image: 'environment/en-093.jpg'
+    ability:
+      'Au début de votre tour, piochez 5 cartes et gagnez 8 ressources. Les cartes Environnement gagnent +4 Productivité et +4 Résilience.',
+    flavorText: "Médiatiser l'écologie.",
+    image: 'environment/en-093.jpg',
   },
   {
     id: 'ev-094',
@@ -1226,9 +1266,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +5 Productivité et +6 Résilience. Au début de votre tour, toutes les cartes gagnent +2 Résilience.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +5 Productivité et +6 Résilience. Au début de votre tour, toutes les cartes gagnent +2 Résilience.',
     flavorText: 'Défendre la biodiversité et les semences.',
-    image: 'environment/en-094.jpg'
+    image: 'environment/en-094.jpg',
   },
   {
     id: 'ev-095',
@@ -1239,22 +1280,24 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Les cartes Environnement que vous contrôlez sont indestructibles. Quand vous jouez une carte Environnement, elle gagne +5 Productivité et +5 Résilience.',
-    flavorText: 'Sea Shepherd - Protéger les océans par l\'action directe.',
-    image: 'environment/en-095.jpg'
+    ability:
+      'Les cartes Environnement que vous contrôlez sont indestructibles. Quand vous jouez une carte Environnement, elle gagne +5 Productivité et +5 Résilience.',
+    flavorText: "Sea Shepherd - Protéger les océans par l'action directe.",
+    image: 'environment/en-095.jpg',
   },
   {
     id: 'ev-096',
-    name: 'Secrétaire Général de l\'ONU Environnement',
+    name: "Secrétaire Général de l'ONU Environnement",
     domain: Domain.Environment,
     type: CardType.Job,
     cost: 12,
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 10,
-    ability: 'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 7 cartes et gagnez 15 ressources.',
-    flavorText: 'Coordonner l\'action environnementale mondiale.',
-    image: 'environment/en-096.jpg'
+    ability:
+      'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 7 cartes et gagnez 15 ressources.',
+    flavorText: "Coordonner l'action environnementale mondiale.",
+    image: 'environment/en-096.jpg',
   },
   {
     id: 'ev-097',
@@ -1265,9 +1308,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Les cartes Environnement que vous contrôlez gagnent +6 Productivité et +5 Résilience. Au début de votre tour, piochez 5 cartes.',
+    ability:
+      'Les cartes Environnement que vous contrôlez gagnent +6 Productivité et +5 Résilience. Au début de votre tour, piochez 5 cartes.',
     flavorText: '350.org - Mobiliser contre le changement climatique.',
-    image: 'environment/en-097.jpg'
+    image: 'environment/en-097.jpg',
   },
   {
     id: 'ev-098',
@@ -1278,9 +1322,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Au début de votre tour, gagnez 10 ressources. Les cartes Environnement que vous contrôlez gagnent +5 Productivité et +5 Résilience.',
-    flavorText: 'Patagonia - L\'entreprise responsable.',
-    image: 'environment/en-098.jpg'
+    ability:
+      'Au début de votre tour, gagnez 10 ressources. Les cartes Environnement que vous contrôlez gagnent +5 Productivité et +5 Résilience.',
+    flavorText: "Patagonia - L'entreprise responsable.",
+    image: 'environment/en-098.jpg',
   },
   {
     id: 'ev-099',
@@ -1291,9 +1336,10 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Au début de votre tour, regardez toutes les cartes de votre deck. Les cartes Environnement que vous contrôlez gagnent +6 Productivité et +6 Résilience.',
-    flavorText: 'Groupe d\'experts Intergouvernemental sur l\'évolution du Climat.',
-    image: 'environment/en-099.jpg'
+    ability:
+      'Au début de votre tour, regardez toutes les cartes de votre deck. Les cartes Environnement que vous contrôlez gagnent +6 Productivité et +6 Résilience.',
+    flavorText: "Groupe d'experts Intergouvernemental sur l'évolution du Climat.",
+    image: 'environment/en-099.jpg',
   },
   {
     id: 'ev-100',
@@ -1304,8 +1350,9 @@ export const environmentCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 12,
-    ability: 'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 10 cartes, gagnez 20 ressources et toutes les cartes gagnent +5 Résilience.',
+    ability:
+      'Les cartes Environnement que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 10 cartes, gagnez 20 ressources et toutes les cartes gagnent +5 Résilience.',
     flavorText: 'Créer un monde en harmonie avec la nature.',
-    image: 'environment/en-100.jpg'
-  }
+    image: 'environment/en-100.jpg',
+  },
 ];

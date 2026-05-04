@@ -13,7 +13,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource.',
     flavorText: 'Le premier contact avec le client.',
-    image: 'commerce/co-001.jpg'
+    image: 'commerce/co-001.jpg',
   },
   {
     id: 'co-002',
@@ -26,7 +26,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 2 ressources.',
     flavorText: 'Chaque transaction compte.',
-    image: 'commerce/co-002.jpg'
+    image: 'commerce/co-002.jpg',
   },
   {
     id: 'co-003',
@@ -39,7 +39,7 @@ export const commerceCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
     flavorText: 'Rapidité et précision.',
-    image: 'commerce/co-003.jpg'
+    image: 'commerce/co-003.jpg',
   },
   {
     id: 'co-004',
@@ -52,7 +52,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Commerce, gagnez 1 ressource.',
     flavorText: 'Conseiller pour mieux vendre.',
-    image: 'commerce/co-004.jpg'
+    image: 'commerce/co-004.jpg',
   },
   {
     id: 'co-005',
@@ -65,7 +65,7 @@ export const commerceCards: Card[] = [
     resilience: 2,
     ability: 'Les cartes Commerce que vous contrôlez coûtent 1 de moins à jouer.',
     flavorText: 'Organiser pour faciliter la vente.',
-    image: 'commerce/co-005.jpg'
+    image: 'commerce/co-005.jpg',
   },
   {
     id: 'co-006',
@@ -78,7 +78,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource.',
     flavorText: 'Le commerce traditionnel.',
-    image: 'commerce/co-006.jpg'
+    image: 'commerce/co-006.jpg',
   },
   {
     id: 'co-007',
@@ -91,7 +91,7 @@ export const commerceCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Le dernier maillon de la chaîne.',
-    image: 'commerce/co-007.jpg'
+    image: 'commerce/co-007.jpg',
   },
   {
     id: 'co-008',
@@ -104,7 +104,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
     flavorText: 'La force du commerce.',
-    image: 'commerce/co-008.jpg'
+    image: 'commerce/co-008.jpg',
   },
   {
     id: 'co-009',
@@ -117,7 +117,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Commerce, gagnez 1 ressource.',
     flavorText: 'Le commerce moderne.',
-    image: 'commerce/co-009.jpg'
+    image: 'commerce/co-009.jpg',
   },
   {
     id: 'co-010',
@@ -130,7 +130,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, regardez les 2 premières cartes de votre deck.',
     flavorText: 'Convaincre à distance.',
-    image: 'commerce/co-010.jpg'
+    image: 'commerce/co-010.jpg',
   },
   {
     id: 'co-011',
@@ -141,9 +141,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Au début de votre tour, gagnez 1 ressource si vous contrôlez au moins 2 cartes Commerce.',
+    ability:
+      'Au début de votre tour, gagnez 1 ressource si vous contrôlez au moins 2 cartes Commerce.',
     flavorText: 'Maintenir les rayons pleins.',
-    image: 'commerce/co-011.jpg'
+    image: 'commerce/co-011.jpg',
   },
   {
     id: 'co-012',
@@ -156,7 +157,7 @@ export const commerceCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource.',
     flavorText: 'Le petit commerce de proximité.',
-    image: 'commerce/co-012.jpg'
+    image: 'commerce/co-012.jpg',
   },
   {
     id: 'co-013',
@@ -169,7 +170,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Commerce, gagnez 1 ressource.',
     flavorText: 'Service 24/7.',
-    image: 'commerce/co-013.jpg'
+    image: 'commerce/co-013.jpg',
   },
   {
     id: 'co-014',
@@ -181,8 +182,8 @@ export const commerceCards: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, gagnez 2 ressources.',
-    flavorText: 'Apprendre l\'art de la vente.',
-    image: 'commerce/co-014.jpg'
+    flavorText: "Apprendre l'art de la vente.",
+    image: 'commerce/co-014.jpg',
   },
   {
     id: 'co-015',
@@ -195,7 +196,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Les autres cartes Commerce gagnent +1 Productivité.',
     flavorText: 'Le conseil personnalisé.',
-    image: 'commerce/co-015.jpg'
+    image: 'commerce/co-015.jpg',
   },
   {
     id: 'co-016',
@@ -208,7 +209,7 @@ export const commerceCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, gagnez 2 ressources.',
     flavorText: 'Superviser les flux financiers.',
-    image: 'commerce/co-016.jpg'
+    image: 'commerce/co-016.jpg',
   },
   {
     id: 'co-017',
@@ -221,7 +222,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Aller vers le client.',
-    image: 'commerce/co-017.jpg'
+    image: 'commerce/co-017.jpg',
   },
   {
     id: 'co-018',
@@ -233,8 +234,8 @@ export const commerceCards: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
-    flavorText: 'Soutenir l\'équipe de vente.',
-    image: 'commerce/co-018.jpg'
+    flavorText: "Soutenir l'équipe de vente.",
+    image: 'commerce/co-018.jpg',
   },
   {
     id: 'co-019',
@@ -247,7 +248,7 @@ export const commerceCards: Card[] = [
     resilience: 2,
     ability: 'Quand vous jouez une carte Commerce, regardez la première carte de votre deck.',
     flavorText: 'Optimiser les stocks.',
-    image: 'commerce/co-019.jpg'
+    image: 'commerce/co-019.jpg',
   },
   {
     id: 'co-020',
@@ -260,7 +261,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 2 ressources.',
     flavorText: 'Expertise technique et conseil.',
-    image: 'commerce/co-020.jpg'
+    image: 'commerce/co-020.jpg',
   },
   {
     id: 'co-021',
@@ -273,7 +274,7 @@ export const commerceCards: Card[] = [
     resilience: 2,
     ability: 'Les cartes Commerce que vous contrôlez coûtent 1 de moins.',
     flavorText: 'Accueillir avec le sourire.',
-    image: 'commerce/co-021.jpg'
+    image: 'commerce/co-021.jpg',
   },
   {
     id: 'co-022',
@@ -284,9 +285,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Au début de votre tour, les cartes Commerce gagnent +1 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Au début de votre tour, les cartes Commerce gagnent +1 Productivité jusqu'à la fin du tour.",
     flavorText: 'Optimiser la présentation.',
-    image: 'commerce/co-022.jpg'
+    image: 'commerce/co-022.jpg',
   },
   {
     id: 'co-023',
@@ -299,7 +301,7 @@ export const commerceCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, gagnez 2 ressources.',
     flavorText: 'Vendre le rêve automobile.',
-    image: 'commerce/co-023.jpg'
+    image: 'commerce/co-023.jpg',
   },
   {
     id: 'co-024',
@@ -312,7 +314,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Commerce, piochez une carte.',
     flavorText: 'Le commerce du futur.',
-    image: 'commerce/co-024.jpg'
+    image: 'commerce/co-024.jpg',
   },
   {
     id: 'co-025',
@@ -323,9 +325,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource pour chaque carte Commerce que vous contrôlez.',
+    ability:
+      'Quand cette carte arrive en jeu, gagnez 1 ressource pour chaque carte Commerce que vous contrôlez.',
     flavorText: 'Représenter la marque.',
-    image: 'commerce/co-025.jpg'
+    image: 'commerce/co-025.jpg',
   },
   {
     id: 'co-026',
@@ -338,7 +341,7 @@ export const commerceCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
     flavorText: 'Conseiller pour la santé.',
-    image: 'commerce/co-026.jpg'
+    image: 'commerce/co-026.jpg',
   },
   {
     id: 'co-027',
@@ -351,7 +354,7 @@ export const commerceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource.',
     flavorText: 'Le commerce de proximité par excellence.',
-    image: 'commerce/co-027.jpg'
+    image: 'commerce/co-027.jpg',
   },
   {
     id: 'co-028',
@@ -363,8 +366,8 @@ export const commerceCards: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Quand vous jouez une carte Commerce, piochez une carte.',
-    flavorText: 'Partager l\'amour des livres.',
-    image: 'commerce/co-028.jpg'
+    flavorText: "Partager l'amour des livres.",
+    image: 'commerce/co-028.jpg',
   },
   {
     id: 'co-029',
@@ -377,7 +380,7 @@ export const commerceCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, gagnez 2 ressources.',
     flavorText: 'Vendre le toit de vos rêves.',
-    image: 'commerce/co-029.jpg'
+    image: 'commerce/co-029.jpg',
   },
   {
     id: 'co-030',
@@ -389,8 +392,8 @@ export const commerceCards: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource si vous avez au moins 3 cartes en main.',
-    flavorText: 'Protéger l\'avenir des clients.',
-    image: 'commerce/co-030.jpg'
+    flavorText: "Protéger l'avenir des clients.",
+    image: 'commerce/co-030.jpg',
   },
 
   // Uncommon (31-50)
@@ -403,9 +406,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 3,
-    ability: 'Les cartes Commerce que vous contrôlez gagnent +2 Productivité. Au début de votre tour, gagnez 2 ressources.',
+    ability:
+      'Les cartes Commerce que vous contrôlez gagnent +2 Productivité. Au début de votre tour, gagnez 2 ressources.',
     flavorText: 'Gérer le quotidien du commerce.',
-    image: 'commerce/co-031.jpg'
+    image: 'commerce/co-031.jpg',
   },
   {
     id: 'co-032',
@@ -416,9 +420,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 3,
-    ability: 'Les autres cartes Commerce que vous contrôlez gagnent +2 Productivité et +1 Résilience.',
-    flavorText: 'Diriger l\'équipe commerciale.',
-    image: 'commerce/co-032.jpg'
+    ability:
+      'Les autres cartes Commerce que vous contrôlez gagnent +2 Productivité et +1 Résilience.',
+    flavorText: "Diriger l'équipe commerciale.",
+    image: 'commerce/co-032.jpg',
   },
   {
     id: 'co-033',
@@ -431,7 +436,7 @@ export const commerceCards: Card[] = [
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, cherchez une carte Commerce dans votre deck.',
     flavorText: 'Sélectionner les meilleurs produits.',
-    image: 'commerce/co-033.jpg'
+    image: 'commerce/co-033.jpg',
   },
   {
     id: 'co-034',
@@ -444,7 +449,7 @@ export const commerceCards: Card[] = [
     resilience: 4,
     ability: 'Au début de votre tour, gagnez 3 ressources. Les cartes Commerce coûtent 1 de moins.',
     flavorText: 'Gérer un centre commercial.',
-    image: 'commerce/co-034.jpg'
+    image: 'commerce/co-034.jpg',
   },
   {
     id: 'co-035',
@@ -457,7 +462,7 @@ export const commerceCards: Card[] = [
     resilience: 3,
     ability: 'Quand vous jouez une carte Commerce, piochez une carte et gagnez 1 ressource.',
     flavorText: 'Développer les ventes en ligne.',
-    image: 'commerce/co-035.jpg'
+    image: 'commerce/co-035.jpg',
   },
   {
     id: 'co-036',
@@ -468,9 +473,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 3,
-    ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource pour chaque carte Commerce que vous contrôlez.',
+    ability:
+      'Quand cette carte arrive en jeu, gagnez 1 ressource pour chaque carte Commerce que vous contrôlez.',
     flavorText: 'Vendre aux professionnels.',
-    image: 'commerce/co-036.jpg'
+    image: 'commerce/co-036.jpg',
   },
   {
     id: 'co-037',
@@ -481,9 +487,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Une fois par tour, cherchez une carte Commerce dans votre deck et ajoutez-la à votre main.',
+    ability:
+      'Une fois par tour, cherchez une carte Commerce dans votre deck et ajoutez-la à votre main.',
     flavorText: 'Négocier les meilleurs prix.',
-    image: 'commerce/co-037.jpg'
+    image: 'commerce/co-037.jpg',
   },
   {
     id: 'co-038',
@@ -494,9 +501,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 3,
-    ability: 'Au début de votre tour, gagnez 3 ressources. Les cartes Commerce gagnent +1 Productivité.',
-    flavorText: 'L\'excellence du service.',
-    image: 'commerce/co-038.jpg'
+    ability:
+      'Au début de votre tour, gagnez 3 ressources. Les cartes Commerce gagnent +1 Productivité.',
+    flavorText: "L'excellence du service.",
+    image: 'commerce/co-038.jpg',
   },
   {
     id: 'co-039',
@@ -508,8 +516,8 @@ export const commerceCards: Card[] = [
     productivity: 3,
     resilience: 4,
     ability: 'Les cartes Commerce dans votre main coûtent 1 de moins à jouer.',
-    flavorText: 'Optimiser la chaîne d\'approvisionnement.',
-    image: 'commerce/co-039.jpg'
+    flavorText: "Optimiser la chaîne d'approvisionnement.",
+    image: 'commerce/co-039.jpg',
   },
   {
     id: 'co-040',
@@ -520,9 +528,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 3,
-    ability: 'Quand cette carte arrive en jeu, les cartes Commerce gagnent +3 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Quand cette carte arrive en jeu, les cartes Commerce gagnent +3 Productivité jusqu'à la fin du tour.",
     flavorText: 'Attirer les clients.',
-    image: 'commerce/co-040.jpg'
+    image: 'commerce/co-040.jpg',
   },
   {
     id: 'co-041',
@@ -535,7 +544,7 @@ export const commerceCards: Card[] = [
     resilience: 3,
     ability: 'Les cartes Commerce que vous contrôlez gagnent +1 Productivité et +1 Résilience.',
     flavorText: 'Spécialiser pour mieux vendre.',
-    image: 'commerce/co-041.jpg'
+    image: 'commerce/co-041.jpg',
   },
   {
     id: 'co-042',
@@ -546,9 +555,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 4,
-    ability: 'Au début de votre tour, gagnez 2 ressources pour chaque carte Commerce que vous contrôlez (maximum 6).',
+    ability:
+      'Au début de votre tour, gagnez 2 ressources pour chaque carte Commerce que vous contrôlez (maximum 6).',
     flavorText: 'Gérer plusieurs points de vente.',
-    image: 'commerce/co-042.jpg'
+    image: 'commerce/co-042.jpg',
   },
   {
     id: 'co-043',
@@ -561,7 +571,7 @@ export const commerceCards: Card[] = [
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, gagnez 4 ressources.',
     flavorText: 'Vendre les plus belles propriétés.',
-    image: 'commerce/co-043.jpg'
+    image: 'commerce/co-043.jpg',
   },
   {
     id: 'co-044',
@@ -572,9 +582,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Les cartes Commerce que vous contrôlez coûtent 1 de moins et gagnent +1 Productivité.',
+    ability:
+      'Les cartes Commerce que vous contrôlez coûtent 1 de moins et gagnent +1 Productivité.',
     flavorText: 'Développer le réseau.',
-    image: 'commerce/co-044.jpg'
+    image: 'commerce/co-044.jpg',
   },
   {
     id: 'co-045',
@@ -586,8 +597,8 @@ export const commerceCards: Card[] = [
     productivity: 4,
     resilience: 3,
     ability: 'Une fois par tour, vous pouvez chercher une carte Commerce dans votre deck.',
-    flavorText: 'Optimiser l\'assortiment produit.',
-    image: 'commerce/co-045.jpg'
+    flavorText: "Optimiser l'assortiment produit.",
+    image: 'commerce/co-045.jpg',
   },
   {
     id: 'co-046',
@@ -600,7 +611,7 @@ export const commerceCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Commerce que vous contrôlez gagnent +2 Résilience.',
     flavorText: 'Fidéliser la clientèle.',
-    image: 'commerce/co-046.jpg'
+    image: 'commerce/co-046.jpg',
   },
   {
     id: 'co-047',
@@ -613,7 +624,7 @@ export const commerceCards: Card[] = [
     resilience: 4,
     ability: 'Au début de votre tour, gagnez 4 ressources.',
     flavorText: 'Vendre le rêve automobile à grande échelle.',
-    image: 'commerce/co-047.jpg'
+    image: 'commerce/co-047.jpg',
   },
   {
     id: 'co-048',
@@ -626,11 +637,11 @@ export const commerceCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Commerce dans votre main coûtent 2 de moins à jouer.',
     flavorText: 'Gérer les flux de bout en bout.',
-    image: 'commerce/co-048.jpg'
+    image: 'commerce/co-048.jpg',
   },
   {
     id: 'co-049',
-    name: 'Directeur d\'Hypermarché',
+    name: "Directeur d'Hypermarché",
     domain: Domain.Commerce,
     type: CardType.Job,
     cost: 5,
@@ -639,7 +650,7 @@ export const commerceCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Commerce que vous contrôlez gagnent +2 Productivité et +1 Résilience.',
     flavorText: 'Gérer un empire commercial.',
-    image: 'commerce/co-049.jpg'
+    image: 'commerce/co-049.jpg',
   },
   {
     id: 'co-050',
@@ -652,7 +663,7 @@ export const commerceCards: Card[] = [
     resilience: 3,
     ability: 'Quand vous jouez une carte Commerce, piochez une carte et gagnez 2 ressources.',
     flavorText: 'Maîtriser les plateformes de vente.',
-    image: 'commerce/co-050.jpg'
+    image: 'commerce/co-050.jpg',
   },
 
   // Rare (51-80)
@@ -665,9 +676,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Les cartes Commerce que vous contrôlez gagnent +3 Productivité. Au début de votre tour, gagnez 4 ressources.',
-    flavorText: 'Diriger les ventes à l\'échelle nationale.',
-    image: 'commerce/co-051.jpg'
+    ability:
+      'Les cartes Commerce que vous contrôlez gagnent +3 Productivité. Au début de votre tour, gagnez 4 ressources.',
+    flavorText: "Diriger les ventes à l'échelle nationale.",
+    image: 'commerce/co-051.jpg',
   },
   {
     id: 'co-052',
@@ -678,9 +690,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Commerce que vous contrôlez gagnent +3 Productivité et +2 Résilience. Au début de votre tour, gagnez 5 ressources.',
+    ability:
+      'Les cartes Commerce que vous contrôlez gagnent +3 Productivité et +2 Résilience. Au début de votre tour, gagnez 5 ressources.',
     flavorText: 'Bâtir un empire du retail.',
-    image: 'commerce/co-052.jpg'
+    image: 'commerce/co-052.jpg',
   },
   {
     id: 'co-053',
@@ -693,7 +706,7 @@ export const commerceCards: Card[] = [
     resilience: 5,
     ability: 'Quand vous jouez une carte Commerce, piochez 2 cartes et gagnez 3 ressources.',
     flavorText: 'Révolutionner le commerce en ligne.',
-    image: 'commerce/co-053.jpg'
+    image: 'commerce/co-053.jpg',
   },
   {
     id: 'co-054',
@@ -704,9 +717,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Commerce dans votre main coûtent 2 de moins. Au début de votre tour, piochez 2 cartes.',
+    ability:
+      'Les cartes Commerce dans votre main coûtent 2 de moins. Au début de votre tour, piochez 2 cartes.',
     flavorText: 'Diriger la distribution à grande échelle.',
-    image: 'commerce/co-054.jpg'
+    image: 'commerce/co-054.jpg',
   },
   {
     id: 'co-055',
@@ -717,9 +731,9 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, cherchez jusqu\'à 3 cartes Commerce dans votre deck.',
+    ability: "Quand cette carte arrive en jeu, cherchez jusqu'à 3 cartes Commerce dans votre deck.",
     flavorText: 'Créer une plateforme de vente mondiale.',
-    image: 'commerce/co-055.jpg'
+    image: 'commerce/co-055.jpg',
   },
   {
     id: 'co-056',
@@ -732,7 +746,7 @@ export const commerceCards: Card[] = [
     resilience: 6,
     ability: 'Les cartes Commerce que vous contrôlez gagnent +2 Productivité et +3 Résilience.',
     flavorText: 'Gérer un temple du shopping.',
-    image: 'commerce/co-056.jpg'
+    image: 'commerce/co-056.jpg',
   },
   {
     id: 'co-057',
@@ -743,9 +757,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Quand vous jouez une carte Commerce, piochez 3 cartes et gagnez 2 ressources. Les cartes Commerce coûtent 2 de moins.',
+    ability:
+      'Quand vous jouez une carte Commerce, piochez 3 cartes et gagnez 2 ressources. Les cartes Commerce coûtent 2 de moins.',
     flavorText: 'Dominer le commerce en ligne.',
-    image: 'commerce/co-057.jpg'
+    image: 'commerce/co-057.jpg',
   },
   {
     id: 'co-058',
@@ -756,9 +771,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Au début de votre tour, gagnez 3 ressources pour chaque carte Commerce que vous contrôlez.',
+    ability:
+      'Au début de votre tour, gagnez 3 ressources pour chaque carte Commerce que vous contrôlez.',
     flavorText: 'Étendre le réseau mondialement.',
-    image: 'commerce/co-058.jpg'
+    image: 'commerce/co-058.jpg',
   },
   {
     id: 'co-059',
@@ -769,9 +785,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, piochez 4 cartes. Les cartes Commerce gagnent +2 Productivité.',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 4 cartes. Les cartes Commerce gagnent +2 Productivité.',
     flavorText: 'Inventer le commerce de demain.',
-    image: 'commerce/co-059.jpg'
+    image: 'commerce/co-059.jpg',
   },
   {
     id: 'co-060',
@@ -782,9 +799,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Commerce que vous contrôlez gagnent +4 Productivité. Vous pouvez jouer une carte Commerce supplémentaire par tour.',
+    ability:
+      'Les cartes Commerce que vous contrôlez gagnent +4 Productivité. Vous pouvez jouer une carte Commerce supplémentaire par tour.',
     flavorText: 'Conquérir les marchés mondiaux.',
-    image: 'commerce/co-060.jpg'
+    image: 'commerce/co-060.jpg',
   },
   {
     id: 'co-061',
@@ -797,7 +815,7 @@ export const commerceCards: Card[] = [
     resilience: 6,
     ability: 'Au début de votre tour, gagnez 6 ressources.',
     flavorText: 'Bâtir un empire immobilier.',
-    image: 'commerce/co-061.jpg'
+    image: 'commerce/co-061.jpg',
   },
   {
     id: 'co-062',
@@ -808,9 +826,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Les cartes Commerce que vous contrôlez ne peuvent pas être ciblées par les effets adverses.',
-    flavorText: 'L\'excellence à chaque transaction.',
-    image: 'commerce/co-062.jpg'
+    ability:
+      'Les cartes Commerce que vous contrôlez ne peuvent pas être ciblées par les effets adverses.',
+    flavorText: "L'excellence à chaque transaction.",
+    image: 'commerce/co-062.jpg',
   },
   {
     id: 'co-063',
@@ -821,9 +840,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Commerce que vous contrôlez gagnent +3 Productivité et +3 Résilience. Au début de votre tour, gagnez 5 ressources.',
+    ability:
+      'Les cartes Commerce que vous contrôlez gagnent +3 Productivité et +3 Résilience. Au début de votre tour, gagnez 5 ressources.',
     flavorText: 'Nourrir une nation.',
-    image: 'commerce/co-063.jpg'
+    image: 'commerce/co-063.jpg',
   },
   {
     id: 'co-064',
@@ -836,7 +856,7 @@ export const commerceCards: Card[] = [
     resilience: 5,
     ability: 'Les cartes Commerce dans votre main coûtent 3 de moins à jouer.',
     flavorText: 'Orchestrer les flux mondiaux.',
-    image: 'commerce/co-064.jpg'
+    image: 'commerce/co-064.jpg',
   },
   {
     id: 'co-065',
@@ -849,7 +869,7 @@ export const commerceCards: Card[] = [
     resilience: 5,
     ability: 'Quand cette carte arrive en jeu, piochez 5 cartes et gagnez 5 ressources.',
     flavorText: 'Disrupter le marché.',
-    image: 'commerce/co-065.jpg'
+    image: 'commerce/co-065.jpg',
   },
   {
     id: 'co-066',
@@ -860,9 +880,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Une fois par tour, cherchez jusqu\'à 3 cartes Commerce dans votre deck et ajoutez-les à votre main.',
-    flavorText: 'Négocier à l\'échelle mondiale.',
-    image: 'commerce/co-066.jpg'
+    ability:
+      "Une fois par tour, cherchez jusqu'à 3 cartes Commerce dans votre deck et ajoutez-les à votre main.",
+    flavorText: "Négocier à l'échelle mondiale.",
+    image: 'commerce/co-066.jpg',
   },
   {
     id: 'co-067',
@@ -873,9 +894,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 7,
-    ability: 'Les cartes Commerce que vous contrôlez sont indestructibles et gagnent +3 Productivité.',
+    ability:
+      'Les cartes Commerce que vous contrôlez sont indestructibles et gagnent +3 Productivité.',
     flavorText: 'Définir le luxe mondial.',
-    image: 'commerce/co-067.jpg'
+    image: 'commerce/co-067.jpg',
   },
   {
     id: 'co-068',
@@ -886,9 +908,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Quand vous jouez une carte Commerce, piochez 2 cartes. Les cartes Commerce coûtent 1 de moins.',
+    ability:
+      'Quand vous jouez une carte Commerce, piochez 2 cartes. Les cartes Commerce coûtent 1 de moins.',
     flavorText: 'Livrer en 30 minutes.',
-    image: 'commerce/co-068.jpg'
+    image: 'commerce/co-068.jpg',
   },
   {
     id: 'co-069',
@@ -901,7 +924,7 @@ export const commerceCards: Card[] = [
     resilience: 6,
     ability: 'Au début de votre tour, gagnez 2 ressources pour chaque carte en jeu.',
     flavorText: 'Diversifier pour dominer.',
-    image: 'commerce/co-069.jpg'
+    image: 'commerce/co-069.jpg',
   },
   {
     id: 'co-070',
@@ -912,9 +935,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, gagnez 2 ressources pour chaque carte Commerce que vous contrôlez.',
+    ability:
+      'Quand cette carte arrive en jeu, gagnez 2 ressources pour chaque carte Commerce que vous contrôlez.',
     flavorText: 'Connecter les entreprises.',
-    image: 'commerce/co-070.jpg'
+    image: 'commerce/co-070.jpg',
   },
   {
     id: 'co-071',
@@ -927,7 +951,7 @@ export const commerceCards: Card[] = [
     resilience: 6,
     ability: 'Les cartes Commerce que vous contrôlez gagnent +2 Productivité et +3 Résilience.',
     flavorText: 'Soigner et servir.',
-    image: 'commerce/co-071.jpg'
+    image: 'commerce/co-071.jpg',
   },
   {
     id: 'co-072',
@@ -939,8 +963,8 @@ export const commerceCards: Card[] = [
     productivity: 6,
     resilience: 5,
     ability: 'Quand cette carte arrive en jeu, créez 2 jetons de cartes Commerce 3/3.',
-    flavorText: 'Réinventer l\'expérience shopping.',
-    image: 'commerce/co-072.jpg'
+    flavorText: "Réinventer l'expérience shopping.",
+    image: 'commerce/co-072.jpg',
   },
   {
     id: 'co-073',
@@ -951,9 +975,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Commerce que vous contrôlez gagnent +3 Productivité et +2 Résilience. Au début de votre tour, gagnez 4 ressources.',
+    ability:
+      'Les cartes Commerce que vous contrôlez gagnent +3 Productivité et +2 Résilience. Au début de votre tour, gagnez 4 ressources.',
     flavorText: 'Habiller le monde.',
-    image: 'commerce/co-073.jpg'
+    image: 'commerce/co-073.jpg',
   },
   {
     id: 'co-074',
@@ -966,7 +991,7 @@ export const commerceCards: Card[] = [
     resilience: 5,
     ability: 'Au début de votre tour, gagnez 5 ressources.',
     flavorText: 'Servir les professionnels.',
-    image: 'commerce/co-074.jpg'
+    image: 'commerce/co-074.jpg',
   },
   {
     id: 'co-075',
@@ -979,7 +1004,7 @@ export const commerceCards: Card[] = [
     resilience: 6,
     ability: 'Quand vous jouez une carte Commerce, piochez 3 cartes et gagnez 3 ressources.',
     flavorText: 'Connecter vendeurs et acheteurs.',
-    image: 'commerce/co-075.jpg'
+    image: 'commerce/co-075.jpg',
   },
   {
     id: 'co-076',
@@ -992,7 +1017,7 @@ export const commerceCards: Card[] = [
     resilience: 6,
     ability: 'Les cartes Commerce que vous contrôlez gagnent +4 Productivité.',
     flavorText: 'Le temple de la marque.',
-    image: 'commerce/co-076.jpg'
+    image: 'commerce/co-076.jpg',
   },
   {
     id: 'co-077',
@@ -1003,9 +1028,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Les autres cartes Commerce que vous contrôlez gagnent +3 Productivité et +2 Résilience.',
-    flavorText: 'L\'union fait la force commerciale.',
-    image: 'commerce/co-077.jpg'
+    ability:
+      'Les autres cartes Commerce que vous contrôlez gagnent +3 Productivité et +2 Résilience.',
+    flavorText: "L'union fait la force commerciale.",
+    image: 'commerce/co-077.jpg',
   },
   {
     id: 'co-078',
@@ -1018,7 +1044,7 @@ export const commerceCards: Card[] = [
     resilience: 5,
     ability: 'Les cartes Commerce dans votre main et dans votre deck coûtent 2 de moins.',
     flavorText: 'Le luxe accessible.',
-    image: 'commerce/co-078.jpg'
+    image: 'commerce/co-078.jpg',
   },
   {
     id: 'co-079',
@@ -1030,8 +1056,8 @@ export const commerceCards: Card[] = [
     productivity: 6,
     resilience: 6,
     ability: 'Les cartes Commerce que vous contrôlez gagnent +4 Productivité et +3 Résilience.',
-    flavorText: 'Distribuer à l\'échelle continentale.',
-    image: 'commerce/co-079.jpg'
+    flavorText: "Distribuer à l'échelle continentale.",
+    image: 'commerce/co-079.jpg',
   },
   {
     id: 'co-080',
@@ -1042,9 +1068,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, piochez 6 cartes et gagnez 8 ressources. Les cartes Commerce gagnent +3 Productivité.',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 6 cartes et gagnez 8 ressources. Les cartes Commerce gagnent +3 Productivité.',
     flavorText: 'Valorisation à 1 milliard.',
-    image: 'commerce/co-080.jpg'
+    image: 'commerce/co-080.jpg',
   },
 
   // Legendary (81-100)
@@ -1057,9 +1084,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 10,
-    ability: 'Les cartes Commerce dans votre main coûtent 4 de moins. Quand vous jouez une carte Commerce, piochez 5 cartes et gagnez 8 ressources.',
-    flavorText: 'Amazon - De la librairie en ligne à l\'empire mondial.',
-    image: 'commerce/co-081.jpg'
+    ability:
+      'Les cartes Commerce dans votre main coûtent 4 de moins. Quand vous jouez une carte Commerce, piochez 5 cartes et gagnez 8 ressources.',
+    flavorText: "Amazon - De la librairie en ligne à l'empire mondial.",
+    image: 'commerce/co-081.jpg',
   },
   {
     id: 'co-082',
@@ -1070,9 +1098,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Les cartes Commerce que vous contrôlez gagnent +6 Productivité et +5 Résilience. Au début de votre tour, gagnez 8 ressources.',
+    ability:
+      'Les cartes Commerce que vous contrôlez gagnent +6 Productivité et +5 Résilience. Au début de votre tour, gagnez 8 ressources.',
     flavorText: 'Walmart - Le plus grand retailer du monde.',
-    image: 'commerce/co-082.jpg'
+    image: 'commerce/co-082.jpg',
   },
   {
     id: 'co-083',
@@ -1083,9 +1112,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 9,
-    ability: 'Quand vous jouez une carte Commerce, piochez 4 cartes et gagnez 6 ressources. Les cartes Commerce gagnent +5 Productivité.',
+    ability:
+      'Quand vous jouez une carte Commerce, piochez 4 cartes et gagnez 6 ressources. Les cartes Commerce gagnent +5 Productivité.',
     flavorText: 'Alibaba - Connecter la Chine au monde.',
-    image: 'commerce/co-083.jpg'
+    image: 'commerce/co-083.jpg',
   },
   {
     id: 'co-084',
@@ -1096,9 +1126,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Les cartes Commerce que vous contrôlez sont indestructibles et gagnent +5 Productivité et +6 Résilience.',
-    flavorText: 'LVMH - L\'empire du luxe.',
-    image: 'commerce/co-084.jpg'
+    ability:
+      'Les cartes Commerce que vous contrôlez sont indestructibles et gagnent +5 Productivité et +6 Résilience.',
+    flavorText: "LVMH - L'empire du luxe.",
+    image: 'commerce/co-084.jpg',
   },
   {
     id: 'co-085',
@@ -1109,9 +1140,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Au début de votre tour, gagnez 10 ressources. Les cartes Commerce que vous contrôlez gagnent +5 Productivité.',
+    ability:
+      'Au début de votre tour, gagnez 10 ressources. Les cartes Commerce que vous contrôlez gagnent +5 Productivité.',
     flavorText: 'Zara - La fast fashion mondiale.',
-    image: 'commerce/co-085.jpg'
+    image: 'commerce/co-085.jpg',
   },
   {
     id: 'co-086',
@@ -1122,9 +1154,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 10,
-    ability: 'Les cartes Commerce dans votre main coûtent 3 de moins. Au début de votre tour, piochez 5 cartes et gagnez 6 ressources.',
+    ability:
+      'Les cartes Commerce dans votre main coûtent 3 de moins. Au début de votre tour, piochez 5 cartes et gagnez 6 ressources.',
     flavorText: 'IKEA - Démocratiser le design.',
-    image: 'commerce/co-086.jpg'
+    image: 'commerce/co-086.jpg',
   },
   {
     id: 'co-087',
@@ -1135,9 +1168,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Les cartes Commerce que vous contrôlez gagnent +5 Productivité et +4 Résilience. Quand vous jouez une carte Commerce, piochez 3 cartes.',
+    ability:
+      'Les cartes Commerce que vous contrôlez gagnent +5 Productivité et +4 Résilience. Quand vous jouez une carte Commerce, piochez 3 cartes.',
     flavorText: 'Nike - Just Do It.',
-    image: 'commerce/co-087.jpg'
+    image: 'commerce/co-087.jpg',
   },
   {
     id: 'co-088',
@@ -1148,9 +1182,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Au début de votre tour, gagnez 7 ressources. Les cartes Commerce que vous contrôlez gagnent +4 Productivité et +4 Résilience.',
+    ability:
+      'Au début de votre tour, gagnez 7 ressources. Les cartes Commerce que vous contrôlez gagnent +4 Productivité et +4 Résilience.',
     flavorText: 'Starbucks - Réinventer le café.',
-    image: 'commerce/co-088.jpg'
+    image: 'commerce/co-088.jpg',
   },
   {
     id: 'co-089',
@@ -1161,9 +1196,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Quand cette carte arrive en jeu, créez 5 jetons de cartes Commerce 4/4. Les cartes Commerce gagnent +5 Productivité.',
-    flavorText: 'McDonald\'s - La standardisation de la restauration.',
-    image: 'commerce/co-089.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, créez 5 jetons de cartes Commerce 4/4. Les cartes Commerce gagnent +5 Productivité.',
+    flavorText: "McDonald's - La standardisation de la restauration.",
+    image: 'commerce/co-089.jpg',
   },
   {
     id: 'co-090',
@@ -1174,9 +1210,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 9,
-    ability: 'Les cartes Commerce que vous contrôlez gagnent +6 Productivité. Au début de votre tour, piochez 5 cartes et gagnez 10 ressources.',
-    flavorText: 'Révolutionner l\'automobile.',
-    image: 'commerce/co-090.jpg'
+    ability:
+      'Les cartes Commerce que vous contrôlez gagnent +6 Productivité. Au début de votre tour, piochez 5 cartes et gagnez 10 ressources.',
+    flavorText: "Révolutionner l'automobile.",
+    image: 'commerce/co-090.jpg',
   },
   {
     id: 'co-091',
@@ -1187,9 +1224,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 10,
-    ability: 'Les cartes Commerce que vous contrôlez sont indestructibles et gagnent +4 Productivité et +5 Résilience.',
-    flavorText: 'Kering - L\'empire du luxe français.',
-    image: 'commerce/co-091.jpg'
+    ability:
+      'Les cartes Commerce que vous contrôlez sont indestructibles et gagnent +4 Productivité et +5 Résilience.',
+    flavorText: "Kering - L'empire du luxe français.",
+    image: 'commerce/co-091.jpg',
   },
   {
     id: 'co-092',
@@ -1200,9 +1238,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Les cartes Commerce dans votre main coûtent 3 de moins. Au début de votre tour, gagnez 7 ressources.',
+    ability:
+      'Les cartes Commerce dans votre main coûtent 3 de moins. Au début de votre tour, gagnez 7 ressources.',
     flavorText: 'Uniqlo - Le minimalisme japonais.',
-    image: 'commerce/co-092.jpg'
+    image: 'commerce/co-092.jpg',
   },
   {
     id: 'co-093',
@@ -1213,9 +1252,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Quand cette carte arrive en jeu, cherchez jusqu\'à 6 cartes Commerce dans votre deck. Les cartes Commerce gagnent +5 Productivité.',
+    ability:
+      "Quand cette carte arrive en jeu, cherchez jusqu'à 6 cartes Commerce dans votre deck. Les cartes Commerce gagnent +5 Productivité.",
     flavorText: 'eBay - Inventer les enchères en ligne.',
-    image: 'commerce/co-093.jpg'
+    image: 'commerce/co-093.jpg',
   },
   {
     id: 'co-094',
@@ -1226,9 +1266,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Les autres cartes Commerce que vous contrôlez gagnent +6 Productivité et +5 Résilience. Au début de votre tour, gagnez 8 ressources.',
-    flavorText: 'Auchan - L\'empire familial de la distribution.',
-    image: 'commerce/co-094.jpg'
+    ability:
+      'Les autres cartes Commerce que vous contrôlez gagnent +6 Productivité et +5 Résilience. Au début de votre tour, gagnez 8 ressources.',
+    flavorText: "Auchan - L'empire familial de la distribution.",
+    image: 'commerce/co-094.jpg',
   },
   {
     id: 'co-095',
@@ -1239,9 +1280,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Quand vous jouez une carte Commerce, piochez 4 cartes et gagnez 5 ressources. Les cartes Commerce gagnent +4 Productivité.',
+    ability:
+      'Quand vous jouez une carte Commerce, piochez 4 cartes et gagnez 5 ressources. Les cartes Commerce gagnent +4 Productivité.',
     flavorText: 'Virgin - Diversifier dans tous les secteurs.',
-    image: 'commerce/co-095.jpg'
+    image: 'commerce/co-095.jpg',
   },
   {
     id: 'co-096',
@@ -1252,9 +1294,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 10,
-    ability: 'Les cartes Commerce que vous contrôlez coûtent 3 de moins et gagnent +4 Productivité.',
+    ability:
+      'Les cartes Commerce que vous contrôlez coûtent 3 de moins et gagnent +4 Productivité.',
     flavorText: 'E.Leclerc - Le commerce engagé.',
-    image: 'commerce/co-096.jpg'
+    image: 'commerce/co-096.jpg',
   },
   {
     id: 'co-097',
@@ -1265,9 +1308,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 9,
-    ability: 'Quand cette carte arrive en jeu, piochez 10 cartes et gagnez 15 ressources. Les cartes Commerce gagnent +6 Productivité.',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 10 cartes et gagnez 15 ressources. Les cartes Commerce gagnent +6 Productivité.',
     flavorText: 'Investir dans le futur du commerce.',
-    image: 'commerce/co-097.jpg'
+    image: 'commerce/co-097.jpg',
   },
   {
     id: 'co-098',
@@ -1278,9 +1322,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Les cartes Commerce que vous contrôlez gagnent +5 Productivité et +5 Résilience. Au début de votre tour, piochez 4 cartes.',
+    ability:
+      'Les cartes Commerce que vous contrôlez gagnent +5 Productivité et +5 Résilience. Au début de votre tour, piochez 4 cartes.',
     flavorText: 'Whole Foods - Le bio à grande échelle.',
-    image: 'commerce/co-098.jpg'
+    image: 'commerce/co-098.jpg',
   },
   {
     id: 'co-099',
@@ -1291,9 +1336,10 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Quand vous jouez une carte Commerce, piochez 5 cartes et gagnez 6 ressources. Les cartes Commerce gagnent +5 Productivité.',
-    flavorText: 'Rakuten - L\'Amazon japonais.',
-    image: 'commerce/co-099.jpg'
+    ability:
+      'Quand vous jouez une carte Commerce, piochez 5 cartes et gagnez 6 ressources. Les cartes Commerce gagnent +5 Productivité.',
+    flavorText: "Rakuten - L'Amazon japonais.",
+    image: 'commerce/co-099.jpg',
   },
   {
     id: 'co-100',
@@ -1304,8 +1350,9 @@ export const commerceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 10,
-    ability: 'Les cartes Commerce que vous contrôlez sont indestructibles et gagnent +7 Productivité et +6 Résilience. Au début de votre tour, piochez 6 cartes et gagnez 10 ressources.',
+    ability:
+      'Les cartes Commerce que vous contrôlez sont indestructibles et gagnent +7 Productivité et +6 Résilience. Au début de votre tour, piochez 6 cartes et gagnez 10 ressources.',
     flavorText: 'JD.com - Révolutionner le e-commerce chinois.',
-    image: 'commerce/co-100.jpg'
-  }
+    image: 'commerce/co-100.jpg',
+  },
 ];

@@ -10,7 +10,9 @@
       <div class="log-entry">
         <div class="log-meta">
           <span class="log-turn">T{{ entry.turn }}</span>
-          <span class="log-phase" [style.color]="getPhaseColor(entry.phase)">{{ entry.phase }}</span>
+          <span class="log-phase" [style.color]="getPhaseColor(entry.phase)">{{
+            entry.phase
+          }}</span>
         </div>
         <div class="log-message">{{ entry.message }}</div>
       </div>

@@ -7,7 +7,9 @@
   transform: scale(var(--card-scale));
   transform-origin: top center;
   cursor: default;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
   border-radius: 8px;
 
   &.selectable {
@@ -147,10 +149,18 @@
   font-weight: 600;
   background: rgba(0, 0, 0, 0.7);
 
-  &[data-kw="Première Frappe"] { background: #e65100; }
-  &[data-kw="Célérité"] { background: #2e7d32; }
-  &[data-kw="Construction"] { background: #795548; }
-  &[data-kw="Portée"] { background: #1565c0; }
+  &[data-kw='Première Frappe'] {
+    background: #e65100;
+  }
+  &[data-kw='Célérité'] {
+    background: #2e7d32;
+  }
+  &[data-kw='Construction'] {
+    background: #795548;
+  }
+  &[data-kw='Portée'] {
+    background: #1565c0;
+  }
 }
 
 @media (max-width: 768px) {

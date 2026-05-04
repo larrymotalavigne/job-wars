@@ -37,7 +37,7 @@
 
 @media (max-width: 768px) {
   .field-cards .field-card {
-    --card-scale: 0.50;
+    --card-scale: 0.5;
   }
 }
 
@@ -47,7 +47,7 @@
     overflow-y: auto;
 
     .field-card {
-      --card-scale: 0.40;
+      --card-scale: 0.4;
     }
   }
 }

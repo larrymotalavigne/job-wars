@@ -104,9 +104,9 @@ export class DeckBuilderComponent implements OnInit {
   ];
 
   // Filters
-  domainOptions = Object.values(Domain).map(d => ({ label: d, value: d }));
-  typeOptions = Object.values(CardType).map(t => ({ label: t, value: t }));
-  rarityOptions = Object.values(Rarity).map(r => ({ label: r, value: r }));
+  domainOptions = Object.values(Domain).map((d) => ({ label: d, value: d }));
+  typeOptions = Object.values(CardType).map((t) => ({ label: t, value: t }));
+  rarityOptions = Object.values(Rarity).map((r) => ({ label: r, value: r }));
   selectedDomains: Domain[] = [];
   selectedTypes: CardType[] = [];
   selectedRarities: Rarity[] = [];
@@ -180,14 +180,14 @@ export class DeckBuilderComponent implements OnInit {
     this.applyFilters();
     this.refreshSavedDecks();
 
-    this.route.queryParams.subscribe(qp => {
+    this.route.queryParams.subscribe((qp) => {
       const code = qp['code'];
       if (code) {
         this.openImportCodeDialogWithValue(code);
       }
     });
 
-    this.route.params.subscribe(params => {
+    this.route.params.subscribe((params) => {
       if (params['deckId']) {
         this.loadDeck(params['deckId']);
       } else {
@@ -244,7 +244,7 @@ export class DeckBuilderComponent implements OnInit {
       this.messageService.add({ severity: 'error', summary: 'Erreur', detail: 'Deck non trouvé.' });
       return;
     }
-    this.currentDeck = { ...deck, entries: deck.entries.map(e => ({ ...e })) };
+    this.currentDeck = { ...deck, entries: deck.entries.map((e) => ({ ...e })) };
     this.deckName = this.currentDeck.name;
     this.selectedDeckId = deckId;
     this.refreshDeckView();
@@ -347,7 +347,7 @@ export class DeckBuilderComponent implements OnInit {
       return;
     }
     this.deckEntries = this.currentDeck.entries
-      .map(e => {
+      .map((e) => {
         const card = this.cardService.getCardById(e.cardId);
         if (!card) return null;
         return {
@@ -374,7 +374,7 @@ export class DeckBuilderComponent implements OnInit {
 
   refreshSavedDecks() {
     this.savedDecks = this.deckService.getAllDecks();
-    this.deckSelectorOptions = this.savedDecks.map(d => ({ label: d.name, value: d.id }));
+    this.deckSelectorOptions = this.savedDecks.map((d) => ({ label: d.name, value: d.id }));
   }
 
   get groupedEntries(): { label: string; entries: DeckEntryView[] }[] {
@@ -395,7 +395,9 @@ export class DeckBuilderComponent implements OnInit {
       .sort(([a], [b]) => a.localeCompare(b))
       .map(([label, entries]) => ({
         label,
-        entries: entries.sort((a, b) => a.card.cost - b.card.cost || a.card.name.localeCompare(b.card.name)),
+        entries: entries.sort(
+          (a, b) => a.card.cost - b.card.cost || a.card.name.localeCompare(b.card.name),
+        ),
       }));
   }
 
@@ -439,7 +441,7 @@ export class DeckBuilderComponent implements OnInit {
     return Object.entries(dist)
       .sort(([, a], [, b]) => b - a)
       .map(([domain, count]) => {
-        const domainKey = Object.values(Domain).find(v => v === domain) as Domain | undefined;
+        const domainKey = Object.values(Domain).find((v) => v === domain) as Domain | undefined;
         const color = domainKey ? (DOMAIN_COLORS[domainKey]?.primary ?? '#999') : '#999';
         return { domain, count, percent: (count / total) * 100, color };
       });
@@ -499,11 +501,16 @@ export class DeckBuilderComponent implements OnInit {
     try {
       const preview = this.deckService.previewDeckCode(this.importCode.trim());
       const totalCards = preview.entries.reduce((s, e) => s + e.quantity, 0);
-      const cardNames = preview.entries.slice(0, 8).map(e => {
+      const cardNames = preview.entries.slice(0, 8).map((e) => {
         const card = this.cardService.getCardById(e.cardId);
         return card ? `${card.name} x${e.quantity}` : e.cardId;
       });
-      this.importCodePreview = { name: preview.name, entries: preview.entries, totalCards, cardNames };
+      this.importCodePreview = {
+        name: preview.name,
+        entries: preview.entries,
+        totalCards,
+        cardNames,
+      };
     } catch (e: any) {
       this.importCodeError = e.message ?? 'Code invalide';
     }
@@ -576,7 +583,7 @@ export class DeckBuilderComponent implements OnInit {
   printDeck() {
     if (!this.currentDeck) return;
     const cards = this.deckService.expandDeck(this.currentDeck);
-    const ids = cards.map(c => c.id).join(',');
+    const ids = cards.map((c) => c.id).join(',');
     this.router.navigate(['/print'], {
       queryParams: { cards: ids, design: this.currentDesign, imageStyle: this.currentImageStyle },
     });

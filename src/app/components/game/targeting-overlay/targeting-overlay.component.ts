@@ -32,7 +32,9 @@ export class TargetingOverlayComponent {
     const targets: CardInstance[] = [];
     for (const player of [this.state.player1, this.state.player2]) {
       for (const card of player.field) {
-        if (this.effectService.isValidTarget(this.state.pendingEffect, card.instanceId, this.state)) {
+        if (
+          this.effectService.isValidTarget(this.state.pendingEffect, card.instanceId, this.state)
+        ) {
           targets.push(card);
         }
       }

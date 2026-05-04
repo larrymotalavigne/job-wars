@@ -38,27 +38,29 @@ export const EMOTES: Emote[] = [
       <p-menu #menu [model]="emoteItems" [popup]="true" />
     </div>
   `,
-  styles: [`
-    .emote-menu {
-      position: fixed;
-      bottom: 5rem;
-      right: 1rem;
-      z-index: 50;
-    }
-
-    @media (max-width: 480px) {
+  styles: [
+    `
       .emote-menu {
-        bottom: 4rem;
-        right: 0.5rem;
+        position: fixed;
+        bottom: 5rem;
+        right: 1rem;
+        z-index: 50;
       }
-    }
-  `],
+
+      @media (max-width: 480px) {
+        .emote-menu {
+          bottom: 4rem;
+          right: 0.5rem;
+        }
+      }
+    `,
+  ],
 })
 export class EmoteMenuComponent {
   emoteItems: MenuItem[] = [];
 
   constructor(private multiplayerService: MultiplayerService) {
-    this.emoteItems = EMOTES.map(emote => ({
+    this.emoteItems = EMOTES.map((emote) => ({
       label: `${emote.icon} ${emote.text}`,
       command: () => this.sendEmote(emote.id),
     }));

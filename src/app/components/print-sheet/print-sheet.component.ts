@@ -25,7 +25,7 @@ export class PrintSheetComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
+    this.route.queryParams.subscribe((params) => {
       if (params['design']) {
         this.design = params['design'] as CardDesign;
       }

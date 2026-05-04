@@ -17,7 +17,8 @@
       <p-progressBar
         [value]="stats.percentageUnlocked"
         [showValue]="false"
-        styleClass="collection-progress">
+        styleClass="collection-progress"
+      >
       </p-progressBar>
     }
   </div>
@@ -41,7 +42,8 @@
               icon="pi pi-clock"
               (onClick)="applyPreset('recent')"
               [outlined]="true"
-              size="small">
+              size="small"
+            >
             </p-button>
             <p-button
               label="Légendaires"
@@ -49,7 +51,8 @@
               (onClick)="applyPreset('legendary')"
               severity="danger"
               [outlined]="true"
-              size="small">
+              size="small"
+            >
             </p-button>
             <p-button
               label="Verrouillées"
@@ -57,7 +60,8 @@
               (onClick)="applyPreset('locked')"
               severity="secondary"
               [outlined]="true"
-              size="small">
+              size="small"
+            >
             </p-button>
           </div>
 
@@ -70,7 +74,8 @@
                 optionLabel="label"
                 optionValue="value"
                 (onChange)="onFilterChange()"
-                styleClass="filter-dropdown">
+                styleClass="filter-dropdown"
+              >
               </p-select>
             </div>
 
@@ -82,7 +87,8 @@
                 optionLabel="label"
                 optionValue="value"
                 (onChange)="onFilterChange()"
-                styleClass="filter-dropdown">
+                styleClass="filter-dropdown"
+              >
               </p-select>
             </div>
 
@@ -94,7 +100,8 @@
                 optionLabel="label"
                 optionValue="value"
                 (onChange)="onFilterChange()"
-                styleClass="filter-dropdown">
+                styleClass="filter-dropdown"
+              >
               </p-select>
             </div>
 
@@ -106,7 +113,8 @@
                 optionLabel="label"
                 optionValue="value"
                 (onChange)="onFilterChange()"
-                styleClass="filter-dropdown">
+                styleClass="filter-dropdown"
+              >
               </p-select>
             </div>
           </div>
@@ -120,7 +128,8 @@
                 [min]="0"
                 [max]="10"
                 [step]="1"
-                (onChange)="onCostRangeChange()">
+                (onChange)="onCostRangeChange()"
+              >
               </p-slider>
             </div>
 
@@ -132,7 +141,8 @@
                 optionLabel="label"
                 optionValue="value"
                 (onChange)="onFilterChange()"
-                styleClass="filter-dropdown">
+                styleClass="filter-dropdown"
+              >
               </p-select>
             </div>
 
@@ -144,7 +154,8 @@
                 optionLabel="label"
                 optionValue="value"
                 (onChange)="onFilterChange()"
-                styleClass="filter-dropdown">
+                styleClass="filter-dropdown"
+              >
               </p-select>
             </div>
 
@@ -156,7 +167,8 @@
                 [(ngModel)]="filters.searchTerm"
                 (input)="onFilterChange()"
                 placeholder="Nom de la carte..."
-                class="search-input" />
+                class="search-input"
+              />
             </div>
 
             <p-button
@@ -165,7 +177,8 @@
               (onClick)="resetFilters()"
               severity="secondary"
               [outlined]="true"
-              styleClass="reset-button">
+              styleClass="reset-button"
+            >
             </p-button>
           </div>
         </div>
@@ -183,7 +196,8 @@
                     <p-progressBar
                       [value]="getProgressPercentage(item.entry)"
                       [showValue]="false"
-                      styleClass="unlock-progress">
+                      styleClass="unlock-progress"
+                    >
                     </p-progressBar>
                     <div class="unlock-text">
                       {{ getProgressLabel(item.entry) }}
@@ -211,29 +225,37 @@
       <p-tabpanel value="1">
         @if (stats) {
           <div class="rarity-breakdown">
-            @for (rarity of [
-              { key: 'Common', label: 'Communes' },
-              { key: 'Uncommon', label: 'Peu communes' },
-              { key: 'Rare', label: 'Rares' },
-              { key: 'Legendary', label: 'Légendaires' }
-            ]; track rarity.key) {
+            @for (
+              rarity of [
+                { key: 'Common', label: 'Communes' },
+                { key: 'Uncommon', label: 'Peu communes' },
+                { key: 'Rare', label: 'Rares' },
+                { key: 'Legendary', label: 'Légendaires' },
+              ];
+              track rarity.key
+            ) {
               <div class="rarity-section">
                 <div class="rarity-header">
                   <h3>
-                    <p-tag
-                      [value]="rarity.label"
-                      [severity]="getRarityColor(rarity.key)">
-                    </p-tag>
+                    <p-tag [value]="rarity.label" [severity]="getRarityColor(rarity.key)"> </p-tag>
                   </h3>
                   <span class="rarity-count">
-                    {{ getRarityStats(rarity.key).unlocked }} / {{ getRarityStats(rarity.key).total }}
-                    ({{ ((getRarityStats(rarity.key).unlocked / getRarityStats(rarity.key).total) * 100).toFixed(0) }}%)
+                    {{ getRarityStats(rarity.key).unlocked }} /
+                    {{ getRarityStats(rarity.key).total }} ({{
+                      (
+                        (getRarityStats(rarity.key).unlocked / getRarityStats(rarity.key).total) *
+                        100
+                      ).toFixed(0)
+                    }}%)
                   </span>
                 </div>
                 <p-progressBar
-                  [value]="(getRarityStats(rarity.key).unlocked / getRarityStats(rarity.key).total) * 100"
+                  [value]="
+                    (getRarityStats(rarity.key).unlocked / getRarityStats(rarity.key).total) * 100
+                  "
                   [showValue]="false"
-                  styleClass="rarity-progress">
+                  styleClass="rarity-progress"
+                >
                 </p-progressBar>
               </div>
             }
@@ -256,7 +278,8 @@
                     <div class="unlock-meta">
                       <p-tag
                         [value]="getRarityLabel(card.rarity)"
-                        [severity]="getRarityColor(card.rarity)">
+                        [severity]="getRarityColor(card.rarity)"
+                      >
                       </p-tag>
                       <span class="unlock-date">
                         <i class="pi pi-clock"></i>

@@ -55,9 +55,9 @@ export class CardGalleryComponent implements OnInit {
   ];
 
   // Filter options
-  domainOptions = Object.values(Domain).map(d => ({ label: d, value: d }));
-  typeOptions = Object.values(CardType).map(t => ({ label: t, value: t }));
-  rarityOptions = Object.values(Rarity).map(r => ({ label: r, value: r }));
+  domainOptions = Object.values(Domain).map((d) => ({ label: d, value: d }));
+  typeOptions = Object.values(CardType).map((t) => ({ label: t, value: t }));
+  rarityOptions = Object.values(Rarity).map((r) => ({ label: r, value: r }));
 
   // Filter values
   selectedDomains: Domain[] = [];
@@ -103,7 +103,7 @@ export class CardGalleryComponent implements OnInit {
   }
 
   selectAll() {
-    this.filteredCards.forEach(c => this.selectedCards.add(c.id));
+    this.filteredCards.forEach((c) => this.selectedCards.add(c.id));
   }
 
   clearSelection() {
@@ -112,7 +112,13 @@ export class CardGalleryComponent implements OnInit {
 
   printSelected() {
     const ids = Array.from(this.selectedCards);
-    this.router.navigate(['/print'], { queryParams: { cards: ids.join(','), design: this.currentDesign, imageStyle: this.currentImageStyle } });
+    this.router.navigate(['/print'], {
+      queryParams: {
+        cards: ids.join(','),
+        design: this.currentDesign,
+        imageStyle: this.currentImageStyle,
+      },
+    });
   }
 
   openDetail(card: Card) {

@@ -4,7 +4,7 @@ export const tourismCards: Card[] = [
   // Common (1-30)
   {
     id: 'to-001',
-    name: 'Réceptionniste d\'Hôtel',
+    name: "Réceptionniste d'Hôtel",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 1,
@@ -13,7 +13,7 @@ export const tourismCards: Card[] = [
     resilience: 1,
     ability: 'Célérité. Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Le premier sourire que vous voyez en arrivant.',
-    image: 'tourism/to-001.jpg'
+    image: 'tourism/to-001.jpg',
   },
   {
     id: 'to-002',
@@ -24,9 +24,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Au début de votre tour, gagnez 1 ressource si vous contrôlez au moins 2 cartes Tourisme.',
+    ability:
+      'Au début de votre tour, gagnez 1 ressource si vous contrôlez au moins 2 cartes Tourisme.',
     flavorText: 'Chaque chambre raconte une histoire différente.',
-    image: 'tourism/to-002.jpg'
+    image: 'tourism/to-002.jpg',
   },
   {
     id: 'to-003',
@@ -39,7 +40,7 @@ export const tourismCards: Card[] = [
     resilience: 2,
     ability: 'Célérité.',
     flavorText: 'Votre valise est entre de bonnes mains.',
-    image: 'tourism/to-003.jpg'
+    image: 'tourism/to-003.jpg',
   },
   {
     id: 'to-004',
@@ -51,8 +52,8 @@ export const tourismCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, regardez les 3 premières cartes de votre deck.',
-    flavorText: 'Découvrez la ville à travers les yeux d\'un passionné.',
-    image: 'tourism/to-004.jpg'
+    flavorText: "Découvrez la ville à travers les yeux d'un passionné.",
+    image: 'tourism/to-004.jpg',
   },
   {
     id: 'to-005',
@@ -65,7 +66,7 @@ export const tourismCards: Card[] = [
     resilience: 1,
     ability: 'Célérité. +1 Productivité pour chaque autre carte Tourisme que vous contrôlez.',
     flavorText: 'Le service avec le sourire, dans toutes les langues.',
-    image: 'tourism/to-005.jpg'
+    image: 'tourism/to-005.jpg',
   },
   {
     id: 'to-006',
@@ -76,13 +77,14 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez réduire le coût de la prochaine carte que vous jouez de 1.',
+    ability:
+      'Quand cette carte arrive en jeu, vous pouvez réduire le coût de la prochaine carte que vous jouez de 1.',
     flavorText: 'Votre voyage commence ici.',
-    image: 'tourism/to-006.jpg'
+    image: 'tourism/to-006.jpg',
   },
   {
     id: 'to-007',
-    name: 'Hôte d\'Accueil',
+    name: "Hôte d'Accueil",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 1,
@@ -91,7 +93,7 @@ export const tourismCards: Card[] = [
     resilience: 2,
     ability: 'Célérité.',
     flavorText: 'Un accueil chaleureux fait toute la différence.',
-    image: 'tourism/to-007.jpg'
+    image: 'tourism/to-007.jpg',
   },
   {
     id: 'to-008',
@@ -103,8 +105,8 @@ export const tourismCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Célérité. Quand cette carte attaque, piochez une carte.',
-    flavorText: 'Toujours à l\'heure, toujours avec le sourire.',
-    image: 'tourism/to-008.jpg'
+    flavorText: "Toujours à l'heure, toujours avec le sourire.",
+    image: 'tourism/to-008.jpg',
   },
   {
     id: 'to-009',
@@ -117,7 +119,7 @@ export const tourismCards: Card[] = [
     resilience: 1,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
     flavorText: 'Le paradis a besoin de gardiens.',
-    image: 'tourism/to-009.jpg'
+    image: 'tourism/to-009.jpg',
   },
   {
     id: 'to-010',
@@ -128,9 +130,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Quand cette carte arrive en jeu, cherchez une carte Tourisme dans votre deck et révélez-la.',
-    flavorText: 'Votre séjour idéal n\'est qu\'à un appel.',
-    image: 'tourism/to-010.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, cherchez une carte Tourisme dans votre deck et révélez-la.',
+    flavorText: "Votre séjour idéal n'est qu'à un appel.",
+    image: 'tourism/to-010.jpg',
   },
   {
     id: 'to-011',
@@ -142,12 +145,12 @@ export const tourismCards: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Célérité. Les autres cartes Tourisme que vous contrôlez gagnent +1 Résilience.',
-    flavorText: 'L\'ambiance, c\'est lui qui la crée.',
-    image: 'tourism/to-011.jpg'
+    flavorText: "L'ambiance, c'est lui qui la crée.",
+    image: 'tourism/to-011.jpg',
   },
   {
     id: 'to-012',
-    name: 'Concierge d\'Hôtel',
+    name: "Concierge d'Hôtel",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 2,
@@ -156,7 +159,7 @@ export const tourismCards: Card[] = [
     resilience: 2,
     ability: 'Une fois par tour, vous pouvez chercher une carte dans votre deck.',
     flavorText: 'Il connaît toutes les adresses secrètes de la ville.',
-    image: 'tourism/to-012.jpg'
+    image: 'tourism/to-012.jpg',
   },
   {
     id: 'to-013',
@@ -169,7 +172,7 @@ export const tourismCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Chaque œuvre a son histoire.',
-    image: 'tourism/to-013.jpg'
+    image: 'tourism/to-013.jpg',
   },
   {
     id: 'to-014',
@@ -181,8 +184,8 @@ export const tourismCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Célérité. Réduisez de 1 le coût des cartes Tourisme dans votre main.',
-    flavorText: 'Planifier, c\'est son métier.',
-    image: 'tourism/to-014.jpg'
+    flavorText: "Planifier, c'est son métier.",
+    image: 'tourism/to-014.jpg',
   },
   {
     id: 'to-015',
@@ -194,8 +197,8 @@ export const tourismCards: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Célérité. Quand cette carte arrive en jeu, gagnez 2 ressources.',
-    flavorText: 'La mer, c\'est sa maison.',
-    image: 'tourism/to-015.jpg'
+    flavorText: "La mer, c'est sa maison.",
+    image: 'tourism/to-015.jpg',
   },
   {
     id: 'to-016',
@@ -207,8 +210,8 @@ export const tourismCards: Card[] = [
     productivity: 1,
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, regardez les 2 premières cartes de votre deck.',
-    flavorText: 'Immortaliser vos souvenirs, c\'est son art.',
-    image: 'tourism/to-016.jpg'
+    flavorText: "Immortaliser vos souvenirs, c'est son art.",
+    image: 'tourism/to-016.jpg',
   },
   {
     id: 'to-017',
@@ -221,20 +224,21 @@ export const tourismCards: Card[] = [
     resilience: 2,
     ability: 'Célérité.',
     flavorText: 'La liberté commence avec les clés.',
-    image: 'tourism/to-017.jpg'
+    image: 'tourism/to-017.jpg',
   },
   {
     id: 'to-018',
-    name: 'Employé de Parc d\'Attractions',
+    name: "Employé de Parc d'Attractions",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 1,
     rarity: Rarity.Common,
     productivity: 1,
     resilience: 2,
-    ability: 'Au début de votre tour, les cartes Tourisme que vous contrôlez gagnent +1 Productivité jusqu\'à la fin du tour.',
-    flavorText: 'Créer des sourires, c\'est sa mission.',
-    image: 'tourism/to-018.jpg'
+    ability:
+      "Au début de votre tour, les cartes Tourisme que vous contrôlez gagnent +1 Productivité jusqu'à la fin du tour.",
+    flavorText: "Créer des sourires, c'est sa mission.",
+    image: 'tourism/to-018.jpg',
   },
   {
     id: 'to-019',
@@ -247,7 +251,7 @@ export const tourismCards: Card[] = [
     resilience: 1,
     ability: 'Célérité.',
     flavorText: 'La nature vous attend.',
-    image: 'tourism/to-019.jpg'
+    image: 'tourism/to-019.jpg',
   },
   {
     id: 'to-020',
@@ -258,9 +262,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource pour chaque carte Tourisme que vous contrôlez.',
+    ability:
+      'Quand cette carte arrive en jeu, gagnez 1 ressource pour chaque carte Tourisme que vous contrôlez.',
     flavorText: 'Emportez un morceau de votre voyage.',
-    image: 'tourism/to-020.jpg'
+    image: 'tourism/to-020.jpg',
   },
   {
     id: 'to-021',
@@ -273,20 +278,21 @@ export const tourismCards: Card[] = [
     resilience: 2,
     ability: 'Célérité. +1 Résilience si vous contrôlez au moins 3 cartes.',
     flavorText: 'Les premières glissades sont toujours les meilleures.',
-    image: 'tourism/to-021.jpg'
+    image: 'tourism/to-021.jpg',
   },
   {
     id: 'to-022',
-    name: 'Agent d\'Aéroport',
+    name: "Agent d'Aéroport",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 2,
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez défausser une carte pour piocher 2 cartes.',
+    ability:
+      'Quand cette carte arrive en jeu, vous pouvez défausser une carte pour piocher 2 cartes.',
     flavorText: 'Votre voyage commence par un sourire.',
-    image: 'tourism/to-022.jpg'
+    image: 'tourism/to-022.jpg',
   },
   {
     id: 'to-023',
@@ -297,9 +303,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 1,
     resilience: 2,
-    ability: 'Au début de votre tour, une carte Tourisme ciblée que vous contrôlez gagne +1 Résilience.',
+    ability:
+      'Au début de votre tour, une carte Tourisme ciblée que vous contrôlez gagne +1 Résilience.',
     flavorText: 'La détente est un art.',
-    image: 'tourism/to-023.jpg'
+    image: 'tourism/to-023.jpg',
   },
   {
     id: 'to-024',
@@ -312,7 +319,7 @@ export const tourismCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte attaque, gagnez 1 ressource.',
     flavorText: 'La montagne est son terrain de jeu.',
-    image: 'tourism/to-024.jpg'
+    image: 'tourism/to-024.jpg',
   },
   {
     id: 'to-025',
@@ -324,8 +331,8 @@ export const tourismCards: Card[] = [
     productivity: 1,
     resilience: 1,
     ability: 'Célérité. Au début de votre tour, gagnez 1 ressource.',
-    flavorText: 'Le charme de l\'authenticité.',
-    image: 'tourism/to-025.jpg'
+    flavorText: "Le charme de l'authenticité.",
+    image: 'tourism/to-025.jpg',
   },
   {
     id: 'to-026',
@@ -338,7 +345,7 @@ export const tourismCards: Card[] = [
     resilience: 1,
     ability: 'Célérité. Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Chaque arrêt est une découverte.',
-    image: 'tourism/to-026.jpg'
+    image: 'tourism/to-026.jpg',
   },
   {
     id: 'to-027',
@@ -349,9 +356,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez piocher une carte puis défausser une carte.',
+    ability:
+      'Quand cette carte arrive en jeu, vous pouvez piocher une carte puis défausser une carte.',
     flavorText: 'La chance sourit aux audacieux.',
-    image: 'tourism/to-027.jpg'
+    image: 'tourism/to-027.jpg',
   },
   {
     id: 'to-028',
@@ -364,7 +372,7 @@ export const tourismCards: Card[] = [
     resilience: 2,
     ability: 'Célérité.',
     flavorText: 'Votre spectacle vous attend.',
-    image: 'tourism/to-028.jpg'
+    image: 'tourism/to-028.jpg',
   },
   {
     id: 'to-029',
@@ -377,7 +385,7 @@ export const tourismCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, regardez les 3 premières cartes de votre deck.',
     flavorText: 'Découvrez les merveilles sous-marines.',
-    image: 'tourism/to-029.jpg'
+    image: 'tourism/to-029.jpg',
   },
   {
     id: 'to-030',
@@ -390,7 +398,7 @@ export const tourismCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource si vous avez au moins 5 cartes en main.',
     flavorText: 'Des vacances inoubliables commencent ici.',
-    image: 'tourism/to-030.jpg'
+    image: 'tourism/to-030.jpg',
   },
 
   // Uncommon (31-50)
@@ -403,9 +411,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 3,
-    ability: 'Célérité. Une fois par tour, cherchez une carte dans votre deck et ajoutez-la à votre main.',
+    ability:
+      'Célérité. Une fois par tour, cherchez une carte dans votre deck et ajoutez-la à votre main.',
     flavorText: 'Rien ne lui est impossible.',
-    image: 'tourism/to-031.jpg'
+    image: 'tourism/to-031.jpg',
   },
   {
     id: 'to-032',
@@ -418,7 +427,7 @@ export const tourismCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Tourisme que vous contrôlez gagnent +1 Productivité.',
     flavorText: 'Chaque bouteille raconte une histoire.',
-    image: 'tourism/to-032.jpg'
+    image: 'tourism/to-032.jpg',
   },
   {
     id: 'to-033',
@@ -430,8 +439,8 @@ export const tourismCards: Card[] = [
     productivity: 3,
     resilience: 4,
     ability: 'Célérité. Quand cette carte arrive en jeu, piochez 2 cartes.',
-    flavorText: 'L\'excellence est son standard.',
-    image: 'tourism/to-033.jpg'
+    flavorText: "L'excellence est son standard.",
+    image: 'tourism/to-033.jpg',
   },
   {
     id: 'to-034',
@@ -442,9 +451,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 3,
-    ability: 'Quand cette carte arrive en jeu, regardez les 5 premières cartes de votre deck et mettez-en une dans votre main.',
+    ability:
+      'Quand cette carte arrive en jeu, regardez les 5 premières cartes de votre deck et mettez-en une dans votre main.',
     flavorText: 'Il connaît chaque pierre, chaque histoire.',
-    image: 'tourism/to-034.jpg'
+    image: 'tourism/to-034.jpg',
   },
   {
     id: 'to-035',
@@ -456,12 +466,12 @@ export const tourismCards: Card[] = [
     productivity: 4,
     resilience: 3,
     ability: 'Célérité. Au début de votre tour, gagnez 2 ressources.',
-    flavorText: 'Une table bien tenue est une œuvre d\'art.',
-    image: 'tourism/to-035.jpg'
+    flavorText: "Une table bien tenue est une œuvre d'art.",
+    image: 'tourism/to-035.jpg',
   },
   {
     id: 'to-036',
-    name: 'Directeur d\'Agence de Voyage',
+    name: "Directeur d'Agence de Voyage",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 4,
@@ -470,7 +480,7 @@ export const tourismCards: Card[] = [
     resilience: 3,
     ability: 'Les cartes Tourisme dans votre main coûtent 1 de moins à jouer.',
     flavorText: 'Votre rêve, son expertise.',
-    image: 'tourism/to-036.jpg'
+    image: 'tourism/to-036.jpg',
   },
   {
     id: 'to-037',
@@ -481,9 +491,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 4,
-    ability: 'Quand cette carte arrive en jeu, les autres cartes Tourisme que vous contrôlez gagnent +2 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Quand cette carte arrive en jeu, les autres cartes Tourisme que vous contrôlez gagnent +2 Productivité jusqu'à la fin du tour.",
     flavorText: 'Chaque plat est une signature.',
-    image: 'tourism/to-037.jpg'
+    image: 'tourism/to-037.jpg',
   },
   {
     id: 'to-038',
@@ -494,9 +505,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 2,
     resilience: 5,
-    ability: 'Au début de votre tour, les cartes Tourisme que vous contrôlez gagnent +1 Résilience.',
+    ability:
+      'Au début de votre tour, les cartes Tourisme que vous contrôlez gagnent +1 Résilience.',
     flavorText: 'Le bien-être à son plus haut niveau.',
-    image: 'tourism/to-038.jpg'
+    image: 'tourism/to-038.jpg',
   },
   {
     id: 'to-039',
@@ -509,7 +521,7 @@ export const tourismCards: Card[] = [
     resilience: 3,
     ability: 'Célérité. Quand cette carte attaque, piochez 2 cartes.',
     flavorText: 'Le ciel est son royaume.',
-    image: 'tourism/to-039.jpg'
+    image: 'tourism/to-039.jpg',
   },
   {
     id: 'to-040',
@@ -522,7 +534,7 @@ export const tourismCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Tourisme que vous contrôlez ont Célérité.',
     flavorText: 'Créer des rêves est son quotidien.',
-    image: 'tourism/to-040.jpg'
+    image: 'tourism/to-040.jpg',
   },
   {
     id: 'to-041',
@@ -533,9 +545,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 4,
-    ability: 'Célérité. Quand cette carte arrive en jeu, cherchez jusqu\'à 2 cartes Tourisme dans votre deck.',
-    flavorText: 'Naviguer vers l\'excellence.',
-    image: 'tourism/to-041.jpg'
+    ability:
+      "Célérité. Quand cette carte arrive en jeu, cherchez jusqu'à 2 cartes Tourisme dans votre deck.",
+    flavorText: "Naviguer vers l'excellence.",
+    image: 'tourism/to-041.jpg',
   },
   {
     id: 'to-042',
@@ -546,9 +559,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Au début de votre tour, gagnez 1 ressource pour chaque carte Tourisme que vous contrôlez.',
+    ability:
+      'Au début de votre tour, gagnez 1 ressource pour chaque carte Tourisme que vous contrôlez.',
     flavorText: 'La montagne est son entreprise.',
-    image: 'tourism/to-042.jpg'
+    image: 'tourism/to-042.jpg',
   },
   {
     id: 'to-043',
@@ -559,9 +573,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 3,
-    ability: 'Quand cette carte arrive en jeu, piochez une carte pour chaque carte Tourisme que vous contrôlez (maximum 3).',
+    ability:
+      'Quand cette carte arrive en jeu, piochez une carte pour chaque carte Tourisme que vous contrôlez (maximum 3).',
     flavorText: 'Le vin est un voyage en soi.',
-    image: 'tourism/to-043.jpg'
+    image: 'tourism/to-043.jpg',
   },
   {
     id: 'to-044',
@@ -574,7 +589,7 @@ export const tourismCards: Card[] = [
     resilience: 3,
     ability: 'Une fois par tour, vous pouvez défausser une carte pour piocher 3 cartes.',
     flavorText: 'Le hasard se calcule.',
-    image: 'tourism/to-044.jpg'
+    image: 'tourism/to-044.jpg',
   },
   {
     id: 'to-045',
@@ -587,20 +602,21 @@ export const tourismCards: Card[] = [
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, regardez les 6 premières cartes de votre deck.',
     flavorText: 'Explorer les profondeurs est sa passion.',
-    image: 'tourism/to-045.jpg'
+    image: 'tourism/to-045.jpg',
   },
   {
     id: 'to-046',
-    name: 'Directeur d\'Hôtel 4 Étoiles',
+    name: "Directeur d'Hôtel 4 Étoiles",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 5,
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 4,
-    ability: 'Célérité. Les autres cartes Tourisme que vous contrôlez gagnent +1 Productivité et +1 Résilience.',
-    flavorText: 'L\'excellence dans chaque détail.',
-    image: 'tourism/to-046.jpg'
+    ability:
+      'Célérité. Les autres cartes Tourisme que vous contrôlez gagnent +1 Productivité et +1 Résilience.',
+    flavorText: "L'excellence dans chaque détail.",
+    image: 'tourism/to-046.jpg',
   },
   {
     id: 'to-047',
@@ -611,9 +627,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez jouer une carte Tourisme supplémentaire ce tour-ci.',
+    ability:
+      'Quand cette carte arrive en jeu, vous pouvez jouer une carte Tourisme supplémentaire ce tour-ci.',
     flavorText: 'Chaque événement est unique.',
-    image: 'tourism/to-047.jpg'
+    image: 'tourism/to-047.jpg',
   },
   {
     id: 'to-048',
@@ -625,8 +642,8 @@ export const tourismCards: Card[] = [
     productivity: 4,
     resilience: 3,
     ability: 'Quand cette carte attaque, cherchez une carte Tourisme dans votre deck.',
-    flavorText: 'L\'aventure est au bout du chemin.',
-    image: 'tourism/to-048.jpg'
+    flavorText: "L'aventure est au bout du chemin.",
+    image: 'tourism/to-048.jpg',
   },
   {
     id: 'to-049',
@@ -637,9 +654,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 4,
-    ability: 'Au début de votre tour, gagnez 3 ressources si vous contrôlez au moins 4 cartes Tourisme.',
-    flavorText: 'Un empire de l\'hospitalité.',
-    image: 'tourism/to-049.jpg'
+    ability:
+      'Au début de votre tour, gagnez 3 ressources si vous contrôlez au moins 4 cartes Tourisme.',
+    flavorText: "Un empire de l'hospitalité.",
+    image: 'tourism/to-049.jpg',
   },
   {
     id: 'to-050',
@@ -650,15 +668,16 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Les cartes que vous jouez ce tour-ci coûtent 1 de moins pour chaque carte Tourisme que vous contrôlez.',
-    flavorText: 'Voyager responsable, c\'est voyager mieux.',
-    image: 'tourism/to-050.jpg'
+    ability:
+      'Les cartes que vous jouez ce tour-ci coûtent 1 de moins pour chaque carte Tourisme que vous contrôlez.',
+    flavorText: "Voyager responsable, c'est voyager mieux.",
+    image: 'tourism/to-050.jpg',
   },
 
   // Rare (51-80)
   {
     id: 'to-051',
-    name: 'Directeur Régional d\'Hôtels',
+    name: "Directeur Régional d'Hôtels",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 6,
@@ -667,7 +686,7 @@ export const tourismCards: Card[] = [
     resilience: 5,
     ability: 'Célérité. Les cartes Tourisme que vous contrôlez gagnent +2 Productivité.',
     flavorText: 'Une vision, plusieurs établissements.',
-    image: 'tourism/to-051.jpg'
+    image: 'tourism/to-051.jpg',
   },
   {
     id: 'to-052',
@@ -680,7 +699,7 @@ export const tourismCards: Card[] = [
     resilience: 5,
     ability: 'Célérité. Quand cette carte arrive en jeu, piochez 3 cartes et gagnez 3 ressources.',
     flavorText: 'Connecter le monde, un vol à la fois.',
-    image: 'tourism/to-052.jpg'
+    image: 'tourism/to-052.jpg',
   },
   {
     id: 'to-053',
@@ -692,8 +711,8 @@ export const tourismCards: Card[] = [
     productivity: 6,
     resilience: 6,
     ability: 'Les cartes Tourisme que vous contrôlez gagnent +2 Productivité et +2 Résilience.',
-    flavorText: 'Bâtir un empire de l\'hospitalité.',
-    image: 'tourism/to-053.jpg'
+    flavorText: "Bâtir un empire de l'hospitalité.",
+    image: 'tourism/to-053.jpg',
   },
   {
     id: 'to-054',
@@ -704,13 +723,14 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, cherchez jusqu\'à 3 cartes Tourisme dans votre deck et ajoutez-les à votre main.',
+    ability:
+      "Quand cette carte arrive en jeu, cherchez jusqu'à 3 cartes Tourisme dans votre deck et ajoutez-les à votre main.",
     flavorText: 'Dessiner des rêves de vacances.',
-    image: 'tourism/to-054.jpg'
+    image: 'tourism/to-054.jpg',
   },
   {
     id: 'to-055',
-    name: 'Directeur de l\'Office du Tourisme National',
+    name: "Directeur de l'Office du Tourisme National",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 7,
@@ -718,8 +738,8 @@ export const tourismCards: Card[] = [
     productivity: 6,
     resilience: 5,
     ability: 'Au début de votre tour, piochez 2 cartes et gagnez 2 ressources.',
-    flavorText: 'Promouvoir la beauté d\'un pays.',
-    image: 'tourism/to-055.jpg'
+    flavorText: "Promouvoir la beauté d'un pays.",
+    image: 'tourism/to-055.jpg',
   },
   {
     id: 'to-056',
@@ -732,7 +752,7 @@ export const tourismCards: Card[] = [
     resilience: 6,
     ability: 'Célérité. Les cartes Tourisme dans votre main coûtent 2 de moins à jouer.',
     flavorText: 'Le luxe absolu est son standard.',
-    image: 'tourism/to-056.jpg'
+    image: 'tourism/to-056.jpg',
   },
   {
     id: 'to-057',
@@ -743,9 +763,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez jouer jusqu\'à 3 cartes Tourisme depuis votre main.',
+    ability:
+      "Quand cette carte arrive en jeu, vous pouvez jouer jusqu'à 3 cartes Tourisme depuis votre main.",
     flavorText: 'Les océans sont son terrain de jeu.',
-    image: 'tourism/to-057.jpg'
+    image: 'tourism/to-057.jpg',
   },
   {
     id: 'to-058',
@@ -756,9 +777,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, cherchez dans votre deck et votre défausse jusqu\'à 2 cartes Tourisme.',
-    flavorText: 'Vendre un rêve, c\'est son art.',
-    image: 'tourism/to-058.jpg'
+    ability:
+      "Quand cette carte arrive en jeu, cherchez dans votre deck et votre défausse jusqu'à 2 cartes Tourisme.",
+    flavorText: "Vendre un rêve, c'est son art.",
+    image: 'tourism/to-058.jpg',
   },
   {
     id: 'to-059',
@@ -769,9 +791,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Les cartes Tourisme que vous contrôlez ne peuvent pas être ciblées par les effets adverses.',
+    ability:
+      'Les cartes Tourisme que vous contrôlez ne peuvent pas être ciblées par les effets adverses.',
     flavorText: 'Préserver la nature pour les générations futures.',
-    image: 'tourism/to-059.jpg'
+    image: 'tourism/to-059.jpg',
   },
   {
     id: 'to-060',
@@ -784,24 +807,25 @@ export const tourismCards: Card[] = [
     resilience: 5,
     ability: 'Célérité. Au début de votre tour, gagnez 1 ressource pour chaque carte en jeu.',
     flavorText: 'Créer des destinations inoubliables.',
-    image: 'tourism/to-060.jpg'
+    image: 'tourism/to-060.jpg',
   },
   {
     id: 'to-061',
-    name: 'Directeur d\'Hôtel 5 Étoiles Palace',
+    name: "Directeur d'Hôtel 5 Étoiles Palace",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 7,
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Célérité. Les autres cartes Tourisme que vous contrôlez gagnent +2 Productivité et +2 Résilience et ont Célérité.',
-    flavorText: 'L\'excellence incarnée.',
-    image: 'tourism/to-061.jpg'
+    ability:
+      'Célérité. Les autres cartes Tourisme que vous contrôlez gagnent +2 Productivité et +2 Résilience et ont Célérité.',
+    flavorText: "L'excellence incarnée.",
+    image: 'tourism/to-061.jpg',
   },
   {
     id: 'to-062',
-    name: 'Président de Réseau d\'Agences',
+    name: "Président de Réseau d'Agences",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 6,
@@ -810,7 +834,7 @@ export const tourismCards: Card[] = [
     resilience: 5,
     ability: 'Une fois par tour, vous pouvez jouer une carte Tourisme depuis votre défausse.',
     flavorText: 'Un réseau mondial au service du voyage.',
-    image: 'tourism/to-062.jpg'
+    image: 'tourism/to-062.jpg',
   },
   {
     id: 'to-063',
@@ -821,9 +845,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Au début de votre tour, piochez une carte pour chaque carte Tourisme que vous contrôlez (maximum 4).',
+    ability:
+      'Au début de votre tour, piochez une carte pour chaque carte Tourisme que vous contrôlez (maximum 4).',
     flavorText: 'Le paradis sur terre existe.',
-    image: 'tourism/to-063.jpg'
+    image: 'tourism/to-063.jpg',
   },
   {
     id: 'to-064',
@@ -834,13 +859,14 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, doublez la Productivité de toutes les cartes Tourisme que vous contrôlez jusqu\'à la fin du tour.',
+    ability:
+      "Quand cette carte arrive en jeu, doublez la Productivité de toutes les cartes Tourisme que vous contrôlez jusqu'à la fin du tour.",
     flavorText: 'Transformer chaque moment en souvenir.',
-    image: 'tourism/to-064.jpg'
+    image: 'tourism/to-064.jpg',
   },
   {
     id: 'to-065',
-    name: 'Directeur d\'Aéroport International',
+    name: "Directeur d'Aéroport International",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 7,
@@ -849,7 +875,7 @@ export const tourismCards: Card[] = [
     resilience: 6,
     ability: 'Célérité. Toutes les cartes que vous jouez ont Célérité.',
     flavorText: 'Le monde passe par ici.',
-    image: 'tourism/to-065.jpg'
+    image: 'tourism/to-065.jpg',
   },
   {
     id: 'to-066',
@@ -860,9 +886,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Au début de votre tour, gagnez 2 ressources pour chaque carte Tourisme que vous contrôlez.',
+    ability:
+      'Au début de votre tour, gagnez 2 ressources pour chaque carte Tourisme que vous contrôlez.',
     flavorText: 'Un empire hôtelier mondial.',
-    image: 'tourism/to-066.jpg'
+    image: 'tourism/to-066.jpg',
   },
   {
     id: 'to-067',
@@ -873,9 +900,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, piochez 3 cartes. Les cartes que vous jouez ce tour-ci coûtent 2 de moins.',
-    flavorText: 'Célébrer la culture à l\'échelle mondiale.',
-    image: 'tourism/to-067.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, piochez 3 cartes. Les cartes que vous jouez ce tour-ci coûtent 2 de moins.',
+    flavorText: "Célébrer la culture à l'échelle mondiale.",
+    image: 'tourism/to-067.jpg',
   },
   {
     id: 'to-068',
@@ -887,8 +915,8 @@ export const tourismCards: Card[] = [
     productivity: 6,
     resilience: 5,
     ability: 'Célérité. Quand cette carte attaque, piochez 3 cartes et gagnez 3 ressources.',
-    flavorText: 'L\'ultime frontière du tourisme.',
-    image: 'tourism/to-068.jpg'
+    flavorText: "L'ultime frontière du tourisme.",
+    image: 'tourism/to-068.jpg',
   },
   {
     id: 'to-069',
@@ -900,8 +928,8 @@ export const tourismCards: Card[] = [
     productivity: 5,
     resilience: 6,
     ability: 'Les cartes Tourisme que vous contrôlez sont indestructibles.',
-    flavorText: 'Protéger l\'héritage de l\'humanité.',
-    image: 'tourism/to-069.jpg'
+    flavorText: "Protéger l'héritage de l'humanité.",
+    image: 'tourism/to-069.jpg',
   },
   {
     id: 'to-070',
@@ -914,7 +942,7 @@ export const tourismCards: Card[] = [
     resilience: 5,
     ability: 'Toutes les cartes dans votre main coûtent 1 de moins à jouer.',
     flavorText: 'Démocratiser le voyage aérien.',
-    image: 'tourism/to-070.jpg'
+    image: 'tourism/to-070.jpg',
   },
   {
     id: 'to-071',
@@ -925,9 +953,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Célérité. Quand cette carte arrive en jeu, créez 3 jetons de cartes Tourisme 2/2 avec Célérité.',
+    ability:
+      'Célérité. Quand cette carte arrive en jeu, créez 3 jetons de cartes Tourisme 2/2 avec Célérité.',
     flavorText: 'Créer des mondes magiques.',
-    image: 'tourism/to-071.jpg'
+    image: 'tourism/to-071.jpg',
   },
   {
     id: 'to-072',
@@ -940,7 +969,7 @@ export const tourismCards: Card[] = [
     resilience: 6,
     ability: 'Au début de votre tour, restaurez 3 points de Résilience à une carte ciblée.',
     flavorText: 'Soigner en voyageant.',
-    image: 'tourism/to-072.jpg'
+    image: 'tourism/to-072.jpg',
   },
   {
     id: 'to-073',
@@ -953,20 +982,21 @@ export const tourismCards: Card[] = [
     resilience: 5,
     ability: 'Au début de votre tour, gagnez 4 ressources.',
     flavorText: 'Tout ce dont vous rêvez, en un seul lieu.',
-    image: 'tourism/to-073.jpg'
+    image: 'tourism/to-073.jpg',
   },
   {
     id: 'to-074',
-    name: 'Responsable de Tourisme d\'Aventure',
+    name: "Responsable de Tourisme d'Aventure",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 6,
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Célérité. Quand cette carte attaque, elle inflige des dégâts supplémentaires égaux au nombre de cartes Tourisme que vous contrôlez.',
-    flavorText: 'L\'adrénaline est son produit.',
-    image: 'tourism/to-074.jpg'
+    ability:
+      'Célérité. Quand cette carte attaque, elle inflige des dégâts supplémentaires égaux au nombre de cartes Tourisme que vous contrôlez.',
+    flavorText: "L'adrénaline est son produit.",
+    image: 'tourism/to-074.jpg',
   },
   {
     id: 'to-075',
@@ -979,11 +1009,11 @@ export const tourismCards: Card[] = [
     resilience: 5,
     ability: 'Quand vous jouez une carte Tourisme, piochez une carte.',
     flavorText: 'Chaque voyage est une éducation.',
-    image: 'tourism/to-075.jpg'
+    image: 'tourism/to-075.jpg',
   },
   {
     id: 'to-076',
-    name: 'Président d\'Alliance Hôtelière',
+    name: "Président d'Alliance Hôtelière",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 7,
@@ -991,8 +1021,8 @@ export const tourismCards: Card[] = [
     productivity: 6,
     resilience: 6,
     ability: 'Les cartes Tourisme que vous contrôlez gagnent +3 Productivité et +3 Résilience.',
-    flavorText: 'L\'union fait la force.',
-    image: 'tourism/to-076.jpg'
+    flavorText: "L'union fait la force.",
+    image: 'tourism/to-076.jpg',
   },
   {
     id: 'to-077',
@@ -1003,9 +1033,9 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Une fois par tour, vous pouvez chercher n\'importe quelle carte dans votre deck.',
+    ability: "Une fois par tour, vous pouvez chercher n'importe quelle carte dans votre deck.",
     flavorText: 'Le monde à portée de clic.',
-    image: 'tourism/to-077.jpg'
+    image: 'tourism/to-077.jpg',
   },
   {
     id: 'to-078',
@@ -1016,9 +1046,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, gagnez 3 ressources pour chaque carte Tourisme que vous contrôlez.',
+    ability:
+      'Quand cette carte arrive en jeu, gagnez 3 ressources pour chaque carte Tourisme que vous contrôlez.',
     flavorText: 'Voyager par les saveurs.',
-    image: 'tourism/to-078.jpg'
+    image: 'tourism/to-078.jpg',
   },
   {
     id: 'to-079',
@@ -1029,9 +1060,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Les cartes Tourisme que vous jouez depuis votre main coûtent 2 de moins et vous font gagner 2 ressources.',
+    ability:
+      'Les cartes Tourisme que vous jouez depuis votre main coûtent 2 de moins et vous font gagner 2 ressources.',
     flavorText: 'Voyager en respectant la planète.',
-    image: 'tourism/to-079.jpg'
+    image: 'tourism/to-079.jpg',
   },
   {
     id: 'to-080',
@@ -1043,8 +1075,8 @@ export const tourismCards: Card[] = [
     productivity: 6,
     resilience: 6,
     ability: 'Célérité. Au début de votre tour, piochez 3 cartes et gagnez 3 ressources.',
-    flavorText: 'Révolutionner l\'industrie du voyage.',
-    image: 'tourism/to-080.jpg'
+    flavorText: "Révolutionner l'industrie du voyage.",
+    image: 'tourism/to-080.jpg',
   },
 
   // Legendary (81-100)
@@ -1057,9 +1089,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Célérité. Les cartes Tourisme que vous contrôlez gagnent +4 Productivité, +4 Résilience et ont Célérité. Au début de votre tour, gagnez 5 ressources.',
-    flavorText: 'Le roi des hôteliers, l\'hôtelier des rois.',
-    image: 'tourism/to-081.jpg'
+    ability:
+      'Célérité. Les cartes Tourisme que vous contrôlez gagnent +4 Productivité, +4 Résilience et ont Célérité. Au début de votre tour, gagnez 5 ressources.',
+    flavorText: "Le roi des hôteliers, l'hôtelier des rois.",
+    image: 'tourism/to-081.jpg',
   },
   {
     id: 'to-082',
@@ -1070,9 +1103,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 7,
     resilience: 8,
-    ability: 'Célérité. Quand cette carte arrive en jeu, cherchez jusqu\'à 5 cartes Tourisme dans votre deck et ajoutez-les à votre main. Les cartes Tourisme coûtent 3 de moins à jouer.',
+    ability:
+      "Célérité. Quand cette carte arrive en jeu, cherchez jusqu'à 5 cartes Tourisme dans votre deck et ajoutez-les à votre main. Les cartes Tourisme coûtent 3 de moins à jouer.",
     flavorText: 'Le pionnier du voyage organisé.',
-    image: 'tourism/to-082.jpg'
+    image: 'tourism/to-082.jpg',
   },
   {
     id: 'to-083',
@@ -1083,9 +1117,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Célérité. Quand cette carte arrive en jeu, créez 5 jetons de cartes Tourisme 3/3 avec Célérité. Les cartes que vous contrôlez ne peuvent pas être ciblées ou détruites.',
+    ability:
+      'Célérité. Quand cette carte arrive en jeu, créez 5 jetons de cartes Tourisme 3/3 avec Célérité. Les cartes que vous contrôlez ne peuvent pas être ciblées ou détruites.',
     flavorText: 'Si vous pouvez le rêver, vous pouvez le faire.',
-    image: 'tourism/to-083.jpg'
+    image: 'tourism/to-083.jpg',
   },
   {
     id: 'to-084',
@@ -1096,9 +1131,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Les cartes Tourisme que vous contrôlez gagnent +5 Productivité et +5 Résilience. Au début de votre tour, piochez 3 cartes et gagnez 5 ressources.',
+    ability:
+      'Les cartes Tourisme que vous contrôlez gagnent +5 Productivité et +5 Résilience. Au début de votre tour, piochez 3 cartes et gagnez 5 ressources.',
     flavorText: 'Bâtir un empire hôtelier mondial.',
-    image: 'tourism/to-084.jpg'
+    image: 'tourism/to-084.jpg',
   },
   {
     id: 'to-085',
@@ -1109,9 +1145,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Célérité. Quand cette carte arrive en jeu, piochez 5 cartes et gagnez 10 ressources. Vous pouvez jouer 3 cartes supplémentaires ce tour-ci.',
+    ability:
+      'Célérité. Quand cette carte arrive en jeu, piochez 5 cartes et gagnez 10 ressources. Vous pouvez jouer 3 cartes supplémentaires ce tour-ci.',
     flavorText: 'De Virgin Atlantic au tourisme spatial.',
-    image: 'tourism/to-085.jpg'
+    image: 'tourism/to-085.jpg',
   },
   {
     id: 'to-086',
@@ -1122,9 +1159,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Célérité. Les cartes Tourisme que vous contrôlez gagnent +4 Productivité et +4 Résilience et coûtent 2 de moins à jouer depuis votre main.',
-    flavorText: 'Prendre soin des employés pour qu\'ils prennent soin des clients.',
-    image: 'tourism/to-086.jpg'
+    ability:
+      'Célérité. Les cartes Tourisme que vous contrôlez gagnent +4 Productivité et +4 Résilience et coûtent 2 de moins à jouer depuis votre main.',
+    flavorText: "Prendre soin des employés pour qu'ils prennent soin des clients.",
+    image: 'tourism/to-086.jpg',
   },
   {
     id: 'to-087',
@@ -1135,48 +1173,52 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 7,
     resilience: 9,
-    ability: 'Les cartes Tourisme que vous contrôlez sont indestructibles et gagnent +3 Productivité et +3 Résilience. Au début de votre tour, gagnez 4 ressources.',
+    ability:
+      'Les cartes Tourisme que vous contrôlez sont indestructibles et gagnent +3 Productivité et +3 Résilience. Au début de votre tour, gagnez 4 ressources.',
     flavorText: 'Fondateur de Four Seasons, symbole du luxe.',
-    image: 'tourism/to-087.jpg'
+    image: 'tourism/to-087.jpg',
   },
   {
     id: 'to-088',
-    name: 'Directeur Général de l\'OMT',
+    name: "Directeur Général de l'OMT",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 10,
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Célérité. Au début de votre tour, piochez 2 cartes pour chaque carte Tourisme que vous contrôlez. Les cartes Tourisme gagnent +3 Productivité.',
-    flavorText: 'Organisation Mondiale du Tourisme - Guider l\'industrie globale.',
-    image: 'tourism/to-088.jpg'
+    ability:
+      'Célérité. Au début de votre tour, piochez 2 cartes pour chaque carte Tourisme que vous contrôlez. Les cartes Tourisme gagnent +3 Productivité.',
+    flavorText: "Organisation Mondiale du Tourisme - Guider l'industrie globale.",
+    image: 'tourism/to-088.jpg',
   },
   {
     id: 'to-089',
-    name: 'Fondateur d\'Airbnb',
+    name: "Fondateur d'Airbnb",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 9,
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 7,
-    ability: 'Célérité. Quand cette carte arrive en jeu, vous pouvez jouer n\'importe quel nombre de cartes Tourisme depuis votre main sans payer leur coût.',
-    flavorText: 'Révolutionner l\'hébergement touristique.',
-    image: 'tourism/to-089.jpg'
+    ability:
+      "Célérité. Quand cette carte arrive en jeu, vous pouvez jouer n'importe quel nombre de cartes Tourisme depuis votre main sans payer leur coût.",
+    flavorText: "Révolutionner l'hébergement touristique.",
+    image: 'tourism/to-089.jpg',
   },
   {
     id: 'to-090',
-    name: 'PDG d\'Expedia Group',
+    name: "PDG d'Expedia Group",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 10,
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Toutes les cartes dans votre main coûtent 3 de moins à jouer. Au début de votre tour, cherchez jusqu\'à 3 cartes dans votre deck.',
+    ability:
+      "Toutes les cartes dans votre main coûtent 3 de moins à jouer. Au début de votre tour, cherchez jusqu'à 3 cartes dans votre deck.",
     flavorText: 'Le monde du voyage à portée de main.',
-    image: 'tourism/to-090.jpg'
+    image: 'tourism/to-090.jpg',
   },
   {
     id: 'to-091',
@@ -1187,9 +1229,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Célérité. Quand cette carte arrive en jeu, créez 4 jetons de cartes Tourisme 4/4 avec Célérité. Les cartes Tourisme gagnent +4 Productivité.',
+    ability:
+      'Célérité. Quand cette carte arrive en jeu, créez 4 jetons de cartes Tourisme 4/4 avec Célérité. Les cartes Tourisme gagnent +4 Productivité.',
     flavorText: 'Le plus grand empire de croisières au monde.',
-    image: 'tourism/to-091.jpg'
+    image: 'tourism/to-091.jpg',
   },
   {
     id: 'to-092',
@@ -1200,9 +1243,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Célérité. Les cartes Tourisme que vous contrôlez ont Célérité et gagnent +3 Productivité et +3 Résilience. Vous pouvez jouer 2 cartes supplémentaires par tour.',
+    ability:
+      'Célérité. Les cartes Tourisme que vous contrôlez ont Célérité et gagnent +3 Productivité et +3 Résilience. Vous pouvez jouer 2 cartes supplémentaires par tour.',
     flavorText: 'Là où les rêves deviennent réalité.',
-    image: 'tourism/to-092.jpg'
+    image: 'tourism/to-092.jpg',
   },
   {
     id: 'to-093',
@@ -1213,22 +1257,24 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Célérité. Une fois par tour, vous pouvez chercher n\'importe quelle carte dans votre deck ou défausse et la jouer sans payer son coût.',
+    ability:
+      "Célérité. Une fois par tour, vous pouvez chercher n'importe quelle carte dans votre deck ou défausse et la jouer sans payer son coût.",
     flavorText: 'Dominer le marché de la réservation en ligne.',
-    image: 'tourism/to-093.jpg'
+    image: 'tourism/to-093.jpg',
   },
   {
     id: 'to-094',
-    name: 'Président d\'AccorHotels',
+    name: "Président d'AccorHotels",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 10,
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Les cartes Tourisme que vous contrôlez gagnent +4 Productivité et +4 Résilience. Au début de votre tour, gagnez 2 ressources pour chaque carte Tourisme que vous contrôlez.',
-    flavorText: 'Le leader européen de l\'hôtellerie.',
-    image: 'tourism/to-094.jpg'
+    ability:
+      'Les cartes Tourisme que vous contrôlez gagnent +4 Productivité et +4 Résilience. Au début de votre tour, gagnez 2 ressources pour chaque carte Tourisme que vous contrôlez.',
+    flavorText: "Le leader européen de l'hôtellerie.",
+    image: 'tourism/to-094.jpg',
   },
   {
     id: 'to-095',
@@ -1239,22 +1285,24 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 7,
     resilience: 8,
-    ability: 'Célérité. Quand cette carte arrive en jeu, regardez toutes les cartes de votre deck et mettez-en jusqu\'à 5 dans votre main. Les cartes Tourisme gagnent +3 Productivité.',
+    ability:
+      "Célérité. Quand cette carte arrive en jeu, regardez toutes les cartes de votre deck et mettez-en jusqu'à 5 dans votre main. Les cartes Tourisme gagnent +3 Productivité.",
     flavorText: 'La voix des voyageurs du monde entier.',
-    image: 'tourism/to-095.jpg'
+    image: 'tourism/to-095.jpg',
   },
   {
     id: 'to-096',
-    name: 'PDG d\'Emirates Airlines',
+    name: "PDG d'Emirates Airlines",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 11,
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Célérité. Toutes les cartes que vous jouez ont Célérité. Au début de votre tour, piochez 4 cartes et gagnez 6 ressources.',
+    ability:
+      'Célérité. Toutes les cartes que vous jouez ont Célérité. Au début de votre tour, piochez 4 cartes et gagnez 6 ressources.',
     flavorText: 'Connecter le monde avec excellence.',
-    image: 'tourism/to-096.jpg'
+    image: 'tourism/to-096.jpg',
   },
   {
     id: 'to-097',
@@ -1265,22 +1313,24 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 9,
-    ability: 'Célérité. Quand cette carte arrive en jeu, gagnez 15 ressources. Les cartes Tourisme que vous contrôlez gagnent +5 Productivité et +5 Résilience.',
+    ability:
+      'Célérité. Quand cette carte arrive en jeu, gagnez 15 ressources. Les cartes Tourisme que vous contrôlez gagnent +5 Productivité et +5 Résilience.',
     flavorText: 'Créer des villes de rêve dans le désert.',
-    image: 'tourism/to-097.jpg'
+    image: 'tourism/to-097.jpg',
   },
   {
     id: 'to-098',
-    name: 'Président de l\'UNWTO',
+    name: "Président de l'UNWTO",
     domain: Domain.Tourism,
     type: CardType.Job,
     cost: 10,
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Célérité. Les cartes Tourisme que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 3 cartes et gagnez 4 ressources.',
+    ability:
+      'Célérité. Les cartes Tourisme que vous contrôlez sont indestructibles et ne peuvent pas être ciblées. Au début de votre tour, piochez 3 cartes et gagnez 4 ressources.',
     flavorText: 'Organisation Mondiale du Tourisme des Nations Unies.',
-    image: 'tourism/to-098.jpg'
+    image: 'tourism/to-098.jpg',
   },
   {
     id: 'to-099',
@@ -1291,9 +1341,10 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 10,
-    ability: 'Célérité. Quand cette carte arrive en jeu, piochez 10 cartes et gagnez 20 ressources. Vous pouvez jouer un nombre illimité de cartes ce tour-ci.',
-    flavorText: 'L\'infini est la prochaine destination.',
-    image: 'tourism/to-099.jpg'
+    ability:
+      'Célérité. Quand cette carte arrive en jeu, piochez 10 cartes et gagnez 20 ressources. Vous pouvez jouer un nombre illimité de cartes ce tour-ci.',
+    flavorText: "L'infini est la prochaine destination.",
+    image: 'tourism/to-099.jpg',
   },
   {
     id: 'to-100',
@@ -1304,8 +1355,9 @@ export const tourismCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 10,
-    ability: 'Célérité. Les cartes Tourisme que vous contrôlez gagnent +6 Productivité et +6 Résilience et ont Célérité. Au début de votre tour, piochez 5 cartes, gagnez 10 ressources et créez 3 jetons 5/5.',
+    ability:
+      'Célérité. Les cartes Tourisme que vous contrôlez gagnent +6 Productivité et +6 Résilience et ont Célérité. Au début de votre tour, piochez 5 cartes, gagnez 10 ressources et créez 3 jetons 5/5.',
     flavorText: 'Réinventer le voyage pour les générations futures.',
-    image: 'tourism/to-100.jpg'
-  }
+    image: 'tourism/to-100.jpg',
+  },
 ];

@@ -18,15 +18,15 @@ export class CardService {
   }
 
   getCardById(id: string): Card | undefined {
-    return ALL_CARDS.find(c => c.id === id);
+    return ALL_CARDS.find((c) => c.id === id);
   }
 
   getCardsByDomain(domain: Domain): Card[] {
-    return ALL_CARDS.filter(c => c.domain === domain);
+    return ALL_CARDS.filter((c) => c.domain === domain);
   }
 
   filterCards(filter: CardFilter): Card[] {
-    return ALL_CARDS.filter(card => {
+    return ALL_CARDS.filter((card) => {
       if (filter.domains?.length && !filter.domains.includes(card.domain)) return false;
       if (filter.types?.length && !filter.types.includes(card.type)) return false;
       if (filter.rarities?.length && !filter.rarities.includes(card.rarity)) return false;
@@ -46,6 +46,6 @@ export class CardService {
   }
 
   getMaxCost(): number {
-    return Math.max(...ALL_CARDS.map(c => c.cost));
+    return Math.max(...ALL_CARDS.map((c) => c.cost));
   }
 }

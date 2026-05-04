@@ -23,7 +23,12 @@ export const routes: Routes = [
   { path: 'print', component: PrintSheetComponent },
   { path: 'rules', component: RulesComponent },
   { path: 'game', component: GameLobbyComponent },
-  { path: 'game/play', component: GameBoardComponent, canActivate: [gameGuard], data: { hideNav: true } },
+  {
+    path: 'game/play',
+    component: GameBoardComponent,
+    canActivate: [gameGuard],
+    data: { hideNav: true },
+  },
   { path: 'stats', component: StatsComponent },
   { path: 'quests', component: QuestsComponent },
   { path: 'ranked', component: RankedComponent },

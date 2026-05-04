@@ -65,8 +65,8 @@ export class DeckRecommendationService {
     const domains = this.getPrimaryDomains(stats);
 
     // Find cards not in deck
-    const currentCardIds = new Set(currentCards.map(c => c.id));
-    const availableCards = allCards.filter(c => !currentCardIds.has(c.id));
+    const currentCardIds = new Set(currentCards.map((c) => c.id));
+    const availableCards = allCards.filter((c) => !currentCardIds.has(c.id));
 
     // Recommend based on different criteria
     recommendations.push(...this.recommendForCostCurve(availableCards, stats, domains));
@@ -92,15 +92,15 @@ export class DeckRecommendationService {
 
     // Calculate similarity score for each deck
     const scored = allDecks
-      .filter(d => d.id !== deck.id)
-      .map(d => ({
+      .filter((d) => d.id !== deck.id)
+      .map((d) => ({
         deck: d,
         score: this.calculateSimilarity(stats, this.deckService.computeStats(d)),
       }))
-      .filter(s => s.score > 0.5) // At least 50% similar
+      .filter((s) => s.score > 0.5) // At least 50% similar
       .sort((a, b) => b.score - a.score);
 
-    return scored.slice(0, 5).map(s => s.deck);
+    return scored.slice(0, 5).map((s) => s.deck);
   }
 
   // --- Private methods ---
@@ -120,7 +120,7 @@ export class DeckRecommendationService {
 
     // Check for too few low-cost cards
     const lowCostCount = (curve[1] || 0) + (curve[2] || 0);
-    if (lowCostCount < stats.totalCards * 0.30) {
+    if (lowCostCount < stats.totalCards * 0.3) {
       issues.push('Pas assez de cartes économiques (1-2) — début de partie difficile');
     }
 
@@ -166,12 +166,12 @@ export class DeckRecommendationService {
     const eventCount = types[CardType.Event] || 0;
     const toolCount = types[CardType.Tool] || 0;
 
-    if (jobCount < stats.totalCards * 0.50) {
-      issues.push('Pas assez de jobs — base de l\'équipe trop faible');
+    if (jobCount < stats.totalCards * 0.5) {
+      issues.push("Pas assez de jobs — base de l'équipe trop faible");
     }
 
-    if (eventCount > stats.totalCards * 0.30) {
-      issues.push('Trop d\'événements — pas assez de présence sur le terrain');
+    if (eventCount > stats.totalCards * 0.3) {
+      issues.push("Trop d'événements — pas assez de présence sur le terrain");
     }
 
     if (toolCount === 0) {
@@ -185,10 +185,11 @@ export class DeckRecommendationService {
     const missing: string[] = [];
 
     // Check for removal/interaction
-    const hasRemoval = cards.some(c =>
-      c.name.toLowerCase().includes('détruit') ||
-      c.name.toLowerCase().includes('retire') ||
-      (c.type === CardType.Event && c.name.toLowerCase().includes('attaque'))
+    const hasRemoval = cards.some(
+      (c) =>
+        c.name.toLowerCase().includes('détruit') ||
+        c.name.toLowerCase().includes('retire') ||
+        (c.type === CardType.Event && c.name.toLowerCase().includes('attaque')),
     );
 
     if (!hasRemoval) {
@@ -196,7 +197,7 @@ export class DeckRecommendationService {
     }
 
     // Check for card draw
-    const hasCardDraw = cards.some(c => {
+    const hasCardDraw = cards.some((c) => {
       const text = (c as any).effect || (c as any).ability || '';
       return text.toLowerCase().includes('pioche');
     });
@@ -206,7 +207,7 @@ export class DeckRecommendationService {
     }
 
     // Check for win conditions
-    const hasFinishers = cards.some(c => c.cost >= 6);
+    const hasFinishers = cards.some((c) => c.cost >= 6);
     if (!hasFinishers) {
       missing.push('Aucune carte puissante (6+) — difficulté à finir la partie');
     }
@@ -224,7 +225,7 @@ export class DeckRecommendationService {
     }
 
     // Check for construction synergy
-    const constructionCards = cards.filter(c => {
+    const constructionCards = cards.filter((c) => {
       const text = (c as any).ability || '';
       return text.toLowerCase().includes('construction');
     });
@@ -233,9 +234,9 @@ export class DeckRecommendationService {
     }
 
     // Check for tool synergy
-    const toolCount = cards.filter(c => c.type === CardType.Tool).length;
+    const toolCount = cards.filter((c) => c.type === CardType.Tool).length;
     if (toolCount >= 8) {
-      strengths.push('Nombreux outils — bonus d\'équipement significatifs');
+      strengths.push("Nombreux outils — bonus d'équipement significatifs");
     }
 
     // Check domain focus
@@ -264,7 +265,7 @@ export class DeckRecommendationService {
     }
 
     if (domains.includes(Domain.Crafts)) {
-      suggestions.push('Domaine Artisan présent — équipez des outils pour maximiser l\'effet');
+      suggestions.push("Domaine Artisan présent — équipez des outils pour maximiser l'effet");
     }
 
     return suggestions;
@@ -273,17 +274,17 @@ export class DeckRecommendationService {
   private recommendForCostCurve(
     available: Card[],
     stats: DeckStats,
-    domains: Domain[]
+    domains: Domain[],
   ): CardRecommendation[] {
     const recommendations: CardRecommendation[] = [];
 
     // Find gaps in cost curve
     const lowCostCount = (stats.costCurve[1] || 0) + (stats.costCurve[2] || 0);
 
-    if (lowCostCount < stats.totalCards * 0.30) {
+    if (lowCostCount < stats.totalCards * 0.3) {
       // Recommend cheap cards
       const cheapCards = available
-        .filter(c => c.cost <= 2 && domains.includes(c.domain))
+        .filter((c) => c.cost <= 2 && domains.includes(c.domain))
         .slice(0, 3);
 
       for (const card of cheapCards) {
@@ -302,19 +303,19 @@ export class DeckRecommendationService {
   private recommendForSynergy(
     available: Card[],
     current: Card[],
-    domains: Domain[]
+    domains: Domain[],
   ): CardRecommendation[] {
     const recommendations: CardRecommendation[] = [];
 
     // Check for construction synergy
-    const hasConstruction = current.some(c => {
+    const hasConstruction = current.some((c) => {
       const text = (c as any).ability || '';
       return text.toLowerCase().includes('construction');
     });
 
     if (hasConstruction) {
       const constructionCards = available
-        .filter(c => {
+        .filter((c) => {
           const text = (c as any).ability || '';
           return text.toLowerCase().includes('construction') && domains.includes(c.domain);
         })
@@ -336,19 +337,19 @@ export class DeckRecommendationService {
   private recommendUtilityCards(
     available: Card[],
     current: Card[],
-    domains: Domain[]
+    domains: Domain[],
   ): CardRecommendation[] {
     const recommendations: CardRecommendation[] = [];
 
     // Recommend removal if missing
-    const hasRemoval = current.some(c => {
+    const hasRemoval = current.some((c) => {
       const text = (c as any).effect || '';
       return text.toLowerCase().includes('détruit');
     });
 
     if (!hasRemoval) {
       const removalCards = available
-        .filter(c => {
+        .filter((c) => {
           const text = (c as any).effect || '';
           return text.toLowerCase().includes('détruit') && domains.includes(c.domain);
         })
@@ -365,14 +366,14 @@ export class DeckRecommendationService {
     }
 
     // Recommend card draw
-    const hasCardDraw = current.some(c => {
+    const hasCardDraw = current.some((c) => {
       const text = (c as any).effect || (c as any).ability || '';
       return text.toLowerCase().includes('pioche');
     });
 
     if (!hasCardDraw) {
       const drawCards = available
-        .filter(c => {
+        .filter((c) => {
           const text = (c as any).effect || (c as any).ability || '';
           return text.toLowerCase().includes('pioche') && domains.includes(c.domain);
         })
@@ -381,7 +382,7 @@ export class DeckRecommendationService {
       for (const card of drawCards) {
         recommendations.push({
           card,
-          reason: 'Pioche de cartes pour maintenir l\'avantage',
+          reason: "Pioche de cartes pour maintenir l'avantage",
           priority: 'medium',
           category: 'utility',
         });
@@ -394,7 +395,7 @@ export class DeckRecommendationService {
   private recommendFinishers(
     available: Card[],
     stats: DeckStats,
-    domains: Domain[]
+    domains: Domain[],
   ): CardRecommendation[] {
     const recommendations: CardRecommendation[] = [];
 
@@ -404,7 +405,7 @@ export class DeckRecommendationService {
 
     if (highCostCount < 3) {
       const finishers = available
-        .filter(c => c.cost >= 6 && isJobCard(c) && domains.includes(c.domain))
+        .filter((c) => c.cost >= 6 && isJobCard(c) && domains.includes(c.domain))
         .sort((a, b) => {
           const aPower = isJobCard(a) ? a.productivity + a.resilience : 0;
           const bPower = isJobCard(b) ? b.productivity + b.resilience : 0;
@@ -438,7 +439,7 @@ export class DeckRecommendationService {
     // Compare domains
     const domains1 = new Set(Object.keys(stats1.domainDistribution));
     const domains2 = new Set(Object.keys(stats2.domainDistribution));
-    const commonDomains = [...domains1].filter(d => domains2.has(d)).length;
+    const commonDomains = [...domains1].filter((d) => domains2.has(d)).length;
     const totalDomains = Math.max(domains1.size, domains2.size);
     score += (commonDomains / totalDomains) * 0.4;
 

@@ -15,7 +15,9 @@
 
   .hand-card {
     margin-left: -35px;
-    transition: transform 0.2s, margin 0.2s;
+    transition:
+      transform 0.2s,
+      margin 0.2s;
 
     &:first-child {
       margin-left: 0;

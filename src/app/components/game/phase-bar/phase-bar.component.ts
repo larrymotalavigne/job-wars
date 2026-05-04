@@ -35,9 +35,11 @@ export class PhaseBarComponent {
   }
 
   get isWorkPhase(): boolean {
-    return this.state.phase === GamePhase.Work_Attack
-      || this.state.phase === GamePhase.Work_Block
-      || this.state.phase === GamePhase.Work_Damage;
+    return (
+      this.state.phase === GamePhase.Work_Attack ||
+      this.state.phase === GamePhase.Work_Block ||
+      this.state.phase === GamePhase.Work_Damage
+    );
   }
 
   get isMulliganPhase(): boolean {

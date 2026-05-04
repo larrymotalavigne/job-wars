@@ -13,9 +13,9 @@ export interface BattlePassReward {
   level: number;
   track: BattlePassTrack;
   type: BattlePassRewardType;
-  amount?: number;      // For coins/gems
-  itemId?: string;      // For cosmetics/avatars
-  itemName?: string;    // Display name
+  amount?: number; // For coins/gems
+  itemId?: string; // For cosmetics/avatars
+  itemName?: string; // Display name
   claimed: boolean;
 }
 
@@ -27,9 +27,9 @@ export interface BattlePassProgress {
   currentLevel: number;
   currentXP: number;
   totalXP: number;
-  isPremium: boolean;          // Has player purchased premium?
+  isPremium: boolean; // Has player purchased premium?
   rewards: BattlePassReward[]; // All rewards (free + premium)
-  purchaseDate?: number;       // When premium was purchased
+  purchaseDate?: number; // When premium was purchased
 }
 
 /**

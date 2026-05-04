@@ -14,7 +14,7 @@ import { PlayerAvatar, PlayerTitle } from '../../models/profile.model';
   standalone: true,
   imports: [CommonModule, FormsModule, Card, Button, InputText, ProgressBar, Select],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss'
+  styleUrl: './profile.component.scss',
 })
 export class ProfileComponent implements OnInit {
   get profile$() {
@@ -64,17 +64,13 @@ export class ProfileComponent implements OnInit {
   }
 
   getAvatarOptions() {
-    return this.avatars
-      .filter(a => a.unlocked)
-      .map(a => ({ label: a.name, value: a.id }));
+    return this.avatars.filter((a) => a.unlocked).map((a) => ({ label: a.name, value: a.id }));
   }
 
   getTitleOptions() {
     return [
       { label: 'Aucun titre', value: '' },
-      ...this.titles
-        .filter(t => t.unlocked)
-        .map(t => ({ label: t.title, value: t.id }))
+      ...this.titles.filter((t) => t.unlocked).map((t) => ({ label: t.title, value: t.id })),
     ];
   }
 
@@ -83,10 +79,10 @@ export class ProfileComponent implements OnInit {
   }
 
   getUnlockedAvatarsCount(): number {
-    return this.avatars.filter(a => a.unlocked).length;
+    return this.avatars.filter((a) => a.unlocked).length;
   }
 
   getUnlockedTitlesCount(): number {
-    return this.titles.filter(t => t.unlocked).length;
+    return this.titles.filter((t) => t.unlocked).length;
   }
 }

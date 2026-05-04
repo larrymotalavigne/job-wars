@@ -4,7 +4,13 @@
     <div class="mulligan-panel transition-panel">
       <h3>Passez à {{ nextPlayerName }}</h3>
       <p class="mulligan-hint">Ne regardez pas l'écran !</p>
-      <p-button label="Prêt" icon="pi pi-check" (onClick)="dismissTransition()" severity="success" size="large" />
+      <p-button
+        label="Prêt"
+        icon="pi pi-check"
+        (onClick)="dismissTransition()"
+        severity="success"
+        size="large"
+      />
     </div>
   } @else {
     <div class="mulligan-panel">

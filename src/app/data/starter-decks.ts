@@ -180,7 +180,7 @@ export const STARTER_DECKS: StarterDeck[] = [
   {
     id: 'starter-cyberattaque',
     name: 'Cyberattaque',
-    description: 'IT pur — vitesse et célérité, submergez l\'adversaire rapidement.',
+    description: "IT pur — vitesse et célérité, submergez l'adversaire rapidement.",
     domains: [Domain.IT],
     entries: [
       // Early game aggression (cost 1-2)

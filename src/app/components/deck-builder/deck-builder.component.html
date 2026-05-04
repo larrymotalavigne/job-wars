@@ -22,7 +22,13 @@
       />
     </div>
     <div class="deck-header-actions">
-      <p-button label="Nouveau" icon="pi pi-plus" [text]="true" size="small" (onClick)="newDeck()" />
+      <p-button
+        label="Nouveau"
+        icon="pi pi-plus"
+        [text]="true"
+        size="small"
+        (onClick)="newDeck()"
+      />
       <p-button
         label="Sauvegarder"
         icon="pi pi-save"
@@ -103,10 +109,7 @@
           </div>
           <div class="filter-group">
             <label>Image</label>
-            <p-select
-              [options]="imageStyleOptions"
-              [(ngModel)]="currentImageStyle"
-            />
+            <p-select [options]="imageStyleOptions" [(ngModel)]="currentImageStyle" />
           </div>
         </div>
 
@@ -203,10 +206,7 @@
         </div>
         <div class="filter-group">
           <label>Image</label>
-          <p-select
-            [options]="imageStyleOptions"
-            [(ngModel)]="currentImageStyle"
-          />
+          <p-select [options]="imageStyleOptions" [(ngModel)]="currentImageStyle" />
         </div>
       </div>
 
@@ -267,8 +267,18 @@
           <!-- Card count progress bar -->
           <div class="count-progress-wrap">
             <div class="count-progress-label">
-              <span class="count-label" [class.count-error]="cardCountStatus === 'error'" [class.count-warn]="cardCountStatus === 'warn'" [class.count-ok]="cardCountStatus === 'success'">
-                <i class="pi" [class.pi-check-circle]="cardCountStatus === 'success'" [class.pi-exclamation-triangle]="cardCountStatus === 'warn'" [class.pi-times-circle]="cardCountStatus === 'error'"></i>
+              <span
+                class="count-label"
+                [class.count-error]="cardCountStatus === 'error'"
+                [class.count-warn]="cardCountStatus === 'warn'"
+                [class.count-ok]="cardCountStatus === 'success'"
+              >
+                <i
+                  class="pi"
+                  [class.pi-check-circle]="cardCountStatus === 'success'"
+                  [class.pi-exclamation-triangle]="cardCountStatus === 'warn'"
+                  [class.pi-times-circle]="cardCountStatus === 'error'"
+                ></i>
                 {{ cardCountLabel }}
               </span>
               <span class="count-range">{{ DECK_MIN_CARDS }}–{{ DECK_MAX_CARDS }} cartes</span>
@@ -289,14 +299,20 @@
             <div class="domain-bar-row" *ngFor="let bar of domainBars">
               <span class="domain-bar-label" [style.color]="bar.color">{{ bar.domain }}</span>
               <div class="domain-bar-track">
-                <div class="domain-bar-fill" [style.width.%]="bar.percent" [style.background]="bar.color"></div>
+                <div
+                  class="domain-bar-fill"
+                  [style.width.%]="bar.percent"
+                  [style.background]="bar.color"
+                ></div>
               </div>
               <span class="domain-bar-count">{{ bar.count }}</span>
             </div>
           </div>
 
           <div class="deck-list-header">
-            <span class="deck-card-count">{{ deckStats.totalCards }} carte{{ deckStats.totalCards !== 1 ? 's' : '' }}</span>
+            <span class="deck-card-count"
+              >{{ deckStats.totalCards }} carte{{ deckStats.totalCards !== 1 ? 's' : '' }}</span
+            >
             <p-select
               [options]="groupByOptions"
               [(ngModel)]="groupBy"
@@ -308,10 +324,7 @@
           <div class="deck-entries" *ngIf="deckEntries.length > 0">
             <div class="deck-group" *ngFor="let group of groupedEntries">
               <div class="group-header">{{ group.label }}</div>
-              <div
-                class="deck-entry"
-                *ngFor="let entry of group.entries; trackBy: trackByCardId"
-              >
+              <div class="deck-entry" *ngFor="let entry of group.entries; trackBy: trackByCardId">
                 <i
                   [class]="getDomainIcon(entry.card.domain)"
                   [style.color]="getDomainColor(entry.card.domain)"
@@ -360,10 +373,7 @@
 
         <!-- Tab 2: Stats -->
         <p-tabpanel [value]="1">
-          <app-deck-stats
-            *ngIf="deckStats.totalCards > 0"
-            [stats]="deckStats"
-          />
+          <app-deck-stats *ngIf="deckStats.totalCards > 0" [stats]="deckStats" />
           <div class="empty-deck" *ngIf="deckStats.totalCards === 0">
             <i class="pi pi-chart-bar"></i>
             <p>Ajoutez des cartes pour voir les statistiques.</p>
@@ -388,12 +398,15 @@
               </div>
 
               <!-- Issues -->
-              <div class="analysis-card issues" *ngIf="
-                deckAnalysis.costCurveIssues.length > 0 ||
-                deckAnalysis.domainBalance.length > 0 ||
-                deckAnalysis.typeBalance.length > 0 ||
-                deckAnalysis.missingElements.length > 0
-              ">
+              <div
+                class="analysis-card issues"
+                *ngIf="
+                  deckAnalysis.costCurveIssues.length > 0 ||
+                  deckAnalysis.domainBalance.length > 0 ||
+                  deckAnalysis.typeBalance.length > 0 ||
+                  deckAnalysis.missingElements.length > 0
+                "
+              >
                 <h4><i class="pi pi-exclamation-triangle"></i> Points à Améliorer</h4>
                 <ul>
                   <li *ngFor="let issue of deckAnalysis.costCurveIssues" class="issue-cost">
@@ -412,7 +425,10 @@
               </div>
 
               <!-- Strategic Suggestions -->
-              <div class="analysis-card suggestions-strategic" *ngIf="deckAnalysis.suggestions.length > 0">
+              <div
+                class="analysis-card suggestions-strategic"
+                *ngIf="deckAnalysis.suggestions.length > 0"
+              >
                 <h4><i class="pi pi-lightbulb"></i> Conseils Stratégiques</h4>
                 <ul>
                   <li *ngFor="let suggestion of deckAnalysis.suggestions">
@@ -437,13 +453,15 @@
                         <p-tag
                           [value]="getPriorityLabel(rec.priority)"
                           [severity]="getPrioritySeverity(rec.priority)"
-                          [rounded]="true">
+                          [rounded]="true"
+                        >
                         </p-tag>
                         <p-tag
                           [value]="getCategoryLabel(rec.category)"
                           [icon]="getCategoryIcon(rec.category)"
                           severity="secondary"
-                          [rounded]="true">
+                          [rounded]="true"
+                        >
                         </p-tag>
                       </div>
                     </div>
@@ -453,16 +471,25 @@
                       size="small"
                       [disabled]="isAtMaxCopies(rec.card.id)"
                       (onClick)="addCardToDeck(rec.card)"
-                      [pTooltip]="isAtMaxCopies(rec.card.id) ? 'Maximum de copies atteint' : 'Ajouter au deck'"
-                      tooltipPosition="left">
+                      [pTooltip]="
+                        isAtMaxCopies(rec.card.id) ? 'Maximum de copies atteint' : 'Ajouter au deck'
+                      "
+                      tooltipPosition="left"
+                    >
                     </p-button>
                   </div>
                   <div class="recommendation-meta">
                     <span class="recommendation-cost">
-                      <i class="pi pi-circle-fill" [style.color]="getDomainColor(rec.card.domain)"></i>
+                      <i
+                        class="pi pi-circle-fill"
+                        [style.color]="getDomainColor(rec.card.domain)"
+                      ></i>
                       Coût {{ rec.card.cost }} · {{ rec.card.domain }}
                     </span>
-                    <span class="recommendation-rarity" [style.color]="getRarityColor(rec.card.rarity)">
+                    <span
+                      class="recommendation-rarity"
+                      [style.color]="getRarityColor(rec.card.rarity)"
+                    >
                       {{ rec.card.rarity }}
                     </span>
                   </div>
@@ -492,7 +519,8 @@
               <div class="saved-deck-info">
                 <span class="saved-deck-name">{{ deck.name }}</span>
                 <span class="saved-deck-meta">
-                  {{ deck.entries.length }} carte(s) unique(s) · modifié le {{ deck.updatedAt | date : 'short' }}
+                  {{ deck.entries.length }} carte(s) unique(s) · modifié le
+                  {{ deck.updatedAt | date: 'short' }}
                 </span>
               </div>
               <div class="saved-deck-actions">
@@ -547,12 +575,7 @@
         <span class="card-count" [class.valid]="deckValidation.isValid">
           {{ deckStats.totalCards }}/{{ DECK_MIN_CARDS }} cartes
         </span>
-        <p-tag
-          *ngIf="deckValidation.isValid"
-          value="Valide"
-          severity="success"
-          [rounded]="true"
-        />
+        <p-tag *ngIf="deckValidation.isValid" value="Valide" severity="success" [rounded]="true" />
         <p-tag
           *ngIf="!deckValidation.isValid && deckStats.totalCards > 0"
           value="Incomplet"
@@ -561,7 +584,10 @@
         />
       </div>
 
-      <div class="validation-messages" *ngIf="deckValidation.errors.length > 0 || deckValidation.warnings.length > 0">
+      <div
+        class="validation-messages"
+        *ngIf="deckValidation.errors.length > 0 || deckValidation.warnings.length > 0"
+      >
         <div class="validation-error" *ngFor="let err of deckValidation.errors">
           <i class="pi pi-times-circle"></i> {{ err }}
         </div>
@@ -635,7 +661,8 @@
       <div class="detail-row"><strong>Coût :</strong> {{ detailCard.cost }} Budget</div>
       <div class="detail-row"><strong>Rareté :</strong> {{ detailCard.rarity }}</div>
       <div class="detail-row" *ngIf="isJobCard(detailCard)">
-        <strong>Stats :</strong> {{ $any(detailCard).productivity }} / {{ $any(detailCard).resilience }}
+        <strong>Stats :</strong> {{ $any(detailCard).productivity }} /
+        {{ $any(detailCard).resilience }}
       </div>
       <div class="detail-row flavor" *ngIf="detailCard.flavorText">{{ detailCard.flavorText }}</div>
     </div>
@@ -686,7 +713,9 @@
   [style]="{ width: '520px' }"
 >
   <div class="export-code-content">
-    <p class="export-code-intro">Partagez ce code pour que d'autres puissent importer votre deck.</p>
+    <p class="export-code-intro">
+      Partagez ce code pour que d'autres puissent importer votre deck.
+    </p>
     <div class="export-code-box">
       <span class="export-code-text">{{ exportedCode }}</span>
     </div>

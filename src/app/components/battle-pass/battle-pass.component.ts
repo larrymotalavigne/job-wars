@@ -6,7 +6,11 @@ import { ProgressBar } from 'primeng/progressbar';
 import { Tag } from 'primeng/tag';
 import { ScrollPanel } from 'primeng/scrollpanel';
 import { BattlePassService } from '../../services/battle-pass.service';
-import { BattlePassProgress, BattlePassReward, BattlePassTrack } from '../../models/battle-pass.model';
+import {
+  BattlePassProgress,
+  BattlePassReward,
+  BattlePassTrack,
+} from '../../models/battle-pass.model';
 import { getXPForLevel } from '../../models/battle-pass.model';
 
 @Component({
@@ -14,7 +18,7 @@ import { getXPForLevel } from '../../models/battle-pass.model';
   standalone: true,
   imports: [CommonModule, Card, Button, ProgressBar, Tag, ScrollPanel],
   templateUrl: './battle-pass.component.html',
-  styleUrl: './battle-pass.component.scss'
+  styleUrl: './battle-pass.component.scss',
 })
 export class BattlePassComponent implements OnInit {
   get progress$() {
@@ -62,34 +66,52 @@ export class BattlePassComponent implements OnInit {
 
   getRewardIcon(reward: BattlePassReward): string {
     switch (reward.type) {
-      case 'coins': return 'pi-circle-fill';
-      case 'gems': return 'pi-star-fill';
-      case 'card_back': return 'pi-book';
-      case 'avatar': return 'pi-user';
-      case 'card_cosmetic': return 'pi-palette';
-      default: return 'pi-gift';
+      case 'coins':
+        return 'pi-circle-fill';
+      case 'gems':
+        return 'pi-star-fill';
+      case 'card_back':
+        return 'pi-book';
+      case 'avatar':
+        return 'pi-user';
+      case 'card_cosmetic':
+        return 'pi-palette';
+      default:
+        return 'pi-gift';
     }
   }
 
   getRewardColor(reward: BattlePassReward): string {
     switch (reward.type) {
-      case 'coins': return '#f59e0b';
-      case 'gems': return '#3b82f6';
-      case 'card_back': return '#8b5cf6';
-      case 'avatar': return '#10b981';
-      case 'card_cosmetic': return '#f97316';
-      default: return '#6b7280';
+      case 'coins':
+        return '#f59e0b';
+      case 'gems':
+        return '#3b82f6';
+      case 'card_back':
+        return '#8b5cf6';
+      case 'avatar':
+        return '#10b981';
+      case 'card_cosmetic':
+        return '#f97316';
+      default:
+        return '#6b7280';
     }
   }
 
   getRewardLabel(reward: BattlePassReward): string {
     switch (reward.type) {
-      case 'coins': return `${reward.amount} Pièces`;
-      case 'gems': return `${reward.amount} Gemmes`;
-      case 'card_back': return reward.itemName || 'Carte Dos';
-      case 'avatar': return reward.itemName || 'Avatar';
-      case 'card_cosmetic': return reward.itemName || 'Cosmétique';
-      default: return 'Récompense';
+      case 'coins':
+        return `${reward.amount} Pièces`;
+      case 'gems':
+        return `${reward.amount} Gemmes`;
+      case 'card_back':
+        return reward.itemName || 'Carte Dos';
+      case 'avatar':
+        return reward.itemName || 'Avatar';
+      case 'card_cosmetic':
+        return reward.itemName || 'Cosmétique';
+      default:
+        return 'Récompense';
     }
   }
 
@@ -107,7 +129,7 @@ export class BattlePassComponent implements OnInit {
   formatDate(timestamp: number): string {
     return new Date(timestamp).toLocaleTimeString('fr-FR', {
       hour: '2-digit',
-      minute: '2-digit'
+      minute: '2-digit',
     });
   }
 }

@@ -396,7 +396,7 @@ export const AGRICULTURE_CARDS: Card[] = [
   // ── Uncommon Cards (ag-031 → ag-050) ──
   {
     id: 'ag-031',
-    name: 'Chef d\'Exploitation',
+    name: "Chef d'Exploitation",
     domain: Domain.Agriculture,
     type: CardType.Job,
     cost: 4,
@@ -521,7 +521,7 @@ export const AGRICULTURE_CARDS: Card[] = [
     productivity: 4,
     resilience: 3,
     ability: 'Vos Métiers Agriculture coûtent 1 de moins.',
-    flavorText: '« Chambre d\'agriculture, conseil. »',
+    flavorText: "« Chambre d'agriculture, conseil. »",
     image: 'images/cards/ag-040.png',
   },
   {
@@ -666,7 +666,7 @@ export const AGRICULTURE_CARDS: Card[] = [
     productivity: 5,
     resilience: 5,
     ability: 'Vos Métiers Agriculture coûtent 2 de moins et gagnent +1/+1.',
-    flavorText: '« Grande exploitation, centaines d\'hectares. »',
+    flavorText: "« Grande exploitation, centaines d'hectares. »",
     image: 'images/cards/ag-051.png',
   },
   {
@@ -887,7 +887,7 @@ export const AGRICULTURE_CARDS: Card[] = [
     productivity: 5,
     resilience: 5,
     ability: 'Vos Métiers Agriculture coûtent 2 de moins.',
-    flavorText: '« Milliers d\'hectares, céréales. »',
+    flavorText: "« Milliers d'hectares, céréales. »",
     image: 'images/cards/ag-068.png',
   },
   {
@@ -1076,7 +1076,7 @@ export const AGRICULTURE_CARDS: Card[] = [
   },
   {
     id: 'ag-083',
-    name: 'Ministre de l\'Agriculture',
+    name: "Ministre de l'Agriculture",
     domain: Domain.Agriculture,
     type: CardType.Job,
     cost: 9,
@@ -1297,14 +1297,15 @@ export const AGRICULTURE_CARDS: Card[] = [
   },
   {
     id: 'ag-100',
-    name: 'Titan de l\'Agriculture Mondiale',
+    name: "Titan de l'Agriculture Mondiale",
     domain: Domain.Agriculture,
     type: CardType.Job,
     cost: 12,
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 8,
-    ability: 'Portée. Vos Métiers coûtent 5 de moins. Tous vos Métiers gagnent +5/+3. Vos Métiers Agriculture gagnent +2/+2 supplémentaires.',
+    ability:
+      'Portée. Vos Métiers coûtent 5 de moins. Tous vos Métiers gagnent +5/+3. Vos Métiers Agriculture gagnent +2/+2 supplémentaires.',
     flavorText: '« Contrôle alimentation planétaire, pouvoir absolu. »',
     image: 'images/cards/ag-100.png',
   },

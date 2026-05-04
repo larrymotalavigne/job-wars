@@ -19,7 +19,8 @@
                 <h3>{{ quest.title }}</h3>
                 <p-tag
                   [value]="getDifficultyLabel(quest.reward)"
-                  [severity]="getDifficultyColor(quest.reward)">
+                  [severity]="getDifficultyColor(quest.reward)"
+                >
                 </p-tag>
               </div>
             </ng-template>
@@ -32,9 +33,7 @@
                   <span>Progression</span>
                   <span class="progress-value">{{ quest.progress }} / {{ quest.requirement }}</span>
                 </div>
-                <p-progressBar
-                  [value]="getProgressPercent(quest)"
-                  [showValue]="false">
+                <p-progressBar [value]="getProgressPercent(quest)" [showValue]="false">
                 </p-progressBar>
               </div>
 
@@ -60,25 +59,18 @@
             <ng-template #footer>
               <div class="quest-actions">
                 @if (quest.claimed) {
-                  <p-button
-                    label="Réclamé"
-                    icon="pi pi-check"
-                    [disabled]="true"
-                    severity="success">
+                  <p-button label="Réclamé" icon="pi pi-check" [disabled]="true" severity="success">
                   </p-button>
                 } @else if (quest.completed) {
                   <p-button
                     label="Réclamer"
                     icon="pi pi-gift"
                     (onClick)="claimQuest(quest.id)"
-                    severity="success">
+                    severity="success"
+                  >
                   </p-button>
                 } @else {
-                  <p-button
-                    label="En cours"
-                    [disabled]="true"
-                    severity="secondary">
-                  </p-button>
+                  <p-button label="En cours" [disabled]="true" severity="secondary"> </p-button>
                 }
               </div>
             </ng-template>
@@ -93,7 +85,9 @@
       <div class="login-streak">
         <div class="streak-info">
           <i class="pi pi-calendar"></i>
-          <span>Série de connexions: <strong>{{ state.loginStreak }}</strong> jour(s)</span>
+          <span
+            >Série de connexions: <strong>{{ state.loginStreak }}</strong> jour(s)</span
+          >
         </div>
       </div>
 
@@ -103,8 +97,8 @@
             class="daily-reward-card"
             [class.current]="reward.day === state.loginStreak"
             [class.claimed]="reward.claimed"
-            [class.locked]="reward.day > state.loginStreak">
-
+            [class.locked]="reward.day > state.loginStreak"
+          >
             <div class="reward-day">Jour {{ reward.day }}</div>
 
             <div class="reward-icon">
@@ -133,10 +127,7 @@
             </div>
 
             @if (canClaimDailyReward(reward, state.loginStreak)) {
-              <p-button
-                label="Réclamer"
-                size="small"
-                (onClick)="claimDailyReward(reward.day)">
+              <p-button label="Réclamer" size="small" (onClick)="claimDailyReward(reward.day)">
               </p-button>
             }
           </div>

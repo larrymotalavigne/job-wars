@@ -324,7 +324,7 @@ export const ENERGY_CARDS: Card[] = [
     productivity: 3,
     resilience: 2,
     ability: '',
-    flavorText: '« Vecteur énergétique d\'avenir. »',
+    flavorText: "« Vecteur énergétique d'avenir. »",
     image: 'images/cards/en-025.png',
   },
   {
@@ -1115,7 +1115,7 @@ export const ENERGY_CARDS: Card[] = [
   },
   {
     id: 'en-086',
-    name: 'Ministre de l\'Énergie',
+    name: "Ministre de l'Énergie",
     domain: Domain.Energy,
     type: CardType.Job,
     cost: 9,
@@ -1266,7 +1266,7 @@ export const ENERGY_CARDS: Card[] = [
     productivity: 7,
     resilience: 7,
     ability: 'Portée. Vos Métiers coûtent 3 de moins. Tous vos Métiers gagnent +3/+2.',
-    flavorText: '« Agence Internationale de l\'Énergie. »',
+    flavorText: "« Agence Internationale de l'Énergie. »",
     image: 'images/cards/en-097.png',
   },
   {
@@ -1297,14 +1297,15 @@ export const ENERGY_CARDS: Card[] = [
   },
   {
     id: 'en-100',
-    name: 'Titan de l\'Énergie Planétaire',
+    name: "Titan de l'Énergie Planétaire",
     domain: Domain.Energy,
     type: CardType.Job,
     cost: 12,
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 8,
-    ability: 'Portée. Vos Métiers coûtent 5 de moins. Tous vos Métiers gagnent +5/+3. Vos Métiers Énergie gagnent +2/+2 supplémentaires.',
+    ability:
+      'Portée. Vos Métiers coûtent 5 de moins. Tous vos Métiers gagnent +5/+3. Vos Métiers Énergie gagnent +2/+2 supplémentaires.',
     flavorText: '« Contrôle énergétique mondial, pouvoir absolu. »',
     image: 'images/cards/en-100.png',
   },

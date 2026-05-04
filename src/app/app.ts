@@ -51,7 +51,7 @@ export class AppComponent {
     private rankedService: RankedService,
     private battlePassService: BattlePassService,
     private cosmeticsService: CosmeticsService,
-    private profileService: ProfileService
+    private profileService: ProfileService,
   ) {
     // Initialize all services on first launch
     this.collectionService.initializeCollection();
@@ -62,15 +62,17 @@ export class AppComponent {
     this.cosmeticsService.initializeCosmetics();
     this.profileService.initializeProfile();
 
-    this.router.events.pipe(
-      filter(e => e instanceof NavigationEnd),
-      map(() => {
-        let r = this.route;
-        while (r.firstChild) r = r.firstChild;
-        return r.snapshot.data;
-      }),
-    ).subscribe(data => {
-      this.hideNav = !!data['hideNav'];
-    });
+    this.router.events
+      .pipe(
+        filter((e) => e instanceof NavigationEnd),
+        map(() => {
+          let r = this.route;
+          while (r.firstChild) r = r.firstChild;
+          return r.snapshot.data;
+        }),
+      )
+      .subscribe((data) => {
+        this.hideNav = !!data['hideNav'];
+      });
   }
 }

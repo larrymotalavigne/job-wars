@@ -57,7 +57,7 @@ export class GameService {
     private battlePassService: BattlePassService,
   ) {
     // Subscribe to multiplayer messages
-    this.multiplayerSubscription = this.multiplayerService.messages$.subscribe(message => {
+    this.multiplayerSubscription = this.multiplayerService.messages$.subscribe((message) => {
       this.handleMultiplayerMessage(message);
     });
   }
@@ -79,9 +79,9 @@ export class GameService {
     this.shuffle(p2Cards);
 
     const p1Hand = p1Cards.splice(0, STARTING_HAND_SIZE);
-    p1Hand.forEach(c => c.zone = CardZone.Hand);
+    p1Hand.forEach((c) => (c.zone = CardZone.Hand));
     const p2Hand = p2Cards.splice(0, STARTING_HAND_SIZE);
-    p2Hand.forEach(c => c.zone = CardZone.Hand);
+    p2Hand.forEach((c) => (c.zone = CardZone.Hand));
 
     const player1: PlayerState = {
       id: p1Id,
@@ -149,9 +149,9 @@ export class GameService {
     this.shuffle(p2Cards);
 
     const p1Hand = p1Cards.splice(0, STARTING_HAND_SIZE);
-    p1Hand.forEach(c => c.zone = CardZone.Hand);
+    p1Hand.forEach((c) => (c.zone = CardZone.Hand));
     const p2Hand = p2Cards.splice(0, STARTING_HAND_SIZE);
-    p2Hand.forEach(c => c.zone = CardZone.Hand);
+    p2Hand.forEach((c) => (c.zone = CardZone.Hand));
 
     const player1: PlayerState = {
       id: p1Id,
@@ -228,9 +228,9 @@ export class GameService {
     this.shuffle(p2Cards);
 
     const p1Hand = p1Cards.splice(0, STARTING_HAND_SIZE);
-    p1Hand.forEach(c => c.zone = CardZone.Hand);
+    p1Hand.forEach((c) => (c.zone = CardZone.Hand));
     const p2Hand = p2Cards.splice(0, STARTING_HAND_SIZE);
-    p2Hand.forEach(c => c.zone = CardZone.Hand);
+    p2Hand.forEach((c) => (c.zone = CardZone.Hand));
 
     const player1State: PlayerState = {
       id: player1.id,
@@ -296,7 +296,7 @@ export class GameService {
         break;
       case MessageType.PLAYER_LEFT:
         // Opponent disconnected
-        this.addLog('Votre adversaire s\'est déconnecté.');
+        this.addLog("Votre adversaire s'est déconnecté.");
         break;
     }
   }
@@ -354,9 +354,9 @@ export class GameService {
     this.shuffle(p2Cards);
 
     const p1Hand = p1Cards.splice(0, STARTING_HAND_SIZE);
-    p1Hand.forEach(c => c.zone = CardZone.Hand);
+    p1Hand.forEach((c) => (c.zone = CardZone.Hand));
     const p2Hand = p2Cards.splice(0, STARTING_HAND_SIZE);
-    p2Hand.forEach(c => c.zone = CardZone.Hand);
+    p2Hand.forEach((c) => (c.zone = CardZone.Hand));
 
     const player1: PlayerState = {
       id: p1Id,
@@ -421,9 +421,9 @@ export class GameService {
     this.shuffle(p2Cards);
 
     const p1Hand = p1Cards.splice(0, STARTING_HAND_SIZE);
-    p1Hand.forEach(c => c.zone = CardZone.Hand);
+    p1Hand.forEach((c) => (c.zone = CardZone.Hand));
     const p2Hand = p2Cards.splice(0, STARTING_HAND_SIZE);
-    p2Hand.forEach(c => c.zone = CardZone.Hand);
+    p2Hand.forEach((c) => (c.zone = CardZone.Hand));
 
     const player1: PlayerState = {
       id: p1Id,
@@ -495,7 +495,7 @@ export class GameService {
     if (cardInstanceIds.length > 0) {
       // Return selected cards to deck
       for (const id of cardInstanceIds) {
-        const idx = player.hand.findIndex(c => c.instanceId === id);
+        const idx = player.hand.findIndex((c) => c.instanceId === id);
         if (idx >= 0) {
           const card = player.hand.splice(idx, 1)[0];
           card.zone = CardZone.Deck;
@@ -598,7 +598,9 @@ export class GameService {
     // Trigger OnTurnStart for active player's field cards
     for (const card of player.field) {
       this.effectService.executeAutoEffects(
-        card, EffectTrigger.OnTurnStart, state,
+        card,
+        EffectTrigger.OnTurnStart,
+        state,
         (msg: string) => this.addLog(msg),
         (p: PlayerState, n: number) => this.drawCards(p, n),
         (id: string) => this.destroyCard(id),
@@ -631,7 +633,7 @@ export class GameService {
     if (!state || state.phase !== GamePhase.Hiring) return false;
 
     const player = this.getActivePlayer();
-    const card = player.hand.find(c => c.instanceId === instanceId);
+    const card = player.hand.find((c) => c.instanceId === instanceId);
     if (!card) return false;
 
     return card.card.cost <= player.budgetRemaining;
@@ -642,7 +644,7 @@ export class GameService {
     if (!state || state.phase !== GamePhase.Hiring) return;
 
     const player = this.getActivePlayer();
-    const cardIdx = player.hand.findIndex(c => c.instanceId === instanceId);
+    const cardIdx = player.hand.findIndex((c) => c.instanceId === instanceId);
     if (cardIdx === -1) return;
 
     const cardInstance = player.hand[cardIdx];
@@ -659,13 +661,17 @@ export class GameService {
     if (isEventCard(cardInstance.card)) {
       cardInstance.zone = CardZone.Graveyard;
       player.graveyard.push(cardInstance);
-      this.addLog(`${player.name} joue l'événement ${cardInstance.card.name} (coût: ${cardInstance.card.cost}).`);
+      this.addLog(
+        `${player.name} joue l'événement ${cardInstance.card.name} (coût: ${cardInstance.card.cost}).`,
+      );
       this.soundService.play(SoundEffect.CardPlay);
     } else {
       cardInstance.zone = CardZone.Field;
       cardInstance.summonedThisTurn = true;
       player.field.push(cardInstance);
-      this.addLog(`${player.name} embauche ${cardInstance.card.name} (coût: ${cardInstance.card.cost}).`);
+      this.addLog(
+        `${player.name} embauche ${cardInstance.card.name} (coût: ${cardInstance.card.cost}).`,
+      );
       this.soundService.play(SoundEffect.CardPlay);
     }
 
@@ -677,7 +683,9 @@ export class GameService {
     // Trigger effects
     const trigger = isEventCard(cardInstance.card) ? EffectTrigger.OnCast : EffectTrigger.OnHire;
     const pending = this.effectService.executeAutoEffects(
-      cardInstance, trigger, state,
+      cardInstance,
+      trigger,
+      state,
       (msg: string) => this.addLog(msg),
       (p: PlayerState, n: number) => this.drawCards(p, n),
       (id: string) => this.destroyCard(id),
@@ -708,7 +716,7 @@ export class GameService {
     if (!state || state.phase !== GamePhase.Work_Attack) return false;
 
     const player = this.getActivePlayer();
-    const card = player.field.find(c => c.instanceId === instanceId);
+    const card = player.field.find((c) => c.instanceId === instanceId);
     if (!card) return false;
     if (!isJobCard(card.card)) return false;
     if (card.tapped) return false;
@@ -731,7 +739,7 @@ export class GameService {
       this.sendAction('attack', { instanceId });
     }
 
-    const existing = state.combat.attackers.findIndex(a => a.attackerInstanceId === instanceId);
+    const existing = state.combat.attackers.findIndex((a) => a.attackerInstanceId === instanceId);
     if (existing >= 0) {
       state.combat.attackers.splice(existing, 1);
     } else {
@@ -760,10 +768,12 @@ export class GameService {
       if (card) card.tapped = true;
     }
 
-    const names = state.combat.attackers.map(a => {
-      const c = this.findCardInstance(a.attackerInstanceId);
-      return c?.card.name ?? '?';
-    }).join(', ');
+    const names = state.combat.attackers
+      .map((a) => {
+        const c = this.findCardInstance(a.attackerInstanceId);
+        return c?.card.name ?? '?';
+      })
+      .join(', ');
     this.addLog(`${this.getActivePlayer().name} attaque avec : ${names}`);
     this.soundService.play(SoundEffect.Combat);
 
@@ -778,7 +788,7 @@ export class GameService {
     if (!state?.combat || state.phase !== GamePhase.Work_Block) return false;
 
     const defender = this.getInactivePlayer();
-    const card = defender.field.find(c => c.instanceId === blockerInstanceId);
+    const card = defender.field.find((c) => c.instanceId === blockerInstanceId);
     if (!card) return false;
     if (!isJobCard(card.card)) return false;
     if (card.tapped) return false;
@@ -794,7 +804,11 @@ export class GameService {
 
     // Check attacker is valid and has no Portée
     const attacker = this.findCardInstance(attackerInstanceId);
-    if (!attacker || !state.combat.attackers.find(a => a.attackerInstanceId === attackerInstanceId)) return;
+    if (
+      !attacker ||
+      !state.combat.attackers.find((a) => a.attackerInstanceId === attackerInstanceId)
+    )
+      return;
 
     // Portée: can't be blocked
     if (this.hasKeyword(attacker, 'Portée')) return;
@@ -806,7 +820,9 @@ export class GameService {
     }
 
     // Remove existing assignment for this blocker
-    state.combat.blockers = state.combat.blockers.filter(b => b.blockerInstanceId !== blockerInstanceId);
+    state.combat.blockers = state.combat.blockers.filter(
+      (b) => b.blockerInstanceId !== blockerInstanceId,
+    );
 
     state.combat.blockers.push({ blockerInstanceId, attackerInstanceId });
     this.emit();
@@ -816,7 +832,9 @@ export class GameService {
     const state = this.state;
     if (!state?.combat || state.phase !== GamePhase.Work_Block) return;
 
-    state.combat.blockers = state.combat.blockers.filter(b => b.blockerInstanceId !== blockerInstanceId);
+    state.combat.blockers = state.combat.blockers.filter(
+      (b) => b.blockerInstanceId !== blockerInstanceId,
+    );
     this.emit();
   }
 
@@ -825,11 +843,13 @@ export class GameService {
     if (!state?.combat || state.phase !== GamePhase.Work_Block) return;
 
     if (state.combat.blockers.length > 0) {
-      const names = state.combat.blockers.map(b => {
-        const blocker = this.findCardInstance(b.blockerInstanceId);
-        const attacker = this.findCardInstance(b.attackerInstanceId);
-        return `${blocker?.card.name ?? '?'} bloque ${attacker?.card.name ?? '?'}`;
-      }).join(', ');
+      const names = state.combat.blockers
+        .map((b) => {
+          const blocker = this.findCardInstance(b.blockerInstanceId);
+          const attacker = this.findCardInstance(b.attackerInstanceId);
+          return `${blocker?.card.name ?? '?'} bloque ${attacker?.card.name ?? '?'}`;
+        })
+        .join(', ');
       this.addLog(`${this.getInactivePlayer().name} bloque : ${names}`);
     } else {
       this.addLog(`${this.getInactivePlayer().name} ne bloque pas.`);
@@ -852,7 +872,9 @@ export class GameService {
       const attacker = this.findCardInstance(atk.attackerInstanceId);
       if (!attacker || !isJobCard(attacker.card)) continue;
 
-      const blockerAssignments = state.combat.blockers.filter(b => b.attackerInstanceId === atk.attackerInstanceId);
+      const blockerAssignments = state.combat.blockers.filter(
+        (b) => b.attackerInstanceId === atk.attackerInstanceId,
+      );
 
       if (blockerAssignments.length === 0) {
         // Unblocked — deal damage to reputation
@@ -915,12 +937,14 @@ export class GameService {
     }
 
     // Move destroyed cards to graveyard and trigger OnDestroy
-    const destroyedIds = new Set(destroyed.map(c => c.instanceId));
+    const destroyedIds = new Set(destroyed.map((c) => c.instanceId));
     for (const id of destroyedIds) {
       const card = this.findCardInstance(id);
       if (card) {
         this.effectService.executeAutoEffects(
-          card, EffectTrigger.OnDestroy, state,
+          card,
+          EffectTrigger.OnDestroy,
+          state,
           (msg: string) => this.addLog(msg),
           (p: PlayerState, n: number) => this.drawCards(p, n),
           (cid: string) => this.destroyCard(cid),
@@ -955,7 +979,9 @@ export class GameService {
     // Trigger OnTurnEnd for active player's field cards
     for (const card of player.field) {
       this.effectService.executeAutoEffects(
-        card, EffectTrigger.OnTurnEnd, state,
+        card,
+        EffectTrigger.OnTurnEnd,
+        state,
         (msg: string) => this.addLog(msg),
         (p: PlayerState, n: number) => this.drawCards(p, n),
         (id: string) => this.destroyCard(id),
@@ -964,7 +990,7 @@ export class GameService {
 
     // Clear temporary modifiers
     for (const card of player.field) {
-      card.modifiers = card.modifiers.filter(m => m.permanent);
+      card.modifiers = card.modifiers.filter((m) => m.permanent);
       card.damageThisTurn = 0;
       card.summonedThisTurn = false;
       card.tapped = false;
@@ -972,19 +998,22 @@ export class GameService {
       // Construction: +1/+1 at end of each turn
       if (this.hasKeyword(card, 'Construction')) {
         card.constructionBonuses++;
-        this.addLog(`${card.card.name} gagne +1/+1 (Construction, total: +${card.constructionBonuses}/+${card.constructionBonuses}).`);
+        this.addLog(
+          `${card.card.name} gagne +1/+1 (Construction, total: +${card.constructionBonuses}/+${card.constructionBonuses}).`,
+        );
       }
     }
 
     // Also untap opponent's cards and clear their temp state
     const opponent = this.getInactivePlayer();
     for (const card of opponent.field) {
-      card.modifiers = card.modifiers.filter(m => m.permanent);
+      card.modifiers = card.modifiers.filter((m) => m.permanent);
       card.damageThisTurn = 0;
     }
 
     // Switch active player
-    state.activePlayerId = state.activePlayerId === state.player1.id ? state.player2.id : state.player1.id;
+    state.activePlayerId =
+      state.activePlayerId === state.player1.id ? state.player2.id : state.player1.id;
     state.turnNumber++;
     state.phase = GamePhase.Budget;
 
@@ -1000,7 +1029,9 @@ export class GameService {
     const player = this.getPlayer(playerId);
     if (!player) return;
     player.reputation += delta;
-    this.addLog(`${player.name} : réputation ${delta > 0 ? '+' : ''}${delta} (→ ${player.reputation}).`);
+    this.addLog(
+      `${player.name} : réputation ${delta > 0 ? '+' : ''}${delta} (→ ${player.reputation}).`,
+    );
     this.checkWinCondition();
     this.emit();
   }
@@ -1009,7 +1040,9 @@ export class GameService {
     const player = this.getPlayer(playerId);
     if (!player) return;
     player.budgetRemaining = Math.max(0, player.budgetRemaining + delta);
-    this.addLog(`${player.name} : budget ${delta > 0 ? '+' : ''}${delta} (→ ${player.budgetRemaining}).`);
+    this.addLog(
+      `${player.name} : budget ${delta > 0 ? '+' : ''}${delta} (→ ${player.budgetRemaining}).`,
+    );
     this.emit();
   }
 
@@ -1081,7 +1114,9 @@ export class GameService {
     const state = this.state;
     if (!state?.pendingEffect) return;
     const next = this.effectService.resolveTargetedEffect(
-      state.pendingEffect, targetInstanceId, state,
+      state.pendingEffect,
+      targetInstanceId,
+      state,
       (msg: string) => this.addLog(msg),
       (p: PlayerState, n: number) => this.drawCards(p, n),
       (id: string) => this.destroyCard(id),
@@ -1149,15 +1184,16 @@ export class GameService {
   }
 
   isAttacking(instanceId: string): boolean {
-    return !!this.state?.combat?.attackers.some(a => a.attackerInstanceId === instanceId);
+    return !!this.state?.combat?.attackers.some((a) => a.attackerInstanceId === instanceId);
   }
 
   isBlocking(instanceId: string): boolean {
-    return !!this.state?.combat?.blockers.some(b => b.blockerInstanceId === instanceId);
+    return !!this.state?.combat?.blockers.some((b) => b.blockerInstanceId === instanceId);
   }
 
   getBlockTarget(blockerInstanceId: string): string | undefined {
-    return this.state?.combat?.blockers.find(b => b.blockerInstanceId === blockerInstanceId)?.attackerInstanceId;
+    return this.state?.combat?.blockers.find((b) => b.blockerInstanceId === blockerInstanceId)
+      ?.attackerInstanceId;
   }
 
   private getAbilityText(card: CardInstance): string {
@@ -1201,14 +1237,18 @@ export class GameService {
 
     for (const player of [state.player1, state.player2]) {
       for (const zone of [player.deck, player.hand, player.field, player.graveyard]) {
-        const card = zone.find(c => c.instanceId === instanceId);
+        const card = zone.find((c) => c.instanceId === instanceId);
         if (card) return card;
       }
     }
     return null;
   }
 
-  private findCardWithContext(instanceId: string): { player: PlayerState | null; card: CardInstance | null; index: number } {
+  private findCardWithContext(instanceId: string): {
+    player: PlayerState | null;
+    card: CardInstance | null;
+    index: number;
+  } {
     const state = this.state;
     if (!state) return { player: null, card: null, index: -1 };
 
@@ -1220,7 +1260,7 @@ export class GameService {
         { zone: CardZone.Graveyard, cards: player.graveyard },
       ];
       for (const { cards } of zones) {
-        const idx = cards.findIndex(c => c.instanceId === instanceId);
+        const idx = cards.findIndex((c) => c.instanceId === instanceId);
         if (idx >= 0) return { player, card: cards[idx], index: idx };
       }
     }
@@ -1229,19 +1269,35 @@ export class GameService {
 
   private removeFromZone(player: PlayerState, zone: CardZone, index: number): void {
     switch (zone) {
-      case CardZone.Deck: player.deck.splice(index, 1); break;
-      case CardZone.Hand: player.hand.splice(index, 1); break;
-      case CardZone.Field: player.field.splice(index, 1); break;
-      case CardZone.Graveyard: player.graveyard.splice(index, 1); break;
+      case CardZone.Deck:
+        player.deck.splice(index, 1);
+        break;
+      case CardZone.Hand:
+        player.hand.splice(index, 1);
+        break;
+      case CardZone.Field:
+        player.field.splice(index, 1);
+        break;
+      case CardZone.Graveyard:
+        player.graveyard.splice(index, 1);
+        break;
     }
   }
 
   private addToZone(player: PlayerState, zone: CardZone, card: CardInstance): void {
     switch (zone) {
-      case CardZone.Deck: player.deck.push(card); break;
-      case CardZone.Hand: player.hand.push(card); break;
-      case CardZone.Field: player.field.push(card); break;
-      case CardZone.Graveyard: player.graveyard.push(card); break;
+      case CardZone.Deck:
+        player.deck.push(card);
+        break;
+      case CardZone.Hand:
+        player.hand.push(card);
+        break;
+      case CardZone.Field:
+        player.field.push(card);
+        break;
+      case CardZone.Graveyard:
+        player.graveyard.push(card);
+        break;
     }
   }
 
@@ -1281,7 +1337,11 @@ export class GameService {
       // Award currency (win)
       const baseCoins = 75;
       const rankedBonus = state.isRankedGame ? 75 : 0; // Extra coins for ranked wins
-      this.currencyService.addCurrency('Pièces', baseCoins + rankedBonus, state.isRankedGame ? 'Victoire classée' : 'Victoire');
+      this.currencyService.addCurrency(
+        'Pièces',
+        baseCoins + rankedBonus,
+        state.isRankedGame ? 'Victoire classée' : 'Victoire',
+      );
       // Update quest progress (win)
       this.questService.updateQuestProgress(QuestType.GamesPlayed, 1);
       this.questService.updateQuestProgress(QuestType.GamesWon, 1);
@@ -1290,7 +1350,9 @@ export class GameService {
       if (deck) {
         const dominantDomain = this.deckService.getDominantDomain(deck);
         if (dominantDomain) {
-          this.questService.updateQuestProgress(QuestType.WinWithDomain, 1, { domain: dominantDomain as Domain });
+          this.questService.updateQuestProgress(QuestType.WinWithDomain, 1, {
+            domain: dominantDomain as Domain,
+          });
         }
       }
       // Track ranked match (win)
@@ -1318,7 +1380,10 @@ export class GameService {
       this.unlockNotificationService.showUnlockNotifications(newUnlocks);
 
       const stats = this.collectionService.getCollectionStats();
-      this.unlockNotificationService.showProgressNotification(stats.unlockedCards, stats.totalCards);
+      this.unlockNotificationService.showProgressNotification(
+        stats.unlockedCards,
+        stats.totalCards,
+      );
     }
   }
 
@@ -1326,7 +1391,7 @@ export class GameService {
     const deck = this.deckService.getDeckById(deckId);
     if (!deck) return [];
     const cards = this.deckService.expandDeck(deck);
-    return cards.map(card => this.createInstance(card, ownerId));
+    return cards.map((card) => this.createInstance(card, ownerId));
   }
 
   private buildRandomDeck(allCards: Card[], ownerId: string): CardInstance[] {
@@ -1337,7 +1402,7 @@ export class GameService {
       const idx = Math.floor(Math.random() * pool.length);
       instances.push(this.createInstance(pool[idx], ownerId));
       // Allow duplicates from pool but cap at 3 of same card
-      const sameCount = instances.filter(c => c.card.id === pool[idx].id).length;
+      const sameCount = instances.filter((c) => c.card.id === pool[idx].id).length;
       if (sameCount >= 3) {
         pool.splice(idx, 1);
       }

@@ -5,7 +5,11 @@ import { Subscription } from 'rxjs';
 import { GameService } from '../../../services/game.service';
 import { AiService } from '../../../services/ai.service';
 import { SoundService, SoundEffect } from '../../../services/sound.service';
-import { MultiplayerService, ConnectionState, MessageType } from '../../../services/multiplayer.service';
+import {
+  MultiplayerService,
+  ConnectionState,
+  MessageType,
+} from '../../../services/multiplayer.service';
 import { GameState, GamePhase } from '../../../models/game.model';
 import { TutorialService } from '../../../services/tutorial.service';
 import { PhaseBarComponent } from '../phase-bar/phase-bar.component';
@@ -88,7 +92,7 @@ export class GameBoardComponent implements OnInit, OnDestroy {
     }
 
     this.subscriptions.push(
-      this.gameService.gameState$.subscribe(state => {
+      this.gameService.gameState$.subscribe((state) => {
         if (!state) return;
 
         // Activate AI on first AI-game state emission
@@ -128,29 +132,29 @@ export class GameBoardComponent implements OnInit, OnDestroy {
         this.tutorialService.onPhaseChange(state.phase);
 
         this.state = state;
-      })
+      }),
     );
 
     // Subscribe to opponent disconnection status
     this.subscriptions.push(
-      this.multiplayerService.opponentDisconnected$.subscribe(status => {
+      this.multiplayerService.opponentDisconnected$.subscribe((status) => {
         this.opponentDisconnected = status.disconnected;
         this.disconnectDeadline = status.deadline || null;
-      })
+      }),
     );
 
     // Subscribe to connection state for reconnection indicator
     this.subscriptions.push(
-      this.multiplayerService.connectionState$.subscribe(state => {
+      this.multiplayerService.connectionState$.subscribe((state) => {
         this.isReconnecting = state === ConnectionState.CONNECTING;
-      })
+      }),
     );
 
     // Subscribe to multiplayer messages for sounds
     this.subscriptions.push(
-      this.multiplayerService.messages$.subscribe(message => {
+      this.multiplayerService.messages$.subscribe((message) => {
         this.handleMultiplayerSound(message);
-      })
+      }),
     );
   }
 
@@ -180,7 +184,7 @@ export class GameBoardComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.subscriptions.forEach(sub => sub.unsubscribe());
+    this.subscriptions.forEach((sub) => sub.unsubscribe());
     this.aiService.deactivate();
     if (this.transitionTimer) clearTimeout(this.transitionTimer);
   }
@@ -213,13 +217,15 @@ export class GameBoardComponent implements OnInit, OnDestroy {
     if (this.state.activePlayerId === 'player2') {
       // AI's turn: AI attacks. Block phase = human blocks (show overlay).
       // Damage phase = just resolve (hide).
-      return this.state.phase === GamePhase.Work_Attack ||
-             this.state.phase === GamePhase.Work_Damage;
+      return (
+        this.state.phase === GamePhase.Work_Attack || this.state.phase === GamePhase.Work_Damage
+      );
     } else {
       // Human's turn: human attacks. Block phase = AI auto-blocks (hide).
       // Damage phase = just resolve (hide).
-      return this.state.phase === GamePhase.Work_Block ||
-             this.state.phase === GamePhase.Work_Damage;
+      return (
+        this.state.phase === GamePhase.Work_Block || this.state.phase === GamePhase.Work_Damage
+      );
     }
   }
 
@@ -244,10 +250,11 @@ export class GameBoardComponent implements OnInit, OnDestroy {
   }
 
   get showCombatOverlay(): boolean {
-    return !!this.state?.combat && (
-      this.state.phase === GamePhase.Work_Attack ||
-      this.state.phase === GamePhase.Work_Block ||
-      this.state.phase === GamePhase.Work_Damage
+    return (
+      !!this.state?.combat &&
+      (this.state.phase === GamePhase.Work_Attack ||
+        this.state.phase === GamePhase.Work_Block ||
+        this.state.phase === GamePhase.Work_Damage)
     );
   }
 }

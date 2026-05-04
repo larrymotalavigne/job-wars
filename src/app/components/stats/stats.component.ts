@@ -57,7 +57,7 @@ interface TotalStats {
     Dialog,
   ],
   templateUrl: './stats.component.html',
-  styleUrl: './stats.component.scss'
+  styleUrl: './stats.component.scss',
 })
 export class StatsComponent implements OnInit {
   playerStats: PlayerStats | null = null;
@@ -110,7 +110,8 @@ export class StatsComponent implements OnInit {
       this.recentMatches = recentMatches || [];
     } catch (err) {
       console.error('Failed to load server stats:', err);
-      this.serverError = 'Impossible de charger les statistiques du serveur. Le serveur est-il actif ?';
+      this.serverError =
+        'Impossible de charger les statistiques du serveur. Le serveur est-il actif ?';
     } finally {
       this.serverLoading = false;
     }

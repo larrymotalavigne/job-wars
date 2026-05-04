@@ -111,17 +111,17 @@ export class StatsService {
     }
 
     const totalGames = results.length;
-    const totalWins = results.filter(r => r.won).length;
+    const totalWins = results.filter((r) => r.won).length;
     const totalLosses = totalGames - totalWins;
-    const aiGames = results.filter(r => r.isAiGame).length;
-    const aiWins = results.filter(r => r.isAiGame && r.won).length;
+    const aiGames = results.filter((r) => r.isAiGame).length;
+    const aiWins = results.filter((r) => r.isAiGame && r.won).length;
 
     const streaks = this.calculateStreaks(results);
     const averageGameLength = results.reduce((sum, r) => sum + r.turnCount, 0) / totalGames;
 
     // Count deck usage
     const deckCounts = new Map<string, number>();
-    results.forEach(r => {
+    results.forEach((r) => {
       deckCounts.set(r.playerDeckId, (deckCounts.get(r.playerDeckId) || 0) + 1);
     });
     const favoriteDecks = Array.from(deckCounts.entries())
@@ -148,7 +148,7 @@ export class StatsService {
    * Get statistics for a specific deck
    */
   getDeckStats(deckId: string): DeckStats {
-    const results = this.getAllResults().filter(r => r.playerDeckId === deckId);
+    const results = this.getAllResults().filter((r) => r.playerDeckId === deckId);
 
     if (results.length === 0) {
       return {
@@ -164,19 +164,13 @@ export class StatsService {
     }
 
     const gamesPlayed = results.length;
-    const wins = results.filter(r => r.won).length;
+    const wins = results.filter((r) => r.won).length;
     const losses = gamesPlayed - wins;
     const averageTurns = results.reduce((sum, r) => sum + r.turnCount, 0) / gamesPlayed;
 
     // Calculate damage (20 - final reputation = damage dealt)
-    const totalDamageDealt = results.reduce(
-      (sum, r) => sum + (20 - r.opponentFinalReputation),
-      0
-    );
-    const totalDamageReceived = results.reduce(
-      (sum, r) => sum + (20 - r.finalReputation),
-      0
-    );
+    const totalDamageDealt = results.reduce((sum, r) => sum + (20 - r.opponentFinalReputation), 0);
+    const totalDamageReceived = results.reduce((sum, r) => sum + (20 - r.finalReputation), 0);
 
     return {
       deckId,

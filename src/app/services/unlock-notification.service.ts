@@ -7,7 +7,7 @@ import { CardService } from './card.service';
 export class UnlockNotificationService {
   constructor(
     private messageService: MessageService,
-    private cardService: CardService
+    private cardService: CardService,
   ) {}
 
   /**

@@ -6,7 +6,7 @@ import {
   PlayerTitle,
   PlayerBadge,
   getLevelFromXP,
-  getXPProgress
+  getXPProgress,
 } from '../models/profile.model';
 
 /**
@@ -14,7 +14,7 @@ import {
  * Manages player identity and customization
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProfileService {
   private readonly STORAGE_KEY = 'jobwars-profile';
@@ -78,7 +78,7 @@ export class ProfileService {
    * Set avatar
    */
   setAvatar(avatarId: string): boolean {
-    const avatar = this.avatarsCatalog.find(a => a.id === avatarId);
+    const avatar = this.avatarsCatalog.find((a) => a.id === avatarId);
     if (!avatar || !avatar.unlocked) {
       console.warn('Avatar not available:', avatarId);
       return false;
@@ -95,7 +95,7 @@ export class ProfileService {
    * Set title
    */
   setTitle(titleId: string): boolean {
-    const title = this.titlesCatalog.find(t => t.id === titleId);
+    const title = this.titlesCatalog.find((t) => t.id === titleId);
     if (!title || !title.unlocked) {
       console.warn('Title not available:', titleId);
       return false;
@@ -129,7 +129,7 @@ export class ProfileService {
 
     // Check all badges are unlocked
     for (const badgeId of badgeIds) {
-      const badge = this.badgesCatalog.find(b => b.id === badgeId);
+      const badge = this.badgesCatalog.find((b) => b.id === badgeId);
       if (!badge || !badge.unlocked) {
         console.warn('Badge not available:', badgeId);
         return false;
@@ -168,9 +168,9 @@ export class ProfileService {
    */
   getAllAvatars(): PlayerAvatar[] {
     const profile = this.getProfile();
-    return this.avatarsCatalog.map(avatar => ({
+    return this.avatarsCatalog.map((avatar) => ({
       ...avatar,
-      unlocked: avatar.unlocked || (avatar.source === 'level' && profile.level >= 5)
+      unlocked: avatar.unlocked || (avatar.source === 'level' && profile.level >= 5),
     }));
   }
 
@@ -206,7 +206,7 @@ export class ProfileService {
       badges: [],
       level: 1,
       xp: 0,
-      profileCreated: Date.now()
+      profileCreated: Date.now(),
     };
   }
 
@@ -237,7 +237,7 @@ export class ProfileService {
         name: 'Avatar Par Défaut',
         iconClass: 'pi-user',
         unlocked: true,
-        source: 'starter'
+        source: 'starter',
       },
       {
         id: 'avatar_star',
@@ -245,7 +245,7 @@ export class ProfileService {
         iconClass: 'pi-star',
         unlocked: false,
         source: 'level',
-        unlockRequirement: 'Niveau 5'
+        unlockRequirement: 'Niveau 5',
       },
       {
         id: 'avatar_crown',
@@ -253,8 +253,8 @@ export class ProfileService {
         iconClass: 'pi-crown',
         unlocked: false,
         source: 'battle_pass',
-        unlockRequirement: 'Battle Pass Niveau 20'
-      }
+        unlockRequirement: 'Battle Pass Niveau 20',
+      },
     ];
 
     // Titles
@@ -264,22 +264,22 @@ export class ProfileService {
         title: 'Débutant',
         unlocked: true,
         requirement: 'Par défaut',
-        source: 'level'
+        source: 'level',
       },
       {
         id: 'title_veteran',
         title: 'Vétéran',
         unlocked: false,
         requirement: 'Niveau 10',
-        source: 'level'
+        source: 'level',
       },
       {
         id: 'title_master',
         title: 'Maître',
         unlocked: false,
         requirement: 'Atteindre le rang Master',
-        source: 'ranked'
-      }
+        source: 'ranked',
+      },
     ];
 
     // Badges
@@ -290,7 +290,7 @@ export class ProfileService {
         iconClass: 'pi-trophy',
         unlocked: false,
         requirement: 'Gagner votre première partie',
-        source: 'achievement'
+        source: 'achievement',
       },
       {
         id: 'badge_collector',
@@ -298,7 +298,7 @@ export class ProfileService {
         iconClass: 'pi-star-fill',
         unlocked: false,
         requirement: 'Débloquer 50 cartes',
-        source: 'collection'
+        source: 'collection',
       },
       {
         id: 'badge_ranked',
@@ -306,8 +306,8 @@ export class ProfileService {
         iconClass: 'pi-shield',
         unlocked: false,
         requirement: 'Jouer 10 parties classées',
-        source: 'ranked'
-      }
+        source: 'ranked',
+      },
     ];
   }
 }

@@ -69,7 +69,7 @@ export const TRANSPORTATION_CARDS: Card[] = [
   },
   {
     id: 'tr-006',
-    name: 'Agent d\'Escale',
+    name: "Agent d'Escale",
     domain: Domain.Transportation,
     type: CardType.Job,
     cost: 2,
@@ -474,7 +474,7 @@ export const TRANSPORTATION_CARDS: Card[] = [
   },
   {
     id: 'tr-037',
-    name: 'Chef d\'Exploitation Transport',
+    name: "Chef d'Exploitation Transport",
     domain: Domain.Transportation,
     type: CardType.Job,
     cost: 5,
@@ -679,7 +679,7 @@ export const TRANSPORTATION_CARDS: Card[] = [
     productivity: 6,
     resilience: 5,
     ability: 'Célérité. Portée. Vos Métiers Transport gagnent +2/+1.',
-    flavorText: '« Pilote de ligne, milliers d\'heures de vol. »',
+    flavorText: "« Pilote de ligne, milliers d'heures de vol. »",
     image: 'images/cards/tr-052.png',
   },
   {
@@ -697,7 +697,7 @@ export const TRANSPORTATION_CARDS: Card[] = [
   },
   {
     id: 'tr-054',
-    name: 'Directeur d\'Exploitation Transport',
+    name: "Directeur d'Exploitation Transport",
     domain: Domain.Transportation,
     type: CardType.Job,
     cost: 7,
@@ -861,12 +861,12 @@ export const TRANSPORTATION_CARDS: Card[] = [
     productivity: 5,
     resilience: 5,
     ability: 'Vos Métiers coûtent 2 de moins.',
-    flavorText: '« Négociation fournisseurs, économies d\'échelle. »',
+    flavorText: "« Négociation fournisseurs, économies d'échelle. »",
     image: 'images/cards/tr-066.png',
   },
   {
     id: 'tr-067',
-    name: 'Pilote d\'Essai',
+    name: "Pilote d'Essai",
     domain: Domain.Transportation,
     type: CardType.Job,
     cost: 7,
@@ -1057,7 +1057,8 @@ export const TRANSPORTATION_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 7,
     resilience: 7,
-    ability: 'Célérité. Portée. Vos Métiers coûtent 3 de moins. Vos Métiers Transport gagnent +3/+2.',
+    ability:
+      'Célérité. Portée. Vos Métiers coûtent 3 de moins. Vos Métiers Transport gagnent +3/+2.',
     flavorText: '« Air France, easyJet, vision mondiale. »',
     image: 'images/cards/tr-081.png',
   },
@@ -1162,7 +1163,7 @@ export const TRANSPORTATION_CARDS: Card[] = [
     productivity: 7,
     resilience: 7,
     ability: 'Portée. Vos Métiers Transport coûtent 3 de moins et gagnent +3/+2.',
-    flavorText: '« Plus grand port d\'Europe, hub mondial. »',
+    flavorText: "« Plus grand port d'Europe, hub mondial. »",
     image: 'images/cards/tr-089.png',
   },
   {

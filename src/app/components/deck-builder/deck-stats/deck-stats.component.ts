@@ -30,7 +30,7 @@ export class DeckStatsComponent implements OnChanges {
   private buildCostCurve() {
     const maxCost = Math.max(7, ...Object.keys(this.stats.costCurve).map(Number));
     const labels = Array.from({ length: maxCost + 1 }, (_, i) => String(i));
-    const data = labels.map(l => this.stats.costCurve[Number(l)] ?? 0);
+    const data = labels.map((l) => this.stats.costCurve[Number(l)] ?? 0);
 
     this.costCurveData = {
       labels,
@@ -59,7 +59,7 @@ export class DeckStatsComponent implements OnChanges {
     const entries = Object.entries(this.stats.domainDistribution);
     const labels = entries.map(([k]) => k);
     const data = entries.map(([, v]) => v);
-    const colors = labels.map(label => {
+    const colors = labels.map((label) => {
       const domainEntry = Object.entries(Domain).find(([, v]) => v === label);
       if (domainEntry) {
         const domainKey = domainEntry[1] as Domain;

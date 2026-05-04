@@ -24,105 +24,128 @@ import { GameState } from '../../../models/game.model';
       </div>
     }
   `,
-  styles: [`
-    .turn-timer {
-      position: fixed;
-      top: 1rem;
-      right: 50%;
-      transform: translateX(50%);
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.75rem 1.25rem;
-      background: rgba(0, 0, 0, 0.85);
-      border: 2px solid rgba(255, 255, 255, 0.2);
-      border-radius: 24px;
-      backdrop-filter: blur(10px);
-      color: white;
-      font-weight: 600;
-      min-width: 200px;
-      transition: all 0.3s;
-
-      &.warning {
-        border-color: #ef4444;
-        background: rgba(239, 68, 68, 0.9);
-        animation: shake 0.5s infinite;
-      }
-    }
-
-    .timer-icon {
-      font-size: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #60a5fa;
-
-      .warning & {
-        color: white;
-      }
-    }
-
-    .timer-display {
-      display: flex;
-      flex-direction: column;
-      gap: 0.1rem;
-      flex: 1;
-    }
-
-    .timer-label {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      opacity: 0.8;
-    }
-
-    .timer-countdown {
-      font-size: 1.3rem;
-      font-family: 'Courier New', monospace;
-      letter-spacing: 0.05em;
-    }
-
-    .warning-pulse {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: white;
-      animation: pulse 1s infinite;
-    }
-
-    @keyframes shake {
-      0%, 100% { transform: translateX(calc(50% + 0px)); }
-      10%, 30%, 50%, 70%, 90% { transform: translateX(calc(50% - 2px)); }
-      20%, 40%, 60%, 80% { transform: translateX(calc(50% + 2px)); }
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.3; transform: scale(1.5); }
-    }
-
-    @media (max-width: 480px) {
+  styles: [
+    `
       .turn-timer {
-        top: 0.5rem;
-        padding: 0.5rem 1rem;
-        gap: 0.5rem;
-        min-width: 160px;
+        position: fixed;
+        top: 1rem;
+        right: 50%;
+        transform: translateX(50%);
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1.25rem;
+        background: rgba(0, 0, 0, 0.85);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 24px;
+        backdrop-filter: blur(10px);
+        color: white;
+        font-weight: 600;
+        min-width: 200px;
+        transition: all 0.3s;
+
+        &.warning {
+          border-color: #ef4444;
+          background: rgba(239, 68, 68, 0.9);
+          animation: shake 0.5s infinite;
+        }
       }
 
       .timer-icon {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #60a5fa;
+
+        .warning & {
+          color: white;
+        }
+      }
+
+      .timer-display {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        flex: 1;
       }
 
       .timer-label {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
       }
 
       .timer-countdown {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        font-family: 'Courier New', monospace;
+        letter-spacing: 0.05em;
       }
-    }
-  `],
+
+      .warning-pulse {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+        animation: pulse 1s infinite;
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(calc(50% + 0px));
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          transform: translateX(calc(50% - 2px));
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+          transform: translateX(calc(50% + 2px));
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.3;
+          transform: scale(1.5);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .turn-timer {
+          top: 0.5rem;
+          padding: 0.5rem 1rem;
+          gap: 0.5rem;
+          min-width: 160px;
+        }
+
+        .timer-icon {
+          font-size: 1.2rem;
+        }
+
+        .timer-label {
+          font-size: 0.6rem;
+        }
+
+        .timer-countdown {
+          font-size: 1.1rem;
+        }
+      }
+    `,
+  ],
 })
 export class TurnTimerComponent implements OnInit, OnDestroy {
   @Input() state: GameState | null = null;
@@ -142,13 +165,9 @@ export class TurnTimerComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     // Listen for TURN_START messages
-    this.messageSubscription = this.multiplayerService.messages$.subscribe(message => {
+    this.messageSubscription = this.multiplayerService.messages$.subscribe((message) => {
       if (message.type === MessageType.TURN_START) {
-        this.startTimer(
-          message['playerId'],
-          message['turnDuration'],
-          message.timestamp
-        );
+        this.startTimer(message['playerId'], message['turnDuration'], message.timestamp);
       }
     });
 

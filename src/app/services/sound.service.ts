@@ -72,7 +72,7 @@ export class SoundService {
       // Clone the audio to allow multiple simultaneous plays
       const clonedAudio = audio.cloneNode(true) as HTMLAudioElement;
       clonedAudio.volume = this.volume;
-      clonedAudio.play().catch(err => {
+      clonedAudio.play().catch((err) => {
         console.warn('Sound playback failed:', effect, err);
       });
     } catch (err) {
@@ -101,7 +101,7 @@ export class SoundService {
   setVolume(volume: number): void {
     this.volume = Math.max(0, Math.min(1, volume));
     // Update cached audio elements
-    this.audioCache.forEach(audio => {
+    this.audioCache.forEach((audio) => {
       audio.volume = this.volume;
     });
     this.saveSettings();
@@ -118,7 +118,7 @@ export class SoundService {
    * Preload all sound effects
    */
   preloadAll(): void {
-    Object.values(SoundEffect).forEach(effect => {
+    Object.values(SoundEffect).forEach((effect) => {
       if (!this.audioCache.has(effect)) {
         const audio = new Audio(this.soundFiles[effect]);
         audio.volume = this.volume;

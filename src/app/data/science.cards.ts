@@ -13,7 +13,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Chaque grande découverte commence par une préparation minutieuse.',
-    image: 'science/sc-001.jpg'
+    image: 'science/sc-001.jpg',
   },
   {
     id: 'sc-002',
@@ -26,7 +26,7 @@ export const scienceCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, regardez la première carte de votre deck.',
     flavorText: 'Apprendre des meilleurs.',
-    image: 'science/sc-002.jpg'
+    image: 'science/sc-002.jpg',
   },
   {
     id: 'sc-003',
@@ -39,7 +39,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Le chemin vers la connaissance est long.',
-    image: 'science/sc-003.jpg'
+    image: 'science/sc-003.jpg',
   },
   {
     id: 'sc-004',
@@ -52,7 +52,7 @@ export const scienceCards: Card[] = [
     resilience: 2,
     ability: 'Quand vous jouez une autre carte Science, piochez une carte.',
     flavorText: 'Mélanger avec précision.',
-    image: 'science/sc-004.jpg'
+    image: 'science/sc-004.jpg',
   },
   {
     id: 'sc-005',
@@ -65,7 +65,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Au début de votre tour, regardez les 2 premières cartes de votre deck.',
     flavorText: 'Les données racontent des histoires.',
-    image: 'science/sc-005.jpg'
+    image: 'science/sc-005.jpg',
   },
   {
     id: 'sc-006',
@@ -78,7 +78,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'La vie sous toutes ses formes.',
-    image: 'science/sc-006.jpg'
+    image: 'science/sc-006.jpg',
   },
   {
     id: 'sc-007',
@@ -90,8 +90,8 @@ export const scienceCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Quand vous jouez une carte Science, gagnez 1 ressource.',
-    flavorText: 'Comprendre les lois de l\'univers.',
-    image: 'science/sc-007.jpg'
+    flavorText: "Comprendre les lois de l'univers.",
+    image: 'science/sc-007.jpg',
   },
   {
     id: 'sc-008',
@@ -102,9 +102,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 1,
     resilience: 2,
-    ability: 'Au début de votre tour, piochez une carte si vous contrôlez au moins 2 cartes Science.',
+    ability:
+      'Au début de votre tour, piochez une carte si vous contrôlez au moins 2 cartes Science.',
     flavorText: 'Le code est la langue du futur.',
-    image: 'science/sc-008.jpg'
+    image: 'science/sc-008.jpg',
   },
   {
     id: 'sc-009',
@@ -117,7 +118,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, regardez les 3 premières cartes de votre deck.',
     flavorText: 'Les nombres ne mentent jamais.',
-    image: 'science/sc-009.jpg'
+    image: 'science/sc-009.jpg',
   },
   {
     id: 'sc-010',
@@ -130,7 +131,7 @@ export const scienceCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
     flavorText: 'Construire le futur.',
-    image: 'science/sc-010.jpg'
+    image: 'science/sc-010.jpg',
   },
   {
     id: 'sc-011',
@@ -143,7 +144,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Poser les bonnes questions.',
-    image: 'science/sc-011.jpg'
+    image: 'science/sc-011.jpg',
   },
   {
     id: 'sc-012',
@@ -155,8 +156,8 @@ export const scienceCards: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, gagnez 1 ressource.',
-    flavorText: 'Lire l\'histoire de la Terre.',
-    image: 'science/sc-012.jpg'
+    flavorText: "Lire l'histoire de la Terre.",
+    image: 'science/sc-012.jpg',
   },
   {
     id: 'sc-013',
@@ -168,8 +169,8 @@ export const scienceCards: Card[] = [
     productivity: 1,
     resilience: 1,
     ability: 'Au début de votre tour, regardez les 2 premières cartes de votre deck.',
-    flavorText: 'Observer l\'infini.',
-    image: 'science/sc-013.jpg'
+    flavorText: "Observer l'infini.",
+    image: 'science/sc-013.jpg',
   },
   {
     id: 'sc-014',
@@ -182,7 +183,7 @@ export const scienceCards: Card[] = [
     resilience: 2,
     ability: 'Quand vous jouez une carte Science, une carte ciblée gagne +1 Résilience.',
     flavorText: 'Soigner par la science.',
-    image: 'science/sc-014.jpg'
+    image: 'science/sc-014.jpg',
   },
   {
     id: 'sc-015',
@@ -195,7 +196,7 @@ export const scienceCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Le monde végétal recèle des secrets.',
-    image: 'science/sc-015.jpg'
+    image: 'science/sc-015.jpg',
   },
   {
     id: 'sc-016',
@@ -208,7 +209,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Au début de votre tour, regardez les 2 premières cartes de votre deck.',
     flavorText: 'Comprendre le règne animal.',
-    image: 'science/sc-016.jpg'
+    image: 'science/sc-016.jpg',
   },
   {
     id: 'sc-017',
@@ -221,7 +222,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Science, gagnez 1 ressource.',
     flavorText: 'Reprogrammer la vie.',
-    image: 'science/sc-017.jpg'
+    image: 'science/sc-017.jpg',
   },
   {
     id: 'sc-018',
@@ -234,7 +235,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, regardez les 3 premières cartes de votre deck.',
     flavorText: 'Les probabilités gouvernent le monde.',
-    image: 'science/sc-018.jpg'
+    image: 'science/sc-018.jpg',
   },
   {
     id: 'sc-019',
@@ -245,9 +246,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 2,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez récupérer une carte depuis votre défausse.',
+    ability:
+      'Quand cette carte arrive en jeu, vous pouvez récupérer une carte depuis votre défausse.',
     flavorText: 'Déterrer le passé.',
-    image: 'science/sc-019.jpg'
+    image: 'science/sc-019.jpg',
   },
   {
     id: 'sc-020',
@@ -259,8 +261,8 @@ export const scienceCards: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Au début de votre tour, regardez la première carte de votre deck.',
-    flavorText: 'Prédire l\'imprévisible.',
-    image: 'science/sc-020.jpg'
+    flavorText: "Prédire l'imprévisible.",
+    image: 'science/sc-020.jpg',
   },
   {
     id: 'sc-021',
@@ -273,7 +275,7 @@ export const scienceCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
     flavorText: 'Explorer le cerveau humain.',
-    image: 'science/sc-021.jpg'
+    image: 'science/sc-021.jpg',
   },
   {
     id: 'sc-022',
@@ -286,7 +288,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Quand vous jouez une carte Science, gagnez 1 ressource.',
     flavorText: 'Synthétiser de nouvelles molécules.',
-    image: 'science/sc-022.jpg'
+    image: 'science/sc-022.jpg',
   },
   {
     id: 'sc-023',
@@ -299,7 +301,7 @@ export const scienceCards: Card[] = [
     resilience: 2,
     ability: 'Les cartes Science que vous contrôlez gagnent +1 Productivité.',
     flavorText: 'Créer des machines intelligentes.',
-    image: 'science/sc-023.jpg'
+    image: 'science/sc-023.jpg',
   },
   {
     id: 'sc-024',
@@ -312,7 +314,7 @@ export const scienceCards: Card[] = [
     resilience: 1,
     ability: 'Au début de votre tour, regardez les 2 premières cartes de votre deck.',
     flavorText: 'Explorer les profondeurs marines.',
-    image: 'science/sc-024.jpg'
+    image: 'science/sc-024.jpg',
   },
   {
     id: 'sc-025',
@@ -324,8 +326,8 @@ export const scienceCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, piochez une carte.',
-    flavorText: 'Décoder l\'ADN de la vie.',
-    image: 'science/sc-025.jpg'
+    flavorText: "Décoder l'ADN de la vie.",
+    image: 'science/sc-025.jpg',
   },
   {
     id: 'sc-026',
@@ -337,8 +339,8 @@ export const scienceCards: Card[] = [
     productivity: 1,
     resilience: 1,
     ability: 'Quand cette carte arrive en jeu, regardez les 3 premières cartes de votre deck.',
-    flavorText: 'Comprendre l\'univers.',
-    image: 'science/sc-026.jpg'
+    flavorText: "Comprendre l'univers.",
+    image: 'science/sc-026.jpg',
   },
   {
     id: 'sc-027',
@@ -350,8 +352,8 @@ export const scienceCards: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: 'Au début de votre tour, gagnez 1 ressource.',
-    flavorText: 'Combattre l\'invisible.',
-    image: 'science/sc-027.jpg'
+    flavorText: "Combattre l'invisible.",
+    image: 'science/sc-027.jpg',
   },
   {
     id: 'sc-028',
@@ -364,7 +366,7 @@ export const scienceCards: Card[] = [
     resilience: 2,
     ability: 'Quand cette carte arrive en jeu, vous pouvez regarder votre défausse.',
     flavorText: 'Ressusciter le passé.',
-    image: 'science/sc-028.jpg'
+    image: 'science/sc-028.jpg',
   },
   {
     id: 'sc-029',
@@ -376,8 +378,8 @@ export const scienceCards: Card[] = [
     productivity: 2,
     resilience: 1,
     ability: 'Quand vous jouez une carte Science, piochez une carte.',
-    flavorText: 'L\'infiniment petit recèle un pouvoir infini.',
-    image: 'science/sc-029.jpg'
+    flavorText: "L'infiniment petit recèle un pouvoir infini.",
+    image: 'science/sc-029.jpg',
   },
   {
     id: 'sc-030',
@@ -390,7 +392,7 @@ export const scienceCards: Card[] = [
     resilience: 2,
     ability: 'Au début de votre tour, une carte ciblée gagne +1 Résilience.',
     flavorText: 'Protéger les écosystèmes.',
-    image: 'science/sc-030.jpg'
+    image: 'science/sc-030.jpg',
   },
 
   // Uncommon (31-50)
@@ -405,7 +407,7 @@ export const scienceCards: Card[] = [
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, piochez 2 cartes.',
     flavorText: 'La recherche est une quête sans fin.',
-    image: 'science/sc-031.jpg'
+    image: 'science/sc-031.jpg',
   },
   {
     id: 'sc-032',
@@ -418,7 +420,7 @@ export const scienceCards: Card[] = [
     resilience: 4,
     ability: 'Les autres cartes Science que vous contrôlez gagnent +2 Productivité.',
     flavorText: 'Transmettre le savoir.',
-    image: 'science/sc-032.jpg'
+    image: 'science/sc-032.jpg',
   },
   {
     id: 'sc-033',
@@ -431,7 +433,7 @@ export const scienceCards: Card[] = [
     resilience: 3,
     ability: 'Une fois par tour, cherchez une carte Science dans votre deck.',
     flavorText: 'Coordonner la recherche.',
-    image: 'science/sc-033.jpg'
+    image: 'science/sc-033.jpg',
   },
   {
     id: 'sc-034',
@@ -444,7 +446,7 @@ export const scienceCards: Card[] = [
     resilience: 3,
     ability: 'Au début de votre tour, gagnez 2 ressources.',
     flavorText: 'Innover sans cesse.',
-    image: 'science/sc-034.jpg'
+    image: 'science/sc-034.jpg',
   },
   {
     id: 'sc-035',
@@ -457,7 +459,7 @@ export const scienceCards: Card[] = [
     resilience: 3,
     ability: 'Quand vous jouez une carte Science, piochez une carte.',
     flavorText: 'Décrypter les secrets de la vie.',
-    image: 'science/sc-035.jpg'
+    image: 'science/sc-035.jpg',
   },
   {
     id: 'sc-036',
@@ -468,9 +470,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 3,
-    ability: 'Quand cette carte arrive en jeu, regardez les 6 premières cartes de votre deck et mettez-en une dans votre main.',
-    flavorText: 'Explorer l\'infiniment petit.',
-    image: 'science/sc-036.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, regardez les 6 premières cartes de votre deck et mettez-en une dans votre main.',
+    flavorText: "Explorer l'infiniment petit.",
+    image: 'science/sc-036.jpg',
   },
   {
     id: 'sc-037',
@@ -483,7 +486,7 @@ export const scienceCards: Card[] = [
     resilience: 3,
     ability: 'Les cartes Science dans votre main coûtent 1 de moins à jouer.',
     flavorText: 'Créer des esprits artificiels.',
-    image: 'science/sc-037.jpg'
+    image: 'science/sc-037.jpg',
   },
   {
     id: 'sc-038',
@@ -496,7 +499,7 @@ export const scienceCards: Card[] = [
     resilience: 4,
     ability: 'Quand vous jouez une carte Science, gagnez 2 ressources.',
     flavorText: 'Maîtriser les réactions.',
-    image: 'science/sc-038.jpg'
+    image: 'science/sc-038.jpg',
   },
   {
     id: 'sc-039',
@@ -508,8 +511,8 @@ export const scienceCards: Card[] = [
     productivity: 3,
     resilience: 3,
     ability: 'Au début de votre tour, regardez les 4 premières cartes de votre deck.',
-    flavorText: 'Cartographier l\'univers.',
-    image: 'science/sc-039.jpg'
+    flavorText: "Cartographier l'univers.",
+    image: 'science/sc-039.jpg',
   },
   {
     id: 'sc-040',
@@ -522,7 +525,7 @@ export const scienceCards: Card[] = [
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, piochez 2 cartes et gagnez 2 ressources.',
     flavorText: 'Réécrire le code de la vie.',
-    image: 'science/sc-040.jpg'
+    image: 'science/sc-040.jpg',
   },
   {
     id: 'sc-041',
@@ -535,7 +538,7 @@ export const scienceCards: Card[] = [
     resilience: 4,
     ability: 'Quand vous jouez une carte Science, regardez les 3 premières cartes de votre deck.',
     flavorText: 'Comprendre la conscience.',
-    image: 'science/sc-041.jpg'
+    image: 'science/sc-041.jpg',
   },
   {
     id: 'sc-042',
@@ -547,8 +550,8 @@ export const scienceCards: Card[] = [
     productivity: 4,
     resilience: 3,
     ability: 'Les cartes Science que vous contrôlez gagnent +1 Productivité et +1 Résilience.',
-    flavorText: 'Manipuler l\'échelle atomique.',
-    image: 'science/sc-042.jpg'
+    flavorText: "Manipuler l'échelle atomique.",
+    image: 'science/sc-042.jpg',
   },
   {
     id: 'sc-043',
@@ -560,8 +563,8 @@ export const scienceCards: Card[] = [
     productivity: 3,
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, piochez 2 cartes.',
-    flavorText: 'À l\'intersection de la biologie et de la chimie.',
-    image: 'science/sc-043.jpg'
+    flavorText: "À l'intersection de la biologie et de la chimie.",
+    image: 'science/sc-043.jpg',
   },
   {
     id: 'sc-044',
@@ -574,7 +577,7 @@ export const scienceCards: Card[] = [
     resilience: 4,
     ability: 'Les cartes Science que vous contrôlez gagnent +2 Productivité.',
     flavorText: 'Donner vie aux machines.',
-    image: 'science/sc-044.jpg'
+    image: 'science/sc-044.jpg',
   },
   {
     id: 'sc-045',
@@ -587,7 +590,7 @@ export const scienceCards: Card[] = [
     resilience: 4,
     ability: 'Au début de votre tour, toutes les cartes Science gagnent +1 Résilience.',
     flavorText: 'Combattre les pandémies.',
-    image: 'science/sc-045.jpg'
+    image: 'science/sc-045.jpg',
   },
   {
     id: 'sc-046',
@@ -599,8 +602,8 @@ export const scienceCards: Card[] = [
     productivity: 3,
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, regardez les 5 premières cartes de votre deck.',
-    flavorText: 'Résoudre l\'insolvable.',
-    image: 'science/sc-046.jpg'
+    flavorText: "Résoudre l'insolvable.",
+    image: 'science/sc-046.jpg',
   },
   {
     id: 'sc-047',
@@ -611,9 +614,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 4,
-    ability: 'Au début de votre tour, regardez les 3 premières cartes de votre deck et organisez-les comme vous voulez.',
-    flavorText: 'Prédire l\'avenir climatique.',
-    image: 'science/sc-047.jpg'
+    ability:
+      'Au début de votre tour, regardez les 3 premières cartes de votre deck et organisez-les comme vous voulez.',
+    flavorText: "Prédire l'avenir climatique.",
+    image: 'science/sc-047.jpg',
   },
   {
     id: 'sc-048',
@@ -626,7 +630,7 @@ export const scienceCards: Card[] = [
     resilience: 3,
     ability: 'Quand vous jouez une carte Science, gagnez 2 ressources.',
     flavorText: 'Façonner la vie.',
-    image: 'science/sc-048.jpg'
+    image: 'science/sc-048.jpg',
   },
   {
     id: 'sc-049',
@@ -639,7 +643,7 @@ export const scienceCards: Card[] = [
     resilience: 3,
     ability: 'Quand cette carte arrive en jeu, piochez 3 cartes.',
     flavorText: 'Déchiffrer les mystères cosmiques.',
-    image: 'science/sc-049.jpg'
+    image: 'science/sc-049.jpg',
   },
   {
     id: 'sc-050',
@@ -650,9 +654,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 4,
     resilience: 4,
-    ability: 'Une fois par tour, cherchez une carte Science dans votre deck et ajoutez-la à votre main.',
-    flavorText: 'Diriger l\'innovation.',
-    image: 'science/sc-050.jpg'
+    ability:
+      'Une fois par tour, cherchez une carte Science dans votre deck et ajoutez-la à votre main.',
+    flavorText: "Diriger l'innovation.",
+    image: 'science/sc-050.jpg',
   },
 
   // Rare (51-80)
@@ -665,9 +670,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Les cartes Science que vous contrôlez gagnent +3 Productivité. Au début de votre tour, piochez 2 cartes.',
+    ability:
+      'Les cartes Science que vous contrôlez gagnent +3 Productivité. Au début de votre tour, piochez 2 cartes.',
     flavorText: 'Orchestrer la découverte.',
-    image: 'science/sc-051.jpg'
+    image: 'science/sc-051.jpg',
   },
   {
     id: 'sc-052',
@@ -678,22 +684,23 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, piochez 4 cartes et gagnez 4 ressources. Les cartes Science gagnent +2 Productivité.',
-    flavorText: 'L\'excellence scientifique reconnue.',
-    image: 'science/sc-052.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, piochez 4 cartes et gagnez 4 ressources. Les cartes Science gagnent +2 Productivité.',
+    flavorText: "L'excellence scientifique reconnue.",
+    image: 'science/sc-052.jpg',
   },
   {
     id: 'sc-053',
-    name: 'Directeur de l\'Institut de Recherche',
+    name: "Directeur de l'Institut de Recherche",
     domain: Domain.Science,
     type: CardType.Job,
     cost: 6,
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Au début de votre tour, cherchez jusqu\'à 2 cartes Science dans votre deck.',
+    ability: "Au début de votre tour, cherchez jusqu'à 2 cartes Science dans votre deck.",
     flavorText: 'Guider les plus brillants esprits.',
-    image: 'science/sc-053.jpg'
+    image: 'science/sc-053.jpg',
   },
   {
     id: 'sc-054',
@@ -704,9 +711,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, regardez toutes les cartes de votre deck et mettez-en jusqu\'à 3 dans votre main.',
+    ability:
+      "Quand cette carte arrive en jeu, regardez toutes les cartes de votre deck et mettez-en jusqu'à 3 dans votre main.",
     flavorText: 'Explorer les paradoxes quantiques.',
-    image: 'science/sc-054.jpg'
+    image: 'science/sc-054.jpg',
   },
   {
     id: 'sc-055',
@@ -717,9 +725,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Science dans votre main coûtent 2 de moins à jouer. Quand vous jouez une carte Science, piochez une carte.',
+    ability:
+      'Les cartes Science dans votre main coûtent 2 de moins à jouer. Quand vous jouez une carte Science, piochez une carte.',
     flavorText: 'Créer une intelligence supérieure.',
-    image: 'science/sc-055.jpg'
+    image: 'science/sc-055.jpg',
   },
   {
     id: 'sc-056',
@@ -730,9 +739,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, cherchez jusqu\'à 3 cartes Science dans votre deck et votre défausse.',
-    flavorText: 'Réécrire l\'évolution.',
-    image: 'science/sc-056.jpg'
+    ability:
+      "Quand cette carte arrive en jeu, cherchez jusqu'à 3 cartes Science dans votre deck et votre défausse.",
+    flavorText: "Réécrire l'évolution.",
+    image: 'science/sc-056.jpg',
   },
   {
     id: 'sc-057',
@@ -745,7 +755,7 @@ export const scienceCards: Card[] = [
     resilience: 5,
     ability: 'Quand vous jouez une carte Science, gagnez 3 ressources et piochez une carte.',
     flavorText: 'Découvrir de nouvelles molécules.',
-    image: 'science/sc-057.jpg'
+    image: 'science/sc-057.jpg',
   },
   {
     id: 'sc-058',
@@ -756,9 +766,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Science que vous contrôlez gagnent +3 Productivité et +2 Résilience. Au début de votre tour, piochez 2 cartes.',
+    ability:
+      'Les cartes Science que vous contrôlez gagnent +3 Productivité et +2 Résilience. Au début de votre tour, piochez 2 cartes.',
     flavorText: 'Explorer les particules fondamentales.',
-    image: 'science/sc-058.jpg'
+    image: 'science/sc-058.jpg',
   },
   {
     id: 'sc-059',
@@ -769,9 +780,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, piochez 3 cartes pour chaque carte Science que vous contrôlez (maximum 6).',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 3 cartes pour chaque carte Science que vous contrôlez (maximum 6).',
     flavorText: 'Cartographier la vie elle-même.',
-    image: 'science/sc-059.jpg'
+    image: 'science/sc-059.jpg',
   },
   {
     id: 'sc-060',
@@ -782,9 +794,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Au début de votre tour, regardez les 7 premières cartes de votre deck et mettez-en jusqu\'à 3 dans votre main.',
-    flavorText: 'Conquérir l\'espace.',
-    image: 'science/sc-060.jpg'
+    ability:
+      "Au début de votre tour, regardez les 7 premières cartes de votre deck et mettez-en jusqu'à 3 dans votre main.",
+    flavorText: "Conquérir l'espace.",
+    image: 'science/sc-060.jpg',
   },
   {
     id: 'sc-061',
@@ -795,9 +808,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand vous jouez une carte Science, regardez les 5 premières cartes de votre deck et mettez-en une dans votre main.',
+    ability:
+      'Quand vous jouez une carte Science, regardez les 5 premières cartes de votre deck et mettez-en une dans votre main.',
     flavorText: 'Décoder la conscience humaine.',
-    image: 'science/sc-061.jpg'
+    image: 'science/sc-061.jpg',
   },
   {
     id: 'sc-062',
@@ -808,35 +822,38 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 7,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, gagnez 5 ressources. Au début de votre tour, gagnez 3 ressources.',
+    ability:
+      'Quand cette carte arrive en jeu, gagnez 5 ressources. Au début de votre tour, gagnez 3 ressources.',
     flavorText: 'Capturer le pouvoir du soleil.',
-    image: 'science/sc-062.jpg'
+    image: 'science/sc-062.jpg',
   },
   {
     id: 'sc-063',
-    name: 'Directeur de l\'OMS',
+    name: "Directeur de l'OMS",
     domain: Domain.Science,
     type: CardType.Job,
     cost: 6,
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Les cartes Science que vous contrôlez ne peuvent pas être ciblées par les effets adverses.',
+    ability:
+      'Les cartes Science que vous contrôlez ne peuvent pas être ciblées par les effets adverses.',
     flavorText: 'Protéger la santé mondiale.',
-    image: 'science/sc-063.jpg'
+    image: 'science/sc-063.jpg',
   },
   {
     id: 'sc-064',
-    name: 'Pionnier de l\'Informatique Quantique',
+    name: "Pionnier de l'Informatique Quantique",
     domain: Domain.Science,
     type: CardType.Job,
     cost: 7,
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 5,
-    ability: 'Les cartes Science dans votre main coûtent 3 de moins. Quand vous jouez une carte Science, piochez 2 cartes.',
+    ability:
+      'Les cartes Science dans votre main coûtent 3 de moins. Quand vous jouez une carte Science, piochez 2 cartes.',
     flavorText: 'Dépasser les limites du calcul.',
-    image: 'science/sc-064.jpg'
+    image: 'science/sc-064.jpg',
   },
   {
     id: 'sc-065',
@@ -849,7 +866,7 @@ export const scienceCards: Card[] = [
     resilience: 5,
     ability: 'Les cartes Science que vous contrôlez gagnent +2 Productivité et +2 Résilience.',
     flavorText: 'Construire atome par atome.',
-    image: 'science/sc-065.jpg'
+    image: 'science/sc-065.jpg',
   },
   {
     id: 'sc-066',
@@ -860,9 +877,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Au début de votre tour, piochez 3 cartes et gagnez 3 ressources. Les autres cartes Science gagnent +2 Productivité.',
+    ability:
+      'Au début de votre tour, piochez 3 cartes et gagnez 3 ressources. Les autres cartes Science gagnent +2 Productivité.',
     flavorText: 'Former les génies de demain.',
-    image: 'science/sc-066.jpg'
+    image: 'science/sc-066.jpg',
   },
   {
     id: 'sc-067',
@@ -875,7 +893,7 @@ export const scienceCards: Card[] = [
     resilience: 5,
     ability: 'Quand cette carte arrive en jeu, regardez toutes les cartes de votre deck.',
     flavorText: 'Comprendre le Big Bang.',
-    image: 'science/sc-067.jpg'
+    image: 'science/sc-067.jpg',
   },
   {
     id: 'sc-068',
@@ -886,9 +904,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, vous pouvez jouer jusqu\'à 2 cartes Science depuis votre main sans payer leur coût.',
+    ability:
+      "Quand cette carte arrive en jeu, vous pouvez jouer jusqu'à 2 cartes Science depuis votre main sans payer leur coût.",
     flavorText: 'Éditer le code de la vie.',
-    image: 'science/sc-068.jpg'
+    image: 'science/sc-068.jpg',
   },
   {
     id: 'sc-069',
@@ -901,7 +920,7 @@ export const scienceCards: Card[] = [
     resilience: 6,
     ability: 'Les cartes Science que vous contrôlez sont indestructibles.',
     flavorText: 'La plus ancienne société scientifique.',
-    image: 'science/sc-069.jpg'
+    image: 'science/sc-069.jpg',
   },
   {
     id: 'sc-070',
@@ -912,9 +931,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, piochez 5 cartes. Les cartes que vous jouez ce tour-ci coûtent 2 de moins.',
-    flavorText: 'Révéler l\'invisible.',
-    image: 'science/sc-070.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, piochez 5 cartes. Les cartes que vous jouez ce tour-ci coûtent 2 de moins.',
+    flavorText: "Révéler l'invisible.",
+    image: 'science/sc-070.jpg',
   },
   {
     id: 'sc-071',
@@ -927,20 +947,21 @@ export const scienceCards: Card[] = [
     resilience: 5,
     ability: 'Quand vous jouez une carte Science, créez un jeton de carte Science 2/2.',
     flavorText: 'Créer la vie synthétique.',
-    image: 'science/sc-071.jpg'
+    image: 'science/sc-071.jpg',
   },
   {
     id: 'sc-072',
-    name: 'Directeur de l\'ESA',
+    name: "Directeur de l'ESA",
     domain: Domain.Science,
     type: CardType.Job,
     cost: 7,
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Au début de votre tour, cherchez jusqu\'à 3 cartes dans votre deck et ajoutez-les à votre main.',
+    ability:
+      "Au début de votre tour, cherchez jusqu'à 3 cartes dans votre deck et ajoutez-les à votre main.",
     flavorText: 'Agence Spatiale Européenne - Explorer le cosmos.',
-    image: 'science/sc-072.jpg'
+    image: 'science/sc-072.jpg',
   },
   {
     id: 'sc-073',
@@ -951,9 +972,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 5,
-    ability: 'Quand cette carte arrive en jeu, regardez les 10 premières cartes de votre deck et organisez-les comme vous voulez.',
+    ability:
+      'Quand cette carte arrive en jeu, regardez les 10 premières cartes de votre deck et organisez-les comme vous voulez.',
     flavorText: 'Résoudre les problèmes du millénaire.',
-    image: 'science/sc-073.jpg'
+    image: 'science/sc-073.jpg',
   },
   {
     id: 'sc-074',
@@ -964,9 +986,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Les cartes Science que vous contrôlez gagnent +3 Productivité. Toutes les cartes dans votre main coûtent 2 de moins.',
+    ability:
+      'Les cartes Science que vous contrôlez gagnent +3 Productivité. Toutes les cartes dans votre main coûtent 2 de moins.',
     flavorText: 'Créer une conscience artificielle.',
-    image: 'science/sc-074.jpg'
+    image: 'science/sc-074.jpg',
   },
   {
     id: 'sc-075',
@@ -977,9 +1000,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 7,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, piochez 4 cartes et gagnez 5 ressources. Les cartes Science coûtent 2 de moins.',
-    flavorText: 'Rendre l\'espace accessible.',
-    image: 'science/sc-075.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, piochez 4 cartes et gagnez 5 ressources. Les cartes Science coûtent 2 de moins.',
+    flavorText: "Rendre l'espace accessible.",
+    image: 'science/sc-075.jpg',
   },
   {
     id: 'sc-076',
@@ -990,13 +1014,14 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 5,
     resilience: 6,
-    ability: 'Au début de votre tour, regardez les 6 premières cartes de votre deck et mettez-en jusqu\'à 4 dans votre main.',
-    flavorText: 'Unifier les forces de l\'univers.',
-    image: 'science/sc-076.jpg'
+    ability:
+      "Au début de votre tour, regardez les 6 premières cartes de votre deck et mettez-en jusqu'à 4 dans votre main.",
+    flavorText: "Unifier les forces de l'univers.",
+    image: 'science/sc-076.jpg',
   },
   {
     id: 'sc-077',
-    name: 'Directeur de l\'Institut Pasteur',
+    name: "Directeur de l'Institut Pasteur",
     domain: Domain.Science,
     type: CardType.Job,
     cost: 6,
@@ -1005,7 +1030,7 @@ export const scienceCards: Card[] = [
     resilience: 6,
     ability: 'Les cartes Science que vous contrôlez gagnent +2 Productivité et +3 Résilience.',
     flavorText: 'Combattre les maladies infectieuses.',
-    image: 'science/sc-077.jpg'
+    image: 'science/sc-077.jpg',
   },
   {
     id: 'sc-078',
@@ -1018,7 +1043,7 @@ export const scienceCards: Card[] = [
     resilience: 5,
     ability: 'Quand vous jouez une carte Science, créez un jeton de carte Science 3/3.',
     flavorText: 'Programmer la vie.',
-    image: 'science/sc-078.jpg'
+    image: 'science/sc-078.jpg',
   },
   {
     id: 'sc-079',
@@ -1029,9 +1054,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Au début de votre tour, piochez 3 cartes et gagnez 4 ressources. Les cartes Science gagnent +3 Productivité.',
-    flavorText: 'L\'excellence scientifique allemande.',
-    image: 'science/sc-079.jpg'
+    ability:
+      'Au début de votre tour, piochez 3 cartes et gagnez 4 ressources. Les cartes Science gagnent +3 Productivité.',
+    flavorText: "L'excellence scientifique allemande.",
+    image: 'science/sc-079.jpg',
   },
   {
     id: 'sc-080',
@@ -1042,9 +1068,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Rare,
     productivity: 6,
     resilience: 6,
-    ability: 'Quand cette carte arrive en jeu, gagnez 10 ressources. Au début de votre tour, gagnez 4 ressources.',
-    flavorText: 'Le Graal de l\'énergie propre.',
-    image: 'science/sc-080.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, gagnez 10 ressources. Au début de votre tour, gagnez 4 ressources.',
+    flavorText: "Le Graal de l'énergie propre.",
+    image: 'science/sc-080.jpg',
   },
 
   // Legendary (81-100)
@@ -1057,9 +1084,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Quand cette carte arrive en jeu, piochez 10 cartes. Les cartes Science que vous contrôlez gagnent +5 Productivité. E=mc².',
-    flavorText: 'L\'imagination est plus importante que le savoir.',
-    image: 'science/sc-081.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, piochez 10 cartes. Les cartes Science que vous contrôlez gagnent +5 Productivité. E=mc².',
+    flavorText: "L'imagination est plus importante que le savoir.",
+    image: 'science/sc-081.jpg',
   },
   {
     id: 'sc-082',
@@ -1070,9 +1098,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 7,
     resilience: 9,
-    ability: 'Les cartes Science que vous contrôlez sont indestructibles et gagnent +4 Productivité et +4 Résilience. Au début de votre tour, piochez 3 cartes.',
+    ability:
+      'Les cartes Science que vous contrôlez sont indestructibles et gagnent +4 Productivité et +4 Résilience. Au début de votre tour, piochez 3 cartes.',
     flavorText: 'Deux fois Prix Nobel - Pionnière de la radioactivité.',
-    image: 'science/sc-082.jpg'
+    image: 'science/sc-082.jpg',
   },
   {
     id: 'sc-083',
@@ -1083,9 +1112,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Au début de votre tour, regardez toutes les cartes de votre deck et organisez-les comme vous voulez. Les cartes Science gagnent +6 Productivité.',
-    flavorText: 'Si j\'ai vu plus loin, c\'est en montant sur les épaules de géants.',
-    image: 'science/sc-083.jpg'
+    ability:
+      'Au début de votre tour, regardez toutes les cartes de votre deck et organisez-les comme vous voulez. Les cartes Science gagnent +6 Productivité.',
+    flavorText: "Si j'ai vu plus loin, c'est en montant sur les épaules de géants.",
+    image: 'science/sc-083.jpg',
   },
   {
     id: 'sc-084',
@@ -1096,9 +1126,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 10,
-    ability: 'Quand cette carte arrive en jeu, piochez 8 cartes. Au début de votre tour, regardez les 10 premières cartes de votre deck.',
-    flavorText: 'Comprendre les trous noirs et l\'univers.',
-    image: 'science/sc-084.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, piochez 8 cartes. Au début de votre tour, regardez les 10 premières cartes de votre deck.',
+    flavorText: "Comprendre les trous noirs et l'univers.",
+    image: 'science/sc-084.jpg',
   },
   {
     id: 'sc-085',
@@ -1109,9 +1140,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Les cartes Science que vous contrôlez gagnent +1 Productivité et +1 Résilience au début de chaque tour. Quand vous jouez une carte Science, piochez 2 cartes.',
-    flavorText: 'L\'évolution par la sélection naturelle.',
-    image: 'science/sc-085.jpg'
+    ability:
+      'Les cartes Science que vous contrôlez gagnent +1 Productivité et +1 Résilience au début de chaque tour. Quand vous jouez une carte Science, piochez 2 cartes.',
+    flavorText: "L'évolution par la sélection naturelle.",
+    image: 'science/sc-085.jpg',
   },
   {
     id: 'sc-086',
@@ -1122,9 +1154,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 10,
     resilience: 8,
-    ability: 'Quand cette carte arrive en jeu, gagnez 10 ressources. Quand vous jouez une carte Science, gagnez 3 ressources et piochez une carte.',
-    flavorText: 'Le génie de l\'électricité.',
-    image: 'science/sc-086.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, gagnez 10 ressources. Quand vous jouez une carte Science, gagnez 3 ressources et piochez une carte.',
+    flavorText: "Le génie de l'électricité.",
+    image: 'science/sc-086.jpg',
   },
   {
     id: 'sc-087',
@@ -1135,9 +1168,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Au début de votre tour, regardez les 8 premières cartes de votre deck et mettez-en jusqu\'à 5 dans votre main. Les cartes Science gagnent +3 Productivité.',
+    ability:
+      "Au début de votre tour, regardez les 8 premières cartes de votre deck et mettez-en jusqu'à 5 dans votre main. Les cartes Science gagnent +3 Productivité.",
     flavorText: 'Et pourtant elle tourne.',
-    image: 'science/sc-087.jpg'
+    image: 'science/sc-087.jpg',
   },
   {
     id: 'sc-088',
@@ -1148,9 +1182,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Les cartes Science dans votre main coûtent 3 de moins. Quand vous jouez une carte Science, piochez 3 cartes.',
-    flavorText: 'Le père de l\'informatique moderne.',
-    image: 'science/sc-088.jpg'
+    ability:
+      'Les cartes Science dans votre main coûtent 3 de moins. Quand vous jouez une carte Science, piochez 3 cartes.',
+    flavorText: "Le père de l'informatique moderne.",
+    image: 'science/sc-088.jpg',
   },
   {
     id: 'sc-089',
@@ -1161,9 +1196,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 7,
     resilience: 9,
-    ability: 'Quand cette carte arrive en jeu, cherchez jusqu\'à 5 cartes Science dans votre deck et votre défausse. Les cartes Science gagnent +4 Productivité.',
-    flavorText: 'Découvrir la structure de l\'ADN.',
-    image: 'science/sc-089.jpg'
+    ability:
+      "Quand cette carte arrive en jeu, cherchez jusqu'à 5 cartes Science dans votre deck et votre défausse. Les cartes Science gagnent +4 Productivité.",
+    flavorText: "Découvrir la structure de l'ADN.",
+    image: 'science/sc-089.jpg',
   },
   {
     id: 'sc-090',
@@ -1174,9 +1210,11 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 8,
-    ability: 'Quand vous jouez une carte Science, piochez 2 cartes et gagnez 2 ressources. Les cartes Science que vous contrôlez gagnent +4 Productivité.',
-    flavorText: 'Si vous ne pouvez pas l\'expliquer simplement, vous ne le comprenez pas assez bien.',
-    image: 'science/sc-090.jpg'
+    ability:
+      'Quand vous jouez une carte Science, piochez 2 cartes et gagnez 2 ressources. Les cartes Science que vous contrôlez gagnent +4 Productivité.',
+    flavorText:
+      "Si vous ne pouvez pas l'expliquer simplement, vous ne le comprenez pas assez bien.",
+    image: 'science/sc-090.jpg',
   },
   {
     id: 'sc-091',
@@ -1187,9 +1225,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Au début de votre tour, regardez les 10 premières cartes de votre deck et mettez-en jusqu\'à 6 dans votre main. Les cartes Science gagnent +3 Productivité.',
-    flavorText: 'Nous sommes faits de poussière d\'étoiles.',
-    image: 'science/sc-091.jpg'
+    ability:
+      "Au début de votre tour, regardez les 10 premières cartes de votre deck et mettez-en jusqu'à 6 dans votre main. Les cartes Science gagnent +3 Productivité.",
+    flavorText: "Nous sommes faits de poussière d'étoiles.",
+    image: 'science/sc-091.jpg',
   },
   {
     id: 'sc-092',
@@ -1200,9 +1239,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Quand cette carte arrive en jeu, cherchez jusqu\'à 6 cartes Science dans votre deck. Les cartes Science que vous contrôlez gagnent +5 Productivité et +5 Résilience.',
-    flavorText: 'Découvrir la double hélice de l\'ADN.',
-    image: 'science/sc-092.jpg'
+    ability:
+      "Quand cette carte arrive en jeu, cherchez jusqu'à 6 cartes Science dans votre deck. Les cartes Science que vous contrôlez gagnent +5 Productivité et +5 Résilience.",
+    flavorText: "Découvrir la double hélice de l'ADN.",
+    image: 'science/sc-092.jpg',
   },
   {
     id: 'sc-093',
@@ -1213,9 +1253,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Les cartes Science que vous contrôlez ne peuvent pas être ciblées ou détruites. Au début de votre tour, piochez 4 cartes et gagnez 5 ressources.',
+    ability:
+      'Les cartes Science que vous contrôlez ne peuvent pas être ciblées ou détruites. Au début de votre tour, piochez 4 cartes et gagnez 5 ressources.',
     flavorText: 'Le père de la physique quantique.',
-    image: 'science/sc-093.jpg'
+    image: 'science/sc-093.jpg',
   },
   {
     id: 'sc-094',
@@ -1226,9 +1267,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Quand cette carte arrive en jeu, piochez 7 cartes. Les cartes Science que vous contrôlez gagnent +4 Productivité et +4 Résilience.',
+    ability:
+      'Quand cette carte arrive en jeu, piochez 7 cartes. Les cartes Science que vous contrôlez gagnent +4 Productivité et +4 Résilience.',
     flavorText: 'Le modèle atomique de Bohr.',
-    image: 'science/sc-094.jpg'
+    image: 'science/sc-094.jpg',
   },
   {
     id: 'sc-095',
@@ -1239,9 +1281,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 9,
-    ability: 'Les cartes Science que vous contrôlez sont indestructibles. Au début de votre tour, toutes les cartes Science gagnent +2 Résilience.',
+    ability:
+      'Les cartes Science que vous contrôlez sont indestructibles. Au début de votre tour, toutes les cartes Science gagnent +2 Résilience.',
     flavorText: 'Sauver des millions de vies par la vaccination.',
-    image: 'science/sc-095.jpg'
+    image: 'science/sc-095.jpg',
   },
   {
     id: 'sc-096',
@@ -1252,9 +1295,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Au début de votre tour, regardez les 12 premières cartes de votre deck et organisez-les comme vous voulez. Les cartes Science gagnent +4 Productivité.',
-    flavorText: 'Le principe d\'incertitude.',
-    image: 'science/sc-096.jpg'
+    ability:
+      'Au début de votre tour, regardez les 12 premières cartes de votre deck et organisez-les comme vous voulez. Les cartes Science gagnent +4 Productivité.',
+    flavorText: "Le principe d'incertitude.",
+    image: 'science/sc-096.jpg',
   },
   {
     id: 'sc-097',
@@ -1265,9 +1309,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Cette carte existe dans deux états simultanément. Quand vous jouez une carte Science, piochez 3 cartes et gagnez 3 ressources.',
+    ability:
+      'Cette carte existe dans deux états simultanément. Quand vous jouez une carte Science, piochez 3 cartes et gagnez 3 ressources.',
     flavorText: 'Le chat de Schrödinger - Mort et vivant à la fois.',
-    image: 'science/sc-097.jpg'
+    image: 'science/sc-097.jpg',
   },
   {
     id: 'sc-098',
@@ -1278,9 +1323,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 7,
     resilience: 10,
-    ability: 'Les cartes Science que vous contrôlez sont indestructibles et gagnent +3 Productivité et +4 Résilience. Au début de votre tour, piochez 3 cartes.',
+    ability:
+      'Les cartes Science que vous contrôlez sont indestructibles et gagnent +3 Productivité et +4 Résilience. Au début de votre tour, piochez 3 cartes.',
     flavorText: 'Révolutionner la primatologie.',
-    image: 'science/sc-098.jpg'
+    image: 'science/sc-098.jpg',
   },
   {
     id: 'sc-099',
@@ -1291,9 +1337,10 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 8,
     resilience: 8,
-    ability: 'Quand cette carte arrive en jeu, regardez toutes les cartes de votre deck et de votre défausse. Au début de votre tour, piochez 5 cartes.',
-    flavorText: 'Découvrir l\'expansion de l\'univers.',
-    image: 'science/sc-099.jpg'
+    ability:
+      'Quand cette carte arrive en jeu, regardez toutes les cartes de votre deck et de votre défausse. Au début de votre tour, piochez 5 cartes.',
+    flavorText: "Découvrir l'expansion de l'univers.",
+    image: 'science/sc-099.jpg',
   },
   {
     id: 'sc-100',
@@ -1304,8 +1351,9 @@ export const scienceCards: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 9,
     resilience: 9,
-    ability: 'Les cartes Science que vous contrôlez gagnent +6 Productivité et +5 Résilience. Au début de votre tour, piochez 5 cartes et gagnez 8 ressources.',
+    ability:
+      'Les cartes Science que vous contrôlez gagnent +6 Productivité et +5 Résilience. Au début de votre tour, piochez 5 cartes et gagnez 8 ressources.',
     flavorText: 'Rendre la science accessible à tous.',
-    image: 'science/sc-100.jpg'
-  }
+    image: 'science/sc-100.jpg',
+  },
 ];

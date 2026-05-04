@@ -43,7 +43,9 @@ export class FieldZoneComponent {
       return this.gameService.isAttacking(card.instanceId);
     }
     if (this.isBlockPhase) {
-      return this.gameService.isBlocking(card.instanceId) || this.selectedBlocker === card.instanceId;
+      return (
+        this.gameService.isBlocking(card.instanceId) || this.selectedBlocker === card.instanceId
+      );
     }
     return false;
   }

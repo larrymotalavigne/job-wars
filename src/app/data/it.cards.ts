@@ -26,8 +26,8 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 0,
     resilience: 2,
-    ability: 'Redirige 1 dégât d\'un Métier vers celui-ci.',
-    flavorText: '« Avez-vous essayé de l\'éteindre et de le rallumer ? »',
+    ability: "Redirige 1 dégât d'un Métier vers celui-ci.",
+    flavorText: "« Avez-vous essayé de l'éteindre et de le rallumer ? »",
     image: 'images/cards/it-002.png',
   },
   {
@@ -53,7 +53,7 @@ export const IT_CARDS: Card[] = [
     productivity: 2,
     resilience: 3,
     ability: 'Annule le prochain Événement qui vous cible.',
-    flavorText: '« Le pare-feu tient. Pour l\'instant. »',
+    flavorText: "« Le pare-feu tient. Pour l'instant. »",
     image: 'images/cards/it-004.png',
   },
   {
@@ -78,7 +78,7 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Rare,
     productivity: 4,
     resilience: 3,
-    ability: 'Regardez les 3 premières cartes de l\'adversaire.',
+    ability: "Regardez les 3 premières cartes de l'adversaire.",
     flavorText: '« Les données ne mentent pas. »',
     image: 'images/cards/it-006.png',
   },
@@ -91,8 +91,8 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Rare,
     productivity: 2,
     resilience: 2,
-    ability: 'Désactive la capacité d\'un Métier ciblé pendant 1 tour.',
-    flavorText: '« Je casse les choses pour que vous n\'ayez pas à le faire. »',
+    ability: "Désactive la capacité d'un Métier ciblé pendant 1 tour.",
+    flavorText: "« Je casse les choses pour que vous n'ayez pas à le faire. »",
     image: 'images/cards/it-007.png',
   },
   {
@@ -105,7 +105,7 @@ export const IT_CARDS: Card[] = [
     productivity: 5,
     resilience: 5,
     ability: 'Tous les Métiers Informatique gagnent +1/+1.',
-    flavorText: '« L\'innovation n\'est pas optionnelle. »',
+    flavorText: "« L'innovation n'est pas optionnelle. »",
     image: 'images/cards/it-008.png',
   },
   {
@@ -117,8 +117,9 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 1,
     resilience: 2,
-    ability: 'Quand embauché : Révélez la carte du dessus de votre deck. Si c\'est un Outil, ajoutez-la à votre main.',
-    flavorText: '« J\'ai trouvé 47 bugs. En une heure. »',
+    ability:
+      "Quand embauché : Révélez la carte du dessus de votre deck. Si c'est un Outil, ajoutez-la à votre main.",
+    flavorText: "« J'ai trouvé 47 bugs. En une heure. »",
     image: 'images/cards/it-012.png',
   },
   {
@@ -143,7 +144,8 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 2,
     resilience: 2,
-    ability: 'Au début de votre tour, un autre Métier Informatique allié gagne +1 Productivité jusqu\'à la fin du tour.',
+    ability:
+      "Au début de votre tour, un autre Métier Informatique allié gagne +1 Productivité jusqu'à la fin du tour.",
     flavorText: '« Le daily stand-up commence dans deux minutes. »',
     image: 'images/cards/it-014.png',
   },
@@ -156,8 +158,8 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 1,
     resilience: 3,
-    ability: 'Tant qu\'il est en jeu, vos adversaires ne peuvent pas regarder vos cartes en main.',
-    flavorText: '« Le câblage, c\'est un art. »',
+    ability: "Tant qu'il est en jeu, vos adversaires ne peuvent pas regarder vos cartes en main.",
+    flavorText: "« Le câblage, c'est un art. »",
     image: 'images/cards/it-015.png',
   },
   {
@@ -169,7 +171,8 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 3,
-    ability: 'Quand embauché : Consultez les 2 premières cartes de votre deck et replacez-les dans l\'ordre de votre choix.',
+    ability:
+      "Quand embauché : Consultez les 2 premières cartes de votre deck et replacez-les dans l'ordre de votre choix.",
     flavorText: '« Ne touchez pas à la base de prod. Jamais. »',
     image: 'images/cards/it-016.png',
   },
@@ -182,8 +185,9 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Quand embauché : Choisissez un Outil allié. Il gagne un effet supplémentaire : « Piochez 1 carte quand activé. »',
-    flavorText: '« L\'utilisateur a toujours raison. Enfin, presque. »',
+    ability:
+      'Quand embauché : Choisissez un Outil allié. Il gagne un effet supplémentaire : « Piochez 1 carte quand activé. »',
+    flavorText: "« L'utilisateur a toujours raison. Enfin, presque. »",
     image: 'images/cards/it-017.png',
   },
   {
@@ -221,7 +225,8 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Peut attaquer directement le Budget adverse si l\'adversaire contrôle 2 Métiers ou moins.',
+    ability:
+      "Peut attaquer directement le Budget adverse si l'adversaire contrôle 2 Métiers ou moins.",
     flavorText: '« Compatible iOS et Android. Ne me demandez pas pour Windows Phone. »',
     image: 'images/cards/it-020.png',
   },
@@ -234,7 +239,8 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 3,
-    ability: 'Quand un Événement adverse est joué, vous pouvez révéler cette carte de votre main pour réduire son effet de moitié.',
+    ability:
+      'Quand un Événement adverse est joué, vous pouvez révéler cette carte de votre main pour réduire son effet de moitié.',
     flavorText: '« Alerte niveau 3. On passe en mode incident. »',
     image: 'images/cards/it-021.png',
   },
@@ -248,7 +254,7 @@ export const IT_CARDS: Card[] = [
     productivity: 2,
     resilience: 4,
     ability: 'Les autres Métiers Informatique alliés gagnent +1 Résilience.',
-    flavorText: '« Le Gantt dit qu\'on est dans les temps. Le Gantt ment. »',
+    flavorText: "« Le Gantt dit qu'on est dans les temps. Le Gantt ment. »",
     image: 'images/cards/it-022.png',
   },
   {
@@ -260,8 +266,9 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 6,
     resilience: 5,
-    ability: 'Quand embauché : Jouez gratuitement un Outil de votre main. Vos Outils ont leurs effets doublés.',
-    flavorText: '« Tous les systèmes convergent. L\'architecture est parfaite. »',
+    ability:
+      'Quand embauché : Jouez gratuitement un Outil de votre main. Vos Outils ont leurs effets doublés.',
+    flavorText: "« Tous les systèmes convergent. L'architecture est parfaite. »",
     image: 'images/cards/it-023.png',
   },
 
@@ -308,7 +315,8 @@ export const IT_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 3,
     rarity: Rarity.Common,
-    ability: 'Une fois par tour, consultez la carte du dessus de votre deck. Vous pouvez la placer en dessous.',
+    ability:
+      'Une fois par tour, consultez la carte du dessus de votre deck. Vous pouvez la placer en dessous.',
     flavorText: '« SELECT * FROM solutions WHERE ça_marche = true; »',
     image: 'images/cards/it-025.png',
   },
@@ -320,7 +328,7 @@ export const IT_CARDS: Card[] = [
     cost: 2,
     rarity: Rarity.Common,
     ability: 'Quand vous jouez un Métier Informatique, piochez 1 carte.',
-    flavorText: '« Point d\'entrée unique. Zéro latence. »',
+    flavorText: "« Point d'entrée unique. Zéro latence. »",
     image: 'images/cards/it-026.png',
   },
   {
@@ -330,7 +338,8 @@ export const IT_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 2,
     rarity: Rarity.Common,
-    ability: 'Regardez les 3 premières cartes de votre deck. Replacez-les dans l\'ordre de votre choix.',
+    ability:
+      "Regardez les 3 premières cartes de votre deck. Replacez-les dans l'ordre de votre choix.",
     flavorText: '« O(n log n) — on ne fait pas mieux. »',
     image: 'images/cards/it-027.png',
   },
@@ -352,7 +361,8 @@ export const IT_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 1,
     rarity: Rarity.Common,
-    ability: 'Vos Métiers Informatique ne peuvent pas être ciblés par les capacités adverses ce tour.',
+    ability:
+      'Vos Métiers Informatique ne peuvent pas être ciblés par les capacités adverses ce tour.',
     flavorText: '« Connexion chiffrée de bout en bout. »',
     image: 'images/cards/it-029.png',
   },
@@ -363,7 +373,8 @@ export const IT_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 5,
     rarity: Rarity.Rare,
-    ability: 'Au début de votre tour, regardez la main de l\'adversaire. Vous pouvez copier la capacité d\'un de ses Métiers jusqu\'à la fin du tour.',
+    ability:
+      "Au début de votre tour, regardez la main de l'adversaire. Vous pouvez copier la capacité d'un de ses Métiers jusqu'à la fin du tour.",
     flavorText: '« Le réseau neuronal dépasse ses créateurs. »',
     image: 'images/cards/it-030.png',
   },
@@ -374,7 +385,8 @@ export const IT_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 4,
     rarity: Rarity.Uncommon,
-    ability: 'Quand un de vos Métiers Informatique est licencié, vous pouvez en réembaucher un de coût 3 ou moins depuis votre défausse sans payer son coût.',
+    ability:
+      'Quand un de vos Métiers Informatique est licencié, vous pouvez en réembaucher un de coût 3 ou moins depuis votre défausse sans payer son coût.',
     flavorText: '« Orchestration automatique. Un pod tombe, un autre se lève. »',
     image: 'images/cards/it-031.png',
   },
@@ -396,7 +408,8 @@ export const IT_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 6,
     rarity: Rarity.Legendary,
-    ability: 'Vos Outils ne peuvent pas être détruits. Une fois par tour, annulez un Événement ciblant un de vos Métiers.',
+    ability:
+      'Vos Outils ne peuvent pas être détruits. Une fois par tour, annulez un Événement ciblant un de vos Métiers.',
     flavorText: '« Immuable, décentralisé, incassable. Du moins en théorie. »',
     image: 'images/cards/it-033.png',
   },
@@ -422,7 +435,8 @@ export const IT_CARDS: Card[] = [
     type: CardType.Event,
     cost: 2,
     rarity: Rarity.Common,
-    effect: 'Choisissez un Métier Informatique allié. Il gagne +2 Productivité et +2 Résilience jusqu\'à la fin du tour.',
+    effect:
+      "Choisissez un Métier Informatique allié. Il gagne +2 Productivité et +2 Résilience jusqu'à la fin du tour.",
     flavorText: '« Patch déployé. Redémarrage en cours… »',
     image: 'images/cards/it-034.png',
   },
@@ -433,7 +447,7 @@ export const IT_CARDS: Card[] = [
     type: CardType.Event,
     cost: 3,
     rarity: Rarity.Common,
-    effect: 'Tous les Métiers en jeu perdent -2 Productivité jusqu\'à la fin du tour.',
+    effect: "Tous les Métiers en jeu perdent -2 Productivité jusqu'à la fin du tour.",
     flavorText: '« Erreur 503. Service indisponible. Priez. »',
     image: 'images/cards/it-035.png',
   },
@@ -444,8 +458,9 @@ export const IT_CARDS: Card[] = [
     type: CardType.Event,
     cost: 3,
     rarity: Rarity.Uncommon,
-    effect: 'Piochez 3 cartes. Si vous contrôlez au moins 3 Métiers Informatique, piochez 4 cartes à la place.',
-    flavorText: '« 48 heures sans dormir. Le code n\'a jamais été aussi beau. »',
+    effect:
+      'Piochez 3 cartes. Si vous contrôlez au moins 3 Métiers Informatique, piochez 4 cartes à la place.',
+    flavorText: "« 48 heures sans dormir. Le code n'a jamais été aussi beau. »",
     image: 'images/cards/it-036.png',
   },
   {
@@ -455,7 +470,7 @@ export const IT_CARDS: Card[] = [
     type: CardType.Event,
     cost: 1,
     rarity: Rarity.Common,
-    effect: 'Choisissez un Métier adverse. Il perd toute sa Productivité jusqu\'à la fin du tour.',
+    effect: "Choisissez un Métier adverse. Il perd toute sa Productivité jusqu'à la fin du tour.",
     flavorText: '« NullPointerException à la ligne 1. Bonne chance. »',
     image: 'images/cards/it-037.png',
   },
@@ -466,8 +481,9 @@ export const IT_CARDS: Card[] = [
     type: CardType.Event,
     cost: 4,
     rarity: Rarity.Uncommon,
-    effect: 'Embauchez un Métier Informatique de coût 4 ou moins depuis votre main sans payer son coût.',
-    flavorText: '« Vendredi soir, 23 h. On déploie. Qu\'est-ce qui pourrait mal tourner ? »',
+    effect:
+      'Embauchez un Métier Informatique de coût 4 ou moins depuis votre main sans payer son coût.',
+    flavorText: "« Vendredi soir, 23 h. On déploie. Qu'est-ce qui pourrait mal tourner ? »",
     image: 'images/cards/it-038.png',
   },
   {
@@ -477,8 +493,9 @@ export const IT_CARDS: Card[] = [
     type: CardType.Event,
     cost: 5,
     rarity: Rarity.Rare,
-    effect: 'Détruisez tous les Outils en jeu. Puis piochez 1 carte pour chaque Outil détruit de cette façon.',
-    flavorText: '« On-premise, c\'est fini. Bienvenue dans le cloud. »',
+    effect:
+      'Détruisez tous les Outils en jeu. Puis piochez 1 carte pour chaque Outil détruit de cette façon.',
+    flavorText: "« On-premise, c'est fini. Bienvenue dans le cloud. »",
     image: 'images/cards/it-039.png',
   },
   {
@@ -488,8 +505,8 @@ export const IT_CARDS: Card[] = [
     type: CardType.Event,
     cost: 3,
     rarity: Rarity.Uncommon,
-    effect: 'Regardez la main de l\'adversaire. Choisissez 1 carte : elle est défaussée.',
-    flavorText: '« Rapport d\'audit : 12 failles critiques, 43 warnings. On en reparle lundi. »',
+    effect: "Regardez la main de l'adversaire. Choisissez 1 carte : elle est défaussée.",
+    flavorText: "« Rapport d'audit : 12 failles critiques, 43 warnings. On en reparle lundi. »",
     image: 'images/cards/it-040.png',
   },
   // ── Extended Collection (it-041 → it-100) ──
@@ -555,7 +572,7 @@ export const IT_CARDS: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Vos Métiers IT coûtent 1 de moins.',
-    flavorText: '« L\'interface doit être intuitive, pas compliquée. »',
+    flavorText: "« L'interface doit être intuitive, pas compliquée. »",
     image: 'images/cards/it-045.png',
   },
   {
@@ -581,7 +598,7 @@ export const IT_CARDS: Card[] = [
     productivity: 1,
     resilience: 3,
     ability: 'Annule la prochaine attaque contre vous.',
-    flavorText: '« J\'ai trouvé un bug critique en prod. »',
+    flavorText: "« J'ai trouvé un bug critique en prod. »",
     image: 'images/cards/it-047.png',
   },
   {
@@ -646,7 +663,7 @@ export const IT_CARDS: Card[] = [
     productivity: 3,
     resilience: 5,
     ability: 'Construction',
-    flavorText: '« Uptime 99.99%. C\'est notre objectif. »',
+    flavorText: "« Uptime 99.99%. C'est notre objectif. »",
     image: 'images/cards/it-052.png',
   },
   {
@@ -659,7 +676,7 @@ export const IT_CARDS: Card[] = [
     productivity: 3,
     resilience: 2,
     ability: '',
-    flavorText: '« Les APIs REST, c\'est mon quotidien. »',
+    flavorText: "« Les APIs REST, c'est mon quotidien. »",
     image: 'images/cards/it-053.png',
   },
   {
@@ -697,8 +714,8 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Rare,
     productivity: 4,
     resilience: 3,
-    ability: 'Quand embauché : Regardez 3 cartes du deck, rangez-les dans l\'ordre de votre choix.',
-    flavorText: '« Le modèle s\'entraîne encore. Patience. »',
+    ability: "Quand embauché : Regardez 3 cartes du deck, rangez-les dans l'ordre de votre choix.",
+    flavorText: "« Le modèle s'entraîne encore. Patience. »",
     image: 'images/cards/it-056.png',
   },
   {
@@ -763,7 +780,7 @@ export const IT_CARDS: Card[] = [
     productivity: 2,
     resilience: 2,
     ability: 'Quand embauché : Gagnez +1 Budget ce tour.',
-    flavorText: '« Facturation à l\'heure. Vous signez où ? »',
+    flavorText: "« Facturation à l'heure. Vous signez où ? »",
     image: 'images/cards/it-061.png',
   },
   {
@@ -788,7 +805,7 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Rare,
     productivity: 3,
     resilience: 2,
-    ability: 'Quand embauché : Copiez la capacité d\'un Métier adverse.',
+    ability: "Quand embauché : Copiez la capacité d'un Métier adverse.",
     flavorText: '« Je vais décompiler ce binaire. »',
     image: 'images/cards/it-063.png',
   },
@@ -802,7 +819,7 @@ export const IT_CARDS: Card[] = [
     productivity: 3,
     resilience: 3,
     ability: '',
-    flavorText: '« C/C++ bas niveau. L\'efficacité avant tout. »',
+    flavorText: "« C/C++ bas niveau. L'efficacité avant tout. »",
     image: 'images/cards/it-064.png',
   },
   {
@@ -1023,7 +1040,7 @@ export const IT_CARDS: Card[] = [
     productivity: 3,
     resilience: 3,
     ability: 'Vos Outils IT coûtent 2 de moins.',
-    flavorText: '« Automatisez tout ce qui peut l\'être. »',
+    flavorText: "« Automatisez tout ce qui peut l'être. »",
     image: 'images/cards/it-081.png',
   },
   {
@@ -1036,7 +1053,7 @@ export const IT_CARDS: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Quand embauché : Piochez 1 carte.',
-    flavorText: '« Première page Google. C\'est non négociable. »',
+    flavorText: "« Première page Google. C'est non négociable. »",
     image: 'images/cards/it-082.png',
   },
   {
@@ -1075,7 +1092,7 @@ export const IT_CARDS: Card[] = [
     productivity: 6,
     resilience: 5,
     ability: 'Quand embauché : Piochez 3 cartes. Vos Événements coûtent 2 de moins.',
-    flavorText: '« L\'informatique quantique change tout. »',
+    flavorText: "« L'informatique quantique change tout. »",
     image: 'images/cards/it-085.png',
   },
   {
@@ -1165,7 +1182,7 @@ export const IT_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 2,
     resilience: 1,
-    ability: 'Quand embauché : Réduisez le coût d\'un Métier dans votre main de 1.',
+    ability: "Quand embauché : Réduisez le coût d'un Métier dans votre main de 1.",
     flavorText: '« Drag and drop. Application prête. »',
     image: 'images/cards/it-092.png',
   },

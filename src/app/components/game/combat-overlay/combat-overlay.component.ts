@@ -45,17 +45,17 @@ export class CombatOverlayComponent {
   }
 
   get attackerJobs(): CardInstance[] {
-    return this.attacker.field.filter(c => isJobCard(c.card));
+    return this.attacker.field.filter((c) => isJobCard(c.card));
   }
 
   get defenderJobs(): CardInstance[] {
-    return this.defender.field.filter(c => isJobCard(c.card));
+    return this.defender.field.filter((c) => isJobCard(c.card));
   }
 
   get attackerCards(): CardInstance[] {
     if (!this.state.combat) return [];
     return this.state.combat.attackers
-      .map(a => this.findCard(a.attackerInstanceId))
+      .map((a) => this.findCard(a.attackerInstanceId))
       .filter((c): c is CardInstance => c !== null);
   }
 
@@ -107,14 +107,16 @@ export class CombatOverlayComponent {
   }
 
   getBlockerFor(attackerInstanceId: string): CardInstance | null {
-    const assignment = this.state.combat?.blockers.find(b => b.attackerInstanceId === attackerInstanceId);
+    const assignment = this.state.combat?.blockers.find(
+      (b) => b.attackerInstanceId === attackerInstanceId,
+    );
     if (!assignment) return null;
     return this.findCard(assignment.blockerInstanceId);
   }
 
   private findCard(instanceId: string): CardInstance | null {
     for (const p of [this.state.player1, this.state.player2]) {
-      const card = p.field.find(c => c.instanceId === instanceId);
+      const card = p.field.find((c) => c.instanceId === instanceId);
       if (card) return card;
     }
     return null;

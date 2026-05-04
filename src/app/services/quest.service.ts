@@ -1,6 +1,13 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { Quest, QuestType, DailyQuestState, DailyReward, QuestTemplate, QuestMetadata } from '../models/quest.model';
+import {
+  Quest,
+  QuestType,
+  DailyQuestState,
+  DailyReward,
+  QuestTemplate,
+  QuestMetadata,
+} from '../models/quest.model';
 import { Domain } from '../models/card.model';
 import { CurrencyService } from './currency.service';
 import { BattlePassService } from './battle-pass.service';
@@ -10,7 +17,7 @@ import { BattlePassService } from './battle-pass.service';
  * Manages daily quests, login streaks, and quest rewards
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class QuestService {
   private readonly STORAGE_KEY = 'jobwars-quests';
@@ -23,7 +30,7 @@ export class QuestService {
 
   constructor(
     private currencyService: CurrencyService,
-    private battlePassService: BattlePassService
+    private battlePassService: BattlePassService,
   ) {}
 
   /**
@@ -117,7 +124,7 @@ export class QuestService {
    */
   claimQuest(questId: string): boolean {
     const state = this.getState();
-    const quest = state.dailyQuests.find(q => q.id === questId);
+    const quest = state.dailyQuests.find((q) => q.id === questId);
 
     if (!quest) {
       console.warn('Quest not found:', questId);
@@ -158,7 +165,7 @@ export class QuestService {
    */
   claimDailyReward(day: number): boolean {
     const state = this.getState();
-    const reward = state.dailyRewards.find(r => r.day === day);
+    const reward = state.dailyRewards.find((r) => r.day === day);
 
     if (!reward) {
       console.warn('Daily reward not found:', day);
@@ -246,12 +253,13 @@ export class QuestService {
     const selectedTemplates: QuestTemplate[] = [];
 
     // Select 3 random quests (1 easy, 1 medium, 1 hard)
-    const easy = templates.filter(t => t.difficulty === 'easy');
-    const medium = templates.filter(t => t.difficulty === 'medium');
-    const hard = templates.filter(t => t.difficulty === 'hard');
+    const easy = templates.filter((t) => t.difficulty === 'easy');
+    const medium = templates.filter((t) => t.difficulty === 'medium');
+    const hard = templates.filter((t) => t.difficulty === 'hard');
 
     if (easy.length > 0) selectedTemplates.push(easy[Math.floor(Math.random() * easy.length)]);
-    if (medium.length > 0) selectedTemplates.push(medium[Math.floor(Math.random() * medium.length)]);
+    if (medium.length > 0)
+      selectedTemplates.push(medium[Math.floor(Math.random() * medium.length)]);
     if (hard.length > 0) selectedTemplates.push(hard[Math.floor(Math.random() * hard.length)]);
 
     // Convert templates to quests
@@ -280,7 +288,7 @@ export class QuestService {
         claimed: false,
         reward: template.reward,
         expiresAt: this.getTomorrowMidnight(),
-        metadata
+        metadata,
       };
     });
 
@@ -295,9 +303,9 @@ export class QuestService {
         day,
         claimed: false,
         reward: {
-          coins: 50 * day,  // 50, 100, 150, ..., 350
-          gems: day === 7 ? 25 : 0  // Bonus gems on day 7
-        }
+          coins: 50 * day, // 50, 100, 150, ..., 350
+          gems: day === 7 ? 25 : 0, // Bonus gems on day 7
+        },
       });
     }
 
@@ -313,7 +321,7 @@ export class QuestService {
         descriptionTemplate: 'Jouez 3 parties (victoire ou défaite)',
         difficulty: 'easy',
         requirement: 3,
-        reward: { coins: 50, gems: 0 }
+        reward: { coins: 50, gems: 0 },
       },
       {
         type: QuestType.PlayCards,
@@ -321,7 +329,7 @@ export class QuestService {
         descriptionTemplate: 'Jouez 15 cartes durant vos parties',
         difficulty: 'easy',
         requirement: 15,
-        reward: { coins: 50, gems: 0 }
+        reward: { coins: 50, gems: 0 },
       },
       // Medium quests
       {
@@ -330,15 +338,15 @@ export class QuestService {
         descriptionTemplate: 'Remportez 2 victoires',
         difficulty: 'medium',
         requirement: 2,
-        reward: { coins: 100, gems: 0 }
+        reward: { coins: 100, gems: 0 },
       },
       {
         type: QuestType.DealDamage,
         titleTemplate: 'Infliger 30 dégâts',
-        descriptionTemplate: 'Infligez 30 points de dégâts à l\'adversaire',
+        descriptionTemplate: "Infligez 30 points de dégâts à l'adversaire",
         difficulty: 'medium',
         requirement: 30,
-        reward: { coins: 100, gems: 0 }
+        reward: { coins: 100, gems: 0 },
       },
       // Hard quests
       {
@@ -347,7 +355,7 @@ export class QuestService {
         descriptionTemplate: 'Gagnez une partie avec un deck {domain}',
         difficulty: 'hard',
         requirement: 1,
-        reward: { coins: 150, gems: 10 }
+        reward: { coins: 150, gems: 10 },
       },
       {
         type: QuestType.GamesWon,
@@ -355,8 +363,8 @@ export class QuestService {
         descriptionTemplate: 'Remportez 5 victoires',
         difficulty: 'hard',
         requirement: 5,
-        reward: { coins: 200, gems: 15 }
-      }
+        reward: { coins: 200, gems: 15 },
+      },
     ];
   }
 
@@ -366,7 +374,7 @@ export class QuestService {
       dailyQuests: this.generateDailyQuests(),
       loginStreak: 1,
       lastLoginDate: this.getTodayString(),
-      dailyRewards: this.generateDailyRewards()
+      dailyRewards: this.generateDailyRewards(),
     };
   }
 
@@ -380,9 +388,11 @@ export class QuestService {
   }
 
   private isSameDay(date1: Date, date2: Date): boolean {
-    return date1.getUTCFullYear() === date2.getUTCFullYear() &&
-           date1.getUTCMonth() === date2.getUTCMonth() &&
-           date1.getUTCDate() === date2.getUTCDate();
+    return (
+      date1.getUTCFullYear() === date2.getUTCFullYear() &&
+      date1.getUTCMonth() === date2.getUTCMonth() &&
+      date1.getUTCDate() === date2.getUTCDate()
+    );
   }
 
   private getTodayString(): string {
@@ -423,7 +433,7 @@ export class QuestService {
       [Domain.Crafts]: 'Artisanat',
       [Domain.Military]: 'Militaire',
       [Domain.Sports]: 'Sports',
-      [Domain.Environment]: 'Environnement'
+      [Domain.Environment]: 'Environnement',
     };
     return names[domain] || domain;
   }

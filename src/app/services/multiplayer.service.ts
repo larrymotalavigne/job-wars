@@ -68,10 +68,15 @@ export class MultiplayerService {
   private readonly STORAGE_KEY_ROOM = 'jobwars_room_info';
 
   // Observables
-  private connectionStateSubject = new BehaviorSubject<ConnectionState>(ConnectionState.DISCONNECTED);
+  private connectionStateSubject = new BehaviorSubject<ConnectionState>(
+    ConnectionState.DISCONNECTED,
+  );
   private messagesSubject = new Subject<MultiplayerMessage>();
   private roomInfoSubject = new BehaviorSubject<RoomInfo | null>(null);
-  private opponentDisconnectedSubject = new BehaviorSubject<{ disconnected: boolean; deadline?: number }>({
+  private opponentDisconnectedSubject = new BehaviorSubject<{
+    disconnected: boolean;
+    deadline?: number;
+  }>({
     disconnected: false,
   });
 
@@ -359,7 +364,10 @@ export class MultiplayerService {
   }
 
   private handlePlayerDisconnected(message: any): void {
-    console.log('🔌 Opponent disconnected, can reconnect until:', new Date(message.reconnectDeadline));
+    console.log(
+      '🔌 Opponent disconnected, can reconnect until:',
+      new Date(message.reconnectDeadline),
+    );
     this.opponentDisconnectedSubject.next({
       disconnected: true,
       deadline: message.reconnectDeadline,
@@ -411,7 +419,9 @@ export class MultiplayerService {
 
     this.reconnectAttempts++;
     this.isReconnecting = true;
-    console.log(`🔄 Reconnecting to room ${savedRoom.code}... (attempt ${this.reconnectAttempts}/${this.maxReconnectAttempts})`);
+    console.log(
+      `🔄 Reconnecting to room ${savedRoom.code}... (attempt ${this.reconnectAttempts}/${this.maxReconnectAttempts})`,
+    );
 
     // Clear existing timer
     if (this.reconnectTimer) {
@@ -422,7 +432,7 @@ export class MultiplayerService {
     const delay = this.reconnectDelay * Math.pow(2, this.reconnectAttempts - 1);
 
     this.reconnectTimer = setTimeout(() => {
-      this.connect().catch(error => {
+      this.connect().catch((error) => {
         console.error('❌ Reconnection failed:', error);
         // Will trigger onclose which will call attemptReconnect again
       });

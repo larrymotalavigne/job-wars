@@ -1,13 +1,18 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { CardCosmetic, CosmeticType, CosmeticRarity, CosmeticsState } from '../models/cosmetics.model';
+import {
+  CardCosmetic,
+  CosmeticType,
+  CosmeticRarity,
+  CosmeticsState,
+} from '../models/cosmetics.model';
 
 /**
  * Cosmetics Service
  * Manages card visual customizations (non-gameplay)
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CosmeticsService {
   private readonly STORAGE_KEY = 'jobwars-cosmetics';
@@ -60,9 +65,9 @@ export class CosmeticsService {
    */
   getAllCosmetics(): CardCosmetic[] {
     const state = this.getState();
-    return this.cosmeticsCatalog.map(cosmetic => ({
+    return this.cosmeticsCatalog.map((cosmetic) => ({
       ...cosmetic,
-      unlocked: state.unlockedCosmetics.includes(cosmetic.id)
+      unlocked: state.unlockedCosmetics.includes(cosmetic.id),
     }));
   }
 
@@ -70,13 +75,13 @@ export class CosmeticsService {
    * Get cosmetic by ID
    */
   getCosmetic(cosmeticId: string): CardCosmetic | undefined {
-    const cosmetic = this.cosmeticsCatalog.find(c => c.id === cosmeticId);
+    const cosmetic = this.cosmeticsCatalog.find((c) => c.id === cosmeticId);
     if (!cosmetic) return undefined;
 
     const state = this.getState();
     return {
       ...cosmetic,
-      unlocked: state.unlockedCosmetics.includes(cosmetic.id)
+      unlocked: state.unlockedCosmetics.includes(cosmetic.id),
     };
   }
 
@@ -91,7 +96,7 @@ export class CosmeticsService {
       return false;
     }
 
-    const cosmetic = this.cosmeticsCatalog.find(c => c.id === cosmeticId);
+    const cosmetic = this.cosmeticsCatalog.find((c) => c.id === cosmeticId);
     if (!cosmetic) {
       console.warn('Cosmetic not found:', cosmeticId);
       return false;
@@ -118,7 +123,7 @@ export class CosmeticsService {
     }
 
     // Check if cosmetic is valid for this card
-    const cosmetic = this.cosmeticsCatalog.find(c => c.id === cosmeticId);
+    const cosmetic = this.cosmeticsCatalog.find((c) => c.id === cosmeticId);
     if (!cosmetic) {
       console.warn('Cosmetic not found:', cosmeticId);
       return false;
@@ -165,7 +170,9 @@ export class CosmeticsService {
       return false;
     }
 
-    const cardBack = this.cosmeticsCatalog.find(c => c.id === cardBackId && c.type === CosmeticType.CardBack);
+    const cardBack = this.cosmeticsCatalog.find(
+      (c) => c.id === cardBackId && c.type === CosmeticType.CardBack,
+    );
     if (!cardBack) {
       console.warn('Card back not found:', cardBackId);
       return false;
@@ -205,8 +212,8 @@ export class CosmeticsService {
       unlockedCosmetics: ['cardback_default'], // Default card back unlocked
       loadout: {
         cardCosmetics: {},
-        activeCardBack: 'cardback_default'
-      }
+        activeCardBack: 'cardback_default',
+      },
     };
   }
 
@@ -228,7 +235,7 @@ export class CosmeticsService {
       rarity: CosmeticRarity.Common,
       unlocked: true,
       source: 'battle_pass',
-      description: 'Le dos de carte par défaut'
+      description: 'Le dos de carte par défaut',
     });
 
     // Foil effects (generic, can apply to any card)
@@ -240,7 +247,7 @@ export class CosmeticsService {
       unlocked: false,
       source: 'battle_pass',
       effectClass: 'foil-gold',
-      description: 'Un effet holographique doré'
+      description: 'Un effet holographique doré',
     });
 
     this.cosmeticsCatalog.push({
@@ -251,7 +258,7 @@ export class CosmeticsService {
       unlocked: false,
       source: 'battle_pass',
       effectClass: 'foil-rainbow',
-      description: 'Un effet holographique multicolore'
+      description: 'Un effet holographique multicolore',
     });
 
     // Animation effects
@@ -263,7 +270,7 @@ export class CosmeticsService {
       unlocked: false,
       source: 'battle_pass',
       effectClass: 'anim-sparkle',
-      description: 'Des particules scintillantes'
+      description: 'Des particules scintillantes',
     });
 
     // Premium card backs
@@ -274,7 +281,7 @@ export class CosmeticsService {
       rarity: CosmeticRarity.Epic,
       unlocked: false,
       source: 'battle_pass',
-      description: 'Un dos de carte doré élégant'
+      description: 'Un dos de carte doré élégant',
     });
 
     this.cosmeticsCatalog.push({
@@ -284,7 +291,7 @@ export class CosmeticsService {
       rarity: CosmeticRarity.Legendary,
       unlocked: false,
       source: 'battle_pass',
-      description: 'Le dos de carte ultime'
+      description: 'Le dos de carte ultime',
     });
   }
 }

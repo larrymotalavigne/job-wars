@@ -55,7 +55,10 @@
     @if (opponentDisconnected) {
       <div class="disconnect-banner opponent-disconnected">
         <i class="pi pi-exclamation-triangle"></i>
-        <span>Adversaire déconnecté - Reconnexion possible jusqu'à {{ disconnectDeadline | date:'HH:mm:ss' }}</span>
+        <span
+          >Adversaire déconnecté - Reconnexion possible jusqu'à
+          {{ disconnectDeadline | date: 'HH:mm:ss' }}</span
+        >
       </div>
     }
 
@@ -75,7 +78,9 @@
     <!-- Turn Transition -->
     @if (showTransition) {
       <app-turn-transition
-        [playerName]="state.activePlayerId === state.player1.id ? state.player1.name : state.player2.name"
+        [playerName]="
+          state.activePlayerId === state.player1.id ? state.player1.name : state.player2.name
+        "
         [turnNumber]="state.turnNumber"
         (dismiss)="onTransitionDismiss()"
       />
@@ -107,8 +112,7 @@
         <i class="pi pi-trophy victory-icon"></i>
         <h2>{{ getWinnerName() }} remporte la partie !</h2>
         <p>
-          {{ state.player1.name }} : {{ state.player1.reputation }} PV
-          &nbsp;—&nbsp;
+          {{ state.player1.name }} : {{ state.player1.reputation }} PV &nbsp;—&nbsp;
           {{ state.player2.name }} : {{ state.player2.reputation }} PV
         </p>
       </div>

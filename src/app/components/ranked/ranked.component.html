@@ -56,10 +56,7 @@
                 {{ stats.currentRank.stars }} / {{ stats.currentRank.starsRequired }}
               </span>
             </div>
-            <p-progressBar
-              [value]="getStarProgress(stats)"
-              [showValue]="false">
-            </p-progressBar>
+            <p-progressBar [value]="getStarProgress(stats)" [showValue]="false"> </p-progressBar>
           </div>
         </div>
       </p-card>
@@ -165,12 +162,17 @@
               <div class="col-result">
                 <p-tag
                   [value]="getMatchResultLabel(match.result)"
-                  [severity]="getMatchResultSeverity(match.result)">
+                  [severity]="getMatchResultSeverity(match.result)"
+                >
                 </p-tag>
               </div>
               <div class="col-opponent">{{ match.opponentName }}</div>
               <div class="col-mmr">{{ match.opponentMMR }}</div>
-              <div class="col-change" [class.positive]="match.mmrChange > 0" [class.negative]="match.mmrChange < 0">
+              <div
+                class="col-change"
+                [class.positive]="match.mmrChange > 0"
+                [class.negative]="match.mmrChange < 0"
+              >
                 {{ formatMMRChange(match.mmrChange) }}
               </div>
               <div class="col-rank-before">{{ match.rankBefore }}</div>

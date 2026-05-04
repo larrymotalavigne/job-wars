@@ -17,7 +17,8 @@ const TUTORIAL_STEPS: TutorialStep[] = [
     id: 0,
     phase: null,
     title: 'Bienvenue dans Job Wars !',
-    message: 'Ce tutoriel va vous guider a travers vos premiers tours de jeu. Cliquez sur Suivant pour continuer.',
+    message:
+      'Ce tutoriel va vous guider a travers vos premiers tours de jeu. Cliquez sur Suivant pour continuer.',
     position: 'center',
     waitFor: 'click',
   },
@@ -25,7 +26,8 @@ const TUTORIAL_STEPS: TutorialStep[] = [
     id: 1,
     phase: GamePhase.Budget,
     title: 'Phase de Budget',
-    message: 'Chaque tour, vous recevez du Budget pour embaucher des Metiers et jouer des cartes. Votre budget augmente de 1 chaque tour.',
+    message:
+      'Chaque tour, vous recevez du Budget pour embaucher des Metiers et jouer des cartes. Votre budget augmente de 1 chaque tour.',
     highlightSelector: '.phase-bar',
     position: 'top',
     waitFor: 'click',
@@ -34,7 +36,8 @@ const TUTORIAL_STEPS: TutorialStep[] = [
     id: 2,
     phase: GamePhase.Draw,
     title: 'Phase de Pioche',
-    message: 'Vous piochez 1 carte par tour (sauf au premier tour). Votre main est en bas de l\'ecran.',
+    message:
+      "Vous piochez 1 carte par tour (sauf au premier tour). Votre main est en bas de l'ecran.",
     highlightSelector: '.hand-zone',
     position: 'bottom',
     waitFor: 'click',
@@ -43,7 +46,8 @@ const TUTORIAL_STEPS: TutorialStep[] = [
     id: 3,
     phase: GamePhase.Hiring,
     title: 'Votre Main',
-    message: 'Voici votre main. Chaque carte coute du Budget a jouer. Les Metiers vont sur le terrain, les Evenements ont un effet immediat.',
+    message:
+      'Voici votre main. Chaque carte coute du Budget a jouer. Les Metiers vont sur le terrain, les Evenements ont un effet immediat.',
     highlightSelector: '.hand-zone',
     position: 'bottom',
     waitFor: 'click',
@@ -52,7 +56,8 @@ const TUTORIAL_STEPS: TutorialStep[] = [
     id: 4,
     phase: GamePhase.Hiring,
     title: 'Embauchez un Metier',
-    message: 'Cliquez sur une carte de votre main pour l\'embaucher. Son cout sera deduit de votre budget.',
+    message:
+      "Cliquez sur une carte de votre main pour l'embaucher. Son cout sera deduit de votre budget.",
     highlightSelector: '.hand-zone',
     position: 'bottom',
     waitFor: 'action',
@@ -61,7 +66,8 @@ const TUTORIAL_STEPS: TutorialStep[] = [
     id: 5,
     phase: GamePhase.Hiring,
     title: 'Metier deploye !',
-    message: 'Votre Metier est sur le terrain ! Il ne peut pas attaquer le tour ou il est embauche (sauf avec Celerite).',
+    message:
+      'Votre Metier est sur le terrain ! Il ne peut pas attaquer le tour ou il est embauche (sauf avec Celerite).',
     highlightSelector: '.field-zone',
     position: 'bottom',
     waitFor: 'click',
@@ -70,7 +76,8 @@ const TUTORIAL_STEPS: TutorialStep[] = [
     id: 6,
     phase: null,
     title: 'Passer les phases',
-    message: 'Appuyez sur Espace ou cliquez le bouton Suivant dans la barre de phases pour avancer. Passons au tour suivant.',
+    message:
+      'Appuyez sur Espace ou cliquez le bouton Suivant dans la barre de phases pour avancer. Passons au tour suivant.',
     highlightSelector: '.phase-bar',
     position: 'top',
     waitFor: 'click',
@@ -78,8 +85,9 @@ const TUTORIAL_STEPS: TutorialStep[] = [
   {
     id: 7,
     phase: GamePhase.Work_Attack,
-    title: 'Phase d\'Attaque',
-    message: 'C\'est votre phase de travail ! Cliquez sur un Metier pour l\'envoyer attaquer l\'adversaire.',
+    title: "Phase d'Attaque",
+    message:
+      "C'est votre phase de travail ! Cliquez sur un Metier pour l'envoyer attaquer l'adversaire.",
     position: 'center',
     waitFor: 'phase',
     targetPhase: GamePhase.Work_Attack,
@@ -88,7 +96,8 @@ const TUTORIAL_STEPS: TutorialStep[] = [
     id: 8,
     phase: GamePhase.Work_Block,
     title: 'Phase de Blocage',
-    message: 'L\'adversaire peut assigner des bloqueurs pour defendre. Les bloqueurs interceptent les attaquants.',
+    message:
+      "L'adversaire peut assigner des bloqueurs pour defendre. Les bloqueurs interceptent les attaquants.",
     position: 'center',
     waitFor: 'phase',
     targetPhase: GamePhase.Work_Block,
@@ -97,7 +106,8 @@ const TUTORIAL_STEPS: TutorialStep[] = [
     id: 9,
     phase: GamePhase.Work_Damage,
     title: 'Resolution des degats',
-    message: 'Les degats sont resolus. Les attaques non bloquees touchent la Reputation adverse. Les combats bloques sont resolus carte contre carte.',
+    message:
+      'Les degats sont resolus. Les attaques non bloquees touchent la Reputation adverse. Les combats bloques sont resolus carte contre carte.',
     position: 'center',
     waitFor: 'phase',
     targetPhase: GamePhase.Work_Damage,
@@ -106,7 +116,8 @@ const TUTORIAL_STEPS: TutorialStep[] = [
     id: 10,
     phase: null,
     title: 'Effets automatiques',
-    message: 'Certaines cartes ont des effets automatiques — regardez le log de partie pour voir ce qui se passe ! Les effets sont resolus automatiquement.',
+    message:
+      'Certaines cartes ont des effets automatiques — regardez le log de partie pour voir ce qui se passe ! Les effets sont resolus automatiquement.',
     highlightSelector: '.log-toggle',
     position: 'bottom',
     waitFor: 'click',

@@ -9,7 +9,7 @@ import {
   getTierFromMMR,
   formatRank,
   MMR_RANGES,
-  STARS_PER_TIER
+  STARS_PER_TIER,
 } from '../models/ranked.model';
 
 /**
@@ -17,7 +17,7 @@ import {
  * Manages competitive ranked mode with MMR and seasonal rankings
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RankedService {
   private readonly STORAGE_KEY = 'jobwars-ranked';
@@ -72,7 +72,11 @@ export class RankedService {
   /**
    * Record a ranked match result
    */
-  recordRankedMatch(result: 'win' | 'loss', opponentMMR: number, opponentName: string = 'Adversaire'): void {
+  recordRankedMatch(
+    result: 'win' | 'loss',
+    opponentMMR: number,
+    opponentName: string = 'Adversaire',
+  ): void {
     const stats = this.getStats();
     const rankBefore = formatRank(stats.currentRank);
 
@@ -121,7 +125,7 @@ export class RankedService {
       opponentMMR,
       mmrChange,
       rankBefore,
-      rankAfter
+      rankAfter,
     };
 
     stats.matchHistory.unshift(match);
@@ -160,7 +164,7 @@ export class RankedService {
       name: `Saison ${seasonNumber} ${year}`,
       startDate: seasonStart.getTime(),
       endDate: seasonEnd.getTime(),
-      isActive: true
+      isActive: true,
     };
   }
 
@@ -193,7 +197,7 @@ export class RankedService {
       seasonId: currentSeason.id,
       rankedGames: 0,
       rankedWins: 0,
-      matchHistory: []
+      matchHistory: [],
     };
   }
 
@@ -206,7 +210,7 @@ export class RankedService {
       division: 3, // Start at lowest division
       mmr,
       stars: 0,
-      starsRequired
+      starsRequired,
     };
   }
 

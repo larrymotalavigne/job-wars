@@ -11,7 +11,7 @@ import { RankedStats, RankTier, formatRank } from '../../models/ranked.model';
   standalone: true,
   imports: [CommonModule, Card, ProgressBar, Tag],
   templateUrl: './ranked.component.html',
-  styleUrl: './ranked.component.scss'
+  styleUrl: './ranked.component.scss',
 })
 export class RankedComponent implements OnInit {
   get stats$() {
@@ -37,13 +37,20 @@ export class RankedComponent implements OnInit {
 
   getRankTierColor(tier: RankTier): string {
     switch (tier) {
-      case RankTier.Bronze: return '#cd7f32';
-      case RankTier.Silver: return '#c0c0c0';
-      case RankTier.Gold: return '#ffd700';
-      case RankTier.Platinum: return '#e5e4e2';
-      case RankTier.Diamond: return '#b9f2ff';
-      case RankTier.Master: return '#ff6b6b';
-      default: return '#666';
+      case RankTier.Bronze:
+        return '#cd7f32';
+      case RankTier.Silver:
+        return '#c0c0c0';
+      case RankTier.Gold:
+        return '#ffd700';
+      case RankTier.Platinum:
+        return '#e5e4e2';
+      case RankTier.Diamond:
+        return '#b9f2ff';
+      case RankTier.Master:
+        return '#ff6b6b';
+      default:
+        return '#666';
     }
   }
 
@@ -72,7 +79,7 @@ export class RankedComponent implements OnInit {
       day: 'numeric',
       month: 'short',
       hour: '2-digit',
-      minute: '2-digit'
+      minute: '2-digit',
     });
   }
 

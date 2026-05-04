@@ -16,7 +16,7 @@ export class EffectService {
   private registry = EFFECT_REGISTRY;
 
   getEffects(cardId: string, trigger: EffectTrigger): CardEffects | null {
-    return this.registry.find(e => e.cardId === cardId && e.trigger === trigger) ?? null;
+    return this.registry.find((e) => e.cardId === cardId && e.trigger === trigger) ?? null;
   }
 
   /**
@@ -71,8 +71,9 @@ export class EffectService {
     destroyCard: (instanceId: string) => void,
   ): PendingEffect | null {
     const effect = pending.effects[pending.currentIndex];
-    const source = this.findCardInstance(pending.sourceInstanceId, state)
-      ?? this.findCardInGraveyard(pending.sourceInstanceId, state);
+    const source =
+      this.findCardInstance(pending.sourceInstanceId, state) ??
+      this.findCardInGraveyard(pending.sourceInstanceId, state);
 
     // Build a fake source if the card was already destroyed/moved
     const sourceForExec: CardInstance = source ?? {
@@ -122,8 +123,11 @@ export class EffectService {
       case TargetType.AllyJob:
         return candidate.ownerId === pending.ownerId && isJobCard(candidate.card);
       case TargetType.EnemyJob:
-        return candidate.ownerId !== pending.ownerId && isJobCard(candidate.card)
-          && this.checkCondition(effect, candidate, state);
+        return (
+          candidate.ownerId !== pending.ownerId &&
+          isJobCard(candidate.card) &&
+          this.checkCondition(effect, candidate, state)
+        );
       case TargetType.AnyJob:
         return isJobCard(candidate.card) && this.checkCondition(effect, candidate, state);
       case TargetType.AllyTool:
@@ -154,9 +158,11 @@ export class EffectService {
 
   private isDestroyAllTools(effect: EffectDefinition): boolean {
     // it-011 Cyberattaque destroys ALL enemy tools — no targeting needed
-    return effect.type === EffectType.Destroy
-      && effect.target === TargetType.EnemyTool
-      && effect.description.toLowerCase().includes('tous');
+    return (
+      effect.type === EffectType.Destroy &&
+      effect.target === TargetType.EnemyTool &&
+      effect.description.toLowerCase().includes('tous')
+    );
   }
 
   private executeEffect(
@@ -183,7 +189,7 @@ export class EffectService {
           this.executeDamage(target, effect.value, state, addLog, destroyCard);
           addLog(`${source.card.name} : inflige ${effect.value} degat(s) a ${target.card.name}.`);
         } else if (effect.target === TargetType.AllEnemyJobs) {
-          const enemies = opponent.field.filter(c => isJobCard(c.card));
+          const enemies = opponent.field.filter((c) => isJobCard(c.card));
           for (const enemy of [...enemies]) {
             this.executeDamage(enemy, effect.value, state, addLog, destroyCard);
           }
@@ -194,9 +200,11 @@ export class EffectService {
       case EffectType.Buff:
         if (target) {
           this.executeBuff(target, effect.value, effect.value2 ?? 0, !!effect.permanent);
-          addLog(`${source.card.name} : ${target.card.name} gagne +${effect.value}/+${effect.value2 ?? 0}.`);
+          addLog(
+            `${source.card.name} : ${target.card.name} gagne +${effect.value}/+${effect.value2 ?? 0}.`,
+          );
         } else if (effect.target === TargetType.AllAllyJobs) {
-          for (const card of owner.field.filter(c => isJobCard(c.card))) {
+          for (const card of owner.field.filter((c) => isJobCard(c.card))) {
             this.executeBuff(card, effect.value, effect.value2 ?? 0, !!effect.permanent);
           }
           addLog(`${source.card.name} : ${effect.description}.`);
@@ -209,9 +217,11 @@ export class EffectService {
       case EffectType.Debuff:
         if (target) {
           this.executeDebuff(target, effect.value, effect.value2 ?? 0, !!effect.permanent);
-          addLog(`${source.card.name} : ${target.card.name} perd ${effect.value}/${effect.value2 ?? 0}.`);
+          addLog(
+            `${source.card.name} : ${target.card.name} perd ${effect.value}/${effect.value2 ?? 0}.`,
+          );
         } else if (effect.target === TargetType.AllEnemyJobs) {
-          for (const card of opponent.field.filter(c => isJobCard(c.card))) {
+          for (const card of opponent.field.filter((c) => isJobCard(c.card))) {
             this.executeDebuff(card, effect.value, effect.value2 ?? 0, !!effect.permanent);
           }
           addLog(`${source.card.name} : ${effect.description}.`);
@@ -220,7 +230,9 @@ export class EffectService {
 
       case EffectType.Heal:
         this.executeHeal(owner, effect.value);
-        addLog(`${source.card.name} : restaure ${effect.value} Reputation (→ ${owner.reputation}).`);
+        addLog(
+          `${source.card.name} : restaure ${effect.value} Reputation (→ ${owner.reputation}).`,
+        );
         break;
 
       case EffectType.Budget:
@@ -233,7 +245,7 @@ export class EffectService {
           addLog(`${source.card.name} : detruit ${target.card.name}.`);
           destroyCard(target.instanceId);
         } else if (effect.target === TargetType.EnemyTool && this.isDestroyAllTools(effect)) {
-          const tools = opponent.field.filter(c => isToolCard(c.card));
+          const tools = opponent.field.filter((c) => isToolCard(c.card));
           for (const tool of [...tools]) {
             destroyCard(tool.instanceId);
           }
@@ -257,7 +269,11 @@ export class EffectService {
     }
   }
 
-  private executeDraw(player: PlayerState, value: number, drawCards: (p: PlayerState, n: number) => void): void {
+  private executeDraw(
+    player: PlayerState,
+    value: number,
+    drawCards: (p: PlayerState, n: number) => void,
+  ): void {
     drawCards(player, value);
   }
 
@@ -270,15 +286,22 @@ export class EffectService {
   ): void {
     target.damageThisTurn += value;
     if (isJobCard(target.card)) {
-      const effectiveRes = target.card.resilience + target.constructionBonuses
-        + target.modifiers.reduce((sum, m) => sum + m.resilienceDelta, 0);
+      const effectiveRes =
+        target.card.resilience +
+        target.constructionBonuses +
+        target.modifiers.reduce((sum, m) => sum + m.resilienceDelta, 0);
       if (target.damageThisTurn >= effectiveRes) {
         destroyCard(target.instanceId);
       }
     }
   }
 
-  private executeBuff(target: CardInstance, prodDelta: number, resDelta: number, permanent: boolean): void {
+  private executeBuff(
+    target: CardInstance,
+    prodDelta: number,
+    resDelta: number,
+    permanent: boolean,
+  ): void {
     target.modifiers.push({
       productivityDelta: prodDelta,
       resilienceDelta: resDelta,
@@ -287,7 +310,12 @@ export class EffectService {
     });
   }
 
-  private executeDebuff(target: CardInstance, prodDelta: number, resDelta: number, permanent: boolean): void {
+  private executeDebuff(
+    target: CardInstance,
+    prodDelta: number,
+    resDelta: number,
+    permanent: boolean,
+  ): void {
     target.modifiers.push({
       productivityDelta: prodDelta,
       resilienceDelta: resDelta,
@@ -312,7 +340,7 @@ export class EffectService {
     const owner = this.getOwner(target.ownerId, state);
     if (!owner) return;
 
-    const idx = owner.field.findIndex(c => c.instanceId === target.instanceId);
+    const idx = owner.field.findIndex((c) => c.instanceId === target.instanceId);
     if (idx === -1) return;
 
     owner.field.splice(idx, 1);
@@ -325,14 +353,20 @@ export class EffectService {
     owner.hand.push(target);
   }
 
-  private checkCondition(effect: EffectDefinition, target: CardInstance, state: GameState): boolean {
+  private checkCondition(
+    effect: EffectDefinition,
+    target: CardInstance,
+    state: GameState,
+  ): boolean {
     if (!effect.condition) return true;
 
     switch (effect.condition.type) {
       case 'maxTargetResilience': {
         if (!isJobCard(target.card)) return false;
-        const effectiveRes = target.card.resilience + target.constructionBonuses
-          + target.modifiers.reduce((sum, m) => sum + m.resilienceDelta, 0);
+        const effectiveRes =
+          target.card.resilience +
+          target.constructionBonuses +
+          target.modifiers.reduce((sum, m) => sum + m.resilienceDelta, 0);
         return effectiveRes <= effect.condition.value;
       }
       case 'maxTargetCost':
@@ -357,7 +391,7 @@ export class EffectService {
   private findCardInstance(instanceId: string, state: GameState): CardInstance | null {
     for (const player of [state.player1, state.player2]) {
       for (const zone of [player.hand, player.field]) {
-        const card = zone.find(c => c.instanceId === instanceId);
+        const card = zone.find((c) => c.instanceId === instanceId);
         if (card) return card;
       }
     }
@@ -366,7 +400,7 @@ export class EffectService {
 
   private findCardInGraveyard(instanceId: string, state: GameState): CardInstance | null {
     for (const player of [state.player1, state.player2]) {
-      const card = player.graveyard.find(c => c.instanceId === instanceId);
+      const card = player.graveyard.find((c) => c.instanceId === instanceId);
       if (card) return card;
     }
     return null;

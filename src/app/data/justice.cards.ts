@@ -38,12 +38,12 @@ export const JUSTICE_CARDS: Card[] = [
     productivity: 3,
     resilience: 2,
     ability: 'Quand embauché : Un Métier adverse perd -1/-0 en permanence.',
-    flavorText: '« L\'accusation ne laisse rien au hasard. »',
+    flavorText: "« L'accusation ne laisse rien au hasard. »",
     image: 'images/cards/ju-003.png',
   },
   {
     id: 'ju-004',
-    name: 'Juge d\'Instruction',
+    name: "Juge d'Instruction",
     domain: Domain.Justice,
     type: CardType.Job,
     cost: 3,
@@ -51,7 +51,7 @@ export const JUSTICE_CARDS: Card[] = [
     productivity: 2,
     resilience: 3,
     ability: 'Arrestation : Engagez un Métier ciblé — il ne peut pas agir au prochain tour.',
-    flavorText: '« L\'enquête suit son cours. »',
+    flavorText: "« L'enquête suit son cours. »",
     image: 'images/cards/ju-004.png',
   },
   {
@@ -103,7 +103,7 @@ export const JUSTICE_CARDS: Card[] = [
     productivity: 4,
     resilience: 6,
     ability: 'Tous les Métiers Justice gagnent +0/+2. Immunisé aux capacités adverses.',
-    flavorText: '« La loi, c\'est moi qui la fais appliquer. »',
+    flavorText: "« La loi, c'est moi qui la fais appliquer. »",
     image: 'images/cards/ju-008.png',
   },
   {
@@ -129,7 +129,7 @@ export const JUSTICE_CARDS: Card[] = [
     productivity: 1,
     resilience: 2,
     ability: 'Engagement : Empêchez 1 point de dégât infligé à un Métier allié ce tour.',
-    flavorText: '« Il n\'y a pas de conflit qu\'on ne puisse résoudre autour d\'une table. »',
+    flavorText: "« Il n'y a pas de conflit qu'on ne puisse résoudre autour d'une table. »",
     image: 'images/cards/ju-013.png',
   },
   {
@@ -154,8 +154,9 @@ export const JUSTICE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 3,
     resilience: 3,
-    ability: 'Les Événements adverses coûtent +1 Budget supplémentaire tant que ce Métier est en jeu.',
-    flavorText: '« L\'intérêt de la société prime sur celui de l\'individu. »',
+    ability:
+      'Les Événements adverses coûtent +1 Budget supplémentaire tant que ce Métier est en jeu.',
+    flavorText: "« L'intérêt de la société prime sur celui de l'individu. »",
     image: 'images/cards/ju-015.png',
   },
   {
@@ -167,7 +168,8 @@ export const JUSTICE_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 1,
     resilience: 2,
-    ability: 'Quand embauché : Révélez la main de l\'adversaire. Choisissez un Outil ; il est défaussé.',
+    ability:
+      "Quand embauché : Révélez la main de l'adversaire. Choisissez un Outil ; il est défaussé.",
     flavorText: '« Les preuves ne mentent jamais, seuls les hommes le font. »',
     image: 'images/cards/ju-016.png',
   },
@@ -193,7 +195,8 @@ export const JUSTICE_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 1,
     resilience: 3,
-    ability: 'Protection : Les Métiers alliés de coût 2 ou moins ne peuvent pas être ciblés par les capacités adverses.',
+    ability:
+      'Protection : Les Métiers alliés de coût 2 ou moins ne peuvent pas être ciblés par les capacités adverses.',
     flavorText: '« Chaque enfant mérite une seconde chance. »',
     image: 'images/cards/ju-018.png',
   },
@@ -206,8 +209,9 @@ export const JUSTICE_CARDS: Card[] = [
     rarity: Rarity.Rare,
     productivity: 4,
     resilience: 4,
-    ability: 'Quand embauché : Engagez tous les Métiers adverses. Ils ne se désengagent pas au prochain tour.',
-    flavorText: '« Que l\'on saisisse tous les suspects. Nous ferons le tri ensuite. »',
+    ability:
+      'Quand embauché : Engagez tous les Métiers adverses. Ils ne se désengagent pas au prochain tour.',
+    flavorText: "« Que l'on saisisse tous les suspects. Nous ferons le tri ensuite. »",
     image: 'images/cards/ju-019.png',
   },
   {
@@ -219,7 +223,8 @@ export const JUSTICE_CARDS: Card[] = [
     rarity: Rarity.Uncommon,
     productivity: 1,
     resilience: 4,
-    ability: 'Une fois par tour : Regardez les 2 cartes du dessus de votre deck. Ajoutez-en une à votre main, l\'autre en dessous.',
+    ability:
+      "Une fois par tour : Regardez les 2 cartes du dessus de votre deck. Ajoutez-en une à votre main, l'autre en dessous.",
     flavorText: '« Les archives du tribunal recèlent bien des vérités oubliées. »',
     image: 'images/cards/ju-020.png',
   },
@@ -232,13 +237,14 @@ export const JUSTICE_CARDS: Card[] = [
     rarity: Rarity.Common,
     productivity: 0,
     resilience: 3,
-    ability: 'Tant que ce Métier est en jeu, les deux joueurs ne peuvent pas jouer plus d\'un Événement par tour.',
+    ability:
+      "Tant que ce Métier est en jeu, les deux joueurs ne peuvent pas jouer plus d'un Événement par tour.",
     flavorText: '« Posez vos armes. Parlons. »',
     image: 'images/cards/ju-021.png',
   },
   {
     id: 'ju-022',
-    name: 'Juge d\'Application des Peines',
+    name: "Juge d'Application des Peines",
     domain: Domain.Justice,
     type: CardType.Job,
     cost: 4,
@@ -246,7 +252,7 @@ export const JUSTICE_CARDS: Card[] = [
     productivity: 2,
     resilience: 4,
     ability: 'Quand un Métier adverse est engagé, infligez-lui 1 dégât.',
-    flavorText: '« La sanction est prononcée. Il n\'y a plus rien à négocier. »',
+    flavorText: "« La sanction est prononcée. Il n'y a plus rien à négocier. »",
     image: 'images/cards/ju-022.png',
   },
   {
@@ -258,7 +264,8 @@ export const JUSTICE_CARDS: Card[] = [
     rarity: Rarity.Legendary,
     productivity: 5,
     resilience: 7,
-    ability: 'Immunisé aux Événements. Une fois par tour : Annulez la capacité d\'un Métier adverse jusqu\'à la fin du tour.',
+    ability:
+      "Immunisé aux Événements. Une fois par tour : Annulez la capacité d'un Métier adverse jusqu'à la fin du tour.",
     flavorText: '« La Cour rendra son arrêt, et il sera sans appel. »',
     image: 'images/cards/ju-023.png',
   },
@@ -270,8 +277,8 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 2,
     rarity: Rarity.Common,
-    ability: 'Quand un Métier adverse attaque, il perd -1/-0 jusqu\'à la fin du tour.',
-    flavorText: '« Nul n\'est censé ignorer la loi. »',
+    ability: "Quand un Métier adverse attaque, il perd -1/-0 jusqu'à la fin du tour.",
+    flavorText: "« Nul n'est censé ignorer la loi. »",
     image: 'images/cards/ju-009.png',
   },
   {
@@ -292,8 +299,9 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 2,
     rarity: Rarity.Common,
-    ability: 'Attachez à un Métier Justice. Il gagne +0/+2 et ne peut pas être ciblé par les Événements adverses.',
-    flavorText: '« L\'habit ne fait pas le moine, mais la robe fait le juge. »',
+    ability:
+      'Attachez à un Métier Justice. Il gagne +0/+2 et ne peut pas être ciblé par les Événements adverses.',
+    flavorText: "« L'habit ne fait pas le moine, mais la robe fait le juge. »",
     image: 'images/cards/ju-024.png',
   },
   {
@@ -303,7 +311,8 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 3,
     rarity: Rarity.Common,
-    ability: 'Vos Métiers Justice gagnent +0/+1. Quand un de vos Métiers est détruit, piochez une carte.',
+    ability:
+      'Vos Métiers Justice gagnent +0/+1. Quand un de vos Métiers est détruit, piochez une carte.',
     flavorText: '« Deux mille articles pour organiser la vie en société. »',
     image: 'images/cards/ju-025.png',
   },
@@ -314,13 +323,14 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 1,
     rarity: Rarity.Common,
-    ability: 'Quand mis en jeu : Regardez les 3 cartes du dessus du deck adverse. Remettez-les dans l\'ordre de votre choix.',
+    ability:
+      "Quand mis en jeu : Regardez les 3 cartes du dessus du deck adverse. Remettez-les dans l'ordre de votre choix.",
     flavorText: '« Tout est dans le dossier. Il suffit de savoir lire entre les lignes. »',
     image: 'images/cards/ju-026.png',
   },
   {
     id: 'ju-027',
-    name: 'Salle d\'Audience',
+    name: "Salle d'Audience",
     domain: Domain.Justice,
     type: CardType.Tool,
     cost: 4,
@@ -347,19 +357,21 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 1,
     rarity: Rarity.Common,
-    ability: 'Quand un Métier adverse est détruit, notez son nom. Les Métiers portant ce nom coûtent +2 Budget à l\'adversaire.',
-    flavorText: '« Le passé ne s\'efface jamais vraiment. »',
+    ability:
+      "Quand un Métier adverse est détruit, notez son nom. Les Métiers portant ce nom coûtent +2 Budget à l'adversaire.",
+    flavorText: "« Le passé ne s'efface jamais vraiment. »",
     image: 'images/cards/ju-029.png',
   },
   {
     id: 'ju-030',
-    name: 'Mandat d\'Arrêt',
+    name: "Mandat d'Arrêt",
     domain: Domain.Justice,
     type: CardType.Tool,
     cost: 3,
     rarity: Rarity.Uncommon,
-    ability: 'Quand mis en jeu : Engagez un Métier adverse. Tant que cet Outil est en jeu, ce Métier ne se désengage pas.',
-    flavorText: '« Vous êtes en état d\'arrestation. Toute résistance est inutile. »',
+    ability:
+      'Quand mis en jeu : Engagez un Métier adverse. Tant que cet Outil est en jeu, ce Métier ne se désengage pas.',
+    flavorText: "« Vous êtes en état d'arrestation. Toute résistance est inutile. »",
     image: 'images/cards/ju-030.png',
   },
   {
@@ -369,8 +381,9 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 2,
     rarity: Rarity.Common,
-    ability: 'Une fois par tour : Révélez la carte du dessus de votre deck. Si c\'est un Métier Justice, ajoutez-le à votre main.',
-    flavorText: '« Chaque décision de justice est gravée dans le registre pour l\'éternité. »',
+    ability:
+      "Une fois par tour : Révélez la carte du dessus de votre deck. Si c'est un Métier Justice, ajoutez-le à votre main.",
+    flavorText: "« Chaque décision de justice est gravée dans le registre pour l'éternité. »",
     image: 'images/cards/ju-031.png',
   },
   {
@@ -380,7 +393,8 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 3,
     rarity: Rarity.Rare,
-    ability: 'Attachez à un Métier Justice. Il gagne +2/+0. Quand il détruit un Métier adverse, engagez un autre Métier adverse.',
+    ability:
+      'Attachez à un Métier Justice. Il gagne +2/+0. Quand il détruit un Métier adverse, engagez un autre Métier adverse.',
     flavorText: '« Un coup suffit pour sceller un destin. »',
     image: 'images/cards/ju-032.png',
   },
@@ -391,7 +405,8 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Tool,
     cost: 5,
     rarity: Rarity.Rare,
-    ability: 'Vos Métiers Justice sont immunisés aux capacités des Métiers non-Justice. Une fois par tour : Annulez un Événement adverse (défaussez une carte).',
+    ability:
+      'Vos Métiers Justice sont immunisés aux capacités des Métiers non-Justice. Une fois par tour : Annulez un Événement adverse (défaussez une carte).',
     flavorText: '« Au-dessus de toutes les lois, la loi suprême. »',
     image: 'images/cards/ju-033.png',
   },
@@ -414,7 +429,8 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Event,
     cost: 4,
     rarity: Rarity.Uncommon,
-    effect: 'Détruisez un Métier adverse avec une Productivité inférieure ou égale au nombre de Métiers Justice que vous contrôlez.',
+    effect:
+      'Détruisez un Métier adverse avec une Productivité inférieure ou égale au nombre de Métiers Justice que vous contrôlez.',
     flavorText: '« Coupable. La sentence est irrévocable. »',
     image: 'images/cards/ju-034.png',
   },
@@ -426,7 +442,7 @@ export const JUSTICE_CARDS: Card[] = [
     cost: 2,
     rarity: Rarity.Common,
     effect: 'Annulez un Événement adverse en cours de résolution. Piochez une carte.',
-    flavorText: '« Les charges sont insuffisantes. L\'affaire est classée. »',
+    flavorText: "« Les charges sont insuffisantes. L'affaire est classée. »",
     image: 'images/cards/ju-035.png',
   },
   {
@@ -436,7 +452,8 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Event,
     cost: 5,
     rarity: Rarity.Rare,
-    effect: 'Renvoyez tous les Métiers adverses de coût 3 ou moins dans la main de leur propriétaire.',
+    effect:
+      'Renvoyez tous les Métiers adverses de coût 3 ou moins dans la main de leur propriétaire.',
     flavorText: '« La Cour de cassation casse et annule la décision attaquée. »',
     image: 'images/cards/ju-036.png',
   },
@@ -447,7 +464,8 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Event,
     cost: 6,
     rarity: Rarity.Rare,
-    effect: 'Désengagez tous vos Métiers. Chaque Métier allié gagne +0/+2 jusqu\'à la fin du tour. Piochez 2 cartes.',
+    effect:
+      "Désengagez tous vos Métiers. Chaque Métier allié gagne +0/+2 jusqu'à la fin du tour. Piochez 2 cartes.",
     flavorText: '« Par décret présidentiel, toutes les peines sont levées. »',
     image: 'images/cards/ju-037.png',
   },
@@ -459,7 +477,7 @@ export const JUSTICE_CARDS: Card[] = [
     cost: 1,
     rarity: Rarity.Common,
     effect: 'Rejouez le dernier Événement que vous avez joué ce tour (sans payer son coût).',
-    flavorText: '« Les mêmes erreurs, encore et encore. Le tribunal s\'en souviendra. »',
+    flavorText: "« Les mêmes erreurs, encore et encore. Le tribunal s'en souviendra. »",
     image: 'images/cards/ju-038.png',
   },
   {
@@ -469,8 +487,8 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Event,
     cost: 3,
     rarity: Rarity.Uncommon,
-    effect: 'Annulez la capacité d\'un Métier adverse en permanence. Ce Métier perd -1/-1.',
-    flavorText: '« Un formulaire manquant, et tout le dossier s\'effondre. »',
+    effect: "Annulez la capacité d'un Métier adverse en permanence. Ce Métier perd -1/-1.",
+    flavorText: "« Un formulaire manquant, et tout le dossier s'effondre. »",
     image: 'images/cards/ju-039.png',
   },
   {
@@ -480,8 +498,9 @@ export const JUSTICE_CARDS: Card[] = [
     type: CardType.Event,
     cost: 7,
     rarity: Rarity.Legendary,
-    effect: 'Détruisez tous les Outils en jeu. Pour chaque Outil détruit, piochez une carte. Vos Métiers Justice gagnent +1/+1 en permanence.',
-    flavorText: '« L\'ancien système est aboli. Un nouvel ordre judiciaire commence. »',
+    effect:
+      'Détruisez tous les Outils en jeu. Pour chaque Outil détruit, piochez une carte. Vos Métiers Justice gagnent +1/+1 en permanence.',
+    flavorText: "« L'ancien système est aboli. Un nouvel ordre judiciaire commence. »",
     image: 'images/cards/ju-040.png',
   },
   // ── Extended Collection (41-100) ──

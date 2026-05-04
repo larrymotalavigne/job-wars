@@ -52,7 +52,7 @@ export class LimitedService {
       boosters.push(this.generateBooster());
     }
 
-    const cardPool = boosters.flatMap(b => b.cards);
+    const cardPool = boosters.flatMap((b) => b.cards);
 
     const pool: SealedPool = {
       id: crypto.randomUUID(),
@@ -115,7 +115,9 @@ export class LimitedService {
       currentPackIndex: 0,
       currentPickIndex: 0,
       pickedCards: [],
-      aiPicks: Array(PLAYERS_PER_DRAFT - 1).fill(null).map(() => []),
+      aiPicks: Array(PLAYERS_PER_DRAFT - 1)
+        .fill(null)
+        .map(() => []),
       isComplete: false,
     };
 
@@ -145,7 +147,7 @@ export class LimitedService {
       throw new Error('No pack available');
     }
 
-    const cardIndex = currentPack.cards.findIndex(c => c.id === cardId);
+    const cardIndex = currentPack.cards.findIndex((c) => c.id === cardId);
     if (cardIndex === -1) {
       throw new Error('Card not found in pack');
     }
@@ -219,7 +221,7 @@ export class LimitedService {
     this.shuffleArray(raritySlots);
 
     for (const rarity of raritySlots) {
-      const candidates = allCards.filter(c => c.rarity === rarity && !pack.includes(c));
+      const candidates = allCards.filter((c) => c.rarity === rarity && !pack.includes(c));
       if (candidates.length > 0) {
         const card = candidates[Math.floor(Math.random() * candidates.length)];
         pack.push(card);
