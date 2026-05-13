@@ -1,5 +1,5 @@
 ### STAGE 1: Build Angular frontend ###
-FROM node:24-alpine AS build-frontend
+FROM registry.gitlab.ggcorp.fr/internal/docker-cache/node:24-alpine AS build-frontend
 WORKDIR /usr/src/app
 COPY package.json package-lock.json* ./
 RUN npm ci --legacy-peer-deps
@@ -14,7 +14,7 @@ RUN apk add --no-cache gzip brotli \
  && find /usr/src/app/dist -type f -name '*.css' -exec brotli -f {} \;
 
 ### STAGE 2: Final image — nginx (frontend) + Python/FastAPI (backend) ###
-FROM python:3.14-slim
+FROM registry.gitlab.ggcorp.fr/internal/docker-cache/python:3.14-slim
 
 # Install nginx
 RUN apt-get update \
